@@ -35,7 +35,7 @@ android {
     buildToolsVersion '23.0.2'
 
     defaultConfig {
-        applicationId "com.easytobook.app"
+        applicationId "com.socialtravelguide.app"
         minSdkVersion 17
         targetSdkVersion 23
         versionCode versionCodeValue
@@ -168,7 +168,7 @@ dependencies {
     // Set this dependency to build and run Espresso tests
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
     // Espresso-contrib for DatePicker, RecyclerView, Drawer actions, Accessibility checks, CountingIdlingResource
-    androidTestCompile ('com.android.support.test.espresso:espresso-contrib:2.2.1') {
+    androidTestCompile('com.android.support.test.espresso:espresso-contrib:2.2.1') {
         // Necessary to avoid version conflicts
         exclude group: 'com.android.support', module: 'appcompat'
         exclude group: 'com.android.support', module: 'support-v4'

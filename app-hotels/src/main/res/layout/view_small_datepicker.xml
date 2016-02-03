@@ -61,7 +61,7 @@
 
     </LinearLayout>
 
-    <com.etb.app.widget.datepicker.DayPickerViewPager
+    <com.stg.app.widget.datepicker.DayPickerViewPager
         android:id="@+id/datepicker_day"
         style="?attr/libHotelsDatePickerViewStyle"
         android:layout_width="wrap_content"

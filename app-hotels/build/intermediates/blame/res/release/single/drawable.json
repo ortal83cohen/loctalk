@@ -1,886 +1,886 @@
 [
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\tripadviser_ratingbar.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\tripadviser_ratingbar.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_nonsmoking.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_nonsmoking.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_stadium_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_stadium_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_shopping.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_shopping.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_booking_paymentchoice.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_booking_paymentchoice.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\check_out_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\check_out_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_parking.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_parking.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_museums_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_museums_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_shopping.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_shopping.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_gray_border_color_white.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_gray_border_color_white.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_child_discount.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_child_discount.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\hotel_ratingbar.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\hotel_ratingbar.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_child_discount_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_child_discount_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_church.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_church.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_disabled_friendly.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_disabled_friendly.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_pets.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_pets.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_border_color_primary.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_border_color_primary.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\roundrect.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.appyvet\\materialrangebar\\1.3\\res\\drawable\\roundrect.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_air_conditioning_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_air_conditioning_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\check_in.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\check_in.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\current_location_autocomplete.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\current_location_autocomplete.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_favorite.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_favorite.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_list_view.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_list_view.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ic_filter_rating.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ic_filter_rating.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\mainnav_favourites.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\mainnav_favourites.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\tripadvisor_dot_empty.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\tripadvisor_dot_empty.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_museums_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_museums_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_plus_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\dropdown_arrow.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\dropdown_arrow.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_bandb_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_bandb_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ic_searchbox_rooms.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ic_searchbox_rooms.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_trainstation.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_trainstation.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_shopping_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_shopping_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_attractions.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_attractions.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_foodanddrink.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_foodanddrink.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_back_arrow.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_back_arrow.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_burger.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_burger.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\button_text.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\button_text.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\tripadvisor_logo.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\tripadvisor_logo.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\destination.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\destination.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_landmarks_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_landmarks_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\mainnav_creditcards.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\mainnav_creditcards.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_bandb.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_bandb.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_stadium.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_stadium.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\current_location.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\current_location.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\map_pin_long_white.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\map_pin_long_white.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\place_holder_img.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\place_holder_img.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_hospital_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_hospital_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\hotel_highlight_bg.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\hotel_highlight_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_internet_wifi_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_internet_wifi_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_hotel_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_hotel_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\arrow_calendar_right.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\arrow_calendar_right.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_attractions.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_attractions.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ic_filter_star.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ic_filter_star.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\messenger_button_white_bg_round.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\messenger_button_white_bg_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_hotel.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_hotel.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_landmarks.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_landmarks.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\messenger_button_blue_bg_round.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\messenger_button_blue_bg_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_white.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_white.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\mainnav_my_bookings.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\mainnav_my_bookings.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\logo_animation.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\logo_animation.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rounded_ripple_button_theme_white.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\rounded_ripple_button_theme_white.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_transportation_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_transportation_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rooms_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\rooms_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_museums.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_museums.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_airports.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_airports.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_beach.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_beach.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_primary.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_primary.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_green.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_green.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ic_datepicker_checkin.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ic_datepicker_checkin.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rooms.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\rooms.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_theme_accent.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_theme_accent.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\drawable\\design_snackbar_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\check_mark.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\check_mark.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_guesthouse_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_guesthouse_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\messenger_button_white_bg_selector.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\messenger_button_white_bg_selector.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_edit_destination.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_edit_destination.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\white_with_stroke.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\white_with_stroke.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\com_facebook_button_send_background.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\com_facebook_button_send_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rounded_white.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\rounded_white.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ic_datepicker_checkout.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ic_datepicker_checkout.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\filter_item_button.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\filter_item_button.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\shadow.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\shadow.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_hostel_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_hostel_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\mainnav_recent_search.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\mainnav_recent_search.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_hospital.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_hospital.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_trash.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_trash.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\img_background.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\img_background.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_museums.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_museums.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_close.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_close.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_etb_logo.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_etb_logo.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\mainnav_my_profile.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\mainnav_my_profile.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\button_color_white.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\button_color_white.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\map_pin_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\map_pin_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\datepicker_highlight_bg.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\datepicker_highlight_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_trainstation_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_trainstation_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rounded_ripple_button_theme_accent.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\rounded_ripple_button_theme_accent.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\triangle.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\triangle.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\bg_filter_button.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\bg_filter_button.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_primary_border_color_white.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_primary_border_color_white.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_favorite_state.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_favorite_state.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_swimming_pool_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_swimming_pool_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_neighbourhood.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_neighbourhood.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_map_view.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_map_view.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_hostel.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_hostel.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\mainnav_my_settings.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\mainnav_my_settings.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_fitness_center.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_fitness_center.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\com_facebook_button_like_background.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\com_facebook_button_like_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_apartment.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_apartment.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\button_theme_accent.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\button_theme_accent.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_monuments_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_monuments_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rounded_ripple_button_theme_primary.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\rounded_ripple_button_theme_primary.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\messenger_button_blue_bg_selector.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\messenger_button_blue_bg_selector.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\star_black_full.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\star_black_full.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\guests_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\guests_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_event_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_event_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_apartment_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_apartment_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_favourite_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_favourite_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_church_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_church_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_university.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_university.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_event.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_event.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_plus_signin_btn_icon_dark.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\map_pin.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\map_pin.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_parking_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_parking_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_neighbourhoods.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_neighbourhoods.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_trash.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_trash.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\progressbar_green.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\progressbar_green.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\guests.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\guests.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_airports_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_airports_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_border_color_trash.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_border_color_trash.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_guesthouse.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_guesthouse.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_airports_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_airports_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_autocomplete_recent_search.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_autocomplete_recent_search.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_border_transaprent.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_border_transaprent.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_plus_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_air_conditioning.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_air_conditioning.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_residence.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_residence.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\tripadvisor_dot_full.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\tripadvisor_dot_full.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_disabled_friendly_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_disabled_friendly_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_theme_accent_round.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_theme_accent_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\progress_animation.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\progress_animation.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_landmark.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_landmark.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_neighbourhood_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_neighbourhood_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\drawable\\design_fab_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_internet_wifi.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_internet_wifi.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\no_results.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\no_results.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_university_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_university_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\number_selector_background.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\number_selector_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\desintation_autocomplete.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\desintation_autocomplete.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_phone.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_phone.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\arrow_calendar_left.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\arrow_calendar_left.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_shopping_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_shopping_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_monuments.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_monuments.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\com_facebook_button_login_silver_background.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\com_facebook_button_login_silver_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\check_mark_green.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\check_mark_green.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\white_hotel_ratingbar.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\white_hotel_ratingbar.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_action.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_action.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\map_pin_price.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\map_pin_price.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\datepicker_selected_view.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\datepicker_selected_view.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_residence_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_residence_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\check_in_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\check_in_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_swimming_pool.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_swimming_pool.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_favorite_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_favorite_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\com_facebook_button_background.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\com_facebook_button_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_fitness_center_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_fitness_center_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_highlighted_round.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_highlighted_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_beach_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_beach_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\round_white.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\round_white.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ic_searchbox_guests.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ic_searchbox_guests.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\check_out.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\check_out.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\star_black_empty.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\star_black_empty.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_gray.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_gray.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\list_divider.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\list_divider.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_pets_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_pets_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_airports.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_airports.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_attractions_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_attractions_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_resort.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_resort.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_neighbourhoods_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_neighbourhoods_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_resort_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_resort_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_plus_signin_btn_text_light.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\tripadvisor_dot_half.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\tripadvisor_dot_half.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_nonsmoking_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_nonsmoking_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\destination_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\destination_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_landmark_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_landmark_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_attractions_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_attractions_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\map_poi_icon.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\map_poi_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_highlighted.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_highlighted.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_transportation.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_transportation.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\map_pin_white.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\map_pin_white.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rotate.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.appyvet\\materialrangebar\\1.3\\res\\drawable\\rotate.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\filter.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\filter.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_favourite.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_favourite.png"
-    }
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\tripadviser_ratingbar.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\tripadviser_ratingbar.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_nonsmoking.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_nonsmoking.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_stadium_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_stadium_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_textfield_search_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_shopping.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_shopping.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_booking_paymentchoice.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_booking_paymentchoice.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\check_out_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\check_out_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_parking.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_parking.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_museums_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_museums_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_shopping.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_shopping.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_gray_border_color_white.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_gray_border_color_white.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_child_discount.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_child_discount.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\hotel_ratingbar.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\hotel_ratingbar.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_child_discount_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_child_discount_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_church.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_church.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_disabled_friendly.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_disabled_friendly.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_pets.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_pets.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_border_color_primary.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_border_color_primary.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\roundrect.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.appyvet\\materialrangebar\\1.3\\res\\drawable\\roundrect.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_air_conditioning_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_air_conditioning_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\check_in.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\check_in.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\current_location_autocomplete.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\current_location_autocomplete.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_favorite.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_favorite.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_list_view.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_list_view.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_full_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_ratingbar_full_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ic_filter_rating.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ic_filter_rating.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\mainnav_favourites.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\mainnav_favourites.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\tripadvisor_dot_empty.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\tripadvisor_dot_empty.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_museums_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_museums_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_plus_signin_btn_text_dark.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\dropdown_arrow.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\dropdown_arrow.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_bandb_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_bandb_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ic_searchbox_rooms.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ic_searchbox_rooms.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_trainstation.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_trainstation.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_shopping_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_shopping_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_attractions.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_attractions.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_foodanddrink.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_foodanddrink.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_back_arrow.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_back_arrow.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_burger.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_burger.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\button_text.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\button_text.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\tripadvisor_logo.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\tripadvisor_logo.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\destination.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\destination.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_landmarks_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_landmarks_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\mainnav_creditcards.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\mainnav_creditcards.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_bandb.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_bandb.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_stadium.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_stadium.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\current_location.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\current_location.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_radio_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_colored_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\map_pin_long_white.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\map_pin_long_white.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\place_holder_img.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\place_holder_img.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_hospital_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_hospital_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background_dark.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\hotel_highlight_bg.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\hotel_highlight_bg.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_internet_wifi_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_internet_wifi_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_hotel_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_hotel_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\arrow_calendar_right.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\arrow_calendar_right.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_attractions.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_attractions.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_dark.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ic_filter_star.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ic_filter_star.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\messenger_button_white_bg_round.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\messenger_button_white_bg_round.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_hotel.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_hotel.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_landmarks.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_landmarks.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\messenger_button_blue_bg_round.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\messenger_button_blue_bg_round.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_white.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_white.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\mainnav_my_bookings.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\mainnav_my_bookings.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\logo_animation.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\logo_animation.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rounded_ripple_button_theme_white.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\rounded_ripple_button_theme_white.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_transportation_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_transportation_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rooms_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\rooms_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_museums.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_museums.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_airports.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_airports.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_beach.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_beach.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_primary.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_primary.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_green.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_green.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ic_datepicker_checkin.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ic_datepicker_checkin.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_dark.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rooms.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\rooms.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_theme_accent.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_theme_accent.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_text_cursor_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_text_cursor_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\drawable\\design_snackbar_background.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\check_mark.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\check_mark.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_guesthouse_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_guesthouse_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\messenger_button_white_bg_selector.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\messenger_button_white_bg_selector.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_edit_destination.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_edit_destination.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\white_with_stroke.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\white_with_stroke.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\com_facebook_button_send_background.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\com_facebook_button_send_background.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rounded_white.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\rounded_white.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ic_datepicker_checkout.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ic_datepicker_checkout.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\filter_item_button.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\filter_item_button.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\shadow.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\shadow.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_hostel_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_hostel_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\mainnav_recent_search.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\mainnav_recent_search.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_hospital.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_hospital.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_trash.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_trash.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_check_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\img_background.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\img_background.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_museums.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_museums.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_close.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_close.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_etb_logo.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_etb_logo.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\mainnav_my_profile.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\mainnav_my_profile.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\button_color_white.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\button_color_white.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\map_pin_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\map_pin_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\datepicker_highlight_bg.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\datepicker_highlight_bg.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_trainstation_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_trainstation_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rounded_ripple_button_theme_accent.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\rounded_ripple_button_theme_accent.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\triangle.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\triangle.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\bg_filter_button.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\bg_filter_button.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_primary_border_color_white.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_primary_border_color_white.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_favorite_state.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_favorite_state.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_swimming_pool_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_swimming_pool_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_neighbourhood.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_neighbourhood.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_light.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_map_view.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_map_view.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_hostel.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_hostel.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\mainnav_my_settings.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\mainnav_my_settings.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_fitness_center.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_fitness_center.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\com_facebook_button_like_background.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\com_facebook_button_like_background.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_apartment.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_apartment.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\button_theme_accent.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\button_theme_accent.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_monuments_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_monuments_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rounded_ripple_button_theme_primary.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\rounded_ripple_button_theme_primary.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\messenger_button_blue_bg_selector.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\messenger_button_blue_bg_selector.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\star_black_full.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\star_black_full.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_light.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\guests_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\guests_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_event_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_event_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_apartment_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_apartment_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_favourite_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_favourite_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_church_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_church_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_university.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_university.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_event.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_event.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_plus_signin_btn_icon_dark.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\map_pin.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\map_pin.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_parking_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_parking_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_neighbourhoods.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_neighbourhoods.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_trash.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_trash.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\progressbar_green.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\progressbar_green.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\guests.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\guests.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_airports_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_airports_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_border_color_trash.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_border_color_trash.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_guesthouse.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_guesthouse.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_airports_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_airports_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_autocomplete_recent_search.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_autocomplete_recent_search.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_border_transaprent.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_border_transaprent.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_plus_signin_btn_icon_light.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_air_conditioning.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_air_conditioning.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_residence.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_residence.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\tripadvisor_dot_full.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\tripadvisor_dot_full.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_disabled_friendly_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_disabled_friendly_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_theme_accent_round.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_theme_accent_round.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\progress_animation.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\progress_animation.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_landmark.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_landmark.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_neighbourhood_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_neighbourhood_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\design_fab_background.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\drawable\\design_fab_background.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_internet_wifi.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_internet_wifi.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\no_results.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\no_results.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_university_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_university_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\number_selector_background.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\number_selector_background.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\desintation_autocomplete.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\desintation_autocomplete.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_phone.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_phone.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\arrow_calendar_left.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\arrow_calendar_left.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_shopping_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_shopping_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_monuments.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_monuments.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\com_facebook_button_login_silver_background.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\com_facebook_button_login_silver_background.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\check_mark_green.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\check_mark_green.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\white_hotel_ratingbar.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\white_hotel_ratingbar.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\menu_action.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\menu_action.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\map_pin_price.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\map_pin_price.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\datepicker_selected_view.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\datepicker_selected_view.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_residence_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_residence_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\check_in_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\check_in_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_swimming_pool.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_swimming_pool.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_favorite_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_favorite_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\com_facebook_button_background.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\com_facebook_button_background.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_edit_text_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_fitness_center_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_fitness_center_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_highlighted_round.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_highlighted_round.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_beach_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_beach_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\round_white.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\round_white.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ic_searchbox_guests.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ic_searchbox_guests.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\check_out.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\check_out.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\star_black_empty.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\star_black_empty.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_gray.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_gray.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\list_divider.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\list_divider.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_pets_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_pets_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_airports.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_airports.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_attractions_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_attractions_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_resort.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_resort.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_neighbourhoods_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_neighbourhoods_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_accommodation_resort_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_accommodation_resort_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\common_plus_signin_btn_text_light.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_text_light.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\tripadvisor_dot_half.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\tripadvisor_dot_half.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_nonsmoking_selected.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_nonsmoking_selected.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\destination_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\destination_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_landmark_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_landmark_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_attractions_active.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_attractions_active.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_item_background_holo_light.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\map_poi_icon.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\map_poi_icon.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_button_color_highlighted.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\ripple_button_color_highlighted.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background_light.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_light.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\icon_poi_category_transportation.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\icon_poi_category_transportation.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\map_pin_white.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\map_pin_white.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\rotate.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.appyvet\\materialrangebar\\1.3\\res\\drawable\\rotate.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\filter.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\filter.png"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_borderless_material.xml"
+  },
+  {
+    "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\release\\drawable\\btn_favourite.png",
+    "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable\\btn_favourite.png"
+  }
 ]

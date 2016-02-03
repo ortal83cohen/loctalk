@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.etb.app;
+package com.stg.app;
 
 public final class R {
     public static final class anim {
@@ -5071,33 +5071,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background com.easytobook.app:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit com.easytobook.app:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked com.easytobook.app:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd com.easytobook.app:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft com.easytobook.app:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight com.easytobook.app:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart com.easytobook.app:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout com.easytobook.app:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions com.easytobook.app:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider com.easytobook.app:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation com.easytobook.app:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height com.easytobook.app:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.easytobook.app:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.easytobook.app:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout com.easytobook.app:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon com.easytobook.app:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.easytobook.app:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding com.easytobook.app:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.easytobook.app:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode com.easytobook.app:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme com.easytobook.app:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding com.easytobook.app:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle com.easytobook.app:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle com.easytobook.app:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.easytobook.app:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title com.easytobook.app:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle com.easytobook.app:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background com.socialtravelguide.app:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.socialtravelguide.app:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.socialtravelguide.app:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.socialtravelguide.app:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.socialtravelguide.app:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.socialtravelguide.app:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.socialtravelguide.app:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.socialtravelguide.app:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.socialtravelguide.app:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.socialtravelguide.app:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.socialtravelguide.app:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height com.socialtravelguide.app:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.socialtravelguide.app:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.socialtravelguide.app:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.socialtravelguide.app:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.socialtravelguide.app:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.socialtravelguide.app:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.socialtravelguide.app:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.socialtravelguide.app:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.socialtravelguide.app:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.socialtravelguide.app:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.socialtravelguide.app:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.socialtravelguide.app:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.socialtravelguide.app:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.socialtravelguide.app:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.socialtravelguide.app:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.socialtravelguide.app:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -5137,17 +5137,17 @@ containing a value of this type.
             0x7f01001b, 0x7f01001c, 0x7f010112
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#background}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:background
+          @attr name com.socialtravelguide.app:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5155,11 +5155,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:backgroundSplit
+          @attr name com.socialtravelguide.app:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5167,11 +5167,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:backgroundStacked
+          @attr name com.socialtravelguide.app:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5183,11 +5183,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentInsetEnd
+          @attr name com.socialtravelguide.app:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5199,11 +5199,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentInsetLeft
+          @attr name com.socialtravelguide.app:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5215,11 +5215,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentInsetRight
+          @attr name com.socialtravelguide.app:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5231,21 +5231,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentInsetStart
+          @attr name com.socialtravelguide.app:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:customNavigationLayout
+          @attr name com.socialtravelguide.app:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5263,21 +5263,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:displayOptions
+          @attr name com.socialtravelguide.app:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:divider
+          @attr name com.socialtravelguide.app:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5289,11 +5289,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:elevation
+          @attr name com.socialtravelguide.app:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#height}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5305,11 +5305,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:height
+          @attr name com.socialtravelguide.app:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5319,51 +5319,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:hideOnContentScroll
+          @attr name com.socialtravelguide.app:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:homeAsUpIndicator
+          @attr name com.socialtravelguide.app:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:homeLayout
+          @attr name com.socialtravelguide.app:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:icon
+          @attr name com.socialtravelguide.app:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:indeterminateProgressStyle
+          @attr name com.socialtravelguide.app:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5375,21 +5375,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:itemPadding
+          @attr name com.socialtravelguide.app:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:logo
+          @attr name com.socialtravelguide.app:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5403,21 +5403,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:navigationMode
+          @attr name com.socialtravelguide.app:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:popupTheme
+          @attr name com.socialtravelguide.app:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5429,21 +5429,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:progressBarPadding
+          @attr name com.socialtravelguide.app:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:progressBarStyle
+          @attr name com.socialtravelguide.app:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5453,21 +5453,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:subtitle
+          @attr name com.socialtravelguide.app:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:subtitleTextStyle
+          @attr name com.socialtravelguide.app:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#title}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5477,17 +5477,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:title
+          @attr name com.socialtravelguide.app:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:titleTextStyle
+          @attr name com.socialtravelguide.app:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -5539,12 +5539,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background com.easytobook.app:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit com.easytobook.app:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout com.easytobook.app:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height com.easytobook.app:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.easytobook.app:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle com.easytobook.app:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background com.socialtravelguide.app:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.socialtravelguide.app:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.socialtravelguide.app:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height com.socialtravelguide.app:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.socialtravelguide.app:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.socialtravelguide.app:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -5558,17 +5558,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000f, 0x7f01001d
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#background}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:background
+          @attr name com.socialtravelguide.app:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -5576,21 +5576,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:backgroundSplit
+          @attr name com.socialtravelguide.app:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:closeItemLayout
+          @attr name com.socialtravelguide.app:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#height}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -5602,27 +5602,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:height
+          @attr name com.socialtravelguide.app:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:subtitleTextStyle
+          @attr name com.socialtravelguide.app:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:titleTextStyle
+          @attr name com.socialtravelguide.app:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -5631,8 +5631,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.easytobook.app:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.easytobook.app:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.socialtravelguide.app:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.socialtravelguide.app:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -5641,17 +5641,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001e, 0x7f01001f
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:expandActivityOverflowButtonDrawable
+          @attr name com.socialtravelguide.app:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -5661,7 +5661,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:initialActivityCount
+          @attr name com.socialtravelguide.app:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -5671,11 +5671,11 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.easytobook.app:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout com.easytobook.app:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout com.easytobook.app:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.easytobook.app:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.easytobook.app:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.socialtravelguide.app:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout com.socialtravelguide.app:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout com.socialtravelguide.app:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.socialtravelguide.app:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.socialtravelguide.app:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -5695,53 +5695,53 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:buttonPanelSideLayout
+          @attr name com.socialtravelguide.app:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:listItemLayout
+          @attr name com.socialtravelguide.app:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:listLayout
+          @attr name com.socialtravelguide.app:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:multiChoiceItemLayout
+          @attr name com.socialtravelguide.app:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:singleChoiceItemLayout
+          @attr name com.socialtravelguide.app:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -5751,8 +5751,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation com.easytobook.app:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded com.easytobook.app:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation com.socialtravelguide.app:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded com.socialtravelguide.app:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_elevation
@@ -5768,7 +5768,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -5780,11 +5780,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:elevation
+          @attr name com.socialtravelguide.app:elevation
         */
         public static final int AppBarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#expanded}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -5794,7 +5794,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:expanded
+          @attr name com.socialtravelguide.app:expanded
         */
         public static final int AppBarLayout_expanded = 2;
         /** Attributes that can be used with a AppBarLayout_LayoutParams.
@@ -5803,8 +5803,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags com.easytobook.app:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator com.easytobook.app:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags com.socialtravelguide.app:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator com.socialtravelguide.app:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_LayoutParams_layout_scrollFlags
            @see #AppBarLayout_LayoutParams_layout_scrollInterpolator
@@ -5813,7 +5813,7 @@ containing a value of this type.
             0x7f010026, 0x7f010027
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
@@ -5829,17 +5829,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:layout_scrollFlags
+          @attr name com.socialtravelguide.app:layout_scrollFlags
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:layout_scrollInterpolator
+          @attr name com.socialtravelguide.app:layout_scrollInterpolator
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatTextView.
@@ -5849,7 +5849,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.easytobook.app:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.socialtravelguide.app:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -5864,14 +5864,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.easytobook.app:textAllCaps
+          @attr name com.socialtravelguide.app:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a BookingStepsView.
@@ -5880,10 +5880,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BookingStepsView_bookingStepColorActive com.easytobook.app:bookingStepColorActive}</code></td><td></td></tr>
-           <tr><td><code>{@link #BookingStepsView_bookingStepColorBackground com.easytobook.app:bookingStepColorBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #BookingStepsView_bookingStepColorHighlight com.easytobook.app:bookingStepColorHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #BookingStepsView_bookingStepColorNotActive com.easytobook.app:bookingStepColorNotActive}</code></td><td></td></tr>
+           <tr><td><code>{@link #BookingStepsView_bookingStepColorActive com.socialtravelguide.app:bookingStepColorActive}</code></td><td></td></tr>
+           <tr><td><code>{@link #BookingStepsView_bookingStepColorBackground com.socialtravelguide.app:bookingStepColorBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #BookingStepsView_bookingStepColorHighlight com.socialtravelguide.app:bookingStepColorHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #BookingStepsView_bookingStepColorNotActive com.socialtravelguide.app:bookingStepColorNotActive}</code></td><td></td></tr>
            </table>
            @see #BookingStepsView_bookingStepColorActive
            @see #BookingStepsView_bookingStepColorBackground
@@ -5894,7 +5894,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010029, 0x7f01002a, 0x7f01002b, 0x7f01002c
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#bookingStepColorActive}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#bookingStepColorActive}
           attribute's value can be found in the {@link #BookingStepsView} array.
 
 
@@ -5905,11 +5905,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:bookingStepColorActive
+          @attr name com.socialtravelguide.app:bookingStepColorActive
         */
         public static final int BookingStepsView_bookingStepColorActive = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#bookingStepColorBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#bookingStepColorBackground}
           attribute's value can be found in the {@link #BookingStepsView} array.
 
 
@@ -5920,11 +5920,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:bookingStepColorBackground
+          @attr name com.socialtravelguide.app:bookingStepColorBackground
         */
         public static final int BookingStepsView_bookingStepColorBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#bookingStepColorHighlight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#bookingStepColorHighlight}
           attribute's value can be found in the {@link #BookingStepsView} array.
 
 
@@ -5935,11 +5935,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:bookingStepColorHighlight
+          @attr name com.socialtravelguide.app:bookingStepColorHighlight
         */
         public static final int BookingStepsView_bookingStepColorHighlight = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#bookingStepColorNotActive}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#bookingStepColorNotActive}
           attribute's value can be found in the {@link #BookingStepsView} array.
 
 
@@ -5950,7 +5950,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:bookingStepColorNotActive
+          @attr name com.socialtravelguide.app:bookingStepColorNotActive
         */
         public static final int BookingStepsView_bookingStepColorNotActive = 1;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -5959,7 +5959,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.easytobook.app:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.socialtravelguide.app:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -5967,7 +5967,7 @@ containing a value of this type.
             0x7f01002d
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -5977,7 +5977,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:allowStacking
+          @attr name com.socialtravelguide.app:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CardView.
@@ -5986,17 +5986,17 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CardView_cardBackgroundColor com.easytobook.app:cardBackgroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardCornerRadius com.easytobook.app:cardCornerRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardElevation com.easytobook.app:cardElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardMaxElevation com.easytobook.app:cardMaxElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.easytobook.app:cardPreventCornerOverlap}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardUseCompatPadding com.easytobook.app:cardUseCompatPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPadding com.easytobook.app:contentPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingBottom com.easytobook.app:contentPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingLeft com.easytobook.app:contentPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingRight com.easytobook.app:contentPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingTop com.easytobook.app:contentPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor com.socialtravelguide.app:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius com.socialtravelguide.app:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation com.socialtravelguide.app:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation com.socialtravelguide.app:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.socialtravelguide.app:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding com.socialtravelguide.app:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding com.socialtravelguide.app:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom com.socialtravelguide.app:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft com.socialtravelguide.app:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight com.socialtravelguide.app:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop com.socialtravelguide.app:contentPaddingTop}</code></td><td></td></tr>
            </table>
            @see #CardView_cardBackgroundColor
            @see #CardView_cardCornerRadius
@@ -6016,7 +6016,7 @@ containing a value of this type.
             0x7f010036, 0x7f010037, 0x7f010038
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#cardBackgroundColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#cardBackgroundColor}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6027,11 +6027,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:cardBackgroundColor
+          @attr name com.socialtravelguide.app:cardBackgroundColor
         */
         public static final int CardView_cardBackgroundColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#cardCornerRadius}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#cardCornerRadius}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6043,11 +6043,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:cardCornerRadius
+          @attr name com.socialtravelguide.app:cardCornerRadius
         */
         public static final int CardView_cardCornerRadius = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#cardElevation}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#cardElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6059,11 +6059,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:cardElevation
+          @attr name com.socialtravelguide.app:cardElevation
         */
         public static final int CardView_cardElevation = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#cardMaxElevation}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#cardMaxElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6075,11 +6075,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:cardMaxElevation
+          @attr name com.socialtravelguide.app:cardMaxElevation
         */
         public static final int CardView_cardMaxElevation = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#cardPreventCornerOverlap}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#cardPreventCornerOverlap}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6089,11 +6089,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:cardPreventCornerOverlap
+          @attr name com.socialtravelguide.app:cardPreventCornerOverlap
         */
         public static final int CardView_cardPreventCornerOverlap = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#cardUseCompatPadding}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#cardUseCompatPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6103,11 +6103,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:cardUseCompatPadding
+          @attr name com.socialtravelguide.app:cardUseCompatPadding
         */
         public static final int CardView_cardUseCompatPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentPadding}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6119,11 +6119,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentPadding
+          @attr name com.socialtravelguide.app:contentPadding
         */
         public static final int CardView_contentPadding = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentPaddingBottom}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentPaddingBottom}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6135,11 +6135,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentPaddingBottom
+          @attr name com.socialtravelguide.app:contentPaddingBottom
         */
         public static final int CardView_contentPaddingBottom = 10;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentPaddingLeft}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentPaddingLeft}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6151,11 +6151,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentPaddingLeft
+          @attr name com.socialtravelguide.app:contentPaddingLeft
         */
         public static final int CardView_contentPaddingLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentPaddingRight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentPaddingRight}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6167,11 +6167,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentPaddingRight
+          @attr name com.socialtravelguide.app:contentPaddingRight
         */
         public static final int CardView_contentPaddingRight = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentPaddingTop}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentPaddingTop}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6183,7 +6183,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentPaddingTop
+          @attr name com.socialtravelguide.app:contentPaddingTop
         */
         public static final int CardView_contentPaddingTop = 9;
         /** Attributes that can be used with a CheckBoxGroup.
@@ -6192,7 +6192,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CheckBoxGroup_groupCheckboxLayout com.easytobook.app:groupCheckboxLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #CheckBoxGroup_groupCheckboxLayout com.socialtravelguide.app:groupCheckboxLayout}</code></td><td></td></tr>
            </table>
            @see #CheckBoxGroup_groupCheckboxLayout
          */
@@ -6200,13 +6200,13 @@ containing a value of this type.
             0x7f010039
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#groupCheckboxLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#groupCheckboxLayout}
           attribute's value can be found in the {@link #CheckBoxGroup} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:groupCheckboxLayout
+          @attr name com.socialtravelguide.app:groupCheckboxLayout
         */
         public static final int CheckBoxGroup_groupCheckboxLayout = 0;
         /** Attributes that can be used with a CircleImageView.
@@ -6215,10 +6215,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CircleImageView_civ_border_color com.easytobook.app:civ_border_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #CircleImageView_civ_border_overlay com.easytobook.app:civ_border_overlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #CircleImageView_civ_border_width com.easytobook.app:civ_border_width}</code></td><td></td></tr>
-           <tr><td><code>{@link #CircleImageView_civ_fill_color com.easytobook.app:civ_fill_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_civ_border_color com.socialtravelguide.app:civ_border_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_civ_border_overlay com.socialtravelguide.app:civ_border_overlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_civ_border_width com.socialtravelguide.app:civ_border_width}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_civ_fill_color com.socialtravelguide.app:civ_fill_color}</code></td><td></td></tr>
            </table>
            @see #CircleImageView_civ_border_color
            @see #CircleImageView_civ_border_overlay
@@ -6229,7 +6229,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01003a, 0x7f01003b, 0x7f01003c, 0x7f01003d
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#civ_border_color}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#civ_border_color}
           attribute's value can be found in the {@link #CircleImageView} array.
 
 
@@ -6240,11 +6240,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:civ_border_color
+          @attr name com.socialtravelguide.app:civ_border_color
         */
         public static final int CircleImageView_civ_border_color = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#civ_border_overlay}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#civ_border_overlay}
           attribute's value can be found in the {@link #CircleImageView} array.
 
 
@@ -6254,11 +6254,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:civ_border_overlay
+          @attr name com.socialtravelguide.app:civ_border_overlay
         */
         public static final int CircleImageView_civ_border_overlay = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#civ_border_width}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#civ_border_width}
           attribute's value can be found in the {@link #CircleImageView} array.
 
 
@@ -6270,11 +6270,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:civ_border_width
+          @attr name com.socialtravelguide.app:civ_border_width
         */
         public static final int CircleImageView_civ_border_width = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#civ_fill_color}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#civ_fill_color}
           attribute's value can be found in the {@link #CircleImageView} array.
 
 
@@ -6285,7 +6285,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:civ_fill_color
+          @attr name com.socialtravelguide.app:civ_fill_color
         */
         public static final int CircleImageView_civ_fill_color = 3;
         /** Attributes that can be used with a CollapsingAppBarLayout_LayoutParams.
@@ -6294,8 +6294,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode com.easytobook.app:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier com.easytobook.app:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode com.socialtravelguide.app:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier com.socialtravelguide.app:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseMode
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier
@@ -6304,7 +6304,7 @@ containing a value of this type.
             0x7f01003e, 0x7f01003f
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -6318,11 +6318,11 @@ containing a value of this type.
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:layout_collapseMode
+          @attr name com.socialtravelguide.app:layout_collapseMode
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -6332,7 +6332,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:layout_collapseParallaxMultiplier
+          @attr name com.socialtravelguide.app:layout_collapseParallaxMultiplier
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -6341,20 +6341,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.easytobook.app:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.easytobook.app:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.easytobook.app:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.easytobook.app:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.easytobook.app:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.easytobook.app:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.easytobook.app:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.easytobook.app:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.easytobook.app:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.easytobook.app:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.easytobook.app:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title com.easytobook.app:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.easytobook.app:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.easytobook.app:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.socialtravelguide.app:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.socialtravelguide.app:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.socialtravelguide.app:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.socialtravelguide.app:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.socialtravelguide.app:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.socialtravelguide.app:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.socialtravelguide.app:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.socialtravelguide.app:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.socialtravelguide.app:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.socialtravelguide.app:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.socialtravelguide.app:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title com.socialtravelguide.app:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.socialtravelguide.app:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.socialtravelguide.app:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -6378,7 +6378,7 @@ containing a value of this type.
             0x7f01004b, 0x7f01004c
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6399,21 +6399,21 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:collapsedTitleGravity
+          @attr name com.socialtravelguide.app:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 11;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:collapsedTitleTextAppearance
+          @attr name com.socialtravelguide.app:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6424,11 +6424,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentScrim
+          @attr name com.socialtravelguide.app:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6449,11 +6449,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:expandedTitleGravity
+          @attr name com.socialtravelguide.app:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 12;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6465,11 +6465,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:expandedTitleMargin
+          @attr name com.socialtravelguide.app:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6481,11 +6481,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:expandedTitleMarginBottom
+          @attr name com.socialtravelguide.app:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6497,11 +6497,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:expandedTitleMarginEnd
+          @attr name com.socialtravelguide.app:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6513,11 +6513,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:expandedTitleMarginStart
+          @attr name com.socialtravelguide.app:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6529,21 +6529,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:expandedTitleMarginTop
+          @attr name com.socialtravelguide.app:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:expandedTitleTextAppearance
+          @attr name com.socialtravelguide.app:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6554,11 +6554,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:statusBarScrim
+          @attr name com.socialtravelguide.app:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#title}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6568,11 +6568,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:title
+          @attr name com.socialtravelguide.app:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6582,17 +6582,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:titleEnabled
+          @attr name com.socialtravelguide.app:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 13;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:toolbarId
+          @attr name com.socialtravelguide.app:toolbarId
         */
         public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CompoundButton.
@@ -6602,8 +6602,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint com.easytobook.app:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode com.easytobook.app:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint com.socialtravelguide.app:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode com.socialtravelguide.app:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -6619,7 +6619,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6630,11 +6630,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:buttonTint
+          @attr name com.socialtravelguide.app:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6650,7 +6650,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:buttonTintMode
+          @attr name com.socialtravelguide.app:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -6659,8 +6659,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines com.easytobook.app:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.easytobook.app:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines com.socialtravelguide.app:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.socialtravelguide.app:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -6669,23 +6669,23 @@ containing a value of this type.
             0x7f01004f, 0x7f010050
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#keylines}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:keylines
+          @attr name com.socialtravelguide.app:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:statusBarBackground
+          @attr name com.socialtravelguide.app:statusBarBackground
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_LayoutParams.
@@ -6695,10 +6695,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_LayoutParams_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor com.easytobook.app:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity com.easytobook.app:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior com.easytobook.app:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline com.easytobook.app:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor com.socialtravelguide.app:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity com.socialtravelguide.app:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior com.socialtravelguide.app:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline com.socialtravelguide.app:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_LayoutParams_android_layout_gravity
            @see #CoordinatorLayout_LayoutParams_layout_anchor
@@ -6717,17 +6717,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:layout_anchor
+          @attr name com.socialtravelguide.app:layout_anchor
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -6752,11 +6752,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:layout_anchorGravity
+          @attr name com.socialtravelguide.app:layout_anchorGravity
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -6766,11 +6766,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:layout_behavior
+          @attr name com.socialtravelguide.app:layout_behavior
         */
         public static final int CoordinatorLayout_LayoutParams_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -6780,7 +6780,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:layout_keyline
+          @attr name com.socialtravelguide.app:layout_keyline
         */
         public static final int CoordinatorLayout_LayoutParams_layout_keyline = 3;
         /** Attributes that can be used with a DatePickerView.
@@ -6789,10 +6789,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DatePickerView_calendarHighlightedDayColor com.easytobook.app:calendarHighlightedDayColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #DatePickerView_calendarSelectedDayColor com.easytobook.app:calendarSelectedDayColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #DatePickerView_calendarTextColor com.easytobook.app:calendarTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #DatePickerView_calendarWeekdayColor com.easytobook.app:calendarWeekdayColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #DatePickerView_calendarHighlightedDayColor com.socialtravelguide.app:calendarHighlightedDayColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #DatePickerView_calendarSelectedDayColor com.socialtravelguide.app:calendarSelectedDayColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #DatePickerView_calendarTextColor com.socialtravelguide.app:calendarTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #DatePickerView_calendarWeekdayColor com.socialtravelguide.app:calendarWeekdayColor}</code></td><td></td></tr>
            </table>
            @see #DatePickerView_calendarHighlightedDayColor
            @see #DatePickerView_calendarSelectedDayColor
@@ -6803,7 +6803,7 @@ containing a value of this type.
             0x7f010055, 0x7f010056, 0x7f010057, 0x7f010058
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#calendarHighlightedDayColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#calendarHighlightedDayColor}
           attribute's value can be found in the {@link #DatePickerView} array.
 
 
@@ -6814,11 +6814,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:calendarHighlightedDayColor
+          @attr name com.socialtravelguide.app:calendarHighlightedDayColor
         */
         public static final int DatePickerView_calendarHighlightedDayColor = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#calendarSelectedDayColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#calendarSelectedDayColor}
           attribute's value can be found in the {@link #DatePickerView} array.
 
 
@@ -6829,11 +6829,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:calendarSelectedDayColor
+          @attr name com.socialtravelguide.app:calendarSelectedDayColor
         */
         public static final int DatePickerView_calendarSelectedDayColor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#calendarTextColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#calendarTextColor}
           attribute's value can be found in the {@link #DatePickerView} array.
 
 
@@ -6844,11 +6844,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:calendarTextColor
+          @attr name com.socialtravelguide.app:calendarTextColor
         */
         public static final int DatePickerView_calendarTextColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#calendarWeekdayColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#calendarWeekdayColor}
           attribute's value can be found in the {@link #DatePickerView} array.
 
 
@@ -6859,7 +6859,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:calendarWeekdayColor
+          @attr name com.socialtravelguide.app:calendarWeekdayColor
         */
         public static final int DatePickerView_calendarWeekdayColor = 1;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -6868,14 +6868,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.easytobook.app:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.easytobook.app:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength com.easytobook.app:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color com.easytobook.app:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.easytobook.app:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.easytobook.app:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.easytobook.app:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness com.easytobook.app:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.socialtravelguide.app:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.socialtravelguide.app:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength com.socialtravelguide.app:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.socialtravelguide.app:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.socialtravelguide.app:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.socialtravelguide.app:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.socialtravelguide.app:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.socialtravelguide.app:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -6891,7 +6891,7 @@ containing a value of this type.
             0x7f01005d, 0x7f01005e, 0x7f01005f, 0x7f010060
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6903,11 +6903,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:arrowHeadLength
+          @attr name com.socialtravelguide.app:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6919,11 +6919,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:arrowShaftLength
+          @attr name com.socialtravelguide.app:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#barLength}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6935,11 +6935,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:barLength
+          @attr name com.socialtravelguide.app:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#color}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6950,11 +6950,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:color
+          @attr name com.socialtravelguide.app:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6966,11 +6966,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:drawableSize
+          @attr name com.socialtravelguide.app:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6982,11 +6982,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:gapBetweenBars
+          @attr name com.socialtravelguide.app:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6996,11 +6996,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:spinBars
+          @attr name com.socialtravelguide.app:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#thickness}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7012,7 +7012,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:thickness
+          @attr name com.socialtravelguide.app:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -7021,13 +7021,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint com.easytobook.app:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.easytobook.app:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth com.easytobook.app:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation com.easytobook.app:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize com.easytobook.app:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.easytobook.app:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor com.easytobook.app:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint com.socialtravelguide.app:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.socialtravelguide.app:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth com.socialtravelguide.app:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation com.socialtravelguide.app:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize com.socialtravelguide.app:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.socialtravelguide.app:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor com.socialtravelguide.app:rippleColor}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -7042,7 +7042,7 @@ containing a value of this type.
             0x7f010064, 0x7f010163, 0x7f010164
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7053,11 +7053,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:backgroundTint
+          @attr name com.socialtravelguide.app:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7073,11 +7073,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:backgroundTintMode
+          @attr name com.socialtravelguide.app:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7089,11 +7089,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:borderWidth
+          @attr name com.socialtravelguide.app:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7105,11 +7105,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:elevation
+          @attr name com.socialtravelguide.app:elevation
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7122,11 +7122,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:fabSize
+          @attr name com.socialtravelguide.app:fabSize
         */
         public static final int FloatingActionButton_fabSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7138,11 +7138,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:pressedTranslationZ
+          @attr name com.socialtravelguide.app:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7153,7 +7153,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:rippleColor
+          @attr name com.socialtravelguide.app:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 1;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -7164,7 +7164,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.easytobook.app:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.socialtravelguide.app:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -7186,7 +7186,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -7196,7 +7196,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:foregroundInsidePadding
+          @attr name com.socialtravelguide.app:foregroundInsidePadding
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LibHotelsTheme.
@@ -7205,11 +7205,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LibHotelsTheme_libHotelsBackground com.easytobook.app:libHotelsBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #LibHotelsTheme_libHotelsColorHighlight com.easytobook.app:libHotelsColorHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #LibHotelsTheme_libHotelsColorTextPrimary com.easytobook.app:libHotelsColorTextPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #LibHotelsTheme_libHotelsColorTextSecondary com.easytobook.app:libHotelsColorTextSecondary}</code></td><td></td></tr>
-           <tr><td><code>{@link #LibHotelsTheme_libHotelsDatePickerViewStyle com.easytobook.app:libHotelsDatePickerViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #LibHotelsTheme_libHotelsBackground com.socialtravelguide.app:libHotelsBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #LibHotelsTheme_libHotelsColorHighlight com.socialtravelguide.app:libHotelsColorHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #LibHotelsTheme_libHotelsColorTextPrimary com.socialtravelguide.app:libHotelsColorTextPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #LibHotelsTheme_libHotelsColorTextSecondary com.socialtravelguide.app:libHotelsColorTextSecondary}</code></td><td></td></tr>
+           <tr><td><code>{@link #LibHotelsTheme_libHotelsDatePickerViewStyle com.socialtravelguide.app:libHotelsDatePickerViewStyle}</code></td><td></td></tr>
            </table>
            @see #LibHotelsTheme_libHotelsBackground
            @see #LibHotelsTheme_libHotelsColorHighlight
@@ -7222,7 +7222,7 @@ containing a value of this type.
             0x7f01006a
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#libHotelsBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#libHotelsBackground}
           attribute's value can be found in the {@link #LibHotelsTheme} array.
 
 
@@ -7233,11 +7233,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:libHotelsBackground
+          @attr name com.socialtravelguide.app:libHotelsBackground
         */
         public static final int LibHotelsTheme_libHotelsBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#libHotelsColorHighlight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#libHotelsColorHighlight}
           attribute's value can be found in the {@link #LibHotelsTheme} array.
 
 
@@ -7248,11 +7248,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:libHotelsColorHighlight
+          @attr name com.socialtravelguide.app:libHotelsColorHighlight
         */
         public static final int LibHotelsTheme_libHotelsColorHighlight = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#libHotelsColorTextPrimary}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#libHotelsColorTextPrimary}
           attribute's value can be found in the {@link #LibHotelsTheme} array.
 
 
@@ -7263,11 +7263,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:libHotelsColorTextPrimary
+          @attr name com.socialtravelguide.app:libHotelsColorTextPrimary
         */
         public static final int LibHotelsTheme_libHotelsColorTextPrimary = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#libHotelsColorTextSecondary}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#libHotelsColorTextSecondary}
           attribute's value can be found in the {@link #LibHotelsTheme} array.
 
 
@@ -7278,17 +7278,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:libHotelsColorTextSecondary
+          @attr name com.socialtravelguide.app:libHotelsColorTextSecondary
         */
         public static final int LibHotelsTheme_libHotelsColorTextSecondary = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#libHotelsDatePickerViewStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#libHotelsDatePickerViewStyle}
           attribute's value can be found in the {@link #LibHotelsTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:libHotelsDatePickerViewStyle
+          @attr name com.socialtravelguide.app:libHotelsDatePickerViewStyle
         */
         public static final int LibHotelsTheme_libHotelsDatePickerViewStyle = 4;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -7302,10 +7302,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider com.easytobook.app:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.easytobook.app:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.easytobook.app:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.easytobook.app:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.socialtravelguide.app:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.socialtravelguide.app:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.socialtravelguide.app:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.socialtravelguide.app:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -7353,17 +7353,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:divider
+          @attr name com.socialtravelguide.app:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7375,11 +7375,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:dividerPadding
+          @attr name com.socialtravelguide.app:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7389,11 +7389,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:measureWithLargestChild
+          @attr name com.socialtravelguide.app:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7408,7 +7408,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:showDividers
+          @attr name com.socialtravelguide.app:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -7487,9 +7487,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LoadingImageView_circleCrop com.easytobook.app:circleCrop}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.easytobook.app:imageAspectRatio}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.easytobook.app:imageAspectRatioAdjust}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_circleCrop com.socialtravelguide.app:circleCrop}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.socialtravelguide.app:imageAspectRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.socialtravelguide.app:imageAspectRatioAdjust}</code></td><td></td></tr>
            </table>
            @see #LoadingImageView_circleCrop
            @see #LoadingImageView_imageAspectRatio
@@ -7499,7 +7499,7 @@ containing a value of this type.
             0x7f01006e, 0x7f01006f, 0x7f010070
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#circleCrop}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#circleCrop}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -7509,11 +7509,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:circleCrop
+          @attr name com.socialtravelguide.app:circleCrop
         */
         public static final int LoadingImageView_circleCrop = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#imageAspectRatio}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#imageAspectRatio}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -7523,11 +7523,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:imageAspectRatio
+          @attr name com.socialtravelguide.app:imageAspectRatio
         */
         public static final int LoadingImageView_imageAspectRatio = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#imageAspectRatioAdjust}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#imageAspectRatioAdjust}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -7541,7 +7541,7 @@ containing a value of this type.
 <tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:imageAspectRatioAdjust
+          @attr name com.socialtravelguide.app:imageAspectRatioAdjust
         */
         public static final int LoadingImageView_imageAspectRatioAdjust = 0;
         /** Attributes that can be used with a MapAttrs.
@@ -7550,23 +7550,23 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_ambientEnabled com.easytobook.app:ambientEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing com.easytobook.app:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.easytobook.app:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.easytobook.app:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt com.easytobook.app:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom com.easytobook.app:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_liteMode com.easytobook.app:liteMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType com.easytobook.app:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass com.easytobook.app:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiMapToolbar com.easytobook.app:uiMapToolbar}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.easytobook.app:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.easytobook.app:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.easytobook.app:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls com.easytobook.app:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.easytobook.app:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.easytobook.app:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.easytobook.app:zOrderOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_ambientEnabled com.socialtravelguide.app:ambientEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing com.socialtravelguide.app:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.socialtravelguide.app:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.socialtravelguide.app:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt com.socialtravelguide.app:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom com.socialtravelguide.app:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_liteMode com.socialtravelguide.app:liteMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType com.socialtravelguide.app:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass com.socialtravelguide.app:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiMapToolbar com.socialtravelguide.app:uiMapToolbar}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.socialtravelguide.app:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.socialtravelguide.app:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.socialtravelguide.app:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls com.socialtravelguide.app:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.socialtravelguide.app:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.socialtravelguide.app:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.socialtravelguide.app:zOrderOnTop}</code></td><td></td></tr>
            </table>
            @see #MapAttrs_ambientEnabled
            @see #MapAttrs_cameraBearing
@@ -7594,7 +7594,7 @@ containing a value of this type.
             0x7f010081
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#ambientEnabled}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#ambientEnabled}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7604,11 +7604,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:ambientEnabled
+          @attr name com.socialtravelguide.app:ambientEnabled
         */
         public static final int MapAttrs_ambientEnabled = 16;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7618,11 +7618,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:cameraBearing
+          @attr name com.socialtravelguide.app:cameraBearing
         */
         public static final int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7632,11 +7632,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:cameraTargetLat
+          @attr name com.socialtravelguide.app:cameraTargetLat
         */
         public static final int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7646,11 +7646,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:cameraTargetLng
+          @attr name com.socialtravelguide.app:cameraTargetLng
         */
         public static final int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7660,11 +7660,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:cameraTilt
+          @attr name com.socialtravelguide.app:cameraTilt
         */
         public static final int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7674,11 +7674,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:cameraZoom
+          @attr name com.socialtravelguide.app:cameraZoom
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#liteMode}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#liteMode}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7688,11 +7688,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:liteMode
+          @attr name com.socialtravelguide.app:liteMode
         */
         public static final int MapAttrs_liteMode = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#mapType}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7708,11 +7708,11 @@ containing a value of this type.
 <tr><td><code>terrain</code></td><td>3</td><td></td></tr>
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:mapType
+          @attr name com.socialtravelguide.app:mapType
         */
         public static final int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7722,11 +7722,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:uiCompass
+          @attr name com.socialtravelguide.app:uiCompass
         */
         public static final int MapAttrs_uiCompass = 7;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#uiMapToolbar}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#uiMapToolbar}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7736,11 +7736,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:uiMapToolbar
+          @attr name com.socialtravelguide.app:uiMapToolbar
         */
         public static final int MapAttrs_uiMapToolbar = 15;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7750,11 +7750,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:uiRotateGestures
+          @attr name com.socialtravelguide.app:uiRotateGestures
         */
         public static final int MapAttrs_uiRotateGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7764,11 +7764,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:uiScrollGestures
+          @attr name com.socialtravelguide.app:uiScrollGestures
         */
         public static final int MapAttrs_uiScrollGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7778,11 +7778,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:uiTiltGestures
+          @attr name com.socialtravelguide.app:uiTiltGestures
         */
         public static final int MapAttrs_uiTiltGestures = 10;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7792,11 +7792,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:uiZoomControls
+          @attr name com.socialtravelguide.app:uiZoomControls
         */
         public static final int MapAttrs_uiZoomControls = 11;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7806,11 +7806,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:uiZoomGestures
+          @attr name com.socialtravelguide.app:uiZoomGestures
         */
         public static final int MapAttrs_uiZoomGestures = 12;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7820,11 +7820,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:useViewLifecycle
+          @attr name com.socialtravelguide.app:useViewLifecycle
         */
         public static final int MapAttrs_useViewLifecycle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7834,7 +7834,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:zOrderOnTop
+          @attr name com.socialtravelguide.app:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 14;
         /** Attributes that can be used with a MenuGroup.
@@ -7903,9 +7903,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout com.easytobook.app:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass com.easytobook.app:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass com.easytobook.app:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout com.socialtravelguide.app:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.socialtravelguide.app:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.socialtravelguide.app:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -7919,7 +7919,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction com.easytobook.app:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.socialtravelguide.app:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -7947,17 +7947,17 @@ containing a value of this type.
             0x7f010085
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionLayout
+          @attr name com.socialtravelguide.app:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7967,11 +7967,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:actionProviderClass
+          @attr name com.socialtravelguide.app:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7981,7 +7981,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:actionViewClass
+          @attr name com.socialtravelguide.app:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -8063,7 +8063,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8079,7 +8079,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:showAsAction
+          @attr name com.socialtravelguide.app:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -8095,7 +8095,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing com.easytobook.app:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.socialtravelguide.app:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -8153,7 +8153,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -8163,7 +8163,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:preserveIconSpacing
+          @attr name com.socialtravelguide.app:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a NavigationView.
@@ -8175,13 +8175,13 @@ containing a value of this type.
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation com.easytobook.app:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout com.easytobook.app:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground com.easytobook.app:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint com.easytobook.app:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance com.easytobook.app:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor com.easytobook.app:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu com.easytobook.app:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation com.socialtravelguide.app:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout com.socialtravelguide.app:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground com.socialtravelguide.app:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint com.socialtravelguide.app:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance com.socialtravelguide.app:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor com.socialtravelguide.app:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu com.socialtravelguide.app:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -8218,7 +8218,7 @@ containing a value of this type.
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8230,31 +8230,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:elevation
+          @attr name com.socialtravelguide.app:elevation
         */
         public static final int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:headerLayout
+          @attr name com.socialtravelguide.app:headerLayout
         */
         public static final int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:itemBackground
+          @attr name com.socialtravelguide.app:itemBackground
         */
         public static final int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8265,21 +8265,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:itemIconTint
+          @attr name com.socialtravelguide.app:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:itemTextAppearance
+          @attr name com.socialtravelguide.app:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8290,17 +8290,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:itemTextColor
+          @attr name com.socialtravelguide.app:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#menu}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:menu
+          @attr name com.socialtravelguide.app:menu
         */
         public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a NumberBoxView.
@@ -8309,10 +8309,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #NumberBoxView_numberBoxIcon com.easytobook.app:numberBoxIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberBoxView_numberBoxSubtitle com.easytobook.app:numberBoxSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberBoxView_numberBoxTitle com.easytobook.app:numberBoxTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberBoxView_numberBoxValue com.easytobook.app:numberBoxValue}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberBoxView_numberBoxIcon com.socialtravelguide.app:numberBoxIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberBoxView_numberBoxSubtitle com.socialtravelguide.app:numberBoxSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberBoxView_numberBoxTitle com.socialtravelguide.app:numberBoxTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberBoxView_numberBoxValue com.socialtravelguide.app:numberBoxValue}</code></td><td></td></tr>
            </table>
            @see #NumberBoxView_numberBoxIcon
            @see #NumberBoxView_numberBoxSubtitle
@@ -8323,17 +8323,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01008d, 0x7f01008e, 0x7f01008f, 0x7f010090
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#numberBoxIcon}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#numberBoxIcon}
           attribute's value can be found in the {@link #NumberBoxView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:numberBoxIcon
+          @attr name com.socialtravelguide.app:numberBoxIcon
         */
         public static final int NumberBoxView_numberBoxIcon = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#numberBoxSubtitle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#numberBoxSubtitle}
           attribute's value can be found in the {@link #NumberBoxView} array.
 
 
@@ -8343,11 +8343,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:numberBoxSubtitle
+          @attr name com.socialtravelguide.app:numberBoxSubtitle
         */
         public static final int NumberBoxView_numberBoxSubtitle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#numberBoxTitle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#numberBoxTitle}
           attribute's value can be found in the {@link #NumberBoxView} array.
 
 
@@ -8357,11 +8357,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:numberBoxTitle
+          @attr name com.socialtravelguide.app:numberBoxTitle
         */
         public static final int NumberBoxView_numberBoxTitle = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#numberBoxValue}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#numberBoxValue}
           attribute's value can be found in the {@link #NumberBoxView} array.
 
 
@@ -8371,7 +8371,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:numberBoxValue
+          @attr name com.socialtravelguide.app:numberBoxValue
         */
         public static final int NumberBoxView_numberBoxValue = 0;
         /** Attributes that can be used with a NumberPicker.
@@ -8380,8 +8380,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #NumberPicker_titleDrawable com.easytobook.app:titleDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberPicker_titleText com.easytobook.app:titleText}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberPicker_titleDrawable com.socialtravelguide.app:titleDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberPicker_titleText com.socialtravelguide.app:titleText}</code></td><td></td></tr>
            </table>
            @see #NumberPicker_titleDrawable
            @see #NumberPicker_titleText
@@ -8390,17 +8390,17 @@ containing a value of this type.
             0x7f010091, 0x7f010092
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#titleDrawable}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#titleDrawable}
           attribute's value can be found in the {@link #NumberPicker} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:titleDrawable
+          @attr name com.socialtravelguide.app:titleDrawable
         */
         public static final int NumberPicker_titleDrawable = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#titleText}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#titleText}
           attribute's value can be found in the {@link #NumberPicker} array.
 
 
@@ -8410,7 +8410,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:titleText
+          @attr name com.socialtravelguide.app:titleText
         */
         public static final int NumberPicker_titleText = 1;
         /** Attributes that can be used with a ParallaxScroll.
@@ -8419,11 +8419,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ParallaxScroll_alpha_factor com.easytobook.app:alpha_factor}</code></td><td></td></tr>
-           <tr><td><code>{@link #ParallaxScroll_circular_parallax com.easytobook.app:circular_parallax}</code></td><td></td></tr>
-           <tr><td><code>{@link #ParallaxScroll_inner_parallax_factor com.easytobook.app:inner_parallax_factor}</code></td><td></td></tr>
-           <tr><td><code>{@link #ParallaxScroll_parallax_factor com.easytobook.app:parallax_factor}</code></td><td></td></tr>
-           <tr><td><code>{@link #ParallaxScroll_parallax_views_num com.easytobook.app:parallax_views_num}</code></td><td></td></tr>
+           <tr><td><code>{@link #ParallaxScroll_alpha_factor com.socialtravelguide.app:alpha_factor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ParallaxScroll_circular_parallax com.socialtravelguide.app:circular_parallax}</code></td><td></td></tr>
+           <tr><td><code>{@link #ParallaxScroll_inner_parallax_factor com.socialtravelguide.app:inner_parallax_factor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ParallaxScroll_parallax_factor com.socialtravelguide.app:parallax_factor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ParallaxScroll_parallax_views_num com.socialtravelguide.app:parallax_views_num}</code></td><td></td></tr>
            </table>
            @see #ParallaxScroll_alpha_factor
            @see #ParallaxScroll_circular_parallax
@@ -8436,7 +8436,7 @@ containing a value of this type.
             0x7f010097
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#alpha_factor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#alpha_factor}
           attribute's value can be found in the {@link #ParallaxScroll} array.
 
 
@@ -8446,11 +8446,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:alpha_factor
+          @attr name com.socialtravelguide.app:alpha_factor
         */
         public static final int ParallaxScroll_alpha_factor = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#circular_parallax}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#circular_parallax}
           attribute's value can be found in the {@link #ParallaxScroll} array.
 
 
@@ -8460,11 +8460,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:circular_parallax
+          @attr name com.socialtravelguide.app:circular_parallax
         */
         public static final int ParallaxScroll_circular_parallax = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#inner_parallax_factor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#inner_parallax_factor}
           attribute's value can be found in the {@link #ParallaxScroll} array.
 
 
@@ -8474,11 +8474,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:inner_parallax_factor
+          @attr name com.socialtravelguide.app:inner_parallax_factor
         */
         public static final int ParallaxScroll_inner_parallax_factor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#parallax_factor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#parallax_factor}
           attribute's value can be found in the {@link #ParallaxScroll} array.
 
 
@@ -8488,11 +8488,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:parallax_factor
+          @attr name com.socialtravelguide.app:parallax_factor
         */
         public static final int ParallaxScroll_parallax_factor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#parallax_views_num}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#parallax_views_num}
           attribute's value can be found in the {@link #ParallaxScroll} array.
 
 
@@ -8502,7 +8502,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:parallax_views_num
+          @attr name com.socialtravelguide.app:parallax_views_num
         */
         public static final int ParallaxScroll_parallax_views_num = 3;
         /** Attributes that can be used with a PopupWindow.
@@ -8512,7 +8512,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor com.easytobook.app:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.socialtravelguide.app:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -8527,7 +8527,7 @@ containing a value of this type.
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -8537,7 +8537,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:overlapAnchor
+          @attr name com.socialtravelguide.app:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -8546,7 +8546,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.easytobook.app:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.socialtravelguide.app:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -8554,7 +8554,7 @@ containing a value of this type.
             0x7f010099
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -8564,7 +8564,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:state_above_anchor
+          @attr name com.socialtravelguide.app:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RangeBar.
@@ -8573,26 +8573,26 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #RangeBar_barWeight com.easytobook.app:barWeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_connectingLineColor com.easytobook.app:connectingLineColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_connectingLineWeight com.easytobook.app:connectingLineWeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_pinColor com.easytobook.app:pinColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_pinMaxFont com.easytobook.app:pinMaxFont}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_pinMinFont com.easytobook.app:pinMinFont}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_pinPadding com.easytobook.app:pinPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_pinRadius com.easytobook.app:pinRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_rangeBar com.easytobook.app:rangeBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_rangeBarColor com.easytobook.app:rangeBarColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_rangeBarPaddingBottom com.easytobook.app:rangeBarPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_selectorColor com.easytobook.app:selectorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_selectorSize com.easytobook.app:selectorSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_temporaryPins com.easytobook.app:temporaryPins}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_textColor com.easytobook.app:textColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_tickColor com.easytobook.app:tickColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_tickEnd com.easytobook.app:tickEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_tickHeight com.easytobook.app:tickHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_tickInterval com.easytobook.app:tickInterval}</code></td><td></td></tr>
-           <tr><td><code>{@link #RangeBar_tickStart com.easytobook.app:tickStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_barWeight com.socialtravelguide.app:barWeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_connectingLineColor com.socialtravelguide.app:connectingLineColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_connectingLineWeight com.socialtravelguide.app:connectingLineWeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_pinColor com.socialtravelguide.app:pinColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_pinMaxFont com.socialtravelguide.app:pinMaxFont}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_pinMinFont com.socialtravelguide.app:pinMinFont}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_pinPadding com.socialtravelguide.app:pinPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_pinRadius com.socialtravelguide.app:pinRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_rangeBar com.socialtravelguide.app:rangeBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_rangeBarColor com.socialtravelguide.app:rangeBarColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_rangeBarPaddingBottom com.socialtravelguide.app:rangeBarPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_selectorColor com.socialtravelguide.app:selectorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_selectorSize com.socialtravelguide.app:selectorSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_temporaryPins com.socialtravelguide.app:temporaryPins}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_textColor com.socialtravelguide.app:textColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_tickColor com.socialtravelguide.app:tickColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_tickEnd com.socialtravelguide.app:tickEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_tickHeight com.socialtravelguide.app:tickHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_tickInterval com.socialtravelguide.app:tickInterval}</code></td><td></td></tr>
+           <tr><td><code>{@link #RangeBar_tickStart com.socialtravelguide.app:tickStart}</code></td><td></td></tr>
            </table>
            @see #RangeBar_barWeight
            @see #RangeBar_connectingLineColor
@@ -8623,7 +8623,7 @@ containing a value of this type.
             0x7f0100aa, 0x7f0100ab, 0x7f0100ac, 0x7f0100ad
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#barWeight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#barWeight}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8635,11 +8635,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:barWeight
+          @attr name com.socialtravelguide.app:barWeight
         */
         public static final int RangeBar_barWeight = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#connectingLineColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#connectingLineColor}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8647,11 +8647,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:connectingLineColor
+          @attr name com.socialtravelguide.app:connectingLineColor
         */
         public static final int RangeBar_connectingLineColor = 18;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#connectingLineWeight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#connectingLineWeight}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8663,11 +8663,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:connectingLineWeight
+          @attr name com.socialtravelguide.app:connectingLineWeight
         */
         public static final int RangeBar_connectingLineWeight = 17;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#pinColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#pinColor}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8675,11 +8675,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:pinColor
+          @attr name com.socialtravelguide.app:pinColor
         */
         public static final int RangeBar_pinColor = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#pinMaxFont}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#pinMaxFont}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8691,11 +8691,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:pinMaxFont
+          @attr name com.socialtravelguide.app:pinMaxFont
         */
         public static final int RangeBar_pinMaxFont = 12;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#pinMinFont}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#pinMinFont}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8707,11 +8707,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:pinMinFont
+          @attr name com.socialtravelguide.app:pinMinFont
         */
         public static final int RangeBar_pinMinFont = 11;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#pinPadding}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#pinPadding}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8723,11 +8723,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:pinPadding
+          @attr name com.socialtravelguide.app:pinPadding
         */
         public static final int RangeBar_pinPadding = 10;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#pinRadius}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#pinRadius}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8739,11 +8739,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:pinRadius
+          @attr name com.socialtravelguide.app:pinRadius
         */
         public static final int RangeBar_pinRadius = 19;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#rangeBar}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#rangeBar}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8753,11 +8753,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:rangeBar
+          @attr name com.socialtravelguide.app:rangeBar
         */
         public static final int RangeBar_rangeBar = 15;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#rangeBarColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#rangeBarColor}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8765,11 +8765,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:rangeBarColor
+          @attr name com.socialtravelguide.app:rangeBarColor
         */
         public static final int RangeBar_rangeBarColor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#rangeBarPaddingBottom}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#rangeBarPaddingBottom}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8781,11 +8781,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:rangeBarPaddingBottom
+          @attr name com.socialtravelguide.app:rangeBarPaddingBottom
         */
         public static final int RangeBar_rangeBarPaddingBottom = 13;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#selectorColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#selectorColor}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8793,11 +8793,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:selectorColor
+          @attr name com.socialtravelguide.app:selectorColor
         */
         public static final int RangeBar_selectorColor = 14;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#selectorSize}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#selectorSize}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8809,11 +8809,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:selectorSize
+          @attr name com.socialtravelguide.app:selectorSize
         */
         public static final int RangeBar_selectorSize = 9;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#temporaryPins}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#temporaryPins}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8823,11 +8823,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:temporaryPins
+          @attr name com.socialtravelguide.app:temporaryPins
         */
         public static final int RangeBar_temporaryPins = 16;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#textColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#textColor}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8835,11 +8835,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:textColor
+          @attr name com.socialtravelguide.app:textColor
         */
         public static final int RangeBar_textColor = 7;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tickColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tickColor}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8850,11 +8850,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tickColor
+          @attr name com.socialtravelguide.app:tickColor
         */
         public static final int RangeBar_tickColor = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tickEnd}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tickEnd}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8864,11 +8864,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tickEnd
+          @attr name com.socialtravelguide.app:tickEnd
         */
         public static final int RangeBar_tickEnd = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tickHeight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tickHeight}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8880,11 +8880,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tickHeight
+          @attr name com.socialtravelguide.app:tickHeight
         */
         public static final int RangeBar_tickHeight = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tickInterval}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tickInterval}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8894,11 +8894,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tickInterval
+          @attr name com.socialtravelguide.app:tickInterval
         */
         public static final int RangeBar_tickInterval = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tickStart}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tickStart}
           attribute's value can be found in the {@link #RangeBar} array.
 
 
@@ -8908,7 +8908,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tickStart
+          @attr name com.socialtravelguide.app:tickStart
         */
         public static final int RangeBar_tickStart = 0;
         /** Attributes that can be used with a RecyclerView.
@@ -8918,10 +8918,10 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager com.easytobook.app:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout com.easytobook.app:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount com.easytobook.app:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd com.easytobook.app:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager com.socialtravelguide.app:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout com.socialtravelguide.app:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount com.socialtravelguide.app:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd com.socialtravelguide.app:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_orientation
            @see #RecyclerView_layoutManager
@@ -8940,7 +8940,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8950,11 +8950,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:layoutManager
+          @attr name com.socialtravelguide.app:layoutManager
         */
         public static final int RecyclerView_layoutManager = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8964,11 +8964,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:reverseLayout
+          @attr name com.socialtravelguide.app:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8978,11 +8978,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:spanCount
+          @attr name com.socialtravelguide.app:spanCount
         */
         public static final int RecyclerView_spanCount = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8992,7 +8992,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:stackFromEnd
+          @attr name com.socialtravelguide.app:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 4;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -9001,7 +9001,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.easytobook.app:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.socialtravelguide.app:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -9009,7 +9009,7 @@ containing a value of this type.
             0x7f0100b2
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -9017,7 +9017,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:insetForeground
+          @attr name com.socialtravelguide.app:insetForeground
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Params.
@@ -9026,7 +9026,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop com.easytobook.app:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop com.socialtravelguide.app:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Params_behavior_overlapTop
          */
@@ -9034,7 +9034,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100b3
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Params} array.
 
 
@@ -9046,7 +9046,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:behavior_overlapTop
+          @attr name com.socialtravelguide.app:behavior_overlapTop
         */
         public static final int ScrollingViewBehavior_Params_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -9059,19 +9059,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon com.easytobook.app:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon com.easytobook.app:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint com.easytobook.app:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon com.easytobook.app:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault com.easytobook.app:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout com.easytobook.app:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground com.easytobook.app:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint com.easytobook.app:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon com.easytobook.app:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon com.easytobook.app:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground com.easytobook.app:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout com.easytobook.app:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon com.easytobook.app:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon com.socialtravelguide.app:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.socialtravelguide.app:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint com.socialtravelguide.app:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.socialtravelguide.app:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.socialtravelguide.app:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout com.socialtravelguide.app:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.socialtravelguide.app:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.socialtravelguide.app:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon com.socialtravelguide.app:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.socialtravelguide.app:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.socialtravelguide.app:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.socialtravelguide.app:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.socialtravelguide.app:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -9123,27 +9123,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:closeIcon
+          @attr name com.socialtravelguide.app:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:commitIcon
+          @attr name com.socialtravelguide.app:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9153,21 +9153,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:defaultQueryHint
+          @attr name com.socialtravelguide.app:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:goIcon
+          @attr name com.socialtravelguide.app:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9177,31 +9177,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:iconifiedByDefault
+          @attr name com.socialtravelguide.app:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#layout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:layout
+          @attr name com.socialtravelguide.app:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:queryBackground
+          @attr name com.socialtravelguide.app:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9211,57 +9211,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:queryHint
+          @attr name com.socialtravelguide.app:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:searchHintIcon
+          @attr name com.socialtravelguide.app:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:searchIcon
+          @attr name com.socialtravelguide.app:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:submitBackground
+          @attr name com.socialtravelguide.app:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:suggestionRowLayout
+          @attr name com.socialtravelguide.app:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:voiceIcon
+          @attr name com.socialtravelguide.app:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SelectedDayView.
@@ -9289,9 +9289,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SignInButton_buttonSize com.easytobook.app:buttonSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #SignInButton_colorScheme com.easytobook.app:colorScheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #SignInButton_scopeUris com.easytobook.app:scopeUris}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_buttonSize com.socialtravelguide.app:buttonSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_colorScheme com.socialtravelguide.app:colorScheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_scopeUris com.socialtravelguide.app:scopeUris}</code></td><td></td></tr>
            </table>
            @see #SignInButton_buttonSize
            @see #SignInButton_colorScheme
@@ -9301,7 +9301,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100c1, 0x7f0100c2, 0x7f0100c3
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#buttonSize}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#buttonSize}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -9317,11 +9317,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>wide</code></td><td>1</td><td></td></tr>
 <tr><td><code>icon_only</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:buttonSize
+          @attr name com.socialtravelguide.app:buttonSize
         */
         public static final int SignInButton_buttonSize = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#colorScheme}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#colorScheme}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -9337,18 +9337,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>light</code></td><td>1</td><td></td></tr>
 <tr><td><code>auto</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:colorScheme
+          @attr name com.socialtravelguide.app:colorScheme
         */
         public static final int SignInButton_colorScheme = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#scopeUris}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#scopeUris}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-          @attr name com.easytobook.app:scopeUris
+          @attr name com.socialtravelguide.app:scopeUris
         */
         public static final int SignInButton_scopeUris = 2;
         /** Attributes that can be used with a SnackbarLayout.
@@ -9358,8 +9358,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation com.easytobook.app:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.easytobook.app:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation com.socialtravelguide.app:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.socialtravelguide.app:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -9375,7 +9375,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -9387,11 +9387,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:elevation
+          @attr name com.socialtravelguide.app:elevation
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -9403,7 +9403,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:maxActionInlineWidth
+          @attr name com.socialtravelguide.app:maxActionInlineWidth
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -9415,7 +9415,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme com.easytobook.app:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme com.socialtravelguide.app:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_popupBackground
@@ -9444,13 +9444,13 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:popupTheme
+          @attr name com.socialtravelguide.app:popupTheme
         */
         public static final int Spinner_popupTheme = 3;
         /** Attributes that can be used with a SwitchCompat.
@@ -9462,13 +9462,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText com.easytobook.app:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack com.easytobook.app:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.easytobook.app:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding com.easytobook.app:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.easytobook.app:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.easytobook.app:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track com.easytobook.app:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText com.socialtravelguide.app:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.socialtravelguide.app:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.socialtravelguide.app:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.socialtravelguide.app:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.socialtravelguide.app:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.socialtravelguide.app:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.socialtravelguide.app:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -9505,7 +9505,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#showText}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9515,11 +9515,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:showText
+          @attr name com.socialtravelguide.app:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9529,11 +9529,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:splitTrack
+          @attr name com.socialtravelguide.app:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9545,11 +9545,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:switchMinWidth
+          @attr name com.socialtravelguide.app:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9561,21 +9561,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:switchPadding
+          @attr name com.socialtravelguide.app:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:switchTextAppearance
+          @attr name com.socialtravelguide.app:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9587,17 +9587,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:thumbTextPadding
+          @attr name com.socialtravelguide.app:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#track}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:track
+          @attr name com.socialtravelguide.app:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a TabLayout.
@@ -9606,22 +9606,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground com.easytobook.app:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart com.easytobook.app:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity com.easytobook.app:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor com.easytobook.app:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.easytobook.app:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth com.easytobook.app:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth com.easytobook.app:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode com.easytobook.app:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding com.easytobook.app:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom com.easytobook.app:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd com.easytobook.app:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart com.easytobook.app:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop com.easytobook.app:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.easytobook.app:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance com.easytobook.app:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor com.easytobook.app:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground com.socialtravelguide.app:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart com.socialtravelguide.app:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity com.socialtravelguide.app:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor com.socialtravelguide.app:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.socialtravelguide.app:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth com.socialtravelguide.app:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth com.socialtravelguide.app:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode com.socialtravelguide.app:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding com.socialtravelguide.app:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom com.socialtravelguide.app:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd com.socialtravelguide.app:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart com.socialtravelguide.app:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop com.socialtravelguide.app:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.socialtravelguide.app:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance com.socialtravelguide.app:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor com.socialtravelguide.app:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -9647,17 +9647,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100d8, 0x7f0100d9, 0x7f0100da, 0x7f0100db
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:tabBackground
+          @attr name com.socialtravelguide.app:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9669,11 +9669,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tabContentStart
+          @attr name com.socialtravelguide.app:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9686,11 +9686,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:tabGravity
+          @attr name com.socialtravelguide.app:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9701,11 +9701,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tabIndicatorColor
+          @attr name com.socialtravelguide.app:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9717,11 +9717,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tabIndicatorHeight
+          @attr name com.socialtravelguide.app:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9733,11 +9733,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tabMaxWidth
+          @attr name com.socialtravelguide.app:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9749,11 +9749,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tabMinWidth
+          @attr name com.socialtravelguide.app:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9766,11 +9766,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:tabMode
+          @attr name com.socialtravelguide.app:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9782,11 +9782,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tabPadding
+          @attr name com.socialtravelguide.app:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9798,11 +9798,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tabPaddingBottom
+          @attr name com.socialtravelguide.app:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9814,11 +9814,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tabPaddingEnd
+          @attr name com.socialtravelguide.app:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9830,11 +9830,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tabPaddingStart
+          @attr name com.socialtravelguide.app:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9846,11 +9846,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tabPaddingTop
+          @attr name com.socialtravelguide.app:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9861,21 +9861,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tabSelectedTextColor
+          @attr name com.socialtravelguide.app:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:tabTextAppearance
+          @attr name com.socialtravelguide.app:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9886,7 +9886,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:tabTextColor
+          @attr name com.socialtravelguide.app:tabTextColor
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -9903,7 +9903,7 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps com.easytobook.app:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps com.socialtravelguide.app:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_shadowColor
            @see #TextAppearance_android_shadowDx
@@ -9969,14 +9969,14 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.easytobook.app:textAllCaps
+          @attr name com.socialtravelguide.app:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 8;
         /** Attributes that can be used with a TextInputLayout.
@@ -9987,14 +9987,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled com.easytobook.app:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength com.easytobook.app:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.easytobook.app:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.easytobook.app:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled com.easytobook.app:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.easytobook.app:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.easytobook.app:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.easytobook.app:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled com.socialtravelguide.app:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength com.socialtravelguide.app:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.socialtravelguide.app:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.socialtravelguide.app:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled com.socialtravelguide.app:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.socialtravelguide.app:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.socialtravelguide.app:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.socialtravelguide.app:hintTextAppearance}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -10025,7 +10025,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10035,11 +10035,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:counterEnabled
+          @attr name com.socialtravelguide.app:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10049,31 +10049,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:counterMaxLength
+          @attr name com.socialtravelguide.app:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:counterOverflowTextAppearance
+          @attr name com.socialtravelguide.app:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:counterTextAppearance
+          @attr name com.socialtravelguide.app:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10083,21 +10083,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:errorEnabled
+          @attr name com.socialtravelguide.app:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:errorTextAppearance
+          @attr name com.socialtravelguide.app:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10107,17 +10107,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:hintAnimationEnabled
+          @attr name com.socialtravelguide.app:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 9;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:hintTextAppearance
+          @attr name com.socialtravelguide.app:hintTextAppearance
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /** Attributes that can be used with a Theme.
@@ -10126,116 +10126,116 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider com.easytobook.app:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground com.easytobook.app:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme com.easytobook.app:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize com.easytobook.app:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle com.easytobook.app:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle com.easytobook.app:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.easytobook.app:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle com.easytobook.app:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.easytobook.app:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme com.easytobook.app:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.easytobook.app:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle com.easytobook.app:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle com.easytobook.app:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.easytobook.app:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor com.easytobook.app:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground com.easytobook.app:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.easytobook.app:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.easytobook.app:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.easytobook.app:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable com.easytobook.app:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable com.easytobook.app:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable com.easytobook.app:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.easytobook.app:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.easytobook.app:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable com.easytobook.app:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground com.easytobook.app:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeStyle com.easytobook.app:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.easytobook.app:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.easytobook.app:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.easytobook.app:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle com.easytobook.app:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle com.easytobook.app:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogCenterButtons com.easytobook.app:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogStyle com.easytobook.app:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogTheme com.easytobook.app:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider com.socialtravelguide.app:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground com.socialtravelguide.app:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme com.socialtravelguide.app:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize com.socialtravelguide.app:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle com.socialtravelguide.app:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle com.socialtravelguide.app:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.socialtravelguide.app:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle com.socialtravelguide.app:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.socialtravelguide.app:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme com.socialtravelguide.app:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.socialtravelguide.app:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle com.socialtravelguide.app:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle com.socialtravelguide.app:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.socialtravelguide.app:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor com.socialtravelguide.app:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground com.socialtravelguide.app:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.socialtravelguide.app:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.socialtravelguide.app:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.socialtravelguide.app:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable com.socialtravelguide.app:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable com.socialtravelguide.app:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable com.socialtravelguide.app:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.socialtravelguide.app:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.socialtravelguide.app:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable com.socialtravelguide.app:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground com.socialtravelguide.app:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle com.socialtravelguide.app:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.socialtravelguide.app:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.socialtravelguide.app:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.socialtravelguide.app:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle com.socialtravelguide.app:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle com.socialtravelguide.app:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogCenterButtons com.socialtravelguide.app:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogStyle com.socialtravelguide.app:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogTheme com.socialtravelguide.app:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle com.easytobook.app:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_borderlessButtonStyle com.easytobook.app:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.easytobook.app:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle com.easytobook.app:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle com.easytobook.app:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle com.easytobook.app:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle com.easytobook.app:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonStyle com.easytobook.app:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonStyleSmall com.easytobook.app:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_checkboxStyle com.easytobook.app:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_checkedTextViewStyle com.easytobook.app:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorAccent com.easytobook.app:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal com.easytobook.app:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated com.easytobook.app:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight com.easytobook.app:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal com.easytobook.app:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary com.easytobook.app:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark com.easytobook.app:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.easytobook.app:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_controlBackground com.easytobook.app:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dialogPreferredPadding com.easytobook.app:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dialogTheme com.easytobook.app:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal com.easytobook.app:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical com.easytobook.app:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle com.easytobook.app:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.easytobook.app:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground com.easytobook.app:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextColor com.easytobook.app:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextStyle com.easytobook.app:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator com.easytobook.app:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_imageButtonStyle com.easytobook.app:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.easytobook.app:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listDividerAlertDialog com.easytobook.app:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPopupWindowStyle com.easytobook.app:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight com.easytobook.app:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.easytobook.app:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.easytobook.app:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.easytobook.app:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.easytobook.app:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelBackground com.easytobook.app:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme com.easytobook.app:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth com.easytobook.app:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle com.easytobook.app:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle com.easytobook.app:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_radioButtonStyle com.easytobook.app:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_ratingBarStyle com.easytobook.app:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle com.easytobook.app:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_seekBarStyle com.easytobook.app:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground com.easytobook.app:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.easytobook.app:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.easytobook.app:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle com.easytobook.app:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_switchStyle com.easytobook.app:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.easytobook.app:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem com.easytobook.app:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.easytobook.app:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.easytobook.app:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.easytobook.app:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.easytobook.app:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorAlertDialogListItem com.easytobook.app:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl com.easytobook.app:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.easytobook.app:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle com.easytobook.app:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar com.easytobook.app:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay com.easytobook.app:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay com.easytobook.app:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.easytobook.app:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.easytobook.app:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.easytobook.app:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.easytobook.app:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowMinWidthMajor com.easytobook.app:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowMinWidthMinor com.easytobook.app:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowNoTitle com.easytobook.app:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle com.socialtravelguide.app:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_borderlessButtonStyle com.socialtravelguide.app:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.socialtravelguide.app:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle com.socialtravelguide.app:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle com.socialtravelguide.app:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle com.socialtravelguide.app:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle com.socialtravelguide.app:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonStyle com.socialtravelguide.app:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonStyleSmall com.socialtravelguide.app:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_checkboxStyle com.socialtravelguide.app:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_checkedTextViewStyle com.socialtravelguide.app:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorAccent com.socialtravelguide.app:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal com.socialtravelguide.app:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated com.socialtravelguide.app:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight com.socialtravelguide.app:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal com.socialtravelguide.app:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary com.socialtravelguide.app:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark com.socialtravelguide.app:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.socialtravelguide.app:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_controlBackground com.socialtravelguide.app:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dialogPreferredPadding com.socialtravelguide.app:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dialogTheme com.socialtravelguide.app:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal com.socialtravelguide.app:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical com.socialtravelguide.app:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle com.socialtravelguide.app:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.socialtravelguide.app:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground com.socialtravelguide.app:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextColor com.socialtravelguide.app:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextStyle com.socialtravelguide.app:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator com.socialtravelguide.app:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_imageButtonStyle com.socialtravelguide.app:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.socialtravelguide.app:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listDividerAlertDialog com.socialtravelguide.app:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle com.socialtravelguide.app:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight com.socialtravelguide.app:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.socialtravelguide.app:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.socialtravelguide.app:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.socialtravelguide.app:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.socialtravelguide.app:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelBackground com.socialtravelguide.app:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme com.socialtravelguide.app:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth com.socialtravelguide.app:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle com.socialtravelguide.app:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle com.socialtravelguide.app:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_radioButtonStyle com.socialtravelguide.app:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_ratingBarStyle com.socialtravelguide.app:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle com.socialtravelguide.app:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_seekBarStyle com.socialtravelguide.app:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground com.socialtravelguide.app:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.socialtravelguide.app:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.socialtravelguide.app:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle com.socialtravelguide.app:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_switchStyle com.socialtravelguide.app:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.socialtravelguide.app:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem com.socialtravelguide.app:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.socialtravelguide.app:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.socialtravelguide.app:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.socialtravelguide.app:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.socialtravelguide.app:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorAlertDialogListItem com.socialtravelguide.app:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl com.socialtravelguide.app:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.socialtravelguide.app:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle com.socialtravelguide.app:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar com.socialtravelguide.app:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay com.socialtravelguide.app:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay com.socialtravelguide.app:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.socialtravelguide.app:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.socialtravelguide.app:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.socialtravelguide.app:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.socialtravelguide.app:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMajor com.socialtravelguide.app:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMinor com.socialtravelguide.app:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowNoTitle com.socialtravelguide.app:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #Theme_actionBarDivider
            @see #Theme_actionBarItemBackground
@@ -10379,37 +10379,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01014e, 0x7f01014f
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionBarDivider
+          @attr name com.socialtravelguide.app:actionBarDivider
         */
         public static final int Theme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionBarItemBackground
+          @attr name com.socialtravelguide.app:actionBarItemBackground
         */
         public static final int Theme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionBarPopupTheme
+          @attr name com.socialtravelguide.app:actionBarPopupTheme
         */
         public static final int Theme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10429,111 +10429,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:actionBarSize
+          @attr name com.socialtravelguide.app:actionBarSize
         */
         public static final int Theme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionBarSplitStyle
+          @attr name com.socialtravelguide.app:actionBarSplitStyle
         */
         public static final int Theme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionBarStyle
+          @attr name com.socialtravelguide.app:actionBarStyle
         */
         public static final int Theme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionBarTabBarStyle
+          @attr name com.socialtravelguide.app:actionBarTabBarStyle
         */
         public static final int Theme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionBarTabStyle
+          @attr name com.socialtravelguide.app:actionBarTabStyle
         */
         public static final int Theme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionBarTabTextStyle
+          @attr name com.socialtravelguide.app:actionBarTabTextStyle
         */
         public static final int Theme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionBarTheme
+          @attr name com.socialtravelguide.app:actionBarTheme
         */
         public static final int Theme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionBarWidgetTheme
+          @attr name com.socialtravelguide.app:actionBarWidgetTheme
         */
         public static final int Theme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionButtonStyle
+          @attr name com.socialtravelguide.app:actionButtonStyle
         */
         public static final int Theme_actionButtonStyle = 49;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionDropDownStyle
+          @attr name com.socialtravelguide.app:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionMenuTextAppearance
+          @attr name com.socialtravelguide.app:actionMenuTextAppearance
         */
         public static final int Theme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10541,181 +10541,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:actionMenuTextColor
+          @attr name com.socialtravelguide.app:actionMenuTextColor
         */
         public static final int Theme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModeBackground
+          @attr name com.socialtravelguide.app:actionModeBackground
         */
         public static final int Theme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModeCloseButtonStyle
+          @attr name com.socialtravelguide.app:actionModeCloseButtonStyle
         */
         public static final int Theme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModeCloseDrawable
+          @attr name com.socialtravelguide.app:actionModeCloseDrawable
         */
         public static final int Theme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModeCopyDrawable
+          @attr name com.socialtravelguide.app:actionModeCopyDrawable
         */
         public static final int Theme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModeCutDrawable
+          @attr name com.socialtravelguide.app:actionModeCutDrawable
         */
         public static final int Theme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModeFindDrawable
+          @attr name com.socialtravelguide.app:actionModeFindDrawable
         */
         public static final int Theme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModePasteDrawable
+          @attr name com.socialtravelguide.app:actionModePasteDrawable
         */
         public static final int Theme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModePopupWindowStyle
+          @attr name com.socialtravelguide.app:actionModePopupWindowStyle
         */
         public static final int Theme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModeSelectAllDrawable
+          @attr name com.socialtravelguide.app:actionModeSelectAllDrawable
         */
         public static final int Theme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModeShareDrawable
+          @attr name com.socialtravelguide.app:actionModeShareDrawable
         */
         public static final int Theme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModeSplitBackground
+          @attr name com.socialtravelguide.app:actionModeSplitBackground
         */
         public static final int Theme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModeStyle
+          @attr name com.socialtravelguide.app:actionModeStyle
         */
         public static final int Theme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionModeWebSearchDrawable
+          @attr name com.socialtravelguide.app:actionModeWebSearchDrawable
         */
         public static final int Theme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionOverflowButtonStyle
+          @attr name com.socialtravelguide.app:actionOverflowButtonStyle
         */
         public static final int Theme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:actionOverflowMenuStyle
+          @attr name com.socialtravelguide.app:actionOverflowMenuStyle
         */
         public static final int Theme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:activityChooserViewStyle
+          @attr name com.socialtravelguide.app:activityChooserViewStyle
         */
         public static final int Theme_activityChooserViewStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:alertDialogButtonGroupStyle
+          @attr name com.socialtravelguide.app:alertDialogButtonGroupStyle
         */
         public static final int Theme_alertDialogButtonGroupStyle = 92;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10725,27 +10725,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:alertDialogCenterButtons
+          @attr name com.socialtravelguide.app:alertDialogCenterButtons
         */
         public static final int Theme_alertDialogCenterButtons = 93;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:alertDialogStyle
+          @attr name com.socialtravelguide.app:alertDialogStyle
         */
         public static final int Theme_alertDialogStyle = 91;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:alertDialogTheme
+          @attr name com.socialtravelguide.app:alertDialogTheme
         */
         public static final int Theme_alertDialogTheme = 94;
         /**
@@ -10761,117 +10761,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:autoCompleteTextViewStyle
+          @attr name com.socialtravelguide.app:autoCompleteTextViewStyle
         */
         public static final int Theme_autoCompleteTextViewStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:borderlessButtonStyle
+          @attr name com.socialtravelguide.app:borderlessButtonStyle
         */
         public static final int Theme_borderlessButtonStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:buttonBarButtonStyle
+          @attr name com.socialtravelguide.app:buttonBarButtonStyle
         */
         public static final int Theme_buttonBarButtonStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:buttonBarNegativeButtonStyle
+          @attr name com.socialtravelguide.app:buttonBarNegativeButtonStyle
         */
         public static final int Theme_buttonBarNegativeButtonStyle = 97;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:buttonBarNeutralButtonStyle
+          @attr name com.socialtravelguide.app:buttonBarNeutralButtonStyle
         */
         public static final int Theme_buttonBarNeutralButtonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:buttonBarPositiveButtonStyle
+          @attr name com.socialtravelguide.app:buttonBarPositiveButtonStyle
         */
         public static final int Theme_buttonBarPositiveButtonStyle = 96;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:buttonBarStyle
+          @attr name com.socialtravelguide.app:buttonBarStyle
         */
         public static final int Theme_buttonBarStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#buttonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:buttonStyle
+          @attr name com.socialtravelguide.app:buttonStyle
         */
         public static final int Theme_buttonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:buttonStyleSmall
+          @attr name com.socialtravelguide.app:buttonStyleSmall
         */
         public static final int Theme_buttonStyleSmall = 101;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:checkboxStyle
+          @attr name com.socialtravelguide.app:checkboxStyle
         */
         public static final int Theme_checkboxStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:checkedTextViewStyle
+          @attr name com.socialtravelguide.app:checkedTextViewStyle
         */
         public static final int Theme_checkedTextViewStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10882,11 +10882,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:colorAccent
+          @attr name com.socialtravelguide.app:colorAccent
         */
         public static final int Theme_colorAccent = 84;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10897,11 +10897,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:colorButtonNormal
+          @attr name com.socialtravelguide.app:colorButtonNormal
         */
         public static final int Theme_colorButtonNormal = 88;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10912,11 +10912,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:colorControlActivated
+          @attr name com.socialtravelguide.app:colorControlActivated
         */
         public static final int Theme_colorControlActivated = 86;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10927,11 +10927,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:colorControlHighlight
+          @attr name com.socialtravelguide.app:colorControlHighlight
         */
         public static final int Theme_colorControlHighlight = 87;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10942,11 +10942,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:colorControlNormal
+          @attr name com.socialtravelguide.app:colorControlNormal
         */
         public static final int Theme_colorControlNormal = 85;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10957,11 +10957,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:colorPrimary
+          @attr name com.socialtravelguide.app:colorPrimary
         */
         public static final int Theme_colorPrimary = 82;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10972,11 +10972,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:colorPrimaryDark
+          @attr name com.socialtravelguide.app:colorPrimaryDark
         */
         public static final int Theme_colorPrimaryDark = 83;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -10987,21 +10987,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:colorSwitchThumbNormal
+          @attr name com.socialtravelguide.app:colorSwitchThumbNormal
         */
         public static final int Theme_colorSwitchThumbNormal = 89;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#controlBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:controlBackground
+          @attr name com.socialtravelguide.app:controlBackground
         */
         public static final int Theme_controlBackground = 90;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11013,51 +11013,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:dialogPreferredPadding
+          @attr name com.socialtravelguide.app:dialogPreferredPadding
         */
         public static final int Theme_dialogPreferredPadding = 43;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#dialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:dialogTheme
+          @attr name com.socialtravelguide.app:dialogTheme
         */
         public static final int Theme_dialogTheme = 42;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:dividerHorizontal
+          @attr name com.socialtravelguide.app:dividerHorizontal
         */
         public static final int Theme_dividerHorizontal = 56;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:dividerVertical
+          @attr name com.socialtravelguide.app:dividerVertical
         */
         public static final int Theme_dividerVertical = 55;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:dropDownListViewStyle
+          @attr name com.socialtravelguide.app:dropDownListViewStyle
         */
         public static final int Theme_dropDownListViewStyle = 74;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11069,21 +11069,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:dropdownListPreferredItemHeight
+          @attr name com.socialtravelguide.app:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 46;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:editTextBackground
+          @attr name com.socialtravelguide.app:editTextBackground
         */
         public static final int Theme_editTextBackground = 63;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11091,71 +11091,71 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:editTextColor
+          @attr name com.socialtravelguide.app:editTextColor
         */
         public static final int Theme_editTextColor = 62;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#editTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:editTextStyle
+          @attr name com.socialtravelguide.app:editTextStyle
         */
         public static final int Theme_editTextStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:homeAsUpIndicator
+          @attr name com.socialtravelguide.app:homeAsUpIndicator
         */
         public static final int Theme_homeAsUpIndicator = 48;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:imageButtonStyle
+          @attr name com.socialtravelguide.app:imageButtonStyle
         */
         public static final int Theme_imageButtonStyle = 64;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:listChoiceBackgroundIndicator
+          @attr name com.socialtravelguide.app:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 81;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:listDividerAlertDialog
+          @attr name com.socialtravelguide.app:listDividerAlertDialog
         */
         public static final int Theme_listDividerAlertDialog = 44;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:listPopupWindowStyle
+          @attr name com.socialtravelguide.app:listPopupWindowStyle
         */
         public static final int Theme_listPopupWindowStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11167,11 +11167,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:listPreferredItemHeight
+          @attr name com.socialtravelguide.app:listPreferredItemHeight
         */
         public static final int Theme_listPreferredItemHeight = 69;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11183,11 +11183,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:listPreferredItemHeightLarge
+          @attr name com.socialtravelguide.app:listPreferredItemHeightLarge
         */
         public static final int Theme_listPreferredItemHeightLarge = 71;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11199,11 +11199,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:listPreferredItemHeightSmall
+          @attr name com.socialtravelguide.app:listPreferredItemHeightSmall
         */
         public static final int Theme_listPreferredItemHeightSmall = 70;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11215,11 +11215,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:listPreferredItemPaddingLeft
+          @attr name com.socialtravelguide.app:listPreferredItemPaddingLeft
         */
         public static final int Theme_listPreferredItemPaddingLeft = 72;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11231,31 +11231,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:listPreferredItemPaddingRight
+          @attr name com.socialtravelguide.app:listPreferredItemPaddingRight
         */
         public static final int Theme_listPreferredItemPaddingRight = 73;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:panelBackground
+          @attr name com.socialtravelguide.app:panelBackground
         */
         public static final int Theme_panelBackground = 78;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:panelMenuListTheme
+          @attr name com.socialtravelguide.app:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 80;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11267,181 +11267,181 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:panelMenuListWidth
+          @attr name com.socialtravelguide.app:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 79;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:popupMenuStyle
+          @attr name com.socialtravelguide.app:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:popupWindowStyle
+          @attr name com.socialtravelguide.app:popupWindowStyle
         */
         public static final int Theme_popupWindowStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:radioButtonStyle
+          @attr name com.socialtravelguide.app:radioButtonStyle
         */
         public static final int Theme_radioButtonStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:ratingBarStyle
+          @attr name com.socialtravelguide.app:ratingBarStyle
         */
         public static final int Theme_ratingBarStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:searchViewStyle
+          @attr name com.socialtravelguide.app:searchViewStyle
         */
         public static final int Theme_searchViewStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:seekBarStyle
+          @attr name com.socialtravelguide.app:seekBarStyle
         */
         public static final int Theme_seekBarStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:selectableItemBackground
+          @attr name com.socialtravelguide.app:selectableItemBackground
         */
         public static final int Theme_selectableItemBackground = 52;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:selectableItemBackgroundBorderless
+          @attr name com.socialtravelguide.app:selectableItemBackgroundBorderless
         */
         public static final int Theme_selectableItemBackgroundBorderless = 53;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:spinnerDropDownItemStyle
+          @attr name com.socialtravelguide.app:spinnerDropDownItemStyle
         */
         public static final int Theme_spinnerDropDownItemStyle = 47;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:spinnerStyle
+          @attr name com.socialtravelguide.app:spinnerStyle
         */
         public static final int Theme_spinnerStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:switchStyle
+          @attr name com.socialtravelguide.app:switchStyle
         */
         public static final int Theme_switchStyle = 109;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:textAppearanceLargePopupMenu
+          @attr name com.socialtravelguide.app:textAppearanceLargePopupMenu
         */
         public static final int Theme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:textAppearanceListItem
+          @attr name com.socialtravelguide.app:textAppearanceListItem
         */
         public static final int Theme_textAppearanceListItem = 76;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:textAppearanceListItemSmall
+          @attr name com.socialtravelguide.app:textAppearanceListItemSmall
         */
         public static final int Theme_textAppearanceListItemSmall = 77;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:textAppearanceSearchResultSubtitle
+          @attr name com.socialtravelguide.app:textAppearanceSearchResultSubtitle
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 66;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:textAppearanceSearchResultTitle
+          @attr name com.socialtravelguide.app:textAppearanceSearchResultTitle
         */
         public static final int Theme_textAppearanceSearchResultTitle = 65;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:textAppearanceSmallPopupMenu
+          @attr name com.socialtravelguide.app:textAppearanceSmallPopupMenu
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11449,11 +11449,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:textColorAlertDialogListItem
+          @attr name com.socialtravelguide.app:textColorAlertDialogListItem
         */
         public static final int Theme_textColorAlertDialogListItem = 95;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11461,31 +11461,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.easytobook.app:textColorSearchUrl
+          @attr name com.socialtravelguide.app:textColorSearchUrl
         */
         public static final int Theme_textColorSearchUrl = 67;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:toolbarNavigationButtonStyle
+          @attr name com.socialtravelguide.app:toolbarNavigationButtonStyle
         */
         public static final int Theme_toolbarNavigationButtonStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:toolbarStyle
+          @attr name com.socialtravelguide.app:toolbarStyle
         */
         public static final int Theme_toolbarStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11495,11 +11495,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:windowActionBar
+          @attr name com.socialtravelguide.app:windowActionBar
         */
         public static final int Theme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11509,11 +11509,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:windowActionBarOverlay
+          @attr name com.socialtravelguide.app:windowActionBarOverlay
         */
         public static final int Theme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11523,11 +11523,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:windowActionModeOverlay
+          @attr name com.socialtravelguide.app:windowActionModeOverlay
         */
         public static final int Theme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11542,11 +11542,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:windowFixedHeightMajor
+          @attr name com.socialtravelguide.app:windowFixedHeightMajor
         */
         public static final int Theme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11561,11 +11561,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:windowFixedHeightMinor
+          @attr name com.socialtravelguide.app:windowFixedHeightMinor
         */
         public static final int Theme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11580,11 +11580,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:windowFixedWidthMajor
+          @attr name com.socialtravelguide.app:windowFixedWidthMajor
         */
         public static final int Theme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11599,11 +11599,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:windowFixedWidthMinor
+          @attr name com.socialtravelguide.app:windowFixedWidthMinor
         */
         public static final int Theme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11618,11 +11618,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:windowMinWidthMajor
+          @attr name com.socialtravelguide.app:windowMinWidthMajor
         */
         public static final int Theme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11637,11 +11637,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:windowMinWidthMinor
+          @attr name com.socialtravelguide.app:windowMinWidthMinor
         */
         public static final int Theme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -11651,7 +11651,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:windowNoTitle
+          @attr name com.socialtravelguide.app:windowNoTitle
         */
         public static final int Theme_windowNoTitle = 3;
         /** Attributes that can be used with a TileCheckBox.
@@ -11660,7 +11660,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TileCheckBox_tileDrawable com.easytobook.app:tileDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #TileCheckBox_tileDrawable com.socialtravelguide.app:tileDrawable}</code></td><td></td></tr>
            </table>
            @see #TileCheckBox_tileDrawable
          */
@@ -11668,13 +11668,13 @@ containing a value of this type.
             0x7f010150
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#tileDrawable}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#tileDrawable}
           attribute's value can be found in the {@link #TileCheckBox} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:tileDrawable
+          @attr name com.socialtravelguide.app:tileDrawable
         */
         public static final int TileCheckBox_tileDrawable = 0;
         /** Attributes that can be used with a Toolbar.
@@ -11685,29 +11685,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription com.easytobook.app:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon com.easytobook.app:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd com.easytobook.app:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft com.easytobook.app:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight com.easytobook.app:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart com.easytobook.app:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo com.easytobook.app:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription com.easytobook.app:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight com.easytobook.app:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription com.easytobook.app:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon com.easytobook.app:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme com.easytobook.app:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle com.easytobook.app:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.easytobook.app:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor com.easytobook.app:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title com.easytobook.app:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom com.easytobook.app:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd com.easytobook.app:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart com.easytobook.app:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop com.easytobook.app:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins com.easytobook.app:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance com.easytobook.app:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor com.easytobook.app:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.socialtravelguide.app:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.socialtravelguide.app:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.socialtravelguide.app:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.socialtravelguide.app:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.socialtravelguide.app:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.socialtravelguide.app:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo com.socialtravelguide.app:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription com.socialtravelguide.app:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.socialtravelguide.app:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.socialtravelguide.app:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon com.socialtravelguide.app:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme com.socialtravelguide.app:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.socialtravelguide.app:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.socialtravelguide.app:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor com.socialtravelguide.app:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.socialtravelguide.app:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.socialtravelguide.app:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.socialtravelguide.app:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.socialtravelguide.app:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.socialtravelguide.app:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.socialtravelguide.app:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.socialtravelguide.app:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor com.socialtravelguide.app:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -11757,7 +11757,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11767,21 +11767,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:collapseContentDescription
+          @attr name com.socialtravelguide.app:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:collapseIcon
+          @attr name com.socialtravelguide.app:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11793,11 +11793,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentInsetEnd
+          @attr name com.socialtravelguide.app:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11809,11 +11809,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentInsetLeft
+          @attr name com.socialtravelguide.app:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11825,11 +11825,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentInsetRight
+          @attr name com.socialtravelguide.app:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11841,21 +11841,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:contentInsetStart
+          @attr name com.socialtravelguide.app:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:logo
+          @attr name com.socialtravelguide.app:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11865,11 +11865,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:logoDescription
+          @attr name com.socialtravelguide.app:logoDescription
         */
         public static final int Toolbar_logoDescription = 22;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11881,11 +11881,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:maxButtonHeight
+          @attr name com.socialtravelguide.app:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 17;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11895,31 +11895,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:navigationContentDescription
+          @attr name com.socialtravelguide.app:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:navigationIcon
+          @attr name com.socialtravelguide.app:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:popupTheme
+          @attr name com.socialtravelguide.app:popupTheme
         */
         public static final int Toolbar_popupTheme = 9;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11929,21 +11929,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:subtitle
+          @attr name com.socialtravelguide.app:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:subtitleTextAppearance
+          @attr name com.socialtravelguide.app:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 11;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11954,11 +11954,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:subtitleTextColor
+          @attr name com.socialtravelguide.app:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 24;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#title}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11968,11 +11968,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:title
+          @attr name com.socialtravelguide.app:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11984,11 +11984,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:titleMarginBottom
+          @attr name com.socialtravelguide.app:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 16;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12000,11 +12000,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:titleMarginEnd
+          @attr name com.socialtravelguide.app:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 14;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12016,11 +12016,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:titleMarginStart
+          @attr name com.socialtravelguide.app:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 13;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12032,11 +12032,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:titleMarginTop
+          @attr name com.socialtravelguide.app:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 15;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12048,21 +12048,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:titleMargins
+          @attr name com.socialtravelguide.app:titleMargins
         */
         public static final int Toolbar_titleMargins = 12;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:titleTextAppearance
+          @attr name com.socialtravelguide.app:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12073,7 +12073,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:titleTextColor
+          @attr name com.socialtravelguide.app:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 23;
         /** Attributes that can be used with a View.
@@ -12084,9 +12084,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd com.easytobook.app:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart com.easytobook.app:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme com.easytobook.app:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.socialtravelguide.app:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart com.socialtravelguide.app:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme com.socialtravelguide.app:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -12111,7 +12111,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -12123,11 +12123,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:paddingEnd
+          @attr name com.socialtravelguide.app:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -12139,17 +12139,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:paddingStart
+          @attr name com.socialtravelguide.app:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.easytobook.app:theme
+          @attr name com.socialtravelguide.app:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -12159,8 +12159,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.easytobook.app:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.easytobook.app:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.socialtravelguide.app:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.socialtravelguide.app:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -12176,7 +12176,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -12187,11 +12187,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:backgroundTint
+          @attr name com.socialtravelguide.app:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -12207,7 +12207,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:backgroundTintMode
+          @attr name com.socialtravelguide.app:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.
@@ -12251,12 +12251,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position com.easytobook.app:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color com.easytobook.app:com_facebook_foreground_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment com.easytobook.app:com_facebook_horizontal_alignment}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id com.easytobook.app:com_facebook_object_id}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type com.easytobook.app:com_facebook_object_type}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_style com.easytobook.app:com_facebook_style}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position com.socialtravelguide.app:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color com.socialtravelguide.app:com_facebook_foreground_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment com.socialtravelguide.app:com_facebook_horizontal_alignment}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id com.socialtravelguide.app:com_facebook_object_id}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type com.socialtravelguide.app:com_facebook_object_type}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_style com.socialtravelguide.app:com_facebook_style}</code></td><td></td></tr>
            </table>
            @see #com_facebook_like_view_com_facebook_auxiliary_view_position
            @see #com_facebook_like_view_com_facebook_foreground_color
@@ -12270,7 +12270,7 @@ containing a value of this type.
             0x7f010169, 0x7f01016a
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#com_facebook_auxiliary_view_position}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#com_facebook_auxiliary_view_position}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -12284,11 +12284,11 @@ containing a value of this type.
 <tr><td><code>inline</code></td><td>1</td><td></td></tr>
 <tr><td><code>top</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:com_facebook_auxiliary_view_position
+          @attr name com.socialtravelguide.app:com_facebook_auxiliary_view_position
         */
         public static final int com_facebook_like_view_com_facebook_auxiliary_view_position = 4;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#com_facebook_foreground_color}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#com_facebook_foreground_color}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -12299,11 +12299,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:com_facebook_foreground_color
+          @attr name com.socialtravelguide.app:com_facebook_foreground_color
         */
         public static final int com_facebook_like_view_com_facebook_foreground_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#com_facebook_horizontal_alignment}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#com_facebook_horizontal_alignment}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -12317,11 +12317,11 @@ containing a value of this type.
 <tr><td><code>left</code></td><td>1</td><td></td></tr>
 <tr><td><code>right</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:com_facebook_horizontal_alignment
+          @attr name com.socialtravelguide.app:com_facebook_horizontal_alignment
         */
         public static final int com_facebook_like_view_com_facebook_horizontal_alignment = 5;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#com_facebook_object_id}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#com_facebook_object_id}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -12331,11 +12331,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:com_facebook_object_id
+          @attr name com.socialtravelguide.app:com_facebook_object_id
         */
         public static final int com_facebook_like_view_com_facebook_object_id = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#com_facebook_object_type}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#com_facebook_object_type}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -12349,11 +12349,11 @@ containing a value of this type.
 <tr><td><code>open_graph</code></td><td>1</td><td></td></tr>
 <tr><td><code>page</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:com_facebook_object_type
+          @attr name com.socialtravelguide.app:com_facebook_object_type
         */
         public static final int com_facebook_like_view_com_facebook_object_type = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#com_facebook_style}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#com_facebook_style}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -12367,7 +12367,7 @@ containing a value of this type.
 <tr><td><code>button</code></td><td>1</td><td></td></tr>
 <tr><td><code>box_count</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:com_facebook_style
+          @attr name com.socialtravelguide.app:com_facebook_style
         */
         public static final int com_facebook_like_view_com_facebook_style = 3;
         /** Attributes that can be used with a com_facebook_login_view.
@@ -12376,10 +12376,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout com.easytobook.app:com_facebook_confirm_logout}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text com.easytobook.app:com_facebook_login_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text com.easytobook.app:com_facebook_logout_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode com.easytobook.app:com_facebook_tooltip_mode}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout com.socialtravelguide.app:com_facebook_confirm_logout}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text com.socialtravelguide.app:com_facebook_login_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text com.socialtravelguide.app:com_facebook_logout_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode com.socialtravelguide.app:com_facebook_tooltip_mode}</code></td><td></td></tr>
            </table>
            @see #com_facebook_login_view_com_facebook_confirm_logout
            @see #com_facebook_login_view_com_facebook_login_text
@@ -12390,7 +12390,7 @@ containing a value of this type.
             0x7f01016b, 0x7f01016c, 0x7f01016d, 0x7f01016e
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#com_facebook_confirm_logout}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#com_facebook_confirm_logout}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -12400,11 +12400,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:com_facebook_confirm_logout
+          @attr name com.socialtravelguide.app:com_facebook_confirm_logout
         */
         public static final int com_facebook_login_view_com_facebook_confirm_logout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#com_facebook_login_text}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#com_facebook_login_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -12414,11 +12414,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:com_facebook_login_text
+          @attr name com.socialtravelguide.app:com_facebook_login_text
         */
         public static final int com_facebook_login_view_com_facebook_login_text = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#com_facebook_logout_text}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#com_facebook_logout_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -12428,11 +12428,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:com_facebook_logout_text
+          @attr name com.socialtravelguide.app:com_facebook_logout_text
         */
         public static final int com_facebook_login_view_com_facebook_logout_text = 2;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#com_facebook_tooltip_mode}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#com_facebook_tooltip_mode}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -12446,7 +12446,7 @@ containing a value of this type.
 <tr><td><code>display_always</code></td><td>1</td><td></td></tr>
 <tr><td><code>never_display</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:com_facebook_tooltip_mode
+          @attr name com.socialtravelguide.app:com_facebook_tooltip_mode
         */
         public static final int com_facebook_login_view_com_facebook_tooltip_mode = 3;
         /** Attributes that can be used with a com_facebook_profile_picture_view.
@@ -12455,8 +12455,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped com.easytobook.app:com_facebook_is_cropped}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size com.easytobook.app:com_facebook_preset_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped com.socialtravelguide.app:com_facebook_is_cropped}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size com.socialtravelguide.app:com_facebook_preset_size}</code></td><td></td></tr>
            </table>
            @see #com_facebook_profile_picture_view_com_facebook_is_cropped
            @see #com_facebook_profile_picture_view_com_facebook_preset_size
@@ -12465,7 +12465,7 @@ containing a value of this type.
             0x7f01016f, 0x7f010170
         };
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#com_facebook_is_cropped}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#com_facebook_is_cropped}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -12475,11 +12475,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.easytobook.app:com_facebook_is_cropped
+          @attr name com.socialtravelguide.app:com_facebook_is_cropped
         */
         public static final int com_facebook_profile_picture_view_com_facebook_is_cropped = 1;
         /**
-          <p>This symbol is the offset where the {@link com.easytobook.app.R.attr#com_facebook_preset_size}
+          <p>This symbol is the offset where the {@link com.socialtravelguide.app.R.attr#com_facebook_preset_size}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -12493,7 +12493,7 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>-3</td><td></td></tr>
 <tr><td><code>large</code></td><td>-4</td><td></td></tr>
 </table>
-          @attr name com.easytobook.app:com_facebook_preset_size
+          @attr name com.socialtravelguide.app:com_facebook_preset_size
         */
         public static final int com_facebook_profile_picture_view_com_facebook_preset_size = 0;
     };

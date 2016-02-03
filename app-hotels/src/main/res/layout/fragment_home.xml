@@ -1,11 +1,9 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/transparent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/background"
@@ -83,60 +81,6 @@
                 android:orientation="horizontal"
                 android:paddingTop="@dimen/minimum_default_padding">
 
-                <com.etb.app.widget.NumberBoxView
-                    android:id="@+id/check_in_button"
-                    android:layout_width="0dp"
-                    android:layout_height="136dp"
-                    android:layout_marginBottom="@dimen/minimum_default_padding"
-                    android:layout_marginTop="@dimen/minimum_default_padding"
-                    android:layout_weight="1"
-                    app:numberBoxIcon="@drawable/ic_datepicker_checkin"
-                    app:numberBoxSubtitle="SEP"
-                    app:numberBoxTitle="@string/check_in_caps"
-                    app:numberBoxValue="29"
-                    style="@style/HotelsAppTheme.Widget.NumberBoxView"/>
-
-                <com.etb.app.widget.NumberBoxView
-                    android:id="@+id/check_out_button"
-                    android:layout_width="0dp"
-                    android:layout_height="136dp"
-                    android:layout_marginBottom="@dimen/minimum_default_padding"
-                    android:layout_marginLeft="@dimen/minimum_default_padding"
-                    android:layout_marginTop="@dimen/minimum_default_padding"
-                    android:layout_weight="1"
-                    app:numberBoxIcon="@drawable/ic_datepicker_checkout"
-                    app:numberBoxSubtitle="SEP"
-                    app:numberBoxTitle="@string/checkout_caps"
-                    app:numberBoxValue="30"
-                    style="@style/HotelsAppTheme.Widget.NumberBoxView"/>
-
-                <com.etb.app.widget.NumberBoxView
-                    android:id="@+id/persons_button"
-                    android:layout_width="0dp"
-                    android:layout_height="136dp"
-                    android:layout_marginBottom="@dimen/minimum_default_padding"
-                    android:layout_marginLeft="@dimen/minimum_default_padding"
-                    android:layout_marginTop="@dimen/minimum_default_padding"
-                    android:layout_weight="1"
-                    app:numberBoxIcon="@drawable/ic_searchbox_guests"
-                    app:numberBoxSubtitle="@null"
-                    app:numberBoxTitle="PERSONS"
-                    app:numberBoxValue="2"
-                    style="@style/HotelsAppTheme.Widget.NumberBoxView"/>
-
-                <com.etb.app.widget.NumberBoxView
-                    android:id="@+id/rooms_button"
-                    android:layout_width="0dp"
-                    android:layout_marginBottom="@dimen/minimum_default_padding"
-                    android:layout_marginLeft="@dimen/minimum_default_padding"
-                    android:layout_marginTop="@dimen/minimum_default_padding"
-                    android:layout_weight="1"
-
-                    app:numberBoxIcon="@drawable/ic_searchbox_rooms"
-                    app:numberBoxSubtitle="@null"
-                    app:numberBoxTitle="ROOMS"
-                    app:numberBoxValue="1"
-                    style="@style/HotelsAppTheme.Widget.NumberBoxView" />
 
             </LinearLayout>
 
@@ -144,27 +88,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content">
 
-                <com.etb.app.widget.NumberPicker
-                    android:id="@+id/number_persons_selector"
-                    android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:background="@drawable/ripple_button_color_highlighted"
-                    android:padding="@dimen/default_padding" />
-
-                <com.etb.app.widget.NumberPicker
-                    android:id="@+id/number_rooms_selector"
-                    android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:background="@drawable/ripple_button_color_highlighted"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/default_padding" />
-
-                <com.etb.app.widget.SmallDatePicker xmlns:tools="http://schemas.android.com/tools"
-                    android:id="@+id/stay_datepicker"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:visibility="gone" />
             </FrameLayout>
         </LinearLayout>
 

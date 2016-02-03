@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="@dimen/minimum_default_padding"
         android:layout_marginLeft="@dimen/default_padding"
-        android:layout_marginRight="@dimen/default_padding"/>
+        android:layout_marginRight="@dimen/default_padding" />
 
 
 </FrameLayout>

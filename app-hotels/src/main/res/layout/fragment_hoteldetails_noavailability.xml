@@ -13,46 +13,46 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/ripple_button_gray_border_color_white"
-        android:padding="@dimen/minimum_default_padding"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/minimum_default_padding">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/no_results"/>
+            android:src="@drawable/no_results" />
 
         <TextView
-            style="@style/HotelsAppTheme.TextAppearance.HotelSummary.SelectDates"
             android:id="@+id/no_availability_text"
+            style="@style/HotelsAppTheme.TextAppearance.HotelSummary.SelectDates"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             tools:text="@string/rooms_not_available" />
 
-            <Button
-                android:id="@+id/date_select_button"
-                style="@style/HotelsAppTheme.Widget.HotelSummary.bookNowButton"
-                android:layout_width="wrap_content"
-                android:layout_height="46dp"
-                android:minWidth="216dp"
-                android:layout_marginTop="@dimen/minimum_default_padding"
-                android:background="@drawable/rounded_ripple_button_theme_accent"
-                android:paddingLeft="@dimen/default_padding"
-                android:paddingRight="@dimen/default_padding"
-                android:text="@string/change_dates"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+        <Button
+            android:id="@+id/date_select_button"
+            style="@style/HotelsAppTheme.Widget.HotelSummary.bookNowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/minimum_default_padding"
+            android:background="@drawable/rounded_ripple_button_theme_accent"
+            android:minWidth="216dp"
+            android:paddingLeft="@dimen/default_padding"
+            android:paddingRight="@dimen/default_padding"
+            android:text="@string/change_dates"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button_search_list"
             style="@style/HotelsAppTheme.Widget.HotelSummary.bookNowButton"
             android:layout_width="wrap_content"
             android:layout_height="46dp"
-            android:minWidth="216dp"
             android:layout_marginTop="@dimen/minimum_default_padding"
             android:background="@drawable/rounded_ripple_button_theme_accent"
+            android:minWidth="216dp"
             android:paddingLeft="@dimen/default_padding"
             android:paddingRight="@dimen/default_padding"
             android:text="@string/find_available_hotels"

@@ -1,5 +1,85 @@
 [
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\filter_checkbox_text.xml",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\color\\filter_checkbox_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\datepicker_text_hotels.xml",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\color\\datepicker_text_hotels.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\filter_button_text.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\color\\filter_button_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\sort_text_color.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\color\\sort_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\filter_checkbox_text.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\color\\filter_checkbox_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\filter_button_text.xml",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\color\\filter_button_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
@@ -16,12 +96,24 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\switch_thumb_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\filter_checkbox_text.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\color\\filter_checkbox_text.xml"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\primary_button_text.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\color\\primary_button_text.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\datepicker_text_hotels.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\color\\datepicker_text_hotels.xml"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\number_selector_text_color.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\color\\number_selector_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\datepicker_text_hotels.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\color\\datepicker_text_hotels.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\rangebar_color.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\color\\rangebar_color.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
@@ -40,6 +132,10 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_secondary_text_material_dark.xml"
     },
@@ -48,40 +144,32 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\color\\number_selector_text_color.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_light.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\color\\common_plus_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\primary_button_text.xml",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\color\\primary_button_text.xml"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\color\\common_plus_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\rangebar_color.xml",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\color\\rangebar_color.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\color\\common_google_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\filter_button_text.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\color\\filter_button_text.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
@@ -90,5 +178,9 @@
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\sort_text_color.xml",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\color\\sort_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\color\\datepicker_text_color.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\color\\datepicker_text_color.xml"
     }
 ]

@@ -1,9 +1,9 @@
-package com.etb.app.etbapi;
+package com.stg.app.etbapi;
 
 import android.support.annotation.NonNull;
 
 import com.easytobook.api.EtbApi;
-import com.etb.app.utils.NetworkUtilities;
+import com.stg.app.utils.NetworkUtilities;
 import com.squareup.okhttp.Cache;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;

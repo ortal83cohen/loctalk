@@ -173,7 +173,7 @@
 -keep class com.easytobook.api.** { *; }
 
 # CORE INTERFACE
--keep class com.etb.app.core.model.** { *; }
+-keep class com.stg.app.core.model.** { *; }
 
 
 # If your application, applet, servlet, library, etc., contains enumeration
@@ -254,8 +254,8 @@
 -keep class android.support.design.** { *; }
 -keep interface android.support.design.** { *; }
 -keep public class android.support.design.R$* { *; }
--keep class com.etb.app.widget.ScrollAwareFABBehavior { *; }
--keep class com.etb.app.widget.ScrollAwareViewBehavior { *; }
+-keep class com.stg.app.widget.ScrollAwareFABBehavior { *; }
+-keep class com.stg.app.widget.ScrollAwareViewBehavior { *; }
 
 # Otto
 -keepattributes *Annotation*

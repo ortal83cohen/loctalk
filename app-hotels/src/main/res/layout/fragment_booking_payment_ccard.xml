@@ -65,7 +65,7 @@
                 android:hint="@string/last_name_on_card"
                 android:inputType="textPersonName" />
 
-            <com.etb.app.widget.CreditCardEditText
+            <com.stg.app.widget.CreditCardEditText
                 android:id="@+id/ccard_number"
                 style="@style/HotelsAppTheme.Widget.Booking.EditText"
                 android:layout_width="match_parent"

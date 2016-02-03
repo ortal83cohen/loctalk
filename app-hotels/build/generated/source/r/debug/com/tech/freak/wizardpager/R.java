@@ -30,12 +30,12 @@ public final class R {
 		public static final int ic_person = 0x7f0200c3;
 	}
 	public static final class id {
-		public static final int editTextInput = 0x7f0e0130;
-		public static final int frameLayoutImageContainer = 0x7f0e012e;
-		public static final int imageView = 0x7f0e012f;
-		public static final int progressBar = 0x7f0e012d;
-		public static final int textViewLocation = 0x7f0e012c;
-		public static final int textViewLocationStatus = 0x7f0e012b;
+		public static final int editTextInput = 0x7f0e012a;
+		public static final int frameLayoutImageContainer = 0x7f0e0128;
+		public static final int imageView = 0x7f0e0129;
+		public static final int progressBar = 0x7f0e0127;
+		public static final int textViewLocation = 0x7f0e0126;
+		public static final int textViewLocationStatus = 0x7f0e0125;
 	}
 	public static final class layout {
 		public static final int fragment_page = 0x7f04005c;

@@ -4,92 +4,76 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_landmarks.png"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_university_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_university_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_creditcards.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_creditcards.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\arrow_calendar_right.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\arrow_calendar_right.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_apartment.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_apartment.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_hotel.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_hotel.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_etb_logo.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_etb_logo.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_hostel.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_hostel.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\no_dates.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\no_dates.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_event_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_event_active.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_american_express.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_american_express.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\login_google.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\login_google.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_attractions.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_attractions.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\login_google.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\login_google.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\btn_close.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\btn_close.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_fitness_center_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_fitness_center_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\rooms.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\rooms.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_pets_selected.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_pets_selected.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_list_view.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_list_view.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_attractions_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_attractions_active.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_monuments_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_monuments_active.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_discover.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_discover.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_guesthouse.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_guesthouse.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_neighbourhood_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_neighbourhood_active.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\desintation_autocomplete.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\desintation_autocomplete.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_action.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_action.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_internet_wifi.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_internet_wifi.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_mark.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_mark.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\user_icon.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\user_icon.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_trainstation_active.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_trainstation_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_landmark.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_landmark.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dropdown_arrow.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\dropdown_arrow.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_foodanddrink.png",
@@ -100,32 +84,24 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_disabled_friendly.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_resort.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_resort.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_museums.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_museums.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_disabled_friendly.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_disabled_friendly.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_recent_search.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_recent_search.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_parking_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_parking_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_event.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_event.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\info_dot.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\info_dot.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\btn_favorite_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\btn_favorite_selected.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_beach_active.png",
@@ -156,76 +132,108 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\current_location_autocomplete.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\nights.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\nights.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_monuments.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_monuments.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_my_bookings.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_my_bookings.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_edit_destination.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_edit_destination.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_search_api_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_attractions_active.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_attractions_active.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_edit_destination.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_edit_destination.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_map_view.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_map_view.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_edit_destination.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_edit_destination.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_out.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_out.png"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dropdown_arrow.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\dropdown_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_beach_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_beach_active.png"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\rooms_active.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\rooms_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_list_view.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_list_view.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_swimming_pool.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_swimming_pool.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_airports.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_airports.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_back_arrow.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_back_arrow.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\nights.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\nights.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\btn_favorite.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\btn_favorite.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_shopping.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_shopping.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin_price.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin_price.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_scanner.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_scanner.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_etb_logo.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_etb_logo.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\email.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\email.png"
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_neighbourhoods.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_neighbourhoods.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\etb_logo_wordmark_large.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\etb_logo_wordmark_large.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_recent_search.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_recent_search.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\parking.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\parking.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_fitness_center.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_fitness_center.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_phone.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_phone.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_guesthouse.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_guesthouse.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_parking.png",
@@ -236,12 +244,752 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_shopping_active.png"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\guests.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\guests.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_in_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_in_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\calendar.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\calendar.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_fitness_center.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_fitness_center.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\powered_by_google_light.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.3.0\\res\\drawable-xxxhdpi\\powered_by_google_light.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\filter.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\filter.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\more_info_rooms.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\more_info_rooms.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\share.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\share.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_my_settings.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_my_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_shopping_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_shopping_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_hostel_selected.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_hostel_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_out_active.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_out_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\star_white_empty.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\star_white_empty.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\etb_logo_primary_large.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\etb_logo_primary_large.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_visa.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_visa.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\current_location_autocomplete.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\current_location_autocomplete.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_swimming_pool.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_swimming_pool.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_resort_selected.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_resort_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_trainstation.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_trainstation.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_attractions.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_attractions.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_air_conditioning_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_air_conditioning_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_neighbourhoods_active.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_neighbourhoods_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_my_bookings.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_my_bookings.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_bandb_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_bandb_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_event_active.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_event_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\star_black_full.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\star_black_full.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_landmarks.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_landmarks.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_hotel_selected.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_hotel_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\room_service.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\room_service.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ssl_verisign.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\ssl_verisign.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\parking.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\parking.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\no_results.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\no_results.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\booking_card_details.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\booking_card_details.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\paymethodcredit_creditcards.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\paymethodcredit_creditcards.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_monuments_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_monuments_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_beach.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_beach.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_transportation.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_transportation.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\edit_green.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\edit_green.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_in_allday.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_in_allday.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\star_black_full.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\star_black_full.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_museums.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_museums.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_neighbourhoods_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_neighbourhoods_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\img_background.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\img_background.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\more_info_rooms.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\more_info_rooms.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\call.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\call.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_progress_image.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\ic_progress_image.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_trash.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_trash.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\login_etb_logo_icon_white.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\login_etb_logo_icon_white.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\powered_by_google_light.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.3.0\\res\\drawable-xxxhdpi\\powered_by_google_light.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\calendar.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\calendar.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_child_discount_selected.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_child_discount_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_hotel.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_hotel.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_in_active.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_in_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin_white.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin_white.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_stadium.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_stadium.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_neighbourhood.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_neighbourhood.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\current_location.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\current_location.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\pets.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\pets.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\wifi.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\wifi.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_poi_icon.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_poi_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_discover.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_discover.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_child_discount_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_child_discount_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_museums_active.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_museums_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\paymethod_paypal.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\paymethod_paypal.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_museums_active.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_museums_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin_white.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin_white.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\place_holder_img.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\place_holder_img.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_shopping_active.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_shopping_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\info_dot.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\info_dot.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_attractions_active.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_attractions_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\arrow_calendar_right.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\arrow_calendar_right.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\paymethod_google_wallet.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\paymethod_google_wallet.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_event.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_event.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_church_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_church_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tripadvisor_dot_half.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\tripadvisor_dot_half.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\guests_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\guests_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\arrow_calendar_left.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\arrow_calendar_left.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tripadvisor_logo.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\tripadvisor_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin_long_white.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin_long_white.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\btn_close.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\btn_close.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\booking_personal_info.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\booking_personal_info.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_in.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_in.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_air_conditioning.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_air_conditioning.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_museums_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_museums_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\arrow_calendar_left.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\arrow_calendar_left.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_resort_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_resort_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\no_dates.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\no_dates.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_airports.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_airports.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_transportation.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_transportation.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_church.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_church.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\photo_camera.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\photo_camera.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\star_white_full.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\star_white_full.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_trainstation.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_trainstation.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\paymethod_google_wallet.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\paymethod_google_wallet.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_mastercard.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_mastercard.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tripadvisor_dot_empty.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\tripadvisor_dot_empty.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_swimming_pool_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_swimming_pool_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_disabled_friendly_selected.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_disabled_friendly_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_church_active.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_church_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_trainstation_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_trainstation_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_parking_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_parking_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\guests_active.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\guests_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_beach.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_beach.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_pets.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_pets.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_shopping_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_shopping_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_favourites.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_favourites.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_nonsmoking.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_nonsmoking.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_swimming_pool_selected.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_swimming_pool_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin_price.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin_price.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\star_white_empty.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\star_white_empty.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_hotel_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_hotel_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\login_facebook.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\login_facebook.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_hospital.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_hospital.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\photo_camera.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\photo_camera.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_apartment_selected.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_apartment_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\share.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\share.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\pets.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\pets.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_attractions_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_attractions_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_apartment.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_apartment.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_action.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_action.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_hotel.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_hotel.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_hostel.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_hostel.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\no_dates.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\no_dates.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_airports_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_airports_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\login_etb_logo_icon_white.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\login_etb_logo_icon_white.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_fitness_center_selected.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_fitness_center_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_parking.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_parking.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\rooms.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\rooms.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_list_view.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_list_view.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_monuments_active.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_monuments_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_neighbourhood_active.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_neighbourhood_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ssl_verisign.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\ssl_verisign.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_action.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_action.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_mark.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_mark.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dropdown_arrow.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\dropdown_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_landmark.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_landmark.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\email.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\email.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_museums.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_museums.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\login_google.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\login_google.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_parking_selected.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_parking_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_event.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_event.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_trash_w.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_trash_w.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_monuments.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_monuments.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\btn_favorite_selected.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\btn_favorite_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_landmark.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_landmark.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_museums_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_museums_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\star_white_full.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\star_white_full.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\nights.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\nights.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_neighbourhoods.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_neighbourhoods.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\destination_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\destination_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_map_view.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_map_view.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_bandb.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_bandb.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_back_arrow.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_back_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_swimming_pool.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_swimming_pool.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_my_profile.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_my_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\btn_favorite.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\btn_favorite.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\add.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\add.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\email.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\email.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_neighbourhoods.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_neighbourhoods.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_american_express.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_american_express.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_phone.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_phone.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_residence_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_residence_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\call.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\call.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\guests.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\guests.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_university.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_university.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_back_arrow.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_back_arrow.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\paymethod_paypal.png",
@@ -256,44 +1004,68 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_internet_wifi.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\powered_by_google_light.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.3.0\\res\\drawable-xxxhdpi\\powered_by_google_light.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_shopping.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_shopping.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\more_info_rooms.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\more_info_rooms.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_child_discount.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_child_discount.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_hostel_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_hostel_selected.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\guests.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\guests.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\img_background.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\img_background.png"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_mark.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_mark.png"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\room_service.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\room_service.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_out_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_out_active.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tripadvisor_dot_half.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\tripadvisor_dot_half.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_check_to_on_mtrl_015.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_neighbourhood_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_neighbourhood_active.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\etb_logo_primary_large.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\etb_logo_primary_large.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_pets_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_pets_selected.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_visa.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_visa.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_stadium_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_stadium_active.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_resort_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_resort_selected.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_out.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_out.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dropdown_arrow_inputfield.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\dropdown_arrow_inputfield.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_landmarks_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_landmarks_active.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_mastercard.png",
@@ -304,48 +1076,36 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_bandb.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_attractions.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_attractions.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\rooms_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\rooms_active.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_trainstation.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_trainstation.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_museums.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_museums.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tripadvisor_dot_empty.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\tripadvisor_dot_empty.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_university.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_university.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\powered_by_google_dark.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.3.0\\res\\drawable-xxxhdpi\\powered_by_google_dark.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_neighbourhoods_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_neighbourhoods_active.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_my_bookings.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_my_bookings.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tripadvisor_dot_full.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\tripadvisor_dot_full.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_mark_green.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_mark_green.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_event_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_event_active.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_poi_icon.png",
@@ -356,16 +1116,20 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\login_facebook.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\login_facebook.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_jcb.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_jcb.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_hotel_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_hotel_selected.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_favourites.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_favourites.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\time.png",
@@ -376,32 +1140,24 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_in.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ssl_verisign.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\ssl_verisign.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\user_icon.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\user_icon.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_clear_mtrl_alpha.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_autocomplete_recent_search.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_autocomplete_recent_search.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\parking.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\parking.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_museums.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_museums.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\swimming_pool.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\swimming_pool.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\no_results.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\no_results.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\booking_card_details.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\booking_card_details.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\rooms.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\rooms.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\wifi.png",
@@ -412,24 +1168,24 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_beach.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_beach.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\place_holder_img.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\place_holder_img.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_transportation.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_transportation.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\star_black_full.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\star_black_full.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_church.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_church.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_pets.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_pets.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_museums.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_museums.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_mark_green.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_mark_green.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\current_location.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\current_location.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_my_profile.png",
@@ -440,48 +1196,52 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_nonsmoking_selected.png"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_guesthouse_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_guesthouse_selected.png"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\desintation_autocomplete.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\desintation_autocomplete.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_airports.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_airports.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\star_black_empty.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\star_black_empty.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\login_etb_logo_icon_white.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\login_etb_logo_icon_white.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_airports.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_airports.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\calendar.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\calendar.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_child_discount_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_child_discount_selected.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_disabled_friendly_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_disabled_friendly_selected.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tripadvisor_dot_full.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\tripadvisor_dot_full.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_in_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_in_active.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_foodanddrink.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_foodanddrink.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_attractions.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_attractions.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_air_conditioning.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_air_conditioning.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_hospital_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_hospital_active.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_landmark_active.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_landmark_active.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_stadium.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_stadium.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_neighbourhood.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_neighbourhood.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
@@ -492,12 +1252,12 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tripadvisor_logo.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\tripadvisor_logo.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_neighbourhood.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_neighbourhood.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\current_location.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\current_location.png"
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tripadvisor_logo.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\tripadvisor_logo.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\etb_logo_wordmark_large.png",
@@ -508,12 +1268,8 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\add.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\pets.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\pets.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_discover.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_discover.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_airports_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_airports_active.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_guesthouse_selected.png",
@@ -524,60 +1280,80 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_resort.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_museums_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_museums_active.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_jcb.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_jcb.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\powered_by_google_dark.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.3.0\\res\\drawable-xxxhdpi\\powered_by_google_dark.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_museums_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_museums_active.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\booking_billing_address.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\booking_billing_address.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_diners_club.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_diners_club.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_landmarks_active.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_landmarks_active.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin_white.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin_white.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_university_active.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_university_active.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\place_holder_img.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\place_holder_img.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_shopping_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_shopping_active.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_airports_active.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_airports_active.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\btn_favorite_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\btn_favorite_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_stadium.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_stadium.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\login_etb_logo_icon_orange.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\login_etb_logo_icon_orange.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_autocomplete_recent_search.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_autocomplete_recent_search.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_attractions_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_attractions_active.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_hospital.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_hospital.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_stadium_active.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_stadium_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_nonsmoking.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_nonsmoking.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\time.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\time.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_internet_wifi_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_internet_wifi_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\swimming_pool.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\swimming_pool.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dropdown_arrow_inputfield.png",
@@ -588,8 +1364,20 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_child_discount.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tripadvisor_dot_half.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\tripadvisor_dot_half.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_phone.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_phone.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_apartment_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_apartment_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_hostel.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_hostel.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_attractions.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_attractions.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
@@ -616,12 +1404,12 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\booking_billing_address.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_air_conditioning.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_air_conditioning.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_search_api_mtrl_alpha.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_burger.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_burger.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_bandb_selected.png",
@@ -632,8 +1420,8 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\arrow_calendar_left.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\arrow_calendar_left.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_fitness_center_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_fitness_center_selected.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_creditcards.png",
@@ -644,143 +1432,139 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_residence.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_airports.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_airports.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_out_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_out_active.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin_long_white.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin_long_white.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_church.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_church.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_in_allday.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_in_allday.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_transportation_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_transportation_active.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_category_transportation_active.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_category_transportation_active.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\star_white_full.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\star_white_full.png"
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\check_in_allday.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\check_in_allday.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_trash.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_trash.png"
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin_long_white.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin_long_white.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_hostel_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_hostel_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_shopping.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_shopping.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\paymethod_google_wallet.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\paymethod_google_wallet.png"
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_trash.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_trash.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\destination.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\destination.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\login_etb_logo_icon_orange.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\login_etb_logo_icon_orange.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_disabled_friendly_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_disabled_friendly_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_church_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_church_active.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_map_view.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_map_view.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_progress_image.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\ic_progress_image.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\guests_active.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\guests_active.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\etb_logo_primary_large.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\etb_logo_primary_large.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_residence.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_residence.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\booking_card_details.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\booking_card_details.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\star_black_empty.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\star_black_empty.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\btn_favorite.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\btn_favorite.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_landmark_active.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_landmark_active.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_hospital_active.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_hospital_active.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_favourites.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_favourites.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\no_results.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\no_results.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_trash_w.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_trash_w.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_nonsmoking.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_nonsmoking.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_swimming_pool_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_swimming_pool_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin_price.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin_price.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_internet_wifi_selected.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_internet_wifi_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_residence_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_residence_selected.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_scanner.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_scanner.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\star_white_empty.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\star_white_empty.png"
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_residence_selected.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_residence_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_streetview.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\ic_streetview.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_nonsmoking_selected.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_nonsmoking_selected.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_diners_club.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_diners_club.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\login_facebook.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\login_facebook.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_poi_hospital.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_poi_hospital.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_apartment.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_apartment.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_burger.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_burger.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\photo_camera.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\photo_camera.png"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\credit_card_visa.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\credit_card_visa.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\map_pin_selected.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\map_pin_selected.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon_accommodation_apartment_selected.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\icon_accommodation_apartment_selected.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\filter.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\filter.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\destination.png",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\destination.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\share.png",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\share.png"
+        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\filter.png",
+        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\filter.png"
     }
 ]

@@ -1,9 +1,9 @@
-package com.etb.app.utils;
+package com.stg.app.utils;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-import com.etb.app.R;
+import com.stg.app.R;
 
 import org.apache.http.conn.ssl.AllowAllHostnameVerifier;
 

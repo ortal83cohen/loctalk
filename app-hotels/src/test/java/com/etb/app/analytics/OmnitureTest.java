@@ -1,7 +1,7 @@
-package com.etb.app.analytics;
+package com.stg.app.analytics;
 
 import com.easytobook.api.model.SearchRequest;
-import com.etb.app.model.Location;
+import com.stg.app.model.Location;
 
 import org.junit.Test;
 
@@ -24,7 +24,7 @@ public class OmnitureTest {
     public void testCreateContextRequestData() {
         SearchRequest request = new SearchRequest();
         request.setType(new Location());
-        ((Location)request.getType()).setTitle("Alaska");
+        ((Location) request.getType()).setTitle("Alaska");
         request.getDateRange().from.set(2015, Calendar.DECEMBER, 4, 6, 30, 5);
         request.getDateRange().to.set(2015, Calendar.DECEMBER, 6, 6, 30, 6);
         request.setNumberOfPersons(3);
@@ -48,7 +48,7 @@ public class OmnitureTest {
         expected.put(Omniture.KEY_PERSONS, "3|0|3");
         expected.put(Omniture.KEY_ROOMS, 1);
 
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 
 }

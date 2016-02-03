@@ -8,6 +8,14 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\menu\\menu_favorites_list.xml"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\menu\\menu_room_list.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\menu\\menu_room_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\menu\\menu_booking_summary.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\menu\\menu_booking_summary.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\menu\\menu_hotel_summary.xml",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\menu\\menu_hotel_summary.xml"
     },
@@ -20,6 +28,14 @@
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\menu\\menu_room_list.xml"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\menu\\menu_map.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\menu\\menu_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\menu\\menu_hotel_list.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\menu\\menu_hotel_list.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\menu\\menu_map.xml",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\menu\\menu_map.xml"
     },
@@ -30,5 +46,21 @@
     {
         "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\menu\\menu_hotel_details.xml",
         "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\menu\\menu_hotel_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\menu\\menu_home.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\menu\\menu_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\menu\\menu_favorites_list.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\menu\\menu_favorites_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\menu\\menu_hotel_summary.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\menu\\menu_hotel_summary.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\menu\\menu_hotel_details.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\menu\\menu_hotel_details.xml"
     }
 ]

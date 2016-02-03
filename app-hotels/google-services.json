@@ -8,10 +8,10 @@
     {
       "client_info": {
         "mobilesdk_app_id": "1:945866140834:android:574e23601bfac4c0",
-        "client_id": "android:com.easytobook.app",
+        "client_id": "android:com.socialtravelguide.app",
         "client_type": 1,
         "android_client_info": {
-          "package_name": "com.easytobook.app"
+          "package_name": "com.socialtravelguide.app"
         }
       },
       "oauth_client": [],

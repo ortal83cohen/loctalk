@@ -1,9 +1,5 @@
-package com.etb.app;
+package com.stg.app;
 
-import android.content.ComponentName;
-import android.content.Intent;
-import android.support.test.espresso.Espresso;
-import android.support.test.espresso.IdlingResource;
 import android.support.test.espresso.action.GeneralClickAction;
 import android.support.test.espresso.action.GeneralLocation;
 import android.support.test.espresso.action.Press;
@@ -12,9 +8,7 @@ import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.LargeTest;
 
-import com.etb.app.activity.HotelListActivity;
-import com.etb.app.activity.MainActivity;
-import com.etb.app.events.Events;
+import com.stg.app.activity.MainActivity;
 
 import org.junit.After;
 import org.junit.Before;
@@ -28,10 +22,6 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard;
 import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
-import static android.support.test.espresso.intent.Intents.intended;
-import static android.support.test.espresso.intent.Intents.intending;
-import static android.support.test.espresso.intent.matcher.IntentMatchers.hasAction;
-import static android.support.test.espresso.intent.matcher.IntentMatchers.hasComponent;
 import static android.support.test.espresso.matcher.RootMatchers.withDecorView;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;

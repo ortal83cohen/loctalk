@@ -1,4 +1,4 @@
-package com.etb.app.utils;
+package com.stg.app.utils;
 
 import android.content.Context;
 

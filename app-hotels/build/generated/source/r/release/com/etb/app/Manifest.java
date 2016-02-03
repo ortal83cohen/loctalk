@@ -5,10 +5,10 @@
  * should not be modified by hand.
  */
 
-package com.etb.app;
+package com.stg.app;
 
 public final class Manifest {
     public static final class permission {
-        public static final String MAPS_RECEIVE="com.easytobook.app.permission.MAPS_RECEIVE";
+        public static final String MAPS_RECEIVE="com.socialtravelguide.app.permission.MAPS_RECEIVE";
     }
 }

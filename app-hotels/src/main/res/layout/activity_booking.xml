@@ -24,7 +24,7 @@
             android:padding="@dimen/minimum_default_padding"
             android:src="@drawable/paymethod_paypal" />
 
-        <com.etb.app.widget.BookingStepsView
+        <com.stg.app.widget.BookingStepsView
             android:id="@+id/strip"
             android:layout_width="match_parent"
             android:layout_height="48dp"
