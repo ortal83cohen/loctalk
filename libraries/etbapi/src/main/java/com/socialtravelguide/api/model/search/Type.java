@@ -1,4 +1,4 @@
-package com.easytobook.api.model.search;
+package com.socialtravelguide.api.model.search;
 
 public abstract class Type {
     public final static String SPR = "spr"; // Single point radius

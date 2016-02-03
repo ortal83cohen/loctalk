@@ -1,6 +1,6 @@
 package com.stg.app.etbapi;
 
-import com.easytobook.api.EtbApi;
+import com.socialtravelguide.api.EtbApi;
 import com.stg.app.utils.NetworkUtilities;
 import com.squareup.okhttp.CacheControl;
 import com.squareup.okhttp.Interceptor;

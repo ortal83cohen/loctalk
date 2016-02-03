@@ -2,7 +2,7 @@ package com.stg.app.etbapi;
 
 import android.widget.Toast;
 
-import com.easytobook.api.model.DetailsResponse;
+import com.socialtravelguide.api.model.DetailsResponse;
 import com.stg.app.R;
 import com.stg.app.utils.AppLog;
 import com.squareup.okhttp.ResponseBody;

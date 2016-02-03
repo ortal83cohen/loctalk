@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.easytobook.api.model.Accommodation;
+import com.socialtravelguide.api.model.Accommodation;
 import com.stg.app.R;
 import com.stg.app.activity.BookingSummaryActivity;
 import com.stg.app.model.OrderItem;

@@ -7,7 +7,7 @@ import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.easytobook.api.model.DateRange;
+import com.socialtravelguide.api.model.DateRange;
 import com.stg.app.utils.CalendarUtils;
 import com.stg.app.utils.MathUtils;
 

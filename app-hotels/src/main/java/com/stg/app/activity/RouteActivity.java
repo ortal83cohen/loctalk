@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.util.ArrayMap;
 
-import com.easytobook.api.EtbApi;
-import com.easytobook.api.model.Accommodation;
-import com.easytobook.api.model.Order;
-import com.easytobook.api.model.OrderResponse;
-import com.easytobook.api.model.ResultsResponse;
-import com.easytobook.api.model.search.ListType;
+import com.socialtravelguide.api.EtbApi;
+import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.Order;
+import com.socialtravelguide.api.model.OrderResponse;
+import com.socialtravelguide.api.model.ResultsResponse;
+import com.socialtravelguide.api.model.search.ListType;
 import com.stg.app.App;
 import com.stg.app.HotelsApplication;
 import com.stg.app.core.CoreInterface;
@@ -124,7 +124,7 @@ public class RouteActivity extends Activity {
                     mUriData = Uri.parse(URLDecoder.decode(split[1], "UTF-8"));
                 }
                 String uri = mUriData.toString();
-                uri = uri.replace("m.easytobook.com", "www.easytobook.com");
+                uri = uri.replace("m.socialtravelguide.com", "www.socialtravelguide.com");
 
                 CoreInterface.create(getApplicationContext()).uriParse(uri).enqueue(new RetrofitCallback<ArrayMap<String, String>>() {
                     @Override

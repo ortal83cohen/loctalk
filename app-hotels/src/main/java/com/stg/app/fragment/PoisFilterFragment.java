@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.appyvet.rangebar.RangeBar;
-import com.easytobook.api.model.SearchRequest;
+import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.R;
 import com.stg.app.activity.PoisFiltersActivity;
 import com.stg.app.map.PoiMarker;

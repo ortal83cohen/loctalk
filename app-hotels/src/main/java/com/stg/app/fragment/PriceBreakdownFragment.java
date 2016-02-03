@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.easytobook.api.model.Accommodation;
+import com.socialtravelguide.api.model.Accommodation;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;
 import com.stg.app.model.OrderItem;

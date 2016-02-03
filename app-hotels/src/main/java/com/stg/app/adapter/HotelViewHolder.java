@@ -13,8 +13,8 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.easytobook.api.model.Accommodation;
-import com.easytobook.api.utils.ImageUtils;
+import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.utils.ImageUtils;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.preferences.UserPreferences;

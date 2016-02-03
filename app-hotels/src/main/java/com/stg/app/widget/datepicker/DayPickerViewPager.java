@@ -7,7 +7,7 @@ import android.graphics.Color;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 
-import com.easytobook.api.model.DateRange;
+import com.socialtravelguide.api.model.DateRange;
 import com.stg.app.R;
 
 import java.util.Calendar;

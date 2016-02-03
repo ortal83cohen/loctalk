@@ -1,6 +1,6 @@
-package com.easytobook.api;
+package com.socialtravelguide.api;
 
-import com.easytobook.api.utils.HttpLoggingInterceptor;
+import com.socialtravelguide.api.utils.HttpLoggingInterceptor;
 
 /**
  * @author alex
@@ -8,8 +8,8 @@ import com.easytobook.api.utils.HttpLoggingInterceptor;
  */
 public class EtbApiConfig {
 
-//        public static final String ETB_API_ENDPOINT_DEFAULT = "http://api.easytobook.com";
-//    public static final String ETB_API_ENDPOINT_SECURE = "https://api.easytobook.com";
+//        public static final String ETB_API_ENDPOINT_DEFAULT = "http://api.socialtravelguide.com";
+//    public static final String ETB_API_ENDPOINT_SECURE = "https://api.socialtravelguide.com";
     public static final String ETB_API_ENDPOINT_DEFAULT = "http://maorbolo.com";
     public static final String ETB_API_ENDPOINT_SECURE = "http://maorbolo.com";
     private String mApiKey;

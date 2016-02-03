@@ -1,4 +1,4 @@
-package com.easytobook.api.contract;
+package com.socialtravelguide.api.contract;
 
 import java.util.ArrayList;
 

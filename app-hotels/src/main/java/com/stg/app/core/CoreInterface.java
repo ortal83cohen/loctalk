@@ -3,8 +3,8 @@ package com.stg.app.core;
 import android.content.Context;
 import android.support.v4.util.ArrayMap;
 
-import com.easytobook.api.mock.ResultsMockClient;
-import com.easytobook.api.model.search.Poi;
+import com.socialtravelguide.api.mock.ResultsMockClient;
+import com.socialtravelguide.api.model.search.Poi;
 import com.stg.app.Config;
 import com.stg.app.core.model.Ratings;
 import com.stg.app.core.model.ReviewResponse;

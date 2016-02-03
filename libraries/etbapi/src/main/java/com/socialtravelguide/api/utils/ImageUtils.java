@@ -1,4 +1,4 @@
-package com.easytobook.api.utils;
+package com.socialtravelguide.api.utils;
 
 import android.text.TextUtils;
 

@@ -2,7 +2,7 @@ package com.stg.app.etbapi;
 
 import android.support.annotation.NonNull;
 
-import com.easytobook.api.EtbApi;
+import com.socialtravelguide.api.EtbApi;
 import com.stg.app.utils.NetworkUtilities;
 import com.squareup.okhttp.Cache;
 import com.squareup.okhttp.OkHttpClient;

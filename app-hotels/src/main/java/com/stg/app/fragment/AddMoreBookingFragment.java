@@ -9,9 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.easytobook.api.EtbApi;
-import com.easytobook.api.model.Order;
-import com.easytobook.api.model.OrderResponse;
+import com.socialtravelguide.api.EtbApi;
+import com.socialtravelguide.api.model.Order;
+import com.socialtravelguide.api.model.OrderResponse;
 import com.stg.app.HotelsApplication;
 import com.stg.app.R;
 import com.stg.app.activity.MemberActivity;

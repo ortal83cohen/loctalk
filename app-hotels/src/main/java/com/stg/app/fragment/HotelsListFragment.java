@@ -16,11 +16,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.easytobook.api.EtbApi;
-import com.easytobook.api.contract.Sort;
-import com.easytobook.api.model.ErrorResponse;
-import com.easytobook.api.model.ResultsResponse;
-import com.easytobook.api.model.SearchRequest;
+import com.socialtravelguide.api.EtbApi;
+import com.socialtravelguide.api.contract.Sort;
+import com.socialtravelguide.api.model.ErrorResponse;
+import com.socialtravelguide.api.model.ResultsResponse;
+import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.HotelsApplication;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;

@@ -4,8 +4,8 @@ import android.content.Context;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 
-import com.easytobook.api.model.SearchRequest;
-import com.easytobook.api.model.search.Type;
+import com.socialtravelguide.api.model.SearchRequest;
+import com.socialtravelguide.api.model.search.Type;
 import com.stg.app.R;
 import com.stg.app.model.CurrentLocation;
 import com.stg.app.model.LocationWithTitle;

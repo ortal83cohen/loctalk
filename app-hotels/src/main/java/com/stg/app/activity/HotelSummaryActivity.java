@@ -7,10 +7,10 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.view.MenuItem;
 
-import com.easytobook.api.model.Accommodation;
-import com.easytobook.api.model.HotelRequest;
-import com.easytobook.api.model.SearchRequest;
-import com.easytobook.api.utils.RequestUtils;
+import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.HotelRequest;
+import com.socialtravelguide.api.model.SearchRequest;
+import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.fragment.HomeFragment;

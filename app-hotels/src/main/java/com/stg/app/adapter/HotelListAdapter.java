@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
 
-import com.easytobook.api.model.Accommodation;
+import com.socialtravelguide.api.model.Accommodation;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;
 import com.stg.app.model.HotelListRequest;

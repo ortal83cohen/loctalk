@@ -13,8 +13,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.easytobook.api.model.Accommodation;
-import com.easytobook.api.model.SearchRequest;
+import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.R;
 import com.stg.app.adapter.HotelViewHolder;
 import com.stg.app.analytics.AnalyticsCalls;

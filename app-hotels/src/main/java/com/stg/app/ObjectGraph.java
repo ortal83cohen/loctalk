@@ -5,10 +5,10 @@ import android.net.ConnectivityManager;
 import android.support.v4.util.SimpleArrayMap;
 import android.telephony.TelephonyManager;
 
-import com.easytobook.api.EtbApi;
-import com.easytobook.api.EtbApiConfig;
-import com.easytobook.api.mock.ResultsMockClient;
-import com.easytobook.api.model.SearchRequest;
+import com.socialtravelguide.api.EtbApi;
+import com.socialtravelguide.api.EtbApiConfig;
+import com.socialtravelguide.api.mock.ResultsMockClient;
+import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.analytics.Facebook;
 import com.stg.app.etbapi.CacheRequestInterceptor;
 import com.stg.app.etbapi.CacheResponseInterceptor;

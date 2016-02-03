@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.easytobook.api.model.Accommodation;
+import com.socialtravelguide.api.model.Accommodation;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.fragment.PriceBreakdownFragment;

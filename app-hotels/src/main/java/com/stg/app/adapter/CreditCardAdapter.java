@@ -2,7 +2,7 @@ package com.stg.app.adapter;
 
 import android.content.Context;
 
-import com.easytobook.api.contract.CreditCard;
+import com.socialtravelguide.api.contract.CreditCard;
 import com.stg.app.R;
 
 /**

@@ -5,7 +5,7 @@ import android.support.annotation.LayoutRes;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.easytobook.api.model.DateRange;
+import com.socialtravelguide.api.model.DateRange;
 import com.stg.app.R;
 import com.stg.app.widget.datepicker.SelectedDayView;
 

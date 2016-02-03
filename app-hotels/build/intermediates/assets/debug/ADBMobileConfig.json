@@ -13,7 +13,7 @@
     "appid": "b9c32335ec568d89bb6b26547f0f78bc2a421949f72f2342990315283b5d3462"
   },
   "analytics": {
-    "rsids": "mmteasytobook.app",
+    "rsids": "mmtsocialtravelguide.app",
     "server": "makemytrip.sc.omtrdc.net",
     "ssl": false,
     "offlineEnabled": true,

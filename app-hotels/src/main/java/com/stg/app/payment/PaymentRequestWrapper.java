@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
 
-import com.easytobook.api.model.OrderRequest;
+import com.socialtravelguide.api.model.OrderRequest;
 import com.stg.app.activity.PayPalActivity;
 import com.stg.app.model.BillingAddressPage;
 import com.stg.app.model.BookingStepsModel;

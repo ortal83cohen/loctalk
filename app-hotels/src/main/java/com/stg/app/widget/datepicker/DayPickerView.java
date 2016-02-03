@@ -1,6 +1,6 @@
 package com.stg.app.widget.datepicker;
 
-import com.easytobook.api.model.DateRange;
+import com.socialtravelguide.api.model.DateRange;
 
 import java.util.Calendar;
 

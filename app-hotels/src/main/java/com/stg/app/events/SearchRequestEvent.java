@@ -1,6 +1,6 @@
 package com.stg.app.events;
 
-import com.easytobook.api.model.SearchRequest;
+import com.socialtravelguide.api.model.SearchRequest;
 
 /**
  * @author alex

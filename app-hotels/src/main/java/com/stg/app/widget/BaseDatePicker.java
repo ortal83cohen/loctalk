@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.easytobook.api.model.DateRange;
+import com.socialtravelguide.api.model.DateRange;
 import com.stg.app.R;
 import com.stg.app.utils.CalendarUtils;
 import com.stg.app.widget.datepicker.DayPickerView;

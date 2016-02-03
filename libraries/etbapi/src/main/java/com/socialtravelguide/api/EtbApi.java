@@ -1,20 +1,20 @@
-package com.easytobook.api;
+package com.socialtravelguide.api;
 
 import android.support.v4.util.ArrayMap;
 
-import com.easytobook.api.mock.ResultsMockClient;
-import com.easytobook.api.model.CancelRequest;
-import com.easytobook.api.model.CancelResponse;
-import com.easytobook.api.model.DetailsResponse;
-import com.easytobook.api.model.HotelRequest;
-import com.easytobook.api.model.OrderRequest;
-import com.easytobook.api.model.OrderResponse;
-import com.easytobook.api.model.ResultsResponse;
-import com.easytobook.api.model.SearchRequest;
-import com.easytobook.api.model.search.Filter;
-import com.easytobook.api.model.search.ListType;
-import com.easytobook.api.model.search.Type;
-import com.easytobook.api.utils.RequestUtils;
+import com.socialtravelguide.api.mock.ResultsMockClient;
+import com.socialtravelguide.api.model.CancelRequest;
+import com.socialtravelguide.api.model.CancelResponse;
+import com.socialtravelguide.api.model.DetailsResponse;
+import com.socialtravelguide.api.model.HotelRequest;
+import com.socialtravelguide.api.model.OrderRequest;
+import com.socialtravelguide.api.model.OrderResponse;
+import com.socialtravelguide.api.model.ResultsResponse;
+import com.socialtravelguide.api.model.SearchRequest;
+import com.socialtravelguide.api.model.search.Filter;
+import com.socialtravelguide.api.model.search.ListType;
+import com.socialtravelguide.api.model.search.Type;
+import com.socialtravelguide.api.utils.RequestUtils;
 import com.squareup.okhttp.HttpUrl;
 import com.squareup.okhttp.Interceptor;
 import com.squareup.okhttp.OkHttpClient;

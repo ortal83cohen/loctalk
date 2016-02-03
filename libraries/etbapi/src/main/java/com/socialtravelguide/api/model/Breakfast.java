@@ -1,4 +1,4 @@
-package com.easytobook.api.model;
+package com.socialtravelguide.api.model;
 
 public class Breakfast {
     public int plan;

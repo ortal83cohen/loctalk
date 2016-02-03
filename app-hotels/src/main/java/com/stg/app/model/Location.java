@@ -3,7 +3,7 @@ package com.stg.app.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.easytobook.api.model.search.SprType;
+import com.socialtravelguide.api.model.search.SprType;
 import com.google.android.gms.maps.model.LatLng;
 
 /**

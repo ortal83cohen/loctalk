@@ -10,7 +10,7 @@ import android.graphics.Paint;
 import android.support.annotation.DrawableRes;
 import android.support.v4.util.LruCache;
 
-import com.easytobook.api.model.search.Poi;
+import com.socialtravelguide.api.model.search.Poi;
 import com.stg.app.R;
 import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;

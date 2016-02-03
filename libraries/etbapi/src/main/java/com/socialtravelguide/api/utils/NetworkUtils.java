@@ -1,4 +1,4 @@
-package com.easytobook.api.utils;
+package com.socialtravelguide.api.utils;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;

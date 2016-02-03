@@ -1,6 +1,6 @@
-package com.easytobook.api.utils;
+package com.socialtravelguide.api.utils;
 
-import com.easytobook.api.contract.CreditCard;
+import com.socialtravelguide.api.contract.CreditCard;
 
 import org.junit.Test;
 

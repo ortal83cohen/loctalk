@@ -1,6 +1,6 @@
 package com.stg.app.member;
 
-import com.easytobook.api.mock.ResultsMockClient;
+import com.socialtravelguide.api.mock.ResultsMockClient;
 import com.stg.app.Config;
 import com.stg.app.etbapi.RetrofitLogger;
 import com.squareup.okhttp.HttpUrl;

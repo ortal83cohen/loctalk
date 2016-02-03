@@ -13,8 +13,8 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
-import com.easytobook.api.model.SearchRequest;
-import com.easytobook.api.utils.RequestUtils;
+import com.socialtravelguide.api.model.SearchRequest;
+import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.analytics.AnalyticsCalls;

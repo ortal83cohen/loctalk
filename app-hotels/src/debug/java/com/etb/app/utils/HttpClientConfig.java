@@ -32,11 +32,11 @@ public class HttpClientConfig {
             String keyStoreType = KeyStore.getDefaultType();
             KeyStore keyStore = KeyStore.getInstance(keyStoreType);
             keyStore.load(null, null);
-            keyStore.setCertificateEntry("il", getCertificate(R.raw.il_easytobook_us, context));
-            keyStore.setCertificateEntry("us", getCertificate(R.raw.easytobook_us, context));
-            keyStore.setCertificateEntry("ap", getCertificate(R.raw.api_easytobook_us, context));
-            keyStore.setCertificateEntry("nl", getCertificate(R.raw.secure_easytobook_com, context));
-            keyStore.setCertificateEntry("aw", getCertificate(R.raw.api_easytobook_com, context));
+            keyStore.setCertificateEntry("il", getCertificate(R.raw.il_socialtravelguide_us, context));
+            keyStore.setCertificateEntry("us", getCertificate(R.raw.socialtravelguide_us, context));
+            keyStore.setCertificateEntry("ap", getCertificate(R.raw.api_socialtravelguide_us, context));
+            keyStore.setCertificateEntry("nl", getCertificate(R.raw.secure_socialtravelguide_com, context));
+            keyStore.setCertificateEntry("aw", getCertificate(R.raw.api_socialtravelguide_com, context));
 
             // Create a TrustManager that trusts the CAs in our KeyStore
             String tmfAlgorithm = TrustManagerFactory.getDefaultAlgorithm();
@@ -64,7 +64,7 @@ public class HttpClientConfig {
         InputStream caInput = new BufferedInputStream(is);
         Certificate ca;
 
-        // shell: openssl x509 -in easytobook.us.cert -outform der -out easytobook_us_der.crt
+        // shell: openssl x509 -in socialtravelguide.us.cert -outform der -out socialtravelguide_us_der.crt
 
         try {
             ca = cf.generateCertificate(caInput);

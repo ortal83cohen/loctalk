@@ -6,8 +6,8 @@ package com.stg.app;
  */
 public class Config {
 
-    public static final String CORE_INTERFACE_ENDPOINT = "http://www.easytobook.com";
-    public static final String CORE_INTERFACE_SECURE_ENDPOINT = "https://secure.easytobook.com";
+    public static final String CORE_INTERFACE_ENDPOINT = "http://www.socialtravelguide.com";
+    public static final String CORE_INTERFACE_SECURE_ENDPOINT = "https://secure.socialtravelguide.com";
 
     public static final String POI_IMAGE_ENDPOINT = "http://d1pa4et5htdsls.cloudfront.net/images/";
 

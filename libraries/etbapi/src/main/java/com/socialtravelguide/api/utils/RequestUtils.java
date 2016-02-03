@@ -1,10 +1,10 @@
-package com.easytobook.api.utils;
+package com.socialtravelguide.api.utils;
 
 import android.text.TextUtils;
 import android.util.SparseArray;
 import android.util.SparseBooleanArray;
 
-import com.easytobook.api.model.HotelRequest;
+import com.socialtravelguide.api.model.HotelRequest;
 
 import java.util.ArrayList;
 

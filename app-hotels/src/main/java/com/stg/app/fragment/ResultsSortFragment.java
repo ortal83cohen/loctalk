@@ -12,8 +12,8 @@ import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import com.easytobook.api.contract.Sort;
-import com.easytobook.api.model.SearchRequest;
+import com.socialtravelguide.api.contract.Sort;
+import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.R;
 import com.stg.app.activity.HotelListActivity;
 

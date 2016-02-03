@@ -9,7 +9,7 @@ import android.graphics.Rect;
 import android.support.annotation.DrawableRes;
 import android.support.v4.util.LruCache;
 
-import com.easytobook.api.model.Accommodation;
+import com.socialtravelguide.api.model.Accommodation;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;

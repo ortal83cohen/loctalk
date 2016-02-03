@@ -1,6 +1,6 @@
 package com.stg.app.preferences;
 
-import com.easytobook.api.contract.Language;
+import com.socialtravelguide.api.contract.Language;
 
 /**
  * @author alex

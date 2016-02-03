@@ -1,6 +1,6 @@
 package com.stg.app.payment;
 
-import com.easytobook.api.model.Payment;
+import com.socialtravelguide.api.model.Payment;
 
 /**
  * @author alex

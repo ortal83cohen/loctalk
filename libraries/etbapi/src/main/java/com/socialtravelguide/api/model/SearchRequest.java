@@ -1,9 +1,9 @@
-package com.easytobook.api.model;
+package com.socialtravelguide.api.model;
 
 import android.os.Parcelable;
 
-import com.easytobook.api.model.search.Filter;
-import com.easytobook.api.model.search.Type;
+import com.socialtravelguide.api.model.search.Filter;
+import com.socialtravelguide.api.model.search.Type;
 
 /**
  * @author ortal
@@ -18,7 +18,7 @@ public class SearchRequest extends HotelRequest {
 
     public SearchRequest() {
         super();
-        setSort(com.easytobook.api.contract.Sort.Type.FAVORITES);
+        setSort(com.socialtravelguide.api.contract.Sort.Type.FAVORITES);
     }
 
     public Sort getSort() {

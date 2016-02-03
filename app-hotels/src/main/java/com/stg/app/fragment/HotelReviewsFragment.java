@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.easytobook.api.contract.Language;
+import com.socialtravelguide.api.contract.Language;
 import com.stg.app.R;
 import com.stg.app.adapter.HotelReviewsAdapter;
 import com.stg.app.analytics.AnalyticsCalls;

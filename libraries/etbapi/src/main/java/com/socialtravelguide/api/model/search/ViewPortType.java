@@ -1,4 +1,4 @@
-package com.easytobook.api.model.search;
+package com.socialtravelguide.api.model.search;
 
 
 /**

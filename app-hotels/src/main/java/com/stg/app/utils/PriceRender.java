@@ -2,7 +2,7 @@ package com.stg.app.utils;
 
 import android.content.Context;
 
-import com.easytobook.api.model.Accommodation;
+import com.socialtravelguide.api.model.Accommodation;
 import com.stg.app.App;
 import com.stg.app.preferences.UserPreferences;
 

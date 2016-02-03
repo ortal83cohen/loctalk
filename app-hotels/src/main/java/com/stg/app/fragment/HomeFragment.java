@@ -35,8 +35,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.crashlytics.android.Crashlytics;
-import com.easytobook.api.model.SearchRequest;
-import com.easytobook.api.model.search.Type;
+import com.socialtravelguide.api.model.SearchRequest;
+import com.socialtravelguide.api.model.search.Type;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;

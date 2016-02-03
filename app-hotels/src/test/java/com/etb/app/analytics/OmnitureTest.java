@@ -1,6 +1,6 @@
 package com.stg.app.analytics;
 
-import com.easytobook.api.model.SearchRequest;
+import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.model.Location;
 
 import org.junit.Test;

@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 
-import com.easytobook.api.model.Accommodation;
-import com.easytobook.api.model.SearchRequest;
+import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.analytics.AnalyticsCalls;

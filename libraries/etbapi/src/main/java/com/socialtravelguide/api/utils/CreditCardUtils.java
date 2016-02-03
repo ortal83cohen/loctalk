@@ -1,8 +1,8 @@
-package com.easytobook.api.utils;
+package com.socialtravelguide.api.utils;
 
 import android.support.v4.util.SimpleArrayMap;
 
-import com.easytobook.api.contract.CreditCard;
+import com.socialtravelguide.api.contract.CreditCard;
 
 import java.util.ArrayList;
 import java.util.Calendar;

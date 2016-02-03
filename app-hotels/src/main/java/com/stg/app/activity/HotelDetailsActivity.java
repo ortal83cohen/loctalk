@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.easytobook.api.model.search.Poi;
+import com.socialtravelguide.api.model.search.Poi;
 import com.stg.app.R;
 import com.stg.app.adapter.ViewPagerAdapter;
 import com.stg.app.core.CoreInterface;

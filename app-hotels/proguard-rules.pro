@@ -170,7 +170,7 @@
 -keep class com.google.gson.stream.** { *; }
 
 # ETBAPI
--keep class com.easytobook.api.** { *; }
+-keep class com.socialtravelguide.api.** { *; }
 
 # CORE INTERFACE
 -keep class com.stg.app.core.model.** { *; }

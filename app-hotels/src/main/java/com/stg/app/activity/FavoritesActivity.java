@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.easytobook.api.model.Accommodation;
+import com.socialtravelguide.api.model.Accommodation;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.adapter.HotelViewHolder;

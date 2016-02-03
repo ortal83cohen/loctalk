@@ -17,17 +17,16 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.easytobook.api.EtbApi;
-import com.easytobook.api.contract.OrderStatus;
-import com.easytobook.api.contract.PaymentType;
-import com.easytobook.api.contract.Policy;
-import com.easytobook.api.model.CancelRequest;
-import com.easytobook.api.model.CancelResponse;
-import com.easytobook.api.model.DateRange;
-import com.easytobook.api.model.ErrorResponse;
-import com.easytobook.api.model.Order;
-import com.easytobook.api.model.OrderResponse;
-import com.easytobook.api.model.TaxesAndFees;
+import com.socialtravelguide.api.EtbApi;
+import com.socialtravelguide.api.contract.OrderStatus;
+import com.socialtravelguide.api.contract.PaymentType;
+import com.socialtravelguide.api.contract.Policy;
+import com.socialtravelguide.api.model.CancelRequest;
+import com.socialtravelguide.api.model.CancelResponse;
+import com.socialtravelguide.api.model.ErrorResponse;
+import com.socialtravelguide.api.model.Order;
+import com.socialtravelguide.api.model.OrderResponse;
+import com.socialtravelguide.api.model.TaxesAndFees;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.adapter.SummaryImageViewHolder;
@@ -286,10 +285,7 @@ public class ConfirmationActivity extends BaseActivity implements View.OnClickLi
             SummaryImage.bind(mRate.accommodation.images.get(0), mRate.accommodation.name, 3);
         }
 
-        DateRange range = new DateRange(arrivalDate.getTime(), departureDate.getTime());
-        int days = range.days();
-        mNights.setValue(days);
-        mNights.setTitle(r.getQuantityString(R.plurals.nights_caps, days));
+        mNights.setTitle(r.getQuantityString(R.plurals.nights_caps, 1));
         mGuests.setValue(mRate.capacity);
         mGuests.setTitle(r.getQuantityString(R.plurals.guests_caps, Integer.valueOf(mRate.capacity)));
         mRooms.setValue(mRate.rateCount);
@@ -335,7 +331,7 @@ public class ConfirmationActivity extends BaseActivity implements View.OnClickLi
             mExtra.setVisibility(View.GONE);
         }
 
-        PriceRender priceRender = createPriceRender(currencyCode, days);
+        PriceRender priceRender = createPriceRender(currencyCode, 1);
 
         int capacity = Integer.valueOf(mRate.capacity);
         mRoomPersons.setText(getResources().getQuantityString(R.plurals.capacity_persons_max, capacity, capacity));

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.easytobook.api.utils;
+package com.socialtravelguide.api.utils;
 
 import com.squareup.okhttp.Connection;
 import com.squareup.okhttp.Headers;

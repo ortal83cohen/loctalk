@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.easytobook.api.model.DateRange;
-import com.easytobook.api.utils.DateRangeUtils;
+import com.socialtravelguide.api.model.DateRange;
+import com.socialtravelguide.api.utils.DateRangeUtils;
 import com.stg.app.R;
 import com.stg.app.activity.ConfirmationActivity;
 import com.stg.app.member.model.BookingEvent;

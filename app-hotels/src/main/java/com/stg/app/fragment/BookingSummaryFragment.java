@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.easytobook.api.model.SearchRequest;
+import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.activity.BookingSummaryActivity;

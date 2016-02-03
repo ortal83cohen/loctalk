@@ -1,4 +1,4 @@
-package com.easytobook.api.contract;
+package com.socialtravelguide.api.contract;
 
 /**
  * @author alex

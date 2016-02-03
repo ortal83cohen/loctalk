@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.easytobook.api.model.Accommodation;
+import com.socialtravelguide.api.model.Accommodation;
 
 import java.util.ArrayList;
 import java.util.HashMap;

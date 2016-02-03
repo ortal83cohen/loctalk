@@ -30,7 +30,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.easytobook.api.model.DateRange;
+import com.socialtravelguide.api.model.DateRange;
 import com.stg.app.R;
 import com.stg.app.provider.DbContract;
 import com.stg.app.utils.AppLog;

@@ -7,8 +7,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.easytobook.api.EtbApiConfig;
-import com.easytobook.api.contract.Language;
+import com.socialtravelguide.api.EtbApiConfig;
+import com.socialtravelguide.api.contract.Language;
 import com.stg.app.App;
 import com.stg.app.BuildConfig;
 import com.stg.app.Config;
@@ -93,9 +93,9 @@ public class SettingsActivity extends SettingsActionBarActivity {
         } else if (action == ACTION_LANGUAGE) {
             showLanguageDialog(pref);
         } else if (action == ACTION_PRIVACY_POLICY) {
-            showWebViewDialog(R.string.privacy_policy, "http://www.easytobook.com/en/privacy/");
+            showWebViewDialog(R.string.privacy_policy, "http://www.socialtravelguide.com/en/privacy/");
         } else if (action == ACTION_TOS) {
-            showWebViewDialog(R.string.terms_of_service, "http://www.easytobook.com/en/disclaimer/");
+            showWebViewDialog(R.string.terms_of_service, "http://www.socialtravelguide.com/en/disclaimer/");
         } else if (action == ACTION_LICENSES) {
             new LicensesDialog.Builder(this)
                     .setNotices(R.raw.notices)
@@ -286,12 +286,12 @@ public class SettingsActivity extends SettingsActionBarActivity {
                 "production", "mock", "trunk"
         };
         final CharSequence[] api = new CharSequence[]{
-//                "api.easytobook.com","mock", "trunk.api.easytobook.us", "api-alex.il.easytobook.us", "api.easytobook.com"
-                "http://maorbolo.com", "mock", "trunk.api.easytobook.us"
+//                "api.socialtravelguide.com","mock", "trunk.api.socialtravelguide.us", "api-alex.il.socialtravelguide.us", "api.socialtravelguide.com"
+                "http://maorbolo.com", "mock", "trunk.api.socialtravelguide.us"
         };
         final CharSequence[] core = new CharSequence[]{
-//                "www.easytobook.com","mock", "trunk-site.easytobook.us", "devsite-alex.il.easytobook.us", "devsite-ortal.il.easytobook.us"
-                "http://maorbolo.com", "mock", "trunk-site.easytobook.us"
+//                "www.socialtravelguide.com","mock", "trunk-site.socialtravelguide.us", "devsite-alex.il.socialtravelguide.us", "devsite-ortal.il.socialtravelguide.us"
+                "http://maorbolo.com", "mock", "trunk-site.socialtravelguide.us"
         };
         builder.setItems(items, new DialogInterface.OnClickListener() {
             @Override

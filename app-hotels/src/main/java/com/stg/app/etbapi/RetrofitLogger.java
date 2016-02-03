@@ -1,6 +1,6 @@
 package com.stg.app.etbapi;
 
-import com.easytobook.api.utils.HttpLoggingInterceptor;
+import com.socialtravelguide.api.utils.HttpLoggingInterceptor;
 import com.stg.app.BuildConfig;
 import com.stg.app.utils.AppLog;
 

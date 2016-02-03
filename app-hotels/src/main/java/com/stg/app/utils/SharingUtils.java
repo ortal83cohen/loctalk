@@ -14,6 +14,6 @@ public class SharingUtils {
         sharingIntent.setType("text/plain");
         sharingIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
         sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
-        context.startActivity(Intent.createChooser(sharingIntent, "Shared via www.easytobook.com"));
+        context.startActivity(Intent.createChooser(sharingIntent, "Shared via www.socialtravelguide.com"));
     }
 }

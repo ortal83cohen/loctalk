@@ -3,10 +3,10 @@ package com.stg.app.analytics;
 import android.app.Activity;
 import android.content.Context;
 
-import com.easytobook.api.model.Accommodation;
-import com.easytobook.api.model.HotelRequest;
-import com.easytobook.api.model.OrderResponse;
-import com.easytobook.api.model.SearchRequest;
+import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.HotelRequest;
+import com.socialtravelguide.api.model.OrderResponse;
+import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.model.OrderItem;
 

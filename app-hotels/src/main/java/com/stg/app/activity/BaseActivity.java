@@ -11,7 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.easytobook.api.contract.Language;
+import com.socialtravelguide.api.contract.Language;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.analytics.AnalyticsCalls;

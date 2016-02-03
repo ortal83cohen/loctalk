@@ -1,6 +1,6 @@
-package com.easytobook.api.model;
+package com.socialtravelguide.api.model;
 
-import com.easytobook.api.contract.Language;
+import com.socialtravelguide.api.contract.Language;
 
 public class HotelRequest {
 

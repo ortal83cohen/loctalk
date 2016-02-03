@@ -1,6 +1,6 @@
 package com.stg.app.etbapi;
 
-import com.easytobook.api.EtbApi;
+import com.socialtravelguide.api.EtbApi;
 import com.squareup.okhttp.Request;
 
 import java.io.IOException;

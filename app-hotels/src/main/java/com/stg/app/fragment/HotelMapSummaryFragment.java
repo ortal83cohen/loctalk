@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.easytobook.api.model.Accommodation;
+import com.socialtravelguide.api.model.Accommodation;
 import com.stg.app.R;
 import com.stg.app.adapter.HotelViewHolder;
 import com.stg.app.hoteldetails.HotelSnippet;

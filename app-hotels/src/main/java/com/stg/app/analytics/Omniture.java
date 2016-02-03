@@ -5,9 +5,9 @@ import android.content.Context;
 
 import com.adobe.mobile.Analytics;
 import com.adobe.mobile.Config;
-import com.easytobook.api.model.Accommodation;
-import com.easytobook.api.model.HotelRequest;
-import com.easytobook.api.model.SearchRequest;
+import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.HotelRequest;
+import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.BuildConfig;
 import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.model.HotelListRequest;

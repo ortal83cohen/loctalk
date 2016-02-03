@@ -14,10 +14,10 @@ import android.widget.GridLayout;
 import android.widget.TextView;
 
 import com.appyvet.rangebar.RangeBar;
-import com.easytobook.api.contract.AccType;
-import com.easytobook.api.contract.Facility;
-import com.easytobook.api.model.SearchRequest;
-import com.easytobook.api.model.search.Filter;
+import com.socialtravelguide.api.contract.AccType;
+import com.socialtravelguide.api.contract.Facility;
+import com.socialtravelguide.api.model.SearchRequest;
+import com.socialtravelguide.api.model.search.Filter;
 import com.stg.app.R;
 import com.stg.app.activity.HotelListFiltersActivity;
 import com.stg.app.utils.AppLog;

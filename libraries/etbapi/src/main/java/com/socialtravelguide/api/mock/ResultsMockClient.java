@@ -1,4 +1,4 @@
-package com.easytobook.api.mock;
+package com.socialtravelguide.api.mock;
 
 
 import com.squareup.okhttp.Interceptor;

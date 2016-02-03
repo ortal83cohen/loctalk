@@ -24,10 +24,10 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.easytobook.api.EtbApi;
-import com.easytobook.api.model.Accommodation;
-import com.easytobook.api.model.DetailsResponse;
-import com.easytobook.api.utils.RequestUtils;
+import com.socialtravelguide.api.EtbApi;
+import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.DetailsResponse;
+import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.activity.BookingSummaryActivity;

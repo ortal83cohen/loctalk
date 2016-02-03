@@ -4,7 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.text.TextUtils;
 
-import com.easytobook.api.model.DateRange;
+import com.socialtravelguide.api.model.DateRange;
 import com.google.android.gms.location.places.Place;
 
 import java.text.SimpleDateFormat;
