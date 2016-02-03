@@ -9,7 +9,7 @@ import java.util.IllegalFormatException;
 import java.util.Locale;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-11
  */
 public class AppLog {

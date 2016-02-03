@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-04
  */
 public class StateAdapter extends ArrayAdapter<String> {

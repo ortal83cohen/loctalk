@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import com.socialtravelguide.api.model.search.Filter;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-12-03
  */
 public class HotelListFilter extends Filter implements Parcelable {

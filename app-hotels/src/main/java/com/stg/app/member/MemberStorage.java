@@ -8,7 +8,7 @@ import com.stg.app.member.model.Profile;
 import com.stg.app.member.model.User;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-06
  */
 public class MemberStorage {

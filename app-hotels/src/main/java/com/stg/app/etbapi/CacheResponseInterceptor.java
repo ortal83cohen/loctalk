@@ -7,7 +7,7 @@ import com.squareup.okhttp.Response;
 import java.io.IOException;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-08
  */
 public class CacheResponseInterceptor implements Interceptor {

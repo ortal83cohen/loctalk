@@ -12,7 +12,7 @@ import com.stg.app.R;
 import butterknife.ButterKnife;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-22
  */
 public class DatePickerFragment extends BaseFragment {

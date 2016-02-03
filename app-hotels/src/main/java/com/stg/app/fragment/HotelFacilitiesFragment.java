@@ -27,7 +27,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-14
  */
 public class HotelFacilitiesFragment extends BaseFragment {

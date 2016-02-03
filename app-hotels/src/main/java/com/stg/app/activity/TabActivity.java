@@ -12,7 +12,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-11
  */
 public abstract class TabActivity extends BaseActivity implements TabLayout.OnTabSelectedListener {

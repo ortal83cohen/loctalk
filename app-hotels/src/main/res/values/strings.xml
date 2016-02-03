@@ -24,7 +24,7 @@
     <string name="special_free_cancellation">Free Cancellation</string>
     <string name="special_breakfast_included">Breakfast Included</string>
     <string name="special_discount">Special Discount</string>
-    <string name="terms_and_condition">I agree to the Easytobook <a href="http://www.socialtravelguide.com/en/disclaimer/?amu=280825437">Terms &amp; Conditions</a> and <a href="http://www.socialtravelguide.com/en/privacy/?amu=280825437">Privacy &amp; Cookies</a> by making the reservation</string>
+    <string name="terms_and_condition">I agree to the stg <a href="http://www.socialtravelguide.com/en/disclaimer/?amu=280825437">Terms &amp; Conditions</a> and <a href="http://www.socialtravelguide.com/en/privacy/?amu=280825437">Privacy &amp; Cookies</a> by making the reservation</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
     <string name="rating_location">Location</string>

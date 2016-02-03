@@ -12,7 +12,7 @@ import com.paypal.android.sdk.payments.PaymentActivity;
 import java.math.BigDecimal;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-01
  */
 public class PayPal {

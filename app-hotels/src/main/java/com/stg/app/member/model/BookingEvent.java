@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-19
  */
 public class BookingEvent extends Event {

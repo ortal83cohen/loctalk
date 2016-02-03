@@ -7,7 +7,7 @@ import com.socialtravelguide.api.model.SearchRequest;
 import com.socialtravelguide.api.model.search.Filter;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-17
  */
 public class HotelListRequest extends SearchRequest implements Parcelable {

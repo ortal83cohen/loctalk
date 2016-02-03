@@ -18,7 +18,7 @@ import retrofit.Callback;
 import retrofit.Response;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-13
  */
 public class PasswordLogin {

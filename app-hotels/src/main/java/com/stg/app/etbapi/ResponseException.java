@@ -1,7 +1,7 @@
 package com.stg.app.etbapi;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-10-02
  */
 public class ResponseException extends Throwable {

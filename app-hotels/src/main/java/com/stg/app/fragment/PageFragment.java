@@ -12,7 +12,7 @@ import com.tech.freak.wizardpager.ui.PageFragmentCallbacks;
 import java.security.InvalidParameterException;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-04
  */
 public abstract class PageFragment extends BaseFragment implements PageFragmentInterface.FormData {

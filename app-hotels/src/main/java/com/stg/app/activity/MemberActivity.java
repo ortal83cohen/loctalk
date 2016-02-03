@@ -13,7 +13,7 @@ import com.stg.app.fragment.MemberProfileEditFragment;
 import com.stg.app.widget.NavigationDrawer;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-16
  */
 public class MemberActivity extends TabActivity {

@@ -16,7 +16,7 @@ import com.paypal.android.sdk.payments.PaymentConfirmation;
 import org.json.JSONException;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-07
  */
 public class PayPalActivity extends BaseActivity {

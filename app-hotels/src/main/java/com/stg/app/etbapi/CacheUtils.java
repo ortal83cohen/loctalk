@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.net.URI;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-09-22
  */
 public class CacheUtils {

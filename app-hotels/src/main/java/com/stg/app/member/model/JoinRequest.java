@@ -1,7 +1,7 @@
 package com.stg.app.member.model;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-06
  */
 public class JoinRequest extends Profile {

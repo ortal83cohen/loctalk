@@ -19,7 +19,7 @@ import java.security.InvalidParameterException;
 import butterknife.ButterKnife;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-28
  */
 public class BillingAddressFragment extends PageFragment {

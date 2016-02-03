@@ -6,7 +6,7 @@ import com.stg.app.App;
 import com.squareup.otto.Produce;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-12
  */
 public class EventProducers {

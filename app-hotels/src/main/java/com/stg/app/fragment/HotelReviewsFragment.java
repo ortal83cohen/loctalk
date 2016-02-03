@@ -26,7 +26,7 @@ import retrofit.Call;
 import retrofit.Response;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-14
  */
 public class HotelReviewsFragment extends BaseFragment {

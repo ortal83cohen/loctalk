@@ -3,7 +3,7 @@ package com.stg.app.fragment;
 import com.tech.freak.wizardpager.ui.PageFragmentCallbacks;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-04
  */
 public interface PageFragmentInterface extends PageFragmentCallbacks {

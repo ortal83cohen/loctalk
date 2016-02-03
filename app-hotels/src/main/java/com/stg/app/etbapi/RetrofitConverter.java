@@ -8,7 +8,7 @@ import java.lang.reflect.Type;
 import retrofit.GsonConverterFactory;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-11-03
  */
 public class RetrofitConverter {

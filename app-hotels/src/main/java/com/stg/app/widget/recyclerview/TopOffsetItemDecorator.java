@@ -5,7 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-05
  */
 public class TopOffsetItemDecorator extends RecyclerView.ItemDecoration {

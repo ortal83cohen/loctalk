@@ -9,7 +9,7 @@ import java.util.Locale;
 import java.util.TreeMap;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-04
  */
 public class CountryAdapter extends ArrayAdapter<String> {

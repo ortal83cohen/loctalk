@@ -13,7 +13,7 @@ import com.stg.app.utils.MaskFormatter;
 import com.stg.app.utils.TextWatcherAdapter;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-29
  */
 public class CreditCardEditText extends EditText {

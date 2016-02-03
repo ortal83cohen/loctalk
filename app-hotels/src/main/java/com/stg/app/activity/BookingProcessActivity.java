@@ -58,7 +58,7 @@ import butterknife.ButterKnife;
 import retrofit.Response;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-28
  */
 public class BookingProcessActivity extends BaseActivity implements PageFragmentInterface, ModelCallbacks {

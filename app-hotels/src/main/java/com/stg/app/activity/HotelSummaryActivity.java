@@ -28,7 +28,7 @@ import com.google.android.gms.maps.model.LatLng;
 import butterknife.ButterKnife;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-19
  */
 public class HotelSummaryActivity extends BaseActivity implements PriceBreakdownFragment.Listener, HomeFragment.Listener {

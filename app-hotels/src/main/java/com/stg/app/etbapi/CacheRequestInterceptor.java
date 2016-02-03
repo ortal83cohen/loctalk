@@ -12,7 +12,7 @@ import java.net.URI;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-08
  */
 public class CacheRequestInterceptor implements Interceptor {

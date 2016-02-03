@@ -26,7 +26,7 @@ import java.util.Set;
 import de.psdev.licensesdialog.LicensesDialog;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-02
  */
 public class SettingsActivity extends SettingsActionBarActivity {

@@ -6,7 +6,7 @@ import com.socialtravelguide.api.contract.CreditCard;
 import com.stg.app.R;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-04
  */
 public class CreditCardAdapter extends SpinnerAdapter {

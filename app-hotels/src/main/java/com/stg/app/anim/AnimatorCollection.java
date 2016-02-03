@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-25
  */
 public class AnimatorCollection {

@@ -22,7 +22,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-14
  */
 public class FavoritesActivity extends BaseActivity implements HotelViewHolder.Listener, HomeFragment.Listener {

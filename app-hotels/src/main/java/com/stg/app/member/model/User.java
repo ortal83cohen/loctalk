@@ -3,7 +3,7 @@ package com.stg.app.member.model;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-06
  */
 public class User {

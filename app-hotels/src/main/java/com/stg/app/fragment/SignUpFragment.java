@@ -22,7 +22,7 @@ import retrofit.Response;
 import retrofit.Retrofit;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-12
  */
 public class SignUpFragment extends LoginFragment implements Callback<AccessToken> {

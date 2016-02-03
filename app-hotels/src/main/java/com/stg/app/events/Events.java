@@ -4,7 +4,7 @@ import com.stg.app.utils.AppLog;
 import com.squareup.otto.Bus;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-06
  */
 public class Events {

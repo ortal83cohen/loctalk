@@ -4,7 +4,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-08
  */
 public class NetworkUtilities {

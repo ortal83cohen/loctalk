@@ -24,7 +24,7 @@ import butterknife.ButterKnife;
 import retrofit.Response;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-17
  */
 public class AddMoreBookingFragment extends BaseFragment implements View.OnClickListener {

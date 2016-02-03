@@ -1,7 +1,7 @@
 package com.stg.app.core.model;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-11
  */
 public class Ratings {

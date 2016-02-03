@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-15
  */
 public class ReviewResponse {

@@ -4,7 +4,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-09
  */
 public abstract class TextWatcherAdapter implements TextWatcher {

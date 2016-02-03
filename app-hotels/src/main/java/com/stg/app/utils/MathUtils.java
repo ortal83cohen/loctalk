@@ -1,7 +1,7 @@
 package com.stg.app.utils;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-22
  */
 public class MathUtils {

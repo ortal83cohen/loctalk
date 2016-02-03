@@ -19,7 +19,7 @@ import java.util.concurrent.CountDownLatch;
 import retrofit.Response;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-18
  */
 public class ProfileUpdateService extends GcmTaskService {

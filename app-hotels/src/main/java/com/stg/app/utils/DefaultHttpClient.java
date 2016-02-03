@@ -7,7 +7,7 @@ import com.squareup.okhttp.OkHttpClient;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-01
  */
 public class DefaultHttpClient extends OkHttpClient {

@@ -3,7 +3,7 @@ package com.stg.app.payment;
 import com.socialtravelguide.api.model.Payment;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-01
  */
 public class PayPalPaymentData extends Payment.Data {

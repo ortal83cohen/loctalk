@@ -4,7 +4,7 @@ import com.tech.freak.wizardpager.model.ModelCallbacks;
 import com.tech.freak.wizardpager.model.Page;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-11-19
  */
 public abstract class AbstractPage extends Page {

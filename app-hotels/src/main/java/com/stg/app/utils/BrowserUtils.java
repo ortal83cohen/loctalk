@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-13
  */
 public class BrowserUtils {

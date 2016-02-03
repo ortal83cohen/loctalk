@@ -12,7 +12,7 @@ import com.stg.app.R;
 import java.util.Arrays;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-04
  */
 public class SpinnerAdapter extends ArrayAdapter<String> {

@@ -11,7 +11,7 @@ import com.stg.app.model.HotelListFilter;
 import com.stg.app.model.HotelListRequest;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-22
  */
 public class HotelListFiltersActivity extends BaseActivity implements HotelListFilterFragment.Listener {

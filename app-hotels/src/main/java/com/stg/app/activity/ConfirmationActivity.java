@@ -56,7 +56,7 @@ import retrofit.Callback;
 import retrofit.Response;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-05
  */
 public class ConfirmationActivity extends BaseActivity implements View.OnClickListener {

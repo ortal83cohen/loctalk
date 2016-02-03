@@ -8,7 +8,7 @@ import com.stg.app.activity.BaseActivity;
 import com.stg.app.fragment.NavigationFragment;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-19
  */
 public class NavigationDrawer {

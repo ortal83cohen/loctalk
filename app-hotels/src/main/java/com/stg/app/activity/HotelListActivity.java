@@ -48,7 +48,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-19
  */
 public class HotelListActivity extends BaseActivity implements OnMapReadyCallback, ResultsMap.Listener, HotelViewHolder.Listener, HotelsListFragment.Listener, FragmentManager.OnBackStackChangedListener, HomeFragment.Listener, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {

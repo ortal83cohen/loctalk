@@ -3,7 +3,7 @@ package com.stg.app.events;
 import com.stg.app.member.model.User;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-11
  */
 public class UserLoginEvent {

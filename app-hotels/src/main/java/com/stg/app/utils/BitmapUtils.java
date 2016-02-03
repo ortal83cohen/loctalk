@@ -9,7 +9,7 @@ import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-19
  */
 public class BitmapUtils {

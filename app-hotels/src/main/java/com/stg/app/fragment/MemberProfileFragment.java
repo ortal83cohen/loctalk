@@ -36,7 +36,7 @@ import retrofit.Response;
 import retrofit.Retrofit;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-11
  */
 public class MemberProfileFragment extends BaseFragment implements View.OnClickListener {

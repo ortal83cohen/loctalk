@@ -13,7 +13,7 @@ import android.widget.TableRow;
 import com.stg.app.R;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-18
  */
 public class CheckBoxGroup extends LinearLayout implements CompoundButton.OnCheckedChangeListener {

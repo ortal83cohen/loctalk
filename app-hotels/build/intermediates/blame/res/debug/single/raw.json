@@ -1,31 +1,39 @@
 [
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\zxing_beep.ogg",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.0.3\\res\\raw\\zxing_beep.ogg"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\gpl_20_summary.txt",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\gpl_20_summary.txt"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\gpl_20_full.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\gpl_20_full.txt"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\bsd2_summary.txt",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\bsd2_summary.txt"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\lgpl_21_summary.txt",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\lgpl_21_summary.txt"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\isc_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\isc_summary.txt"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\gpl_30_full.txt",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\gpl_30_full.txt"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\loader_logo1.gif",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\raw\\loader_logo1.gif"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\mit_summary.txt",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\mit_summary.txt"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\bsd3_summary.txt",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\bsd3_summary.txt"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\ccand_30_summary.txt",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\ccand_30_summary.txt"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\asl_20_full.txt",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\asl_20_full.txt"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\il_easytobook_us.cer",
@@ -36,36 +44,12 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\lgpl_21_full.txt"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\lgpl_3_full.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\lgpl_3_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\bsd3_full.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\bsd3_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\lgpl_3_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\lgpl_3_summary.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\isc_full.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\isc_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\asl_20_full.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\asl_20_full.txt"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\secure_easytobook_com.cer",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\debug\\res\\raw\\secure_easytobook_com.cer"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\bsd2_full.txt",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\bsd2_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\mit_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\mit_summary.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\lgpl_21_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\lgpl_21_summary.txt"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\gpl_30_summary.txt",
@@ -76,12 +60,20 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\lgpl_3_summary.txt"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\asl_20_summary.txt",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\asl_20_summary.txt"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics\\8.3.0\\res\\raw\\gtm_analytics"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\notices.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\raw\\notices.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\mit_full.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\mit_full.txt"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\mit_full.txt",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\mit_full.txt"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\easytobook_us.cer",
@@ -96,12 +88,20 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\debug\\res\\raw\\api_easytobook_com.cer"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\ccand_30_full.txt",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\ccand_30_full.txt"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\isc_full.txt",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\isc_full.txt"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\isc_summary.txt",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\isc_summary.txt"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\secure_easytobook_com.cer",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\debug\\res\\raw\\secure_easytobook_com.cer"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\lgpl_3_full.txt",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\lgpl_3_full.txt"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\bsd3_full.txt",
@@ -110,121 +110,5 @@
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\gpl_20_full.txt",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\gpl_20_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\bsd2_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\bsd2_summary.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\loader_logo1.gif",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\raw\\loader_logo1.gif"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\mit_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\mit_summary.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\ccand_30_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\ccand_30_summary.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\asl_20_full.txt",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\asl_20_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\api_easytobook_com.cer",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\debug\\res\\raw\\api_easytobook_com.cer"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\easytobook_us.cer",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\debug\\res\\raw\\easytobook_us.cer"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\loader_logo1.gif",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\raw\\loader_logo1.gif"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\ccand_30_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\ccand_30_summary.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\secure_easytobook_com.cer",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\debug\\res\\raw\\secure_easytobook_com.cer"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\il_easytobook_us.cer",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\debug\\res\\raw\\il_easytobook_us.cer"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\bsd3_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\bsd3_summary.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\lgpl_21_full.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\lgpl_21_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\asl_20_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\asl_20_summary.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics\\8.3.0\\res\\raw\\gtm_analytics"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\ccand_30_full.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\ccand_30_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\mit_full.txt",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\mit_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\api_easytobook_us.cer",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\debug\\res\\raw\\api_easytobook_us.cer"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics\\8.3.0\\res\\raw\\gtm_analytics"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\gpl_20_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\gpl_20_summary.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\bsd2_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\bsd2_summary.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\gpl_30_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\gpl_30_summary.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\ccand_30_full.txt",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\ccand_30_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\bsd2_full.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\bsd2_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\notices.xml",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\src\\main\\res\\raw\\notices.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\isc_full.txt",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\isc_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\gpl_30_full.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\gpl_30_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\lgpl_3_full.txt",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\lgpl_3_full.txt"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\asl_20_summary.txt",
-        "source": "C:\\Users\\user\\Documents\\sway-android\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\asl_20_summary.txt"
     }
 ]

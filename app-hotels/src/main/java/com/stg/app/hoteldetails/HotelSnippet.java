@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-29
  */
 public class HotelSnippet implements Parcelable {

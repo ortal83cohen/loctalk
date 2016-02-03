@@ -20,7 +20,7 @@ import java.util.HashMap;
 import java.util.Locale;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-11-18
  */
 public class Omniture extends AnalyticsCalls {

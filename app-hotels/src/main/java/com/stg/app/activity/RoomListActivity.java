@@ -18,7 +18,7 @@ import com.stg.app.utils.PriceRender;
 import butterknife.ButterKnife;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-19
  */
 public class RoomListActivity extends BaseActivity implements PriceBreakdownFragment.Listener {

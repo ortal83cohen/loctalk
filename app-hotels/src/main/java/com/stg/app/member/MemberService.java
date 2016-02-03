@@ -16,7 +16,7 @@ import retrofit.http.PUT;
 import retrofit.http.Query;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-06
  */
 public interface MemberService {

@@ -51,7 +51,7 @@ import retrofit.Response;
 
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-14
  */
 public class HotelDetailsActivity extends TabActivity implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener {

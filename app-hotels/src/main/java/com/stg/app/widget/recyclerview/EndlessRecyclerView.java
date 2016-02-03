@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import com.stg.app.R;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-22
  */
 public class EndlessRecyclerView extends RecyclerView {

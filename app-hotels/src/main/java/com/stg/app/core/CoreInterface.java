@@ -23,7 +23,7 @@ import retrofit.http.Path;
 import retrofit.http.Query;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-07
  */
 public class CoreInterface {

@@ -3,7 +3,7 @@ package com.stg.app.preferences;
 import com.socialtravelguide.api.contract.Language;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-14
  */
 public class UserPreferences {

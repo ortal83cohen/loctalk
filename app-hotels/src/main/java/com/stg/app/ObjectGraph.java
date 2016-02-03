@@ -35,7 +35,7 @@ import java.util.Currency;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-07
  */
 public class ObjectGraph {

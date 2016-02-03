@@ -10,7 +10,7 @@ import com.squareup.okhttp.ResponseBody;
 import retrofit.Response;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-11-03
  */
 public abstract class AvailabilityDetailsCallback extends RetrofitCallback<DetailsResponse> {

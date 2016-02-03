@@ -19,7 +19,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-11
  */
 public class LoginFragment extends BaseFragment implements FacebookLogin.Listener, View.OnClickListener, PasswordLogin.Listener {

@@ -7,7 +7,7 @@ import android.database.Cursor;
 import java.util.ArrayList;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-12-02
  */
 public class LikedHotels {

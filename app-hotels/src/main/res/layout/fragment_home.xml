@@ -95,7 +95,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/search_hotels"
+        android:id="@+id/search"
         style="@style/HotelsAppTheme.Widget.AccentBottomButton"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/bottom_button_height"

@@ -29,7 +29,7 @@ import butterknife.BindDimen;
 import butterknife.ButterKnife;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-25
  */
 public class HotelListFilterFragment extends BaseFragment implements RangeBar.OnRangeBarChangeListener, CheckBoxGroup.OnCheckedChangeListener {

@@ -5,7 +5,7 @@ import android.content.Context;
 import com.tech.freak.wizardpager.model.AbstractWizardModel;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-03
  */
 public abstract class BookingStepsModel extends AbstractWizardModel {

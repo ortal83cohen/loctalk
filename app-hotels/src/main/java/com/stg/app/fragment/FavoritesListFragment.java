@@ -48,7 +48,7 @@ import butterknife.ButterKnife;
 import retrofit.Response;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-17
  */
 

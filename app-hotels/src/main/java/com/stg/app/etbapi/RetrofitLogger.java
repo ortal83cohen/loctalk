@@ -5,7 +5,7 @@ import com.stg.app.BuildConfig;
 import com.stg.app.utils.AppLog;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-10-02
  */
 public class RetrofitLogger implements HttpLoggingInterceptor.Logger {

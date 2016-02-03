@@ -13,7 +13,7 @@ import com.tech.freak.wizardpager.model.ReviewItem;
 import java.util.ArrayList;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-03
  */
 public class PersonalInfoPage extends AbstractPage {

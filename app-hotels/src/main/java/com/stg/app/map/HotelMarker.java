@@ -20,7 +20,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-20
  */
 public class HotelMarker {

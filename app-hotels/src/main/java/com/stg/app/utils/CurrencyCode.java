@@ -8,7 +8,7 @@ import java.util.Currency;
 import java.util.Locale;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-23
  */
 public class CurrencyCode {

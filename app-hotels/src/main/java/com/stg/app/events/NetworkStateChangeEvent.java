@@ -1,7 +1,7 @@
 package com.stg.app.events;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-12
  */
 public class NetworkStateChangeEvent {

@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-25
  */
 public class RevealAnimatorCompat {

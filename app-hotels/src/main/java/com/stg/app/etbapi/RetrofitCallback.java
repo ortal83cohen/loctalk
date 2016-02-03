@@ -16,7 +16,7 @@ import retrofit.Response;
 import retrofit.Retrofit;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-12
  */
 public abstract class RetrofitCallback<T> implements Callback<T> {

@@ -18,7 +18,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-17
  */
 public class FavoritesCitiesFragment extends BaseFragment {

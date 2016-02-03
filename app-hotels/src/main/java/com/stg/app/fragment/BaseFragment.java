@@ -9,7 +9,7 @@ import com.stg.app.preferences.UserPreferences;
 import com.stg.app.utils.PriceRender;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-01
  */
 public abstract class BaseFragment extends Fragment {

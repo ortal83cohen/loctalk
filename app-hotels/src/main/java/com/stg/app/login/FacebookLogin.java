@@ -21,7 +21,7 @@ import org.json.JSONObject;
 import java.util.Arrays;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-06
  */
 public class FacebookLogin implements FacebookCallback<LoginResult>, View.OnClickListener {

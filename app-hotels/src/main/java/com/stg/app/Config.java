@@ -1,7 +1,7 @@
 package com.stg.app;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-07
  */
 public class Config {

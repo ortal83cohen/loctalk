@@ -12,7 +12,7 @@ import com.stg.app.model.HotelListRequest;
 import java.util.HashMap;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-22
  */
 public class PoisFiltersActivity extends BaseActivity implements PoisFilterFragment.Listener {

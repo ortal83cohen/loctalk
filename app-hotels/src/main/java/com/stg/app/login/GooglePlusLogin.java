@@ -16,7 +16,7 @@ import com.google.android.gms.plus.model.people.Person;
 
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-06
  */
 public class GooglePlusLogin implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, View.OnClickListener, ResultCallback<People.LoadPeopleResult> {

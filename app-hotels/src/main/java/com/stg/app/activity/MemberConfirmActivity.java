@@ -17,7 +17,7 @@ import com.squareup.okhttp.ResponseBody;
 import retrofit.Response;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-13
  */
 public class MemberConfirmActivity extends Activity implements PasswordLogin.Listener {

@@ -11,7 +11,7 @@ import android.widget.CheckBox;
 import com.stg.app.R;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-11-01
  */
 public class TileCheckBox extends CheckBox {

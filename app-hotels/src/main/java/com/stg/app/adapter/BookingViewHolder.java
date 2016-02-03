@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.socialtravelguide.api.model.DateRange;
+
 import com.socialtravelguide.api.utils.DateRangeUtils;
 import com.stg.app.R;
 import com.stg.app.activity.ConfirmationActivity;
@@ -28,7 +28,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-19
  */
 public class BookingViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -91,10 +91,8 @@ public class BookingViewHolder extends RecyclerView.ViewHolder implements View.O
 
         Resources r = mContext.getResources();
 
-        DateRange range = new DateRange(arrivalDate.getTime(), departureDate.getTime());
-        int days = range.days();
-        mNights.setValue(days);
-        mNights.setTitle(r.getQuantityString(R.plurals.nights_caps, days));
+        mNights.setValue(1);
+        mNights.setTitle(r.getQuantityString(R.plurals.nights_caps, 1));
 
         mRooms.setValue(booking.rooms);
         mRooms.setTitle(r.getQuantityString(R.plurals.rooms_caps, booking.rooms));

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-01
  */
 public class OrderItem implements Parcelable {

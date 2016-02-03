@@ -10,7 +10,7 @@ import java.text.NumberFormat;
 import java.util.HashMap;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-06
  */
 public class PriceRender {

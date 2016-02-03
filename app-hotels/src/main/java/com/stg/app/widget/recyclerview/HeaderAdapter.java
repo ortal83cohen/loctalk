@@ -1,7 +1,7 @@
 package com.stg.app.widget.recyclerview;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-28
  */
 public interface HeaderAdapter {

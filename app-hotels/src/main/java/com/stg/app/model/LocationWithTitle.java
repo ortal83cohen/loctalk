@@ -1,7 +1,7 @@
 package com.stg.app.model;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-11-19
  */
 public interface LocationWithTitle {

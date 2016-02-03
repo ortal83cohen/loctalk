@@ -80,7 +80,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-17
  */
 public class HomeFragment extends BaseFragment implements View.OnTouchListener, View.OnClickListener {
@@ -115,7 +115,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
     View mBackground;
     @Bind(R.id.group_buttons_holder)
     LinearLayout mGroupButtonsHolder;
-    @Bind(R.id.search_hotels)
+    @Bind(R.id.search)
     Button mSearchHotelsButton;
     private PlaceAutocompleteAdapter mAdapter;
     private int mSelectedPosition = POSITION_UNTOUCHED;
@@ -570,7 +570,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
         super.onSaveInstanceState(outState);
     }
 
-    @OnClick(R.id.search_hotels)
+    @OnClick(R.id.search)
     public void onSearchHotelsClick(View button) {
         if (mShowLocation) {
             onSearchHotelsWithLocation();

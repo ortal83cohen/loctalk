@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.regex.Pattern;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-04
  */
 public class EmailAdapter extends ArrayAdapter<String> {

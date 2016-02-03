@@ -27,7 +27,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-17
  */
 public class MemberProfileEditFragment extends BaseFragment implements View.OnClickListener {

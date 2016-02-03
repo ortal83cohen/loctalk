@@ -3,7 +3,7 @@ package com.stg.app.member.model;
 import java.util.HashMap;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-08-11
  */
 public class ErrorResponse {

@@ -6,7 +6,7 @@ import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-26
  */
 public class Facebook {

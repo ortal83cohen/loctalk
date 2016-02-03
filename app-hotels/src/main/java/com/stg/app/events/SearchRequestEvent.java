@@ -3,7 +3,7 @@ package com.stg.app.events;
 import com.socialtravelguide.api.model.SearchRequest;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-06
  */
 public class SearchRequestEvent {

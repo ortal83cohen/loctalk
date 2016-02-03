@@ -8,7 +8,7 @@ import com.stg.app.R;
 import uk.co.chrisjenx.calligraphy.TypefaceUtils;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-10
  */
 public class FontUtils {

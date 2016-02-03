@@ -3,7 +3,7 @@ package com.stg.app;
 import android.content.Context;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-11
  */
 public class App {

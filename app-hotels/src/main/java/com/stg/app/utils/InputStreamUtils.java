@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-12
  */
 public class InputStreamUtils {

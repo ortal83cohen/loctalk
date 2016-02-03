@@ -27,7 +27,7 @@ import com.stg.app.widget.NavigationDrawer;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-28
  */
 public abstract class BaseActivity extends AppCompatActivity {

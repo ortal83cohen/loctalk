@@ -30,7 +30,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.socialtravelguide.api.model.DateRange;
+
 import com.stg.app.R;
 import com.stg.app.provider.DbContract;
 import com.stg.app.utils.AppLog;
@@ -395,9 +395,6 @@ public class PlaceAutocompleteAdapter
             return getContext().getResources().getColor(R.color.text_gray);
         }
 
-        public DateRange getDateRange() {
-            return new DateRange(mFromDate.getTime(), mToDate.getTime());
-        }
     }
 
     public class PlaceCurrentLocation extends PlaceItem {

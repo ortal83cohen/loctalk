@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-15
  */
 public class HotelReviewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements HeaderAdapter {

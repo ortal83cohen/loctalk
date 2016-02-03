@@ -11,7 +11,7 @@ import com.stg.app.model.BookingStepsModel;
 import com.stg.app.model.CreditCardDetailsPage;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-07-01
  */
 public class PaymentRequestWrapper {

@@ -7,7 +7,7 @@ import com.socialtravelguide.api.model.search.SprType;
 import com.google.android.gms.maps.model.LatLng;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-26
  */
 public class Location extends SprType implements Parcelable {

@@ -3,7 +3,7 @@ package com.stg.app.etbapi;
 import retrofit.Response;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-11-04
  */
 public class RetrofitError extends Throwable {

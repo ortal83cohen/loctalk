@@ -7,7 +7,7 @@ import com.stg.app.utils.CountryCode;
 import com.stg.app.utils.CurrencyCode;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-14
  */
 public class UserPreferencesStorage {

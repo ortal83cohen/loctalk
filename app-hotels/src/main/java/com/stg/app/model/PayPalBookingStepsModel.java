@@ -5,7 +5,7 @@ import android.content.Context;
 import com.tech.freak.wizardpager.model.PageList;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-03
  */
 public class PayPalBookingStepsModel extends BookingStepsModel {
