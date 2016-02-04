@@ -436,16 +436,16 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-hdpi\\common_google_signin_btn_text_light_focused.9.png"
     },
     {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\actionbar_logo.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-hdpi\\actionbar_logo.png"
+    },
+    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_disabled_friendly_selected.png",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-hdpi\\icon_disabled_friendly_selected.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mainnav_creditcards.png",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-hdpi\\mainnav_creditcards.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_etb_logo.png",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-hdpi\\menu_etb_logo.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\map_pin.png",

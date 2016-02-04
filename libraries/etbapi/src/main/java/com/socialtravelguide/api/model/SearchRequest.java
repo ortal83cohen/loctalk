@@ -1,7 +1,5 @@
 package com.socialtravelguide.api.model;
 
-import android.os.Parcelable;
-
 import com.socialtravelguide.api.model.search.Filter;
 import com.socialtravelguide.api.model.search.Type;
 
@@ -18,7 +16,7 @@ public class SearchRequest extends HotelRequest {
 
     public SearchRequest() {
         super();
-        setSort(com.socialtravelguide.api.contract.Sort.Type.FAVORITES);
+        setSort(com.socialtravelguide.api.contract.Sort.Type.DISTANCE);
     }
 
     public Sort getSort() {

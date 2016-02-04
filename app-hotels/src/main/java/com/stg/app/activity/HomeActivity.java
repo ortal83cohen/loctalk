@@ -14,6 +14,7 @@ import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
 import com.socialtravelguide.api.model.SearchRequest;
+import com.socialtravelguide.api.model.search.Type;
 import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.App;
 import com.stg.app.R;
@@ -50,7 +51,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
     private RetrofitCallback<String> mResultsCallback = new RetrofitCallback<String>() {
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
-            String number = "tel:+31 20 531 33 00";
+            String number = "tel:+972 52 6088707";
             Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(number));
             startActivity(callIntent);
         }
@@ -214,16 +215,16 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
         return mGoogleApiClient;
     }
 
-//    @Override
-//    public void startSearch(Type locationType) {
-//        HotelListRequest request = getHotelsRequest();
-//        request.removeFilter();
-//        request.setType(locationType);
-//        RequestUtils.apply(request);
-//
-//        Intent myIntent = HotelListActivity.createIntent(request, this);
-//        startActivity(myIntent);
-//    }
+    @Override
+    public void startSearch(Type locationType) {
+        HotelListRequest request = getHotelsRequest();
+        request.removeFilter();
+        request.setType(locationType);
+        RequestUtils.apply(request);
+
+        Intent myIntent = HotelListActivity.createIntent(request, this);
+        startActivity(myIntent);
+    }
 
     @Override
     public void onConnected(Bundle bundle) {

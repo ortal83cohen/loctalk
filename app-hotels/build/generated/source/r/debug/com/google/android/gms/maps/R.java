@@ -98,10 +98,10 @@ public final class R {
 		public static final int common_plus_signin_btn_text_light_focused = 0x7f02009d;
 		public static final int common_plus_signin_btn_text_light_normal = 0x7f02009e;
 		public static final int common_plus_signin_btn_text_light_pressed = 0x7f02009f;
-		public static final int ic_plusone_medium_off_client = 0x7f0200c4;
-		public static final int ic_plusone_small_off_client = 0x7f0200c5;
-		public static final int ic_plusone_standard_off_client = 0x7f0200c6;
-		public static final int ic_plusone_tall_off_client = 0x7f0200c7;
+		public static final int ic_plusone_medium_off_client = 0x7f0200c2;
+		public static final int ic_plusone_small_off_client = 0x7f0200c3;
+		public static final int ic_plusone_standard_off_client = 0x7f0200c4;
+		public static final int ic_plusone_tall_off_client = 0x7f0200c5;
 		public static final int powered_by_google_dark = 0x7f020166;
 		public static final int powered_by_google_light = 0x7f020167;
 	}

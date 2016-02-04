@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-11-24
  */
 public class SharingUtils {

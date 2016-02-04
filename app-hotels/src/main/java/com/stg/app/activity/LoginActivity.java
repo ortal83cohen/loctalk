@@ -12,7 +12,7 @@ import com.stg.app.login.GooglePlusLogin;
 import com.facebook.FacebookSdk;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-08-02
  */
 public class LoginActivity extends TabActivity implements GooglePlusLogin.Listener {

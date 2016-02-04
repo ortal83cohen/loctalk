@@ -10,7 +10,7 @@ import android.graphics.drawable.Drawable;
 import android.support.annotation.ColorRes;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-06-21
  */
 public class TriangleDrawable extends Drawable {

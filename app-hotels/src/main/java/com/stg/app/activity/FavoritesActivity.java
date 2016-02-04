@@ -8,6 +8,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.search.Type;
+import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.adapter.HotelViewHolder;
@@ -152,17 +154,17 @@ public class FavoritesActivity extends BaseActivity implements HotelViewHolder.L
         return null;
     }
 
-//    @Override
-//    public void startSearch(Type locationType) {
-//        remove(getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME));
-//
-//        FavoritesListFragment favoritesListFragment = (FavoritesListFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_FAVORITES_LIST);
-//        RequestUtils.apply(getHotelsRequest());
-//        if (favoritesListFragment != null) {
-//            favoritesListFragment.refresh(getHotelsRequest());
-//            setSubtitle(
-//                    "xxxxxxxxxxxxxxxxx"
-//            );
-//        }
-//    }
+    @Override
+    public void startSearch(Type locationType) {
+        remove(getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME));
+
+        FavoritesListFragment favoritesListFragment = (FavoritesListFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_FAVORITES_LIST);
+        RequestUtils.apply(getHotelsRequest());
+        if (favoritesListFragment != null) {
+            favoritesListFragment.refresh(getHotelsRequest());
+            setSubtitle(
+                    "xxxxxxxxxxxxxxxxx"
+            );
+        }
+    }
 }

@@ -16,7 +16,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-07-13
  */
 public class DbProvider extends ContentProvider {

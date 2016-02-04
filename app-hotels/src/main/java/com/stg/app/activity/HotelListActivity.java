@@ -15,6 +15,11 @@ import android.widget.Toast;
 
 import com.socialtravelguide.api.model.Accommodation;
 import com.socialtravelguide.api.model.SearchRequest;
+import com.socialtravelguide.api.model.search.SprType;
+import com.socialtravelguide.api.model.search.Type;
+import com.socialtravelguide.api.model.search.ViewPortType;
+import com.socialtravelguide.api.utils.RequestUtils;
+import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.adapter.HotelViewHolder;
 import com.stg.app.analytics.AnalyticsCalls;
@@ -403,25 +408,25 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
         return mGoogleApiClient;
     }
 
-//    @Override
-//    public void startSearch(Type locationType, DateRange dates, int persons, int rooms) {
-//        remove(getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME));
-//        getHotelsRequest().setType(locationType);
-//        getHotelsRequest().removeFilter();
-//        RequestUtils.apply(getHotelsRequest(), dates, persons, rooms);
-//        App.provide(this).updateLastSeatchRequest(getHotelsRequest());
-//        if (mMap != null) {
-//            mMap.refreshHotels();
-//            mMap.setPoiFilters(mPoisFilter);
-//            if (locationType instanceof ViewPortType) {
-//                mMap.moveCamera(((ViewPortType) locationType).getNortheastLat(), ((ViewPortType) locationType).getNortheastLon(), ((ViewPortType) locationType).getSouthwestLat(), ((ViewPortType) locationType).getSouthwestLon());
-//            } else if (locationType instanceof SprType) {
-//                mMap.moveCamera(((SprType) locationType).getLatitude(), ((SprType) locationType).getLongitude());
-//            }
-//        }
-//        refreshList();
-//        setTitle(getHotelsRequest());
-//    }
+    @Override
+    public void startSearch(Type locationType) {
+        remove(getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME));
+        getHotelsRequest().setType(locationType);
+        getHotelsRequest().removeFilter();
+        RequestUtils.apply(getHotelsRequest());
+        App.provide(this).updateLastSeatchRequest(getHotelsRequest());
+        if (mMap != null) {
+            mMap.refreshHotels();
+            mMap.setPoiFilters(mPoisFilter);
+            if (locationType instanceof ViewPortType) {
+                mMap.moveCamera(((ViewPortType) locationType).getNortheastLat(), ((ViewPortType) locationType).getNortheastLon(), ((ViewPortType) locationType).getSouthwestLat(), ((ViewPortType) locationType).getSouthwestLon());
+            } else if (locationType instanceof SprType) {
+                mMap.moveCamera(((SprType) locationType).getLatitude(), ((SprType) locationType).getLongitude());
+            }
+        }
+        refreshList();
+        setTitle(getHotelsRequest());
+    }
 
     @Override
     public void onConnected(Bundle bundle) {

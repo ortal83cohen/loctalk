@@ -14,7 +14,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-06-18
  */
 public class ImagesPagerAdapter extends PagerAdapter {

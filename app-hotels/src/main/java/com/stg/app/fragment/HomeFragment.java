@@ -127,8 +127,6 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
     private LocationRequest mLocationRequest = new LocationRequest()
             .setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY) // (~100m "block" accuracy)
             .setNumUpdates(1);
-    private SimpleDateFormat mDayFormatter = new SimpleDateFormat("dd", Locale.getDefault());
-    private SimpleDateFormat mMonthFormatter = new SimpleDateFormat("MMM", Locale.getDefault());
     private boolean mShowLocation = true;
     private boolean mIsLightBox = false;
     private int mTopBoxHeight = -1;
@@ -572,16 +570,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
 
     @OnClick(R.id.search)
     public void onSearchHotelsClick(View button) {
-        if (mShowLocation) {
             onSearchHotelsWithLocation();
-        } else {
-            onSearchHotelsWithoutLocation();
-        }
-
-    }
-
-    private void onSearchHotelsWithoutLocation() {
-        startSearch(null);
     }
 
     private void onSearchHotelsWithLocation() {
@@ -668,7 +657,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
     private void startSearch(Type locationType) {
         if (!mSearchButtonClicked) {
             mSearchButtonClicked = true;
-//            mListener.startSearch(locationType, mSelectedRange,1, 1);
+            mListener.startSearch(locationType);
         }
     }
 
@@ -676,7 +665,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
     public interface Listener {
         GoogleApiClient getGoogleApiClient();
 
-//        void startSearch(Type locationType, DateRange dates, int persons, int rooms);
+        void startSearch(Type locationType);
     }
 
 

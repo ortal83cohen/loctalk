@@ -8,7 +8,7 @@ import com.stg.app.BuildConfig;
 import java.util.List;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-07-13
  */
 public class DbContract {

@@ -297,7 +297,7 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
         if (sort != null) {
             mButtonSort.setText(ResultsSortFragment.typeToText(sort.type).toString());
         } else {
-            mButtonSort.setText(ResultsSortFragment.typeToText(Sort.Type.FAVORITES).toString());
+            mButtonSort.setText(ResultsSortFragment.typeToText(Sort.Type.DISTANCE).toString());
         }
     }
 

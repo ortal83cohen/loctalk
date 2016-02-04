@@ -10,7 +10,7 @@ import com.stg.app.R;
 import com.squareup.picasso.Picasso;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-09-03
  */
 public class SummaryImageViewHolder {

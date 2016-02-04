@@ -27,7 +27,7 @@ public final class R {
 		public static final int step_pager_tab_width = 0x7f0900bd;
 	}
 	public static final class drawable {
-		public static final int ic_person = 0x7f0200c3;
+		public static final int ic_person = 0x7f0200c1;
 	}
 	public static final class id {
 		public static final int editTextInput = 0x7f0e012a;

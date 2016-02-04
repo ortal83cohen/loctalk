@@ -22,7 +22,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-05-25
  */
 public class ResultsSortFragment extends BaseFragment {
@@ -36,22 +36,12 @@ public class ResultsSortFragment extends BaseFragment {
 
     public static Spanned typeToText(String type) {
         switch (type) {
-            case Sort.Type.FAVORITES:
-                return Html.fromHtml("<b>Default</b>");
-            case Sort.Type.PRICE_HIGH_TO_LOW:
-                return Html.fromHtml("<b>Price</b> - High to low");
-            case Sort.Type.PRICE_LOW_TO_HIGH:
-                return Html.fromHtml("<b>Price</b> - Low to high");
-            case Sort.Type.STARS_HIGH_TO_LOW:
-                return Html.fromHtml("<b>Stars</b> - High to low");
-            case Sort.Type.STARS_LOW_TO_HIGH:
-                return Html.fromHtml("<b>Stars</b> - Low to high");
+            case Sort.Type.DISTANCE:
+                return Html.fromHtml("<b>Distance</b>");
             case Sort.Type.RATING_HIGH_TO_LOW:
                 return Html.fromHtml("<b>Guest Reviews</b> - Best to worst");
             case Sort.Type.RATING_LOW_TO_HIGH:
                 return Html.fromHtml("<b>Guest Reviews</b> - Worst to best");
-            case Sort.Type.DISTANCE:
-                return Html.fromHtml("<b>Distance</b>");
             default:
                 return Html.fromHtml("");
         }
@@ -90,16 +80,16 @@ public class ResultsSortFragment extends BaseFragment {
 
     private int typeToId(String type) {
         switch (type) {
-            case Sort.Type.FAVORITES:
-                return R.id.radio_popularity;
-            case Sort.Type.PRICE_HIGH_TO_LOW:
-                return R.id.radio_price_high_to_low;
-            case Sort.Type.PRICE_LOW_TO_HIGH:
-                return R.id.radio_price_low_to_high;
-            case Sort.Type.STARS_HIGH_TO_LOW:
-                return R.id.radio_stars_high_to_low;
-            case Sort.Type.STARS_LOW_TO_HIGH:
-                return R.id.radio_stars_low_to_high;
+//            case Sort.Type.FAVORITES:
+//                return R.id.radio_popularity;
+//            case Sort.Type.PRICE_HIGH_TO_LOW:
+//                return R.id.radio_price_high_to_low;
+//            case Sort.Type.PRICE_LOW_TO_HIGH:
+//                return R.id.radio_price_low_to_high;
+//            case Sort.Type.STARS_HIGH_TO_LOW:
+//                return R.id.radio_stars_high_to_low;
+//            case Sort.Type.STARS_LOW_TO_HIGH:
+//                return R.id.radio_stars_low_to_high;
             case Sort.Type.RATING_HIGH_TO_LOW:
                 return R.id.radio_guest_high_to_low;
             case Sort.Type.RATING_LOW_TO_HIGH:

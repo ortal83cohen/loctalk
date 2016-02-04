@@ -10,7 +10,7 @@ import android.view.animation.LinearInterpolator;
 import com.stg.app.randerscript.BlurBuilder;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-07-01
  */
 public class BlurAnimation {

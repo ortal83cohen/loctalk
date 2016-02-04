@@ -12,7 +12,7 @@
         android:id="@+id/profile_image"
         android:layout_width="wrap_content"
         android:layout_height="72dp"
-        android:src="@drawable/etb_logo_primary_large" />
+        android:src="@drawable/actionbar_logo" />
 
     <TextView
         android:id="@+id/profile_name"

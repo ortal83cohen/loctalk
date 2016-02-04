@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-10-26
  */
 public class FavoritesHotelListAdapter extends HotelListAdapter {

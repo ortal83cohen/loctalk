@@ -16,7 +16,7 @@ import android.support.v8.renderscript.ScriptIntrinsicBlur;
 import android.view.View;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-06-30
  */
 public class BlurBuilder {

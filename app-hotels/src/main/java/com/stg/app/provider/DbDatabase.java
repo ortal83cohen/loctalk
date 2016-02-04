@@ -1,7 +1,7 @@
 package com.stg.app.provider;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-07-12
  */
 

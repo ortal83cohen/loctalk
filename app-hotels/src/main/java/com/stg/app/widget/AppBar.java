@@ -33,8 +33,8 @@ public class AppBar extends Toolbar {
             setTitle(((LocationWithTitle) loc).getTitle());
         }
 
-        String subtitle = "dddddd";
-        setSubtitle(subtitle);
+//        String subtitle = "dddddd";
+//        setSubtitle(subtitle);
     }
 
     public void showLogo() {

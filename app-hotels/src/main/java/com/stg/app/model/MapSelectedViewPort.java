@@ -7,7 +7,7 @@ import com.socialtravelguide.api.model.search.ViewPortType;
 import com.google.android.gms.maps.model.LatLngBounds;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-10-08
  */
 public class MapSelectedViewPort extends ViewPortType implements Parcelable, LocationWithTitle {

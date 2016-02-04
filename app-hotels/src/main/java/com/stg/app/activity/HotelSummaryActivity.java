@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import com.socialtravelguide.api.model.Accommodation;
 import com.socialtravelguide.api.model.HotelRequest;
 import com.socialtravelguide.api.model.SearchRequest;
+import com.socialtravelguide.api.model.search.Type;
 import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.App;
 import com.stg.app.R;
@@ -199,16 +200,16 @@ public class HotelSummaryActivity extends BaseActivity implements PriceBreakdown
         return null;
     }
 
-//    @Override
-//    public void startSearch(Type locationType, DateRange dates, int persons, int rooms) {
-//        remove(getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME));
-//
-//        RequestUtils.apply(getHotelsRequest(), dates, persons, rooms);
-//        HotelSummaryFragment hotelSummaryFragment = (HotelSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
-//        if (hotelSummaryFragment != null) {
-//            hotelSummaryFragment.checkAvailability(getHotelsRequest());
-//        }
-//    }
+    @Override
+    public void startSearch(Type locationType) {
+        remove(getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME));
+
+        RequestUtils.apply(getHotelsRequest());
+        HotelSummaryFragment hotelSummaryFragment = (HotelSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
+        if (hotelSummaryFragment != null) {
+            hotelSummaryFragment.checkAvailability(getHotelsRequest());
+        }
+    }
 
     public void showSearchResults(Location location, HotelRequest request) {
         HotelListRequest searchRequest = getHotelsRequest();

@@ -17,7 +17,7 @@ import com.stg.app.model.HotelListRequest;
 import butterknife.ButterKnife;
 
 /**
- * @author user
+ * @author ortal
  * @date 2015-05-25
  */
 public class HotelMapSummaryFragment extends BaseFragment {
