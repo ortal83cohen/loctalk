@@ -1,6 +1,5 @@
 package com.socialtravelguide.api.model;
 
-import com.socialtravelguide.api.model.search.Filter;
 import com.socialtravelguide.api.model.search.Type;
 
 /**
@@ -11,7 +10,6 @@ public class SearchRequest extends HotelRequest {
 
     private Type mType;
     private Sort mSort;
-    private Filter mFilter;
 
 
     public SearchRequest() {
@@ -45,29 +43,5 @@ public class SearchRequest extends HotelRequest {
 
     public static class Sort {
         public String type;
-    }
-
-    public Filter getFilter() {
-        if (mFilter == null) {
-            mFilter = createNewFilter();
-        }
-
-        return mFilter;
-    }
-
-    public void setFilter(Filter filter) {
-        mFilter = filter;
-    }
-
-    public boolean haveFilter() {
-        return mFilter != null && !mFilter.isEmpty();
-    }
-
-    public void removeFilter() {
-       mFilter = null;
-    }
-
-    protected Filter createNewFilter() {
-        return new Filter();
     }
 }

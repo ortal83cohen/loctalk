@@ -11,7 +11,6 @@ import com.socialtravelguide.api.model.OrderRequest;
 import com.socialtravelguide.api.model.OrderResponse;
 import com.socialtravelguide.api.model.ResultsResponse;
 import com.socialtravelguide.api.model.SearchRequest;
-import com.socialtravelguide.api.model.search.Filter;
 import com.socialtravelguide.api.model.search.ListType;
 import com.socialtravelguide.api.model.search.Type;
 import com.socialtravelguide.api.utils.RequestUtils;
@@ -125,30 +124,6 @@ public static final String PATH_ACCOMMODATIONS ="/etbstatic/checkRoomAvailabilit
             query.put("capacity", RequestUtils.capacity(searchRequest.getNumberOfPersons(), searchRequest.getNumberOfRooms()));
         }
 
-
-        // Filters
-        if (searchRequest.haveFilter()) {
-            Filter filter = searchRequest.getFilter();
-
-            if (filter.getStars() != null) {
-                query.put("stars", RequestUtils.list(filter.getStars()));
-            }
-            if (filter.getRating() != null) {
-                query.put("rating", RequestUtils.list(filter.getRating()));
-            }
-            if (filter.getAccTypes() != null) {
-                query.put("accTypes", RequestUtils.list(filter.getAccTypes()));
-            }
-            if (filter.getMinRate() > 0) {
-                query.put("minRate", String.valueOf(filter.getMinRate()));
-            }
-            if (filter.getMaxRate() > 0) {
-                query.put("maxRate", String.valueOf(filter.getMaxRate()));
-            }
-            if (filter.getMainFacilities() != null) {
-                query.put("mainFacilities", RequestUtils.list(filter.getMainFacilities()));
-            }
-        }
         // Limit
         if (searchRequest.getType() instanceof ListType) {
             query.put("limit", String.valueOf(999));

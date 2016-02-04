@@ -17,7 +17,6 @@ import com.socialtravelguide.api.model.DetailsResponse;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;
-import com.stg.app.activity.BookingSummaryActivity;
 import com.stg.app.adapter.RoomListAdapter;
 import com.stg.app.adapter.RoomViewHolder;
 import com.stg.app.etbapi.AvailabilityDetailsCallback;
@@ -112,7 +111,7 @@ public class RoomListFragment extends BaseFragment implements RoomViewHolder.Boo
     public void onBookNowClicked(Accommodation.Rate rate) {
         String currencyCode = App.provide(getActivity()).getUserPrefs().getCurrencyCode();
         OrderItem orderItem = OrderItem.from(rate, currencyCode, mAccommodation.getPostpaidCurrency());
-        getActivity().startActivity(BookingSummaryActivity.createIntent(orderItem, new HotelSnippet(mAccommodation, rate.rateId), mRequest, getActivity()));
+
     }
 
     @Override

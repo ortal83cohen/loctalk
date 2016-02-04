@@ -30,9 +30,7 @@ import com.socialtravelguide.api.model.DetailsResponse;
 import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.App;
 import com.stg.app.R;
-import com.stg.app.activity.BookingSummaryActivity;
 import com.stg.app.activity.HotelDetailsActivity;
-import com.stg.app.activity.HotelSummaryActivity;
 import com.stg.app.adapter.RoomViewHolder;
 import com.stg.app.analytics.AnalyticsCalls;
 import com.stg.app.etbapi.AvailabilityDetailsCallback;
@@ -85,7 +83,6 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
     boolean mIsImageExpended = false;
     private int mImageState = IMAGE_STATE_NORMAL;
     private Accommodation.Rate mSelectedRate;
-    private int mId;
     private int mRateId;
     private HotelSnippet mHotelSnippet;
     private HotelSnippet mHotelSnippetDetails;
@@ -93,7 +90,6 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
     private int mImageMinimumHeight;
     private boolean mMoreRoomsButtonVisible = false;
     private HotelListRequest mRequest;
-    private boolean mIsNoDates;
 
     private AvailabilityDetailsCallback mResultsCallback = new AvailabilityDetailsCallback() {
         @Override
@@ -116,7 +112,6 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
 
         private void notifyResponse(DetailsResponse detailsResponse, int rateId) {
             mHotelSnippetDetails = new HotelSnippet(detailsResponse.accommodation, rateId);
-            ((HotelSummaryActivity) getActivity()).onDetailsResponse(mHotelSnippetDetails);
             setDetailsResponse(mHotelSnippetDetails);
             Events.post(new HotelDetailsResultsEvent(mHotelSnippetDetails));
         }
@@ -174,11 +169,8 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
         HotelSnippetViewHolder headerRender = new HotelSnippetViewHolder(view, getActivity());
 
         mHotelSnippet = getArguments().getParcelable("snippet");
-        mIsNoDates = getArguments().getBoolean("noDates");
         mRateId = (int) getArguments().get("rateId");
         mRequest = getArguments().getParcelable("request");
-        mId = mHotelSnippet.geId();
-
         headerRender.render(mHotelSnippet);
 
         final GestureDetector tapGestureDetector = new GestureDetector(getActivity(), new TapGestureListener());
@@ -230,9 +222,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
         menu.clear();
         boolean isLiked = LikedHotels.isLiked(mHotelSnippet.geId(), getActivity());
         inflater.inflate(R.menu.menu_hotel_summary, menu);
-        if (!mIsNoDates) {
-            menu.removeItem(R.id.menu_dates);
-        }
+
         if (isLiked) {
             menu.findItem(R.id.menu_like).setIcon(R.drawable.btn_favorite_selected);
         } else {
@@ -252,9 +242,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
                     LikedHotels.insert(mHotelSnippet.geId(), mHotelSnippet.getCity(), mHotelSnippet.getCountry(), getActivity());
                 }
                 break;
-            case R.id.menu_streetview:
-                ((HotelSummaryActivity) getActivity()).showStreetView();
-                break;
+
         }
         getActivity().invalidateOptionsMenu();
 
@@ -302,7 +290,6 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
                 view = getNoAvailabilityView();
                 setMoreRoomsButtonVisibility(false);
             } else {
-                view = getSelectDatesBoxView();
                 setMoreRoomsButtonVisibility(false);
             }
         }
@@ -325,47 +312,13 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
         return view;
     }
 
-    private View getSelectDatesBoxView() {
-        final LayoutInflater inflater = LayoutInflater.from(getActivity());
-        View view = inflater.inflate(R.layout.fragment_hoteldetails_selectdates, mRoomView, false);
 
-        Button selectDates = ButterKnife.findById(view, R.id.date_select_button);
-        selectDates.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((HotelSummaryActivity) getActivity()).showDatePicker();
-            }
-        });
-
-        return view;
-    }
 
     private View getNoAvailabilityView() {
         final LayoutInflater inflater = LayoutInflater.from(getActivity());
         View view = inflater.inflate(R.layout.fragment_hoteldetails_noavailability, mRoomView, false);
 
-        TextView noAvailabilityText = ButterKnife.findById(view, R.id.no_availability_text);
 
-//        String rangeText = DateUtils.formatDateRange(getContext(), dr.from.getTimeInMillis(), dr.to.getTimeInMillis(), 0);
-//        noAvailabilityText.setText(getString(R.string.rooms_not_available, rangeText));
-
-        Button selectDates = ButterKnife.findById(view, R.id.date_select_button);
-        selectDates.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((HotelSummaryActivity) getActivity()).showDatePicker();
-            }
-        });
-        Button searchList = ButterKnife.findById(view, R.id.button_search_list);
-        searchList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Accommodation acc = mHotelSnippet.getAccommodation();
-                String locationTitle = String.format("%s, %s", acc.summary.city, acc.summary.country);
-                Location location = new Location(locationTitle, acc.location.lat, acc.location.lon);
-                ((HotelSummaryActivity) getActivity()).showSearchResults(location, mRequest);
-            }
-        });
         return view;
     }
 
@@ -386,12 +339,6 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
         return cheapestRate;
     }
 
-    @Override
-    public void onBookNowClicked(Accommodation.Rate rate) {
-        String currencyCode = App.provide(getActivity()).getUserPrefs().getCurrencyCode();
-        OrderItem orderItem = OrderItem.from(rate, currencyCode, mHotelSnippetDetails.getPostpaidCurrency());
-        getActivity().startActivity(BookingSummaryActivity.createIntent(orderItem, mHotelSnippetDetails, mRequest, getActivity()));
-    }
 
     @Override
     public void onClick(View v) {
@@ -399,8 +346,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
             int viewId = v.getId();
             if (viewId == R.id.book_button) {
                 if (mHotelSnippetDetails.hasRates()) {
-                    OrderItem orderItem = OrderItem.from(mSelectedRate, getCurrencyCode(), mHotelSnippetDetails.getPostpaidCurrency());
-                    startActivity(BookingSummaryActivity.createIntent(orderItem, mHotelSnippet, mRequest, getActivity()));
+
                 }
             } else if (viewId == R.id.facilities_box) {
                 showFacilities(mHotelSnippetDetails);
@@ -408,7 +354,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
                 showReviews(mHotelSnippetDetails);
             } else if (viewId == R.id.available_rooms_button) {
                 if (mHotelSnippetDetails.hasRates()) {
-                    ((HotelSummaryActivity) getActivity()).showRoomsList(mId);
+
                 }
             }
         }
@@ -553,6 +499,11 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
         RequestUtils.apply(mRequest);
         mRoomView.removeAllViews();
         loadHotel();
+    }
+
+    @Override
+    public void onBookNowClicked(Accommodation.Rate mRate) {
+
     }
 
     class TapGestureListener extends GestureDetector.SimpleOnGestureListener {

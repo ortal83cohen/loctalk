@@ -30,20 +30,6 @@
             android:gravity="center"
             tools:text="@string/rooms_not_available" />
 
-        <Button
-            android:id="@+id/date_select_button"
-            style="@style/HotelsAppTheme.Widget.HotelSummary.bookNowButton"
-            android:layout_width="wrap_content"
-            android:layout_height="46dp"
-            android:layout_marginTop="@dimen/minimum_default_padding"
-            android:background="@drawable/rounded_ripple_button_theme_accent"
-            android:minWidth="216dp"
-            android:paddingLeft="@dimen/default_padding"
-            android:paddingRight="@dimen/default_padding"
-            android:text="@string/change_dates"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button_search_list"

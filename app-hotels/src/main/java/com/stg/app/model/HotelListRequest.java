@@ -4,7 +4,6 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.socialtravelguide.api.model.SearchRequest;
-import com.socialtravelguide.api.model.search.Filter;
 
 /**
  * @author ortal
@@ -90,8 +89,4 @@ public class HotelListRequest extends SearchRequest implements Parcelable {
 
     }
 
-    @Override
-    protected Filter createNewFilter() {
-        return new HotelListFilter();
-    }
 }

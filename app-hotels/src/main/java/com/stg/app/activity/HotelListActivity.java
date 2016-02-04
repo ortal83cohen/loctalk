@@ -34,7 +34,6 @@ import com.stg.app.fragment.ResultsSortFragment;
 import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.map.PoiMarker;
 import com.stg.app.map.ResultsMap;
-import com.stg.app.model.HotelListFilter;
 import com.stg.app.model.HotelListRequest;
 import com.stg.app.utils.AppLog;
 import com.stg.app.widget.AppBar;
@@ -63,15 +62,9 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
     private static final String FRAGMENT_MAP = "menu_map";
     private static final String FRAGMENT_SORT = "fragment_sort";
     private static final String FRAGMENT_HOTEL_SUMMARY = "fragment_hotel_summary";
-    private static final int ACTIVITY_REQUEST_FILTERS = 1;
-    private static final int ACTIVITY_REQUEST_POIS_FILTERS = 2;
     protected GoogleApiClient mGoogleApiClient;
     @Bind(R.id.app_bar)
     AppBar mToolbar;
-    @Bind(R.id.action_button)
-    FloatingActionButton mButtonFilter;
-    @Bind(R.id.poi_filter)
-    FloatingActionButton mButtonPoisFilter;
     @Bind(R.id.refresh_hotels)
     Button mRefreshHotels;
     @Bind(R.id.loader_image)
@@ -127,18 +120,6 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
                 .addOnConnectionFailedListener(this)
                 .build();
 
-        mButtonFilter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showFilters();
-            }
-        });
-        mButtonPoisFilter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showPoisFilters();
-            }
-        });
         mRefreshHotels.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -203,13 +184,6 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
 
     @Override
     public void onLandmarksTypesChange(HashMap<Integer, Integer> types) {
-        if (types == null || types.size() == 0) {
-            mButtonPoisFilter.setVisibility(View.GONE);
-        } else {
-            if (getSupportFragmentManager().findFragmentByTag(FRAGMENT_MAP) != null) {
-                mButtonPoisFilter.setVisibility(View.VISIBLE);
-            }
-        }
         mPoisTypes = types;
     }
 
@@ -251,7 +225,6 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
         }
         HotelMapSummaryFragment hotelMapSummaryFragment = (HotelMapSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_SUMMARY);
         if (hotelMapSummaryFragment == null) {
-            hidePoiFilterButton();
             hideRefreshHotelsButton();
         }
         super.onBackPressed();
@@ -290,9 +263,6 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_dates:
-                showHome();
-                break;
             case R.id.menu_list:
                 showList();
                 break;
@@ -301,15 +271,6 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
                 break;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-
-    public void showFilters() {
-        startActivityForResult(HotelListFiltersActivity.createIntent(this, getHotelsRequest(), mRateMinPrice, mRateMaxPrice), ACTIVITY_REQUEST_FILTERS);
-    }
-
-    public void showPoisFilters() {
-        startActivityForResult(PoisFiltersActivity.createIntent(this, getHotelsRequest(), mPoisTypes, mPoisFilter), ACTIVITY_REQUEST_POIS_FILTERS);
     }
 
     private boolean[] createFilters(int[] values) {
@@ -324,16 +285,6 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == ACTIVITY_REQUEST_POIS_FILTERS) {
-            if (resultCode == RESULT_OK) {
-                mPoisFilter = data.getBooleanArrayExtra("result");
-            }
-        }
-        if (requestCode == ACTIVITY_REQUEST_FILTERS) {
-            if (resultCode == RESULT_OK) {
-                getHotelsRequest().setFilter((HotelListFilter) data.getParcelableExtra(HotelListFiltersActivity.EXTRA_FILTER));
-            }
-        }
         if (resultCode == RESULT_OK) {
             refreshResults(mPoisFilter);
         }
@@ -348,19 +299,6 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
         refreshList();
     }
 
-    public void showHome() {
-        removeHotelSummaryFragment();
-        FragmentManager fm = getSupportFragmentManager();
-        HotelListRequest request = getHotelsRequest();
-        fm.beginTransaction()
-                .replace(R.id.fragment_overlay_container,
-                        HomeFragment.newInstance(request, true, true),
-                        FRAGMENT_HOME)
-                .addToBackStack(null)
-                .commit();
-        hidePoiFilterButton();
-    }
-
     public void showSort() {
         getSupportFragmentManager()
                 .beginTransaction()
@@ -368,7 +306,6 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
                         FRAGMENT_SORT)
                 .addToBackStack("sort")
                 .commit();
-        hidePoiFilterButton();
     }
 
     private void showMap() {
@@ -381,12 +318,10 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
                 .replace(R.id.fragment_container, mapFragment, FRAGMENT_MAP)
                 .addToBackStack(null)
                 .commit();
-        showLandmarksButtonFilter();
     }
 
     public void showList() {
         removeHotelSummaryFragment();
-        hidePoiFilterButton();
         hideRefreshHotelsButton();
 
         if (getSupportFragmentManager().findFragmentByTag(FRAGMENT_RESULTSLIST) != null) {
@@ -412,7 +347,6 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
     public void startSearch(Type locationType) {
         remove(getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME));
         getHotelsRequest().setType(locationType);
-        getHotelsRequest().removeFilter();
         RequestUtils.apply(getHotelsRequest());
         App.provide(this).updateLastSeatchRequest(getHotelsRequest());
         if (mMap != null) {
@@ -447,23 +381,7 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
 
     @Subscribe
     public void onSearchResultsEvent(SearchResultsEvent event) {
-        if (event.getCount() == 0) {
-            hideButtonFilter();
-        } else {
-            showButtonFilter();
-        }
-    }
 
-    public void hideButtonFilter() {
-        mButtonFilter.setVisibility(View.GONE);
-    }
-
-    public void showButtonFilter() {
-        mButtonFilter.setVisibility(View.VISIBLE);
-    }
-
-    public void hidePoiFilterButton() {
-        mButtonPoisFilter.setVisibility(View.GONE);
     }
 
     public void hideRefreshHotelsButton() {
@@ -494,10 +412,6 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
         setTitle(getHotelsRequest());
     }
 
-    public void showLandmarksButtonFilter() {
-        mButtonPoisFilter.setVisibility(View.VISIBLE);
-    }
-
 
     public void setRateMinPrice(int mRateMinPrice) {
         this.mRateMinPrice = mRateMinPrice;
@@ -509,7 +423,7 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
 
     @Override
     public void onEditLocationClick() {
-        showHome();
+
     }
 
 

@@ -29,19 +29,5 @@
             android:gravity="center"
             android:text="@string/select_dates_to_see_prices" />
 
-        <Button
-            android:id="@+id/date_select_button"
-            style="@style/HotelsAppTheme.Widget.HotelSummary.bookNowButton"
-            android:layout_width="wrap_content"
-            android:layout_height="46dp"
-            android:layout_marginTop="@dimen/minimum_default_padding"
-            android:background="@drawable/rounded_ripple_button_theme_accent"
-            android:paddingLeft="@dimen/default_padding"
-            android:paddingRight="@dimen/default_padding"
-            android:text="@string/select_dates"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
-
     </LinearLayout>
 </android.support.v7.widget.CardView>

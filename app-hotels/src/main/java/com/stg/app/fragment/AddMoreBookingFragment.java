@@ -14,7 +14,6 @@ import com.socialtravelguide.api.model.Order;
 import com.socialtravelguide.api.model.OrderResponse;
 import com.stg.app.HotelsApplication;
 import com.stg.app.R;
-import com.stg.app.activity.MemberActivity;
 import com.stg.app.etbapi.RetrofitCallback;
 import com.stg.app.provider.DbContract;
 import com.squareup.okhttp.ResponseBody;
@@ -106,8 +105,7 @@ public class AddMoreBookingFragment extends BaseFragment implements View.OnClick
     }
 
     private void removeThisFragment() {
-        ((MemberActivity) getActivity()).notifyDataSetChanged();
-        ((MemberActivity) getActivity()).remove(this);
+
     }
 
     private void bookingNotFound() {

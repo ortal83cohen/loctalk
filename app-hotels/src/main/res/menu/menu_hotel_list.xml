@@ -3,12 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/menu_dates"
-        android:icon="@drawable/menu_edit_destination"
-        android:title="@string/change_your_dates"
-        app:showAsAction="always" />
-
-    <item
         android:id="@+id/menu_map"
         android:icon="@drawable/menu_map_view"
         android:title="@string/map"

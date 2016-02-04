@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import com.socialtravelguide.api.utils.DateRangeUtils;
 import com.stg.app.R;
-import com.stg.app.activity.ConfirmationActivity;
 import com.stg.app.member.model.BookingEvent;
 import com.stg.app.preferences.UserPreferences;
 import com.stg.app.utils.AppLog;
@@ -112,7 +111,7 @@ public class BookingViewHolder extends RecyclerView.ViewHolder implements View.O
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_manage:
-                mContext.startActivity(ConfirmationActivity.createIntent(Integer.valueOf(orderId), false, mContext));
+
                 break;
         }
 

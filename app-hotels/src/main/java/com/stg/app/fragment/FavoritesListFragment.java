@@ -69,8 +69,6 @@ public class FavoritesListFragment extends BaseFragment {
     TextView mLoaderText;
     @Bind(R.id.modify_preferences)
     Button mModifyPreferences;
-    @Bind(R.id.reset_filters)
-    Button mResetFilters;
 
     EtbApi mEtbApi;
 
@@ -217,14 +215,6 @@ public class FavoritesListFragment extends BaseFragment {
             @Override
             public void onClick(View v) {
                 ((ModifyPreferencesListener) getActivity()).modifyPreferences();
-            }
-        });
-        mResetFilters.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SearchRequest request = getHotelsRequest();
-                request.removeFilter();
-                refresh();
             }
         });
 

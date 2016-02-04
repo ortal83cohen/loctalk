@@ -111,11 +111,6 @@ public class HotelSummaryActivity extends BaseActivity implements PriceBreakdown
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menu_dates:
-                showDatePicker();
-                break;
-        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -185,15 +180,6 @@ public class HotelSummaryActivity extends BaseActivity implements PriceBreakdown
         mHotelSnippetDetails = hotelDetailsSnippet;
     }
 
-    public void showDatePicker() {
-        FragmentManager fm = getSupportFragmentManager();
-        fm.beginTransaction()
-                .replace(R.id.fragment_overlay_container,
-                        HomeFragment.newInstance(getHotelsRequest(), true, false),
-                        FRAGMENT_HOME)
-                .addToBackStack(null)
-                .commit();
-    }
 
     @Override
     public GoogleApiClient getGoogleApiClient() {

@@ -120,7 +120,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
             HotelListRequest request = getHotelsRequest();
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.fragment_container, HomeFragment.newInstance(request, false, true),
+                    .replace(R.id.fragment_container, HomeFragment.newInstance(request),
                             FRAGMENT_HOME)
                     .commit();
         }
@@ -218,7 +218,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
     @Override
     public void startSearch(Type locationType) {
         HotelListRequest request = getHotelsRequest();
-        request.removeFilter();
+
         request.setType(locationType);
         RequestUtils.apply(request);
 

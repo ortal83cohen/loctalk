@@ -58,9 +58,6 @@ public class FavoritesActivity extends BaseActivity implements HotelViewHolder.L
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_dates:
-                showHome();
-                break;
             case R.id.delete_list:
                 FavoritesListFragment favoritesListFragment = (FavoritesListFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_FAVORITES_LIST);
                 if (favoritesListFragment != null) {
@@ -72,15 +69,6 @@ public class FavoritesActivity extends BaseActivity implements HotelViewHolder.L
     }
 
 
-    public void showHome() {
-        FragmentManager fm = getSupportFragmentManager();
-        fm.beginTransaction()
-                .replace(R.id.fragment_overlay_container,
-                        HomeFragment.newInstance(getHotelsRequest(), true, false),
-                        FRAGMENT_HOME)
-                .addToBackStack(null)
-                .commit();
-    }
 
     public void showFavoritesList(String city, String country, String count) {
         getSupportFragmentManager()
@@ -146,7 +134,7 @@ public class FavoritesActivity extends BaseActivity implements HotelViewHolder.L
     }
 
     public void showHotelDetails(HotelSnippet hotelSnippet) {
-        startActivity(HotelSummaryActivity.createIntent(hotelSnippet, getHotelsRequest(), this));
+
     }
 
     @Override

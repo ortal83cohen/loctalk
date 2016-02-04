@@ -30,19 +30,19 @@ public final class R {
 		public static final int ic_person = 0x7f0200c1;
 	}
 	public static final class id {
-		public static final int editTextInput = 0x7f0e012a;
-		public static final int frameLayoutImageContainer = 0x7f0e0128;
-		public static final int imageView = 0x7f0e0129;
-		public static final int progressBar = 0x7f0e0127;
-		public static final int textViewLocation = 0x7f0e0126;
-		public static final int textViewLocationStatus = 0x7f0e0125;
+		public static final int editTextInput = 0x7f0e0126;
+		public static final int frameLayoutImageContainer = 0x7f0e0124;
+		public static final int imageView = 0x7f0e0125;
+		public static final int progressBar = 0x7f0e0123;
+		public static final int textViewLocation = 0x7f0e0122;
+		public static final int textViewLocationStatus = 0x7f0e0121;
 	}
 	public static final class layout {
-		public static final int fragment_page = 0x7f04005c;
-		public static final int fragment_page_geo = 0x7f04005d;
-		public static final int fragment_page_image = 0x7f04005e;
-		public static final int fragment_page_text = 0x7f04005f;
-		public static final int list_item_review = 0x7f040069;
+		public static final int fragment_page = 0x7f04005b;
+		public static final int fragment_page_geo = 0x7f04005c;
+		public static final int fragment_page_image = 0x7f04005d;
+		public static final int fragment_page_text = 0x7f04005e;
+		public static final int list_item_review = 0x7f040068;
 	}
 	public static final class string {
 		public static final int geo_status_found = 0x7f0700c9;

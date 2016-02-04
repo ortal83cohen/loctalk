@@ -61,12 +61,8 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
     TextView mAvailableCountText;
     @Bind(R.id.loader_text)
     TextView mLoaderText;
-    @Bind(R.id.filters_text)
-    TextView mFiltersText;
     @Bind(R.id.modify_preferences)
     Button mModifyPreferences;
-    @Bind(R.id.reset_filters)
-    Button mResetFilters;
     EtbApi mEtbApi;
     private LinearLayoutManager mLayoutManager;
     private HotelListAdapter mAdapter;
@@ -207,22 +203,10 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
         mButtonSort.setCompoundDrawables(null, null, new TriangleDrawable(getActivity(), R.color.theme_primary), null);
         mButtonSort.setVisibility(View.GONE);
 
-        ((HotelListActivity) getActivity()).hideButtonFilter();
-
         mModifyPreferences.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mListener.onEditLocationClick();
-            }
-        });
-
-        mResetFilters.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getHotelsRequest().removeFilter();
-                mResetFilters.setVisibility(View.GONE);
-                mFiltersText.setVisibility(View.GONE);
-                refresh();
             }
         });
 
@@ -280,13 +264,6 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
         mLoaderText.setVisibility(View.VISIBLE);
         mNoResult.setVisibility(View.GONE);
         mTopPanel.setVisibility(View.VISIBLE);
-        if (hotelsRequest.haveFilter()) {
-            mResetFilters.setVisibility(View.VISIBLE);
-            mFiltersText.setVisibility(View.VISIBLE);
-        } else {
-            mResetFilters.setVisibility(View.GONE);
-            mFiltersText.setVisibility(View.GONE);
-        }
 
         if (mAdapter != null) {
             mAdapter.clear();

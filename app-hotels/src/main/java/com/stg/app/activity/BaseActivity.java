@@ -151,12 +151,12 @@ public abstract class BaseActivity extends AppCompatActivity {
             case NavigationDrawer.NAV_LOGIN:
             case NavigationDrawer.NAV_SIGN_UP:
                 int tabId = tab == NavigationDrawer.NAV_LOGIN ? 0 : 1;
-                startActivity(LoginActivity.createIntent(tabId, this));
+
                 break;
             case NavigationDrawer.NAV_PROFILE:
             case NavigationDrawer.NAV_BOOKINGS:
             case NavigationDrawer.NAV_CREDIT_CARD:
-                startActivity(MemberActivity.createIntent(tab, this));
+
                 break;
             case NavigationDrawer.NAV_RECENT_SEARCH:
                 startActivity(RecentSearchesActivity.createIntent(this));

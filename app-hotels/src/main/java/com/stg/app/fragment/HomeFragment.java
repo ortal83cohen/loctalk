@@ -91,12 +91,9 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
 
 
     private static final int REQUEST_PERMISSION_LOCATION = 2;
-
-    private static final String ARG_SHOW_LOCATION = "show_location";
     private static final String LAST_LOCATION = "last_location";
     private static final String LAST_VIEW_PORT = "last_view_port";
 
-    private static final String ARG_IS_LIGHT_BOX = "is_light_box";
     private static final String ARG_REQUEST = "request";
 
     private static final int POSITION_UNTOUCHED = -1;
@@ -168,12 +165,10 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
         }
     };
 
-    public static HomeFragment newInstance(HotelListRequest request, boolean isLightBox, boolean showLocation) {
+    public static HomeFragment newInstance(HotelListRequest request) {
         HomeFragment fragment = new HomeFragment();
         Bundle args = new Bundle();
         args.putParcelable(ARG_REQUEST, request);
-        args.putBoolean(ARG_IS_LIGHT_BOX, isLightBox);
-        args.putBoolean(ARG_SHOW_LOCATION, showLocation);
         fragment.setArguments(args);
         return fragment;
     }
@@ -200,14 +195,6 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
             mGroupButtonsHolder.animate();
         }
 
-        mIsLightBox = getArguments().getBoolean(ARG_IS_LIGHT_BOX);
-        mShowLocation = getArguments().getBoolean(ARG_SHOW_LOCATION);
-
-        if (!mShowLocation) {
-            mSearchHotelsButton.setText(R.string.select_dates);
-            mAutocompleteView.setVisibility(View.GONE);
-            mAutocompleteViewClear.setVisibility(View.GONE);
-        }
         if (mIsLightBox) {
             setupLightBoxBackground();
         } else {
@@ -560,8 +547,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-        outState.putBoolean(ARG_IS_LIGHT_BOX, mIsLightBox);
-        outState.putBoolean(ARG_SHOW_LOCATION, mShowLocation);
+
         if (mLastLocation instanceof Parcelable) {
             outState.putParcelable(LAST_LOCATION, (Parcelable) mLastLocation);
         }

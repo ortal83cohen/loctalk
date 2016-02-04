@@ -61,7 +61,7 @@ public class RouteActivity extends Activity {
     private RetrofitCallback<OrderResponse> mRetrieveResultsCallback = new RetrofitCallback<OrderResponse>() {
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
-            startActivity(MemberActivity.createIntent(0, getBaseContext()));
+
         }
 
         @Override
@@ -87,7 +87,7 @@ public class RouteActivity extends Activity {
             values.put(DbContract.BookingsColumns.RATE_ID, rate.rateId);
             values.put(DbContract.BookingsColumns.CONFIRMATION_ID, rate.confirmationId);
             getBaseContext().getContentResolver().insert(DbContract.Bookings.CONTENT_URI, values);
-            startActivity(MemberActivity.createIntent(0, getBaseContext()));
+
         }
 
     };
@@ -176,16 +176,7 @@ public class RouteActivity extends Activity {
     }
 
     private void startHotelSummaryActivity(Accommodation acc) {
-        try {
-            int rateId = acc.getFirstRate() == null ? 0 : acc.getFirstRate().rateId;
-            final HotelSnippet hotelSnippet = HotelSnippet.from(acc, rateId, -1);
-            HotelListRequest request = App.provide(this).createHotelsRequest();
 
-            startActivity(HotelSummaryActivity.createIntent(hotelSnippet, request, true, this));
-        } catch (Exception e) {
-            AppLog.e(e);
-            sendToWebBrowser(getIntent().getData());
-        }
     }
 
     private void sendToWebBrowser(Uri data) {
