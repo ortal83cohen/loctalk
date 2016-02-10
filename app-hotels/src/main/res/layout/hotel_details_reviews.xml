@@ -49,16 +49,7 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="18dp"
-                android:layout_marginRight="@dimen/minimum_default_padding"
-                android:src="@drawable/tripadvisor_logo" />
 
-            <RatingBar
-                android:id="@+id/tripadvisor_rating"
-                style="@style/HotelsAppTheme.Widget.TripAdviserRatingBar"
-                android:layout_marginRight="@dimen/minimum_default_padding" />
 
             <TextView
                 android:id="@+id/reviews"

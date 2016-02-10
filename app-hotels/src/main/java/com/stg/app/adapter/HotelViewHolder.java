@@ -45,12 +45,6 @@ public class HotelViewHolder extends RecyclerView.ViewHolder {
     public TextView mDiscount;
     @Bind(R.id.triangle)
     public View mTriangle;
-    @Bind(R.id.star_rating)
-    public RatingBar mStarRating;
-    @Bind(R.id.tripadvisor_rating)
-    public RatingBar mTripadvisorRating;
-    @Bind(R.id.tripadvisor_image)
-    public ImageView mTripadvisorImage;
     @Bind(R.id.heart_icon)
     public ImageView mHeartIcon;
     @Bind(R.id.background)
@@ -121,16 +115,6 @@ public class HotelViewHolder extends RecyclerView.ViewHolder {
             mTriangle.setVisibility(View.INVISIBLE); // Keep layout height
         }
 
-        mStarRating.setRating(mItem.starRating);
-        if (mItem.summary.reviewScore > 0) {
-            mTripadvisorImage.setVisibility(View.VISIBLE);
-            mTripadvisorRating.setVisibility(View.VISIBLE);
-            mTripadvisorRating.setRating(mItem.summary.reviewScore);
-        } else {
-            mTripadvisorImage.setVisibility(View.GONE);
-            mTripadvisorRating.setVisibility(View.GONE);
-        }
-
         boolean isLiked = LikedHotels.isLiked(mItem.id, mContext);
 
         if (isLiked) {
@@ -162,9 +146,6 @@ public class HotelViewHolder extends RecyclerView.ViewHolder {
     }
 
     private void setViewEnabled(Resources r) {
-        //.setBackgroundColor(r.getColor(android.R.color.transparent));
-        mTripadvisorRating.setEnabled(true);
-        mStarRating.setEnabled(true);
         mBackground.setEnabled(true);
         mTitleView.setTextColor(r.getColor(android.R.color.black));
         itemView.setOnClickListener(new View.OnClickListener() {
@@ -174,13 +155,11 @@ public class HotelViewHolder extends RecyclerView.ViewHolder {
             }
         });
         mImageView.setColorFilter(null);
-        mTripadvisorImage.setColorFilter(null);
+
     }
 
     private void setViewDisabled(Resources r) {
-        //.setBackgroundColor(r.getColor(R.color.transparent_black));
-        mTripadvisorRating.setEnabled(false);
-        mStarRating.setEnabled(false);
+
         mBackground.setEnabled(false);
         mTitleView.setTextColor(r.getColor(android.R.color.darker_gray));
         itemView.setOnClickListener(null);
@@ -188,7 +167,6 @@ public class HotelViewHolder extends RecyclerView.ViewHolder {
         matrix.setSaturation(0);
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
         mImageView.setColorFilter(filter);
-        mTripadvisorImage.setColorFilter(filter);
     }
 
     public interface Listener {

@@ -113,7 +113,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
         private void notifyResponse(DetailsResponse detailsResponse, int rateId) {
             mHotelSnippetDetails = new HotelSnippet(detailsResponse.accommodation, rateId);
             setDetailsResponse(mHotelSnippetDetails);
-            Events.post(new HotelDetailsResultsEvent(mHotelSnippetDetails));
+//            Events.post(new HotelDetailsResultsEvent(mHotelSnippetDetails));
         }
     };
 

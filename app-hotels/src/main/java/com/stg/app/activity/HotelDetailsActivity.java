@@ -24,7 +24,6 @@ import com.stg.app.adapter.ViewPagerAdapter;
 import com.stg.app.core.CoreInterface;
 import com.stg.app.etbapi.RetrofitCallback;
 import com.stg.app.fragment.HotelFacilitiesFragment;
-import com.stg.app.fragment.HotelReviewsFragment;
 import com.stg.app.fragment.HotelsMapFragment;
 import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.map.PoiMarker;
@@ -109,7 +108,6 @@ public class HotelDetailsActivity extends TabActivity implements OnMapReadyCallb
         }
         mPoiMarker = new PoiMarker(this);
         adapter.addFragment(HotelFacilitiesFragment.newInstance(mHotelSnippet), getString(R.string.cps_details), "fragment_facilities");
-        adapter.addFragment(HotelReviewsFragment.newInstance(mHotelSnippet), getString(R.string.cps_reviews), "fragment_reviews");
         adapter.addFragment(mSupportMapFragment, getString(R.string.cps_map), MAP);
     }
 

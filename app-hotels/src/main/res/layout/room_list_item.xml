@@ -128,12 +128,6 @@
         android:layout_gravity="right|bottom"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/triangle"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="right|bottom"
-            android:background="@drawable/triangle" />
 
         <TextView
             android:id="@+id/discount"

@@ -61,9 +61,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
-                            <RatingBar
-                                android:id="@+id/star_rating"
-                                style="@style/HotelsAppTheme.Widget.WhiteHotelRatingBar" />
 
                             <TextView
                                 android:id="@android:id/title"

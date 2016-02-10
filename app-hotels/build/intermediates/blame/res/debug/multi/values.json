@@ -12139,9 +12139,22 @@
                     "startLine": 2206,
                     "startColumn": 4,
                     "startOffset": 165231,
+                    "endLine": 2211,
+                    "endColumn": 12,
+                    "endOffset": 165636
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2212,
+                    "startColumn": 4,
+                    "startOffset": 165641,
                     "endLine": 2217,
                     "endColumn": 12,
-                    "endOffset": 165871
+                    "endOffset": 166062
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12151,10 +12164,10 @@
                 "to": {
                     "startLine": 2218,
                     "startColumn": 4,
-                    "startOffset": 165876,
-                    "endLine": 2223,
+                    "startOffset": 166067,
+                    "endLine": 2224,
                     "endColumn": 12,
-                    "endOffset": 166281
+                    "endOffset": 166522
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12162,12 +12175,12 @@
             },
             {
                 "to": {
-                    "startLine": 2224,
+                    "startLine": 2225,
                     "startColumn": 4,
-                    "startOffset": 166286,
-                    "endLine": 2229,
+                    "startOffset": 166527,
+                    "endLine": 2228,
                     "endColumn": 12,
-                    "endOffset": 166707
+                    "endOffset": 166781
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12175,12 +12188,12 @@
             },
             {
                 "to": {
-                    "startLine": 2230,
+                    "startLine": 2229,
                     "startColumn": 4,
-                    "startOffset": 166712,
-                    "endLine": 2236,
+                    "startOffset": 166786,
+                    "endLine": 2232,
                     "endColumn": 12,
-                    "endOffset": 167167
+                    "endOffset": 167050
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12188,12 +12201,24 @@
             },
             {
                 "to": {
-                    "startLine": 2237,
+                    "startLine": 2233,
                     "startColumn": 4,
-                    "startOffset": 167172,
+                    "startOffset": 167055,
+                    "endColumn": 47,
+                    "endOffset": 167098
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2234,
+                    "startColumn": 4,
+                    "startOffset": 167103,
                     "endLine": 2240,
                     "endColumn": 12,
-                    "endOffset": 167426
+                    "endOffset": 167576
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12203,10 +12228,10 @@
                 "to": {
                     "startLine": 2241,
                     "startColumn": 4,
-                    "startOffset": 167431,
-                    "endLine": 2244,
+                    "startOffset": 167581,
+                    "endLine": 2251,
                     "endColumn": 12,
-                    "endOffset": 167695
+                    "endOffset": 168198
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12214,24 +12239,12 @@
             },
             {
                 "to": {
-                    "startLine": 2245,
+                    "startLine": 2252,
                     "startColumn": 4,
-                    "startOffset": 167700,
-                    "endColumn": 47,
-                    "endOffset": 167743
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2246,
-                    "startColumn": 4,
-                    "startOffset": 167748,
-                    "endLine": 2252,
+                    "startOffset": 168203,
+                    "endLine": 2258,
                     "endColumn": 12,
-                    "endOffset": 168221
+                    "endOffset": 168591
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12239,12 +12252,12 @@
             },
             {
                 "to": {
-                    "startLine": 2253,
+                    "startLine": 2259,
                     "startColumn": 4,
-                    "startOffset": 168226,
-                    "endLine": 2263,
+                    "startOffset": 168596,
+                    "endLine": 2265,
                     "endColumn": 12,
-                    "endOffset": 168843
+                    "endOffset": 168986
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12252,37 +12265,11 @@
             },
             {
                 "to": {
-                    "startLine": 2264,
+                    "startLine": 2266,
                     "startColumn": 4,
-                    "startOffset": 168848,
-                    "endLine": 2270,
-                    "endColumn": 12,
-                    "endOffset": 169236
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2271,
-                    "startColumn": 4,
-                    "startOffset": 169241,
-                    "endLine": 2277,
-                    "endColumn": 12,
-                    "endOffset": 169631
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2278,
-                    "startColumn": 4,
-                    "startOffset": 169636,
+                    "startOffset": 168991,
                     "endColumn": 51,
-                    "endOffset": 169683
+                    "endOffset": 169038
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12290,12 +12277,12 @@
             },
             {
                 "to": {
-                    "startLine": 2279,
+                    "startLine": 2267,
                     "startColumn": 4,
-                    "startOffset": 169688,
-                    "endLine": 2288,
+                    "startOffset": 169043,
+                    "endLine": 2276,
                     "endColumn": 12,
-                    "endOffset": 170263
+                    "endOffset": 169618
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12303,12 +12290,12 @@
             },
             {
                 "to": {
-                    "startLine": 2289,
+                    "startLine": 2277,
                     "startColumn": 4,
-                    "startOffset": 170268,
-                    "endLine": 2296,
+                    "startOffset": 169623,
+                    "endLine": 2284,
                     "endColumn": 12,
-                    "endOffset": 170750
+                    "endOffset": 170105
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12316,12 +12303,51 @@
             },
             {
                 "to": {
-                    "startLine": 2297,
+                    "startLine": 2285,
                     "startColumn": 4,
-                    "startOffset": 170755,
+                    "startOffset": 170110,
+                    "endLine": 2290,
+                    "endColumn": 12,
+                    "endOffset": 170424
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2291,
+                    "startColumn": 4,
+                    "startOffset": 170429,
+                    "endLine": 2294,
+                    "endColumn": 12,
+                    "endOffset": 170690
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2295,
+                    "startColumn": 4,
+                    "startOffset": 170695,
+                    "endLine": 2299,
+                    "endColumn": 12,
+                    "endOffset": 170994
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2300,
+                    "startColumn": 4,
+                    "startOffset": 170999,
                     "endLine": 2302,
                     "endColumn": 12,
-                    "endOffset": 171069
+                    "endOffset": 171172
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12331,10 +12357,10 @@
                 "to": {
                     "startLine": 2303,
                     "startColumn": 4,
-                    "startOffset": 171074,
-                    "endLine": 2306,
+                    "startOffset": 171177,
+                    "endLine": 2305,
                     "endColumn": 12,
-                    "endOffset": 171335
+                    "endOffset": 171349
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12342,12 +12368,12 @@
             },
             {
                 "to": {
-                    "startLine": 2307,
+                    "startLine": 2306,
                     "startColumn": 4,
-                    "startOffset": 171340,
-                    "endLine": 2311,
+                    "startOffset": 171354,
+                    "endLine": 2309,
                     "endColumn": 12,
-                    "endOffset": 171639
+                    "endOffset": 171616
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12355,12 +12381,12 @@
             },
             {
                 "to": {
-                    "startLine": 2312,
+                    "startLine": 2310,
                     "startColumn": 4,
-                    "startOffset": 171644,
-                    "endLine": 2314,
+                    "startOffset": 171621,
+                    "endLine": 2313,
                     "endColumn": 12,
-                    "endOffset": 171817
+                    "endOffset": 171870
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
@@ -12368,141 +12394,141 @@
             },
             {
                 "to": {
-                    "startLine": 2315,
+                    "startLine": 2314,
                     "startColumn": 4,
-                    "startOffset": 171822,
-                    "endLine": 2317,
+                    "startOffset": 171875,
+                    "endLine": 2321,
                     "endColumn": 12,
-                    "endOffset": 171994
+                    "endOffset": 172402
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\theme.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2318,
+                    "startLine": 2322,
                     "startColumn": 4,
-                    "startOffset": 171999,
-                    "endLine": 2329,
+                    "startOffset": 172407,
+                    "endLine": 2328,
                     "endColumn": 12,
-                    "endOffset": 172661
+                    "endOffset": 172863
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\theme.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2329,
+                    "startColumn": 4,
+                    "startOffset": 172868,
+                    "endColumn": 63,
+                    "endOffset": 172927
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\theme.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2330,
                     "startColumn": 4,
-                    "startOffset": 172666,
-                    "endLine": 2337,
+                    "startOffset": 172932,
+                    "endLine": 2348,
                     "endColumn": 12,
-                    "endOffset": 173190
+                    "endOffset": 174146
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\theme.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2338,
+                    "startLine": 2349,
                     "startColumn": 4,
-                    "startOffset": 173195,
-                    "endLine": 2341,
-                    "endColumn": 12,
-                    "endOffset": 173457
+                    "startOffset": 174151,
+                    "endLine": 2351,
+                    "endColumn": 10,
+                    "endOffset": 174239
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2342,
+                    "startLine": 2352,
                     "startColumn": 4,
-                    "startOffset": 173462,
-                    "endLine": 2345,
-                    "endColumn": 12,
-                    "endOffset": 173711
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2346,
-                    "startColumn": 4,
-                    "startOffset": 173716,
-                    "endLine": 2357,
-                    "endColumn": 12,
+                    "startOffset": 174244,
+                    "endLine": 2354,
+                    "endColumn": 10,
                     "endOffset": 174377
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\styles.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2358,
+                    "startLine": 2355,
                     "startColumn": 4,
                     "startOffset": 174382,
-                    "endLine": 2365,
-                    "endColumn": 12,
-                    "endOffset": 174909
+                    "endLine": 2360,
+                    "endColumn": 10,
+                    "endOffset": 174654
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\theme.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2366,
+                    "startLine": 2361,
                     "startColumn": 4,
-                    "startOffset": 174914,
-                    "endLine": 2372,
-                    "endColumn": 12,
-                    "endOffset": 175370
+                    "startOffset": 174659,
+                    "endLine": 2364,
+                    "endColumn": 10,
+                    "endOffset": 174813
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\theme.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2373,
+                    "startLine": 2365,
                     "startColumn": 4,
-                    "startOffset": 175375,
-                    "endColumn": 63,
-                    "endOffset": 175434
+                    "startOffset": 174818,
+                    "endLine": 2367,
+                    "endColumn": 10,
+                    "endOffset": 174953
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\theme.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2368,
+                    "startColumn": 4,
+                    "startOffset": 174958,
+                    "endLine": 2373,
+                    "endColumn": 10,
+                    "endOffset": 175231
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2374,
                     "startColumn": 4,
-                    "startOffset": 175439,
-                    "endLine": 2392,
-                    "endColumn": 12,
-                    "endOffset": 176653
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\values\\theme.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2393,
-                    "startColumn": 4,
-                    "startOffset": 176658,
-                    "endLine": 2395,
+                    "startOffset": 175236,
+                    "endLine": 2377,
                     "endColumn": 10,
-                    "endOffset": 176746
+                    "endOffset": 175391
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
@@ -12510,12 +12536,12 @@
             },
             {
                 "to": {
-                    "startLine": 2396,
+                    "startLine": 2378,
                     "startColumn": 4,
-                    "startOffset": 176751,
-                    "endLine": 2398,
+                    "startOffset": 175396,
+                    "endLine": 2388,
                     "endColumn": 10,
-                    "endOffset": 176884
+                    "endOffset": 175881
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
@@ -12523,12 +12549,12 @@
             },
             {
                 "to": {
-                    "startLine": 2399,
+                    "startLine": 2389,
                     "startColumn": 4,
-                    "startOffset": 176889,
-                    "endLine": 2404,
+                    "startOffset": 175886,
+                    "endLine": 2391,
                     "endColumn": 10,
-                    "endOffset": 177161
+                    "endOffset": 175986
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
@@ -12536,12 +12562,12 @@
             },
             {
                 "to": {
-                    "startLine": 2405,
+                    "startLine": 2392,
                     "startColumn": 4,
-                    "startOffset": 177166,
-                    "endLine": 2408,
+                    "startOffset": 175991,
+                    "endLine": 2394,
                     "endColumn": 10,
-                    "endOffset": 177320
+                    "endOffset": 176131
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
@@ -12549,12 +12575,12 @@
             },
             {
                 "to": {
-                    "startLine": 2409,
+                    "startLine": 2395,
                     "startColumn": 4,
-                    "startOffset": 177325,
-                    "endLine": 2411,
+                    "startOffset": 176136,
+                    "endLine": 2397,
                     "endColumn": 10,
-                    "endOffset": 177460
+                    "endOffset": 176276
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
@@ -12562,12 +12588,12 @@
             },
             {
                 "to": {
-                    "startLine": 2412,
+                    "startLine": 2398,
                     "startColumn": 4,
-                    "startOffset": 177465,
-                    "endLine": 2417,
+                    "startOffset": 176281,
+                    "endLine": 2400,
                     "endColumn": 10,
-                    "endOffset": 177738
+                    "endOffset": 176382
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
@@ -12575,12 +12601,12 @@
             },
             {
                 "to": {
-                    "startLine": 2418,
+                    "startLine": 2401,
                     "startColumn": 4,
-                    "startOffset": 177743,
-                    "endLine": 2421,
+                    "startOffset": 176387,
+                    "endLine": 2403,
                     "endColumn": 10,
-                    "endOffset": 177898
+                    "endOffset": 176527
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
@@ -12588,12 +12614,12 @@
             },
             {
                 "to": {
-                    "startLine": 2422,
+                    "startLine": 2404,
                     "startColumn": 4,
-                    "startOffset": 177903,
-                    "endLine": 2432,
+                    "startOffset": 176532,
+                    "endLine": 2406,
                     "endColumn": 10,
-                    "endOffset": 178388
+                    "endOffset": 176672
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
@@ -12601,90 +12627,25 @@
             },
             {
                 "to": {
-                    "startLine": 2433,
+                    "startLine": 2407,
                     "startColumn": 4,
-                    "startOffset": 178393,
-                    "endLine": 2435,
-                    "endColumn": 10,
-                    "endOffset": 178493
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2436,
-                    "startColumn": 4,
-                    "startOffset": 178498,
-                    "endLine": 2438,
-                    "endColumn": 10,
-                    "endOffset": 178638
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2439,
-                    "startColumn": 4,
-                    "startOffset": 178643,
-                    "endLine": 2441,
-                    "endColumn": 10,
-                    "endOffset": 178783
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2442,
-                    "startColumn": 4,
-                    "startOffset": 178788,
+                    "startOffset": 176677,
                     "endLine": 2444,
-                    "endColumn": 10,
-                    "endOffset": 178889
+                    "endColumn": 12,
+                    "endOffset": 179534
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2445,
                     "startColumn": 4,
-                    "startOffset": 178894,
-                    "endLine": 2447,
-                    "endColumn": 10,
-                    "endOffset": 179034
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2448,
-                    "startColumn": 4,
-                    "startOffset": 179039,
-                    "endLine": 2450,
-                    "endColumn": 10,
-                    "endOffset": 179179
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2451,
-                    "startColumn": 4,
-                    "startOffset": 179184,
-                    "endLine": 2488,
+                    "startOffset": 179539,
+                    "endLine": 2483,
                     "endColumn": 12,
-                    "endOffset": 182041
+                    "endOffset": 182536
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12692,24 +12653,11 @@
             },
             {
                 "to": {
-                    "startLine": 2489,
+                    "startLine": 2484,
                     "startColumn": 4,
-                    "startOffset": 182046,
-                    "endLine": 2527,
-                    "endColumn": 12,
-                    "endOffset": 185043
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2528,
-                    "startColumn": 4,
-                    "startOffset": 185048,
+                    "startOffset": 182541,
                     "endColumn": 61,
-                    "endOffset": 185105
+                    "endOffset": 182598
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12717,12 +12665,12 @@
             },
             {
                 "to": {
-                    "startLine": 2529,
+                    "startLine": 2485,
                     "startColumn": 4,
-                    "startOffset": 185110,
-                    "endLine": 2538,
+                    "startOffset": 182603,
+                    "endLine": 2494,
                     "endColumn": 12,
-                    "endOffset": 185735
+                    "endOffset": 183228
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12730,12 +12678,12 @@
             },
             {
                 "to": {
-                    "startLine": 2539,
+                    "startLine": 2495,
                     "startColumn": 4,
-                    "startOffset": 185740,
-                    "endLine": 2547,
+                    "startOffset": 183233,
+                    "endLine": 2503,
                     "endColumn": 12,
-                    "endOffset": 186349
+                    "endOffset": 183842
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12743,11 +12691,11 @@
             },
             {
                 "to": {
-                    "startLine": 2548,
+                    "startLine": 2504,
                     "startColumn": 4,
-                    "startOffset": 186354,
+                    "startOffset": 183847,
                     "endColumn": 85,
-                    "endOffset": 186435
+                    "endOffset": 183928
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12755,12 +12703,181 @@
             },
             {
                 "to": {
-                    "startLine": 2549,
+                    "startLine": 2505,
                     "startColumn": 4,
-                    "startOffset": 186440,
+                    "startOffset": 183933,
+                    "endLine": 2506,
+                    "endColumn": 12,
+                    "endOffset": 184041
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2507,
+                    "startColumn": 4,
+                    "startOffset": 184046,
+                    "endLine": 2510,
+                    "endColumn": 12,
+                    "endOffset": 184270
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2511,
+                    "startColumn": 4,
+                    "startOffset": 184275,
+                    "endLine": 2513,
+                    "endColumn": 12,
+                    "endOffset": 184430
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2514,
+                    "startColumn": 4,
+                    "startOffset": 184435,
+                    "endLine": 2516,
+                    "endColumn": 12,
+                    "endOffset": 184582
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2517,
+                    "startColumn": 4,
+                    "startOffset": 184587,
+                    "endLine": 2519,
+                    "endColumn": 12,
+                    "endOffset": 184753
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2520,
+                    "startColumn": 4,
+                    "startOffset": 184758,
+                    "endLine": 2522,
+                    "endColumn": 12,
+                    "endOffset": 184920
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2523,
+                    "startColumn": 4,
+                    "startOffset": 184925,
+                    "endLine": 2526,
+                    "endColumn": 12,
+                    "endOffset": 185163
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2527,
+                    "startColumn": 4,
+                    "startOffset": 185168,
+                    "endLine": 2529,
+                    "endColumn": 12,
+                    "endOffset": 185333
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2530,
+                    "startColumn": 4,
+                    "startOffset": 185338,
+                    "endLine": 2532,
+                    "endColumn": 12,
+                    "endOffset": 185506
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2533,
+                    "startColumn": 4,
+                    "startOffset": 185511,
+                    "endLine": 2535,
+                    "endColumn": 12,
+                    "endOffset": 185677
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2536,
+                    "startColumn": 4,
+                    "startOffset": 185682,
+                    "endLine": 2539,
+                    "endColumn": 12,
+                    "endOffset": 185951
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2540,
+                    "startColumn": 4,
+                    "startOffset": 185956,
+                    "endLine": 2542,
+                    "endColumn": 12,
+                    "endOffset": 186150
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2543,
+                    "startColumn": 4,
+                    "startOffset": 186155,
+                    "endLine": 2546,
+                    "endColumn": 12,
+                    "endOffset": 186355
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2547,
+                    "startColumn": 4,
+                    "startOffset": 186360,
                     "endLine": 2550,
                     "endColumn": 12,
-                    "endOffset": 186548
+                    "endOffset": 186685
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12770,10 +12887,45 @@
                 "to": {
                     "startLine": 2551,
                     "startColumn": 4,
-                    "startOffset": 186553,
-                    "endLine": 2554,
-                    "endColumn": 12,
-                    "endOffset": 186777
+                    "startOffset": 186690,
+                    "endColumn": 83,
+                    "endOffset": 186769
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2552,
+                    "startColumn": 4,
+                    "startOffset": 186774,
+                    "endColumn": 95,
+                    "endOffset": 186865
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2553,
+                    "startColumn": 4,
+                    "startOffset": 186870,
+                    "endColumn": 95,
+                    "endOffset": 186961
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2554,
+                    "startColumn": 4,
+                    "startOffset": 186966,
+                    "endColumn": 97,
+                    "endOffset": 187059
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12783,10 +12935,33 @@
                 "to": {
                     "startLine": 2555,
                     "startColumn": 4,
-                    "startOffset": 186782,
-                    "endLine": 2557,
-                    "endColumn": 12,
-                    "endOffset": 186937
+                    "startOffset": 187064,
+                    "endColumn": 99,
+                    "endOffset": 187159
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2556,
+                    "startColumn": 4,
+                    "startOffset": 187164,
+                    "endColumn": 101,
+                    "endOffset": 187261
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2557,
+                    "startColumn": 4,
+                    "startOffset": 187266,
+                    "endColumn": 101,
+                    "endOffset": 187363
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12796,10 +12971,33 @@
                 "to": {
                     "startLine": 2558,
                     "startColumn": 4,
-                    "startOffset": 186942,
-                    "endLine": 2560,
-                    "endColumn": 12,
-                    "endOffset": 187089
+                    "startOffset": 187368,
+                    "endColumn": 101,
+                    "endOffset": 187465
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2559,
+                    "startColumn": 4,
+                    "startOffset": 187470,
+                    "endColumn": 101,
+                    "endOffset": 187567
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2560,
+                    "startColumn": 4,
+                    "startOffset": 187572,
+                    "endColumn": 101,
+                    "endOffset": 187669
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12809,10 +13007,33 @@
                 "to": {
                     "startLine": 2561,
                     "startColumn": 4,
-                    "startOffset": 187094,
-                    "endLine": 2563,
-                    "endColumn": 12,
-                    "endOffset": 187260
+                    "startOffset": 187674,
+                    "endColumn": 99,
+                    "endOffset": 187769
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2562,
+                    "startColumn": 4,
+                    "startOffset": 187774,
+                    "endColumn": 95,
+                    "endOffset": 187865
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2563,
+                    "startColumn": 4,
+                    "startOffset": 187870,
+                    "endColumn": 111,
+                    "endOffset": 187977
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12822,10 +13043,9 @@
                 "to": {
                     "startLine": 2564,
                     "startColumn": 4,
-                    "startOffset": 187265,
-                    "endLine": 2566,
-                    "endColumn": 12,
-                    "endOffset": 187427
+                    "startOffset": 187982,
+                    "endColumn": 128,
+                    "endOffset": 188106
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12833,12 +13053,49 @@
             },
             {
                 "to": {
-                    "startLine": 2567,
+                    "startLine": 2565,
                     "startColumn": 4,
-                    "startOffset": 187432,
-                    "endLine": 2570,
+                    "startOffset": 188111,
+                    "endColumn": 122,
+                    "endOffset": 188229
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2566,
+                    "startColumn": 4,
+                    "startOffset": 188234,
+                    "endLine": 2567,
                     "endColumn": 12,
-                    "endOffset": 187670
+                    "endOffset": 188383
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2568,
+                    "startColumn": 4,
+                    "startOffset": 188388,
+                    "endLine": 2569,
+                    "endColumn": 12,
+                    "endOffset": 188537
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2570,
+                    "startColumn": 4,
+                    "startOffset": 188542,
+                    "endColumn": 97,
+                    "endOffset": 188635
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12848,10 +13105,9 @@
                 "to": {
                     "startLine": 2571,
                     "startColumn": 4,
-                    "startOffset": 187675,
-                    "endLine": 2573,
-                    "endColumn": 12,
-                    "endOffset": 187840
+                    "startOffset": 188640,
+                    "endColumn": 113,
+                    "endOffset": 188749
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12859,12 +13115,37 @@
             },
             {
                 "to": {
-                    "startLine": 2574,
+                    "startLine": 2572,
                     "startColumn": 4,
-                    "startOffset": 187845,
+                    "startOffset": 188754,
+                    "endColumn": 93,
+                    "endOffset": 188843
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2573,
+                    "startColumn": 4,
+                    "startOffset": 188848,
+                    "endLine": 2574,
+                    "endColumn": 12,
+                    "endOffset": 188983
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2575,
+                    "startColumn": 4,
+                    "startOffset": 188988,
                     "endLine": 2576,
                     "endColumn": 12,
-                    "endOffset": 188013
+                    "endOffset": 189117
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12874,10 +13155,33 @@
                 "to": {
                     "startLine": 2577,
                     "startColumn": 4,
-                    "startOffset": 188018,
-                    "endLine": 2579,
-                    "endColumn": 12,
-                    "endOffset": 188184
+                    "startOffset": 189122,
+                    "endColumn": 95,
+                    "endOffset": 189213
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2578,
+                    "startColumn": 4,
+                    "startOffset": 189218,
+                    "endColumn": 111,
+                    "endOffset": 189325
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2579,
+                    "startColumn": 4,
+                    "startOffset": 189330,
+                    "endColumn": 99,
+                    "endOffset": 189425
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12887,10 +13191,9 @@
                 "to": {
                     "startLine": 2580,
                     "startColumn": 4,
-                    "startOffset": 188189,
-                    "endLine": 2583,
-                    "endColumn": 12,
-                    "endOffset": 188458
+                    "startOffset": 189430,
+                    "endColumn": 115,
+                    "endOffset": 189541
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12898,12 +13201,11 @@
             },
             {
                 "to": {
-                    "startLine": 2584,
+                    "startLine": 2581,
                     "startColumn": 4,
-                    "startOffset": 188463,
-                    "endLine": 2586,
-                    "endColumn": 12,
-                    "endOffset": 188657
+                    "startOffset": 189546,
+                    "endColumn": 95,
+                    "endOffset": 189637
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12911,12 +13213,74 @@
             },
             {
                 "to": {
-                    "startLine": 2587,
+                    "startLine": 2582,
                     "startColumn": 4,
-                    "startOffset": 188662,
+                    "startOffset": 189642,
+                    "endColumn": 111,
+                    "endOffset": 189749
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2583,
+                    "startColumn": 4,
+                    "startOffset": 189754,
+                    "endLine": 2584,
+                    "endColumn": 12,
+                    "endOffset": 189889
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2585,
+                    "startColumn": 4,
+                    "startOffset": 189894,
+                    "endColumn": 135,
+                    "endOffset": 190025
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2586,
+                    "startColumn": 4,
+                    "startOffset": 190030,
+                    "endLine": 2587,
+                    "endColumn": 12,
+                    "endOffset": 190189
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2588,
+                    "startColumn": 4,
+                    "startOffset": 190194,
+                    "endColumn": 129,
+                    "endOffset": 190319
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2589,
+                    "startColumn": 4,
+                    "startOffset": 190324,
                     "endLine": 2590,
                     "endColumn": 12,
-                    "endOffset": 188862
+                    "endOffset": 190477
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12926,10 +13290,10 @@
                 "to": {
                     "startLine": 2591,
                     "startColumn": 4,
-                    "startOffset": 188867,
-                    "endLine": 2594,
+                    "startOffset": 190482,
+                    "endLine": 2592,
                     "endColumn": 12,
-                    "endOffset": 189192
+                    "endOffset": 190627
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12937,11 +13301,24 @@
             },
             {
                 "to": {
-                    "startLine": 2595,
+                    "startLine": 2593,
                     "startColumn": 4,
-                    "startOffset": 189197,
-                    "endColumn": 83,
-                    "endOffset": 189276
+                    "startOffset": 190632,
+                    "endColumn": 140,
+                    "endOffset": 190768
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2594,
+                    "startColumn": 4,
+                    "startOffset": 190773,
+                    "endLine": 2595,
+                    "endColumn": 12,
+                    "endOffset": 190912
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12951,9 +13328,9 @@
                 "to": {
                     "startLine": 2596,
                     "startColumn": 4,
-                    "startOffset": 189281,
-                    "endColumn": 95,
-                    "endOffset": 189372
+                    "startOffset": 190917,
+                    "endColumn": 134,
+                    "endOffset": 191047
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12963,9 +13340,9 @@
                 "to": {
                     "startLine": 2597,
                     "startColumn": 4,
-                    "startOffset": 189377,
-                    "endColumn": 95,
-                    "endOffset": 189468
+                    "startOffset": 191052,
+                    "endColumn": 111,
+                    "endOffset": 191159
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12975,9 +13352,9 @@
                 "to": {
                     "startLine": 2598,
                     "startColumn": 4,
-                    "startOffset": 189473,
-                    "endColumn": 97,
-                    "endOffset": 189566
+                    "startOffset": 191164,
+                    "endColumn": 127,
+                    "endOffset": 191287
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -12987,21 +13364,10 @@
                 "to": {
                     "startLine": 2599,
                     "startColumn": 4,
-                    "startOffset": 189571,
-                    "endColumn": 99,
-                    "endOffset": 189666
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2600,
-                    "startColumn": 4,
-                    "startOffset": 189671,
-                    "endColumn": 101,
-                    "endOffset": 189768
+                    "startOffset": 191292,
+                    "endLine": 2600,
+                    "endColumn": 12,
+                    "endOffset": 191423
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13011,21 +13377,10 @@
                 "to": {
                     "startLine": 2601,
                     "startColumn": 4,
-                    "startOffset": 189773,
-                    "endColumn": 101,
-                    "endOffset": 189870
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2602,
-                    "startColumn": 4,
-                    "startOffset": 189875,
-                    "endColumn": 101,
-                    "endOffset": 189972
+                    "startOffset": 191428,
+                    "endLine": 2602,
+                    "endColumn": 12,
+                    "endOffset": 191565
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13035,21 +13390,10 @@
                 "to": {
                     "startLine": 2603,
                     "startColumn": 4,
-                    "startOffset": 189977,
-                    "endColumn": 101,
-                    "endOffset": 190074
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2604,
-                    "startColumn": 4,
-                    "startOffset": 190079,
-                    "endColumn": 101,
-                    "endOffset": 190176
+                    "startOffset": 191570,
+                    "endLine": 2604,
+                    "endColumn": 12,
+                    "endOffset": 191707
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13059,9 +13403,9 @@
                 "to": {
                     "startLine": 2605,
                     "startColumn": 4,
-                    "startOffset": 190181,
-                    "endColumn": 99,
-                    "endOffset": 190276
+                    "startOffset": 191712,
+                    "endColumn": 111,
+                    "endOffset": 191819
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13071,9 +13415,9 @@
                 "to": {
                     "startLine": 2606,
                     "startColumn": 4,
-                    "startOffset": 190281,
-                    "endColumn": 95,
-                    "endOffset": 190372
+                    "startOffset": 191824,
+                    "endColumn": 139,
+                    "endOffset": 191959
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13083,218 +13427,99 @@
                 "to": {
                     "startLine": 2607,
                     "startColumn": 4,
-                    "startOffset": 190377,
-                    "endColumn": 111,
-                    "endOffset": 190484
+                    "startOffset": 191964,
+                    "endLine": 2609,
+                    "endColumn": 12,
+                    "endOffset": 192160
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2608,
-                    "startColumn": 4,
-                    "startOffset": 190489,
-                    "endColumn": 128,
-                    "endOffset": 190613
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2609,
-                    "startColumn": 4,
-                    "startOffset": 190618,
-                    "endColumn": 122,
-                    "endOffset": 190736
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2610,
                     "startColumn": 4,
-                    "startOffset": 190741,
-                    "endLine": 2611,
-                    "endColumn": 12,
-                    "endOffset": 190890
+                    "startOffset": 192165,
+                    "endColumn": 91,
+                    "endOffset": 192252
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2612,
+                    "startLine": 2611,
                     "startColumn": 4,
-                    "startOffset": 190895,
+                    "startOffset": 192257,
                     "endLine": 2613,
                     "endColumn": 12,
-                    "endOffset": 191044
+                    "endOffset": 192447
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2614,
                     "startColumn": 4,
-                    "startOffset": 191049,
-                    "endColumn": 97,
-                    "endOffset": 191142
+                    "startOffset": 192452,
+                    "endLine": 2616,
+                    "endColumn": 12,
+                    "endOffset": 192631
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2615,
-                    "startColumn": 4,
-                    "startOffset": 191147,
-                    "endColumn": 113,
-                    "endOffset": 191256
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2616,
-                    "startColumn": 4,
-                    "startOffset": 191261,
-                    "endColumn": 93,
-                    "endOffset": 191350
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2617,
                     "startColumn": 4,
-                    "startOffset": 191355,
-                    "endLine": 2618,
+                    "startOffset": 192636,
+                    "endLine": 2619,
                     "endColumn": 12,
-                    "endOffset": 191490
+                    "endOffset": 192806
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2619,
+                    "startLine": 2620,
                     "startColumn": 4,
-                    "startOffset": 191495,
-                    "endLine": 2620,
+                    "startOffset": 192811,
+                    "endLine": 2623,
                     "endColumn": 12,
-                    "endOffset": 191624
+                    "endOffset": 193059
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2621,
-                    "startColumn": 4,
-                    "startOffset": 191629,
-                    "endColumn": 95,
-                    "endOffset": 191720
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2622,
-                    "startColumn": 4,
-                    "startOffset": 191725,
-                    "endColumn": 111,
-                    "endOffset": 191832
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2623,
-                    "startColumn": 4,
-                    "startOffset": 191837,
-                    "endColumn": 99,
-                    "endOffset": 191932
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2624,
                     "startColumn": 4,
-                    "startOffset": 191937,
-                    "endColumn": 115,
-                    "endOffset": 192048
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2625,
-                    "startColumn": 4,
-                    "startOffset": 192053,
-                    "endColumn": 95,
-                    "endOffset": 192144
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2626,
-                    "startColumn": 4,
-                    "startOffset": 192149,
-                    "endColumn": 111,
-                    "endOffset": 192256
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2627,
-                    "startColumn": 4,
-                    "startOffset": 192261,
+                    "startOffset": 193064,
                     "endLine": 2628,
                     "endColumn": 12,
-                    "endOffset": 192396
+                    "endOffset": 193350
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2629,
                     "startColumn": 4,
-                    "startOffset": 192401,
-                    "endColumn": 135,
-                    "endOffset": 192532
+                    "startOffset": 193355,
+                    "endColumn": 67,
+                    "endOffset": 193418
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13304,10 +13529,21 @@
                 "to": {
                     "startLine": 2630,
                     "startColumn": 4,
-                    "startOffset": 192537,
-                    "endLine": 2631,
-                    "endColumn": 12,
-                    "endOffset": 192696
+                    "startOffset": 193423,
+                    "endColumn": 72,
+                    "endOffset": 193491
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2631,
+                    "startColumn": 4,
+                    "startOffset": 193496,
+                    "endColumn": 73,
+                    "endOffset": 193565
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13317,9 +13553,9 @@
                 "to": {
                     "startLine": 2632,
                     "startColumn": 4,
-                    "startOffset": 192701,
-                    "endColumn": 129,
-                    "endOffset": 192826
+                    "startOffset": 193570,
+                    "endColumn": 72,
+                    "endOffset": 193638
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13329,10 +13565,9 @@
                 "to": {
                     "startLine": 2633,
                     "startColumn": 4,
-                    "startOffset": 192831,
-                    "endLine": 2634,
-                    "endColumn": 12,
-                    "endOffset": 192984
+                    "startOffset": 193643,
+                    "endColumn": 73,
+                    "endOffset": 193712
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13340,12 +13575,12 @@
             },
             {
                 "to": {
-                    "startLine": 2635,
+                    "startLine": 2634,
                     "startColumn": 4,
-                    "startOffset": 192989,
-                    "endLine": 2636,
+                    "startOffset": 193717,
+                    "endLine": 2635,
                     "endColumn": 12,
-                    "endOffset": 193134
+                    "endOffset": 193858
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13353,11 +13588,12 @@
             },
             {
                 "to": {
-                    "startLine": 2637,
+                    "startLine": 2636,
                     "startColumn": 4,
-                    "startOffset": 193139,
-                    "endColumn": 140,
-                    "endOffset": 193275
+                    "startOffset": 193863,
+                    "endLine": 2637,
+                    "endColumn": 12,
+                    "endOffset": 194002
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13367,10 +13603,10 @@
                 "to": {
                     "startLine": 2638,
                     "startColumn": 4,
-                    "startOffset": 193280,
+                    "startOffset": 194007,
                     "endLine": 2639,
                     "endColumn": 12,
-                    "endOffset": 193419
+                    "endOffset": 194140
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13380,9 +13616,9 @@
                 "to": {
                     "startLine": 2640,
                     "startColumn": 4,
-                    "startOffset": 193424,
-                    "endColumn": 134,
-                    "endOffset": 193554
+                    "startOffset": 194145,
+                    "endColumn": 65,
+                    "endOffset": 194206
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13392,9 +13628,9 @@
                 "to": {
                     "startLine": 2641,
                     "startColumn": 4,
-                    "startOffset": 193559,
-                    "endColumn": 111,
-                    "endOffset": 193666
+                    "startOffset": 194211,
+                    "endColumn": 89,
+                    "endOffset": 194296
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13404,9 +13640,9 @@
                 "to": {
                     "startLine": 2642,
                     "startColumn": 4,
-                    "startOffset": 193671,
-                    "endColumn": 127,
-                    "endOffset": 193794
+                    "startOffset": 194301,
+                    "endColumn": 79,
+                    "endOffset": 194376
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13416,10 +13652,21 @@
                 "to": {
                     "startLine": 2643,
                     "startColumn": 4,
-                    "startOffset": 193799,
-                    "endLine": 2644,
-                    "endColumn": 12,
-                    "endOffset": 193930
+                    "startOffset": 194381,
+                    "endColumn": 91,
+                    "endOffset": 194468
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2644,
+                    "startColumn": 4,
+                    "startOffset": 194473,
+                    "endColumn": 97,
+                    "endOffset": 194566
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13429,10 +13676,10 @@
                 "to": {
                     "startLine": 2645,
                     "startColumn": 4,
-                    "startOffset": 193935,
+                    "startOffset": 194571,
                     "endLine": 2646,
                     "endColumn": 12,
-                    "endOffset": 194072
+                    "endOffset": 194676
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13442,10 +13689,21 @@
                 "to": {
                     "startLine": 2647,
                     "startColumn": 4,
-                    "startOffset": 194077,
-                    "endLine": 2648,
-                    "endColumn": 12,
-                    "endOffset": 194214
+                    "startOffset": 194681,
+                    "endColumn": 77,
+                    "endOffset": 194754
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2648,
+                    "startColumn": 4,
+                    "startOffset": 194759,
+                    "endColumn": 105,
+                    "endOffset": 194860
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13455,9 +13713,9 @@
                 "to": {
                     "startLine": 2649,
                     "startColumn": 4,
-                    "startOffset": 194219,
-                    "endColumn": 111,
-                    "endOffset": 194326
+                    "startOffset": 194865,
+                    "endColumn": 91,
+                    "endOffset": 194952
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13467,9 +13725,9 @@
                 "to": {
                     "startLine": 2650,
                     "startColumn": 4,
-                    "startOffset": 194331,
-                    "endColumn": 139,
-                    "endOffset": 194466
+                    "startOffset": 194957,
+                    "endColumn": 103,
+                    "endOffset": 195056
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13479,99 +13737,9 @@
                 "to": {
                     "startLine": 2651,
                     "startColumn": 4,
-                    "startOffset": 194471,
-                    "endLine": 2653,
-                    "endColumn": 12,
-                    "endOffset": 194667
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2654,
-                    "startColumn": 4,
-                    "startOffset": 194672,
-                    "endColumn": 91,
-                    "endOffset": 194759
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2655,
-                    "startColumn": 4,
-                    "startOffset": 194764,
-                    "endLine": 2657,
-                    "endColumn": 12,
-                    "endOffset": 194954
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2658,
-                    "startColumn": 4,
-                    "startOffset": 194959,
-                    "endLine": 2660,
-                    "endColumn": 12,
-                    "endOffset": 195138
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2661,
-                    "startColumn": 4,
-                    "startOffset": 195143,
-                    "endLine": 2663,
-                    "endColumn": 12,
-                    "endOffset": 195313
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2664,
-                    "startColumn": 4,
-                    "startOffset": 195318,
-                    "endLine": 2667,
-                    "endColumn": 12,
-                    "endOffset": 195566
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2668,
-                    "startColumn": 4,
-                    "startOffset": 195571,
-                    "endLine": 2672,
-                    "endColumn": 12,
-                    "endOffset": 195857
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2673,
-                    "startColumn": 4,
-                    "startOffset": 195862,
-                    "endColumn": 67,
-                    "endOffset": 195925
+                    "startOffset": 195061,
+                    "endColumn": 109,
+                    "endOffset": 195166
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13579,11 +13747,150 @@
             },
             {
                 "to": {
-                    "startLine": 2674,
+                    "startLine": 2652,
                     "startColumn": 4,
-                    "startOffset": 195930,
-                    "endColumn": 72,
-                    "endOffset": 195998
+                    "startOffset": 195171,
+                    "endLine": 2653,
+                    "endColumn": 12,
+                    "endOffset": 195288
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2654,
+                    "startColumn": 4,
+                    "startOffset": 195293,
+                    "endLine": 2657,
+                    "endColumn": 12,
+                    "endOffset": 195451
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2658,
+                    "startColumn": 4,
+                    "startOffset": 195456,
+                    "endLine": 2661,
+                    "endColumn": 12,
+                    "endOffset": 195608
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2662,
+                    "startColumn": 4,
+                    "startOffset": 195613,
+                    "endColumn": 79,
+                    "endOffset": 195688
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2663,
+                    "startColumn": 4,
+                    "startOffset": 195693,
+                    "endColumn": 99,
+                    "endOffset": 195788
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2664,
+                    "startColumn": 4,
+                    "startOffset": 195793,
+                    "endColumn": 89,
+                    "endOffset": 195878
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2665,
+                    "startColumn": 4,
+                    "startOffset": 195883,
+                    "endColumn": 109,
+                    "endOffset": 195988
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2666,
+                    "startColumn": 4,
+                    "startOffset": 195993,
+                    "endColumn": 91,
+                    "endOffset": 196080
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2667,
+                    "startColumn": 4,
+                    "startOffset": 196085,
+                    "endLine": 2668,
+                    "endColumn": 12,
+                    "endOffset": 196180
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2669,
+                    "startColumn": 4,
+                    "startOffset": 196185,
+                    "endLine": 2670,
+                    "endColumn": 12,
+                    "endOffset": 196292
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2671,
+                    "startColumn": 4,
+                    "startOffset": 196297,
+                    "endLine": 2672,
+                    "endColumn": 12,
+                    "endOffset": 196406
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2673,
+                    "startColumn": 4,
+                    "startOffset": 196411,
+                    "endLine": 2674,
+                    "endColumn": 12,
+                    "endOffset": 196522
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13593,21 +13900,10 @@
                 "to": {
                     "startLine": 2675,
                     "startColumn": 4,
-                    "startOffset": 196003,
-                    "endColumn": 73,
-                    "endOffset": 196072
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2676,
-                    "startColumn": 4,
-                    "startOffset": 196077,
-                    "endColumn": 72,
-                    "endOffset": 196145
+                    "startOffset": 196527,
+                    "endLine": 2676,
+                    "endColumn": 12,
+                    "endOffset": 196638
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13617,9 +13913,9 @@
                 "to": {
                     "startLine": 2677,
                     "startColumn": 4,
-                    "startOffset": 196150,
-                    "endColumn": 73,
-                    "endOffset": 196219
+                    "startOffset": 196643,
+                    "endColumn": 93,
+                    "endOffset": 196732
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13629,10 +13925,21 @@
                 "to": {
                     "startLine": 2678,
                     "startColumn": 4,
-                    "startOffset": 196224,
-                    "endLine": 2679,
-                    "endColumn": 12,
-                    "endOffset": 196365
+                    "startOffset": 196737,
+                    "endColumn": 113,
+                    "endOffset": 196846
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2679,
+                    "startColumn": 4,
+                    "startOffset": 196851,
+                    "endColumn": 111,
+                    "endOffset": 196958
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13642,10 +13949,10 @@
                 "to": {
                     "startLine": 2680,
                     "startColumn": 4,
-                    "startOffset": 196370,
+                    "startOffset": 196963,
                     "endLine": 2681,
                     "endColumn": 12,
-                    "endOffset": 196509
+                    "endOffset": 197060
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13655,10 +13962,10 @@
                 "to": {
                     "startLine": 2682,
                     "startColumn": 4,
-                    "startOffset": 196514,
+                    "startOffset": 197065,
                     "endLine": 2683,
                     "endColumn": 12,
-                    "endOffset": 196647
+                    "endOffset": 197180
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13668,21 +13975,10 @@
                 "to": {
                     "startLine": 2684,
                     "startColumn": 4,
-                    "startOffset": 196652,
-                    "endColumn": 65,
-                    "endOffset": 196713
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2685,
-                    "startColumn": 4,
-                    "startOffset": 196718,
-                    "endColumn": 89,
-                    "endOffset": 196803
+                    "startOffset": 197185,
+                    "endLine": 2685,
+                    "endColumn": 12,
+                    "endOffset": 197302
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13692,9 +13988,9 @@
                 "to": {
                     "startLine": 2686,
                     "startColumn": 4,
-                    "startOffset": 196808,
-                    "endColumn": 79,
-                    "endOffset": 196883
+                    "startOffset": 197307,
+                    "endColumn": 81,
+                    "endOffset": 197384
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13704,9 +14000,9 @@
                 "to": {
                     "startLine": 2687,
                     "startColumn": 4,
-                    "startOffset": 196888,
-                    "endColumn": 91,
-                    "endOffset": 196975
+                    "startOffset": 197389,
+                    "endColumn": 103,
+                    "endOffset": 197488
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13716,9 +14012,9 @@
                 "to": {
                     "startLine": 2688,
                     "startColumn": 4,
-                    "startOffset": 196980,
-                    "endColumn": 97,
-                    "endOffset": 197073
+                    "startOffset": 197493,
+                    "endColumn": 119,
+                    "endOffset": 197608
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13728,10 +14024,21 @@
                 "to": {
                     "startLine": 2689,
                     "startColumn": 4,
-                    "startOffset": 197078,
-                    "endLine": 2690,
-                    "endColumn": 12,
-                    "endOffset": 197183
+                    "startOffset": 197613,
+                    "endColumn": 125,
+                    "endOffset": 197734
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2690,
+                    "startColumn": 4,
+                    "startOffset": 197739,
+                    "endColumn": 97,
+                    "endOffset": 197832
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13741,9 +14048,9 @@
                 "to": {
                     "startLine": 2691,
                     "startColumn": 4,
-                    "startOffset": 197188,
-                    "endColumn": 77,
-                    "endOffset": 197261
+                    "startOffset": 197837,
+                    "endColumn": 93,
+                    "endOffset": 197926
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13753,9 +14060,9 @@
                 "to": {
                     "startLine": 2692,
                     "startColumn": 4,
-                    "startOffset": 197266,
-                    "endColumn": 105,
-                    "endOffset": 197367
+                    "startOffset": 197931,
+                    "endColumn": 87,
+                    "endOffset": 198014
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13765,9 +14072,9 @@
                 "to": {
                     "startLine": 2693,
                     "startColumn": 4,
-                    "startOffset": 197372,
-                    "endColumn": 91,
-                    "endOffset": 197459
+                    "startOffset": 198019,
+                    "endColumn": 111,
+                    "endOffset": 198126
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13777,9 +14084,9 @@
                 "to": {
                     "startLine": 2694,
                     "startColumn": 4,
-                    "startOffset": 197464,
-                    "endColumn": 103,
-                    "endOffset": 197563
+                    "startOffset": 198131,
+                    "endColumn": 115,
+                    "endOffset": 198242
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13789,9 +14096,9 @@
                 "to": {
                     "startLine": 2695,
                     "startColumn": 4,
-                    "startOffset": 197568,
-                    "endColumn": 109,
-                    "endOffset": 197673
+                    "startOffset": 198247,
+                    "endColumn": 121,
+                    "endOffset": 198364
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13801,10 +14108,9 @@
                 "to": {
                     "startLine": 2696,
                     "startColumn": 4,
-                    "startOffset": 197678,
-                    "endLine": 2697,
-                    "endColumn": 12,
-                    "endOffset": 197795
+                    "startOffset": 198369,
+                    "endColumn": 111,
+                    "endOffset": 198476
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13812,12 +14118,36 @@
             },
             {
                 "to": {
-                    "startLine": 2698,
+                    "startLine": 2697,
                     "startColumn": 4,
-                    "startOffset": 197800,
-                    "endLine": 2701,
+                    "startOffset": 198481,
+                    "endLine": 2699,
                     "endColumn": 12,
-                    "endOffset": 197958
+                    "endOffset": 198651
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2700,
+                    "startColumn": 4,
+                    "startOffset": 198656,
+                    "endColumn": 115,
+                    "endOffset": 198767
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2701,
+                    "startColumn": 4,
+                    "startOffset": 198772,
+                    "endColumn": 85,
+                    "endOffset": 198853
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13827,10 +14157,9 @@
                 "to": {
                     "startLine": 2702,
                     "startColumn": 4,
-                    "startOffset": 197963,
-                    "endLine": 2705,
-                    "endColumn": 12,
-                    "endOffset": 198115
+                    "startOffset": 198858,
+                    "endColumn": 91,
+                    "endOffset": 198945
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13838,11 +14167,25 @@
             },
             {
                 "to": {
-                    "startLine": 2706,
+                    "startLine": 2703,
                     "startColumn": 4,
-                    "startOffset": 198120,
-                    "endColumn": 79,
-                    "endOffset": 198195
+                    "startOffset": 198950,
+                    "endLine": 2704,
+                    "endColumn": 12,
+                    "endOffset": 199057
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2705,
+                    "startColumn": 4,
+                    "startOffset": 199062,
+                    "endLine": 2706,
+                    "endColumn": 12,
+                    "endOffset": 199181
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13852,9 +14195,9 @@
                 "to": {
                     "startLine": 2707,
                     "startColumn": 4,
-                    "startOffset": 198200,
-                    "endColumn": 99,
-                    "endOffset": 198295
+                    "startOffset": 199186,
+                    "endColumn": 66,
+                    "endOffset": 199248
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13864,21 +14207,10 @@
                 "to": {
                     "startLine": 2708,
                     "startColumn": 4,
-                    "startOffset": 198300,
-                    "endColumn": 89,
-                    "endOffset": 198385
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2709,
-                    "startColumn": 4,
-                    "startOffset": 198390,
-                    "endColumn": 109,
-                    "endOffset": 198495
+                    "startOffset": 199253,
+                    "endLine": 2709,
+                    "endColumn": 12,
+                    "endOffset": 199374
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13888,9 +14220,9 @@
                 "to": {
                     "startLine": 2710,
                     "startColumn": 4,
-                    "startOffset": 198500,
-                    "endColumn": 91,
-                    "endOffset": 198587
+                    "startOffset": 199379,
+                    "endColumn": 67,
+                    "endOffset": 199442
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13900,10 +14232,10 @@
                 "to": {
                     "startLine": 2711,
                     "startColumn": 4,
-                    "startOffset": 198592,
+                    "startOffset": 199447,
                     "endLine": 2712,
                     "endColumn": 12,
-                    "endOffset": 198687
+                    "endOffset": 199570
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13913,10 +14245,10 @@
                 "to": {
                     "startLine": 2713,
                     "startColumn": 4,
-                    "startOffset": 198692,
+                    "startOffset": 199575,
                     "endLine": 2714,
                     "endColumn": 12,
-                    "endOffset": 198799
+                    "endOffset": 199714
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13926,10 +14258,10 @@
                 "to": {
                     "startLine": 2715,
                     "startColumn": 4,
-                    "startOffset": 198804,
+                    "startOffset": 199719,
                     "endLine": 2716,
                     "endColumn": 12,
-                    "endOffset": 198913
+                    "endOffset": 199842
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13939,10 +14271,21 @@
                 "to": {
                     "startLine": 2717,
                     "startColumn": 4,
-                    "startOffset": 198918,
-                    "endLine": 2718,
-                    "endColumn": 12,
-                    "endOffset": 199029
+                    "startOffset": 199847,
+                    "endColumn": 68,
+                    "endOffset": 199911
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2718,
+                    "startColumn": 4,
+                    "startOffset": 199916,
+                    "endColumn": 94,
+                    "endOffset": 200006
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13952,10 +14295,21 @@
                 "to": {
                     "startLine": 2719,
                     "startColumn": 4,
-                    "startOffset": 199034,
-                    "endLine": 2720,
-                    "endColumn": 12,
-                    "endOffset": 199145
+                    "startOffset": 200011,
+                    "endColumn": 114,
+                    "endOffset": 200121
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2720,
+                    "startColumn": 4,
+                    "startOffset": 200126,
+                    "endColumn": 112,
+                    "endOffset": 200234
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13965,9 +14319,9 @@
                 "to": {
                     "startLine": 2721,
                     "startColumn": 4,
-                    "startOffset": 199150,
-                    "endColumn": 93,
-                    "endOffset": 199239
+                    "startOffset": 200239,
+                    "endColumn": 98,
+                    "endOffset": 200333
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13977,9 +14331,9 @@
                 "to": {
                     "startLine": 2722,
                     "startColumn": 4,
-                    "startOffset": 199244,
-                    "endColumn": 113,
-                    "endOffset": 199353
+                    "startOffset": 200338,
+                    "endColumn": 108,
+                    "endOffset": 200442
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -13989,9 +14343,9 @@
                 "to": {
                     "startLine": 2723,
                     "startColumn": 4,
-                    "startOffset": 199358,
-                    "endColumn": 111,
-                    "endOffset": 199465
+                    "startOffset": 200447,
+                    "endColumn": 110,
+                    "endOffset": 200553
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14001,10 +14355,21 @@
                 "to": {
                     "startLine": 2724,
                     "startColumn": 4,
-                    "startOffset": 199470,
-                    "endLine": 2725,
-                    "endColumn": 12,
-                    "endOffset": 199567
+                    "startOffset": 200558,
+                    "endColumn": 110,
+                    "endOffset": 200664
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2725,
+                    "startColumn": 4,
+                    "startOffset": 200669,
+                    "endColumn": 100,
+                    "endOffset": 200765
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14014,10 +14379,9 @@
                 "to": {
                     "startLine": 2726,
                     "startColumn": 4,
-                    "startOffset": 199572,
-                    "endLine": 2727,
-                    "endColumn": 12,
-                    "endOffset": 199687
+                    "startOffset": 200770,
+                    "endColumn": 104,
+                    "endOffset": 200870
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14025,12 +14389,12 @@
             },
             {
                 "to": {
-                    "startLine": 2728,
+                    "startLine": 2727,
                     "startColumn": 4,
-                    "startOffset": 199692,
-                    "endLine": 2729,
+                    "startOffset": 200875,
+                    "endLine": 2728,
                     "endColumn": 12,
-                    "endOffset": 199809
+                    "endOffset": 200982
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14038,11 +14402,12 @@
             },
             {
                 "to": {
-                    "startLine": 2730,
+                    "startLine": 2729,
                     "startColumn": 4,
-                    "startOffset": 199814,
-                    "endColumn": 81,
-                    "endOffset": 199891
+                    "startOffset": 200987,
+                    "endLine": 2730,
+                    "endColumn": 12,
+                    "endOffset": 201112
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14052,9 +14417,9 @@
                 "to": {
                     "startLine": 2731,
                     "startColumn": 4,
-                    "startOffset": 199896,
-                    "endColumn": 103,
-                    "endOffset": 199995
+                    "startOffset": 201117,
+                    "endColumn": 90,
+                    "endOffset": 201203
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14064,9 +14429,9 @@
                 "to": {
                     "startLine": 2732,
                     "startColumn": 4,
-                    "startOffset": 200000,
-                    "endColumn": 119,
-                    "endOffset": 200115
+                    "startOffset": 201208,
+                    "endColumn": 122,
+                    "endOffset": 201326
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14076,21 +14441,10 @@
                 "to": {
                     "startLine": 2733,
                     "startColumn": 4,
-                    "startOffset": 200120,
-                    "endColumn": 125,
-                    "endOffset": 200241
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2734,
-                    "startColumn": 4,
-                    "startOffset": 200246,
-                    "endColumn": 97,
-                    "endOffset": 200339
+                    "startOffset": 201331,
+                    "endLine": 2734,
+                    "endColumn": 12,
+                    "endOffset": 201438
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14100,9 +14454,9 @@
                 "to": {
                     "startLine": 2735,
                     "startColumn": 4,
-                    "startOffset": 200344,
-                    "endColumn": 93,
-                    "endOffset": 200433
+                    "startOffset": 201443,
+                    "endColumn": 85,
+                    "endOffset": 201524
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14112,9 +14466,9 @@
                 "to": {
                     "startLine": 2736,
                     "startColumn": 4,
-                    "startOffset": 200438,
-                    "endColumn": 87,
-                    "endOffset": 200521
+                    "startOffset": 201529,
+                    "endColumn": 103,
+                    "endOffset": 201628
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14124,21 +14478,10 @@
                 "to": {
                     "startLine": 2737,
                     "startColumn": 4,
-                    "startOffset": 200526,
-                    "endColumn": 111,
-                    "endOffset": 200633
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2738,
-                    "startColumn": 4,
-                    "startOffset": 200638,
-                    "endColumn": 115,
-                    "endOffset": 200749
+                    "startOffset": 201633,
+                    "endLine": 2738,
+                    "endColumn": 12,
+                    "endOffset": 201736
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14148,21 +14491,10 @@
                 "to": {
                     "startLine": 2739,
                     "startColumn": 4,
-                    "startOffset": 200754,
-                    "endColumn": 121,
-                    "endOffset": 200871
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2740,
-                    "startColumn": 4,
-                    "startOffset": 200876,
-                    "endColumn": 111,
-                    "endOffset": 200983
+                    "startOffset": 201741,
+                    "endLine": 2740,
+                    "endColumn": 12,
+                    "endOffset": 201836
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14172,10 +14504,10 @@
                 "to": {
                     "startLine": 2741,
                     "startColumn": 4,
-                    "startOffset": 200988,
-                    "endLine": 2743,
+                    "startOffset": 201841,
+                    "endLine": 2742,
                     "endColumn": 12,
-                    "endOffset": 201158
+                    "endOffset": 201954
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14183,11 +14515,12 @@
             },
             {
                 "to": {
-                    "startLine": 2744,
+                    "startLine": 2743,
                     "startColumn": 4,
-                    "startOffset": 201163,
-                    "endColumn": 115,
-                    "endOffset": 201274
+                    "startOffset": 201959,
+                    "endLine": 2744,
+                    "endColumn": 12,
+                    "endOffset": 202058
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14197,21 +14530,10 @@
                 "to": {
                     "startLine": 2745,
                     "startColumn": 4,
-                    "startOffset": 201279,
-                    "endColumn": 85,
-                    "endOffset": 201360
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2746,
-                    "startColumn": 4,
-                    "startOffset": 201365,
-                    "endColumn": 91,
-                    "endOffset": 201452
+                    "startOffset": 202063,
+                    "endLine": 2746,
+                    "endColumn": 12,
+                    "endOffset": 202162
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14221,10 +14543,10 @@
                 "to": {
                     "startLine": 2747,
                     "startColumn": 4,
-                    "startOffset": 201457,
+                    "startOffset": 202167,
                     "endLine": 2748,
                     "endColumn": 12,
-                    "endOffset": 201564
+                    "endOffset": 202288
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14234,10 +14556,21 @@
                 "to": {
                     "startLine": 2749,
                     "startColumn": 4,
-                    "startOffset": 201569,
-                    "endLine": 2750,
-                    "endColumn": 12,
-                    "endOffset": 201688
+                    "startOffset": 202293,
+                    "endColumn": 87,
+                    "endOffset": 202376
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2750,
+                    "startColumn": 4,
+                    "startOffset": 202381,
+                    "endColumn": 89,
+                    "endOffset": 202466
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14247,9 +14580,9 @@
                 "to": {
                     "startLine": 2751,
                     "startColumn": 4,
-                    "startOffset": 201693,
-                    "endColumn": 66,
-                    "endOffset": 201755
+                    "startOffset": 202471,
+                    "endColumn": 109,
+                    "endOffset": 202576
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14259,10 +14592,21 @@
                 "to": {
                     "startLine": 2752,
                     "startColumn": 4,
-                    "startOffset": 201760,
-                    "endLine": 2753,
-                    "endColumn": 12,
-                    "endOffset": 201881
+                    "startOffset": 202581,
+                    "endColumn": 83,
+                    "endOffset": 202660
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2753,
+                    "startColumn": 4,
+                    "startOffset": 202665,
+                    "endColumn": 83,
+                    "endOffset": 202744
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14272,9 +14616,9 @@
                 "to": {
                     "startLine": 2754,
                     "startColumn": 4,
-                    "startOffset": 201886,
-                    "endColumn": 67,
-                    "endOffset": 201949
+                    "startOffset": 202749,
+                    "endColumn": 53,
+                    "endOffset": 202798
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14284,10 +14628,21 @@
                 "to": {
                     "startLine": 2755,
                     "startColumn": 4,
-                    "startOffset": 201954,
-                    "endLine": 2756,
-                    "endColumn": 12,
-                    "endOffset": 202077
+                    "startOffset": 202803,
+                    "endColumn": 63,
+                    "endOffset": 202862
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2756,
+                    "startColumn": 4,
+                    "startOffset": 202867,
+                    "endColumn": 105,
+                    "endOffset": 202968
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14297,10 +14652,21 @@
                 "to": {
                     "startLine": 2757,
                     "startColumn": 4,
-                    "startOffset": 202082,
-                    "endLine": 2758,
-                    "endColumn": 12,
-                    "endOffset": 202221
+                    "startOffset": 202973,
+                    "endColumn": 109,
+                    "endOffset": 203078
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2758,
+                    "startColumn": 4,
+                    "startOffset": 203083,
+                    "endColumn": 83,
+                    "endOffset": 203162
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
@@ -14310,440 +14676,126 @@
                 "to": {
                     "startLine": 2759,
                     "startColumn": 4,
-                    "startOffset": 202226,
-                    "endLine": 2760,
+                    "startOffset": 203167,
+                    "endColumn": 119,
+                    "endOffset": 203282
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2760,
+                    "startColumn": 4,
+                    "startOffset": 203287,
+                    "endLine": 2763,
                     "endColumn": 12,
-                    "endOffset": 202349
+                    "endOffset": 203500
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2761,
-                    "startColumn": 4,
-                    "startOffset": 202354,
-                    "endColumn": 68,
-                    "endOffset": 202418
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2762,
-                    "startColumn": 4,
-                    "startOffset": 202423,
-                    "endColumn": 94,
-                    "endOffset": 202513
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2763,
-                    "startColumn": 4,
-                    "startOffset": 202518,
-                    "endColumn": 114,
-                    "endOffset": 202628
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2764,
                     "startColumn": 4,
-                    "startOffset": 202633,
-                    "endColumn": 112,
-                    "endOffset": 202741
+                    "startOffset": 203505,
+                    "endLine": 2767,
+                    "endColumn": 12,
+                    "endOffset": 203707
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2765,
-                    "startColumn": 4,
-                    "startOffset": 202746,
-                    "endColumn": 98,
-                    "endOffset": 202840
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2766,
-                    "startColumn": 4,
-                    "startOffset": 202845,
-                    "endColumn": 108,
-                    "endOffset": 202949
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2767,
-                    "startColumn": 4,
-                    "startOffset": 202954,
-                    "endColumn": 110,
-                    "endOffset": 203060
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2768,
                     "startColumn": 4,
-                    "startOffset": 203065,
-                    "endColumn": 110,
-                    "endOffset": 203171
+                    "startOffset": 203712,
+                    "endLine": 2770,
+                    "endColumn": 12,
+                    "endOffset": 203866
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2769,
-                    "startColumn": 4,
-                    "startOffset": 203176,
-                    "endColumn": 100,
-                    "endOffset": 203272
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2770,
-                    "startColumn": 4,
-                    "startOffset": 203277,
-                    "endColumn": 104,
-                    "endOffset": 203377
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2771,
                     "startColumn": 4,
-                    "startOffset": 203382,
-                    "endLine": 2772,
+                    "startOffset": 203871,
+                    "endLine": 2779,
                     "endColumn": 12,
-                    "endOffset": 203489
+                    "endOffset": 204433
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2773,
-                    "startColumn": 4,
-                    "startOffset": 203494,
-                    "endLine": 2774,
-                    "endColumn": 12,
-                    "endOffset": 203619
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2775,
-                    "startColumn": 4,
-                    "startOffset": 203624,
-                    "endColumn": 90,
-                    "endOffset": 203710
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2776,
-                    "startColumn": 4,
-                    "startOffset": 203715,
-                    "endColumn": 122,
-                    "endOffset": 203833
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2777,
-                    "startColumn": 4,
-                    "startOffset": 203838,
-                    "endLine": 2778,
-                    "endColumn": 12,
-                    "endOffset": 203945
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2779,
-                    "startColumn": 4,
-                    "startOffset": 203950,
-                    "endColumn": 85,
-                    "endOffset": 204031
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2780,
                     "startColumn": 4,
-                    "startOffset": 204036,
-                    "endColumn": 103,
-                    "endOffset": 204135
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2781,
-                    "startColumn": 4,
-                    "startOffset": 204140,
-                    "endLine": 2782,
+                    "startOffset": 204438,
+                    "endLine": 2785,
                     "endColumn": 12,
-                    "endOffset": 204243
+                    "endOffset": 204794
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2783,
+                    "startLine": 2786,
                     "startColumn": 4,
-                    "startOffset": 204248,
-                    "endLine": 2784,
-                    "endColumn": 12,
-                    "endOffset": 204343
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2785,
-                    "startColumn": 4,
-                    "startOffset": 204348,
-                    "endLine": 2786,
-                    "endColumn": 12,
-                    "endOffset": 204461
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2787,
-                    "startColumn": 4,
-                    "startOffset": 204466,
+                    "startOffset": 204799,
                     "endLine": 2788,
                     "endColumn": 12,
-                    "endOffset": 204565
+                    "endOffset": 204923
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2789,
                     "startColumn": 4,
-                    "startOffset": 204570,
-                    "endLine": 2790,
+                    "startOffset": 204928,
+                    "endLine": 2798,
                     "endColumn": 12,
-                    "endOffset": 204669
+                    "endOffset": 205667
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2791,
-                    "startColumn": 4,
-                    "startOffset": 204674,
-                    "endLine": 2792,
-                    "endColumn": 12,
-                    "endOffset": 204795
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2793,
-                    "startColumn": 4,
-                    "startOffset": 204800,
-                    "endColumn": 87,
-                    "endOffset": 204883
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2794,
-                    "startColumn": 4,
-                    "startOffset": 204888,
-                    "endColumn": 89,
-                    "endOffset": 204973
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2795,
-                    "startColumn": 4,
-                    "startOffset": 204978,
-                    "endColumn": 109,
-                    "endOffset": 205083
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2796,
-                    "startColumn": 4,
-                    "startOffset": 205088,
-                    "endColumn": 83,
-                    "endOffset": 205167
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2797,
-                    "startColumn": 4,
-                    "startOffset": 205172,
-                    "endColumn": 83,
-                    "endOffset": 205251
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2798,
-                    "startColumn": 4,
-                    "startOffset": 205256,
-                    "endColumn": 53,
-                    "endOffset": 205305
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2799,
                     "startColumn": 4,
-                    "startOffset": 205310,
-                    "endColumn": 63,
-                    "endOffset": 205369
+                    "startOffset": 205672,
+                    "endLine": 2802,
+                    "endColumn": 12,
+                    "endOffset": 205847
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2800,
-                    "startColumn": 4,
-                    "startOffset": 205374,
-                    "endColumn": 105,
-                    "endOffset": 205475
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2801,
-                    "startColumn": 4,
-                    "startOffset": 205480,
-                    "endColumn": 109,
-                    "endOffset": 205585
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2802,
-                    "startColumn": 4,
-                    "startOffset": 205590,
-                    "endColumn": 83,
-                    "endOffset": 205669
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2803,
                     "startColumn": 4,
-                    "startOffset": 205674,
-                    "endColumn": 119,
-                    "endOffset": 205789
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2804,
-                    "startColumn": 4,
-                    "startOffset": 205794,
-                    "endLine": 2807,
+                    "startOffset": 205852,
+                    "endLine": 2808,
                     "endColumn": 12,
-                    "endOffset": 206007
+                    "endOffset": 206288
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
@@ -14751,116 +14803,77 @@
             },
             {
                 "to": {
-                    "startLine": 2808,
+                    "startLine": 2809,
                     "startColumn": 4,
-                    "startOffset": 206012,
-                    "endLine": 2811,
+                    "startOffset": 206293,
+                    "endLine": 2818,
                     "endColumn": 12,
-                    "endOffset": 206214
+                    "endOffset": 206823
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2812,
+                    "startLine": 2819,
                     "startColumn": 4,
-                    "startOffset": 206219,
-                    "endLine": 2814,
+                    "startOffset": 206828,
+                    "endLine": 2825,
                     "endColumn": 12,
-                    "endOffset": 206373
+                    "endOffset": 207164
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2815,
+                    "startLine": 2826,
                     "startColumn": 4,
-                    "startOffset": 206378,
-                    "endLine": 2823,
+                    "startOffset": 207169,
+                    "endLine": 2833,
                     "endColumn": 12,
-                    "endOffset": 206940
+                    "endOffset": 207596
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2824,
+                    "startLine": 2834,
                     "startColumn": 4,
-                    "startOffset": 206945,
-                    "endLine": 2829,
+                    "startOffset": 207601,
+                    "endLine": 2841,
                     "endColumn": 12,
-                    "endOffset": 207301
+                    "endOffset": 208035
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 2830,
+                    "startLine": 2842,
                     "startColumn": 4,
-                    "startOffset": 207306,
-                    "endLine": 2832,
-                    "endColumn": 12,
-                    "endOffset": 207430
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2833,
-                    "startColumn": 4,
-                    "startOffset": 207435,
-                    "endLine": 2842,
-                    "endColumn": 12,
-                    "endOffset": 208174
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2843,
-                    "startColumn": 4,
-                    "startOffset": 208179,
+                    "startOffset": 208040,
                     "endLine": 2846,
                     "endColumn": 12,
-                    "endOffset": 208354
+                    "endOffset": 208286
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2847,
                     "startColumn": 4,
-                    "startOffset": 208359,
-                    "endLine": 2852,
+                    "startOffset": 208291,
+                    "endLine": 2855,
                     "endColumn": 12,
-                    "endOffset": 208795
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2853,
-                    "startColumn": 4,
-                    "startOffset": 208800,
-                    "endLine": 2862,
-                    "endColumn": 12,
-                    "endOffset": 209330
+                    "endOffset": 208760
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values\\values.xml"
@@ -14868,77 +14881,38 @@
             },
             {
                 "to": {
-                    "startLine": 2863,
+                    "startLine": 2856,
                     "startColumn": 4,
-                    "startOffset": 209335,
+                    "startOffset": 208765,
+                    "endLine": 2866,
+                    "endColumn": 12,
+                    "endOffset": 209361
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2867,
+                    "startColumn": 4,
+                    "startOffset": 209366,
                     "endLine": 2869,
                     "endColumn": 12,
-                    "endOffset": 209671
+                    "endOffset": 209540
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values\\values.xml"
+                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 2870,
                     "startColumn": 4,
-                    "startOffset": 209676,
-                    "endLine": 2877,
+                    "startOffset": 209545,
+                    "endLine": 2874,
                     "endColumn": 12,
-                    "endOffset": 210103
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2878,
-                    "startColumn": 4,
-                    "startOffset": 210108,
-                    "endLine": 2885,
-                    "endColumn": 12,
-                    "endOffset": 210542
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2886,
-                    "startColumn": 4,
-                    "startOffset": 210547,
-                    "endLine": 2890,
-                    "endColumn": 12,
-                    "endOffset": 210793
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2891,
-                    "startColumn": 4,
-                    "startOffset": 210798,
-                    "endLine": 2899,
-                    "endColumn": 12,
-                    "endOffset": 211267
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2900,
-                    "startColumn": 4,
-                    "startOffset": 211272,
-                    "endLine": 2910,
-                    "endColumn": 12,
-                    "endOffset": 211868
+                    "endOffset": 209887
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
@@ -14946,12 +14920,12 @@
             },
             {
                 "to": {
-                    "startLine": 2911,
+                    "startLine": 2875,
                     "startColumn": 4,
-                    "startOffset": 211873,
-                    "endLine": 2913,
+                    "startOffset": 209892,
+                    "endLine": 2878,
                     "endColumn": 12,
-                    "endOffset": 212047
+                    "endOffset": 210138
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
@@ -14959,12 +14933,12 @@
             },
             {
                 "to": {
-                    "startLine": 2914,
+                    "startLine": 2879,
                     "startColumn": 4,
-                    "startOffset": 212052,
-                    "endLine": 2918,
+                    "startOffset": 210143,
+                    "endLine": 2881,
                     "endColumn": 12,
-                    "endOffset": 212394
+                    "endOffset": 210320
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
@@ -14972,12 +14946,12 @@
             },
             {
                 "to": {
-                    "startLine": 2919,
+                    "startLine": 2882,
                     "startColumn": 4,
-                    "startOffset": 212399,
-                    "endLine": 2922,
+                    "startOffset": 210325,
+                    "endLine": 2886,
                     "endColumn": 12,
-                    "endOffset": 212645
+                    "endOffset": 210644
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
@@ -14985,38 +14959,12 @@
             },
             {
                 "to": {
-                    "startLine": 2923,
+                    "startLine": 2887,
                     "startColumn": 4,
-                    "startOffset": 212650,
-                    "endLine": 2925,
+                    "startOffset": 210649,
+                    "endLine": 2894,
                     "endColumn": 12,
-                    "endOffset": 212827
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2926,
-                    "startColumn": 4,
-                    "startOffset": 212832,
-                    "endLine": 2930,
-                    "endColumn": 12,
-                    "endOffset": 213151
-                },
-                "from": {
-                    "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 2931,
-                    "startColumn": 4,
-                    "startOffset": 213156,
-                    "endLine": 2938,
-                    "endColumn": 12,
-                    "endOffset": 213511
+                    "endOffset": 211004
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml"

@@ -418,53 +418,6 @@
         <item name="android:textColor">@android:color/black</item>
     </style>
 
-    <style name="HotelsAppTheme.Widget.HotelRatingBar">
-        <item name="android:progressDrawable">@drawable/hotel_ratingbar</item>
-        <item name="android:indeterminateDrawable">@drawable/hotel_ratingbar</item>
-        <item name="android:minHeight">10dip</item>
-        <item name="android:maxHeight">10dip</item>
-        <item name="android:layout_width">50dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:isIndicator">true</item>
-        <item name="android:numStars">5</item>
-        <item name="android:rating">3</item>
-        <item name="android:stepSize">1</item>
-    </style>
-
-    <style name="HotelsAppTheme.Widget.WhiteHotelRatingBar">
-        <item name="android:progressDrawable">@drawable/white_hotel_ratingbar</item>
-        <item name="android:indeterminateDrawable">@drawable/white_hotel_ratingbar</item>
-        <item name="android:minHeight">11dip</item>
-        <item name="android:maxHeight">11dip</item>
-        <item name="android:layout_width">55dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:isIndicator">true</item>
-        <item name="android:numStars">5</item>
-        <item name="android:rating">3.5</item>
-        <item name="android:stepSize">0.5</item>
-    </style>
-
-    <style name="HotelsAppTheme.Widget.TripAdviserRatingBar">
-        <item name="android:progressDrawable">@drawable/tripadviser_ratingbar</item>
-        <item name="android:indeterminateDrawable">@drawable/tripadviser_ratingbar</item>
-        <item name="android:minHeight">13dip</item>
-        <item name="android:maxHeight">13dip</item>
-        <item name="android:layout_width">65dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:isIndicator">true</item>
-        <item name="android:numStars">5</item>
-        <item name="android:rating">3.5</item>
-        <item name="android:stepSize">0.5</item>
-    </style>
-
-    <style name="HotelsAppTheme.Widget.TripAdviserRatingBar.Small" parent="HotelsAppTheme.Widget.TripAdviserRatingBar">
-        <item name="android:progressDrawable">@drawable/tripadviser_ratingbar</item>
-        <item name="android:indeterminateDrawable">@drawable/tripadviser_ratingbar</item>
-        <item name="android:minHeight">13dip</item>
-        <item name="android:maxHeight">13dip</item>
-        <item name="android:layout_width">65dp</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
 
     <style name="HotelsAppTheme.Widget.AccentBottomButton" parent="HotelsAppTheme.Widget.PrimaryButton">
         <item name="android:background">@drawable/button_theme_accent</item>

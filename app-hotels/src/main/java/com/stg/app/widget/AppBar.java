@@ -39,7 +39,7 @@ public class AppBar extends Toolbar {
 
     public void showLogo() {
         super.setTitle("");
-        setLogo(R.drawable.actionbar_logo);
+        setLogo(R.drawable.stg_actionbar_logo);
     }
 
     @Override

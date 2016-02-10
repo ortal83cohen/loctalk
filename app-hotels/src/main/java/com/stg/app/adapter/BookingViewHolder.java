@@ -33,7 +33,6 @@ import butterknife.ButterKnife;
 public class BookingViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
     private final Context mContext;
     private final SimpleDateFormat mFormatter = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
-    private final SummaryImageViewHolder mSummaryImageHolder;
     private final SimpleDateFormat mDayFormatter = new SimpleDateFormat("dd", Locale.getDefault());
     private final SimpleDateFormat mMonthFormatter = new SimpleDateFormat("MMM", Locale.getDefault());
 
@@ -41,8 +40,6 @@ public class BookingViewHolder extends RecyclerView.ViewHolder implements View.O
     ImageView mImageView;
     @Bind(R.id.snippet_title)
     TextView mSnippetTitle;
-    @Bind(R.id.star_rating)
-    RatingBar mRatingBar;
     @Bind(R.id.city)
     TextView mCity;
     @Bind(R.id.country)
@@ -68,14 +65,12 @@ public class BookingViewHolder extends RecyclerView.ViewHolder implements View.O
         ButterKnife.bind(this, itemView);
         mContext = context;
         mManageButton.setOnClickListener(this);
-        mSummaryImageHolder = new SummaryImageViewHolder(context, mRatingBar, mSnippetTitle, mImageView);
+
     }
 
     public void attachBookingEvent(BookingEvent event) {
         BookingEvent.Booking booking = event.booking;
         orderId = booking.orderId;
-
-        mSummaryImageHolder.bind(booking.hotelImage, booking.hotelName, (int) booking.hotelStars);
 
         mCity.setText(booking.city);
         mCountry.setText(booking.country);

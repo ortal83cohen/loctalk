@@ -30,16 +30,12 @@ public class HotelSnippetViewHolder {
     ViewPager mSnippetImagePager;
     @Bind(R.id.snippet_title)
     TextView mSnippetTitle;
-    @Bind(R.id.star_rating)
-    RatingBar mRatingBar;
     @Bind(R.id.reviewers)
     TextView mReviewers;
     @Bind(R.id.reviews)
     TextView mReviews;
     @Bind(R.id.number_images)
     TextView mNumberImages;
-    @Bind(R.id.tripadvisor_rating)
-    RatingBar mTripadvisorRating;
     @Bind(R.id.tripadvisor_bar_small)
     View mTripadvisorBar;
     @Bind(R.id.facilities)
@@ -61,14 +57,12 @@ public class HotelSnippetViewHolder {
             if (mReviews != null) {
                 mReviews.setText(String.valueOf(hotelSnippet.getReviewScore()));
             }
-            mTripadvisorRating.setRating(hotelSnippet.getReviewScore());
             mTripadvisorBar.setVisibility(View.VISIBLE);
         } else {
             mTripadvisorBar.setVisibility(View.GONE);
 
         }
 
-        mRatingBar.setRating(hotelSnippet.getStarRating());
         if (hotelSnippet.getImageUrl() != null) {
             final ImagesPagerAdapter imagesPagerAdapter = new ImagesPagerAdapter(mContext);
             imagesPagerAdapter.addItems(hotelSnippet.getImagesUrl());
