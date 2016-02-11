@@ -8,15 +8,13 @@ import com.socialtravelguide.api.utils.HttpLoggingInterceptor;
  */
 public class EtbApiConfig {
 
-//        public static final String ETB_API_ENDPOINT_DEFAULT = "http://api.socialtravelguide.com";
-//    public static final String ETB_API_ENDPOINT_SECURE = "https://api.socialtravelguide.com";
-    public static final String ETB_API_ENDPOINT_DEFAULT = "http://maorbolo.com";
-    public static final String ETB_API_ENDPOINT_SECURE = "http://maorbolo.com";
+    public static final String ETB_API_ENDPOINT_DEFAULT = "http://stormy-bastion-18585.herokuapp.com";
+
     private String mApiKey;
     private String mEndpoint = ETB_API_ENDPOINT_DEFAULT;
 
 
-    private String mSecureEndpoint = ETB_API_ENDPOINT_SECURE;
+
 
     private boolean mDebug;
     private int mCampaignId;
@@ -31,24 +29,12 @@ public class EtbApiConfig {
         return mApiKey;
     }
 
-    public void setApiKey(String apiKey) {
-        mApiKey = apiKey;
-    }
-
     public String getEndpoint() {
         return mEndpoint;
     }
 
     public void setEndpoint(String endpoint) {
         mEndpoint = endpoint;
-    }
-
-    public String getSecureEndpoint() {
-        return mSecureEndpoint;
-    }
-
-    public void setSecureEndpoint(String secureEndpoint) {
-        mSecureEndpoint = secureEndpoint;
     }
 
     public boolean isDebug() {

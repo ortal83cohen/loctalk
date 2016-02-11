@@ -60,7 +60,7 @@ public class PlaceAutocompleteAdapter
     private LayoutInflater mInflater;
     private int mDropDownResource;
     /**
-     * Current results returned by this adapter.
+     * Current records returned by this adapter.
      */
     private ArrayList<PlaceItem> mResultList;
     private ArrayList<PlaceItem> mHistoryList;
@@ -140,7 +140,7 @@ public class PlaceAutocompleteAdapter
     }
 
     /**
-     * Returns the number of results received in the last autocomplete query.
+     * Returns the number of records received in the last autocomplete query.
      */
     @Override
     public int getCount() {
@@ -166,7 +166,7 @@ public class PlaceAutocompleteAdapter
     }
 
     /**
-     * Returns the filter for the current set of autocomplete results.
+     * Returns the filter for the current set of autocomplete records.
      */
     @Override
     public Filter getFilter() {
@@ -177,7 +177,7 @@ public class PlaceAutocompleteAdapter
                 // Query the autocomplete API for the (constraint) search string.
                 ArrayList<PlaceItem> values = getAutocomplete(constraint);
                 if (values != null) {
-                    // The API successfully returned results.
+                    // The API successfully returned records.
                     results.values = values;
                     results.count = values.size();
                 }
@@ -193,7 +193,7 @@ public class PlaceAutocompleteAdapter
                     notifyDataSetChanged();
                 } else {
                     mResultList = null;
-                    // The API did not return any results, invalidate the data set.
+                    // The API did not return any records, invalidate the data set.
                     notifyDataSetInvalidated();
                 }
             }
@@ -206,7 +206,7 @@ public class PlaceAutocompleteAdapter
         resultList.add(new PlaceCurrentLocation());
 
         // Submit the query to the autocomplete API and retrieve a PendingResult that will
-        // contain the results when the query completes.
+        // contain the records when the query completes.
         AutocompletePredictionBuffer autocompletePredictions;
 
         if (constraint != null && !constraint.equals("")) {
@@ -227,7 +227,7 @@ public class PlaceAutocompleteAdapter
                 autocompletePredictions.release();
                 return null;
             }
-            // Copy the results into our own data structure, because we can't hold onto the buffer.
+            // Copy the records into our own data structure, because we can't hold onto the buffer.
             // AutocompletePrediction objects encapsulate the API response (place ID and mDescription).
 
             for (AutocompletePrediction prediction : autocompletePredictions) {
@@ -288,7 +288,7 @@ public class PlaceAutocompleteAdapter
     }
 
     /**
-     * Holder for Places Geo Data Autocomplete API results.
+     * Holder for Places Geo Data Autocomplete API records.
      */
     public class PlaceAutocomplete extends PlaceItem {
         private CharSequence placeId;

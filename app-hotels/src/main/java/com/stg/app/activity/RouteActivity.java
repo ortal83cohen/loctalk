@@ -16,7 +16,6 @@ import com.stg.app.App;
 import com.stg.app.HotelsApplication;
 import com.stg.app.core.CoreInterface;
 import com.stg.app.etbapi.RetrofitCallback;
-import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.model.HotelListRequest;
 import com.stg.app.model.Location;
 import com.stg.app.provider.DbContract;
@@ -43,18 +42,18 @@ public class RouteActivity extends Activity {
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
-            AppLog.e("RouteActivity - results failure");
+            AppLog.e("RouteActivity - records failure");
             startActivity(HomeActivity.createIntent(RouteActivity.this));
         }
 
         @Override
         protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
-            if (apiResponse.accommodations == null) {
-                AppLog.e("RouteActivity - accommodations == null");
-                startActivity(HomeActivity.createIntent(RouteActivity.this));
-            } else {
-                startHotelSummaryActivity(apiResponse.accommodations.get(0));
-            }
+//            if (apiResponse.accommodations == null) {
+//                AppLog.e("RouteActivity - accommodations == null");
+//                startActivity(HomeActivity.createIntent(RouteActivity.this));
+//            } else {
+//                startHotelSummaryActivity(apiResponse.accommodations.get(0));
+//            }
         }
 
     };
@@ -172,7 +171,7 @@ public class RouteActivity extends Activity {
         request.setType(new ListType(hotels));
 
         EtbApi etbApi = HotelsApplication.provide(this).etbApi();
-        etbApi.results(request, 0).enqueue(mResultsCallback);
+        etbApi.records(request, 0).enqueue(mResultsCallback);
     }
 
     private void startHotelSummaryActivity(Accommodation acc) {

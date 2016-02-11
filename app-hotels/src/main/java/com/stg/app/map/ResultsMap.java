@@ -85,12 +85,12 @@ public class ResultsMap {
 
         @Override
         protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
-            AppLog.d("EtbApi", "Response: " + apiResponse.meta);
+//            AppLog.d("EtbApi", "Response: " + apiResponse.meta);
             ((HotelListActivity) mActivity).hideLoaderImage();
             mHotelsCollection.clear();
             mPoiCollection.clear();
             if (mHotelsVisible) {
-                addHotelsMarkers(apiResponse.accommodations);
+//                addHotelsMarkers(apiResponse.accommodations);
             }
             addPois();
         }
@@ -208,7 +208,7 @@ public class ResultsMap {
         EtbApi etb = HotelsApplication.provide(mActivity).etbApi();
         Events.post(new SearchRequestEvent(hotelsRequest, 0));
         try {
-            etb.results(hotelsRequest, 0).enqueue(mResultsCallback);
+            etb.records(hotelsRequest, 0).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             mActivity.finish();
         }

@@ -88,8 +88,6 @@ public class SettingsActivity extends SettingsActionBarActivity {
             showEndpointDialog(pref);
         } else if (action == ACTION_PRICE) {
             showPriceDialog(pref);
-        } else if (action == ACTION_CURRENCY) {
-            showCurrenciesDialog(pref);
         } else if (action == ACTION_LANGUAGE) {
             showLanguageDialog(pref);
         } else if (action == ACTION_PRIVACY_POLICY) {
@@ -166,90 +164,6 @@ public class SettingsActivity extends SettingsActionBarActivity {
         dialog.show();
     }
 
-    private void showCurrenciesDialog(final Item pref) {
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        final CharSequence[] items = getLeadCurrencies();
-
-        builder.setItems(items, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                String currency = (String) items[which];
-                if (currency == getString(R.string.load_more_currencies)) {
-                    showMoreCurrenciesDialog(pref);
-                } else {
-                    UserPreferences userPrefs = App.provide(SettingsActivity.this).getUserPrefs();
-                    userPrefs.setCurrencyCode(currency);
-                    pref.summary = currency;
-                    saveUserPrefs(userPrefs);
-                    notifyDataSetChanged();
-                }
-            }
-        });
-
-        builder.setTitle(R.string.select_currency);
-        builder.create().show();
-    }
-
-    private CharSequence[] getLeadCurrencies() {
-        CharSequence[] items = new CharSequence[26];
-        items[0] = "USD";
-        items[1] = "EUR";
-        items[2] = "GBP";
-        String countryCode = CountryCode.detect(this);
-        items[3] = CurrencyCode.detect(countryCode);
-        items[4] = "AUD";
-        items[5] = "BRL";
-        items[6] = "CAD";
-        items[7] = "CNY";
-        items[8] = "DKK";
-        items[9] = "HKD";
-        items[10] = "INR";
-        items[11] = "ILS";
-        items[12] = "JPY";
-        items[13] = "KPW";
-        items[14] = "MYR";
-        items[15] = "MXN";
-        items[16] = "NZD";
-        items[17] = "NOK";
-        items[18] = "PHP";
-        items[19] = "RUB";
-        items[20] = "SGD";
-        items[21] = "SEK";
-        items[22] = "CHF";
-        items[23] = "THB";
-        items[24] = "AED";
-        items[25] = getString(R.string.load_more_currencies);
-
-        return items;
-    }
-
-
-    private void showMoreCurrenciesDialog(final Item pref) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        Set<Currency> currencies = Currency.getAvailableCurrencies();
-        Currency[] array = currencies.toArray(new Currency[currencies.size()]);
-        final CharSequence[] items = new CharSequence[array.length];
-        for (int i = 0; i < array.length; i++) {
-            items[i] = array[i].getCurrencyCode();
-        }
-
-        builder.setItems(items, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                String currency = (String) items[which];
-                UserPreferences userPrefs = App.provide(SettingsActivity.this).getUserPrefs();
-                userPrefs.setCurrencyCode(currency);
-                pref.summary = currency;
-                saveUserPrefs(userPrefs);
-                notifyDataSetChanged();
-            }
-        });
-
-        builder.setTitle(R.string.select_currency);
-        builder.create().show();
-    }
-
     private void showLanguageDialog(final Item pref) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 //        Locale[] locales = Locale.getAvailableLocales();
@@ -299,14 +213,12 @@ public class SettingsActivity extends SettingsActionBarActivity {
                 EtbApiConfig cfg = App.provide(SettingsActivity.this).etbApi().getConfig();
                 if (which == 0) {
                     cfg.setEndpoint(EtbApiConfig.ETB_API_ENDPOINT_DEFAULT);
-                    cfg.setSecureEndpoint(EtbApiConfig.ETB_API_ENDPOINT_SECURE);
                     Config.setCoreInterfaceEndpoint(Config.CORE_INTERFACE_ENDPOINT);
                     Config.setCoreInterfaceSecureEndpoint(Config.CORE_INTERFACE_SECURE_ENDPOINT);
                     Config.setProductionEnv(true);
                     pref.summary = "production";
                 } else {
                     cfg.setEndpoint("http://" + api[which]);
-                    cfg.setSecureEndpoint("https://" + api[which]);
                     Config.setCoreInterfaceEndpoint("http://" + core[which]);
                     Config.setCoreInterfaceSecureEndpoint("https://" + core[which]);
                     Config.setProductionEnv(false);

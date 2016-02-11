@@ -22,7 +22,7 @@ public class ResultsMockClient implements Interceptor {
     public Response intercept(Interceptor.Chain chain) throws IOException {
         Response response = null;
         final URI uri = chain.request().uri();
-        if (uri.getHost().equals("mock")) {//BuildConfig.DEBUG) {
+        if (false){//uri.getHost().equals("mock")) {//BuildConfig.DEBUG) {
             String responseString;
             // Get Request URI.
             // Get Query String.
@@ -30,7 +30,7 @@ public class ResultsMockClient implements Interceptor {
             final String path = uri.getPath();
             // Parse the Query String.
 
-            if (path.equals("/v1/accommodations/results") || path.equals("/etbstatic/searchingAccommodations.json")) {
+            if (path.equals("/v1/accommodations/records") || path.equals("/etbstatic/searchingAccommodations.json")) {
                 responseString = RESULTS;
             } else if (path.startsWith("/v1/accommodations/")|| path.equals("/etbstatic/accomodationsDetails.json")) {
                 responseString = ACCOMMODATION;

@@ -27,7 +27,6 @@ import com.stg.app.activity.BaseActivity;
 import com.stg.app.activity.HotelListActivity;
 import com.stg.app.adapter.HotelListAdapter;
 import com.stg.app.adapter.HotelViewHolder;
-import com.stg.app.drawable.TriangleDrawable;
 import com.stg.app.etbapi.RetrofitCallback;
 import com.stg.app.etbapi.RetrofitConverter;
 import com.stg.app.events.Events;
@@ -80,25 +79,21 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
                 return;
             }
 
-            if (apiResponse.accommodations == null || apiResponse.accommodations.isEmpty() || apiResponse.accommodations.size() != EtbApi.LIMIT) {
-                mRecyclerView.setHasMoreData(false);
-            }
-
-            if (mAdapter.getItemCount() == 0) {
-                if (apiResponse.accommodations == null || apiResponse.accommodations.isEmpty()) {
-                    mNoResult.setVisibility(View.VISIBLE);
-                    mTopPanel.setVisibility(View.GONE);
-                } else {
-                    mAvailableCountText.setVisibility(View.VISIBLE);
-                    mButtonSort.setVisibility(View.VISIBLE);
-                }
-            }
+//            if (apiResponse.accommodations == null || apiResponse.accommodations.isEmpty() || apiResponse.accommodations.size() != EtbApi.LIMIT) {
+//                mRecyclerView.setHasMoreData(false);
+//            }
+//
+//            if (mAdapter.getItemCount() == 0) {
+//                if (apiResponse.accommodations == null || apiResponse.accommodations.isEmpty()) {
+//                    mNoResult.setVisibility(View.VISIBLE);
+//                    mTopPanel.setVisibility(View.GONE);
+//                } else {
+//                    mAvailableCountText.setVisibility(View.VISIBLE);
+//                    mButtonSort.setVisibility(View.VISIBLE);
+//                }
+//            }
 
             mNumberRetries = 0;
-            ((HotelListActivity) getActivity()).setRateMaxPrice(apiResponse.meta.priceTo == null ? 0 : apiResponse.meta.priceTo.displayPrice.get(apiResponse.meta.clientCurrency).intValue());
-            ((HotelListActivity) getActivity()).setRateMinPrice(apiResponse.meta.priceFrom == null ? 0 : apiResponse.meta.priceFrom.displayPrice.get(apiResponse.meta.clientCurrency).intValue());
-            mAdapter.addHotels(apiResponse.accommodations, false);
-            Events.post(new SearchResultsEvent(apiResponse.meta.totalNr));
         }
 
         @Override
@@ -200,7 +195,6 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
         });
 
         mButtonSort.setOnClickListener(this);
-        mButtonSort.setCompoundDrawables(null, null, new TriangleDrawable(getActivity(), R.color.theme_primary), null);
         mButtonSort.setVisibility(View.GONE);
 
         mModifyPreferences.setOnClickListener(new View.OnClickListener() {
@@ -217,7 +211,7 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
         SearchRequest hotelsRequest = getHotelsRequest();
         Events.post(new SearchRequestEvent(hotelsRequest, offset));
         try {
-            mEtbApi.results(hotelsRequest, offset).enqueue(mResultsCallback);
+            mEtbApi.records(hotelsRequest, offset).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             getActivity().finish();
         }

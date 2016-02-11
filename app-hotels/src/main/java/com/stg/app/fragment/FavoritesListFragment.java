@@ -21,7 +21,6 @@ import android.widget.TextView;
 
 import com.socialtravelguide.api.EtbApi;
 import com.socialtravelguide.api.model.ResultsResponse;
-import com.socialtravelguide.api.model.SearchRequest;
 import com.socialtravelguide.api.model.search.ListType;
 import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.HotelsApplication;
@@ -93,18 +92,18 @@ public class FavoritesListFragment extends BaseFragment {
             if (mRecyclerView == null) {
                 return;
             }
-            if (apiResponse.accommodations == null || apiResponse.accommodations.isEmpty()) {
-                mNoResult.setVisibility(View.VISIBLE);
-            }
-            if (apiResponse.accommodations == null || apiResponse.accommodations.isEmpty() || apiResponse.accommodations.size() != EtbApi.LIMIT) {
-                mRecyclerView.setHasMoreData(false);
-            }
-            // Fragment destroyed
-            if (mAdapter == null) {
-                return;
-            }
-            mAdapter.addHotels(apiResponse.accommodations, false);
-            Events.post(new SearchResultsEvent(apiResponse.meta.totalNr));
+//            if (apiResponse.accommodations == null || apiResponse.accommodations.isEmpty()) {
+//                mNoResult.setVisibility(View.VISIBLE);
+//            }
+//            if (apiResponse.accommodations == null || apiResponse.accommodations.isEmpty() || apiResponse.accommodations.size() != EtbApi.LIMIT) {
+//                mRecyclerView.setHasMoreData(false);
+//            }
+//            // Fragment destroyed
+//            if (mAdapter == null) {
+//                return;
+//            }
+//            mAdapter.addHotels(apiResponse.accommodations, false);
+//            Events.post(new SearchResultsEvent(apiResponse.meta.totalNr));
         }
 
     };
@@ -223,7 +222,7 @@ public class FavoritesListFragment extends BaseFragment {
 
     private void loadSearchResults(int offset) {
         try {
-            mEtbApi.results(mHotelsRequest, offset).enqueue(mResultsCallback);
+            mEtbApi.records(mHotelsRequest, offset).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             getActivity().finish();
         }
@@ -269,7 +268,7 @@ public class FavoritesListFragment extends BaseFragment {
         if (mAdapter != null) {
             mAdapter.clear();
             mRecyclerView.setHasMoreData(true);
-            AppLog.e("mEtbApi.results");
+            AppLog.e("mEtbApi.records");
             loadSearchResults(0);
         }
     }

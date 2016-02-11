@@ -374,7 +374,7 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
 
     @Subscribe
     public void onSearchRequestEvent(SearchRequestEvent event) {
-        if (event.getOffset() == 0) { // Only for the fresh results
+        if (event.getOffset() == 0) { // Only for the fresh records
             AnalyticsCalls.get().trackSearchResults(event.getSearchRequest());
         }
     }

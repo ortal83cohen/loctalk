@@ -8,7 +8,5 @@ import java.util.List;
  */
 public class ResultsResponse {
 
-    public Meta meta;
-
-    public List<Accommodation> accommodations;
+//    public List<Accommodation> accommodations;
 }

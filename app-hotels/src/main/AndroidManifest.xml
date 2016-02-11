@@ -71,25 +71,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity" />
         </activity>
-        <activity
-            android:name=".activity.HotelListFiltersActivity"
-            android:label="@string/filters_title"
-            android:parentActivityName=".activity.HotelListActivity"
-            android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.HotelListActivity" />
-        </activity>
 
-        <activity
-            android:name=".activity.PoisFiltersActivity"
-            android:label="@string/landmarks_filters_title"
-            android:parentActivityName=".activity.HotelListActivity"
-            android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.HotelListActivity" />
-        </activity>
         <activity
             android:name=".activity.RoomListActivity"
             android:label="@string/title_activity_room_list"
@@ -110,34 +92,11 @@
             android:name=".activity.HotelSummaryActivity"
             android:screenOrientation="portrait"
             android:theme="@style/HotelsAppTheme.TransparentToolbar" />
-        <activity
-            android:name=".activity.BookingProcessActivity"
-            android:label="@string/booking_activity_title"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.ConfirmationActivity"
-            android:label="@string/confirmation"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name=".activity.MemberActivity"
-            android:label="@string/mainnav_profile"
-            android:screenOrientation="portrait" />
 
         <provider
             android:name=".provider.DbProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false" />
-
-        <service
-            android:name=".jobs.ProfileUpdateService"
-            android:exported="true"
-            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
-            <intent-filter>
-                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
-            </intent-filter>
-        </service>
-
 
         <activity
             android:name="com.facebook.FacebookActivity"
@@ -187,20 +146,10 @@
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="e09ac78e072247318bfc6e475f42518292025604" />
-
-        <activity
-            android:name=".activity.BookingSummaryActivity"
-            android:label="@string/title_activity_booking_summary"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.SettingsActivity"
             android:label="@string/title_activity_settings"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.LoginActivity"
-            android:label="@string/title_activity_login"
-            android:screenOrientation="portrait" />
-        <!-- [BEGIN] Mixpanel Analytics //-->
 
         <meta-data
             android:name="com.mixpanel.android.MPConfig.EnableDebugLogging"

@@ -84,7 +84,7 @@ public class RoomListAdapter extends RecyclerView.Adapter<RoomViewHolder> implem
             @SuppressWarnings("unchecked")
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
-                //                myData = (List<AbstractDataProvider.GroupData>) results.values;
+                //                myData = (List<AbstractDataProvider.GroupData>) records.values;
                 notifyDataSetChanged();
             }
 
