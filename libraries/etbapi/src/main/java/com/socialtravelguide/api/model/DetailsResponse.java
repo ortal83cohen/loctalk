@@ -8,5 +8,5 @@ public class DetailsResponse {
 
     public Meta meta;
 
-    public Accommodation accommodation;
+    public Record record;
 }

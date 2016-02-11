@@ -3,22 +3,17 @@ package com.stg.app.analytics;
 import android.app.Activity;
 import android.content.Context;
 
-import com.socialtravelguide.api.model.Accommodation;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.socialtravelguide.api.model.HotelRequest;
-import com.socialtravelguide.api.model.Order;
-import com.socialtravelguide.api.model.OrderResponse;
+import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.R;
 import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.model.CurrentLocation;
 import com.stg.app.model.Location;
 import com.stg.app.model.LocationWithTitle;
-import com.stg.app.model.OrderItem;
-import com.google.android.gms.analytics.GoogleAnalytics;
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
-import com.google.android.gms.analytics.ecommerce.Product;
-import com.google.android.gms.analytics.ecommerce.ProductAction;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
@@ -51,34 +46,6 @@ public class GoogleAnalyticsCalls extends AnalyticsCalls {
             mTracker = analytics.newTracker(applicationContext.getString(R.string.google_analytics_id));
 
         }
-    }
-
-    public void transaction(OrderResponse orderResponse) {
-
-        Order.Rate rate = orderResponse.order.rates.get(0);
-        Product product = new Product()
-                .setId(String.valueOf(rate.accommodation.id))
-                .setName(rate.accommodation.name)
-                .setCategory(rate.accommodation.summary.country)
-                .setBrand(rate.accommodation.summary.city)
-                .setVariant(rate.name)
-                .setPrice(Double.valueOf(rate.charge.totalChargeable))
-//                .setCouponCode("APPARELSALE")
-                .setQuantity(rate.rateCount);
-        ProductAction productAction = new ProductAction(ProductAction.ACTION_PURCHASE)
-                .setTransactionId(String.valueOf(orderResponse.order.orderId))
-                .setTransactionAffiliation("Android")
-//                .setTransactionRevenue(37.39)
-//                .setTransactionTax(2.85)
-//                .setTransactionShipping(5.34)
-//                .setTransactionCouponCode("SUMMER2013")
-                ;
-        HitBuilders.ScreenViewBuilder builder = new HitBuilders.ScreenViewBuilder()
-                .addProduct(product)
-                .setProductAction(productAction);
-
-        mTracker.setScreenName("transaction");
-        mTracker.send(builder.build());
     }
 
     public void trackRetrofitFailure(String url, String response, String body) {
@@ -146,24 +113,24 @@ public class GoogleAnalyticsCalls extends AnalyticsCalls {
         mTracker.send(new HitBuilders.ScreenViewBuilder().build());
     }
 
-    public void trackHotelDetails(HotelRequest request, HotelSnippet hotelSnippet, Accommodation.Rate rate, String currencyCode) {
+    public void trackHotelDetails(HotelRequest request, HotelSnippet hotelSnippet, Record record, String currencyCode) {
         mTracker.setScreenName("Hotel Details");
-        Product product = new Product()
-                .setId(String.valueOf(hotelSnippet.getAccommodation().id))
-                .setName(hotelSnippet.getAccommodation().name)
-                .setCategory(hotelSnippet.getAccommodation().summary.country)
-                .setBrand(hotelSnippet.getAccommodation().summary.city)
-                .setVariant(rate.name)
-//                .setPosition(1)
-                ;
-        double price = 0;
-        if (rate != null) {
-            price = rate.displayPrice.get(currencyCode);
-        }
-
-        mTracker.send(new HitBuilders.ScreenViewBuilder().setCustomDimension(KEY_HOTEL_NAME, hotelSnippet.getName()).
-                setCustomDimension(KEY_HOTEL_INDEX, String.valueOf(hotelSnippet.getPosition())).setCustomDimension(KEY_MIN_RATE_PRICE, String.format("%.1f", price)).
-                setCustomDimension(KEY_CURRENCY, currencyCode).addImpression(product, "impression").build());
+//        Product product = new Product()
+//                .setId(String.valueOf(hotelSnippet.getAccommodation().id))
+//                .setName(hotelSnippet.getAccommodation().name)
+//                .setCategory(hotelSnippet.getAccommodation().summary.country)
+//                .setBrand(hotelSnippet.getAccommodation().summary.city)
+//                .setVariant(rate.name)
+////                .setPosition(1)
+//                ;
+//        double price = 0;
+//        if (rate != null) {
+//            price = rate.displayPrice.get(currencyCode);
+//        }
+//
+//        mTracker.send(new HitBuilders.ScreenViewBuilder().setCustomDimension(KEY_HOTEL_NAME, hotelSnippet.getName()).
+//                setCustomDimension(KEY_HOTEL_INDEX, String.valueOf(hotelSnippet.getPosition())).setCustomDimension(KEY_MIN_RATE_PRICE, String.format("%.1f", price)).
+//                setCustomDimension(KEY_CURRENCY, currencyCode).addImpression(product, "impression").build());
     }
 
     public void trackBookingFormAddress() {
@@ -182,13 +149,6 @@ public class GoogleAnalyticsCalls extends AnalyticsCalls {
         mTracker.setScreenName("collectLifecycleData");
 
         mTracker.send(new HitBuilders.ScreenViewBuilder().build());
-    }
-
-    public void trackBookingSummary(HotelRequest request, HotelSnippet hotelSnippet, OrderItem orderItem) {
-        mTracker.setScreenName("Booking Summary");
-
-        mTracker.send(new HitBuilders.ScreenViewBuilder().setCustomDimension(KEY_HOTEL_NAME, hotelSnippet.getName()).
-                setCustomDimension(KEY_RATE_NAME, orderItem.rateName).build());
     }
 
     public void trackBookingConfirmation() {

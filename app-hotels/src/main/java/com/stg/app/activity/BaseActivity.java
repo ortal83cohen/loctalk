@@ -19,7 +19,6 @@ import com.stg.app.events.Events;
 import com.stg.app.events.NetworkStateChangeEvent;
 import com.stg.app.model.HotelListRequest;
 import com.stg.app.preferences.UserPreferences;
-import com.stg.app.utils.PriceRender;
 import com.stg.app.widget.AppBar;
 import com.stg.app.widget.IntentIntegrator;
 import com.stg.app.widget.NavigationDrawer;
@@ -148,16 +147,6 @@ public abstract class BaseActivity extends AppCompatActivity {
             case NavigationDrawer.NAV_SETTING:
                 startActivity(new Intent(this, SettingsActivity.class));
                 break;
-            case NavigationDrawer.NAV_LOGIN:
-            case NavigationDrawer.NAV_SIGN_UP:
-                int tabId = tab == NavigationDrawer.NAV_LOGIN ? 0 : 1;
-
-                break;
-            case NavigationDrawer.NAV_PROFILE:
-            case NavigationDrawer.NAV_BOOKINGS:
-            case NavigationDrawer.NAV_CREDIT_CARD:
-
-                break;
             case NavigationDrawer.NAV_RECENT_SEARCH:
                 startActivity(RecentSearchesActivity.createIntent(this));
                 break;
@@ -196,10 +185,6 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     public void setHotelsRequest(HotelListRequest request) {
         mRequest = request;
-    }
-
-    public PriceRender getPriceRender() {
-        return App.provide(this).priceRender(1); // Default
     }
 
     protected boolean requiresRequest() {

@@ -24,9 +24,10 @@ import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.HotelsApplication;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;
-import com.stg.app.activity.HotelListActivity;
+import com.stg.app.activity.RecordListActivity;
 import com.stg.app.adapter.HotelListAdapter;
-import com.stg.app.adapter.HotelViewHolder;
+import com.stg.app.adapter.RecordViewHolder;
+import com.stg.app.drawable.TriangleDrawable;
 import com.stg.app.etbapi.RetrofitCallback;
 import com.stg.app.etbapi.RetrofitConverter;
 import com.stg.app.events.Events;
@@ -45,7 +46,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import retrofit.Response;
 
-public class HotelsListFragment extends BaseFragment implements View.OnClickListener {
+public class RecordListFragment extends BaseFragment implements View.OnClickListener {
 
     private static final int NUMBER_OF_RETRIES = 1;
     @Bind(android.R.id.list)
@@ -72,34 +73,35 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
         @Override
         public void success(ResultsResponse apiResponse, Response response) {
             if (getActivity() != null) {
-                ((HotelListActivity) getActivity()).hideLoaderImage();
+                ((RecordListActivity) getActivity()).hideLoaderImage();
             }
             mLoaderText.setVisibility(View.GONE);
             if (mRecyclerView == null || mAdapter == null) {
                 return;
             }
 
-//            if (apiResponse.accommodations == null || apiResponse.accommodations.isEmpty() || apiResponse.accommodations.size() != EtbApi.LIMIT) {
-//                mRecyclerView.setHasMoreData(false);
-//            }
-//
-//            if (mAdapter.getItemCount() == 0) {
-//                if (apiResponse.accommodations == null || apiResponse.accommodations.isEmpty()) {
-//                    mNoResult.setVisibility(View.VISIBLE);
-//                    mTopPanel.setVisibility(View.GONE);
-//                } else {
-//                    mAvailableCountText.setVisibility(View.VISIBLE);
-//                    mButtonSort.setVisibility(View.VISIBLE);
-//                }
-//            }
+            if (apiResponse.records == null || apiResponse.records.isEmpty() || apiResponse.records.size() != EtbApi.LIMIT) {
+                mRecyclerView.setHasMoreData(false);
+            }
+
+            if (mAdapter.getItemCount() == 0) {
+                if (apiResponse.records == null || apiResponse.records.isEmpty()) {
+                    mNoResult.setVisibility(View.VISIBLE);
+                    mTopPanel.setVisibility(View.GONE);
+                } else {
+                    mAvailableCountText.setVisibility(View.VISIBLE);
+                    mButtonSort.setVisibility(View.VISIBLE);
+                }
+            }
 
             mNumberRetries = 0;
+            mAdapter.addHotels(apiResponse.records);
         }
 
         @Override
         public void failure(ResponseBody response, boolean isOffline) {
             if (getActivity() != null) {
-                ((HotelListActivity) getActivity()).hideLoaderImage();
+                ((RecordListActivity) getActivity()).hideLoaderImage();
                 if (getActivity() == null) {
                     return;
                 }
@@ -142,8 +144,8 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
         }
     };
 
-    public static HotelsListFragment newInstance() {
-        return new HotelsListFragment();
+    public static RecordListFragment newInstance() {
+        return new RecordListFragment();
     }
 
     @Override
@@ -155,7 +157,7 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
             mListener = (Listener) context;
         } catch (ClassCastException e) {
             throw new ClassCastException(context.toString()
-                    + " must implement HotelsListFragment.Listener");
+                    + " must implement RecordListFragment.Listener");
         }
     }
 
@@ -182,7 +184,7 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
         mLayoutManager = new LinearLayoutManager(getActivity());
-        mAdapter = new HotelListAdapter((BaseActivity) getActivity(), (HotelViewHolder.Listener) getActivity());
+        mAdapter = new HotelListAdapter((BaseActivity) getActivity(), (RecordViewHolder.Listener) getActivity());
 
         mEtbApi = HotelsApplication.provide(getActivity()).etbApi();
         mRecyclerView.init(mLayoutManager, mAdapter, EtbApi.LIMIT);
@@ -195,6 +197,7 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
         });
 
         mButtonSort.setOnClickListener(this);
+        mButtonSort.setCompoundDrawables(null, null, new TriangleDrawable(getActivity(), R.color.theme_primary), null);
         mButtonSort.setVisibility(View.GONE);
 
         mModifyPreferences.setOnClickListener(new View.OnClickListener() {
@@ -252,7 +255,7 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
     }
 
     public void refresh() {
-        ((HotelListActivity) getActivity()).showLoaderImage();
+        ((RecordListActivity) getActivity()).showLoaderImage();
         SearchRequest hotelsRequest = getHotelsRequest();
 
         mLoaderText.setVisibility(View.VISIBLE);
@@ -275,16 +278,16 @@ public class HotelsListFragment extends BaseFragment implements View.OnClickList
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.button_sort) {
-            ((HotelListActivity) getActivity()).showSort();
+            ((RecordListActivity) getActivity()).showSort();
         }
     }
 
     @Subscribe
     public void onSearchResults(SearchResultsEvent event) {
         mRecyclerView.setVisibility(View.VISIBLE);
-        if (!event.hasError()) {
+//        if (!event.hasError()) {
             mAvailableCountText.setText(Html.fromHtml(getResources().getQuantityString(R.plurals.hotels_count_available, event.getCount(), event.getCount())));
-        }
+//        }
     }
 
     public interface Listener {

@@ -2,31 +2,28 @@ package com.stg.app;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
-import android.support.v4.util.SimpleArrayMap;
 import android.telephony.TelephonyManager;
 
+import com.facebook.CallbackManager;
+import com.facebook.device.yearclass.YearClass;
 import com.socialtravelguide.api.EtbApi;
 import com.socialtravelguide.api.EtbApiConfig;
 import com.socialtravelguide.api.mock.ResultsMockClient;
 import com.socialtravelguide.api.model.SearchRequest;
+import com.squareup.okhttp.Cache;
+import com.squareup.okhttp.OkHttpClient;
 import com.stg.app.analytics.Facebook;
 import com.stg.app.etbapi.CacheRequestInterceptor;
 import com.stg.app.etbapi.CacheResponseInterceptor;
 import com.stg.app.etbapi.RetrofitLogger;
 import com.stg.app.etbapi.UserAgentInterceptor;
 import com.stg.app.member.MemberAdapter;
-import com.stg.app.member.MemberService;
 import com.stg.app.member.MemberStorage;
 import com.stg.app.model.HotelListRequest;
 import com.stg.app.preferences.UserPreferences;
 import com.stg.app.preferences.UserPreferencesStorage;
 import com.stg.app.utils.DefaultHttpClient;
 import com.stg.app.utils.NetworkUtilities;
-import com.stg.app.utils.PriceRender;
-import com.facebook.CallbackManager;
-import com.facebook.device.yearclass.YearClass;
-import com.squareup.okhttp.Cache;
-import com.squareup.okhttp.OkHttpClient;
 
 import java.io.File;
 import java.text.DecimalFormat;
@@ -50,7 +47,6 @@ public class ObjectGraph {
     private UserPreferences mUserPrefs;
     private EtbApi mEtbApi;
     private OkHttpClient mHttpClient;
-    private SimpleArrayMap<String, PriceRender> mPriceRender;
     private MemberStorage mMemberStorage;
     private SearchRequest mLastSearchRequest;
 
@@ -140,18 +136,6 @@ public class ObjectGraph {
         return new NetworkUtilities(connectivityManager());
     }
 
-
-    public PriceRender priceRender(int numOfDays) {
-        String currencyCode = getUserPrefs().getCurrencyCode();
-        int priceShowType = getUserPrefs().getPriceShowType();
-        if (mPriceRender == null || !mPriceRender.containsKey(currencyCode + "-" + numOfDays + "-" + priceShowType)) {
-            mPriceRender = new SimpleArrayMap<>(1);
-            PriceRender renderer = new PriceRender(priceShowType, getNumberFormatter(currencyCode), numOfDays);
-            mPriceRender.put(currencyCode, renderer);
-        }
-        return mPriceRender.get(currencyCode);
-    }
-
     public MemberStorage memberStorage() {
         if (mMemberStorage == null) {
             mMemberStorage = new MemberStorage(this.app);
@@ -163,11 +147,6 @@ public class ObjectGraph {
         return YearClass.get(this.app);
     }
 
-    public MemberService memberService() {
-        DefaultHttpClient httpClient = new DefaultHttpClient(this.app);
-        httpClient.setReadTimeout(3, TimeUnit.MINUTES);
-        return (new MemberAdapter(memberStorage(), httpClient)).create();
-    }
 
     public NumberFormat getNumberFormatter(String currencyCode) {
         NumberFormat formatter = NumberFormat.getCurrencyInstance();

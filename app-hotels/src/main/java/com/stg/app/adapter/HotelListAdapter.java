@@ -10,28 +10,28 @@ import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
 
-import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.Record;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;
 import com.stg.app.model.HotelListRequest;
 import com.stg.app.utils.AppLog;
-import com.stg.app.utils.PriceRender;
+
 import com.stg.app.widget.recyclerview.ArrayAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HotelListAdapter extends ArrayAdapter<Accommodation, RecyclerView.ViewHolder> implements Filterable {
-    protected final HotelViewHolder.Listener mListener;
+public class HotelListAdapter extends ArrayAdapter<Record, RecyclerView.ViewHolder> implements Filterable {
+    protected final RecordViewHolder.Listener mListener;
     protected final int mPictureWidth;
     protected final int mPictureHeight;
-    protected final PriceRender mPriceRender;
+
     private final HotelListRequest mRequest;
     protected Context mContext;
-    protected List<Accommodation> mAccommodations = new ArrayList<>();
+    protected List<Record> mRecords = new ArrayList<>();
 
-    public HotelListAdapter(BaseActivity activity, HotelViewHolder.Listener listener) {
-        super(new ArrayList<Accommodation>());
+    public HotelListAdapter(BaseActivity activity, RecordViewHolder.Listener listener) {
+        super(new ArrayList<Record>());
         mContext = activity;
         mListener = listener;
         Resources r = mContext.getResources();
@@ -39,7 +39,6 @@ public class HotelListAdapter extends ArrayAdapter<Accommodation, RecyclerView.V
         mPictureHeight = r.getDimensionPixelSize(R.dimen.listview_image_height);
         AppLog.d("Image size [" + mPictureWidth + "," + mPictureHeight + "]");
         mRequest = activity.getHotelsRequest();
-        mPriceRender = activity.getPriceRender();
         setHasStableIds(true);
     }
 
@@ -54,22 +53,22 @@ public class HotelListAdapter extends ArrayAdapter<Accommodation, RecyclerView.V
         return items().size();
     }
 
-    protected List<Accommodation> items() {
-        return mAccommodations;
+    protected List<Record> items() {
+        return mRecords;
     }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         final LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view = inflater.inflate(R.layout.results_hotel_list_item, parent, false);
-        return new HotelViewHolder(view, mContext, mPictureWidth, mPictureHeight, mPriceRender, mListener);
+        return new RecordViewHolder(view, mContext, mPictureWidth, mPictureHeight, mListener);
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        Accommodation item = items().get(position);
-        if (item != null && holder instanceof HotelViewHolder) {
-            ((HotelViewHolder) holder).assignItem(item, mRequest.getNumberOfRooms(), position);
+        Record item = items().get(position);
+        if (item != null && holder instanceof RecordViewHolder) {
+            ((RecordViewHolder) holder).assignItem(item, mRequest.getNumberOfRooms(), position);
         }
     }
 
@@ -92,15 +91,15 @@ public class HotelListAdapter extends ArrayAdapter<Accommodation, RecyclerView.V
 
     @Override
     public void clear() {
-        mAccommodations.clear();
+        mRecords.clear();
         notifyDataSetChanged();
     }
 
-    public void addHotels(List<Accommodation> accommodations, boolean withoutDates) {
+    public void addHotels(List<Record> records) {
         int objectsCount = getItemCount();
-        int accommodationsCount = accommodations == null ? 0 : accommodations.size();
-        if (accommodations != null) {
-            mAccommodations.addAll(accommodations);
+        int accommodationsCount = records == null ? 0 : records.size();
+        if (records != null) {
+            mRecords.addAll(records);
         }
         notifyItemRangeInserted(objectsCount, accommodationsCount);
     }

@@ -197,8 +197,8 @@
     <string name="payment_completed">You have completed the payment for this booking.\n\nCharges appear as one of the following:\n- TSP*EASYTOBOOK \n- TRAVRES*TRAVEL RES NL \n- TSP*HOTELRES \n- EASYTOBOOK</string>
     <string name="payment_pending">In order to validate the pending booking, the credit card or PayPal account has been charged. If the pending booking is unfortunately cancelled, the charge will be immediately refunded. If the booking is confirmed, the charge will remain.\n\n Charges appear as one of the following:\n - TSP*EASYTOBOOK \n - TRAVRES*TRAVEL RES NL \n - TSP*HOTELRES \n - EASYTOBOOK</string>
     <string name="refundable">Refundable</string>
-    <string name="payment_accomodation_charge">The accommodation may charge your card anywhere between today and the day of arrival. If you would like to know more about the payment for this stay, please contact the accommodation directly.\n\nPlease note that we do not charge your credit card.</string>
-    <string name="payment_accomodation_preauthorize">Payment at the accommodation.\n\nThe accommodation can pre-authorize your card before arrival; they check for sufficient funds in order to guarantee your booking.</string>
+    <string name="payment_accomodation_charge">The record may charge your card anywhere between today and the day of arrival. If you would like to know more about the payment for this stay, please contact the record directly.\n\nPlease note that we do not charge your credit card.</string>
+    <string name="payment_accomodation_preauthorize">Payment at the record.\n\nThe record can pre-authorize your card before arrival; they check for sufficient funds in order to guarantee your booking.</string>
     <string name="fill_in_destination">Fill in a destination or address</string>
     <string name="delete">Delete</string>
     <string name="reset_filters">reset filters</string>
@@ -233,7 +233,7 @@
     <string name="remove_landmarks">Remove landmarks</string>
     <string name="nothing_to_show_in_this_area">Nothing to show in this area</string>
     <string name="pay_today">Today you will pay</string>
-    <string name="pay_at_accommodation">Pay at accommodation</string>
+    <string name="pay_at_accommodation">Pay at record</string>
     <string name="max_guests">%d Max</string>
     <string name="no_pois">There is no known Points of interest known to us in this location</string>
     <string name="note_guest_per_room">"Selected %1$d rooms with %2$d guest each"</string>

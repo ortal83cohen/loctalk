@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.socialtravelguide.api.EtbApi;
-import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.model.ResultsResponse;
 import com.socialtravelguide.api.model.SearchRequest;
 import com.socialtravelguide.api.model.search.Poi;
@@ -21,7 +21,7 @@ import com.socialtravelguide.api.model.search.ViewPortType;
 import com.stg.app.HotelsApplication;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;
-import com.stg.app.activity.HotelListActivity;
+import com.stg.app.activity.RecordListActivity;
 import com.stg.app.core.CoreInterface;
 import com.stg.app.etbapi.RetrofitCallback;
 import com.stg.app.events.Events;
@@ -80,17 +80,17 @@ public class ResultsMap {
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
-            ((HotelListActivity) mActivity).hideLoaderImage();
+            ((RecordListActivity) mActivity).hideLoaderImage();
         }
 
         @Override
         protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
 //            AppLog.d("EtbApi", "Response: " + apiResponse.meta);
-            ((HotelListActivity) mActivity).hideLoaderImage();
+            ((RecordListActivity) mActivity).hideLoaderImage();
             mHotelsCollection.clear();
             mPoiCollection.clear();
             if (mHotelsVisible) {
-//                addHotelsMarkers(apiResponse.accommodations);
+//                addHotelsMarkers(apiResponse.recordses);
             }
             addPois();
         }
@@ -186,7 +186,7 @@ public class ResultsMap {
                     mLastLat = cameraPosition.target.latitude;
                     mLastLong = cameraPosition.target.longitude;
                     mLastZoom = cameraPosition.zoom;
-                    ((HotelListActivity) mActivity).showRefreshHotelsButton();
+                    ((RecordListActivity) mActivity).showRefreshHotelsButton();
                 }
 
             }
@@ -214,31 +214,31 @@ public class ResultsMap {
         }
     }
 
-    private void addHotelsMarkers(final List<Accommodation> accommodations) {
-        if (accommodations != null) {
-            for (int i = 0; i < accommodations.size(); i++) {
-                Accommodation acc = accommodations.get(i);
+    private void addHotelsMarkers(final List<Record> recordses) {
+        if (recordses != null) {
+            for (int i = 0; i < recordses.size(); i++) {
+                Record acc = recordses.get(i);
 
                 mHotelsCollection.addMarker(mHotelMarker.create(i, acc, selectedHotelList.contains(acc.id) ? HotelMarker.STATUS_SEEN : HotelMarker.STATUS_UNSEEN));
             }
             mHotelsCollection.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                 @Override
                 public boolean onMarkerClick(Marker marker) {
-                    Accommodation accMarker = accommodations.get(Integer.valueOf(marker.getTitle()));
-                    mListener.onHotelMarkerClick(accMarker);
+                    Record accMarker = recordses.get(Integer.valueOf(marker.getTitle()));
+                    mListener.onRecordMarkerClick(accMarker);
                     if (lastHotelMarkerClicked != null && !(lastHotelMarkerClicked.getTitle().equals(marker.getTitle()))) {
                         Integer lastMarkerPos = Integer.valueOf(lastHotelMarkerClicked.getTitle());
 
                         // In case we have an item with same position, recreate marker
-                        if (lastMarkerPos < accommodations.size()) {
-                            Accommodation accLastMarker = accommodations.get(lastMarkerPos);
+                        if (lastMarkerPos < recordses.size()) {
+                            Record accLastMarker = recordses.get(lastMarkerPos);
                             mHotelsCollection.remove(lastHotelMarkerClicked);
                             mHotelsCollection.addMarker(mHotelMarker.create(lastMarkerPos, accLastMarker, selectedHotelList.contains(accLastMarker.id) ? HotelMarker.STATUS_SEEN : HotelMarker.STATUS_UNSEEN));
                         }
                     }
                     mHotelsCollection.remove(marker);
                     lastHotelMarkerClicked = mHotelsCollection.addMarker(mHotelMarker.create(Integer.valueOf(marker.getTitle()), accMarker, HotelMarker.STATUS_SELECTED));
-                    selectedHotelList.add(accMarker.id);
+//                    selectedHotelList.add(accMarker.id);
                     return true;
                 }
             });
@@ -341,7 +341,7 @@ public class ResultsMap {
 
         void onLandmarksTypesChange(HashMap<Integer, Integer> types);
 
-        void onHotelMarkerClick(Accommodation acc);
+        void onRecordMarkerClick(Record acc);
 
         void removeHotelSummaryFragment();
     }

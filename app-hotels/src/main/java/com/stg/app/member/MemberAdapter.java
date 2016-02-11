@@ -31,17 +31,6 @@ public class MemberAdapter implements Interceptor {
         mStorage = storage;
     }
 
-    public MemberService create() {
-        Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl(Config.getCoreInterfaceSecureEndpoint())
-                .addConverterFactory(GsonConverterFactory.create())
-                .client(mHttpClient);
-
-        Retrofit restAdapter = builder.build();
-
-        return restAdapter.create(MemberService.class);
-    }
-
 
     @Override
     public Response intercept(Chain chain) throws IOException {

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.view.MenuItem;
@@ -13,7 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.model.SearchRequest;
 import com.socialtravelguide.api.model.search.SprType;
 import com.socialtravelguide.api.model.search.Type;
@@ -21,21 +20,19 @@ import com.socialtravelguide.api.model.search.ViewPortType;
 import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.App;
 import com.stg.app.R;
-import com.stg.app.adapter.HotelViewHolder;
+import com.stg.app.adapter.RecordViewHolder;
 import com.stg.app.analytics.AnalyticsCalls;
 import com.stg.app.events.Events;
 import com.stg.app.events.SearchRequestEvent;
 import com.stg.app.events.SearchResultsEvent;
 import com.stg.app.fragment.HomeFragment;
 import com.stg.app.fragment.HotelMapSummaryFragment;
-import com.stg.app.fragment.HotelsListFragment;
+import com.stg.app.fragment.RecordListFragment;
 import com.stg.app.fragment.HotelsMapFragment;
 import com.stg.app.fragment.ResultsSortFragment;
-import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.map.PoiMarker;
 import com.stg.app.map.ResultsMap;
 import com.stg.app.model.HotelListRequest;
-import com.stg.app.utils.AppLog;
 import com.stg.app.widget.AppBar;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -55,7 +52,7 @@ import butterknife.ButterKnife;
  * @author ortal
  * @date 2015-04-19
  */
-public class HotelListActivity extends BaseActivity implements OnMapReadyCallback, ResultsMap.Listener, HotelViewHolder.Listener, HotelsListFragment.Listener, FragmentManager.OnBackStackChangedListener, HomeFragment.Listener, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
+public class RecordListActivity extends BaseActivity implements OnMapReadyCallback, ResultsMap.Listener, RecordViewHolder.Listener, RecordListFragment.Listener, FragmentManager.OnBackStackChangedListener, HomeFragment.Listener, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
 
     private static final String FRAGMENT_HOME = "fragment_datepicker";
     private static final String FRAGMENT_RESULTSLIST = "fragment_listview";
@@ -77,7 +74,7 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
     private boolean[] mPoisFilter;
 
     public static Intent createIntent(HotelListRequest request, Context context) {
-        Intent intent = new Intent(context, HotelListActivity.class);
+        Intent intent = new Intent(context, RecordListActivity.class);
         intent.putExtra(EXTRA_REQUEST, request);
         return intent;
     }
@@ -188,7 +185,7 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
     }
 
     @Override
-    public void onHotelMarkerClick(Accommodation acc) {
+    public void onRecordMarkerClick(Record acc) {
 
         Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_overlay_container);
 
@@ -205,14 +202,14 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
     }
 
     @Override
-    public void onHotelClick(Accommodation acc, int position) {
-        if (acc.getFirstRate() == null) {
-            Toast.makeText(getBaseContext(), R.string.hotel_not_available, Toast.LENGTH_LONG).show();
-            AppLog.e("HotelListActivity: hotel_not_available-" + acc.id);
-        } else {
-            final HotelSnippet hotelSnippet = HotelSnippet.from(acc, acc.getFirstRate().rateId, position);
-            showHotelDetails(hotelSnippet);
-        }
+    public void onRecordClick(Record acc, int position) {
+//        if (acc.getFirstRate() == null) {
+//            Toast.makeText(getBaseContext(), R.string.hotel_not_available, Toast.LENGTH_LONG).show();
+//            AppLog.e("RecordListActivity: hotel_not_available-" + acc.id);
+//        } else {
+//            final HotelSnippet hotelSnippet = HotelSnippet.from(acc, acc.getFirstRate().rateId, position);
+//            showHotelDetails(hotelSnippet);
+//        }
     }
 
     @Override
@@ -242,14 +239,8 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
     }
 
 
-    public void showHotelDetails(HotelSnippet hotelSnippet) {
-
-        startActivity(HotelSummaryActivity.createIntent(hotelSnippet, getHotelsRequest(), this));
-
-    }
-
     public void refreshList() {
-        HotelsListFragment listFragment = (HotelsListFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_RESULTSLIST);
+        RecordListFragment listFragment = (RecordListFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_RESULTSLIST);
         if (listFragment != null) {
             listFragment.refresh();
         }
@@ -329,7 +320,7 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
             getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         } else {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, HotelsListFragment.newInstance(), FRAGMENT_RESULTSLIST)
+                    .replace(R.id.fragment_container, RecordListFragment.newInstance(), FRAGMENT_RESULTSLIST)
                     .commit();
         }
     }
@@ -374,7 +365,7 @@ public class HotelListActivity extends BaseActivity implements OnMapReadyCallbac
 
     @Subscribe
     public void onSearchRequestEvent(SearchRequestEvent event) {
-        if (event.getOffset() == 0) { // Only for the fresh records
+        if (event.getOffset() == 0) { // Only for the fresh record
             AnalyticsCalls.get().trackSearchResults(event.getSearchRequest());
         }
     }

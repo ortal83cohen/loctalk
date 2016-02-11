@@ -51,19 +51,19 @@ public class AddMoreBookingFragment extends BaseFragment implements View.OnClick
                 ContentValues values = new ContentValues();
                 values.put(DbContract.BookingsColumns.ORDER_ID, orderResponse.order.orderId);
                 values.put(DbContract.BookingsColumns.REFERENCE, orderResponse.order.orderId);
-                values.put(DbContract.BookingsColumns.CITY, rate.accommodation.summary.city);
-                values.put(DbContract.BookingsColumns.COUNTRY, rate.accommodation.summary.country);
-                values.put(DbContract.BookingsColumns.TOTAL_VALUE, rate.charge.totalChargeable);
-                values.put(DbContract.BookingsColumns.STARS, String.valueOf(Double.valueOf(rate.accommodation.starRating)));
-                values.put(DbContract.BookingsColumns.ROOMS, rate.rateCount);
-                values.put(DbContract.BookingsColumns.RATE_NAME, rate.name);
-                values.put(DbContract.BookingsColumns.IS_CANCELLED, false);
-                if (rate.accommodation.images.size() > 0) {
-                    values.put(DbContract.BookingsColumns.IMAGE, rate.accommodation.images.get(0));
-                } else {
-                    values.put(DbContract.BookingsColumns.IMAGE, "");
-                }
-                values.put(DbContract.BookingsColumns.HOTEL_NAME, rate.accommodation.name);
+//                values.put(DbContract.BookingsColumns.CITY, rate.record.summary.city);
+//                values.put(DbContract.BookingsColumns.COUNTRY, rate.record.summary.country);
+//                values.put(DbContract.BookingsColumns.TOTAL_VALUE, rate.charge.totalChargeable);
+//                values.put(DbContract.BookingsColumns.STARS, String.valueOf(Double.valueOf(rate.record.starRating)));
+//                values.put(DbContract.BookingsColumns.ROOMS, rate.rateCount);
+//                values.put(DbContract.BookingsColumns.RATE_NAME, rate.name);
+//                values.put(DbContract.BookingsColumns.IS_CANCELLED, false);
+//                if (rate.record.images.size() > 0) {
+//                    values.put(DbContract.BookingsColumns.IMAGE, rate.record.images.get(0));
+//                } else {
+//                    values.put(DbContract.BookingsColumns.IMAGE, "");
+//                }
+//                values.put(DbContract.BookingsColumns.HOTEL_NAME, rate.record.name);
                 values.put(DbContract.BookingsColumns.CURRENCY, rate.charge.currency);
                 values.put(DbContract.BookingsColumns.ARRIVAL, rate.checkIn);
                 values.put(DbContract.BookingsColumns.DEPARTURE, rate.checkOut);

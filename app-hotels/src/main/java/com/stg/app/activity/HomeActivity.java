@@ -222,7 +222,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
         request.setType(locationType);
         RequestUtils.apply(request);
 
-        Intent myIntent = HotelListActivity.createIntent(request, this);
+        Intent myIntent = RecordListActivity.createIntent(request, this);
         startActivity(myIntent);
     }
 

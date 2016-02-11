@@ -80,7 +80,7 @@ public class RecentSearchesActivity extends BaseActivity {
     public void startSearch(Location location) {
         HotelListRequest request = App.provide(this).createHotelsRequest();
 
-        startActivity(HotelListActivity.createIntent(request, this));
+        startActivity(RecordListActivity.createIntent(request, this));
     }
 
     @Override

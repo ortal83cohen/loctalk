@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.Record;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;
 
@@ -19,9 +19,9 @@ import java.util.List;
 public class FavoritesHotelListAdapter extends HotelListAdapter {
     private static final int HEADER = 0;
     private static final int OTHER = 1;
-    List<Accommodation> mAccommodationsWithoutDates = new ArrayList<>();
+    List<Record> mAccommodationsWithoutDates = new ArrayList<>();
 
-    public FavoritesHotelListAdapter(BaseActivity context, HotelViewHolder.Listener listener) {
+    public FavoritesHotelListAdapter(BaseActivity context, RecordViewHolder.Listener listener) {
         super(context, listener);
     }
 
@@ -35,13 +35,13 @@ public class FavoritesHotelListAdapter extends HotelListAdapter {
         }
 
         View view = inflater.inflate(R.layout.results_hotel_list_item, parent, false);
-        return new HotelViewHolder(view, mContext, mPictureWidth, mPictureHeight, mPriceRender, mListener);
+        return new RecordViewHolder(view, mContext, mPictureWidth, mPictureHeight, mListener);
 
     }
 
     @Override
     public int getItemViewType(int position) {
-        if (position == mAccommodations.size())
+        if (position == mRecords.size())
             return HEADER;
         else
             return OTHER;
@@ -49,7 +49,7 @@ public class FavoritesHotelListAdapter extends HotelListAdapter {
 
     @Override
     public int getItemCount() {
-        if (items().size() > mAccommodations.size()) {
+        if (items().size() > mRecords.size()) {
             return items().size() + 1;
         }
         return items().size();
@@ -57,7 +57,7 @@ public class FavoritesHotelListAdapter extends HotelListAdapter {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        if (position > mAccommodations.size()) {
+        if (position > mRecords.size()) {
             position = position - 1;
         }
         super.onBindViewHolder(holder, position);
@@ -65,42 +65,42 @@ public class FavoritesHotelListAdapter extends HotelListAdapter {
 
     @Override
     public long getItemId(int position) {
-        if (position > mAccommodations.size()) {
+        if (position > mRecords.size()) {
             position = position - 1;
         }
         return super.getItemId(position);
     }
 
-    protected List<Accommodation> items() {
+    protected List<Record> items() {
 
-        if (mAccommodations.isEmpty() || mAccommodationsWithoutDates.isEmpty()) {
-            return mAccommodations;
+        if (mRecords.isEmpty() || mAccommodationsWithoutDates.isEmpty()) {
+            return mRecords;
         }
-        List<Accommodation> items = new ArrayList<>();
-        items.addAll(mAccommodations);
-        for (Accommodation accWithoutDates : mAccommodationsWithoutDates) {
+        List<Record> items = new ArrayList<>();
+        items.addAll(mRecords);
+        for (Record accWithoutDates : mAccommodationsWithoutDates) {
             boolean nonExistFlag = true;
-            for (Accommodation acc : items) {
+            for (Record acc : items) {
                 if (accWithoutDates.id == acc.id) {
                     nonExistFlag = false;
                     break;
                 }
             }
             if (nonExistFlag) {
-                accWithoutDates.markUnavailable();
+//                accWithoutDates.markUnavailable();
                 items.add(accWithoutDates);
             }
         }
         return items;
     }
 
-    public void addHotels(List<Accommodation> accommodations, boolean withoutDates) {
+    public void addHotels(List<Record> recordses, boolean withoutDates) {
         int objectsCount = getItemCount();
-        int accommodationsCount = accommodations == null ? 0 : accommodations.size();
-        if (accommodations != null) {
-            mAccommodations.addAll(accommodations);
+        int accommodationsCount = recordses == null ? 0 : recordses.size();
+        if (recordses != null) {
+            mRecords.addAll(recordses);
             if (withoutDates) {
-                mAccommodationsWithoutDates.addAll(accommodations);
+                mAccommodationsWithoutDates.addAll(recordses);
             }
         }
         notifyItemRangeInserted(objectsCount, accommodationsCount);

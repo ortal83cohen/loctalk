@@ -4,10 +4,10 @@ import android.app.Application;
 import android.content.Context;
 
 import com.crashlytics.android.Crashlytics;
+import com.squareup.picasso.Picasso;
 import com.stg.app.events.EventProducers;
 import com.stg.app.events.Events;
 import com.stg.app.utils.AppLog;
-import com.squareup.picasso.Picasso;
 
 import io.fabric.sdk.android.Fabric;
 import io.fabric.sdk.android.SilentLogger;

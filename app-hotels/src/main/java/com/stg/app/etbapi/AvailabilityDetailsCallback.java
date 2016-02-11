@@ -33,7 +33,7 @@ public abstract class AvailabilityDetailsCallback extends RetrofitCallback<Detai
             return;
         }
 
-        if (isDatesRequest && detailsResponse.accommodation.rates == null) {
+        if (isDatesRequest && detailsResponse.record == null) {
             onNoAvailability(detailsResponse);
             AppLog.e(new Throwable("No availability"));
             return;

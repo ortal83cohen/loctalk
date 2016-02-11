@@ -52,20 +52,10 @@ public class HotelSnippetViewHolder {
     public void render(HotelSnippet hotelSnippet) {
         mSnippetTitle.setText(hotelSnippet.getName());
 
-        if (hotelSnippet.getReviewCount() > 0) {
-            mReviewers.setText(mContext.getString(R.string.hotel_reviews, hotelSnippet.getReviewCount()));
-            if (mReviews != null) {
-                mReviews.setText(String.valueOf(hotelSnippet.getReviewScore()));
-            }
-            mTripadvisorBar.setVisibility(View.VISIBLE);
-        } else {
-            mTripadvisorBar.setVisibility(View.GONE);
-
-        }
 
         if (hotelSnippet.getImageUrl() != null) {
             final ImagesPagerAdapter imagesPagerAdapter = new ImagesPagerAdapter(mContext);
-            imagesPagerAdapter.addItems(hotelSnippet.getImagesUrl());
+            imagesPagerAdapter.addItem(hotelSnippet.getImageUrl());
             mSnippetImagePager.setAdapter(imagesPagerAdapter);
             mSnippetImagePager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
                 @Override
@@ -85,63 +75,9 @@ public class HotelSnippetViewHolder {
             });
             mNumberImages.setText(new StringBuilder().append("1/").append(String.valueOf(imagesPagerAdapter.getCount())).toString());
         }
-        if (mFacilities != null) {
-            ArrayList<Integer> facilities = hotelSnippet.getMainFacilities();
 
-            mFacilities.removeAllViews();
-            if (facilities != null) {
-//                mFacilitiesNumber.setText("(" + String.valueOf(facilities.size()) + ")");
-                for (int facility : facilities) {
-                    switch (facility) {
-//                        case 0:// disabled friendly
-//                            addFacilityView(R.drawable.ic_cancellation_policy);
-//                            break;
-                        case 1:// internet
-                            addFacilityView(R.drawable.wifi);
-                            break;
-                        case 2:// parking
-                            addFacilityView(R.drawable.parking);
-                            break;
-                        case 3:// pets allowed
-                            addFacilityView(R.drawable.pets);
-                            break;
-//                        case 4:// child mDiscount (only shown in certain cases)
-//                            addFacilityView(R.drawable.ic_child);
-//                            break;
-                        case 5:// swimming pool
-                            addFacilityView(R.drawable.swimming_pool);
-                            break;
-//                        case 6:// air conditioning
-//                            addFacilityView(R.drawable.ic_cancellation_policy);
-//                            break;
-//                        case 7:// fitness center
-//                            addFacilityView(R.drawable.ic_cancellation_policy);
-//                            break;
-//                        case 8:// non-smoking
-//                            addFacilityView(R.drawable.ic_cancellation_policy);
-//                            break;
-
-                    }
-
-                }
-
-            }
-
-            if (mFacilities.getChildCount() == 0) {
-                mFacilitiesBar.setVisibility(View.GONE);
-            } else {
-                mFacilitiesBar.setVisibility(View.VISIBLE);
-            }
-        }
 
     }
 
 
-    private void addFacilityView(@DrawableRes int iconRes) {
-        ImageView view = (ImageView) mInflater.inflate(R.layout.hoteldetail_facility, mFacilities, false);
-        view.setMaxHeight(16);
-        view.setMaxWidth(16);
-        view.setImageDrawable(mContext.getResources().getDrawable(iconRes));
-        mFacilities.addView(view);
-    }
 }

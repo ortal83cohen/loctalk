@@ -6,7 +6,6 @@ import com.stg.app.App;
 import com.stg.app.activity.BaseActivity;
 import com.stg.app.model.HotelListRequest;
 import com.stg.app.preferences.UserPreferences;
-import com.stg.app.utils.PriceRender;
 
 /**
  * @author ortal
@@ -22,10 +21,6 @@ public abstract class BaseFragment extends Fragment {
         return getUserPrefs().getCurrencyCode();
     }
 
-    public PriceRender getPriceRender() {
-        return ((BaseActivity) getActivity()).getPriceRender();
-    }
-
     public HotelListRequest getHotelsRequest() {
         return ((BaseActivity) getActivity()).getHotelsRequest();
     }
@@ -33,7 +28,5 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
-//        RefWatcher refWatcher = HotelsApplication.get(getActivity()).getRefWatcher();
-//        refWatcher.watch(this);
     }
 }

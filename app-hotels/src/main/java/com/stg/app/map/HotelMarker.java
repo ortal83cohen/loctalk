@@ -9,7 +9,7 @@ import android.graphics.Rect;
 import android.support.annotation.DrawableRes;
 import android.support.v4.util.LruCache;
 
-import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.Record;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;
@@ -57,20 +57,19 @@ public class HotelMarker {
         };
     }
 
-    public MarkerOptions create(int pos, Accommodation acc, int status) {
+    public MarkerOptions create(int pos, Record record, int status) {
 
         String currencyCode = mUserPrefs.getCurrencyCode();
 
-        int price = (int) mContext.getPriceRender().price(acc, currencyCode);// show price on map without decimal
 
 
-        Bitmap bitmap = drawTextToBitmap(mContext.getPriceRender().render(price), status);
+        Bitmap bitmap = drawTextToBitmap("22222", status);
 
 
         BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap(bitmap);
 
         return new MarkerOptions()
-                .position(new LatLng(acc.location.lat, acc.location.lon))
+                .position(new LatLng(record.lat, record.lon))
                 .title(String.valueOf(pos))
                 .icon(icon);
     }

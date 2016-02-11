@@ -8,9 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.Record;
 import com.stg.app.R;
-import com.stg.app.adapter.HotelViewHolder;
+import com.stg.app.adapter.RecordViewHolder;
 import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.model.HotelListRequest;
 
@@ -24,9 +24,9 @@ public class HotelMapSummaryFragment extends BaseFragment {
 
     private static final String EXTRA_SNIPPET = "snippet";
     private HotelSnippet mHotelSnippet;
-    private HotelViewHolder.Listener mListener;
+    private RecordViewHolder.Listener mListener;
 
-    public static HotelMapSummaryFragment newInstance(Accommodation acc) {
+    public static HotelMapSummaryFragment newInstance(Record acc) {
         HotelMapSummaryFragment fragment = new HotelMapSummaryFragment();
         Bundle args = new Bundle();
         args.putParcelable(EXTRA_SNIPPET, new HotelSnippet(acc, 0, -1));
@@ -45,9 +45,9 @@ public class HotelMapSummaryFragment extends BaseFragment {
         int pictureWidth = r.getDimensionPixelSize(R.dimen.listview_image_width);
         int pictureHeight = r.getDimensionPixelSize(R.dimen.listview_image_height);
 
-        HotelViewHolder hotelViewHolder = new HotelViewHolder(view, getActivity(), pictureWidth, pictureHeight, getPriceRender(), mListener);
+        RecordViewHolder recordViewHolder = new RecordViewHolder(view, getActivity(), pictureWidth, pictureHeight, mListener);
         HotelListRequest request = getHotelsRequest();
-        hotelViewHolder.assignItem(mHotelSnippet.getAccommodation(), request.getNumberOfRooms(), mHotelSnippet.getPosition());
+        recordViewHolder.assignItem(mHotelSnippet.getAccommodation(), request.getNumberOfRooms(), mHotelSnippet.getPosition());
         return view;
     }
 
@@ -56,7 +56,7 @@ public class HotelMapSummaryFragment extends BaseFragment {
         super.onAttach(context);
 
         try {
-            mListener = (HotelViewHolder.Listener) context;
+            mListener = (RecordViewHolder.Listener) context;
         } catch (ClassCastException e) {
             throw new ClassCastException(context.toString()
                     + " must implement HotelMapSummaryFragment.Listener");

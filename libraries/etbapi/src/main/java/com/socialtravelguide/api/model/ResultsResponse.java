@@ -8,5 +8,5 @@ import java.util.List;
  */
 public class ResultsResponse {
 
-//    public List<Accommodation> accommodations;
+    public List<Record> records;
 }

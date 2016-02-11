@@ -22,28 +22,18 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Transformation;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.TextView;
 
-import com.socialtravelguide.api.EtbApi;
-import com.socialtravelguide.api.model.Accommodation;
 import com.socialtravelguide.api.model.DetailsResponse;
 import com.socialtravelguide.api.utils.RequestUtils;
-import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.activity.HotelDetailsActivity;
-import com.stg.app.adapter.RoomViewHolder;
-import com.stg.app.analytics.AnalyticsCalls;
 import com.stg.app.etbapi.AvailabilityDetailsCallback;
 import com.stg.app.events.Events;
 import com.stg.app.events.HotelDetailsResultsEvent;
 import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.hoteldetails.HotelSnippetViewHolder;
 import com.stg.app.model.HotelListRequest;
-import com.stg.app.model.Location;
-import com.stg.app.model.OrderItem;
-import com.stg.app.provider.LikedHotels;
-import com.stg.app.utils.PriceRender;
-import com.google.android.gms.maps.CameraUpdateFactory;
+
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -54,7 +44,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.squareup.okhttp.ResponseBody;
-import com.squareup.otto.Subscribe;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -63,7 +52,7 @@ import static com.google.android.gms.maps.GoogleMap.MAP_TYPE_NORMAL;
 import static com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 
 
-public class HotelSummaryFragment extends BaseFragment implements View.OnClickListener, OnMapReadyCallback, OnMapClickListener, OnMarkerClickListener, RoomViewHolder.BookNowListener {
+public class HotelSummaryFragment extends BaseFragment implements View.OnClickListener, OnMapReadyCallback, OnMapClickListener, OnMarkerClickListener {
     private static final int IMAGE_STATE_EXPANDED = 1;
     private static final int IMAGE_STATE_NORMAL = 2;
 
@@ -82,7 +71,6 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
     android.support.v4.view.ViewPager mImagePager;
     boolean mIsImageExpended = false;
     private int mImageState = IMAGE_STATE_NORMAL;
-    private Accommodation.Rate mSelectedRate;
     private int mRateId;
     private HotelSnippet mHotelSnippet;
     private HotelSnippet mHotelSnippetDetails;
@@ -111,7 +99,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
         }
 
         private void notifyResponse(DetailsResponse detailsResponse, int rateId) {
-            mHotelSnippetDetails = new HotelSnippet(detailsResponse.accommodation, rateId);
+            mHotelSnippetDetails = new HotelSnippet(detailsResponse.record, rateId);
             setDetailsResponse(mHotelSnippetDetails);
 //            Events.post(new HotelDetailsResultsEvent(mHotelSnippetDetails));
         }
@@ -219,29 +207,14 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.clear();
-        boolean isLiked = LikedHotels.isLiked(mHotelSnippet.geId(), getActivity());
-        inflater.inflate(R.menu.menu_hotel_summary, menu);
-
-        if (isLiked) {
-            menu.findItem(R.id.menu_like).setIcon(R.drawable.btn_favorite_selected);
-        } else {
-            menu.findItem(R.id.menu_like).setIcon(R.drawable.btn_favorite);
-        }
+        menu.findItem(R.id.menu_like);
         super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_like:
-                boolean isLiked = LikedHotels.isLiked(mHotelSnippet.geId(), getActivity());
-                if (isLiked) {
-                    LikedHotels.delete(mHotelSnippet.geId(), getActivity());
-                } else {
-                    LikedHotels.insert(mHotelSnippet.geId(), mHotelSnippet.getCity(), mHotelSnippet.getCountry(), getActivity());
-                }
-                break;
+
 
         }
         getActivity().invalidateOptionsMenu();
@@ -258,59 +231,50 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
     }
 
     private void loadHotel() {
-        if (mHotelSnippetDetails == null || !mHotelSnippetDetails.hasRates()) {
-            EtbApi etb = App.provide(getActivity()).etbApi();
-            mResultsCallback.setIsDatesRequest(false);
-            etb.details(mHotelSnippet.geId(), mRequest).enqueue(mResultsCallback);
+        if (mHotelSnippetDetails == null ) {
+//            EtbApi etb = App.provide(getActivity()).etbApi();
+//            mResultsCallback.setIsDatesRequest(false);
+//            etb.details(mHotelSnippet.geId(), mRequest).enqueue(mResultsCallback);
         } else {
             Events.post(new HotelDetailsResultsEvent(mHotelSnippetDetails));
         }
     }
 
-    @Subscribe
-    public void onHotelDetailsResultsEvent(HotelDetailsResultsEvent event) {
-
-        if (getActivity() == null) {
-            return;
-        }
-        mRoomView.removeAllViews();
-        View view = null;
-        if (event.isError()) {
-            view = getNoAvailabilityView();
-            setMoreRoomsButtonVisibility(false);
-        } else {
-            HotelSnippet hotelSnippetDetails = event.getHotelDetails();
-            if (hotelSnippetDetails.hasRates()) {
-                if (hotelSnippetDetails.getAccommodation().rates.size() > 1) {
-                    setMoreRoomsButtonVisibility(true);
-                }
-                mSelectedRate = findCheapestRoom(mHotelSnippetDetails.getAccommodation());
-                view = getSelectedRoomView(mSelectedRate);
-            } else if (false) {
-                view = getNoAvailabilityView();
-                setMoreRoomsButtonVisibility(false);
-            } else {
-                setMoreRoomsButtonVisibility(false);
-            }
-        }
-        mRoomView.addView(view);
-        AnalyticsCalls.get().trackHotelDetails(mRequest, mHotelSnippet, mSelectedRate, getCurrencyCode());
-    }
+//    @Subscribe
+//    public void onHotelDetailsResultsEvent(HotelDetailsResultsEvent event) {
+//
+//        if (getActivity() == null) {
+//            return;
+//        }
+//        mRoomView.removeAllViews();
+//        View view = null;
+//        if (event.isError()) {
+//            view = getNoAvailabilityView();
+//            setMoreRoomsButtonVisibility(false);
+//        } else {
+//            HotelSnippet hotelSnippetDetails = event.getHotelDetails();
+//            if (hotelSnippetDetails.hasRates()) {
+//                if (hotelSnippetDetails.getAccommodation().rates.size() > 1) {
+//                    setMoreRoomsButtonVisibility(true);
+//                }
+//                mSelectedRate = findCheapestRoom(mHotelSnippetDetails.getAccommodation());
+//                view = getSelectedRoomView(mSelectedRate);
+//            } else if (false) {
+//                view = getNoAvailabilityView();
+//                setMoreRoomsButtonVisibility(false);
+//            } else {
+//                setMoreRoomsButtonVisibility(false);
+//            }
+//        }
+//        mRoomView.addView(view);
+//        AnalyticsCalls.get().trackHotelDetails(mRequest, mHotelSnippet, mSelectedRate, getCurrencyCode());
+//    }
 
     private void setMoreRoomsButtonVisibility(boolean visible) {
         mMoreRoomsButtonVisible = visible;
         mMoreRoomsButton.setVisibility(visible ? View.VISIBLE : View.GONE);
     }
 
-    private View getSelectedRoomView(Accommodation.Rate cheapestRate) {
-        final LayoutInflater inflater = LayoutInflater.from(getActivity());
-        View view = inflater.inflate(R.layout.fragment_hoteldetails_room, mRoomView, false);
-
-        RoomViewHolder vh = new RoomViewHolder(view, getPriceRender(), getActivity(), this);
-        vh.assignItem(cheapestRate, mRequest.getNumberOfRooms());
-
-        return view;
-    }
 
 
 
@@ -323,40 +287,26 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
     }
 
 
-    private Accommodation.Rate findCheapestRoom(Accommodation accommodation) {
-        String currencyCode = getCurrencyCode();
-        PriceRender priceRender = getPriceRender();
-        Accommodation.Rate cheapestRate = null;
-        for (Accommodation.Rate accRate : accommodation.rates) {
-            if (cheapestRate == null || priceRender.price(accRate, currencyCode) < priceRender.price(cheapestRate, currencyCode)) {
-                cheapestRate = accRate;
-            }
-            if (mRateId == accRate.rateId) {
-                cheapestRate = accRate;
-                break;
-            }
-        }
-        return cheapestRate;
-    }
+
 
 
     @Override
     public void onClick(View v) {
         if (mHotelSnippetDetails != null) {
             int viewId = v.getId();
-            if (viewId == R.id.book_button) {
-                if (mHotelSnippetDetails.hasRates()) {
-
-                }
-            } else if (viewId == R.id.facilities_box) {
-                showFacilities(mHotelSnippetDetails);
-            } else if (viewId == R.id.reviews_box) {
-                showReviews(mHotelSnippetDetails);
-            } else if (viewId == R.id.available_rooms_button) {
-                if (mHotelSnippetDetails.hasRates()) {
-
-                }
-            }
+//            if (viewId == R.id.book_button) {
+//                if (mHotelSnippetDetails.hasRates()) {
+//
+//                }
+//            } else if (viewId == R.id.facilities_box) {
+//                showFacilities(mHotelSnippetDetails);
+//            } else if (viewId == R.id.reviews_box) {
+//                showReviews(mHotelSnippetDetails);
+//            } else if (viewId == R.id.available_rooms_button) {
+//                if (mHotelSnippetDetails.hasRates()) {
+//
+//                }
+//            }
         }
     }
 
@@ -418,12 +368,12 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
     public void onMapReady(GoogleMap googleMap) {
         BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.map_pin_selected));
         MarkerOptions options = new MarkerOptions()
-                .position(new LatLng(mHotelSnippet.getLocation().lat, mHotelSnippet.getLocation().lon))
+//                .position(new LatLng(mHotelSnippet.getLocation().lat, mHotelSnippet.getLocation().lon))
                 .icon(icon);
 
         googleMap.addMarker(options);
 
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(mHotelSnippet.getLocation().lat + 0.005, mHotelSnippet.getLocation().lon), 12));
+//        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(mHotelSnippet.getLocation().lat + 0.005, mHotelSnippet.getLocation().lon), 12));
 
         googleMap.setMapType(MAP_TYPE_NORMAL);
 
@@ -501,10 +451,6 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
         loadHotel();
     }
 
-    @Override
-    public void onBookNowClicked(Accommodation.Rate mRate) {
-
-    }
 
     class TapGestureListener extends GestureDetector.SimpleOnGestureListener {
         @Override

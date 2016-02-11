@@ -3,12 +3,10 @@ package com.stg.app.analytics;
 import android.app.Activity;
 import android.content.Context;
 
-import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.model.HotelRequest;
-import com.socialtravelguide.api.model.OrderResponse;
 import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.hoteldetails.HotelSnippet;
-import com.stg.app.model.OrderItem;
 
 
 /**
@@ -16,7 +14,7 @@ import com.stg.app.model.OrderItem;
  * @date 2016-01-04
  */
 public class AnalyticsCalls {
-    private static Omniture omniture = null;
+
     private static GoogleAnalyticsCalls googleAnalyticsCalls = null;
 
     private static AnalyticsCalls mInstance = null;
@@ -30,15 +28,10 @@ public class AnalyticsCalls {
 
 
     public void register(Context applicationContext) {
-//        omniture = new Omniture();
+
 //        googleAnalyticsCalls = new GoogleAnalyticsCalls();
 //
-//        omniture.register(applicationContext);
 //        googleAnalyticsCalls.register(applicationContext);
-    }
-
-    public void transaction(OrderResponse orderResponse) {
-        //     googleAnalyticsCalls.transaction(orderResponse);
     }
 
 
@@ -61,35 +54,18 @@ public class AnalyticsCalls {
 //        googleAnalyticsCalls.trackLanding();
     }
 
-    public void trackFilterPage() {
-//        omniture.trackFilterPage();
-//        googleAnalyticsCalls.trackFilterPage();
-    }
 
     public void trackBookingFormPayment() {
 //        omniture.trackBookingFormPayment();
 //        googleAnalyticsCalls.trackBookingFormPayment();
     }
 
-    public void trackHotelRooms(HotelRequest hotelRequest) {
-//        omniture.trackHotelRooms(hotelRequest);
-//        googleAnalyticsCalls.trackHotelRooms(hotelRequest);
-    }
 
-    public void trackHotelReviews(HotelRequest hotelRequest) {
-//        omniture.trackHotelReviews(hotelRequest);
-//        googleAnalyticsCalls.trackHotelReviews(hotelRequest);
-    }
-
-    public void trackHotelDetails(HotelRequest request, HotelSnippet hotelSnippet, Accommodation.Rate rate, String currencyCode) {
+    public void trackHotelDetails(HotelRequest request, HotelSnippet hotelSnippet, Record record, String currencyCode) {
 //        omniture.trackHotelDetails(request, hotelSnippet, rate, currencyCode);
 //        googleAnalyticsCalls.trackHotelDetails(request, hotelSnippet, rate, currencyCode);
     }
 
-    public void trackBookingFormAddress() {
-//        omniture.trackBookingFormAddress();
-//        googleAnalyticsCalls.trackBookingFormAddress();
-    }
 
     public void pauseCollectingLifecycleData() {
 //        omniture.pauseCollectingLifecycleData();
@@ -103,17 +79,5 @@ public class AnalyticsCalls {
 //        googleAnalyticsCalls.collectLifecycleData(activity);
     }
 
-    public void trackBookingSummary(HotelRequest request, HotelSnippet hotelSnippet, OrderItem orderItem) {
-//        omniture.trackBookingSummary(request, hotelSnippet, orderItem);
-//        googleAnalyticsCalls.trackBookingSummary(request, hotelSnippet, orderItem);
-    }
 
-    public void trackBookingConfirmation() {
-//        omniture.trackBookingConfirmation();
-//        googleAnalyticsCalls.trackBookingConfirmation();
-    }
-
-//    public void event(String categoryId,String actionId,String labelId){
-//        googleAnalyticsCalls.event( categoryId, actionId, labelId);
-//    }
 }

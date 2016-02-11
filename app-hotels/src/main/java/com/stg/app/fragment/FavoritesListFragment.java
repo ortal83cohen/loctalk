@@ -27,7 +27,7 @@ import com.stg.app.HotelsApplication;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;
 import com.stg.app.adapter.FavoritesHotelListAdapter;
-import com.stg.app.adapter.HotelViewHolder;
+import com.stg.app.adapter.RecordViewHolder;
 import com.stg.app.etbapi.RetrofitCallback;
 import com.stg.app.events.Events;
 import com.stg.app.events.SearchResultsEvent;
@@ -76,7 +76,7 @@ public class FavoritesListFragment extends BaseFragment {
     private HotelListRequest mHotelsRequest;
     private String mCity;
     private String mCountry;
-    private HotelViewHolder.Listener mListener;
+    private RecordViewHolder.Listener mListener;
 
 
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
@@ -92,17 +92,17 @@ public class FavoritesListFragment extends BaseFragment {
             if (mRecyclerView == null) {
                 return;
             }
-//            if (apiResponse.accommodations == null || apiResponse.accommodations.isEmpty()) {
+//            if (apiResponse.recordses == null || apiResponse.recordses.isEmpty()) {
 //                mNoResult.setVisibility(View.VISIBLE);
 //            }
-//            if (apiResponse.accommodations == null || apiResponse.accommodations.isEmpty() || apiResponse.accommodations.size() != EtbApi.LIMIT) {
+//            if (apiResponse.recordses == null || apiResponse.recordses.isEmpty() || apiResponse.recordses.size() != EtbApi.LIMIT) {
 //                mRecyclerView.setHasMoreData(false);
 //            }
 //            // Fragment destroyed
 //            if (mAdapter == null) {
 //                return;
 //            }
-//            mAdapter.addHotels(apiResponse.accommodations, false);
+//            mAdapter.addHotels(apiResponse.recordses, false);
 //            Events.post(new SearchResultsEvent(apiResponse.meta.totalNr));
         }
 
@@ -158,10 +158,10 @@ public class FavoritesListFragment extends BaseFragment {
 
         mResultsCallback.attach(context);
         try {
-            mListener = (HotelViewHolder.Listener) context;
+            mListener = (RecordViewHolder.Listener) context;
         } catch (ClassCastException e) {
             throw new ClassCastException(context.toString()
-                    + " must implement HotelViewHolder.Listener");
+                    + " must implement RecordViewHolder.Listener");
         }
     }
 
@@ -268,7 +268,7 @@ public class FavoritesListFragment extends BaseFragment {
         if (mAdapter != null) {
             mAdapter.clear();
             mRecyclerView.setHasMoreData(true);
-            AppLog.e("mEtbApi.records");
+            AppLog.e("mEtbApi.record");
             loadSearchResults(0);
         }
     }

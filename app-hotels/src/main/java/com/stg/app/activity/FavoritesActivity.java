@@ -3,16 +3,15 @@ package com.stg.app.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.model.search.Type;
 import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.App;
 import com.stg.app.R;
-import com.stg.app.adapter.HotelViewHolder;
+import com.stg.app.adapter.RecordViewHolder;
 import com.stg.app.fragment.FavoritesCitiesFragment;
 import com.stg.app.fragment.FavoritesListFragment;
 import com.stg.app.fragment.HomeFragment;
@@ -27,7 +26,7 @@ import butterknife.ButterKnife;
  * @author ortal
  * @date 2015-06-14
  */
-public class FavoritesActivity extends BaseActivity implements HotelViewHolder.Listener, HomeFragment.Listener {
+public class FavoritesActivity extends BaseActivity implements RecordViewHolder.Listener, HomeFragment.Listener {
 
     private static final String FRAGMENT_FAVORITES_CITIES = "favorites_cities";
     private static final String FRAGMENT_FAVORITES_LIST = "favorites_list";
@@ -122,12 +121,12 @@ public class FavoritesActivity extends BaseActivity implements HotelViewHolder.L
 
 
     @Override
-    public void onHotelClick(Accommodation acc, int position) {
+    public void onRecordClick(Record acc, int position) {
 //        if (getHotelsRequest().isDatesRequest()) {
-        Accommodation.Rate firstRate = acc.getFirstRate();
-        int rateId = firstRate == null ? 0 : firstRate.rateId;
-        final HotelSnippet hotelSnippet = HotelSnippet.from(acc, rateId, position);
-        showHotelDetails(hotelSnippet);
+//        Record firstRate = acc.getFirstRate();
+//        int rateId = firstRate == null ? 0 : firstRate.rateId;
+//        final HotelSnippet hotelSnippet = HotelSnippet.from(acc, rateId, position);
+//        showHotelDetails(hotelSnippet);
 //        } else {
 //            showHome();
 //        }

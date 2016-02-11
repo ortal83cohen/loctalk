@@ -7,7 +7,7 @@ import android.net.Uri;
 import android.support.v4.util.ArrayMap;
 
 import com.socialtravelguide.api.EtbApi;
-import com.socialtravelguide.api.model.Accommodation;
+import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.model.Order;
 import com.socialtravelguide.api.model.OrderResponse;
 import com.socialtravelguide.api.model.ResultsResponse;
@@ -42,17 +42,17 @@ public class RouteActivity extends Activity {
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
-            AppLog.e("RouteActivity - records failure");
+            AppLog.e("RouteActivity - record failure");
             startActivity(HomeActivity.createIntent(RouteActivity.this));
         }
 
         @Override
         protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
-//            if (apiResponse.accommodations == null) {
-//                AppLog.e("RouteActivity - accommodations == null");
+//            if (apiResponse.recordses == null) {
+//                AppLog.e("RouteActivity - recordses == null");
 //                startActivity(HomeActivity.createIntent(RouteActivity.this));
 //            } else {
-//                startHotelSummaryActivity(apiResponse.accommodations.get(0));
+//                startHotelSummaryActivity(apiResponse.recordses.get(0));
 //            }
         }
 
@@ -69,17 +69,17 @@ public class RouteActivity extends Activity {
             ContentValues values = new ContentValues();
             values.put(DbContract.BookingsColumns.ORDER_ID, orderResponse.order.orderId);
             values.put(DbContract.BookingsColumns.REFERENCE, orderResponse.order.orderId);
-            values.put(DbContract.BookingsColumns.CITY, rate.accommodation.summary.city);
-            values.put(DbContract.BookingsColumns.COUNTRY, rate.accommodation.summary.country);
-            values.put(DbContract.BookingsColumns.TOTAL_VALUE, rate.charge.totalChargeable);
-            values.put(DbContract.BookingsColumns.STARS, String.valueOf(Double.valueOf(rate.accommodation.starRating)));
-            values.put(DbContract.BookingsColumns.ROOMS, rate.rateCount);
-            values.put(DbContract.BookingsColumns.RATE_NAME, rate.name);
-            values.put(DbContract.BookingsColumns.IS_CANCELLED, false);
-            if ((rate.accommodation.images.size() > 0)) {
-                values.put(DbContract.BookingsColumns.IMAGE, rate.accommodation.images.get(0));
-            }
-            values.put(DbContract.BookingsColumns.HOTEL_NAME, rate.accommodation.name);
+//            values.put(DbContract.BookingsColumns.CITY, rate.record.summary.city);
+//            values.put(DbContract.BookingsColumns.COUNTRY, rate.record.summary.country);
+//            values.put(DbContract.BookingsColumns.TOTAL_VALUE, rate.charge.totalChargeable);
+//            values.put(DbContract.BookingsColumns.STARS, String.valueOf(Double.valueOf(rate.record.starRating)));
+//            values.put(DbContract.BookingsColumns.ROOMS, rate.rateCount);
+//            values.put(DbContract.BookingsColumns.RATE_NAME, rate.name);
+//            values.put(DbContract.BookingsColumns.IS_CANCELLED, false);
+//            if ((rate.record.images.size() > 0)) {
+//                values.put(DbContract.BookingsColumns.IMAGE, rate.record.images.get(0));
+//            }
+//            values.put(DbContract.BookingsColumns.HOTEL_NAME, rate.record.name);
             values.put(DbContract.BookingsColumns.CURRENCY, rate.charge.currency);
             values.put(DbContract.BookingsColumns.ARRIVAL, rate.checkIn);
             values.put(DbContract.BookingsColumns.DEPARTURE, rate.checkOut);
@@ -139,7 +139,7 @@ public class RouteActivity extends Activity {
                                 case "/index_landing.php":
                                     final HotelListRequest hotelListRequest = App.provide(RouteActivity.this).createHotelsRequest();
                                     hotelListRequest.setType(new Location(params.get("name"), new LatLng(Double.valueOf(params.get("lat")), Double.valueOf(params.get("lon")))));
-                                    startActivity(HotelListActivity.createIntent(hotelListRequest, RouteActivity.this));
+                                    startActivity(RecordListActivity.createIntent(hotelListRequest, RouteActivity.this));
                                     break;
                                 case "/hoteldetails.php":
                                     loadAccommodationDetails(params.get("group_hotel_id"));
@@ -174,7 +174,7 @@ public class RouteActivity extends Activity {
         etbApi.records(request, 0).enqueue(mResultsCallback);
     }
 
-    private void startHotelSummaryActivity(Accommodation acc) {
+    private void startHotelSummaryActivity(Record acc) {
 
     }
 

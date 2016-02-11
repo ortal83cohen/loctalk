@@ -17,23 +17,12 @@
         android:background="@drawable/ripple_button_gray_border_color_white"
         android:orientation="horizontal">
 
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/image"
-                android:layout_width="@dimen/listview_image_width"
-                android:layout_height="@dimen/listview_image_height"
-                android:scaleType="centerCrop"
-                android:src="@color/theme_primary" />
-
-            <ImageView
-                android:id="@+id/heart_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/minimum_default_padding" />
-        </FrameLayout>
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/listview_image_width"
+            android:layout_height="@dimen/listview_image_height"
+            android:scaleType="centerCrop"
+            android:src="@color/theme_primary" />
 
         <FrameLayout
             android:id="@+id/background"
@@ -59,73 +48,36 @@
                     android:gravity="top|left"
                     tools:text="title" />
 
-  <LinearLayout
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content">
-
-      <TextView
-          android:layout_width="wrap_content"
-          android:text="12"
-          android:layout_height="wrap_content" />
-      <ImageView
-          android:layout_width="20dp" android:src="@drawable/stg_thumbs_down"
-          android:layout_height="20dp" />
-      <ImageView
-          android:layout_width="20dp" android:src="@drawable/stg_thumbs_up"
-          android:layout_height="20dp" />
-      <TextView
-          android:layout_width="wrap_content"
-          android:text="42
-          "
-          android:layout_height="wrap_content" />
-  </LinearLayout>
-
-                <TextView
-                    android:id="@+id/price"
-                    style="@style/HotelsAppTheme.TextAppearance.Hotel.Price"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    tools:text="RUB 99,999.99" />
-
-
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/base_rate"
-                        style="@style/HotelsAppTheme.TextAppearance.Hotel.BasePrice"
-                        android:layout_width="0dp"
+                        android:id="@+id/dis_likes"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="right" />
+                        android:text="12" />
 
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/stg_thumbs_down" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/stg_thumbs_up" />
+
+                    <TextView
+                        android:id="@+id/likes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="42
+          " />
                 </LinearLayout>
 
             </LinearLayout>
 
-            <FrameLayout
-                android:id="@+id/triangle"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:layout_gravity="right|bottom"
-                android:orientation="vertical">
-
-
-                <TextView
-                    android:id="@+id/discount"
-                    style="@style/HotelsAppTheme.TextAppearance.Hotel.DiscountPercentage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right|bottom"
-                    android:paddingBottom="4dp"
-                    android:rotation="-45"
-                    tools:text="0" />
-
-            </FrameLayout>
         </FrameLayout>
     </LinearLayout>
 

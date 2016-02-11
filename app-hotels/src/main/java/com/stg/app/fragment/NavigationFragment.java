@@ -87,7 +87,6 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
 
         setupItem(R.id.nav_recent_searches, NavigationDrawer.NAV_RECENT_SEARCH, true);
         setupItem(R.id.nav_favorites, NavigationDrawer.NAV_FAVORITES, true);
-        setupItem(R.id.nav_bookings, NavigationDrawer.NAV_BOOKINGS, true);
         setupItem(R.id.nav_code_scanner, NavigationDrawer.NAV_SCANNER, true);
 //        setupItem(R.id.nav_profile, NavigationDrawer.NAV_PROFILE, loggedIn);
 //        setupItem(R.id.nav_creditcards, NavigationDrawer.NAV_CREDIT_CARD, loggedIn);
@@ -188,12 +187,6 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
     public void onClick(View v) {
         int id = v.getId();
         switch (id) {
-            case R.id.nav_sign_up_button:
-                selectItem(NavigationDrawer.NAV_SIGN_UP);
-                break;
-            case R.id.nav_login_button:
-                selectItem(NavigationDrawer.NAV_LOGIN);
-                break;
             case R.id.nav_recent_searches:
                 selectItem((Integer) v.getTag());
                 break;

@@ -15,7 +15,7 @@ import android.widget.RadioGroup;
 import com.socialtravelguide.api.contract.Sort;
 import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.R;
-import com.stg.app.activity.HotelListActivity;
+import com.stg.app.activity.RecordListActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -118,14 +118,14 @@ public class ResultsSortFragment extends BaseFragment {
             SearchRequest hotelsRequest = getHotelsRequest();
 
             hotelsRequest.setSort(radiuselected.getTag().toString());
-            ((HotelListActivity) getActivity()).refreshList();
-            ((HotelListActivity) getActivity()).remove(this);
+            ((RecordListActivity) getActivity()).refreshList();
+            ((RecordListActivity) getActivity()).remove(this);
         }
     }
 
     @OnClick(R.id.filter_frame)
     public void beck(View view) {
-        ((HotelListActivity) getActivity()).remove(this);
+        ((RecordListActivity) getActivity()).remove(this);
     }
 
     @OnClick(R.id.sort_frame)

@@ -7,24 +7,21 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.view.MenuItem;
 
-import com.socialtravelguide.api.model.Accommodation;
+
 import com.socialtravelguide.api.model.HotelRequest;
-import com.socialtravelguide.api.model.SearchRequest;
 import com.socialtravelguide.api.model.search.Type;
 import com.socialtravelguide.api.utils.RequestUtils;
-import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.fragment.HomeFragment;
 import com.stg.app.fragment.HotelSummaryFragment;
-import com.stg.app.fragment.PriceBreakdownFragment;
+
 import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.model.HotelListRequest;
 import com.stg.app.model.Location;
-import com.stg.app.utils.PriceRender;
+
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.StreetViewPanorama;
 import com.google.android.gms.maps.StreetViewPanoramaFragment;
-import com.google.android.gms.maps.model.LatLng;
 
 import butterknife.ButterKnife;
 
@@ -32,7 +29,7 @@ import butterknife.ButterKnife;
  * @author ortal
  * @date 2015-04-19
  */
-public class HotelSummaryActivity extends BaseActivity implements PriceBreakdownFragment.Listener, HomeFragment.Listener {
+public class HotelSummaryActivity extends BaseActivity implements  HomeFragment.Listener {
     public static final String FRAGMENT_DATEPICKER = "fragment_datepicker";
     public static final String FRAGMENT_HOTEL_DETAILS = "fragment_hotel_details";
     private static final String FRAGMENT_HOME = "fragment_datepicker";
@@ -77,7 +74,7 @@ public class HotelSummaryActivity extends BaseActivity implements PriceBreakdown
             mHotelSnippet = getIntent().getParcelableExtra(EXTRA_SNIPPET);
             mIsNoDates = getIntent().getBooleanExtra(EXTRA_NO_DATES, false);
         }
-        mRateId = mHotelSnippet == null ? 0 : mHotelSnippet.getSelectedRateId();
+//        mRateId = mHotelSnippet == null ? 0 : mHotelSnippet.getSelectedRateId();
 
         createStreetView();
 
@@ -115,11 +112,6 @@ public class HotelSummaryActivity extends BaseActivity implements PriceBreakdown
     }
 
 
-    public void showRoomsList(int hotelId) {
-        startActivity(RoomListActivity.createIntent(hotelId, getHotelsRequest(), this));
-
-    }
-
     @Override
     public void onBackPressed() {
         if (isTaskRoot()) {
@@ -156,29 +148,12 @@ public class HotelSummaryActivity extends BaseActivity implements PriceBreakdown
     public void showStreetView() {
         if (mStreetViewFragment.isHidden()) {
             getFragmentManager().beginTransaction().show(mStreetViewFragment).commit();
-            mStreetView.setPosition(new LatLng(mHotelSnippet.getLocation().lat, mHotelSnippet.getLocation().lon));
+//            mStreetView.setPosition(new LatLng(mHotelSnippet.getLocation().lat, mHotelSnippet.getLocation().lon));
         } else {
             getFragmentManager().beginTransaction().hide(mStreetViewFragment).commit();
         }
     }
 
-    @Override
-    public void onPriceBreakdownClick(Accommodation.Rate rate) {
-        SearchRequest request = getHotelsRequest();
-        PriceRender priceRender = getPriceRender();
-        String currencyCode = App.provide(this).getUserPrefs().getCurrencyCode();
-
-        getSupportFragmentManager().beginTransaction()
-                .setCustomAnimations(R.anim.raise, R.anim.shrink)
-                .replace(R.id.fragment_overlay_container,
-                        PriceBreakdownFragment.newInstance(request.getNumberOfRooms(), rate, currencyCode, priceRender),
-                        FRAGMENT_PRICE_BREAKDOWN)
-                .commit();
-    }
-
-    public void onDetailsResponse(HotelSnippet hotelDetailsSnippet) {
-        mHotelSnippetDetails = hotelDetailsSnippet;
-    }
 
 
     @Override
@@ -202,7 +177,7 @@ public class HotelSummaryActivity extends BaseActivity implements PriceBreakdown
         searchRequest.setType(location);
         RequestUtils.apply(searchRequest);
 
-        Intent myIntent = HotelListActivity.createIntent(searchRequest, this);
+        Intent myIntent = RecordListActivity.createIntent(searchRequest, this);
         startActivity(myIntent);
     }
 }

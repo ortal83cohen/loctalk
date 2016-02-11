@@ -166,8 +166,8 @@ public class CacheInterceptorTest {
 
     @Test
     public void testAccomodationRequestCache() throws IOException, InterruptedException {
-        MockResponse mockResponseAcc1 = getMockResponse("Accommodation #1 body", "no-cache");
-        MockResponse mockResponseAcc2 = getMockResponse("Accommodation #2 body", "no-cache");
+        MockResponse mockResponseAcc1 = getMockResponse("Record #1 body", "no-cache");
+        MockResponse mockResponseAcc2 = getMockResponse("Record #2 body", "no-cache");
 
         server.enqueue(mockResponseAcc1);
         server.enqueue(mockResponseAcc2);
@@ -190,19 +190,19 @@ public class CacheInterceptorTest {
         // 1. Initial request stored for 2 seconds
         responseInterceptor.setCacheAge(5);
         Response responseAcc = client.newCall(accommodationRequest).execute();
-        assertEquals("Accommodation #1 body", readBody(responseAcc.body()));
+        assertEquals("Record #1 body", readBody(responseAcc.body()));
         assertEquals(1, cache.getWriteSuccessCount());
         assertEquals(0, cache.getWriteAbortCount());
 
         // 2. Network connected - fetch from server
         Response responseConnected = client.newCall(accommodationRequest).execute();
-        assertEquals("Accommodation #2 body", readBody(responseConnected.body()));
+        assertEquals("Record #2 body", readBody(responseConnected.body()));
         assertEquals(2, cache.getWriteSuccessCount());
         assertEquals(0, cache.getHitCount());
 
         when(networkUtilities.isConnected()).thenReturn(false);
         Response responseDisconnected = client.newCall(accommodationRequest).execute();
-        assertEquals("Accommodation #2 body", readBody(responseDisconnected.body()));
+        assertEquals("Record #2 body", readBody(responseDisconnected.body()));
         assertEquals(1, cache.getHitCount());
     }
 

@@ -15,7 +15,7 @@ public class Order {
 
     public static class Rate {
         public int accommodationId;
-        public Accommodation accommodation;
+        public Record record;
         public int rateId;
         public String statusCode;
         public String confirmationId;
