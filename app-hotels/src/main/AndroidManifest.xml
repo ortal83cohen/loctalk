@@ -89,7 +89,7 @@
             android:label="@string/favorites"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.HotelSummaryActivity"
+            android:name=".activity.RecordDetailsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/HotelsAppTheme.TransparentToolbar" />
 

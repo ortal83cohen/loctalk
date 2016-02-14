@@ -97,12 +97,11 @@
                         android:orientation="vertical">
 
 
-<Button
-    android:layout_margin="@dimen/maps_marker_padding"
-    android:text="Play"
-    android:layout_width="match_parent"
-    android:layout_height="68dp" />" />
-
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="68dp"
+                            android:layout_margin="@dimen/maps_marker_padding"
+                            android:text="Play" />" />
 
 
                         <android.support.v7.widget.CardView

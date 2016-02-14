@@ -36,8 +36,9 @@ public class Record implements Parcelable {
         title = in.readString();
         description = in.readString();
         locationName = in.readString();
-        lat = Double.valueOf(in.readString());
-        lon = Double.valueOf(in.readString());
+        String tmp = in.readString();
+        lat = in.readString()!=null?Double.valueOf(in.readString()):0;
+        lon =in.readString()!=null? Double.valueOf(in.readString()):0;
         imageUrl = in.readString();
         likes = in.readInt();
         unLikes = in.readInt();

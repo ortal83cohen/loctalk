@@ -203,7 +203,7 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
     @Override
     public void onRecordClick(Record record, int position) {
-        startActivity(HotelSummaryActivity.createIntent(record, getHotelsRequest(), this));
+        startActivity(RecordDetailsActivity.createIntent(record, getHotelsRequest(), this));
     }
 
     @Override

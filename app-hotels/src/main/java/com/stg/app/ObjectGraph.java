@@ -17,7 +17,6 @@ import com.stg.app.etbapi.CacheRequestInterceptor;
 import com.stg.app.etbapi.CacheResponseInterceptor;
 import com.stg.app.etbapi.RetrofitLogger;
 import com.stg.app.etbapi.UserAgentInterceptor;
-import com.stg.app.member.MemberAdapter;
 import com.stg.app.member.MemberStorage;
 import com.stg.app.model.HotelListRequest;
 import com.stg.app.preferences.UserPreferences;

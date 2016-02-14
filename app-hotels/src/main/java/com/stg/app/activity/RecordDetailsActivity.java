@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.view.MenuItem;
 
-
+import com.google.android.gms.maps.model.LatLng;
 import com.socialtravelguide.api.model.HotelRequest;
 import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.model.search.Type;
 import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.R;
 import com.stg.app.fragment.HomeFragment;
-import com.stg.app.fragment.HotelSummaryFragment;
+import com.stg.app.fragment.RecordDetailsFragment;
 import com.stg.app.model.HotelListRequest;
 import com.stg.app.model.Location;
 
@@ -28,30 +28,21 @@ import butterknife.ButterKnife;
  * @author ortal
  * @date 2015-04-19
  */
-public class HotelSummaryActivity extends BaseActivity implements  HomeFragment.Listener {
-    public static final String FRAGMENT_DATEPICKER = "fragment_datepicker";
+public class RecordDetailsActivity extends BaseActivity implements  HomeFragment.Listener {
     public static final String FRAGMENT_HOTEL_DETAILS = "fragment_hotel_details";
     private static final String FRAGMENT_HOME = "fragment_datepicker";
-    private static final String EXTRA_DATA = "snippet";
-    private static final String EXTRA_NO_DATES = "no_dates";
-    private static final String FRAGMENT_PRICE_BREAKDOWN = "price_breakdown";
+    private static final String EXTRA_DATA = "data";
     private Record mRecord;
     private StreetViewPanorama mStreetView;
     private android.app.Fragment mStreetViewFragment;
 
 
     public static Intent createIntent(Record record, HotelListRequest request, Context context) {
-        Intent intent = new Intent(context, HotelSummaryActivity.class);
+        Intent intent = new Intent(context, RecordDetailsActivity.class);
 
         intent.putExtra(EXTRA_DATA, record);
         intent.putExtra(EXTRA_REQUEST, request);
 
-        return intent;
-    }
-
-    public static Intent createIntent(Record record, HotelListRequest request, boolean noDates, Context context) {
-        Intent intent = createIntent(record, request, context);
-        intent.putExtra(EXTRA_NO_DATES, noDates);
         return intent;
     }
 
@@ -68,18 +59,17 @@ public class HotelSummaryActivity extends BaseActivity implements  HomeFragment.
         } else {
             mRecord = getIntent().getParcelableExtra(EXTRA_DATA);
         }
-//        mRateId = mRecord == null ? 0 : mRecord.getSelectedRateId();
 
         createStreetView();
 
         FragmentManager fm = getSupportFragmentManager();
-        HotelSummaryFragment hotelSummaryFragment = (HotelSummaryFragment) fm.findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
-        if (hotelSummaryFragment == null) {
-            hotelSummaryFragment = HotelSummaryFragment.newInstance( getHotelsRequest(), mRecord);
+        RecordDetailsFragment recordDetailsFragment = (RecordDetailsFragment) fm.findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
+        if (recordDetailsFragment == null) {
+            recordDetailsFragment = RecordDetailsFragment.newInstance( getHotelsRequest(), mRecord);
             fm.beginTransaction()
                     .setCustomAnimations(R.anim.raise, R.anim.shrink)
                     .replace(R.id.fragment_container,
-                            hotelSummaryFragment,
+                            recordDetailsFragment,
                             FRAGMENT_HOTEL_DETAILS)
                     .commit();
         }
@@ -119,7 +109,7 @@ public class HotelSummaryActivity extends BaseActivity implements  HomeFragment.
             getFragmentManager().beginTransaction().hide(mStreetViewFragment).commit();
         } else {
             FragmentManager fm = getSupportFragmentManager();
-            HotelSummaryFragment fragmentDetails = (HotelSummaryFragment) fm.findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
+            RecordDetailsFragment fragmentDetails = (RecordDetailsFragment) fm.findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
             if (fragmentDetails != null) {
                 if (fragmentDetails.isImageExpanded()) {
                     fragmentDetails.collapseImage();
@@ -141,7 +131,7 @@ public class HotelSummaryActivity extends BaseActivity implements  HomeFragment.
     public void showStreetView() {
         if (mStreetViewFragment.isHidden()) {
             getFragmentManager().beginTransaction().show(mStreetViewFragment).commit();
-//            mStreetView.setPosition(new LatLng(mRecord.getLocation().lat, mRecord.getLocation().lon));
+            mStreetView.setPosition(new LatLng(mRecord.lat, mRecord.lon));
         } else {
             getFragmentManager().beginTransaction().hide(mStreetViewFragment).commit();
         }
@@ -159,9 +149,9 @@ public class HotelSummaryActivity extends BaseActivity implements  HomeFragment.
         remove(getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME));
 
         RequestUtils.apply(getHotelsRequest());
-        HotelSummaryFragment hotelSummaryFragment = (HotelSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
-        if (hotelSummaryFragment != null) {
-            hotelSummaryFragment.checkAvailability(getHotelsRequest());
+        RecordDetailsFragment recordDetailsFragment = (RecordDetailsFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
+        if (recordDetailsFragment != null) {
+            recordDetailsFragment.checkAvailability(getHotelsRequest());
         }
     }
 

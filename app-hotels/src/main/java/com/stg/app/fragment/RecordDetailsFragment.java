@@ -23,11 +23,13 @@ import android.view.animation.Transformation;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.socialtravelguide.api.model.DetailsResponse;
 import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.R;
 import com.stg.app.activity.HotelDetailsActivity;
+import com.stg.app.activity.RecordDetailsActivity;
 import com.stg.app.etbapi.AvailabilityDetailsCallback;
 import com.stg.app.events.Events;
 import com.stg.app.events.HotelDetailsResultsEvent;
@@ -52,7 +54,7 @@ import static com.google.android.gms.maps.GoogleMap.MAP_TYPE_NORMAL;
 import static com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 
 
-public class HotelSummaryFragment extends BaseFragment implements View.OnClickListener, OnMapReadyCallback, OnMapClickListener, OnMarkerClickListener {
+public class RecordDetailsFragment extends BaseFragment implements View.OnClickListener, OnMapReadyCallback, OnMapClickListener, OnMarkerClickListener {
     private static final int IMAGE_STATE_EXPANDED = 1;
     private static final int IMAGE_STATE_NORMAL = 2;
 
@@ -99,8 +101,8 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
         }
     };
 
-    public static HotelSummaryFragment newInstance(HotelListRequest request, Record record) {
-        HotelSummaryFragment fragment = new HotelSummaryFragment();
+    public static RecordDetailsFragment newInstance(HotelListRequest request, Record record) {
+        RecordDetailsFragment fragment = new RecordDetailsFragment();
         Bundle args = new Bundle();
         args.putParcelable("record", record);
         args.putParcelable("request", request);
@@ -136,7 +138,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_hotel_summary, container, false);
+        View view = inflater.inflate(R.layout.fragment_record_details, container, false);
         ButterKnife.bind(this, view);
 
         if (savedInstanceState != null) {
@@ -195,14 +197,16 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.findItem(R.id.menu_like);
+        inflater.inflate(R.menu.menu_hotel_summary, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-
+            case R.id.menu_streetview:
+                ((RecordDetailsActivity) getActivity()).showStreetView();
+                break;
 
         }
         getActivity().invalidateOptionsMenu();
@@ -351,7 +355,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
 
         googleMap.addMarker(options);
 
-//        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(mHotelSnippet.getLocation().lat + 0.005, mHotelSnippet.getLocation().lon), 12));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(mRecord.lat + 0.005, mRecord.lon), 12));
 
         googleMap.setMapType(MAP_TYPE_NORMAL);
 
@@ -401,7 +405,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
     }
 
     public boolean isImageExpanded() {
-        return mImageState == HotelSummaryFragment.IMAGE_STATE_EXPANDED;
+        return mImageState == RecordDetailsFragment.IMAGE_STATE_EXPANDED;
     }
 
     public void collapseImage() {
