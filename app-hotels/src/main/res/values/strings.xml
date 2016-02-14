@@ -1,5 +1,5 @@
 <resources>
-    <string name="hotel_reviews">(%1$d)</string>
+
     <string name="app_name">Social Travel Guide</string>
     <string name="location_chooser_text">Current Location</string>
     <string name="settings">Settings</string>
@@ -8,11 +8,6 @@
         <item quantity="one">We found one match</item>
         <item quantity="other">We found <b>%d</b> matches</item>
     </plurals>
-    <plurals name="reviews_number_text">
-        <item quantity="one">One Review</item>
-        <item quantity="other">%d Reviews</item>
-    </plurals>
-
     <string name="hotel_price_per_night">%1$s per night</string>
     <string name="amsterdam">Amsterdam</string>
     <string name="tripadvisor_partnership">IN PARTNERSHIP WITH TRIPADVISOR</string>
@@ -60,7 +55,6 @@
     </plurals>
     <string name="checkout_caps">CHECK-OUT</string>
     <string name="filter_accommodation_types">Accommodation types</string>
-    <string name="filter_facilities">Facilities</string>
     <string name="filters_title">Filters</string>
     <string name="landmarks_filters_title">Point of interest Filters</string>
     <string name="sort_title">Sort</string>
@@ -187,7 +181,7 @@
     <string name="cancel_reservation">Cancel reservation</string>
     <string name="are_you_sure">Are you sure?</string>
     <string name="details">Details</string>
-    <string name="reviews">Reviews</string>
+
     <string name="important_information_and_conditions">Important information and conditions</string>
     <string name="need_help_with_booking">Need help or do you have any questions regarding your booking?</string>
     <string name="additional_information">Additional information</string>
@@ -211,7 +205,7 @@
     <string name="discount">%d%% Discount</string>
     <string name="reservation_problem">Reservation Problem</string>
     <string name="cps_details">DETAILS</string>
-    <string name="cps_reviews">REVIEWS</string>
+
     <string name="cps_map">MAP</string>
     <string name="paypal_transaction_cancelled">PayPal transaction cancelled</string>
     <string name="reservation_cancelled">Reservation cancelled.</string>
@@ -221,7 +215,7 @@
     <string name="hotel_not_available">We are sorry, the hotel is no longer available</string>
     <string name="you_are_offline">You are offline</string>
     <string name="booking_or_password_not_match">Booking number not found or the password not match</string>
-    <string name="receive_reviews_error">Receive reviews error</string>
+
     <string name="you_logged_out">You logged out</string>
     <string name="no_hotels_in_this_area">No hotels in this area</string>
     <string name="cannot_confirm_token">Cannot confirm token</string>
@@ -286,8 +280,6 @@
     <string name="visa_mastercard">Visa, MasterCard</string>
     <string name="note_this_hotel">Note: this hotel ....</string>
     <string name="services">Services</string>
-    <string name="general_facilities">General Facilities</string>
-    <string name="there_are_no_reviews_currently_available_for_this_property">There are no reviews currently available for this property.</string>
     <string name="or_by_email">Or by email</string>
     <string name="no_previous_bookings_were_found">No previous bookings were found.</string>
     <string name="price_breakdown">Price Breakdown</string>

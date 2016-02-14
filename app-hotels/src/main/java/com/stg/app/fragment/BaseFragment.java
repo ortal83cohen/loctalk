@@ -21,7 +21,7 @@ public abstract class BaseFragment extends Fragment {
         return getUserPrefs().getCurrencyCode();
     }
 
-    public HotelListRequest getHotelsRequest() {
+    public HotelListRequest getRequest() {
         return ((BaseActivity) getActivity()).getHotelsRequest();
     }
 

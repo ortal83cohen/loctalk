@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import com.socialtravelguide.api.model.Record;
 import com.stg.app.R;
 import com.stg.app.adapter.RecordViewHolder;
-import com.stg.app.hoteldetails.HotelSnippet;
+
 import com.stg.app.model.HotelListRequest;
 
 import butterknife.ButterKnife;
@@ -22,14 +22,14 @@ import butterknife.ButterKnife;
  */
 public class HotelMapSummaryFragment extends BaseFragment {
 
-    private static final String EXTRA_SNIPPET = "snippet";
-    private HotelSnippet mHotelSnippet;
+    private static final String EXTRA_DATA = "snippet";
+    private Record mRecord;
     private RecordViewHolder.Listener mListener;
 
-    public static HotelMapSummaryFragment newInstance(Record acc) {
+    public static HotelMapSummaryFragment newInstance(Record record) {
         HotelMapSummaryFragment fragment = new HotelMapSummaryFragment();
         Bundle args = new Bundle();
-        args.putParcelable(EXTRA_SNIPPET, new HotelSnippet(acc, 0, -1));
+        args.putParcelable(EXTRA_DATA,record);
         fragment.setArguments(args);
         return fragment;
     }
@@ -39,15 +39,15 @@ public class HotelMapSummaryFragment extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_map_hotel_summary, container, false);
         ButterKnife.bind(this, view);
 
-        mHotelSnippet = getArguments().getParcelable(EXTRA_SNIPPET);
+        mRecord = getArguments().getParcelable(EXTRA_DATA);
 
         Resources r = getActivity().getResources();
         int pictureWidth = r.getDimensionPixelSize(R.dimen.listview_image_width);
         int pictureHeight = r.getDimensionPixelSize(R.dimen.listview_image_height);
 
         RecordViewHolder recordViewHolder = new RecordViewHolder(view, getActivity(), pictureWidth, pictureHeight, mListener);
-        HotelListRequest request = getHotelsRequest();
-        recordViewHolder.assignItem(mHotelSnippet.getAccommodation(), request.getNumberOfRooms(), mHotelSnippet.getPosition());
+        HotelListRequest request = getRequest();
+        recordViewHolder.assignItem(mRecord,0);
         return view;
     }
 
@@ -71,7 +71,7 @@ public class HotelMapSummaryFragment extends BaseFragment {
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-        outState.putParcelable(EXTRA_SNIPPET, mHotelSnippet);
+        outState.putParcelable(EXTRA_DATA, mRecord);
         super.onSaveInstanceState(outState);
     }
 

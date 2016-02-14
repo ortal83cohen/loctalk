@@ -202,14 +202,8 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
     }
 
     @Override
-    public void onRecordClick(Record acc, int position) {
-//        if (acc.getFirstRate() == null) {
-//            Toast.makeText(getBaseContext(), R.string.hotel_not_available, Toast.LENGTH_LONG).show();
-//            AppLog.e("RecordListActivity: hotel_not_available-" + acc.id);
-//        } else {
-//            final HotelSnippet hotelSnippet = HotelSnippet.from(acc, acc.getFirstRate().rateId, position);
-//            showHotelDetails(hotelSnippet);
-//        }
+    public void onRecordClick(Record record, int position) {
+        startActivity(HotelSummaryActivity.createIntent(record, getHotelsRequest(), this));
     }
 
     @Override

@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.socialtravelguide.api.model.Record;
 import com.stg.app.R;
 import com.stg.app.adapter.ImagesPagerAdapter;
 
@@ -22,7 +23,7 @@ import butterknife.ButterKnife;
  * @author ortal
  * @date 2015-04-28
  */
-public class HotelSnippetViewHolder {
+public class RecordViewHolder {
     private final Context mContext;
     private final LayoutInflater mInflater;
 
@@ -30,32 +31,23 @@ public class HotelSnippetViewHolder {
     ViewPager mSnippetImagePager;
     @Bind(R.id.snippet_title)
     TextView mSnippetTitle;
-    @Bind(R.id.reviewers)
-    TextView mReviewers;
-    @Bind(R.id.reviews)
-    TextView mReviews;
     @Bind(R.id.number_images)
     TextView mNumberImages;
-    @Bind(R.id.tripadvisor_bar_small)
-    View mTripadvisorBar;
-    @Bind(R.id.facilities)
-    LinearLayout mFacilities;
-    @Bind(R.id.facilities_bar)
-    View mFacilitiesBar;
 
-    public HotelSnippetViewHolder(View container, Context context) {
+
+    public RecordViewHolder(View container, Context context) {
         mContext = context;
         ButterKnife.bind(this, container);
         mInflater = LayoutInflater.from(context);
     }
 
-    public void render(HotelSnippet hotelSnippet) {
-        mSnippetTitle.setText(hotelSnippet.getName());
+    public void render(Record record) {
+        mSnippetTitle.setText(record.title);
 
 
-        if (hotelSnippet.getImageUrl() != null) {
+        if (record.imageUrl != null) {
             final ImagesPagerAdapter imagesPagerAdapter = new ImagesPagerAdapter(mContext);
-            imagesPagerAdapter.addItem(hotelSnippet.getImageUrl());
+            imagesPagerAdapter.addItem(record.imageUrl );
             mSnippetImagePager.setAdapter(imagesPagerAdapter);
             mSnippetImagePager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
                 @Override

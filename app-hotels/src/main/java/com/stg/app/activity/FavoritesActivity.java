@@ -15,7 +15,6 @@ import com.stg.app.adapter.RecordViewHolder;
 import com.stg.app.fragment.FavoritesCitiesFragment;
 import com.stg.app.fragment.FavoritesListFragment;
 import com.stg.app.fragment.HomeFragment;
-import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.widget.AppBar;
 import com.google.android.gms.common.api.GoogleApiClient;
 
@@ -122,17 +121,17 @@ public class FavoritesActivity extends BaseActivity implements RecordViewHolder.
 
     @Override
     public void onRecordClick(Record acc, int position) {
-//        if (getHotelsRequest().isDatesRequest()) {
+//        if (getRequest().isDatesRequest()) {
 //        Record firstRate = acc.getFirstRate();
 //        int rateId = firstRate == null ? 0 : firstRate.rateId;
 //        final HotelSnippet hotelSnippet = HotelSnippet.from(acc, rateId, position);
-//        showHotelDetails(hotelSnippet);
+//        showRecordDetails(hotelSnippet);
 //        } else {
 //            showHome();
 //        }
     }
 
-    public void showHotelDetails(HotelSnippet hotelSnippet) {
+    public void showHotelDetails(Record record) {
 
     }
 

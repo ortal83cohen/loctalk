@@ -25,7 +25,7 @@ import com.stg.app.HotelsApplication;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;
 import com.stg.app.activity.RecordListActivity;
-import com.stg.app.adapter.HotelListAdapter;
+import com.stg.app.adapter.RecordListAdapter;
 import com.stg.app.adapter.RecordViewHolder;
 import com.stg.app.drawable.TriangleDrawable;
 import com.stg.app.etbapi.RetrofitCallback;
@@ -65,7 +65,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     Button mModifyPreferences;
     EtbApi mEtbApi;
     private LinearLayoutManager mLayoutManager;
-    private HotelListAdapter mAdapter;
+    private RecordListAdapter mAdapter;
     private Listener mListener;
     private int mNumberRetries = 0;
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
@@ -184,7 +184,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
         mLayoutManager = new LinearLayoutManager(getActivity());
-        mAdapter = new HotelListAdapter((BaseActivity) getActivity(), (RecordViewHolder.Listener) getActivity());
+        mAdapter = new RecordListAdapter((BaseActivity) getActivity(), (RecordViewHolder.Listener) getActivity());
 
         mEtbApi = HotelsApplication.provide(getActivity()).etbApi();
         mRecyclerView.init(mLayoutManager, mAdapter, EtbApi.LIMIT);
@@ -211,7 +211,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     }
 
     private void loadSearchResults(int offset) {
-        SearchRequest hotelsRequest = getHotelsRequest();
+        SearchRequest hotelsRequest = getRequest();
         Events.post(new SearchRequestEvent(hotelsRequest, offset));
         try {
             mEtbApi.records(hotelsRequest, offset).enqueue(mResultsCallback);
@@ -256,7 +256,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
 
     public void refresh() {
         ((RecordListActivity) getActivity()).showLoaderImage();
-        SearchRequest hotelsRequest = getHotelsRequest();
+        SearchRequest hotelsRequest = getRequest();
 
         mLoaderText.setVisibility(View.VISIBLE);
         mNoResult.setVisibility(View.GONE);

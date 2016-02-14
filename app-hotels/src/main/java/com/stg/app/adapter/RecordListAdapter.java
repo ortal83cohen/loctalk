@@ -21,7 +21,7 @@ import com.stg.app.widget.recyclerview.ArrayAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HotelListAdapter extends ArrayAdapter<Record, RecyclerView.ViewHolder> implements Filterable {
+public class RecordListAdapter extends ArrayAdapter<Record, RecyclerView.ViewHolder> implements Filterable {
     protected final RecordViewHolder.Listener mListener;
     protected final int mPictureWidth;
     protected final int mPictureHeight;
@@ -30,7 +30,7 @@ public class HotelListAdapter extends ArrayAdapter<Record, RecyclerView.ViewHold
     protected Context mContext;
     protected List<Record> mRecords = new ArrayList<>();
 
-    public HotelListAdapter(BaseActivity activity, RecordViewHolder.Listener listener) {
+    public RecordListAdapter(BaseActivity activity, RecordViewHolder.Listener listener) {
         super(new ArrayList<Record>());
         mContext = activity;
         mListener = listener;
@@ -68,7 +68,7 @@ public class HotelListAdapter extends ArrayAdapter<Record, RecyclerView.ViewHold
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         Record item = items().get(position);
         if (item != null && holder instanceof RecordViewHolder) {
-            ((RecordViewHolder) holder).assignItem(item, mRequest.getNumberOfRooms(), position);
+            ((RecordViewHolder) holder).assignItem(item, position);
         }
     }
 

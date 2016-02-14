@@ -26,7 +26,7 @@ import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.HotelsApplication;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;
-import com.stg.app.adapter.FavoritesHotelListAdapter;
+import com.stg.app.adapter.FavoritesRecordListAdapter;
 import com.stg.app.adapter.RecordViewHolder;
 import com.stg.app.etbapi.RetrofitCallback;
 import com.stg.app.events.Events;
@@ -72,7 +72,7 @@ public class FavoritesListFragment extends BaseFragment {
     EtbApi mEtbApi;
 
     private LinearLayoutManager mLayoutManager;
-    private FavoritesHotelListAdapter mAdapter;
+    private FavoritesRecordListAdapter mAdapter;
     private HotelListRequest mHotelsRequest;
     private String mCity;
     private String mCountry;
@@ -202,7 +202,7 @@ public class FavoritesListFragment extends BaseFragment {
         mHotelsRequest.setSort(null);
 
         mLayoutManager = new LinearLayoutManager(getActivity());
-        mAdapter = new FavoritesHotelListAdapter((BaseActivity) getActivity(), mListener);
+        mAdapter = new FavoritesRecordListAdapter((BaseActivity) getActivity(), mListener);
         mEtbApi = HotelsApplication.provide(getActivity()).etbApi();
 
         mRecyclerView.init(mLayoutManager, mAdapter, EtbApi.LIMIT);

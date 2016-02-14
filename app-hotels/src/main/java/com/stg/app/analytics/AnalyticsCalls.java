@@ -6,8 +6,6 @@ import android.content.Context;
 import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.model.HotelRequest;
 import com.socialtravelguide.api.model.SearchRequest;
-import com.stg.app.hoteldetails.HotelSnippet;
-
 
 /**
  * @author ortal
@@ -61,7 +59,7 @@ public class AnalyticsCalls {
     }
 
 
-    public void trackHotelDetails(HotelRequest request, HotelSnippet hotelSnippet, Record record, String currencyCode) {
+    public void trackHotelDetails(HotelRequest request, Record record, String currencyCode) {
 //        omniture.trackHotelDetails(request, hotelSnippet, rate, currencyCode);
 //        googleAnalyticsCalls.trackHotelDetails(request, hotelSnippet, rate, currencyCode);
     }

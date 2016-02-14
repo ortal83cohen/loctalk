@@ -38,34 +38,9 @@
         <item name="android:textColor">@color/theme_text_primary</item>
         <item name="android:textSize">@dimen/size_text_secondary</item>
     </style>
-
-    <style name="HotelsAppTheme.TextAppearance.Reviews" />
-
-    <style name="HotelsAppTheme.TextAppearance.Reviews.Rating">
-        <item name="fontPath">@string/font_bold</item>
-        <item name="android:textColor">#3f4745</item>
-        <item name="android:textSize">18sp</item>
-    </style>
-
     <style name="HotelsAppTheme.TextAppearance.Bold">
         <item name="fontPath">@string/font_bold</item>
     </style>
-
-    <style name="HotelsAppTheme.TextAppearance.Reviews.RatingMax">
-        <item name="android:textColor">#3f4745</item>
-        <item name="android:textSize">15sp</item>
-    </style>
-
-    <style name="HotelsAppTheme.TextAppearance.Reviews.RatingName">
-        <item name="android:textColor">#3f4745</item>
-        <item name="android:textSize">11sp</item>
-    </style>
-
-    <style name="HotelsAppTheme.TextAppearance.Reviews.Count">
-        <item name="android:textColor">#3f4745</item>
-        <item name="android:textSize">13sp</item>
-    </style>
-
     <style name="HotelsAppTheme.TextAppearance.Normal.Bold" parent="HotelsAppTheme.TextAppearance.Normal">
         <item name="fontPath">@string/font_bold</item>
     </style>

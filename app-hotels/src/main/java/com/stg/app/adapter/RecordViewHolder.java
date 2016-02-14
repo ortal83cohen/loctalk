@@ -48,7 +48,7 @@ public class RecordViewHolder extends RecyclerView.ViewHolder {
         mContext = context;
     }
 
-    public void assignItem(final Record item, int numberRooms, int position) {
+    public void assignItem(final Record item, int position) {
         mPosition = position;
         mItem = item;
         final Resources r = mContext.getResources();

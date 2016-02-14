@@ -6,8 +6,6 @@ import android.support.v4.util.ArrayMap;
 import com.socialtravelguide.api.mock.ResultsMockClient;
 import com.socialtravelguide.api.model.search.Poi;
 import com.stg.app.Config;
-import com.stg.app.core.model.Ratings;
-import com.stg.app.core.model.ReviewResponse;
 import com.stg.app.etbapi.RetrofitLogger;
 import com.stg.app.etbapi.UserAgentInterceptor;
 import com.squareup.okhttp.OkHttpClient;
@@ -47,17 +45,6 @@ public class CoreInterface {
 
     public interface Service {
 
-        @Headers("Accept: application/json")
-//        @GET("/core_interface/sway.php/hotels/{id}/reviews")
-//                Call<ReviewResponse> hotelReviews(@Path("id") int hotelId, @Query("lang") String lang, @Query("page") int page);
-        @GET("/etbstatic/GetReviews.json")
-        Call<ReviewResponse> hotelReviews(@Query("lang") String lang, @Query("page") int page);
-
-        @Headers("Accept: application/json")
-//        @GET("/core_interface/sway.php/hotels/{id}/ratings")
-//              Call<Ratings> hotelRatings(@Path("id") int hotelId);
-        @GET("/etbstatic/GetRatings.json")
-        Call<Ratings> hotelRatings();
 
         @Headers("Accept: application/json")
         @GET("/core_interface/sway.php/phone/customerservice/{country}")

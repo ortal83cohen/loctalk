@@ -10,7 +10,6 @@ import com.socialtravelguide.api.model.HotelRequest;
 import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.model.SearchRequest;
 import com.stg.app.R;
-import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.model.CurrentLocation;
 import com.stg.app.model.Location;
 import com.stg.app.model.LocationWithTitle;
@@ -107,13 +106,8 @@ public class GoogleAnalyticsCalls extends AnalyticsCalls {
         mTracker.send(new HitBuilders.ScreenViewBuilder().build());
     }
 
-    public void trackHotelReviews(HotelRequest hotelRequest) {
-        mTracker.setScreenName("Hotel Reviews");
 
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
-    }
-
-    public void trackHotelDetails(HotelRequest request, HotelSnippet hotelSnippet, Record record, String currencyCode) {
+    public void trackHotelDetails(HotelRequest request, Record record, String currencyCode) {
         mTracker.setScreenName("Hotel Details");
 //        Product product = new Product()
 //                .setId(String.valueOf(hotelSnippet.getAccommodation().id))

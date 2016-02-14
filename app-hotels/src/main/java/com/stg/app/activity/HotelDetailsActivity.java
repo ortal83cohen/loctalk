@@ -12,12 +12,12 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.Marker;
+import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.model.search.Poi;
 import com.stg.app.R;
 import com.stg.app.adapter.ViewPagerAdapter;
 import com.stg.app.core.CoreInterface;
 import com.stg.app.fragment.HotelsMapFragment;
-import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.map.PoiMarker;
 import com.stg.app.model.HotelListRequest;
 
@@ -33,31 +33,26 @@ import butterknife.OnClick;
  * @date 2015-06-14
  */
 public class HotelDetailsActivity extends TabActivity implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
-    public static final int TAB_FACILITIES = 0;
-    public static final int TAB_REVIEWS = 1;
     public static final int TAB_MAP = 2;
     private static final String MAP = "menu_map";
     private static final int MAP_POSITION = 2;
-    private static final String HOTEL_MARKER = "hotel_marker";
     private static final int LANDMARKS_SIZE = 1000;
-    private static final String EXTRA_SNIPPET = "snipet";
-    private static final String EXTRA_SNIPPET_DETAILS = "snipet_details";
+    private static final String EXTRA_DATA = "snipet";
     @Bind(R.id.available_rooms_button)
     Button mAllRoomsButton;
     @Bind(R.id.show_landmarks)
     Button mShowLandmarks;
-    private HotelSnippet mHotelSnippet;
-    private HotelSnippet mHotelSnippetDetails;
+    private Record mRecord;
     private SupportMapFragment mSupportMapFragment;
     private int mDrawLandmarksInMeters = 0;
     private List<Poi> mPoiList = null;
     private PoiMarker mPoiMarker;
     private boolean isFirstTime = true;
 
-    public static Intent createIntent(HotelSnippet hotelSnippet, HotelSnippet hotelSnippetDetails, HotelListRequest request, int tabId, Context context) {
+    public static Intent createIntent(Record record, HotelListRequest request, int tabId, Context context) {
         Intent intent = new Intent(context, HotelDetailsActivity.class);
-        intent.putExtra(EXTRA_SNIPPET, hotelSnippet);
-        intent.putExtra(EXTRA_SNIPPET_DETAILS, hotelSnippetDetails);
+        intent.putExtra(EXTRA_DATA, record);
+
         intent.putExtra(EXTRA_TABID, tabId);
         intent.putExtra(EXTRA_REQUEST, request);
         return intent;
@@ -66,11 +61,9 @@ public class HotelDetailsActivity extends TabActivity implements OnMapReadyCallb
     @Override
     protected void onCreateTabFragments(ViewPagerAdapter adapter, Bundle savedInstanceState) {
         if (savedInstanceState != null) {
-            mHotelSnippet = savedInstanceState.getParcelable(EXTRA_SNIPPET);
-            mHotelSnippetDetails = savedInstanceState.getParcelable(EXTRA_SNIPPET_DETAILS);
+            mRecord = savedInstanceState.getParcelable(EXTRA_DATA);
         } else {
-            mHotelSnippet = getIntent().getParcelableExtra(EXTRA_SNIPPET);
-            mHotelSnippetDetails = getIntent().getParcelableExtra(EXTRA_SNIPPET_DETAILS);
+            mRecord = getIntent().getParcelableExtra(EXTRA_DATA);
         }
 
 //        setTitle(mHotelSnippet.getName());
@@ -245,7 +238,7 @@ public class HotelDetailsActivity extends TabActivity implements OnMapReadyCallb
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        outState.putParcelable(EXTRA_SNIPPET, mHotelSnippet);
+        outState.putParcelable(EXTRA_DATA, mRecord);
         super.onSaveInstanceState(outState);
     }
 

@@ -24,14 +24,14 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.socialtravelguide.api.model.DetailsResponse;
+import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.R;
 import com.stg.app.activity.HotelDetailsActivity;
 import com.stg.app.etbapi.AvailabilityDetailsCallback;
 import com.stg.app.events.Events;
 import com.stg.app.events.HotelDetailsResultsEvent;
-import com.stg.app.hoteldetails.HotelSnippet;
-import com.stg.app.hoteldetails.HotelSnippetViewHolder;
+import com.stg.app.hoteldetails.RecordViewHolder;
 import com.stg.app.model.HotelListRequest;
 
 import com.google.android.gms.maps.GoogleMap;
@@ -61,19 +61,13 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
     private static final String BUTTON_FLAG = "button_flag";
     @Bind(R.id.available_rooms_button)
     Button mMoreRoomsButton;
-    @Bind(R.id.facilities_box)
-    View mFacilitiesBox;
-    @Bind(R.id.reviews_box)
-    View mReviewsBox;
     @Bind(R.id.hotel_details_room)
     FrameLayout mRoomView;
     @Bind(R.id.pager)
     android.support.v4.view.ViewPager mImagePager;
     boolean mIsImageExpended = false;
     private int mImageState = IMAGE_STATE_NORMAL;
-    private int mRateId;
-    private HotelSnippet mHotelSnippet;
-    private HotelSnippet mHotelSnippetDetails;
+    private Record mRecord;
     private int mDisplayHeight = 0;
     private int mImageMinimumHeight;
     private boolean mMoreRoomsButtonVisible = false;
@@ -83,34 +77,32 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
             super.failure(response, isOffline);
-            Events.post(new HotelDetailsResultsEvent(true));
+            Events.post(new HotelDetailsResultsEvent());
         }
 
         @Override
         protected void onDetailsResponse(DetailsResponse detailsResponse) {
-            notifyResponse(detailsResponse, mRateId);
+            notifyResponse(detailsResponse);
         }
 
         @Override
         protected void onNoAvailability(DetailsResponse detailsResponse) {
             if (detailsResponse != null) {
-                notifyResponse(detailsResponse, 0);
+                notifyResponse(detailsResponse);
             }
         }
 
-        private void notifyResponse(DetailsResponse detailsResponse, int rateId) {
-            mHotelSnippetDetails = new HotelSnippet(detailsResponse.record, rateId);
-            setDetailsResponse(mHotelSnippetDetails);
+        private void notifyResponse(DetailsResponse detailsResponse) {
+//            mHotelSnippetDetails = new HotelSnippet(detailsResponse.record, rateId);
+//            setDetailsResponse(mHotelSnippetDetails);
 //            Events.post(new HotelDetailsResultsEvent(mHotelSnippetDetails));
         }
     };
 
-    public static HotelSummaryFragment newInstance(int rateId, boolean noDates, HotelListRequest request, HotelSnippet hotelSnippet) {
+    public static HotelSummaryFragment newInstance(HotelListRequest request, Record record) {
         HotelSummaryFragment fragment = new HotelSummaryFragment();
         Bundle args = new Bundle();
-        args.putInt("rateId", rateId);
-        args.putParcelable("snippet", hotelSnippet);
-        args.putBoolean("noDates", noDates);
+        args.putParcelable("record", record);
         args.putParcelable("request", request);
         fragment.setArguments(args);
         return fragment;
@@ -148,18 +140,16 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
         ButterKnife.bind(this, view);
 
         if (savedInstanceState != null) {
-            mHotelSnippetDetails = savedInstanceState.getParcelable(SNIPPET_DETAILS);
             mIsImageExpended = savedInstanceState.getBoolean(IMAGE_FLAG);
             mMoreRoomsButtonVisible = savedInstanceState.getBoolean(BUTTON_FLAG);
         }
 
         mImageMinimumHeight = (int) getResources().getDimension(R.dimen.hotel_summary_image_size);
-        HotelSnippetViewHolder headerRender = new HotelSnippetViewHolder(view, getActivity());
+        RecordViewHolder headerRender = new RecordViewHolder(view, getActivity());
 
-        mHotelSnippet = getArguments().getParcelable("snippet");
-        mRateId = (int) getArguments().get("rateId");
+        mRecord = getArguments().getParcelable("record");
         mRequest = getArguments().getParcelable("request");
-        headerRender.render(mHotelSnippet);
+        headerRender.render(mRecord);
 
         final GestureDetector tapGestureDetector = new GestureDetector(getActivity(), new TapGestureListener());
 
@@ -180,8 +170,6 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
             }
         });
 
-        mFacilitiesBox.setOnClickListener(this);
-        mReviewsBox.setOnClickListener(this);
         mMoreRoomsButton.setOnClickListener(this);
         if (mIsImageExpended) {
             expand(mImagePager);
@@ -196,7 +184,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
         super.onActivityCreated(savedInstanceState);
         setHasOptionsMenu(true);
         setupMap();
-        loadHotel();
+//        loadHotel();
     }
 
 
@@ -224,20 +212,10 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-        outState.putParcelable(SNIPPET_DETAILS, mHotelSnippetDetails);
+        outState.putParcelable(SNIPPET_DETAILS, mRecord);
         outState.putBoolean(IMAGE_FLAG, mIsImageExpended);
         outState.putBoolean(BUTTON_FLAG, mMoreRoomsButtonVisible);
         super.onSaveInstanceState(outState);
-    }
-
-    private void loadHotel() {
-        if (mHotelSnippetDetails == null ) {
-//            EtbApi etb = App.provide(getActivity()).etbApi();
-//            mResultsCallback.setIsDatesRequest(false);
-//            etb.details(mHotelSnippet.geId(), mRequest).enqueue(mResultsCallback);
-        } else {
-            Events.post(new HotelDetailsResultsEvent(mHotelSnippetDetails));
-        }
     }
 
 //    @Subscribe
@@ -292,7 +270,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
-        if (mHotelSnippetDetails != null) {
+        if (mRecord != null) {
             int viewId = v.getId();
 //            if (viewId == R.id.book_button) {
 //                if (mHotelSnippetDetails.hasRates()) {
@@ -368,7 +346,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
     public void onMapReady(GoogleMap googleMap) {
         BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.map_pin_selected));
         MarkerOptions options = new MarkerOptions()
-//                .position(new LatLng(mHotelSnippet.getLocation().lat, mHotelSnippet.getLocation().lon))
+                .position(new LatLng(mRecord.lat,mRecord.lon))
                 .icon(icon);
 
         googleMap.addMarker(options);
@@ -404,37 +382,22 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
 
     @Override
     public void onMapClick(LatLng latLng) {
-        if (mHotelSnippetDetails != null) {
-            showFullMap(mHotelSnippetDetails);
+        if (mRecord != null) {
+            showFullMap(mRecord);
         }
     }
 
     @Override
     public boolean onMarkerClick(Marker marker) {
-        if (mHotelSnippetDetails != null) {
-            showFullMap(mHotelSnippetDetails);
+        if (mRecord != null) {
+            showFullMap(mRecord);
         }
         return true;
     }
 
-
-    public void showFacilities(HotelSnippet hotelSnippet) {
-        Intent intent = HotelDetailsActivity.createIntent(hotelSnippet, mHotelSnippetDetails, getHotelsRequest(), HotelDetailsActivity.TAB_FACILITIES, getActivity());
+    public void showFullMap(Record record) {
+        Intent intent = HotelDetailsActivity.createIntent(record, getRequest(), HotelDetailsActivity.TAB_MAP, getActivity());
         startActivity(intent);
-    }
-
-    public void showReviews(HotelSnippet hotelSnippet) {
-        Intent intent = HotelDetailsActivity.createIntent(hotelSnippet, mHotelSnippetDetails, getHotelsRequest(), HotelDetailsActivity.TAB_REVIEWS, getActivity());
-        startActivity(intent);
-    }
-
-    public void showFullMap(HotelSnippet hotelSnippet) {
-        Intent intent = HotelDetailsActivity.createIntent(hotelSnippet, mHotelSnippetDetails, getHotelsRequest(), HotelDetailsActivity.TAB_MAP, getActivity());
-        startActivity(intent);
-    }
-
-    public void setDetailsResponse(HotelSnippet hotelSnippetDetails) {
-        mHotelSnippetDetails = hotelSnippetDetails;
     }
 
     public boolean isImageExpanded() {
@@ -448,7 +411,7 @@ public class HotelSummaryFragment extends BaseFragment implements View.OnClickLi
     public void checkAvailability(HotelListRequest request) {
         RequestUtils.apply(mRequest);
         mRoomView.removeAllViews();
-        loadHotel();
+//        loadHotel();
     }
 
 

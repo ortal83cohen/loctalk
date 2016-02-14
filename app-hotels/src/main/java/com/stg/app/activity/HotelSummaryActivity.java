@@ -9,13 +9,12 @@ import android.view.MenuItem;
 
 
 import com.socialtravelguide.api.model.HotelRequest;
+import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.model.search.Type;
 import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.R;
 import com.stg.app.fragment.HomeFragment;
 import com.stg.app.fragment.HotelSummaryFragment;
-
-import com.stg.app.hoteldetails.HotelSnippet;
 import com.stg.app.model.HotelListRequest;
 import com.stg.app.model.Location;
 
@@ -33,28 +32,25 @@ public class HotelSummaryActivity extends BaseActivity implements  HomeFragment.
     public static final String FRAGMENT_DATEPICKER = "fragment_datepicker";
     public static final String FRAGMENT_HOTEL_DETAILS = "fragment_hotel_details";
     private static final String FRAGMENT_HOME = "fragment_datepicker";
-    private static final String EXTRA_SNIPPET = "snippet";
+    private static final String EXTRA_DATA = "snippet";
     private static final String EXTRA_NO_DATES = "no_dates";
     private static final String FRAGMENT_PRICE_BREAKDOWN = "price_breakdown";
-    private int mRateId;
-    private HotelSnippet mHotelSnippet;
+    private Record mRecord;
     private StreetViewPanorama mStreetView;
     private android.app.Fragment mStreetViewFragment;
-    private HotelSnippet mHotelSnippetDetails;
-    private boolean mIsNoDates;
 
 
-    public static Intent createIntent(HotelSnippet hotelSnippet, HotelListRequest request, Context context) {
+    public static Intent createIntent(Record record, HotelListRequest request, Context context) {
         Intent intent = new Intent(context, HotelSummaryActivity.class);
 
-        intent.putExtra(EXTRA_SNIPPET, hotelSnippet);
+        intent.putExtra(EXTRA_DATA, record);
         intent.putExtra(EXTRA_REQUEST, request);
 
         return intent;
     }
 
-    public static Intent createIntent(HotelSnippet hotelSnippet, HotelListRequest request, boolean noDates, Context context) {
-        Intent intent = createIntent(hotelSnippet, request, context);
+    public static Intent createIntent(Record record, HotelListRequest request, boolean noDates, Context context) {
+        Intent intent = createIntent(record, request, context);
         intent.putExtra(EXTRA_NO_DATES, noDates);
         return intent;
     }
@@ -68,20 +64,18 @@ public class HotelSummaryActivity extends BaseActivity implements  HomeFragment.
         setTitle("");
         mToolbar.setBackgroundColor(Color.TRANSPARENT);
         if (savedInstanceState != null) {
-            mHotelSnippet = savedInstanceState.getParcelable(EXTRA_SNIPPET);
-            mIsNoDates = savedInstanceState.getBoolean(EXTRA_NO_DATES);
+            mRecord = savedInstanceState.getParcelable(EXTRA_DATA);
         } else {
-            mHotelSnippet = getIntent().getParcelableExtra(EXTRA_SNIPPET);
-            mIsNoDates = getIntent().getBooleanExtra(EXTRA_NO_DATES, false);
+            mRecord = getIntent().getParcelableExtra(EXTRA_DATA);
         }
-//        mRateId = mHotelSnippet == null ? 0 : mHotelSnippet.getSelectedRateId();
+//        mRateId = mRecord == null ? 0 : mRecord.getSelectedRateId();
 
         createStreetView();
 
         FragmentManager fm = getSupportFragmentManager();
         HotelSummaryFragment hotelSummaryFragment = (HotelSummaryFragment) fm.findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
         if (hotelSummaryFragment == null) {
-            hotelSummaryFragment = HotelSummaryFragment.newInstance(mRateId, mIsNoDates, getHotelsRequest(), mHotelSnippet);
+            hotelSummaryFragment = HotelSummaryFragment.newInstance( getHotelsRequest(), mRecord);
             fm.beginTransaction()
                     .setCustomAnimations(R.anim.raise, R.anim.shrink)
                     .replace(R.id.fragment_container,
@@ -101,8 +95,7 @@ public class HotelSummaryActivity extends BaseActivity implements  HomeFragment.
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        outState.putParcelable(EXTRA_SNIPPET, mHotelSnippet);
-        outState.putBoolean(EXTRA_NO_DATES, mIsNoDates);
+        outState.putParcelable(EXTRA_DATA, mRecord);
         super.onSaveInstanceState(outState);
     }
 
@@ -148,7 +141,7 @@ public class HotelSummaryActivity extends BaseActivity implements  HomeFragment.
     public void showStreetView() {
         if (mStreetViewFragment.isHidden()) {
             getFragmentManager().beginTransaction().show(mStreetViewFragment).commit();
-//            mStreetView.setPosition(new LatLng(mHotelSnippet.getLocation().lat, mHotelSnippet.getLocation().lon));
+//            mStreetView.setPosition(new LatLng(mRecord.getLocation().lat, mRecord.getLocation().lon));
         } else {
             getFragmentManager().beginTransaction().hide(mStreetViewFragment).commit();
         }

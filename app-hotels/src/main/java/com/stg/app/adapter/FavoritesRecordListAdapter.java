@@ -16,12 +16,12 @@ import java.util.List;
  * @author ortal
  * @date 2015-10-26
  */
-public class FavoritesHotelListAdapter extends HotelListAdapter {
+public class FavoritesRecordListAdapter extends RecordListAdapter {
     private static final int HEADER = 0;
     private static final int OTHER = 1;
     List<Record> mAccommodationsWithoutDates = new ArrayList<>();
 
-    public FavoritesHotelListAdapter(BaseActivity context, RecordViewHolder.Listener listener) {
+    public FavoritesRecordListAdapter(BaseActivity context, RecordViewHolder.Listener listener) {
         super(context, listener);
     }
 
