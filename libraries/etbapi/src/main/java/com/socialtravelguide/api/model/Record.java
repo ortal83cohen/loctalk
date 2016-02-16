@@ -7,7 +7,7 @@ public class Record implements Parcelable {
 
     public String lang;
 
-    public Long id;
+    public int id;
 
     public String title;
 

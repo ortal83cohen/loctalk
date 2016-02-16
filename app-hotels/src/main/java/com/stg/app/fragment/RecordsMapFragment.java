@@ -14,10 +14,10 @@ import com.google.android.gms.maps.SupportMapFragment;
  * @author ortal
  * @date 2015-04-15
  */
-public class HotelsMapFragment extends SupportMapFragment {
+public class RecordsMapFragment extends SupportMapFragment {
 
 
-    public HotelsMapFragment() {
+    public RecordsMapFragment() {
         super();
     }
 

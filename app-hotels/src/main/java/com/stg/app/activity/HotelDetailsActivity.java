@@ -17,7 +17,7 @@ import com.socialtravelguide.api.model.search.Poi;
 import com.stg.app.R;
 import com.stg.app.adapter.ViewPagerAdapter;
 import com.stg.app.core.CoreInterface;
-import com.stg.app.fragment.HotelsMapFragment;
+import com.stg.app.fragment.RecordsMapFragment;
 import com.stg.app.map.PoiMarker;
 import com.stg.app.model.HotelListRequest;
 
@@ -38,7 +38,7 @@ public class HotelDetailsActivity extends TabActivity implements OnMapReadyCallb
     private static final int MAP_POSITION = 2;
     private static final int LANDMARKS_SIZE = 1000;
     private static final String EXTRA_DATA = "snipet";
-    @Bind(R.id.available_rooms_button)
+    @Bind(R.id.see_all_record)
     Button mAllRoomsButton;
     @Bind(R.id.show_landmarks)
     Button mShowLandmarks;
@@ -71,7 +71,7 @@ public class HotelDetailsActivity extends TabActivity implements OnMapReadyCallb
 
         mSupportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentByTag("menu_map");
         if (mSupportMapFragment == null) {
-            mSupportMapFragment = HotelsMapFragment.newInstance();
+            mSupportMapFragment = RecordsMapFragment.newInstance();
         }
         mSupportMapFragment.getMapAsync(this);
 
@@ -189,7 +189,7 @@ public class HotelDetailsActivity extends TabActivity implements OnMapReadyCallb
 //        }
     }
 
-    @OnClick(R.id.available_rooms_button)
+    @OnClick(R.id.see_all_record)
     public void onClickAvailableRooms(Button button) {
 //        showRoomsList(mHotelSnippet.geId());
     }

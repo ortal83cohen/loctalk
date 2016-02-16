@@ -24,18 +24,6 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
-import com.socialtravelguide.api.model.DetailsResponse;
-import com.socialtravelguide.api.model.Record;
-import com.socialtravelguide.api.utils.RequestUtils;
-import com.stg.app.R;
-import com.stg.app.activity.HotelDetailsActivity;
-import com.stg.app.activity.RecordDetailsActivity;
-import com.stg.app.etbapi.AvailabilityDetailsCallback;
-import com.stg.app.events.Events;
-import com.stg.app.events.HotelDetailsResultsEvent;
-import com.stg.app.hoteldetails.RecordViewHolder;
-import com.stg.app.model.HotelListRequest;
-
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -45,7 +33,15 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.squareup.okhttp.ResponseBody;
+import com.socialtravelguide.api.model.Record;
+import com.socialtravelguide.api.utils.RequestUtils;
+import com.stg.app.R;
+import com.stg.app.activity.HotelDetailsActivity;
+import com.stg.app.activity.RecordDetailsActivity;
+import com.stg.app.adapter.RecordCardViewHolder;
+import com.stg.app.events.Events;
+import com.stg.app.hoteldetails.RecordViewHolder;
+import com.stg.app.model.HotelListRequest;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -61,10 +57,10 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     private static final String SNIPPET_DETAILS = "snippet_details";
     private static final String IMAGE_FLAG = "image_flag";
     private static final String BUTTON_FLAG = "button_flag";
-    @Bind(R.id.available_rooms_button)
+    @Bind(R.id.see_all_record)
     Button mMoreRoomsButton;
-    @Bind(R.id.hotel_details_room)
-    FrameLayout mRoomView;
+    @Bind(R.id.record_card)
+    FrameLayout mRecordCard;
     @Bind(R.id.pager)
     android.support.v4.view.ViewPager mImagePager;
     boolean mIsImageExpended = false;
@@ -72,34 +68,9 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     private Record mRecord;
     private int mDisplayHeight = 0;
     private int mImageMinimumHeight;
-    private boolean mMoreRoomsButtonVisible = false;
+    private boolean mMoreRoomsButtonVisible = true;
     private HotelListRequest mRequest;
 
-    private AvailabilityDetailsCallback mResultsCallback = new AvailabilityDetailsCallback() {
-        @Override
-        protected void failure(ResponseBody response, boolean isOffline) {
-            super.failure(response, isOffline);
-            Events.post(new HotelDetailsResultsEvent());
-        }
-
-        @Override
-        protected void onDetailsResponse(DetailsResponse detailsResponse) {
-            notifyResponse(detailsResponse);
-        }
-
-        @Override
-        protected void onNoAvailability(DetailsResponse detailsResponse) {
-            if (detailsResponse != null) {
-                notifyResponse(detailsResponse);
-            }
-        }
-
-        private void notifyResponse(DetailsResponse detailsResponse) {
-//            mHotelSnippetDetails = new HotelSnippet(detailsResponse.record, rateId);
-//            setDetailsResponse(mHotelSnippetDetails);
-//            Events.post(new HotelDetailsResultsEvent(mHotelSnippetDetails));
-        }
-    };
 
     public static RecordDetailsFragment newInstance(HotelListRequest request, Record record) {
         RecordDetailsFragment fragment = new RecordDetailsFragment();
@@ -113,13 +84,11 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        mResultsCallback.attach(context);
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        mResultsCallback.detach();
     }
 
     @Override
@@ -186,7 +155,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         super.onActivityCreated(savedInstanceState);
         setHasOptionsMenu(true);
         setupMap();
-//        loadHotel();
+        fillRecordCard();
     }
 
 
@@ -222,54 +191,23 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         super.onSaveInstanceState(outState);
     }
 
-//    @Subscribe
-//    public void onHotelDetailsResultsEvent(HotelDetailsResultsEvent event) {
-//
-//        if (getActivity() == null) {
-//            return;
-//        }
-//        mRoomView.removeAllViews();
-//        View view = null;
-//        if (event.isError()) {
-//            view = getNoAvailabilityView();
-//            setMoreRoomsButtonVisibility(false);
-//        } else {
-//            HotelSnippet hotelSnippetDetails = event.getHotelDetails();
-//            if (hotelSnippetDetails.hasRates()) {
-//                if (hotelSnippetDetails.getAccommodation().rates.size() > 1) {
-//                    setMoreRoomsButtonVisibility(true);
-//                }
-//                mSelectedRate = findCheapestRoom(mHotelSnippetDetails.getAccommodation());
-//                view = getSelectedRoomView(mSelectedRate);
-//            } else if (false) {
-//                view = getNoAvailabilityView();
-//                setMoreRoomsButtonVisibility(false);
-//            } else {
-//                setMoreRoomsButtonVisibility(false);
-//            }
-//        }
-//        mRoomView.addView(view);
-//        AnalyticsCalls.get().trackHotelDetails(mRequest, mHotelSnippet, mSelectedRate, getCurrencyCode());
-//    }
+
+    public void fillRecordCard() {
+
+        final LayoutInflater inflater = LayoutInflater.from(getActivity());
+        View view = inflater.inflate(R.layout.fragment_record_card, mRecordCard, false);
+
+        RecordCardViewHolder vh = new RecordCardViewHolder(view, getActivity());
+        vh.assignItem(mRecord);
+
+        mRecordCard.addView(view);
+
+    }
 
     private void setMoreRoomsButtonVisibility(boolean visible) {
         mMoreRoomsButtonVisible = visible;
         mMoreRoomsButton.setVisibility(visible ? View.VISIBLE : View.GONE);
     }
-
-
-
-
-    private View getNoAvailabilityView() {
-        final LayoutInflater inflater = LayoutInflater.from(getActivity());
-        View view = inflater.inflate(R.layout.fragment_hoteldetails_noavailability, mRoomView, false);
-
-
-        return view;
-    }
-
-
-
 
 
     @Override
@@ -350,7 +288,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     public void onMapReady(GoogleMap googleMap) {
         BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.map_pin_selected));
         MarkerOptions options = new MarkerOptions()
-                .position(new LatLng(mRecord.lat,mRecord.lon))
+                .position(new LatLng(mRecord.lat, mRecord.lon))
                 .icon(icon);
 
         googleMap.addMarker(options);
@@ -414,7 +352,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
     public void checkAvailability(HotelListRequest request) {
         RequestUtils.apply(mRequest);
-        mRoomView.removeAllViews();
+        mRecordCard.removeAllViews();
 //        loadHotel();
     }
 

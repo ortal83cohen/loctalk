@@ -313,9 +313,6 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
             }
             return true;
         }
-        if (v instanceof com.stg.app.widget.NumberPicker) {
-            return true;
-        }
         int action = MotionEventCompat.getActionMasked(event);
 
         switch (action) {

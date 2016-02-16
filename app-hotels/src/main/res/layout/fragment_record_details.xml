@@ -121,7 +121,7 @@
                         </android.support.v7.widget.CardView>
 
                         <FrameLayout
-                            android:id="@+id/hotel_details_room"
+                            android:id="@+id/record_card"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/hoteldetails_room_height"
                             android:layout_marginBottom="@dimen/minimum_default_padding"
@@ -144,10 +144,10 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/available_rooms_button"
+        android:id="@+id/see_all_record"
         style="@style/HotelsAppTheme.Widget.HotelSummary.AccentBottomButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|bottom"
-        android:text="@string/view_more_available_rooms" />
+        android:text="@string/see_all_records_for_this_location" />
 </LinearLayout>

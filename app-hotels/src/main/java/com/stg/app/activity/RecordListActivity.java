@@ -28,7 +28,7 @@ import com.stg.app.events.SearchResultsEvent;
 import com.stg.app.fragment.HomeFragment;
 import com.stg.app.fragment.HotelMapSummaryFragment;
 import com.stg.app.fragment.RecordListFragment;
-import com.stg.app.fragment.HotelsMapFragment;
+import com.stg.app.fragment.RecordsMapFragment;
 import com.stg.app.fragment.ResultsSortFragment;
 import com.stg.app.map.PoiMarker;
 import com.stg.app.map.ResultsMap;
@@ -135,7 +135,7 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
         getSupportFragmentManager().addOnBackStackChangedListener(this);
 
-        HotelsMapFragment fragmentMap = (HotelsMapFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_MAP);
+        RecordsMapFragment fragmentMap = (RecordsMapFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_MAP);
         if (fragmentMap != null) {
             fragmentMap.getMapAsync(this);
         }
@@ -294,9 +294,9 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
     }
 
     private void showMap() {
-        HotelsMapFragment mapFragment = (HotelsMapFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_MAP);
+        RecordsMapFragment mapFragment = (RecordsMapFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_MAP);
         if (mapFragment == null) {
-            mapFragment = new HotelsMapFragment();
+            mapFragment = new RecordsMapFragment();
             mapFragment.getMapAsync(this);
         }
         getSupportFragmentManager().beginTransaction()

@@ -96,7 +96,7 @@
     <string name="free_cancellation">Free cancellation</string>
     <string name="non_refundable">Non-refundable</string>
     <string name="lowest_price">Lowest price</string>
-    <string name="view_more_available_rooms">View all available rooms</string>
+    <string name="see_all_records_for_this_location">View all records for this location</string>
     <string name="book_now">Book Now</string>
     <string name="settings_about">About</string>
     <string name="terms_of_service">Terms of Service</string>
@@ -259,10 +259,6 @@
     <string name="address">Address</string>
     <string name="postal_code">Postal code</string>
     <string name="hello">HELLO!</string>
-    <string name="special_deal_discount">special deal Discount</string>
-    <string name="free_breakfast_included">Free Breakfast included</string>
-    <string name="_2_person_max">2 person max</string>
-    <string name="booking_name">Booking Name</string>
     <string name="june">June</string>
     <string name="bold">BOLD</string>
     <string name="unbold">UNBOLD</string>

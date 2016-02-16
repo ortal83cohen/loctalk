@@ -50,7 +50,7 @@
         android:visibility="gone" />
 
     <Button
-        android:id="@+id/available_rooms_button"
+        android:id="@+id/see_all_record"
         style="@style/HotelsAppTheme.Widget.HotelSummary.AccentBottomButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

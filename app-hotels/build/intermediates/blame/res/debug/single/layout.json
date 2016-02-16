@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_dialog_title_material.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_results_sort.xml",
@@ -20,20 +20,8 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\activity_landmarks_filters.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\activity_landmarks_filters.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_booking_payment_ccard.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_booking_payment_ccard.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\activity_home.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\results_filter_item.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\results_filter_item.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\preference_switcher.xml",
@@ -92,20 +80,12 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_media_action.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\confirmation_information_card.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\confirmation_information_card.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_hotel_list.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_hotel_list.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_hoteldetails_room.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_hoteldetails_room.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\navdrawer.xml",
@@ -120,40 +100,16 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\view_number_picker.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\view_number_picker.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\datepicker_header.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\datepicker_header.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\view_datepicker_selected_day.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\view_datepicker_selected_day.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\results_hotel_list_header.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\results_hotel_list_header.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_member_profile_edit.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_member_profile_edit.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\view_favorites_list_no_results.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\view_favorites_list_no_results.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\confirmation_important_information_card.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\confirmation_important_information_card.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\ccard.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\ccard.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\facilities_list_facility.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\facilities_list_facility.xml"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\view_records_list_no_results.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\view_records_list_no_results.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\favorites_city_list_item.xml",
@@ -176,28 +132,20 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\preference_category.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\view_hotels_list_no_results.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\view_hotels_list_no_results.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\activity_hoteldetails.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\activity_hoteldetails.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_record_details.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_record_details.xml"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\activity_hoteldetails.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\activity_hoteldetails.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_member_bookings_list.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_member_bookings_list.xml"
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_record_details.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_record_details.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
@@ -220,14 +168,6 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\layout\\fragment_page_geo.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_booking_summary.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_booking_summary.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\member_booking_item.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\member_booking_item.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_layout_snackbar_include.xml"
     },
@@ -240,16 +180,8 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_hoteldetails_noavailability.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_hoteldetails_noavailability.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_radio.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_add_more_booking.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_add_more_booking.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
@@ -262,10 +194,6 @@
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_small.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_white_small.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_price_breakdown.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_price_breakdown.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
@@ -282,10 +210,6 @@
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\activity_hotel_list.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\activity_hotel_list.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_booking_personal.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_booking_personal.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
@@ -308,18 +232,6 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\hoteldetail_facility.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\hoteldetail_facility.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_booking_payment_choice.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_booking_payment_choice.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pois_filter.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_pois_filter.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_navigation_menu.xml"
     },
@@ -330,10 +242,6 @@
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_white_large.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\confirmation_hotels_and_rooms_card.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\confirmation_hotels_and_rooms_card.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
@@ -376,16 +284,8 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_booking_payment_billing_address.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_booking_payment_billing_address.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\results_filter_price.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\results_filter_price.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\room_list_item.xml",
@@ -412,16 +312,12 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_member_profile.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_member_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\view_number_box.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\view_number_box.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_page_text.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\layout\\fragment_page_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_record_card.xml",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_record_card.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_page_image.xml",
@@ -436,24 +332,12 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_room_list.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_sign_up.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_sign_up.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_review.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\layout\\list_item_review.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\member_header.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\member_header.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\booking_billing_address.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\booking_billing_address.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\view_recent_list_no_results.xml",
@@ -496,16 +380,8 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\layout\\fragment_page.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\activity_confirmation.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\activity_confirmation.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_booking_payment_paypal.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\fragment_booking_payment_paypal.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -522,10 +398,6 @@
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\com_facebook_tooltip_bubble.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\view_small_datepicker.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\view_small_datepicker.xml"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
@@ -558,9 +430,5 @@
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\layout\\view_datepicker.xml",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\layout\\view_datepicker.xml"
     }
 ]

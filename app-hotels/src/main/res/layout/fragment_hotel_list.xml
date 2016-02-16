@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <include layout="@layout/view_hotels_list_no_results" />
+    <include layout="@layout/view_records_list_no_results" />
 
     <FrameLayout
         android:id="@+id/panel_top"
