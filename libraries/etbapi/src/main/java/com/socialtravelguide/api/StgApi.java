@@ -10,6 +10,7 @@ import com.socialtravelguide.api.model.OrderRequest;
 import com.socialtravelguide.api.model.OrderResponse;
 import com.socialtravelguide.api.model.ResultsResponse;
 import com.socialtravelguide.api.model.SearchRequest;
+import com.socialtravelguide.api.model.search.ImageRequest;
 import com.socialtravelguide.api.model.search.ListType;
 import com.socialtravelguide.api.model.search.Type;
 import com.socialtravelguide.api.utils.RequestUtils;
@@ -167,14 +168,8 @@ public static final String PATH_ACCOMMODATIONS ="/etbstatic/checkRoomAvailabilit
 
         Service service = create();
 
-        ArrayMap<String, String> query = new ArrayMap<>();
 
-
-        query.put("image", image);
-        query.put("name", name);
-
-
-        return service.saveImage(query);
+        return service.saveImage(new ImageRequest(name,image));
     }
 
 
@@ -183,8 +178,8 @@ public static final String PATH_ACCOMMODATIONS ="/etbstatic/checkRoomAvailabilit
         @GET(PATH_RECORDS)
         Call<ResultsResponse> records(@QueryMap Map<String, String> query);
 
-        @GET(PATH_IMAGE)
-        Call<ResultsResponse> saveImage(@QueryMap Map<String, String> query);
+        @POST(PATH_IMAGE)
+        Call<ResultsResponse> saveImage(@Body ImageRequest request);
 
         @GET(PATH_ACCOMMODATIONS )
         Call<DetailsResponse> details( @QueryMap Map<String, String> query);
