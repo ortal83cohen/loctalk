@@ -2,7 +2,7 @@ package com.stg.app.etbapi;
 
 import android.support.annotation.NonNull;
 
-import com.socialtravelguide.api.EtbApi;
+import com.socialtravelguide.api.StgApi;
 import com.stg.app.utils.NetworkUtilities;
 import com.squareup.okhttp.Cache;
 import com.squareup.okhttp.OkHttpClient;
@@ -65,7 +65,7 @@ public class CacheInterceptorTest {
         client.networkInterceptors().add(new CacheResponseInterceptor());
 
         Request searchRequest = new Request.Builder()
-                .url(server.getUrl(EtbApi.PATH_SEARCH))
+                .url(server.getUrl(StgApi.PATH_RECORDS))
                 .build();
 
         Response response1 = client.newCall(searchRequest).execute();
@@ -75,7 +75,7 @@ public class CacheInterceptorTest {
 
 //  TODO: post orders
 //        Request orderRequest = new Request.Builder()
-//                .url(server.getUrl(EtbApi.PATH_ORDERS))
+//                .url(server.getUrl(StgApi.PATH_ORDERS))
 //                .build();
 //
 //        Response response2 = client.newCall(orderRequest).execute();
@@ -112,7 +112,7 @@ public class CacheInterceptorTest {
         when(networkUtilities.isConnected()).thenReturn(true);
 
         Request searchRequest = new Request.Builder()
-                .url(server.getUrl(EtbApi.PATH_SEARCH))
+                .url(server.getUrl(StgApi.PATH_RECORDS))
                 .build();
 
         // 1. Initial request stored for 2 seconds
@@ -184,7 +184,7 @@ public class CacheInterceptorTest {
         when(networkUtilities.isConnected()).thenReturn(true);
 
         Request accommodationRequest = new Request.Builder()
-                .url(server.getUrl(EtbApi.PATH_ACCOMMODATIONS + "/1"))
+                .url(server.getUrl(StgApi.PATH_ACCOMMODATIONS + "/1"))
                 .build();
 
         // 1. Initial request stored for 2 seconds

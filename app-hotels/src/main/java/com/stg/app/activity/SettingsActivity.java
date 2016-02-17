@@ -7,7 +7,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.socialtravelguide.api.EtbApiConfig;
+import com.socialtravelguide.api.StgApiConfig;
 import com.socialtravelguide.api.contract.Language;
 import com.stg.app.App;
 import com.stg.app.BuildConfig;
@@ -16,12 +16,8 @@ import com.stg.app.R;
 import com.stg.app.preferences.UserPreferences;
 import com.stg.app.preferences.UserPreferencesStorage;
 import com.stg.app.utils.AppLog;
-import com.stg.app.utils.CountryCode;
-import com.stg.app.utils.CurrencyCode;
 
 import java.util.ArrayList;
-import java.util.Currency;
-import java.util.Set;
 
 import de.psdev.licensesdialog.LicensesDialog;
 
@@ -210,9 +206,9 @@ public class SettingsActivity extends SettingsActionBarActivity {
         builder.setItems(items, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                EtbApiConfig cfg = App.provide(SettingsActivity.this).etbApi().getConfig();
+                StgApiConfig cfg = App.provide(SettingsActivity.this).etbApi().getConfig();
                 if (which == 0) {
-                    cfg.setEndpoint(EtbApiConfig.ETB_API_ENDPOINT_DEFAULT);
+                    cfg.setEndpoint(StgApiConfig.ETB_API_ENDPOINT_DEFAULT);
                     Config.setCoreInterfaceEndpoint(Config.CORE_INTERFACE_ENDPOINT);
                     Config.setCoreInterfaceSecureEndpoint(Config.CORE_INTERFACE_SECURE_ENDPOINT);
                     Config.setProductionEnv(true);

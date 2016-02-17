@@ -52,28 +52,10 @@ public class DbDatabase extends SQLiteOpenHelper {
                 + DbContract.SearchHistoryColumns.NUMBER_ROOMS + "," + DbContract.SearchHistoryColumns.FROM_DATE + "," +
                 DbContract.SearchHistoryColumns.TO_DATE + ")  )";
 
-        String CREATE_BOOKINGS_TABLE = "CREATE TABLE IF NOT EXISTS " + DbContract.Tables.TABLE_BOOKINGS + " ( " +
-                DbContract.BookingsColumns.ORDER_ID + " STRING , " +
-                DbContract.BookingsColumns.ARRIVAL + " STRING , " +
-                DbContract.BookingsColumns.CITY + " STRING , " +
-                DbContract.BookingsColumns.COUNTRY + " STRING , " +
-                DbContract.BookingsColumns.CURRENCY + " STRING , " +
-                DbContract.BookingsColumns.DEPARTURE + " STRING , " +
-                DbContract.BookingsColumns.HOTEL_NAME + " STRING , " +
-                DbContract.BookingsColumns.IMAGE + " STRING , " +
-                DbContract.BookingsColumns.ROOMS + " STRING , " +
-                DbContract.BookingsColumns.IS_CANCELLED + " STRING , " +
-                DbContract.BookingsColumns.RATE_NAME + " STRING , " +
-                DbContract.BookingsColumns.REFERENCE + " STRING , " +
-                DbContract.BookingsColumns.STARS + " STRING , " +
-                DbContract.BookingsColumns.TOTAL_VALUE + " STRING , " +
-                DbContract.BookingsColumns.RATE_ID + " STRING , " +
-                DbContract.BookingsColumns.CONFIRMATION_ID + " STRING , " +
-                " PRIMARY KEY (" + DbContract.BookingsColumns.ORDER_ID + ") ) ";
         // create Hotels table
         db.execSQL(CREATE_HOTEL_TABLE);
         db.execSQL(CREATE_SEARCH_HISTORY_TABLE);
-        db.execSQL(CREATE_BOOKINGS_TABLE);
+
     }
 
     @Override

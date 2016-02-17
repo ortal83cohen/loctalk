@@ -1,6 +1,6 @@
 package com.stg.app.etbapi;
 
-import com.socialtravelguide.api.EtbApi;
+import com.socialtravelguide.api.StgApi;
 import com.stg.app.utils.NetworkUtilities;
 import com.squareup.okhttp.CacheControl;
 import com.squareup.okhttp.Interceptor;
@@ -61,10 +61,10 @@ public class CacheRequestInterceptor implements Interceptor {
         URI uri = request.uri();
 
         CacheControl cacheControl;
-        if (uri.getPath().equals(EtbApi.PATH_SEARCH)) {
+        if (uri.getPath().equals(StgApi.PATH_RECORDS)) {
             cacheControl = new CacheControl.Builder().maxAge(mSearchMaxAge, TimeUnit.SECONDS).build();
             return request.newBuilder().cacheControl(cacheControl).build();
-        } else if (uri.getPath().startsWith(EtbApi.PATH_ACCOMMODATIONS)) {
+        } else if (uri.getPath().startsWith(StgApi.PATH_ACCOMMODATIONS)) {
             return request.newBuilder().cacheControl(CacheControl.FORCE_NETWORK).build();
         } else if (CacheUtils.isRetrieveOrderRequest(request)) {
             return request.newBuilder().cacheControl(CacheControl.FORCE_NETWORK).build();

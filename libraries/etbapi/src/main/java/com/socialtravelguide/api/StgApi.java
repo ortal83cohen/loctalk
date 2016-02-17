@@ -1,5 +1,6 @@
 package com.socialtravelguide.api;
 
+import android.app.DownloadManager;
 import android.support.v4.util.ArrayMap;
 
 import com.socialtravelguide.api.mock.ResultsMockClient;
@@ -37,14 +38,15 @@ import retrofit.http.QueryMap;
  * @author alex
  * @date 2015-04-19
  */
-public class EtbApi {
+public class StgApi {
 public static final String PATH_ACCOMMODATIONS ="/etbstatic/checkRoomAvailability.json" ;
-    public static final String PATH_SEARCH = "/records" ;
+    public static final String PATH_RECORDS = "/records" ;
+    public static final String PATH_IMAGE = "/image" ;
     public static final String PATH_ORDERS = "/etbstatic/placeAnOrder.json";
     public static final int LIMIT = 15;
     private OkHttpClient mHttpClient;
 
-    private EtbApiConfig mConfig;
+    private StgApiConfig mConfig;
     private SimpleDateFormat mDateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
 
     private Interceptor mRequestInterceptor = new Interceptor() {
@@ -62,22 +64,22 @@ public static final String PATH_ACCOMMODATIONS ="/etbstatic/checkRoomAvailabilit
         }
     };
 
-    public EtbApi(String apiKey, int campaignId) {
-        this(new EtbApiConfig(apiKey, campaignId), null);
+    public StgApi(String apiKey, int campaignId) {
+        this(new StgApiConfig(apiKey, campaignId), null);
     }
 
-    public EtbApi(EtbApiConfig config) {
+    public StgApi(StgApiConfig config) {
         this(config, null);
     }
 
-    public EtbApi(EtbApiConfig config, OkHttpClient httpClient) {
+    public StgApi(StgApiConfig config, OkHttpClient httpClient) {
         mConfig = config;
         mHttpClient = httpClient == null ? new OkHttpClient() : httpClient;
         mHttpClient.interceptors().add(0, mRequestInterceptor);
         mHttpClient.interceptors().add(new ResultsMockClient());
     }
 
-    public EtbApiConfig getConfig() {
+    public StgApiConfig getConfig() {
         return mConfig;
     }
 
@@ -161,11 +163,28 @@ public static final String PATH_ACCOMMODATIONS ="/etbstatic/checkRoomAvailabilit
         return service.retrieve( query);
     }
 
+    public Call<ResultsResponse> saveImage(String image, String name) {
+
+        Service service = create();
+
+        ArrayMap<String, String> query = new ArrayMap<>();
+
+
+        query.put("image", image);
+        query.put("name", name);
+
+
+        return service.saveImage(query);
+    }
+
 
     public interface Service {
 
-        @GET(PATH_SEARCH)
+        @GET(PATH_RECORDS)
         Call<ResultsResponse> records(@QueryMap Map<String, String> query);
+
+        @GET(PATH_IMAGE)
+        Call<ResultsResponse> saveImage(@QueryMap Map<String, String> query);
 
         @GET(PATH_ACCOMMODATIONS )
         Call<DetailsResponse> details( @QueryMap Map<String, String> query);

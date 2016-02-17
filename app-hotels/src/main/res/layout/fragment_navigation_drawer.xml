@@ -33,30 +33,17 @@
         android:drawableLeft="@drawable/mainnav_scanner"
         android:text="@string/mainnav_code_scanner" />
 
+    <TextView
+        android:id="@+id/nav_contribute"
+        style="@style/HotelsAppTheme.Widget.NavDrawer.Item"
+        android:drawableLeft="@drawable/mainnav_my_profile"
+        android:text="@string/mainnav_contribute" />
+
+
     <View
         android:id="@+id/nav_divider"
         style="@style/HotelsAppTheme.Widget.NavDrawer.Separator" />
 
-    <!--<TextView-->
-    <!--android:id="@+id/nav_profile"-->
-    <!--android:text="@string/mainnav_profile"-->
-    <!--android:drawableLeft="@drawable/mainnav_my_profile"-->
-    <!--style="@style/HotelsAppTheme.Widget.NavDrawer.Item" />-->
-
-    <TextView
-        android:id="@+id/nav_bookings"
-        style="@style/HotelsAppTheme.Widget.NavDrawer.Item"
-        android:drawableLeft="@drawable/mainnav_my_bookings"
-        android:text="@string/mainnav_bookings" />
-
-    <!--<TextView-->
-    <!--android:id="@+id/nav_creditcards"-->
-    <!--android:text="@string/mainnav_creditcards"-->
-    <!--android:drawableLeft="@drawable/mainnav_creditcards"-->
-    <!--style="@style/HotelsAppTheme.Widget.NavDrawer.Item" />-->
-
-
-    <View style="@style/HotelsAppTheme.Widget.NavDrawer.Separator" />
 
     <TextView
         android:id="@+id/nav_settings"

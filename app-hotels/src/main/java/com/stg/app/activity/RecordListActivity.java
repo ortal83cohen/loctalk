@@ -359,7 +359,7 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
     @Subscribe
     public void onSearchRequestEvent(SearchRequestEvent event) {
-        if (event.getOffset() == 0) { // Only for the fresh record
+        if (event.getOffset() == 0) { // Only for the fresh recordButton
             AnalyticsCalls.get().trackSearchResults(event.getSearchRequest());
         }
     }

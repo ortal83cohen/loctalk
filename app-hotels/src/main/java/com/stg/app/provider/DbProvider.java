@@ -23,7 +23,7 @@ public class DbProvider extends ContentProvider {
     private static final int FAVORITES_HOTELS = 100;
     private static final int FAVORITES_HOTEL_ID = 101;
     private static final int SEARCH_HISTORY = 200;
-    private static final int BOOKINGS = 300;
+
     private static final UriMatcher sUriMatcher = buildUriMatcher();
     private DbDatabase mOpenHelper;
 
@@ -33,8 +33,7 @@ public class DbProvider extends ContentProvider {
         matcher.addURI(authority, "favorites", FAVORITES_HOTELS);
         matcher.addURI(authority, "favorites/*", FAVORITES_HOTEL_ID);
         matcher.addURI(authority, "search_history", SEARCH_HISTORY);
-        matcher.addURI(authority, "bookings", BOOKINGS);
-        matcher.addURI(authority, "bookings/*", BOOKINGS);
+
         return matcher;
     }
 
@@ -61,8 +60,7 @@ public class DbProvider extends ContentProvider {
                 return DbContract.LikedHotels.CONTENT_TYPE;
             case SEARCH_HISTORY:
                 return DbContract.SearchHistory.CONTENT_TYPE;
-            case BOOKINGS:
-                return DbContract.Bookings.CONTENT_TYPE;
+
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
         }
@@ -92,9 +90,9 @@ public class DbProvider extends ContentProvider {
             case SEARCH_HISTORY:
                 builder.table(DbContract.Tables.TABLE_SEARCH_HISTORY);
                 return builder.query(db, false, getSearchHistoryColumns(), DbContract.SearchHistoryColumns.CREATE_AT + " DESC", uri.getQueryParameter("limit"));
-            case BOOKINGS:
-                builder.table(DbContract.Tables.TABLE_BOOKINGS);
-                return builder.query(db, false, projection, "", "");
+//            case BOOKINGS:
+//                builder.table(DbContract.Tables.TABLE_BOOKINGS);
+//                return builder.query(db, false, projection, "", "");
             default: {
                 throw new UnsupportedOperationException("Unknown insert uri: " + uri);
             }
@@ -143,24 +141,7 @@ public class DbProvider extends ContentProvider {
                         values.getAsString(DbContract.SearchHistoryColumns.NUMBER_ROOMS),
                         values.getAsString(DbContract.SearchHistoryColumns.FROM_DATE),
                         values.getAsString(DbContract.SearchHistoryColumns.TO_DATE));
-            case BOOKINGS:
-                db.insert(DbContract.Tables.TABLE_BOOKINGS, null, values);
-                return DbContract.Bookings.buildBookingsUri(
-                        values.getAsString(DbContract.BookingsColumns.ORDER_ID),
-                        values.getAsString(DbContract.BookingsColumns.REFERENCE),
-                        values.getAsString(DbContract.BookingsColumns.CITY),
-                        values.getAsString(DbContract.BookingsColumns.COUNTRY),
-                        values.getAsString(DbContract.BookingsColumns.HOTEL_NAME),
-                        values.getAsString(DbContract.BookingsColumns.STARS),
-                        values.getAsString(DbContract.BookingsColumns.IMAGE),
-                        values.getAsString(DbContract.BookingsColumns.ARRIVAL),
-                        values.getAsString(DbContract.BookingsColumns.DEPARTURE),
-                        values.getAsString(DbContract.BookingsColumns.ROOMS),
-                        values.getAsString(DbContract.BookingsColumns.RATE_NAME),
-                        values.getAsString(DbContract.BookingsColumns.CURRENCY),
-                        values.getAsString(DbContract.BookingsColumns.TOTAL_VALUE),
-                        values.getAsString(DbContract.BookingsColumns.IS_CANCELLED)
-                );
+
             default: {
                 throw new UnsupportedOperationException("Unknown insert uri: " + uri);
             }
@@ -172,9 +153,7 @@ public class DbProvider extends ContentProvider {
         final SQLiteDatabase db = mOpenHelper.getWritableDatabase();
         final DbSelectionBuilder builder = new DbSelectionBuilder();
         final int match = sUriMatcher.match(uri);
-        if (match == BOOKINGS) {
-            builder.table(DbContract.Tables.TABLE_BOOKINGS).where(DbContract.BookingsColumns.ORDER_ID + "=?", uri.getPathSegments().get(1));
-        }
+
         return builder.where(selection, selectionArgs).update(db, values);
     }
 
@@ -191,9 +170,7 @@ public class DbProvider extends ContentProvider {
         if (match == FAVORITES_HOTEL_ID) {
             builder.table(DbContract.Tables.TABLE_LIKED_HOTELS).where(DbContract.LikedHotelsColumns.KEY_ID + "=?", uri.getPathSegments().get(1));
         }
-        if (match == BOOKINGS) {
-            builder.table(DbContract.Tables.TABLE_BOOKINGS).where(selection);
-        }
+
         return builder.where(selection, selectionArgs).delete(db);
     }
 

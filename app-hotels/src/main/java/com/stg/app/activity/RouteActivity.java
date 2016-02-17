@@ -1,15 +1,12 @@
 package com.stg.app.activity;
 
 import android.app.Activity;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.util.ArrayMap;
 
-import com.socialtravelguide.api.EtbApi;
+import com.socialtravelguide.api.StgApi;
 import com.socialtravelguide.api.model.Record;
-import com.socialtravelguide.api.model.Order;
-import com.socialtravelguide.api.model.OrderResponse;
 import com.socialtravelguide.api.model.ResultsResponse;
 import com.socialtravelguide.api.model.search.ListType;
 import com.stg.app.App;
@@ -18,7 +15,6 @@ import com.stg.app.core.CoreInterface;
 import com.stg.app.etbapi.RetrofitCallback;
 import com.stg.app.model.HotelListRequest;
 import com.stg.app.model.Location;
-import com.stg.app.provider.DbContract;
 import com.stg.app.utils.AppLog;
 import com.stg.app.utils.BrowserUtils;
 import com.google.android.gms.maps.model.LatLng;
@@ -42,7 +38,7 @@ public class RouteActivity extends Activity {
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
-            AppLog.e("RouteActivity - record failure");
+            AppLog.e("RouteActivity - recordButton failure");
             startActivity(HomeActivity.createIntent(RouteActivity.this));
         }
 
@@ -57,39 +53,7 @@ public class RouteActivity extends Activity {
         }
 
     };
-    private RetrofitCallback<OrderResponse> mRetrieveResultsCallback = new RetrofitCallback<OrderResponse>() {
-        @Override
-        protected void failure(ResponseBody response, boolean isOffline) {
 
-        }
-
-        @Override
-        public void success(OrderResponse orderResponse, Response response) {
-            Order.Rate rate = orderResponse.order.rates.get(0);
-            ContentValues values = new ContentValues();
-            values.put(DbContract.BookingsColumns.ORDER_ID, orderResponse.order.orderId);
-            values.put(DbContract.BookingsColumns.REFERENCE, orderResponse.order.orderId);
-//            values.put(DbContract.BookingsColumns.CITY, rate.record.summary.city);
-//            values.put(DbContract.BookingsColumns.COUNTRY, rate.record.summary.country);
-//            values.put(DbContract.BookingsColumns.TOTAL_VALUE, rate.charge.totalChargeable);
-//            values.put(DbContract.BookingsColumns.STARS, String.valueOf(Double.valueOf(rate.record.starRating)));
-//            values.put(DbContract.BookingsColumns.ROOMS, rate.rateCount);
-//            values.put(DbContract.BookingsColumns.RATE_NAME, rate.name);
-//            values.put(DbContract.BookingsColumns.IS_CANCELLED, false);
-//            if ((rate.record.images.size() > 0)) {
-//                values.put(DbContract.BookingsColumns.IMAGE, rate.record.images.get(0));
-//            }
-//            values.put(DbContract.BookingsColumns.HOTEL_NAME, rate.record.name);
-            values.put(DbContract.BookingsColumns.CURRENCY, rate.charge.currency);
-            values.put(DbContract.BookingsColumns.ARRIVAL, rate.checkIn);
-            values.put(DbContract.BookingsColumns.DEPARTURE, rate.checkOut);
-            values.put(DbContract.BookingsColumns.RATE_ID, rate.rateId);
-            values.put(DbContract.BookingsColumns.CONFIRMATION_ID, rate.confirmationId);
-            getBaseContext().getContentResolver().insert(DbContract.Bookings.CONTENT_URI, values);
-
-        }
-
-    };
 
     @Override
     public void onStart() {
@@ -115,7 +79,7 @@ public class RouteActivity extends Activity {
                         String value = param.split("=")[1];
                         map.put(name, value);
                     }
-                    retrieveBooking(map.get("br"), map.get("pc"));
+
                 }
             } else {
                 if (mUriData.toString().startsWith("http://recp.mkt32.net/")) {
@@ -170,8 +134,8 @@ public class RouteActivity extends Activity {
         HotelListRequest request = App.provide(this).createHotelsRequest();
         request.setType(new ListType(hotels));
 
-        EtbApi etbApi = HotelsApplication.provide(this).etbApi();
-        etbApi.records(request, 0).enqueue(mResultsCallback);
+        StgApi stgApi = HotelsApplication.provide(this).etbApi();
+        stgApi.records(request, 0).enqueue(mResultsCallback);
     }
 
     private void startHotelSummaryActivity(Record acc) {
@@ -183,8 +147,5 @@ public class RouteActivity extends Activity {
         BrowserUtils.sendToWebBrowser(data, this);
     }
 
-    private void retrieveBooking(String id, String pass) {
-        EtbApi etbApi = HotelsApplication.provide(this).etbApi();
-        etbApi.retrieve("B-" + id, pass).enqueue(mRetrieveResultsCallback);
-    }
+
 }

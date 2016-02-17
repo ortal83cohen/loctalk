@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.socialtravelguide.api.EtbApi;
+import com.socialtravelguide.api.StgApi;
 import com.socialtravelguide.api.contract.Sort;
 import com.socialtravelguide.api.model.ErrorResponse;
 import com.socialtravelguide.api.model.ResultsResponse;
@@ -63,7 +63,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     TextView mLoaderText;
     @Bind(R.id.modify_preferences)
     Button mModifyPreferences;
-    EtbApi mEtbApi;
+    StgApi mStgApi;
     private LinearLayoutManager mLayoutManager;
     private RecordListAdapter mAdapter;
     private Listener mListener;
@@ -80,7 +80,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
                 return;
             }
 
-            if (apiResponse.records == null || apiResponse.records.isEmpty() || apiResponse.records.size() != EtbApi.LIMIT) {
+            if (apiResponse.records == null || apiResponse.records.isEmpty() || apiResponse.records.size() != StgApi.LIMIT) {
                 mRecyclerView.setHasMoreData(false);
             }
 
@@ -186,8 +186,8 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
         mLayoutManager = new LinearLayoutManager(getActivity());
         mAdapter = new RecordListAdapter((BaseActivity) getActivity(), (RecordViewHolder.Listener) getActivity());
 
-        mEtbApi = HotelsApplication.provide(getActivity()).etbApi();
-        mRecyclerView.init(mLayoutManager, mAdapter, EtbApi.LIMIT);
+        mStgApi = HotelsApplication.provide(getActivity()).etbApi();
+        mRecyclerView.init(mLayoutManager, mAdapter, StgApi.LIMIT);
         mRecyclerView.addItemDecoration(new TopOffsetItemDecorator(getActivity().getResources().getDimensionPixelOffset(R.dimen.results_panel_top_height)));
         mRecyclerView.setOnLoadMoreListener(new EndlessRecyclerView.OnLoadMoreListener() {
             @Override
@@ -214,7 +214,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
         SearchRequest hotelsRequest = getRequest();
         Events.post(new SearchRequestEvent(hotelsRequest, offset));
         try {
-            mEtbApi.records(hotelsRequest, offset).enqueue(mResultsCallback);
+            mStgApi.records(hotelsRequest, offset).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             getActivity().finish();
         }

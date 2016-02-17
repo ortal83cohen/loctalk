@@ -89,7 +89,7 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
         setupItem(R.id.nav_favorites, NavigationDrawer.NAV_FAVORITES, true);
         setupItem(R.id.nav_code_scanner, NavigationDrawer.NAV_SCANNER, true);
 //        setupItem(R.id.nav_profile, NavigationDrawer.NAV_PROFILE, loggedIn);
-//        setupItem(R.id.nav_creditcards, NavigationDrawer.NAV_CREDIT_CARD, loggedIn);
+        setupItem(R.id.nav_contribute, NavigationDrawer.NAV_NEW_RECORD, true);
         setupItem(R.id.nav_settings, NavigationDrawer.NAV_SETTING, true);
         FrameLayout headerView = (FrameLayout) mView.findViewById(R.id.nav_header_view);
         headerView.removeAllViews();

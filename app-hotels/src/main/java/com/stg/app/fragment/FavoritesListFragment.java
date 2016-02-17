@@ -19,7 +19,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.socialtravelguide.api.EtbApi;
+import com.socialtravelguide.api.StgApi;
 import com.socialtravelguide.api.model.ResultsResponse;
 import com.socialtravelguide.api.model.search.ListType;
 import com.socialtravelguide.api.utils.RequestUtils;
@@ -69,7 +69,7 @@ public class FavoritesListFragment extends BaseFragment {
     @Bind(R.id.modify_preferences)
     Button mModifyPreferences;
 
-    EtbApi mEtbApi;
+    StgApi mStgApi;
 
     private LinearLayoutManager mLayoutManager;
     private FavoritesRecordListAdapter mAdapter;
@@ -95,7 +95,7 @@ public class FavoritesListFragment extends BaseFragment {
 //            if (apiResponse.recordses == null || apiResponse.recordses.isEmpty()) {
 //                mNoResult.setVisibility(View.VISIBLE);
 //            }
-//            if (apiResponse.recordses == null || apiResponse.recordses.isEmpty() || apiResponse.recordses.size() != EtbApi.LIMIT) {
+//            if (apiResponse.recordses == null || apiResponse.recordses.isEmpty() || apiResponse.recordses.size() != StgApi.LIMIT) {
 //                mRecyclerView.setHasMoreData(false);
 //            }
 //            // Fragment destroyed
@@ -203,9 +203,9 @@ public class FavoritesListFragment extends BaseFragment {
 
         mLayoutManager = new LinearLayoutManager(getActivity());
         mAdapter = new FavoritesRecordListAdapter((BaseActivity) getActivity(), mListener);
-        mEtbApi = HotelsApplication.provide(getActivity()).etbApi();
+        mStgApi = HotelsApplication.provide(getActivity()).etbApi();
 
-        mRecyclerView.init(mLayoutManager, mAdapter, EtbApi.LIMIT);
+        mRecyclerView.init(mLayoutManager, mAdapter, StgApi.LIMIT);
 
         mLoaderImage.setBackgroundResource(R.drawable.logo_animation);
         AnimationDrawable logoAnimation = (AnimationDrawable) mLoaderImage.getBackground();
@@ -222,7 +222,7 @@ public class FavoritesListFragment extends BaseFragment {
 
     private void loadSearchResults(int offset) {
         try {
-            mEtbApi.records(mHotelsRequest, offset).enqueue(mResultsCallback);
+            mStgApi.records(mHotelsRequest, offset).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             getActivity().finish();
         }
@@ -268,7 +268,7 @@ public class FavoritesListFragment extends BaseFragment {
         if (mAdapter != null) {
             mAdapter.clear();
             mRecyclerView.setHasMoreData(true);
-            AppLog.e("mEtbApi.record");
+            AppLog.e("mStgApi.record");
             loadSearchResults(0);
         }
     }

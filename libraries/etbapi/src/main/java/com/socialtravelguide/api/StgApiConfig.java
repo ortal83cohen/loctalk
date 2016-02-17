@@ -6,7 +6,7 @@ import com.socialtravelguide.api.utils.HttpLoggingInterceptor;
  * @author alex
  * @date 2015-04-28
  */
-public class EtbApiConfig {
+public class StgApiConfig {
 
     public static final String ETB_API_ENDPOINT_DEFAULT = "http://stormy-bastion-18585.herokuapp.com";
 
@@ -20,7 +20,7 @@ public class EtbApiConfig {
     private int mCampaignId;
     private HttpLoggingInterceptor.Logger logger;
 
-    public EtbApiConfig(String apiKey, int campaignId) {
+    public StgApiConfig(String apiKey, int campaignId) {
         this.mApiKey = apiKey;
         this.mCampaignId = campaignId;
     }

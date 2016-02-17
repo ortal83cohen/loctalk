@@ -16,12 +16,10 @@ public class DbContract {
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
     private static final String PATH_LIKED_HOTELS = "favorites";
     private static final String PATH_SEARCH_HISTORY = "search_history";
-    private static final String PATH_BOOKINGS = "bookings";
 
     interface Tables {
         String TABLE_LIKED_HOTELS = "liked_hotels";
         String TABLE_SEARCH_HISTORY = "search_history";
-        String TABLE_BOOKINGS = "bookings";
     }
 
     public interface LikedHotelsColumns {
@@ -30,25 +28,6 @@ public class DbContract {
         String COUNTRY = "country";
     }
 
-    public interface BookingsColumns {
-        String ORDER_ID = "orderId";
-        String REFERENCE = "reference";
-        String CITY = "city";
-        String COUNTRY = "country";
-        String HOTEL_NAME = "hotelName";
-        String STARS = "hotelStars";
-        String IMAGE = "hotelImage";
-        String ARRIVAL = "arrival";
-        String DEPARTURE = "departure";
-        String CONFIRMATION_ID = "confirmationId";
-        String RATE_ID = "rateId";
-        String ROOMS = "rooms";
-        String RATE_NAME = "rateName";
-        //        public List<Integer> tags;
-        String CURRENCY = "currency";
-        String TOTAL_VALUE = "totalValue";
-        String IS_CANCELLED = "isCancelled";
-    }
 
     public interface SearchHistoryColumns {
         String LOCATION_NAME = "location_name";
@@ -95,21 +74,5 @@ public class DbContract {
         }
     }
 
-    public static class Bookings implements BookingsColumns, BaseColumns {
-        public static final Uri CONTENT_URI =
-                BASE_CONTENT_URI.buildUpon().appendPath(PATH_BOOKINGS).build();
-        public static final String CONTENT_TYPE = "vnd.android.cursor.dir/int";
-
-        public static Uri buildBookingsUri(String orderId, String reference, String city, String country, String hotelName, String hotelStars,
-                                           String hotelImage, String arrival, String departure, String rooms, String rateName, String currency,
-                                           String totalValue, String isCancelled) {
-            return CONTENT_URI.buildUpon().appendPath(orderId).appendPath(reference).appendPath(city).appendPath(country).appendPath(hotelName).appendPath(hotelStars).appendPath(hotelImage)
-                    .appendPath(arrival).appendPath(departure).appendPath(rooms).appendPath(rateName).appendPath(currency).appendPath(totalValue).appendPath(isCancelled).build();
-        }
-
-        public static List<String> getOrdersIds(Uri uri) {
-            return uri.getPathSegments();
-        }
-    }
 
 }

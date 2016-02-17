@@ -6,8 +6,8 @@ import android.telephony.TelephonyManager;
 
 import com.facebook.CallbackManager;
 import com.facebook.device.yearclass.YearClass;
-import com.socialtravelguide.api.EtbApi;
-import com.socialtravelguide.api.EtbApiConfig;
+import com.socialtravelguide.api.StgApi;
+import com.socialtravelguide.api.StgApiConfig;
 import com.socialtravelguide.api.mock.ResultsMockClient;
 import com.socialtravelguide.api.model.SearchRequest;
 import com.squareup.okhttp.Cache;
@@ -44,7 +44,7 @@ public class ObjectGraph {
     private HotelListRequest mHotelsRequest;
     private Facebook mFacebook;
     private UserPreferences mUserPrefs;
-    private EtbApi mEtbApi;
+    private StgApi mStgApi;
     private OkHttpClient mHttpClient;
     private MemberStorage mMemberStorage;
     private SearchRequest mLastSearchRequest;
@@ -76,14 +76,14 @@ public class ObjectGraph {
         return request;
     }
 
-    public EtbApi etbApi() {
-        if (mEtbApi == null) {
-            EtbApiConfig cfg = new EtbApiConfig(Config.ETB_API_KEY, Config.ETB_API_CAMPAIGN_ID);
+    public StgApi etbApi() {
+        if (mStgApi == null) {
+            StgApiConfig cfg = new StgApiConfig(Config.ETB_API_KEY, Config.ETB_API_CAMPAIGN_ID);
             cfg.setDebug(BuildConfig.DEBUG);
             cfg.setLogger(new RetrofitLogger());
-            mEtbApi = new EtbApi(cfg, apiHttpClient());
+            mStgApi = new StgApi(cfg, apiHttpClient());
         }
-        return mEtbApi;
+        return mStgApi;
     }
 
     private OkHttpClient apiHttpClient() {

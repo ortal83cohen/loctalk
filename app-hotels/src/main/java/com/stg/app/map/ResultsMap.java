@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.socialtravelguide.api.EtbApi;
+import com.socialtravelguide.api.StgApi;
 import com.socialtravelguide.api.model.Record;
 import com.socialtravelguide.api.model.ResultsResponse;
 import com.socialtravelguide.api.model.SearchRequest;
@@ -85,7 +85,7 @@ public class ResultsMap {
 
         @Override
         protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
-//            AppLog.d("EtbApi", "Response: " + apiResponse.meta);
+//            AppLog.d("StgApi", "Response: " + apiResponse.meta);
             ((RecordListActivity) mActivity).hideLoaderImage();
             mHotelsCollection.clear();
             mPoiCollection.clear();
@@ -205,7 +205,7 @@ public class ResultsMap {
     public void refreshHotels() {
 
         SearchRequest hotelsRequest = mActivity.getHotelsRequest();
-        EtbApi etb = HotelsApplication.provide(mActivity).etbApi();
+        StgApi etb = HotelsApplication.provide(mActivity).etbApi();
         Events.post(new SearchRequestEvent(hotelsRequest, 0));
         try {
             etb.records(hotelsRequest, 0).enqueue(mResultsCallback);
