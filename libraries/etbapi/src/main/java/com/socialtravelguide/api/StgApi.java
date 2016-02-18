@@ -1,11 +1,8 @@
 package com.socialtravelguide.api;
 
-import android.app.DownloadManager;
 import android.support.v4.util.ArrayMap;
 
 import com.socialtravelguide.api.mock.ResultsMockClient;
-import com.socialtravelguide.api.model.DetailsResponse;
-import com.socialtravelguide.api.model.HotelRequest;
 import com.socialtravelguide.api.model.OrderRequest;
 import com.socialtravelguide.api.model.OrderResponse;
 import com.socialtravelguide.api.model.ResultsResponse;
@@ -13,7 +10,6 @@ import com.socialtravelguide.api.model.SearchRequest;
 import com.socialtravelguide.api.model.search.ImageRequest;
 import com.socialtravelguide.api.model.search.ListType;
 import com.socialtravelguide.api.model.search.Type;
-import com.socialtravelguide.api.utils.RequestUtils;
 import com.squareup.okhttp.HttpUrl;
 import com.squareup.okhttp.Interceptor;
 import com.squareup.okhttp.OkHttpClient;
@@ -36,11 +32,11 @@ import retrofit.http.POST;
 import retrofit.http.QueryMap;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-19
  */
 public class StgApi {
-public static final String PATH_ACCOMMODATIONS ="/etbstatic/checkRoomAvailability.json" ;
+
     public static final String PATH_RECORDS = "/records" ;
     public static final String PATH_IMAGE = "/image" ;
     public static final String PATH_ORDERS = "/etbstatic/placeAnOrder.json";
@@ -136,18 +132,6 @@ public static final String PATH_ACCOMMODATIONS ="/etbstatic/checkRoomAvailabilit
         return service.records(query);
     }
 
-    public Call<DetailsResponse> details(int id, HotelRequest hotelRequest) {
-        Service service = create();
-        ArrayMap<String, String> query = new ArrayMap<>();
-        query.put("capacity", RequestUtils.capacity(hotelRequest.getNumberOfPersons(), hotelRequest.getNumberOfRooms()));
-
-        query.put("currency", hotelRequest.getCurrency());
-        query.put("language", hotelRequest.getLanguage());
-
-        query.put("customerCountryCode", hotelRequest.getCustomerCountryCode());
-
-        return service.details( query);
-    }
 
     public Call<OrderResponse> order(OrderRequest request) {
         Service service = create();
@@ -164,12 +148,12 @@ public static final String PATH_ACCOMMODATIONS ="/etbstatic/checkRoomAvailabilit
         return service.retrieve( query);
     }
 
-    public Call<ResultsResponse> saveImage(String image, String name) {
+    public Call<ResultsResponse> saveRecordDetails(String image, String title, String description, String locationName , String lat, String lon , String type) {
 
         Service service = create();
 
 
-        return service.saveImage(new ImageRequest(name,image));
+        return service.saveRecordDetails(new ImageRequest(image,title, description, locationName , lat, lon , type));
     }
 
 
@@ -178,11 +162,9 @@ public static final String PATH_ACCOMMODATIONS ="/etbstatic/checkRoomAvailabilit
         @GET(PATH_RECORDS)
         Call<ResultsResponse> records(@QueryMap Map<String, String> query);
 
-        @POST(PATH_IMAGE)
-        Call<ResultsResponse> saveImage(@Body ImageRequest request);
+        @POST(PATH_RECORDS)
+        Call<ResultsResponse> saveRecordDetails(@Body ImageRequest request);
 
-        @GET(PATH_ACCOMMODATIONS )
-        Call<DetailsResponse> details( @QueryMap Map<String, String> query);
 
         @POST(PATH_ORDERS )
         Call<OrderResponse> order(@Body OrderRequest request);

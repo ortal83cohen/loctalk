@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-28
  */
 public class NetworkUtils {

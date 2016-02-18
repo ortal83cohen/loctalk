@@ -12,7 +12,7 @@ import com.socialtravelguide.api.model.Record;
 import com.stg.app.R;
 import com.stg.app.adapter.RecordViewHolder;
 
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 
 import butterknife.ButterKnife;
 
@@ -46,7 +46,7 @@ public class HotelMapSummaryFragment extends BaseFragment {
         int pictureHeight = r.getDimensionPixelSize(R.dimen.listview_image_height);
 
         RecordViewHolder recordViewHolder = new RecordViewHolder(view, getActivity(), pictureWidth, pictureHeight, mListener);
-        HotelListRequest request = getRequest();
+        RecordListRequest request = getRequest();
         recordViewHolder.assignItem(mRecord,0);
         return view;
     }

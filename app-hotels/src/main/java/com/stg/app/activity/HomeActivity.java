@@ -23,7 +23,7 @@ import com.stg.app.anim.BlurAnimation;
 import com.stg.app.core.CoreInterface;
 import com.stg.app.etbapi.RetrofitCallback;
 import com.stg.app.fragment.HomeFragment;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 import com.stg.app.preferences.UserPreferences;
 import com.stg.app.utils.AppLog;
 import com.stg.app.widget.IntentIntegrator;
@@ -117,7 +117,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
                 .build();
 
         if (savedInstanceState == null) {
-            HotelListRequest request = getHotelsRequest();
+            RecordListRequest request = getHotelsRequest();
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.fragment_container, HomeFragment.newInstance(request),
@@ -138,7 +138,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
     private void updateSearchBox() {
         SearchRequest lastSearchRequest = App.provide(this).getLastSearchRequest();
         if (lastSearchRequest != null) {
-            HotelListRequest request = getHotelsRequest();
+            RecordListRequest request = getHotelsRequest();
             RequestUtils.apply(request);
             request.setType(lastSearchRequest.getType());
             HomeFragment homeFragment = (HomeFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME);
@@ -217,7 +217,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
 
     @Override
     public void startSearch(Type locationType) {
-        HotelListRequest request = getHotelsRequest();
+        RecordListRequest request = getHotelsRequest();
 
         request.setType(locationType);
         RequestUtils.apply(request);

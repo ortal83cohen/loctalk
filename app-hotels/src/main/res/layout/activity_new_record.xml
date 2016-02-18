@@ -6,14 +6,41 @@
     tools:context=".activity.NewRecord">
 <ImageView
     android:id="@+id/image"
-    android:layout_width="wrap_content"
+    android:layout_width="150dp"
     android:src="@drawable/place_holder_img"
-    android:layout_height="wrap_content" />
+    android:layout_height="150dp" />
+
+    <EditText
+        android:id="@+id/title"
+        android:hint="title" android:text="the title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText android:id="@+id/description"
+        android:hint="description" android:text="my home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText android:id="@+id/locationName"
+        android:hint="locationName" android:text="home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText android:id="@+id/lat"
+        android:hint="lat" android:text="32.10313416"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText android:id="@+id/lon"
+        android:hint="lon" android:text="34.88150024"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText android:id="@+id/type"
+        android:hint="type" android:text="privet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="59dp"
+
         android:text="Record" />
 
     <Button

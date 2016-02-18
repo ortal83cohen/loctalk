@@ -9,7 +9,7 @@ import com.socialtravelguide.api.model.HotelRequest;
 import java.util.ArrayList;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-05-26
  */
 public class RequestUtils {

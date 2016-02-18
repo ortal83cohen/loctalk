@@ -7,32 +7,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-19
  */
 public class ImageRequest {
 
-    public String name;
-    public String image;
 
-    public ImageRequest(String name, String image) {
-        this.name = name;
+    public String image,title, description, locationName ,lat, lon ,type;
+
+    public ImageRequest(String image, String title, String description, String locationName, String lat, String lon, String type) {
         this.image = image;
+        this.title = title;
+        this.description = description;
+        this.locationName = locationName;
+        this.lat = lat;
+        this.lon = lon;
+        this.type = type;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
 }

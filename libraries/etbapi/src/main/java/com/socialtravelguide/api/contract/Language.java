@@ -6,7 +6,7 @@ import android.support.v4.util.SimpleArrayMap;
 import java.util.Locale;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-19
  */
 public class Language {

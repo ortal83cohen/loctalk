@@ -15,7 +15,7 @@ import com.socialtravelguide.api.utils.RequestUtils;
 import com.stg.app.R;
 import com.stg.app.fragment.HomeFragment;
 import com.stg.app.fragment.RecordDetailsFragment;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 import com.stg.app.model.Location;
 
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -37,7 +37,7 @@ public class RecordDetailsActivity extends BaseActivity implements  HomeFragment
     private android.app.Fragment mStreetViewFragment;
 
 
-    public static Intent createIntent(Record record, HotelListRequest request, Context context) {
+    public static Intent createIntent(Record record, RecordListRequest request, Context context) {
         Intent intent = new Intent(context, RecordDetailsActivity.class);
 
         intent.putExtra(EXTRA_DATA, record);
@@ -156,7 +156,7 @@ public class RecordDetailsActivity extends BaseActivity implements  HomeFragment
     }
 
     public void showSearchResults(Location location, HotelRequest request) {
-        HotelListRequest searchRequest = getHotelsRequest();
+        RecordListRequest searchRequest = getHotelsRequest();
         searchRequest.setType(location);
         RequestUtils.apply(searchRequest);
 

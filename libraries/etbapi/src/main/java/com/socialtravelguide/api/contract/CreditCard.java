@@ -3,7 +3,7 @@ package com.socialtravelguide.api.contract;
 import java.util.ArrayList;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-28
  */
 public class CreditCard {

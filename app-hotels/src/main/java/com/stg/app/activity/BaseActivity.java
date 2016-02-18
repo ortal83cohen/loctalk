@@ -17,7 +17,7 @@ import com.stg.app.R;
 import com.stg.app.analytics.AnalyticsCalls;
 import com.stg.app.events.Events;
 import com.stg.app.events.NetworkStateChangeEvent;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 import com.stg.app.preferences.UserPreferences;
 import com.stg.app.widget.AppBar;
 import com.stg.app.widget.IntentIntegrator;
@@ -37,7 +37,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     private Menu mMenu;
     private NavigationDrawer mNavigationDrawer;
     private boolean mWasOffline;
-    private HotelListRequest mRequest;
+    private RecordListRequest mRequest;
 
     private BroadcastReceiver mNetworkChangeBroadcastReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
@@ -169,7 +169,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         return App.provide(this).getUserPrefs();
     }
 
-    public HotelListRequest getHotelsRequest() {
+    public RecordListRequest getHotelsRequest() {
         if (mRequest == null) {
             if (getIntent().hasExtra(EXTRA_REQUEST)) {
                 mRequest = getIntent().getParcelableExtra(EXTRA_REQUEST);
@@ -186,7 +186,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         return mRequest;
     }
 
-    public void setHotelsRequest(HotelListRequest request) {
+    public void setHotelsRequest(RecordListRequest request) {
         mRequest = request;
     }
 

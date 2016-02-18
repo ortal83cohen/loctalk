@@ -13,7 +13,7 @@ import java.net.URI;
 public class CacheUtils {
 
     public static boolean isSearchRequest(URI uri) {
-        return uri.getPath().startsWith(StgApi.PATH_ACCOMMODATIONS);
+        return false;
     }
 
     public static boolean isRetrieveOrderRequest(Request request) throws IOException {

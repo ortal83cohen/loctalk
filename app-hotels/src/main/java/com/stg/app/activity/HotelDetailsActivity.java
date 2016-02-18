@@ -19,7 +19,7 @@ import com.stg.app.adapter.ViewPagerAdapter;
 import com.stg.app.core.CoreInterface;
 import com.stg.app.fragment.RecordsMapFragment;
 import com.stg.app.map.PoiMarker;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 
 import java.util.List;
 
@@ -49,7 +49,7 @@ public class HotelDetailsActivity extends TabActivity implements OnMapReadyCallb
     private PoiMarker mPoiMarker;
     private boolean isFirstTime = true;
 
-    public static Intent createIntent(Record record, HotelListRequest request, int tabId, Context context) {
+    public static Intent createIntent(Record record, RecordListRequest request, int tabId, Context context) {
         Intent intent = new Intent(context, HotelDetailsActivity.class);
         intent.putExtra(EXTRA_DATA, record);
 

@@ -18,7 +18,7 @@ import com.stg.app.etbapi.CacheResponseInterceptor;
 import com.stg.app.etbapi.RetrofitLogger;
 import com.stg.app.etbapi.UserAgentInterceptor;
 import com.stg.app.member.MemberStorage;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 import com.stg.app.preferences.UserPreferences;
 import com.stg.app.preferences.UserPreferencesStorage;
 import com.stg.app.utils.DefaultHttpClient;
@@ -41,7 +41,7 @@ public class ObjectGraph {
     private static final long CONNECT_TIMEOUT_MILLIS = 30000;
     private static final long READ_TIMEOUT_MILLIS = 40000;
     protected final Context app;
-    private HotelListRequest mHotelsRequest;
+    private RecordListRequest mHotelsRequest;
     private Facebook mFacebook;
     private UserPreferences mUserPrefs;
     private StgApi mStgApi;
@@ -67,8 +67,8 @@ public class ObjectGraph {
         mLastSearchRequest.setNumbersOfRooms(request.getNumberOfRooms());
     }
 
-    public HotelListRequest createHotelsRequest() {
-        HotelListRequest request = new HotelListRequest();
+    public RecordListRequest createHotelsRequest() {
+        RecordListRequest request = new RecordListRequest();
         UserPreferences userPrefs = getUserPrefs();
         request.setLanguage(userPrefs.getLang());
         request.setCurrency(userPrefs.getCurrencyCode());

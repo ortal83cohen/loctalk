@@ -46,7 +46,7 @@ import com.stg.app.anim.AnimatorCollection;
 import com.stg.app.anim.ResizeAnimator;
 import com.stg.app.anim.RevealAnimatorCompat;
 import com.stg.app.model.CurrentLocation;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 import com.stg.app.model.Location;
 import com.stg.app.model.LocationWithTitle;
 import com.stg.app.model.MapSelectedViewPort;
@@ -71,7 +71,6 @@ import com.google.android.gms.location.places.Places;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -165,7 +164,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
         }
     };
 
-    public static HomeFragment newInstance(HotelListRequest request) {
+    public static HomeFragment newInstance(RecordListRequest request) {
         HomeFragment fragment = new HomeFragment();
         Bundle args = new Bundle();
         args.putParcelable(ARG_REQUEST, request);

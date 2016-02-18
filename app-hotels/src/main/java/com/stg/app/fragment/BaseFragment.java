@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment;
 
 import com.stg.app.App;
 import com.stg.app.activity.BaseActivity;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 import com.stg.app.preferences.UserPreferences;
 
 /**
@@ -21,7 +21,7 @@ public abstract class BaseFragment extends Fragment {
         return getUserPrefs().getCurrencyCode();
     }
 
-    public HotelListRequest getRequest() {
+    public RecordListRequest getRequest() {
         return ((BaseActivity) getActivity()).getHotelsRequest();
     }
 

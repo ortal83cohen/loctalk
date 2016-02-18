@@ -9,23 +9,23 @@ import com.socialtravelguide.api.model.SearchRequest;
  * @author ortal
  * @date 2015-06-17
  */
-public class HotelListRequest extends SearchRequest implements Parcelable {
+public class RecordListRequest extends SearchRequest implements Parcelable {
 
-    public static final Parcelable.Creator<HotelListRequest> CREATOR = new Parcelable.Creator<HotelListRequest>() {
-        public HotelListRequest createFromParcel(Parcel in) {
-            return new HotelListRequest(in);
+    public static final Parcelable.Creator<RecordListRequest> CREATOR = new Parcelable.Creator<RecordListRequest>() {
+        public RecordListRequest createFromParcel(Parcel in) {
+            return new RecordListRequest(in);
         }
 
-        public HotelListRequest[] newArray(int size) {
-            return new HotelListRequest[size];
+        public RecordListRequest[] newArray(int size) {
+            return new RecordListRequest[size];
         }
     };
 
-    public HotelListRequest() {
+    public RecordListRequest() {
         super();
     }
 
-    public HotelListRequest(Parcel in) {
+    public RecordListRequest(Parcel in) {
         int readType = in.readInt();
         if (readType == 1) {
             setType((CurrentLocation) in.readParcelable(CurrentLocation.class.getClassLoader()));
@@ -45,7 +45,7 @@ public class HotelListRequest extends SearchRequest implements Parcelable {
 
     }
 
-    public HotelListRequest(HotelListRequest hotelsRequest) {
+    public RecordListRequest(RecordListRequest hotelsRequest) {
         setType(hotelsRequest.getType());
         setLanguage(hotelsRequest.getLanguage());
         setCurrency(hotelsRequest.getCurrency());

@@ -13,7 +13,7 @@ import android.widget.Filterable;
 import com.socialtravelguide.api.model.Record;
 import com.stg.app.R;
 import com.stg.app.activity.BaseActivity;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 import com.stg.app.utils.AppLog;
 
 import com.stg.app.widget.recyclerview.ArrayAdapter;
@@ -26,7 +26,7 @@ public class RecordListAdapter extends ArrayAdapter<Record, RecyclerView.ViewHol
     protected final int mPictureWidth;
     protected final int mPictureHeight;
 
-    private final HotelListRequest mRequest;
+    private final RecordListRequest mRequest;
     protected Context mContext;
     protected List<Record> mRecords = new ArrayList<>();
 

@@ -12,7 +12,7 @@ import android.widget.ListView;
 import com.stg.app.App;
 import com.stg.app.R;
 import com.stg.app.adapter.RecentSearchesAdapter;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 import com.stg.app.model.Location;
 import com.stg.app.provider.DbContract;
 import com.stg.app.utils.AppLog;
@@ -78,7 +78,7 @@ public class RecentSearchesActivity extends BaseActivity {
     }
 
     public void startSearch(Location location) {
-        HotelListRequest request = App.provide(this).createHotelsRequest();
+        RecordListRequest request = App.provide(this).createHotelsRequest();
 
         startActivity(RecordListActivity.createIntent(request, this));
     }

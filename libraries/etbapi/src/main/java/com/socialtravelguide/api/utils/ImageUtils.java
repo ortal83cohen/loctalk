@@ -3,7 +3,7 @@ package com.socialtravelguide.api.utils;
 import android.text.TextUtils;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-10-25
  */
 public class ImageUtils {

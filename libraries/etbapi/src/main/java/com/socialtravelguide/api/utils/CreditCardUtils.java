@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-29
  */
 public class CreditCardUtils {

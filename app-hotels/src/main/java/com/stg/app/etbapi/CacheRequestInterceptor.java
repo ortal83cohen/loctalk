@@ -64,8 +64,6 @@ public class CacheRequestInterceptor implements Interceptor {
         if (uri.getPath().equals(StgApi.PATH_RECORDS)) {
             cacheControl = new CacheControl.Builder().maxAge(mSearchMaxAge, TimeUnit.SECONDS).build();
             return request.newBuilder().cacheControl(cacheControl).build();
-        } else if (uri.getPath().startsWith(StgApi.PATH_ACCOMMODATIONS)) {
-            return request.newBuilder().cacheControl(CacheControl.FORCE_NETWORK).build();
         } else if (CacheUtils.isRetrieveOrderRequest(request)) {
             return request.newBuilder().cacheControl(CacheControl.FORCE_NETWORK).build();
         }

@@ -32,7 +32,7 @@ import com.stg.app.fragment.RecordsMapFragment;
 import com.stg.app.fragment.ResultsSortFragment;
 import com.stg.app.map.PoiMarker;
 import com.stg.app.map.ResultsMap;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 import com.stg.app.widget.AppBar;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -73,7 +73,7 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
     private HashMap<Integer, Integer> mPoisTypes;
     private boolean[] mPoisFilter;
 
-    public static Intent createIntent(HotelListRequest request, Context context) {
+    public static Intent createIntent(RecordListRequest request, Context context) {
         Intent intent = new Intent(context, RecordListActivity.class);
         intent.putExtra(EXTRA_REQUEST, request);
         return intent;

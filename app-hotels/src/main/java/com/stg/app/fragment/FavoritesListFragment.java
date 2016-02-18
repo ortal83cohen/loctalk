@@ -31,7 +31,7 @@ import com.stg.app.adapter.RecordViewHolder;
 import com.stg.app.etbapi.RetrofitCallback;
 import com.stg.app.events.Events;
 import com.stg.app.events.SearchResultsEvent;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 import com.stg.app.provider.DbContract;
 import com.stg.app.provider.LikedHotels;
 import com.stg.app.utils.AppLog;
@@ -73,7 +73,7 @@ public class FavoritesListFragment extends BaseFragment {
 
     private LinearLayoutManager mLayoutManager;
     private FavoritesRecordListAdapter mAdapter;
-    private HotelListRequest mHotelsRequest;
+    private RecordListRequest mHotelsRequest;
     private String mCity;
     private String mCountry;
     private RecordViewHolder.Listener mListener;
@@ -108,7 +108,7 @@ public class FavoritesListFragment extends BaseFragment {
 
     };
 
-    public static FavoritesListFragment newInstance(String city, String country, String count, HotelListRequest request) {
+    public static FavoritesListFragment newInstance(String city, String country, String count, RecordListRequest request) {
         FavoritesListFragment fragment = new FavoritesListFragment();
         Bundle bundle = new Bundle();
         bundle.putString(ARG_CITY, city);
@@ -279,7 +279,7 @@ public class FavoritesListFragment extends BaseFragment {
 
     }
 
-    public void refresh(HotelListRequest request) {
+    public void refresh(RecordListRequest request) {
         RequestUtils.apply(mHotelsRequest);
         refresh();
     }

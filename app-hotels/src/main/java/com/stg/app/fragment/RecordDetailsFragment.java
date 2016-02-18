@@ -41,7 +41,7 @@ import com.stg.app.activity.RecordDetailsActivity;
 import com.stg.app.adapter.RecordCardViewHolder;
 import com.stg.app.events.Events;
 import com.stg.app.hoteldetails.RecordViewHolder;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -58,7 +58,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     private static final String IMAGE_FLAG = "image_flag";
     private static final String BUTTON_FLAG = "button_flag";
     @Bind(R.id.see_all_record)
-    Button mMoreRoomsButton;
+    Button mMoreRecordsButton;
     @Bind(R.id.record_card)
     FrameLayout mRecordCard;
     @Bind(R.id.pager)
@@ -69,10 +69,10 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     private int mDisplayHeight = 0;
     private int mImageMinimumHeight;
     private boolean mMoreRoomsButtonVisible = true;
-    private HotelListRequest mRequest;
+    private RecordListRequest mRequest;
 
 
-    public static RecordDetailsFragment newInstance(HotelListRequest request, Record record) {
+    public static RecordDetailsFragment newInstance(RecordListRequest request, Record record) {
         RecordDetailsFragment fragment = new RecordDetailsFragment();
         Bundle args = new Bundle();
         args.putParcelable("record", record);
@@ -141,11 +141,11 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
             }
         });
 
-        mMoreRoomsButton.setOnClickListener(this);
+        mMoreRecordsButton.setOnClickListener(this);
         if (mIsImageExpended) {
             expand(mImagePager);
         } else {
-            mMoreRoomsButton.setVisibility(mMoreRoomsButtonVisible ? View.VISIBLE : View.GONE);
+            mMoreRecordsButton.setVisibility(mMoreRoomsButtonVisible ? View.VISIBLE : View.GONE);
         }
         return view;
     }
@@ -206,7 +206,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
     private void setMoreRoomsButtonVisibility(boolean visible) {
         mMoreRoomsButtonVisible = visible;
-        mMoreRoomsButton.setVisibility(visible ? View.VISIBLE : View.GONE);
+        mMoreRecordsButton.setVisibility(visible ? View.VISIBLE : View.GONE);
     }
 
 
@@ -246,7 +246,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
             }
         };
         getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
-        mMoreRoomsButton.setVisibility(View.GONE);
+        mMoreRecordsButton.setVisibility(View.GONE);
         mIsImageExpended = true;
         a.setInterpolator(new DecelerateInterpolator(2));
         a.setDuration(500);
@@ -277,7 +277,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         };
         mIsImageExpended = false;
         getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        mMoreRoomsButton.setVisibility(mMoreRoomsButtonVisible ? View.VISIBLE : View.GONE);
+        mMoreRecordsButton.setVisibility(mMoreRoomsButtonVisible ? View.VISIBLE : View.GONE);
         a.setInterpolator(new DecelerateInterpolator(2));
         a.setDuration(500);
         v.startAnimation(a);
@@ -350,7 +350,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         collapse(mImagePager);
     }
 
-    public void checkAvailability(HotelListRequest request) {
+    public void checkAvailability(RecordListRequest request) {
         RequestUtils.apply(mRequest);
         mRecordCard.removeAllViews();
 //        loadHotel();
@@ -380,7 +380,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
             if (Math.abs(distanceY) > Math.abs(distanceX)) {
                 int height = mImagePager.getHeight();
                 int width = mImagePager.getWidth();
-                if (height - distanceY >= mImageMinimumHeight && height - distanceY <= getDisplayHeight() - mMoreRoomsButton.getMeasuredHeight()) {
+                if (height - distanceY >= mImageMinimumHeight && height - distanceY <= getDisplayHeight() - mMoreRecordsButton.getMeasuredHeight()) {
                     height -= (int) distanceY;
                 }
                 mImagePager.setLayoutParams(new FrameLayout.LayoutParams(width, height));

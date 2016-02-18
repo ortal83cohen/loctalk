@@ -1,7 +1,7 @@
 package com.socialtravelguide.api.contract;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-28
  */
 public class Cancellation {

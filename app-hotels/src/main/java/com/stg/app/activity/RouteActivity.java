@@ -13,7 +13,7 @@ import com.stg.app.App;
 import com.stg.app.HotelsApplication;
 import com.stg.app.core.CoreInterface;
 import com.stg.app.etbapi.RetrofitCallback;
-import com.stg.app.model.HotelListRequest;
+import com.stg.app.model.RecordListRequest;
 import com.stg.app.model.Location;
 import com.stg.app.utils.AppLog;
 import com.stg.app.utils.BrowserUtils;
@@ -101,9 +101,9 @@ public class RouteActivity extends Activity {
                             switch (params.get("target")) {
                                 case "/search/result.php":
                                 case "/index_landing.php":
-                                    final HotelListRequest hotelListRequest = App.provide(RouteActivity.this).createHotelsRequest();
-                                    hotelListRequest.setType(new Location(params.get("name"), new LatLng(Double.valueOf(params.get("lat")), Double.valueOf(params.get("lon")))));
-                                    startActivity(RecordListActivity.createIntent(hotelListRequest, RouteActivity.this));
+                                    final RecordListRequest recordListRequest = App.provide(RouteActivity.this).createHotelsRequest();
+                                    recordListRequest.setType(new Location(params.get("name"), new LatLng(Double.valueOf(params.get("lat")), Double.valueOf(params.get("lon")))));
+                                    startActivity(RecordListActivity.createIntent(recordListRequest, RouteActivity.this));
                                     break;
                                 case "/hoteldetails.php":
                                     loadAccommodationDetails(params.get("group_hotel_id"));
@@ -131,7 +131,7 @@ public class RouteActivity extends Activity {
     private void loadAccommodationDetails(String hotelId) {
         ArrayList<String> hotels = new ArrayList<>();
         hotels.add(hotelId);
-        HotelListRequest request = App.provide(this).createHotelsRequest();
+        RecordListRequest request = App.provide(this).createHotelsRequest();
         request.setType(new ListType(hotels));
 
         StgApi stgApi = HotelsApplication.provide(this).etbApi();

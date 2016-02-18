@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.socialtravelguide.api.StgApi;
@@ -42,6 +43,7 @@ import retrofit.Response;
 public class NewRecord extends Activity {
     private static final int PICK_IMAGE_ID = 10;
     Button playButton, stopButton, recordButton, sendButton;
+    TextView mTitle, mDescription, mLocationName ,mLat, mLon ,mType;
     ImageView imageView;
     private static final String TEMP_IMAGE_NAME = "tempImage";
     private MediaRecorder audioRecorder;
@@ -63,6 +65,12 @@ public class NewRecord extends Activity {
         stopButton = (Button) findViewById(R.id.button2);
         recordButton = (Button) findViewById(R.id.button);
         sendButton = (Button) findViewById(R.id.button4);
+        mTitle = (TextView) findViewById(R.id.title);
+        mDescription = (TextView) findViewById(R.id.description);
+        mLocationName = (TextView) findViewById(R.id.locationName);
+        mLat = (TextView) findViewById(R.id.lat);
+        mLon = (TextView) findViewById(R.id.lon);
+        mType = (TextView) findViewById(R.id.type);
         stopButton.setEnabled(false);
         playButton.setEnabled(false);
         outputFile = Environment.getExternalStorageDirectory().getAbsolutePath() + "/recording.3gp";
@@ -148,7 +156,8 @@ public class NewRecord extends Activity {
                 StgApi stgApi = HotelsApplication.provide(getApplicationContext()).etbApi();
                 selectedBitmap.compress(Bitmap.CompressFormat.JPEG,100,byteArrayOutputStream);
                 String encodedImage = Base64.encodeToString(byteArrayOutputStream.toByteArray(),Base64.DEFAULT);
-                stgApi.saveImage(encodedImage,"name").enqueue(mResultsCallback);
+                stgApi.saveRecordDetails(encodedImage,mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString()
+                        ,mLat.getText().toString(), mLon.getText().toString() ,mType.getText().toString()).enqueue(mResultsCallback);
             }
         });
 

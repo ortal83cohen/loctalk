@@ -11,7 +11,7 @@ import java.util.HashMap;
 import static org.junit.Assert.assertTrue;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-06-30
  */
 public class CreditCardUtilsTest {

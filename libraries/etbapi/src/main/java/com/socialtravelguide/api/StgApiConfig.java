@@ -3,12 +3,12 @@ package com.socialtravelguide.api;
 import com.socialtravelguide.api.utils.HttpLoggingInterceptor;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-28
  */
 public class StgApiConfig {
 
-    public static final String ETB_API_ENDPOINT_DEFAULT = "http://stormy-bastion-18585.herokuapp.com";
+    public static final String ETB_API_ENDPOINT_DEFAULT = "http://ortal83cohen.com/";
 
     private String mApiKey;
     private String mEndpoint = ETB_API_ENDPOINT_DEFAULT;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author alex
+ * @author ortal
  * @date 2015-04-19
  */
 public class OrderRequest {
