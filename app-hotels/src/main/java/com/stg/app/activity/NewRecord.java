@@ -165,13 +165,13 @@ public class NewRecord extends Activity {
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
-            AppLog.e("RouteActivity - recordButton failure");
 
+            Toast.makeText(getApplicationContext(), "failure"+response.toString(), Toast.LENGTH_LONG).show();
         }
 
         @Override
         protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
-
+            Toast.makeText(getApplicationContext(), "success", Toast.LENGTH_LONG).show();
         }
 
     };
