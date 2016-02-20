@@ -3,12 +3,12 @@ package com.travoca.app.core;
 import android.content.Context;
 import android.support.v4.util.ArrayMap;
 
+import com.squareup.okhttp.OkHttpClient;
 import com.travoca.api.mock.ResultsMockClient;
 import com.travoca.api.model.search.Poi;
 import com.travoca.app.Config;
 import com.travoca.app.etbapi.RetrofitLogger;
 import com.travoca.app.etbapi.UserAgentInterceptor;
-import com.squareup.okhttp.OkHttpClient;
 
 import java.util.List;
 

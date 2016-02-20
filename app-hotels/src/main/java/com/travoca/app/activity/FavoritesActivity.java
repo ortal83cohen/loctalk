@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.search.Type;
 import com.travoca.api.utils.RequestUtils;
@@ -16,7 +17,6 @@ import com.travoca.app.fragment.FavoritesCitiesFragment;
 import com.travoca.app.fragment.FavoritesListFragment;
 import com.travoca.app.fragment.HomeFragment;
 import com.travoca.app.widget.AppBar;
-import com.google.android.gms.common.api.GoogleApiClient;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -65,7 +65,6 @@ public class FavoritesActivity extends BaseActivity implements RecordViewHolder.
         }
         return super.onOptionsItemSelected(item);
     }
-
 
 
     public void showFavoritesList(String city, String country, String count) {

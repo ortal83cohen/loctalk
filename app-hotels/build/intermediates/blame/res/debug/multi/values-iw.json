@@ -1008,9 +1008,9 @@
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 229,
+                        "startOffset": 230,
                         "endColumn": 103,
-                        "endOffset": 328
+                        "endOffset": 329
                     }
                 }
             },
@@ -1027,9 +1027,9 @@
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 333,
+                        "startOffset": 334,
                         "endColumn": 109,
-                        "endOffset": 438
+                        "endOffset": 439
                     }
                 }
             },
@@ -1046,9 +1046,9 @@
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 443,
+                        "startOffset": 444,
                         "endColumn": 125,
-                        "endOffset": 564
+                        "endOffset": 565
                     }
                 }
             },
@@ -1065,9 +1065,9 @@
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 569,
+                        "startOffset": 570,
                         "endColumn": 98,
-                        "endOffset": 663
+                        "endOffset": 664
                     }
                 }
             },
@@ -1084,9 +1084,9 @@
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 668,
+                        "startOffset": 669,
                         "endColumn": 107,
-                        "endOffset": 771
+                        "endOffset": 772
                     }
                 }
             },
@@ -1103,9 +1103,9 @@
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 776,
+                        "startOffset": 777,
                         "endColumn": 83,
-                        "endOffset": 855
+                        "endOffset": 856
                     }
                 }
             },
@@ -1122,9 +1122,9 @@
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 860,
+                        "startOffset": 861,
                         "endColumn": 99,
-                        "endOffset": 955
+                        "endOffset": 956
                     }
                 }
             },
@@ -1141,9 +1141,9 @@
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 960,
+                        "startOffset": 961,
                         "endColumn": 113,
-                        "endOffset": 1069
+                        "endOffset": 1070
                     }
                 }
             },
@@ -1160,9 +1160,9 @@
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1074,
+                        "startOffset": 1075,
                         "endColumn": 77,
-                        "endOffset": 1147
+                        "endOffset": 1148
                     }
                 }
             },
@@ -1179,9 +1179,9 @@
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1152,
+                        "startOffset": 1153,
                         "endColumn": 77,
-                        "endOffset": 1225
+                        "endOffset": 1226
                     }
                 }
             },
@@ -1198,9 +1198,9 @@
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1230,
+                        "startOffset": 1231,
                         "endColumn": 78,
-                        "endOffset": 1304
+                        "endOffset": 1305
                     }
                 }
             },
@@ -1217,9 +1217,9 @@
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1309,
+                        "startOffset": 1310,
                         "endColumn": 101,
-                        "endOffset": 1406
+                        "endOffset": 1407
                     }
                 }
             },
@@ -1236,9 +1236,9 @@
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1411,
+                        "startOffset": 1412,
                         "endColumn": 103,
-                        "endOffset": 1510
+                        "endOffset": 1511
                     }
                 }
             },
@@ -1255,9 +1255,9 @@
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1515,
+                        "startOffset": 1516,
                         "endColumn": 95,
-                        "endOffset": 1606
+                        "endOffset": 1607
                     }
                 }
             },
@@ -1274,9 +1274,9 @@
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1611,
+                        "startOffset": 1612,
                         "endColumn": 102,
-                        "endOffset": 1709
+                        "endOffset": 1710
                     }
                 }
             },
@@ -1293,9 +1293,9 @@
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1714,
+                        "startOffset": 1715,
                         "endColumn": 100,
-                        "endOffset": 1810
+                        "endOffset": 1811
                     }
                 }
             },
@@ -1312,9 +1312,9 @@
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 1815,
+                        "startOffset": 1816,
                         "endColumn": 99,
-                        "endOffset": 1910
+                        "endOffset": 1911
                     }
                 }
             },
@@ -1331,9 +1331,9 @@
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 1915,
+                        "startOffset": 1916,
                         "endColumn": 115,
-                        "endOffset": 2026
+                        "endOffset": 2027
                     }
                 }
             },
@@ -1350,9 +1350,9 @@
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 2031,
+                        "startOffset": 2032,
                         "endColumn": 95,
-                        "endOffset": 2122
+                        "endOffset": 2123
                     }
                 }
             },
@@ -1367,11 +1367,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 476,
+                        "startOffset": 413,
                         "endColumn": 182,
-                        "endOffset": 654
+                        "endOffset": 591
                     }
                 }
             },
@@ -1386,11 +1386,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 18,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 2484,
+                        "startOffset": 2421,
                         "endColumn": 173,
-                        "endOffset": 2653
+                        "endOffset": 2590
                     }
                 }
             },
@@ -1405,11 +1405,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 2193,
+                        "startOffset": 2130,
                         "endColumn": 110,
-                        "endOffset": 2299
+                        "endOffset": 2236
                     }
                 }
             },
@@ -1424,11 +1424,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 30,
+                        "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 4202,
+                        "startOffset": 4139,
                         "endColumn": 230,
-                        "endOffset": 4428
+                        "endOffset": 4365
                     }
                 }
             },
@@ -1443,11 +1443,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1940,
+                        "startOffset": 1877,
                         "endColumn": 127,
-                        "endOffset": 2063
+                        "endOffset": 2000
                     }
                 }
             },
@@ -1462,11 +1462,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1760,
+                        "startOffset": 1697,
                         "endColumn": 179,
-                        "endOffset": 1935
+                        "endOffset": 1872
                     }
                 }
             },
@@ -1481,11 +1481,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1636,
+                        "startOffset": 1573,
                         "endColumn": 123,
-                        "endOffset": 1755
+                        "endOffset": 1692
                     }
                 }
             },
@@ -1500,11 +1500,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 819,
+                        "startOffset": 756,
                         "endColumn": 173,
-                        "endOffset": 988
+                        "endOffset": 925
                     }
                 }
             },
@@ -1519,11 +1519,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 1508,
+                        "startOffset": 1445,
                         "endColumn": 127,
-                        "endOffset": 1631
+                        "endOffset": 1568
                     }
                 }
             },
@@ -1538,11 +1538,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 1118,
+                        "startOffset": 1055,
                         "endColumn": 194,
-                        "endOffset": 1308
+                        "endOffset": 1245
                     }
                 }
             },
@@ -1557,11 +1557,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 1313,
+                        "startOffset": 1250,
                         "endColumn": 194,
-                        "endOffset": 1503
+                        "endOffset": 1440
                     }
                 }
             },
@@ -1576,11 +1576,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 993,
+                        "startOffset": 930,
                         "endColumn": 124,
-                        "endOffset": 1113
+                        "endOffset": 1050
                     }
                 }
             },
@@ -1595,11 +1595,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 24,
+                        "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 3369,
+                        "startOffset": 3306,
                         "endColumn": 153,
-                        "endOffset": 3518
+                        "endOffset": 3455
                     }
                 }
             },
@@ -1614,11 +1614,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 23,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 3247,
+                        "startOffset": 3184,
                         "endColumn": 121,
-                        "endOffset": 3364
+                        "endOffset": 3301
                     }
                 }
             },
@@ -1633,11 +1633,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 659,
+                        "startOffset": 596,
                         "endColumn": 159,
-                        "endOffset": 814
+                        "endOffset": 751
                     }
                 }
             },
@@ -1652,11 +1652,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 3091,
+                        "startOffset": 3028,
                         "endColumn": 155,
-                        "endOffset": 3242
+                        "endOffset": 3179
                     }
                 }
             },
@@ -1671,11 +1671,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 2974,
+                        "startOffset": 2911,
                         "endColumn": 116,
-                        "endOffset": 3086
+                        "endOffset": 3023
                     }
                 }
             },
@@ -1690,11 +1690,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 303,
+                        "startOffset": 240,
                         "endColumn": 172,
-                        "endOffset": 471
+                        "endOffset": 408
                     }
                 }
             },
@@ -1709,11 +1709,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 170,
+                        "startOffset": 107,
                         "endColumn": 132,
-                        "endOffset": 298
+                        "endOffset": 235
                     }
                 }
             },
@@ -1728,11 +1728,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 32,
+                        "startLine": 31,
                         "startColumn": 4,
-                        "startOffset": 4553,
+                        "startOffset": 4490,
                         "endColumn": 161,
-                        "endOffset": 4710
+                        "endOffset": 4647
                     }
                 }
             },
@@ -1747,11 +1747,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 31,
+                        "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 4433,
+                        "startOffset": 4370,
                         "endColumn": 119,
-                        "endOffset": 4548
+                        "endOffset": 4485
                     }
                 }
             },
@@ -1766,11 +1766,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 3523,
+                        "startOffset": 3460,
                         "endColumn": 135,
-                        "endOffset": 3654
+                        "endOffset": 3591
                     }
                 }
             },
@@ -1785,11 +1785,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 27,
+                        "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 3783,
+                        "startOffset": 3720,
                         "endColumn": 224,
-                        "endOffset": 4003
+                        "endOffset": 3940
                     }
                 }
             },
@@ -1804,11 +1804,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 26,
+                        "startLine": 25,
                         "startColumn": 4,
-                        "startOffset": 3659,
+                        "startOffset": 3596,
                         "endColumn": 123,
-                        "endOffset": 3778
+                        "endOffset": 3715
                     }
                 }
             },
@@ -1823,11 +1823,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 28,
+                        "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 4008,
+                        "startOffset": 3945,
                         "endColumn": 104,
-                        "endOffset": 4108
+                        "endOffset": 4045
                     }
                 }
             },
@@ -1842,11 +1842,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 2304,
+                        "startOffset": 2241,
                         "endColumn": 179,
-                        "endOffset": 2479
+                        "endOffset": 2416
                     }
                 }
             },
@@ -1861,11 +1861,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 2068,
+                        "startOffset": 2005,
                         "endColumn": 124,
-                        "endOffset": 2188
+                        "endOffset": 2125
                     }
                 }
             },
@@ -1880,11 +1880,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 2787,
+                        "startOffset": 2724,
                         "endColumn": 186,
-                        "endOffset": 2969
+                        "endOffset": 2906
                     }
                 }
             },
@@ -1899,11 +1899,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 2658,
+                        "startOffset": 2595,
                         "endColumn": 128,
-                        "endOffset": 2782
+                        "endOffset": 2719
                     }
                 }
             },
@@ -1918,11 +1918,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-iw\\common_strings.xml",
                     "position": {
-                        "startLine": 29,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 4113,
+                        "startOffset": 4050,
                         "endColumn": 88,
-                        "endOffset": 4197
+                        "endOffset": 4134
                     }
                 }
             },
@@ -1937,11 +1937,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\values-iw\\base_strings.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 170,
+                        "startOffset": 55,
                         "endColumn": 89,
-                        "endOffset": 255
+                        "endOffset": 140
                     }
                 }
             },
@@ -1956,11 +1956,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\values-iw\\base_strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 260,
+                        "startOffset": 145,
                         "endColumn": 110,
-                        "endOffset": 366
+                        "endOffset": 251
                     }
                 }
             },
@@ -1977,9 +1977,9 @@
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 2127,
+                        "startOffset": 2128,
                         "endColumn": 102,
-                        "endOffset": 2225
+                        "endOffset": 2226
                     }
                 }
             }

@@ -3,11 +3,11 @@ package com.travoca.app.etbapi;
 import android.content.Context;
 import android.widget.Toast;
 
+import com.squareup.okhttp.ResponseBody;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.analytics.AnalyticsCalls;
 import com.travoca.app.utils.AppLog;
-import com.squareup.okhttp.ResponseBody;
 
 import java.lang.ref.WeakReference;
 

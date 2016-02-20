@@ -267,9 +267,9 @@
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 230,
+                        "startOffset": 231,
                         "endColumn": 61,
-                        "endOffset": 287
+                        "endOffset": 288
                     }
                 }
             },
@@ -286,9 +286,9 @@
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 468,
+                        "startOffset": 470,
                         "endColumn": 71,
-                        "endOffset": 535
+                        "endOffset": 537
                     }
                 }
             },
@@ -305,9 +305,9 @@
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 540,
+                        "startOffset": 542,
                         "endColumn": 58,
-                        "endOffset": 594
+                        "endOffset": 596
                     }
                 }
             },
@@ -324,9 +324,9 @@
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 775,
+                        "startOffset": 778,
                         "endColumn": 70,
-                        "endOffset": 841
+                        "endOffset": 844
                     }
                 }
             },
@@ -343,9 +343,9 @@
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 846,
+                        "startOffset": 849,
                         "endColumn": 70,
-                        "endOffset": 912
+                        "endOffset": 915
                     }
                 }
             },
@@ -362,9 +362,9 @@
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 917,
+                        "startOffset": 920,
                         "endColumn": 69,
-                        "endOffset": 982
+                        "endOffset": 985
                     }
                 }
             },
@@ -381,9 +381,9 @@
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 987,
+                        "startOffset": 990,
                         "endColumn": 69,
-                        "endOffset": 1052
+                        "endOffset": 1055
                     }
                 }
             },
@@ -400,9 +400,9 @@
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1057,
+                        "startOffset": 1060,
                         "endColumn": 67,
-                        "endOffset": 1120
+                        "endOffset": 1123
                     }
                 }
             },
@@ -419,9 +419,9 @@
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1125,
+                        "startOffset": 1128,
                         "endColumn": 67,
-                        "endOffset": 1188
+                        "endOffset": 1191
                     }
                 }
             },
@@ -438,9 +438,9 @@
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1193,
+                        "startOffset": 1196,
                         "endColumn": 63,
-                        "endOffset": 1252
+                        "endOffset": 1255
                     }
                 }
             },
@@ -457,9 +457,9 @@
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1257,
+                        "startOffset": 1260,
                         "endColumn": 54,
-                        "endOffset": 1307
+                        "endOffset": 1310
                     }
                 }
             },
@@ -474,11 +474,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-large\\values-large.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 1493,
-                        "endColumn": 103,
-                        "endOffset": 1592
+                        "startOffset": 1498,
+                        "endColumn": 104,
+                        "endOffset": 1598
                     }
                 }
             },
@@ -493,11 +493,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-large\\values-large.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 1597,
-                        "endColumn": 115,
-                        "endOffset": 1708
+                        "startOffset": 1604,
+                        "endColumn": 116,
+                        "endOffset": 1716
                     }
                 }
             }

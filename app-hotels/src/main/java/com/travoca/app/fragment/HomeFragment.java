@@ -35,25 +35,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.crashlytics.android.Crashlytics;
-import com.travoca.api.model.SearchRequest;
-import com.travoca.api.model.search.Type;
-import com.travoca.app.App;
-import com.travoca.app.R;
-import com.travoca.app.activity.BaseActivity;
-import com.travoca.app.activity.HomeActivity;
-import com.travoca.app.adapter.PlaceAutocompleteAdapter;
-import com.travoca.app.anim.AnimatorCollection;
-import com.travoca.app.anim.ResizeAnimator;
-import com.travoca.app.anim.RevealAnimatorCompat;
-import com.travoca.app.model.CurrentLocation;
-import com.travoca.app.model.RecordListRequest;
-import com.travoca.app.model.Location;
-import com.travoca.app.model.LocationWithTitle;
-import com.travoca.app.model.MapSelectedViewPort;
-import com.travoca.app.model.ViewPort;
-import com.travoca.app.randerscript.BlurBuilder;
-import com.travoca.app.utils.AppLog;
-import com.travoca.app.utils.TextWatcherAdapter;
 import com.facebook.device.yearclass.YearClass;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -70,6 +51,25 @@ import com.google.android.gms.location.places.PlaceBuffer;
 import com.google.android.gms.location.places.Places;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.travoca.api.model.SearchRequest;
+import com.travoca.api.model.search.Type;
+import com.travoca.app.App;
+import com.travoca.app.R;
+import com.travoca.app.activity.BaseActivity;
+import com.travoca.app.activity.HomeActivity;
+import com.travoca.app.adapter.PlaceAutocompleteAdapter;
+import com.travoca.app.anim.AnimatorCollection;
+import com.travoca.app.anim.ResizeAnimator;
+import com.travoca.app.anim.RevealAnimatorCompat;
+import com.travoca.app.model.CurrentLocation;
+import com.travoca.app.model.Location;
+import com.travoca.app.model.LocationWithTitle;
+import com.travoca.app.model.MapSelectedViewPort;
+import com.travoca.app.model.RecordListRequest;
+import com.travoca.app.model.ViewPort;
+import com.travoca.app.randerscript.BlurBuilder;
+import com.travoca.app.utils.AppLog;
+import com.travoca.app.utils.TextWatcherAdapter;
 
 import java.util.Calendar;
 import java.util.Locale;
@@ -552,7 +552,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
 
     @OnClick(R.id.search)
     public void onSearchHotelsClick(View button) {
-            onSearchHotelsWithLocation();
+        onSearchHotelsWithLocation();
     }
 
     private void onSearchHotelsWithLocation() {

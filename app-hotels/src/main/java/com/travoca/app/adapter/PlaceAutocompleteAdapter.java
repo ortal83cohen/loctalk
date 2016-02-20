@@ -30,10 +30,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-import com.travoca.app.R;
-import com.travoca.app.provider.DbContract;
-import com.travoca.app.utils.AppLog;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
 import com.google.android.gms.common.api.Status;
@@ -44,6 +40,9 @@ import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.Places;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.travoca.app.R;
+import com.travoca.app.provider.DbContract;
+import com.travoca.app.utils.AppLog;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

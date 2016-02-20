@@ -9,15 +9,15 @@ import android.graphics.Rect;
 import android.support.annotation.DrawableRes;
 import android.support.v4.util.LruCache;
 
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.travoca.api.model.Record;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.activity.BaseActivity;
 import com.travoca.app.preferences.UserPreferences;
-import com.google.android.gms.maps.model.BitmapDescriptor;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 
 /**
  * @author ortal
@@ -60,7 +60,6 @@ public class HotelMarker {
     public MarkerOptions create(int pos, Record record, int status) {
 
         String currencyCode = mUserPrefs.getCurrencyCode();
-
 
 
         Bitmap bitmap = drawTextToBitmap("22222", status);

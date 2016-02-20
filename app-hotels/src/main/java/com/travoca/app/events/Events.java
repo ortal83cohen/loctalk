@@ -1,7 +1,7 @@
 package com.travoca.app.events;
 
-import com.travoca.app.utils.AppLog;
 import com.squareup.otto.Bus;
+import com.travoca.app.utils.AppLog;
 
 /**
  * @author ortal

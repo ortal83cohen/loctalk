@@ -1,20 +1,14 @@
 package com.travoca.app.hoteldetails;
 
 import android.content.Context;
-import android.support.annotation.DrawableRes;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.travoca.api.model.Record;
 import com.travoca.app.R;
 import com.travoca.app.adapter.ImagesPagerAdapter;
-
-import java.util.ArrayList;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -47,7 +41,7 @@ public class RecordViewHolder {
 
         if (record.imageUrl != null) {
             final ImagesPagerAdapter imagesPagerAdapter = new ImagesPagerAdapter(mContext);
-            imagesPagerAdapter.addItem(record.imageUrl );
+            imagesPagerAdapter.addItem(record.imageUrl);
             mSnippetImagePager.setAdapter(imagesPagerAdapter);
             mSnippetImagePager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
                 @Override

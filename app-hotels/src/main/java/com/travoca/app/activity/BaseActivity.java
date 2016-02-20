@@ -159,7 +159,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 scanIntegrator.initiateScan();
                 break;
             case NavigationDrawer.NAV_NEW_RECORD:
-                startActivity(NewRecord.createIntent(this));
+                startActivity(NewRecordActivity.createIntent(this));
                 break;
             default:
         }

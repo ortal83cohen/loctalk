@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
+import com.squareup.otto.Subscribe;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.activity.BaseActivity;
@@ -25,7 +26,6 @@ import com.travoca.app.events.UserProfileUpdateEvent;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.User;
 import com.travoca.app.widget.NavigationDrawer;
-import com.squareup.otto.Subscribe;
 
 
 public class NavigationFragment extends Fragment implements View.OnClickListener {

@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.view.MenuItem;
 
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.maps.StreetViewPanorama;
+import com.google.android.gms.maps.StreetViewPanoramaFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.travoca.api.model.HotelRequest;
 import com.travoca.api.model.Record;
@@ -15,12 +18,8 @@ import com.travoca.api.utils.RequestUtils;
 import com.travoca.app.R;
 import com.travoca.app.fragment.HomeFragment;
 import com.travoca.app.fragment.RecordDetailsFragment;
-import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.model.Location;
-
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.maps.StreetViewPanorama;
-import com.google.android.gms.maps.StreetViewPanoramaFragment;
+import com.travoca.app.model.RecordListRequest;
 
 import butterknife.ButterKnife;
 
@@ -28,7 +27,7 @@ import butterknife.ButterKnife;
  * @author ortal
  * @date 2015-04-19
  */
-public class RecordDetailsActivity extends BaseActivity implements  HomeFragment.Listener {
+public class RecordDetailsActivity extends BaseActivity implements HomeFragment.Listener {
     public static final String FRAGMENT_HOTEL_DETAILS = "fragment_hotel_details";
     private static final String FRAGMENT_HOME = "fragment_datepicker";
     private static final String EXTRA_DATA = "data";
@@ -65,7 +64,7 @@ public class RecordDetailsActivity extends BaseActivity implements  HomeFragment
         FragmentManager fm = getSupportFragmentManager();
         RecordDetailsFragment recordDetailsFragment = (RecordDetailsFragment) fm.findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
         if (recordDetailsFragment == null) {
-            recordDetailsFragment = RecordDetailsFragment.newInstance( getHotelsRequest(), mRecord);
+            recordDetailsFragment = RecordDetailsFragment.newInstance(getHotelsRequest(), mRecord);
             fm.beginTransaction()
                     .setCustomAnimations(R.anim.raise, R.anim.shrink)
                     .replace(R.id.fragment_container,
@@ -136,7 +135,6 @@ public class RecordDetailsActivity extends BaseActivity implements  HomeFragment
             getFragmentManager().beginTransaction().hide(mStreetViewFragment).commit();
         }
     }
-
 
 
     @Override

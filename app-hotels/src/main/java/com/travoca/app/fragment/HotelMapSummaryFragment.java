@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import com.travoca.api.model.Record;
 import com.travoca.app.R;
 import com.travoca.app.adapter.RecordViewHolder;
-
 import com.travoca.app.model.RecordListRequest;
 
 import butterknife.ButterKnife;
@@ -29,7 +28,7 @@ public class HotelMapSummaryFragment extends BaseFragment {
     public static HotelMapSummaryFragment newInstance(Record record) {
         HotelMapSummaryFragment fragment = new HotelMapSummaryFragment();
         Bundle args = new Bundle();
-        args.putParcelable(EXTRA_DATA,record);
+        args.putParcelable(EXTRA_DATA, record);
         fragment.setArguments(args);
         return fragment;
     }
@@ -47,7 +46,7 @@ public class HotelMapSummaryFragment extends BaseFragment {
 
         RecordViewHolder recordViewHolder = new RecordViewHolder(view, getActivity(), pictureWidth, pictureHeight, mListener);
         RecordListRequest request = getRequest();
-        recordViewHolder.assignItem(mRecord,0);
+        recordViewHolder.assignItem(mRecord, 0);
         return view;
     }
 

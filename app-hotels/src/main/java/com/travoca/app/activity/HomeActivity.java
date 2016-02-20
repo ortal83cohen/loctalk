@@ -13,6 +13,13 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
+import com.google.android.gms.analytics.Tracker;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.ActivityRecognition;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.places.Places;
+import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.Type;
 import com.travoca.api.utils.RequestUtils;
@@ -28,13 +35,6 @@ import com.travoca.app.preferences.UserPreferences;
 import com.travoca.app.utils.AppLog;
 import com.travoca.app.widget.IntentIntegrator;
 import com.travoca.app.widget.IntentResult;
-import com.google.android.gms.analytics.Tracker;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.ActivityRecognition;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.places.Places;
-import com.squareup.okhttp.ResponseBody;
 
 import butterknife.ButterKnife;
 import retrofit.Response;

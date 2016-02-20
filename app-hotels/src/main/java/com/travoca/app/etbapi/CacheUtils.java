@@ -1,7 +1,7 @@
 package com.travoca.app.etbapi;
 
-import com.travoca.api.StgApi;
 import com.squareup.okhttp.Request;
+import com.travoca.api.TravocaApi;
 
 import java.io.IOException;
 import java.net.URI;
@@ -18,7 +18,7 @@ public class CacheUtils {
 
     public static boolean isRetrieveOrderRequest(Request request) throws IOException {
         // retrieve order request
-        return "GET".equals(request.method()) && request.uri().getPath().startsWith(StgApi.PATH_ORDERS);
+        return "GET".equals(request.method()) && request.uri().getPath().startsWith(TravocaApi.PATH_ORDERS);
     }
 
     public static boolean isCachableRequest(Request request) throws IOException {

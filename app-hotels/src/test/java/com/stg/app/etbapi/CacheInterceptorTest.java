@@ -2,8 +2,6 @@ package com.travoca.app.etbapi;
 
 import android.support.annotation.NonNull;
 
-import com.travoca.api.StgApi;
-import com.travoca.app.utils.NetworkUtilities;
 import com.squareup.okhttp.Cache;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
@@ -12,6 +10,8 @@ import com.squareup.okhttp.ResponseBody;
 import com.squareup.okhttp.mockwebserver.MockResponse;
 import com.squareup.okhttp.mockwebserver.MockWebServer;
 import com.squareup.okhttp.mockwebserver.RecordedRequest;
+import com.travoca.api.TravocaApi;
+import com.travoca.app.utils.NetworkUtilities;
 
 import org.junit.After;
 import org.junit.Before;
@@ -65,7 +65,7 @@ public class CacheInterceptorTest {
         client.networkInterceptors().add(new CacheResponseInterceptor());
 
         Request searchRequest = new Request.Builder()
-                .url(server.getUrl(StgApi.PATH_RECORDS))
+                .url(server.getUrl(TravocaApi.PATH_RECORDS))
                 .build();
 
         Response response1 = client.newCall(searchRequest).execute();
@@ -75,7 +75,7 @@ public class CacheInterceptorTest {
 
 //  TODO: post orders
 //        Request orderRequest = new Request.Builder()
-//                .url(server.getUrl(StgApi.PATH_ORDERS))
+//                .url(server.getUrl(TravocaApi.PATH_ORDERS))
 //                .build();
 //
 //        Response response2 = client.newCall(orderRequest).execute();
@@ -112,7 +112,7 @@ public class CacheInterceptorTest {
         when(networkUtilities.isConnected()).thenReturn(true);
 
         Request searchRequest = new Request.Builder()
-                .url(server.getUrl(StgApi.PATH_RECORDS))
+                .url(server.getUrl(TravocaApi.PATH_RECORDS))
                 .build();
 
         // 1. Initial request stored for 2 seconds
@@ -184,7 +184,7 @@ public class CacheInterceptorTest {
         when(networkUtilities.isConnected()).thenReturn(true);
 
         Request accommodationRequest = new Request.Builder()
-                .url(server.getUrl(StgApi.PATH_ACCOMMODATIONS + "/1"))
+                .url(server.getUrl(TravocaApi.PATH_ACCOMMODATIONS + "/1"))
                 .build();
 
         // 1. Initial request stored for 2 seconds

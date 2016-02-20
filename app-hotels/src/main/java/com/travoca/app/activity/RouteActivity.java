@@ -5,20 +5,20 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.util.ArrayMap;
 
-import com.travoca.api.StgApi;
+import com.google.android.gms.maps.model.LatLng;
+import com.squareup.okhttp.ResponseBody;
+import com.travoca.api.TravocaApi;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.search.ListType;
 import com.travoca.app.App;
-import com.travoca.app.HotelsApplication;
+import com.travoca.app.TravocaApplication;
 import com.travoca.app.core.CoreInterface;
 import com.travoca.app.etbapi.RetrofitCallback;
-import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.model.Location;
+import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.utils.AppLog;
 import com.travoca.app.utils.BrowserUtils;
-import com.google.android.gms.maps.model.LatLng;
-import com.squareup.okhttp.ResponseBody;
 
 import java.net.URLDecoder;
 import java.util.ArrayList;
@@ -134,8 +134,8 @@ public class RouteActivity extends Activity {
         RecordListRequest request = App.provide(this).createHotelsRequest();
         request.setType(new ListType(hotels));
 
-        StgApi stgApi = HotelsApplication.provide(this).etbApi();
-        stgApi.records(request, 0).enqueue(mResultsCallback);
+        TravocaApi travocaApi = TravocaApplication.provide(this).travocaApi();
+        travocaApi.records(request, 0).enqueue(mResultsCallback);
     }
 
     private void startHotelSummaryActivity(Record acc) {

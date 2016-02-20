@@ -19,11 +19,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.travoca.api.StgApi;
+import com.squareup.okhttp.ResponseBody;
+import com.squareup.otto.Subscribe;
+import com.travoca.api.TravocaApi;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.search.ListType;
 import com.travoca.api.utils.RequestUtils;
-import com.travoca.app.HotelsApplication;
+import com.travoca.app.TravocaApplication;
 import com.travoca.app.R;
 import com.travoca.app.activity.BaseActivity;
 import com.travoca.app.adapter.FavoritesRecordListAdapter;
@@ -36,8 +38,6 @@ import com.travoca.app.provider.DbContract;
 import com.travoca.app.provider.LikedHotels;
 import com.travoca.app.utils.AppLog;
 import com.travoca.app.widget.recyclerview.EndlessRecyclerView;
-import com.squareup.okhttp.ResponseBody;
-import com.squareup.otto.Subscribe;
 
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
@@ -69,7 +69,7 @@ public class FavoritesListFragment extends BaseFragment {
     @Bind(R.id.modify_preferences)
     Button mModifyPreferences;
 
-    StgApi mStgApi;
+    TravocaApi mTravocaApi;
 
     private LinearLayoutManager mLayoutManager;
     private FavoritesRecordListAdapter mAdapter;
@@ -95,7 +95,7 @@ public class FavoritesListFragment extends BaseFragment {
 //            if (apiResponse.recordses == null || apiResponse.recordses.isEmpty()) {
 //                mNoResult.setVisibility(View.VISIBLE);
 //            }
-//            if (apiResponse.recordses == null || apiResponse.recordses.isEmpty() || apiResponse.recordses.size() != StgApi.LIMIT) {
+//            if (apiResponse.recordses == null || apiResponse.recordses.isEmpty() || apiResponse.recordses.size() != TravocaApi.LIMIT) {
 //                mRecyclerView.setHasMoreData(false);
 //            }
 //            // Fragment destroyed
@@ -203,9 +203,9 @@ public class FavoritesListFragment extends BaseFragment {
 
         mLayoutManager = new LinearLayoutManager(getActivity());
         mAdapter = new FavoritesRecordListAdapter((BaseActivity) getActivity(), mListener);
-        mStgApi = HotelsApplication.provide(getActivity()).etbApi();
+        mTravocaApi = TravocaApplication.provide(getActivity()).travocaApi();
 
-        mRecyclerView.init(mLayoutManager, mAdapter, StgApi.LIMIT);
+        mRecyclerView.init(mLayoutManager, mAdapter, TravocaApi.LIMIT);
 
         mLoaderImage.setBackgroundResource(R.drawable.logo_animation);
         AnimationDrawable logoAnimation = (AnimationDrawable) mLoaderImage.getBackground();
@@ -222,7 +222,7 @@ public class FavoritesListFragment extends BaseFragment {
 
     private void loadSearchResults(int offset) {
         try {
-            mStgApi.records(mHotelsRequest, offset).enqueue(mResultsCallback);
+            mTravocaApi.records(mHotelsRequest, offset).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             getActivity().finish();
         }
@@ -268,7 +268,7 @@ public class FavoritesListFragment extends BaseFragment {
         if (mAdapter != null) {
             mAdapter.clear();
             mRecyclerView.setHasMoreData(true);
-            AppLog.e("mStgApi.record");
+            AppLog.e("mTravocaApi.record");
             loadSearchResults(0);
         }
     }

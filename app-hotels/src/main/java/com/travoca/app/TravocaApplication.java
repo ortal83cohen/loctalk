@@ -14,12 +14,12 @@ import io.fabric.sdk.android.SilentLogger;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 
-public class HotelsApplication extends Application implements App.Provider {
+public class TravocaApplication extends Application implements App.Provider {
 
     private ObjectGraph mObjectGraph;
 
-    public static HotelsApplication get(Context context) {
-        return (HotelsApplication) context.getApplicationContext();
+    public static TravocaApplication get(Context context) {
+        return (TravocaApplication) context.getApplicationContext();
     }
 
     public static ObjectGraph provide(Context context) {
@@ -34,9 +34,9 @@ public class HotelsApplication extends Application implements App.Provider {
         mObjectGraph = new ObjectGraph(this);
 
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("OpenSans_Regular.ttf")
-                .setFontAttrId(R.attr.fontPath)
-                .build()
+                        .setDefaultFontPath("OpenSans_Regular.ttf")
+                        .setFontAttrId(R.attr.fontPath)
+                        .build()
         );
 
         Events.register(new EventProducers(this));

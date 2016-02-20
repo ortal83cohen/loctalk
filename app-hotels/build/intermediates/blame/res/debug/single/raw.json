@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\bsd2_full.txt",
-        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\bsd2_full.txt"
-    },
-    {
         "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\isc_summary.txt",
         "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\isc_summary.txt"
+    },
+    {
+        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\bsd2_full.txt",
+        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\de.psdev.licensesdialog\\licensesdialog\\1.8.0\\res\\raw\\bsd2_full.txt"
     },
     {
         "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\raw\\secure_easytobook_com.cer",

@@ -10,12 +10,12 @@ import android.graphics.Paint;
 import android.support.annotation.DrawableRes;
 import android.support.v4.util.LruCache;
 
-import com.travoca.api.model.search.Poi;
-import com.travoca.app.R;
 import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.travoca.api.model.search.Poi;
+import com.travoca.app.R;
 
 /**
  * @author ortal

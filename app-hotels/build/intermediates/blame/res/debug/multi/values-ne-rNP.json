@@ -15,9 +15,9 @@
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 233,
+                        "startOffset": 234,
                         "endColumn": 104,
-                        "endOffset": 333
+                        "endOffset": 334
                     }
                 }
             },
@@ -34,9 +34,9 @@
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 338,
+                        "startOffset": 339,
                         "endColumn": 107,
-                        "endOffset": 441
+                        "endOffset": 442
                     }
                 }
             },
@@ -53,9 +53,9 @@
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 446,
+                        "startOffset": 447,
                         "endColumn": 122,
-                        "endOffset": 564
+                        "endOffset": 565
                     }
                 }
             },
@@ -72,9 +72,9 @@
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 569,
+                        "startOffset": 570,
                         "endColumn": 103,
-                        "endOffset": 668
+                        "endOffset": 669
                     }
                 }
             },
@@ -91,9 +91,9 @@
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 673,
+                        "startOffset": 674,
                         "endColumn": 107,
-                        "endOffset": 776
+                        "endOffset": 777
                     }
                 }
             },
@@ -110,9 +110,9 @@
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 781,
+                        "startOffset": 782,
                         "endColumn": 90,
-                        "endOffset": 867
+                        "endOffset": 868
                     }
                 }
             },
@@ -129,9 +129,9 @@
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 872,
+                        "startOffset": 873,
                         "endColumn": 106,
-                        "endOffset": 974
+                        "endOffset": 975
                     }
                 }
             },
@@ -148,9 +148,9 @@
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 979,
+                        "startOffset": 980,
                         "endColumn": 126,
-                        "endOffset": 1101
+                        "endOffset": 1102
                     }
                 }
             },
@@ -167,9 +167,9 @@
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1106,
+                        "startOffset": 1107,
                         "endColumn": 93,
-                        "endOffset": 1195
+                        "endOffset": 1196
                     }
                 }
             },
@@ -186,9 +186,9 @@
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1200,
+                        "startOffset": 1201,
                         "endColumn": 89,
-                        "endOffset": 1285
+                        "endOffset": 1286
                     }
                 }
             },
@@ -205,9 +205,9 @@
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1290,
+                        "startOffset": 1291,
                         "endColumn": 87,
-                        "endOffset": 1373
+                        "endOffset": 1374
                     }
                 }
             },
@@ -224,9 +224,9 @@
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1378,
+                        "startOffset": 1379,
                         "endColumn": 109,
-                        "endOffset": 1483
+                        "endOffset": 1484
                     }
                 }
             },
@@ -243,9 +243,9 @@
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1488,
+                        "startOffset": 1489,
                         "endColumn": 115,
-                        "endOffset": 1599
+                        "endOffset": 1600
                     }
                 }
             },
@@ -262,9 +262,9 @@
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1604,
+                        "startOffset": 1605,
                         "endColumn": 102,
-                        "endOffset": 1702
+                        "endOffset": 1703
                     }
                 }
             },
@@ -281,9 +281,9 @@
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1707,
+                        "startOffset": 1708,
                         "endColumn": 114,
-                        "endOffset": 1817
+                        "endOffset": 1818
                     }
                 }
             },
@@ -300,9 +300,9 @@
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1822,
+                        "startOffset": 1823,
                         "endColumn": 101,
-                        "endOffset": 1919
+                        "endOffset": 1920
                     }
                 }
             },
@@ -319,9 +319,9 @@
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 1924,
+                        "startOffset": 1925,
                         "endColumn": 114,
-                        "endOffset": 2034
+                        "endOffset": 2035
                     }
                 }
             },
@@ -338,9 +338,9 @@
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 2039,
+                        "startOffset": 2040,
                         "endColumn": 130,
-                        "endOffset": 2165
+                        "endOffset": 2166
                     }
                 }
             },
@@ -357,9 +357,9 @@
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 2170,
+                        "startOffset": 2171,
                         "endColumn": 111,
-                        "endOffset": 2277
+                        "endOffset": 2278
                     }
                 }
             },
@@ -374,11 +374,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 482,
+                        "startOffset": 419,
                         "endColumn": 195,
-                        "endOffset": 673
+                        "endOffset": 610
                     }
                 }
             },
@@ -393,11 +393,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 18,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 2665,
+                        "startOffset": 2602,
                         "endColumn": 193,
-                        "endOffset": 2854
+                        "endOffset": 2791
                     }
                 }
             },
@@ -412,11 +412,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 2341,
+                        "startOffset": 2278,
                         "endColumn": 124,
-                        "endOffset": 2461
+                        "endOffset": 2398
                     }
                 }
             },
@@ -431,11 +431,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 30,
+                        "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 4525,
+                        "startOffset": 4462,
                         "endColumn": 264,
-                        "endOffset": 4785
+                        "endOffset": 4722
                     }
                 }
             },
@@ -450,11 +450,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 2065,
+                        "startOffset": 2002,
                         "endColumn": 136,
-                        "endOffset": 2197
+                        "endOffset": 2134
                     }
                 }
             },
@@ -469,11 +469,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1871,
+                        "startOffset": 1808,
                         "endColumn": 193,
-                        "endOffset": 2060
+                        "endOffset": 1997
                     }
                 }
             },
@@ -488,11 +488,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1736,
+                        "startOffset": 1673,
                         "endColumn": 134,
-                        "endOffset": 1866
+                        "endOffset": 1803
                     }
                 }
             },
@@ -507,11 +507,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 843,
+                        "startOffset": 780,
                         "endColumn": 179,
-                        "endOffset": 1018
+                        "endOffset": 955
                     }
                 }
             },
@@ -526,11 +526,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 1597,
+                        "startOffset": 1534,
                         "endColumn": 138,
-                        "endOffset": 1731
+                        "endOffset": 1668
                     }
                 }
             },
@@ -545,11 +545,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 1159,
+                        "startOffset": 1096,
                         "endColumn": 215,
-                        "endOffset": 1370
+                        "endOffset": 1307
                     }
                 }
             },
@@ -564,11 +564,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 1375,
+                        "startOffset": 1312,
                         "endColumn": 221,
-                        "endOffset": 1592
+                        "endOffset": 1529
                     }
                 }
             },
@@ -583,11 +583,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 1023,
+                        "startOffset": 960,
                         "endColumn": 135,
-                        "endOffset": 1154
+                        "endOffset": 1091
                     }
                 }
             },
@@ -602,11 +602,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 24,
+                        "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 3617,
+                        "startOffset": 3554,
                         "endColumn": 172,
-                        "endOffset": 3785
+                        "endOffset": 3722
                     }
                 }
             },
@@ -621,11 +621,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 23,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 3497,
+                        "startOffset": 3434,
                         "endColumn": 119,
-                        "endOffset": 3612
+                        "endOffset": 3549
                     }
                 }
             },
@@ -640,11 +640,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 678,
+                        "startOffset": 615,
                         "endColumn": 164,
-                        "endOffset": 838
+                        "endOffset": 775
                     }
                 }
             },
@@ -659,11 +659,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 3332,
+                        "startOffset": 3269,
                         "endColumn": 164,
-                        "endOffset": 3492
+                        "endOffset": 3429
                     }
                 }
             },
@@ -678,11 +678,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 3211,
+                        "startOffset": 3148,
                         "endColumn": 120,
-                        "endOffset": 3327
+                        "endOffset": 3264
                     }
                 }
             },
@@ -697,11 +697,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 305,
+                        "startOffset": 242,
                         "endColumn": 176,
-                        "endOffset": 477
+                        "endOffset": 414
                     }
                 }
             },
@@ -716,11 +716,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 170,
+                        "startOffset": 107,
                         "endColumn": 134,
-                        "endOffset": 300
+                        "endOffset": 237
                     }
                 }
             },
@@ -735,11 +735,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 32,
+                        "startLine": 31,
                         "startColumn": 4,
-                        "startOffset": 4914,
+                        "startOffset": 4851,
                         "endColumn": 175,
-                        "endOffset": 5085
+                        "endOffset": 5022
                     }
                 }
             },
@@ -754,11 +754,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 31,
+                        "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 4790,
+                        "startOffset": 4727,
                         "endColumn": 123,
-                        "endOffset": 4909
+                        "endOffset": 4846
                     }
                 }
             },
@@ -773,11 +773,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 3790,
+                        "startOffset": 3727,
                         "endColumn": 133,
-                        "endOffset": 3919
+                        "endOffset": 3856
                     }
                 }
             },
@@ -792,11 +792,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 27,
+                        "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 4048,
+                        "startOffset": 3985,
                         "endColumn": 261,
-                        "endOffset": 4305
+                        "endOffset": 4242
                     }
                 }
             },
@@ -811,11 +811,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 26,
+                        "startLine": 25,
                         "startColumn": 4,
-                        "startOffset": 3924,
+                        "startOffset": 3861,
                         "endColumn": 123,
-                        "endOffset": 4043
+                        "endOffset": 3980
                     }
                 }
             },
@@ -830,11 +830,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 28,
+                        "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 4310,
+                        "startOffset": 4247,
                         "endColumn": 119,
-                        "endOffset": 4425
+                        "endOffset": 4362
                     }
                 }
             },
@@ -849,11 +849,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 2466,
+                        "startOffset": 2403,
                         "endColumn": 198,
-                        "endOffset": 2660
+                        "endOffset": 2597
                     }
                 }
             },
@@ -868,11 +868,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 2202,
+                        "startOffset": 2139,
                         "endColumn": 138,
-                        "endOffset": 2336
+                        "endOffset": 2273
                     }
                 }
             },
@@ -887,11 +887,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 3001,
+                        "startOffset": 2938,
                         "endColumn": 209,
-                        "endOffset": 3206
+                        "endOffset": 3143
                     }
                 }
             },
@@ -906,11 +906,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 2859,
+                        "startOffset": 2796,
                         "endColumn": 141,
-                        "endOffset": 2996
+                        "endOffset": 2933
                     }
                 }
             },
@@ -925,11 +925,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-ne-rNP\\common_strings.xml",
                     "position": {
-                        "startLine": 29,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 4430,
+                        "startOffset": 4367,
                         "endColumn": 94,
-                        "endOffset": 4520
+                        "endOffset": 4457
                     }
                 }
             },
@@ -944,11 +944,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\values-ne-rNP\\base_strings.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 170,
+                        "startOffset": 55,
                         "endColumn": 101,
-                        "endOffset": 267
+                        "endOffset": 152
                     }
                 }
             },
@@ -963,11 +963,11 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\values-ne-rNP\\base_strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 272,
+                        "startOffset": 157,
                         "endColumn": 121,
-                        "endOffset": 389
+                        "endOffset": 274
                     }
                 }
             },
@@ -984,9 +984,9 @@
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 2282,
+                        "startOffset": 2283,
                         "endColumn": 100,
-                        "endOffset": 2378
+                        "endOffset": 2379
                     }
                 }
             }

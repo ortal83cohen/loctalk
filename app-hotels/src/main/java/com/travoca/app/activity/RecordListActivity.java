@@ -12,6 +12,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.ActivityRecognition;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.places.Places;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.squareup.otto.Subscribe;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.SprType;
@@ -34,14 +42,6 @@ import com.travoca.app.map.PoiMarker;
 import com.travoca.app.map.ResultsMap;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.widget.AppBar;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.ActivityRecognition;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.places.Places;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.squareup.otto.Subscribe;
 
 import java.util.HashMap;
 

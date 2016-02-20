@@ -16,12 +16,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.travoca.api.StgApi;
+import com.squareup.okhttp.ResponseBody;
+import com.squareup.otto.Subscribe;
+import com.travoca.api.TravocaApi;
 import com.travoca.api.contract.Sort;
 import com.travoca.api.model.ErrorResponse;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.SearchRequest;
-import com.travoca.app.HotelsApplication;
+import com.travoca.app.TravocaApplication;
 import com.travoca.app.R;
 import com.travoca.app.activity.BaseActivity;
 import com.travoca.app.activity.RecordListActivity;
@@ -36,8 +38,6 @@ import com.travoca.app.events.SearchResultsEvent;
 import com.travoca.app.utils.AppLog;
 import com.travoca.app.widget.recyclerview.EndlessRecyclerView;
 import com.travoca.app.widget.recyclerview.TopOffsetItemDecorator;
-import com.squareup.okhttp.ResponseBody;
-import com.squareup.otto.Subscribe;
 
 import java.io.IOException;
 import java.security.InvalidParameterException;
@@ -63,7 +63,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     TextView mLoaderText;
     @Bind(R.id.modify_preferences)
     Button mModifyPreferences;
-    StgApi mStgApi;
+    TravocaApi mTravocaApi;
     private LinearLayoutManager mLayoutManager;
     private RecordListAdapter mAdapter;
     private Listener mListener;
@@ -80,7 +80,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
                 return;
             }
 
-            if (apiResponse.records == null || apiResponse.records.isEmpty() || apiResponse.records.size() != StgApi.LIMIT) {
+            if (apiResponse.records == null || apiResponse.records.isEmpty() || apiResponse.records.size() != TravocaApi.LIMIT) {
                 mRecyclerView.setHasMoreData(false);
             }
 
@@ -186,8 +186,8 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
         mLayoutManager = new LinearLayoutManager(getActivity());
         mAdapter = new RecordListAdapter((BaseActivity) getActivity(), (RecordViewHolder.Listener) getActivity());
 
-        mStgApi = HotelsApplication.provide(getActivity()).etbApi();
-        mRecyclerView.init(mLayoutManager, mAdapter, StgApi.LIMIT);
+        mTravocaApi = TravocaApplication.provide(getActivity()).travocaApi();
+        mRecyclerView.init(mLayoutManager, mAdapter, TravocaApi.LIMIT);
         mRecyclerView.addItemDecoration(new TopOffsetItemDecorator(getActivity().getResources().getDimensionPixelOffset(R.dimen.results_panel_top_height)));
         mRecyclerView.setOnLoadMoreListener(new EndlessRecyclerView.OnLoadMoreListener() {
             @Override
@@ -214,7 +214,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
         SearchRequest hotelsRequest = getRequest();
         Events.post(new SearchRequestEvent(hotelsRequest, offset));
         try {
-            mStgApi.records(hotelsRequest, offset).enqueue(mResultsCallback);
+            mTravocaApi.records(hotelsRequest, offset).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             getActivity().finish();
         }
@@ -286,7 +286,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     public void onSearchResults(SearchResultsEvent event) {
         mRecyclerView.setVisibility(View.VISIBLE);
 //        if (!event.hasError()) {
-            mAvailableCountText.setText(Html.fromHtml(getResources().getQuantityString(R.plurals.hotels_count_available, event.getCount(), event.getCount())));
+        mAvailableCountText.setText(Html.fromHtml(getResources().getQuantityString(R.plurals.hotels_count_available, event.getCount(), event.getCount())));
 //        }
     }
 

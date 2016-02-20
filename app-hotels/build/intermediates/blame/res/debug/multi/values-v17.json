@@ -14,12 +14,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 233,
-                        "endLine": 6,
+                        "startOffset": 235,
+                        "endLine": 7,
                         "endColumn": 12,
-                        "endOffset": 401
+                        "endOffset": 403
                     }
                 }
             },
@@ -35,12 +35,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 406,
-                        "endLine": 10,
+                        "startOffset": 409,
+                        "endLine": 12,
                         "endColumn": 12,
-                        "endOffset": 629
+                        "endOffset": 632
                     }
                 }
             },
@@ -56,12 +56,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 634,
-                        "endLine": 13,
+                        "startOffset": 638,
+                        "endLine": 16,
                         "endColumn": 12,
-                        "endOffset": 787
+                        "endOffset": 791
                     }
                 }
             },
@@ -77,12 +77,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 792,
-                        "endLine": 16,
+                        "startOffset": 797,
+                        "endLine": 20,
                         "endColumn": 12,
-                        "endOffset": 937
+                        "endOffset": 942
                     }
                 }
             },
@@ -98,12 +98,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 942,
-                        "endLine": 19,
+                        "startOffset": 948,
+                        "endLine": 24,
                         "endColumn": 12,
-                        "endOffset": 1109
+                        "endOffset": 1115
                     }
                 }
             },
@@ -119,12 +119,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 1114,
-                        "endLine": 23,
+                        "startOffset": 1121,
+                        "endLine": 29,
                         "endColumn": 12,
-                        "endOffset": 1337
+                        "endOffset": 1344
                     }
                 }
             },
@@ -140,12 +140,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 24,
+                        "startLine": 31,
                         "startColumn": 4,
-                        "startOffset": 1342,
-                        "endLine": 27,
+                        "startOffset": 1350,
+                        "endLine": 34,
                         "endColumn": 12,
-                        "endOffset": 1579
+                        "endOffset": 1587
                     }
                 }
             },
@@ -161,12 +161,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 28,
+                        "startLine": 36,
                         "startColumn": 4,
-                        "startOffset": 1584,
-                        "endLine": 30,
+                        "startOffset": 1593,
+                        "endLine": 38,
                         "endColumn": 12,
-                        "endOffset": 1750
+                        "endOffset": 1759
                     }
                 }
             },
@@ -182,12 +182,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 31,
+                        "startLine": 40,
                         "startColumn": 4,
-                        "startOffset": 1755,
-                        "endLine": 33,
+                        "startOffset": 1765,
+                        "endLine": 42,
                         "endColumn": 12,
-                        "endOffset": 1924
+                        "endOffset": 1934
                     }
                 }
             },
@@ -203,12 +203,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 34,
+                        "startLine": 44,
                         "startColumn": 4,
-                        "startOffset": 1929,
-                        "endLine": 36,
+                        "startOffset": 1940,
+                        "endLine": 46,
                         "endColumn": 12,
-                        "endOffset": 2093
+                        "endOffset": 2104
                     }
                 }
             },
@@ -224,12 +224,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 37,
+                        "startLine": 48,
                         "startColumn": 4,
-                        "startOffset": 2098,
-                        "endLine": 40,
+                        "startOffset": 2110,
+                        "endLine": 51,
                         "endColumn": 12,
-                        "endOffset": 2366
+                        "endOffset": 2378
                     }
                 }
             },
@@ -245,12 +245,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 41,
+                        "startLine": 53,
                         "startColumn": 4,
-                        "startOffset": 2371,
-                        "endLine": 43,
+                        "startOffset": 2384,
+                        "endLine": 55,
                         "endColumn": 12,
-                        "endOffset": 2566
+                        "endOffset": 2579
                     }
                 }
             },
@@ -266,12 +266,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 44,
+                        "startLine": 57,
                         "startColumn": 4,
-                        "startOffset": 2571,
-                        "endLine": 47,
+                        "startOffset": 2585,
+                        "endLine": 60,
                         "endColumn": 12,
-                        "endOffset": 2770
+                        "endOffset": 2784
                     }
                 }
             },
@@ -280,19 +280,19 @@
                     "startLine": 46,
                     "startColumn": 4,
                     "startOffset": 2597,
-                    "endLine": 49,
+                    "endLine": 50,
                     "endColumn": 12,
-                    "endOffset": 2921
+                    "endOffset": 2930
                 },
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v17\\values-v17.xml",
                     "position": {
-                        "startLine": 48,
+                        "startLine": 62,
                         "startColumn": 4,
-                        "startOffset": 2775,
-                        "endLine": 51,
+                        "startOffset": 2790,
+                        "endLine": 66,
                         "endColumn": 12,
-                        "endOffset": 3099
+                        "endOffset": 3123
                     }
                 }
             }

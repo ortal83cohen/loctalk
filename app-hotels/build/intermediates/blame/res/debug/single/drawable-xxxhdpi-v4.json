@@ -8,12 +8,12 @@
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\no_results.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_creditcards.png",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_creditcards.png"
-    },
-    {
         "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\guests_active.png",
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\guests_active.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mainnav_creditcards.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_creditcards.png"
     },
     {
         "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\destination.png",
@@ -40,12 +40,12 @@
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\mainnav_my_settings.png"
     },
     {
-        "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_etb_logo.png",
-        "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_etb_logo.png"
-    },
-    {
         "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\btn_close.png",
         "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\btn_close.png"
+    },
+    {
+        "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\menu_etb_logo.png",
+        "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\menu_etb_logo.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\stg_actionbar_logo.png",
@@ -88,24 +88,24 @@
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\booking_billing_address.png"
     },
     {
-        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\desintation_autocomplete.png",
-        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\desintation_autocomplete.png"
-    },
-    {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ssl_verisign.png",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\ssl_verisign.png"
+    },
+    {
+        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\desintation_autocomplete.png",
+        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\desintation_autocomplete.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\desintation_autocomplete.png",
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\desintation_autocomplete.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\user_icon.png",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\user_icon.png"
-    },
-    {
         "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\arrow_calendar_left.png",
         "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\arrow_calendar_left.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\user_icon.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxxhdpi\\user_icon.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\email.png",

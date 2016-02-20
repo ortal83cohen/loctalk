@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.travoca.app.R;
 import com.squareup.picasso.Picasso;
+import com.travoca.app.R;
 
 import java.util.ArrayList;
 

@@ -3,8 +3,8 @@ package com.travoca.app.analytics;
 import android.app.Activity;
 import android.content.Context;
 
-import com.travoca.api.model.Record;
 import com.travoca.api.model.HotelRequest;
+import com.travoca.api.model.Record;
 import com.travoca.api.model.SearchRequest;
 
 /**

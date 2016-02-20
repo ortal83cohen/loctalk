@@ -11,14 +11,22 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.travoca.api.StgApi;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.Projection;
+import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.Marker;
+import com.squareup.okhttp.ResponseBody;
+import com.travoca.api.TravocaApi;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.Poi;
 import com.travoca.api.model.search.Type;
 import com.travoca.api.model.search.ViewPortType;
-import com.travoca.app.HotelsApplication;
+import com.travoca.app.TravocaApplication;
 import com.travoca.app.R;
 import com.travoca.app.activity.BaseActivity;
 import com.travoca.app.activity.RecordListActivity;
@@ -30,14 +38,6 @@ import com.travoca.app.model.Location;
 import com.travoca.app.model.LocationWithTitle;
 import com.travoca.app.model.MapSelectedViewPort;
 import com.travoca.app.utils.AppLog;
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.Projection;
-import com.google.android.gms.maps.model.CameraPosition;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
-import com.google.android.gms.maps.model.Marker;
-import com.squareup.okhttp.ResponseBody;
 
 import java.security.InvalidParameterException;
 import java.util.HashMap;
@@ -85,7 +85,7 @@ public class ResultsMap {
 
         @Override
         protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
-//            AppLog.d("StgApi", "Response: " + apiResponse.meta);
+//            AppLog.d("TravocaApi", "Response: " + apiResponse.meta);
             ((RecordListActivity) mActivity).hideLoaderImage();
             mHotelsCollection.clear();
             mPoiCollection.clear();
@@ -205,7 +205,7 @@ public class ResultsMap {
     public void refreshHotels() {
 
         SearchRequest hotelsRequest = mActivity.getHotelsRequest();
-        StgApi etb = HotelsApplication.provide(mActivity).etbApi();
+        TravocaApi etb = TravocaApplication.provide(mActivity).travocaApi();
         Events.post(new SearchRequestEvent(hotelsRequest, 0));
         try {
             etb.records(hotelsRequest, 0).enqueue(mResultsCallback);
@@ -238,7 +238,7 @@ public class ResultsMap {
                     }
                     mHotelsCollection.remove(marker);
                     lastRecordMarkerClicked = mHotelsCollection.addMarker(mRecordMarker.create(Integer.valueOf(marker.getTitle()), recordMarker, HotelMarker.STATUS_SELECTED));
-                    selectedRecordsList.add( recordMarker.id);
+                    selectedRecordsList.add(recordMarker.id);
                     return true;
                 }
             });

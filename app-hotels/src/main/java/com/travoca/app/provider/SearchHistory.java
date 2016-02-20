@@ -3,6 +3,7 @@ package com.travoca.app.provider;
 import android.content.ContentValues;
 import android.content.Context;
 import android.text.TextUtils;
+
 import com.google.android.gms.location.places.Place;
 
 import java.text.SimpleDateFormat;
@@ -13,7 +14,7 @@ import java.util.Locale;
  * @date 2015-12-01
  */
 public class SearchHistory {
-    public static void insert(Place place,  Context context) {
+    public static void insert(Place place, Context context) {
         ContentValues values = new ContentValues();
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-d", Locale.US);
         String placeTypes = TextUtils.join(",", place.getPlaceTypes());

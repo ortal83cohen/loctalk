@@ -675,9 +675,9 @@
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 233,
+                        "startOffset": 234,
                         "endColumn": 68,
-                        "endOffset": 297
+                        "endOffset": 298
                     }
                 }
             },
@@ -694,9 +694,9 @@
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 302,
+                        "startOffset": 303,
                         "endColumn": 69,
-                        "endOffset": 367
+                        "endOffset": 368
                     }
                 }
             },
@@ -713,9 +713,9 @@
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 372,
+                        "startOffset": 373,
                         "endColumn": 73,
-                        "endOffset": 441
+                        "endOffset": 442
                     }
                 }
             },
@@ -732,9 +732,9 @@
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 446,
+                        "startOffset": 447,
                         "endColumn": 75,
-                        "endOffset": 517
+                        "endOffset": 518
                     }
                 }
             },
@@ -751,9 +751,9 @@
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 700,
+                        "startOffset": 702,
                         "endColumn": 58,
-                        "endOffset": 754
+                        "endOffset": 756
                     }
                 }
             },
@@ -770,9 +770,9 @@
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 937,
+                        "startOffset": 940,
                         "endColumn": 70,
-                        "endOffset": 1003
+                        "endOffset": 1006
                     }
                 }
             },
@@ -789,9 +789,9 @@
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1008,
+                        "startOffset": 1011,
                         "endColumn": 67,
-                        "endOffset": 1071
+                        "endOffset": 1074
                     }
                 }
             },
@@ -808,9 +808,9 @@
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 227,
+                        "startOffset": 228,
                         "endColumn": 69,
-                        "endOffset": 292
+                        "endOffset": 293
                     }
                 }
             },
@@ -827,9 +827,9 @@
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 297,
+                        "startOffset": 298,
                         "endColumn": 70,
-                        "endOffset": 363
+                        "endOffset": 364
                     }
                 }
             },
@@ -846,9 +846,9 @@
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 368,
+                        "startOffset": 369,
                         "endColumn": 71,
-                        "endOffset": 435
+                        "endOffset": 436
                     }
                 }
             },
@@ -865,9 +865,9 @@
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 440,
+                        "startOffset": 441,
                         "endColumn": 57,
-                        "endOffset": 493
+                        "endOffset": 494
                     }
                 }
             },
@@ -884,9 +884,9 @@
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 498,
+                        "startOffset": 499,
                         "endColumn": 57,
-                        "endOffset": 551
+                        "endOffset": 552
                     }
                 }
             },
@@ -895,36 +895,19 @@
                     "startLine": 14,
                     "startColumn": 4,
                     "startOffset": 871,
-                    "endColumn": 105,
-                    "endOffset": 972
+                    "endLine": 15,
+                    "endColumn": 12,
+                    "endOffset": 977
                 },
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 556,
-                        "endColumn": 105,
-                        "endOffset": 657
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 977,
-                    "endColumn": 63,
-                    "endOffset": 1036
-                },
-                "from": {
-                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 662,
-                        "endColumn": 63,
-                        "endOffset": 721
+                        "startOffset": 557,
+                        "endLine": 10,
+                        "endColumn": 12,
+                        "endOffset": 663
                     }
                 }
             },
@@ -932,18 +915,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1041,
-                    "endColumn": 54,
-                    "endOffset": 1091
+                    "startOffset": 982,
+                    "endColumn": 63,
+                    "endOffset": 1041
                 },
                 "from": {
-                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1076,
-                        "endColumn": 54,
-                        "endOffset": 1126
+                        "startOffset": 668,
+                        "endColumn": 63,
+                        "endOffset": 727
                     }
                 }
             },
@@ -951,18 +934,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1096,
-                    "endColumn": 62,
-                    "endOffset": 1154
+                    "startOffset": 1046,
+                    "endColumn": 54,
+                    "endOffset": 1096
                 },
                 "from": {
-                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 898,
-                        "endColumn": 62,
-                        "endOffset": 956
+                        "startOffset": 1079,
+                        "endColumn": 54,
+                        "endOffset": 1129
                     }
                 }
             },
@@ -970,20 +953,39 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1159,
-                    "endLine": 21,
-                    "endColumn": 12,
-                    "endOffset": 1336
+                    "startOffset": 1101,
+                    "endColumn": 62,
+                    "endOffset": 1159
                 },
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1133,
-                        "endLine": 19,
+                        "startOffset": 905,
+                        "endColumn": 62,
+                        "endOffset": 963
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1164,
+                    "endLine": 22,
+                    "endColumn": 12,
+                    "endOffset": 1341
+                },
+                "from": {
+                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1142,
+                        "endLine": 21,
                         "endColumn": 12,
-                        "endOffset": 1310
+                        "endOffset": 1319
                     }
                 }
             }

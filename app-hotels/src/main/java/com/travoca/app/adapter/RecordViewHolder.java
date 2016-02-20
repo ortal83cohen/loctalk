@@ -11,9 +11,9 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import com.travoca.api.model.Record;
 import com.travoca.api.utils.ImageUtils;
-import com.squareup.picasso.Picasso;
 import com.travoca.app.R;
 
 import butterknife.Bind;

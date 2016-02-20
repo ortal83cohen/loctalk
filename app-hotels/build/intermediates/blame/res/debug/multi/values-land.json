@@ -295,9 +295,9 @@
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 229,
+                        "startOffset": 230,
                         "endColumn": 61,
-                        "endOffset": 286
+                        "endOffset": 287
                     }
                 }
             },
@@ -314,9 +314,9 @@
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 466,
+                        "startOffset": 468,
                         "endColumn": 71,
-                        "endOffset": 533
+                        "endOffset": 535
                     }
                 }
             },
@@ -333,9 +333,9 @@
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 722,
+                        "startOffset": 725,
                         "endColumn": 69,
-                        "endOffset": 787
+                        "endOffset": 790
                     }
                 }
             },
@@ -352,9 +352,9 @@
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 967,
+                        "startOffset": 971,
                         "endColumn": 63,
-                        "endOffset": 1026
+                        "endOffset": 1030
                     }
                 }
             },
@@ -371,9 +371,9 @@
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1215,
+                        "startOffset": 1220,
                         "endColumn": 70,
-                        "endOffset": 1281
+                        "endOffset": 1286
                     }
                 }
             },
@@ -390,9 +390,9 @@
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1286,
+                        "startOffset": 1291,
                         "endColumn": 67,
-                        "endOffset": 1349
+                        "endOffset": 1354
                     }
                 }
             },
@@ -408,12 +408,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-land\\values-land.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 224,
-                        "endLine": 7,
+                        "startOffset": 226,
+                        "endLine": 8,
                         "endColumn": 12,
-                        "endOffset": 401
+                        "endOffset": 403
                     }
                 }
             }

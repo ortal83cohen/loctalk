@@ -15,7 +15,6 @@ import com.travoca.app.R;
 import com.travoca.app.activity.BaseActivity;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.utils.AppLog;
-
 import com.travoca.app.widget.recyclerview.ArrayAdapter;
 
 import java.util.ArrayList;

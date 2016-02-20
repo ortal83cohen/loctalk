@@ -7,8 +7,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.travoca.app.R;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.travoca.app.R;
 
 /**
  * @author ortal

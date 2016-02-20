@@ -2,10 +2,10 @@ package com.travoca.app.etbapi;
 
 import android.widget.Toast;
 
+import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.model.DetailsResponse;
 import com.travoca.app.R;
 import com.travoca.app.utils.AppLog;
-import com.squareup.okhttp.ResponseBody;
 
 import retrofit.Response;
 

@@ -5,14 +5,6 @@ import com.travoca.app.model.Location;
 
 import org.junit.Test;
 
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Locale;
-
-import static junit.framework.Assert.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-
 /**
  * @author ortal
  * @date 2015-11-29

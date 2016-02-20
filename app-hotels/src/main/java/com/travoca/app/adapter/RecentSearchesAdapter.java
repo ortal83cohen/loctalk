@@ -53,7 +53,7 @@ public class RecentSearchesAdapter extends CursorAdapter {
             String subTitle = "";
             if (fromDate.after(new Date(System.currentTimeMillis()))) {
                 subTitle = " <br>" + cursor.getString(cursor.getColumnIndex("number_guests")) + " " +
-                        r.getQuantityString(R.plurals.guests, cursor.getInt(cursor.getColumnIndex("number_guests"))) + ", "
+                       "" + ", "
                         + output.format(fromDate) + " - "
                         + output.format(toDate);
             }

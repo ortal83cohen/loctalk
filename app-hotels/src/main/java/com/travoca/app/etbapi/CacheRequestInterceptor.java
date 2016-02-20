@@ -1,11 +1,11 @@
 package com.travoca.app.etbapi;
 
-import com.travoca.api.StgApi;
-import com.travoca.app.utils.NetworkUtilities;
 import com.squareup.okhttp.CacheControl;
 import com.squareup.okhttp.Interceptor;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
+import com.travoca.api.TravocaApi;
+import com.travoca.app.utils.NetworkUtilities;
 
 import java.io.IOException;
 import java.net.URI;
@@ -61,7 +61,7 @@ public class CacheRequestInterceptor implements Interceptor {
         URI uri = request.uri();
 
         CacheControl cacheControl;
-        if (uri.getPath().equals(StgApi.PATH_RECORDS)) {
+        if (uri.getPath().equals(TravocaApi.PATH_RECORDS)) {
             cacheControl = new CacheControl.Builder().maxAge(mSearchMaxAge, TimeUnit.SECONDS).build();
             return request.newBuilder().cacheControl(cacheControl).build();
         } else if (CacheUtils.isRetrieveOrderRequest(request)) {

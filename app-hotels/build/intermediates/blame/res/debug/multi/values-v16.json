@@ -14,12 +14,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values-v16\\values.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 188,
-                        "endLine": 12,
+                        "startOffset": 190,
+                        "endLine": 13,
                         "endColumn": 12,
-                        "endOffset": 678
+                        "endOffset": 680
                     }
                 }
             },
@@ -35,12 +35,12 @@
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.github.techfreak\\wizardpager\\1.0.0\\res\\values-v16\\values.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 683,
-                        "endLine": 22,
+                        "startOffset": 686,
+                        "endLine": 24,
                         "endColumn": 12,
-                        "endOffset": 1228
+                        "endOffset": 1231
                     }
                 }
             }

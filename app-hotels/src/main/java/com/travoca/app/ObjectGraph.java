@@ -6,12 +6,12 @@ import android.telephony.TelephonyManager;
 
 import com.facebook.CallbackManager;
 import com.facebook.device.yearclass.YearClass;
-import com.travoca.api.StgApi;
-import com.travoca.api.StgApiConfig;
-import com.travoca.api.mock.ResultsMockClient;
-import com.travoca.api.model.SearchRequest;
 import com.squareup.okhttp.Cache;
 import com.squareup.okhttp.OkHttpClient;
+import com.travoca.api.StgApiConfig;
+import com.travoca.api.TravocaApi;
+import com.travoca.api.mock.ResultsMockClient;
+import com.travoca.api.model.SearchRequest;
 import com.travoca.app.analytics.Facebook;
 import com.travoca.app.etbapi.CacheRequestInterceptor;
 import com.travoca.app.etbapi.CacheResponseInterceptor;
@@ -44,7 +44,7 @@ public class ObjectGraph {
     private RecordListRequest mHotelsRequest;
     private Facebook mFacebook;
     private UserPreferences mUserPrefs;
-    private StgApi mStgApi;
+    private TravocaApi mTravocaApi;
     private OkHttpClient mHttpClient;
     private MemberStorage mMemberStorage;
     private SearchRequest mLastSearchRequest;
@@ -76,14 +76,14 @@ public class ObjectGraph {
         return request;
     }
 
-    public StgApi etbApi() {
-        if (mStgApi == null) {
+    public TravocaApi travocaApi() {
+        if (mTravocaApi == null) {
             StgApiConfig cfg = new StgApiConfig(Config.ETB_API_KEY, Config.ETB_API_CAMPAIGN_ID);
             cfg.setDebug(BuildConfig.DEBUG);
             cfg.setLogger(new RetrofitLogger());
-            mStgApi = new StgApi(cfg, apiHttpClient());
+            mTravocaApi = new TravocaApi(cfg, apiHttpClient());
         }
-        return mStgApi;
+        return mTravocaApi;
     }
 
     private OkHttpClient apiHttpClient() {

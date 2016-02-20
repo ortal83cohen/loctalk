@@ -8,12 +8,12 @@
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\src\\main\\res\\anim\\exit.xml"
     },
     {
-        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
-        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\anim\\design_fab_out.xml"
-    },
-    {
         "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\anim\\design_fab_out.xml"
     },
     {
         "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",

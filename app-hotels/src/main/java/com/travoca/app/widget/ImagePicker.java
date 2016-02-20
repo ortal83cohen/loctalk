@@ -1,4 +1,5 @@
 package com.travoca.app.widget;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -78,7 +79,7 @@ public class ImagePicker {
         if (resultCode == Activity.RESULT_OK) {
             Uri selectedImage;
             boolean isCamera = (imageReturnedIntent == null ||
-                    imageReturnedIntent.getData() == null  ||
+                    imageReturnedIntent.getData() == null ||
                     imageReturnedIntent.getData().equals(Uri.fromFile(imageFile)));
             if (isCamera) {     /** CAMERA **/
                 selectedImage = Uri.fromFile(imageFile);

@@ -3,8 +3,8 @@ package com.travoca.app.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.travoca.api.model.search.SprType;
 import com.google.android.gms.maps.model.LatLng;
+import com.travoca.api.model.search.SprType;
 
 /**
  * @author ortal

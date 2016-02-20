@@ -3,8 +3,6 @@ package com.travoca.app.utils;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-import com.travoca.app.R;
-
 import org.apache.http.conn.ssl.AllowAllHostnameVerifier;
 
 import java.io.BufferedInputStream;

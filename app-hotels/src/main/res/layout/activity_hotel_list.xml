@@ -38,7 +38,7 @@
                 android:elevation="12sp"
                 android:paddingLeft="@dimen/minimum_default_padding"
                 android:paddingRight="@dimen/minimum_default_padding"
-                android:text="@string/refresh_hotels"
+                android:text="@string/refresh"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="12dp"

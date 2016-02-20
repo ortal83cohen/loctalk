@@ -35,7 +35,7 @@ import retrofit.http.QueryMap;
  * @author ortal
  * @date 2015-04-19
  */
-public class StgApi {
+public class TravocaApi {
 
     public static final String PATH_RECORDS = "/records" ;
     public static final String PATH_IMAGE = "/image" ;
@@ -61,15 +61,15 @@ public class StgApi {
         }
     };
 
-    public StgApi(String apiKey, int campaignId) {
+    public TravocaApi(String apiKey, int campaignId) {
         this(new StgApiConfig(apiKey, campaignId), null);
     }
 
-    public StgApi(StgApiConfig config) {
+    public TravocaApi(StgApiConfig config) {
         this(config, null);
     }
 
-    public StgApi(StgApiConfig config, OkHttpClient httpClient) {
+    public TravocaApi(StgApiConfig config, OkHttpClient httpClient) {
         mConfig = config;
         mHttpClient = httpClient == null ? new OkHttpClient() : httpClient;
         mHttpClient.interceptors().add(0, mRequestInterceptor);

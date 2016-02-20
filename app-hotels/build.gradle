@@ -126,11 +126,6 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:23.1.1'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:cardview-v7:23.1.1'
-    // Paypal
-    compile files('src/main/libs/PayPalAndroidSDK-2.11.2.jar')
-    // Omniture analytics
-    compile files('src/main/libs/adobeMobileLibrary-4.8.1.jar')
-
     // Inject views
     compile 'com.jakewharton:butterknife:7.0.1'
     // Custom fonts
@@ -156,11 +151,6 @@ dependencies {
 
     // Detect device year class
     compile 'com.facebook.device.yearclass:yearclass:1.0.1'
-
-    // Find memory leaks tool
-//    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-SNAPSHOT'
-//    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-SNAPSHOT'
-
     // App dependencies
     compile 'com.android.support:support-annotations:23.1.1'
     // Testing

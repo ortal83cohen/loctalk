@@ -28,7 +28,7 @@
         android:required="true" />
 
     <application
-        android:name=".HotelsApplication"
+        android:name=".TravocaApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -73,7 +73,7 @@
         </activity>
 
         <activity
-            android:name=".activity.NewRecord"
+            android:name=".activity.NewRecordActivity"
             android:label="@string/title_activity_new_record"
             android:screenOrientation="portrait" />
         <activity
@@ -104,31 +104,6 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <service
-            android:name="com.paypal.android.sdk.payments.PayPalService"
-            android:exported="false" />
-
-        <activity
-            android:name="com.paypal.android.sdk.payments.PaymentActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.paypal.android.sdk.payments.LoginActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="io.card.payment.CardIOActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="io.card.payment.DataEntryActivity"
-            android:screenOrientation="portrait" />
-
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

@@ -9,14 +9,14 @@ import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
+import com.google.android.gms.maps.model.LatLng;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.adapter.RecentSearchesAdapter;
-import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.model.Location;
+import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.provider.DbContract;
 import com.travoca.app.utils.AppLog;
-import com.google.android.gms.maps.model.LatLng;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

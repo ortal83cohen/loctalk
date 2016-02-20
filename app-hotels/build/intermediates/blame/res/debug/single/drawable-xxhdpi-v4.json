@@ -64,12 +64,12 @@
         "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\ic_progress_image.png"
     },
     {
-        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
-        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_light_pressed.9.png"
-    },
-    {
         "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\map_pin_price.png",
         "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\map_pin_price.png"
+    },
+    {
+        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_light_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png",
@@ -144,12 +144,12 @@
         "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\call.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable-xxhdpi\\messenger_bubble_small_white.png"
-    },
-    {
         "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\edit_green.png",
         "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\edit_green.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable-xxhdpi\\messenger_bubble_small_white.png"
     },
     {
         "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
@@ -216,12 +216,12 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
-        "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_light_focused.9.png"
-    },
-    {
         "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\check_mark_green.png",
         "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\check_mark_green.png"
+    },
+    {
+        "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_light_focused.9.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon_trash_w.png",
@@ -248,12 +248,12 @@
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
-        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_dark_normal.9.png"
-    },
-    {
         "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_close.png",
@@ -284,12 +284,12 @@
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\booking_billing_address.png",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\booking_billing_address.png"
-    },
-    {
         "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\booking_billing_address.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\booking_billing_address.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\check_mark_green.png",
@@ -368,16 +368,16 @@
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\btn_g_plus_normal.png"
     },
     {
-        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png",
-        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable-xxhdpi\\messenger_bubble_small_white.png"
+        "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\dropdown_arrow.png",
+        "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\dropdown_arrow.png"
     },
     {
         "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\mainnav_my_bookings.png",
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\mainnav_my_bookings.png"
     },
     {
-        "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\dropdown_arrow.png",
-        "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\dropdown_arrow.png"
+        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png",
+        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable-xxhdpi\\messenger_bubble_small_white.png"
     },
     {
         "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
@@ -404,12 +404,12 @@
         "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\menu_edit_destination.png"
     },
     {
-        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\menu_etb_logo.png",
-        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\menu_etb_logo.png"
-    },
-    {
         "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png",
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\menu_etb_logo.png",
+        "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\menu_etb_logo.png"
     },
     {
         "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
@@ -432,12 +432,12 @@
         "source": "C:\\Users\\user\\Documents\\loctalk\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\booking_personal_info.png"
     },
     {
-        "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png",
         "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png",
@@ -464,16 +464,16 @@
         "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\booking_personal_info.png"
     },
     {
-        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
-        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-xxhdpi\\common_google_signin_btn_icon_light_pressed.9.png"
+        "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\mainnav_scanner.png",
+        "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\mainnav_scanner.png"
     },
     {
         "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
         "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\mainnav_scanner.png",
-        "source": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\drawable-xxhdpi\\mainnav_scanner.png"
+        "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable-xxhdpi\\common_google_signin_btn_icon_light_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\ortal\\Documents\\loctalk\\app-hotels\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",

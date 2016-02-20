@@ -73,7 +73,7 @@ public class SettingsActivity extends SettingsActionBarActivity {
     private ArrayList<Preference> createDevelopmentPreferences() {
         ArrayList<Preference> preferences = new ArrayList<>();
         preferences.add(new Category("Development"));
-        String endpoint = App.provide(this).etbApi().getConfig().getEndpoint();
+        String endpoint = App.provide(this).travocaApi().getConfig().getEndpoint();
         preferences.add(new Item("API Endpoint", endpoint, ACTION_API_ENDPOINT));
         return preferences;
     }
@@ -206,7 +206,7 @@ public class SettingsActivity extends SettingsActionBarActivity {
         builder.setItems(items, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                StgApiConfig cfg = App.provide(SettingsActivity.this).etbApi().getConfig();
+                StgApiConfig cfg = App.provide(SettingsActivity.this).travocaApi().getConfig();
                 if (which == 0) {
                     cfg.setEndpoint(StgApiConfig.ETB_API_ENDPOINT_DEFAULT);
                     Config.setCoreInterfaceEndpoint(Config.CORE_INTERFACE_ENDPOINT);
