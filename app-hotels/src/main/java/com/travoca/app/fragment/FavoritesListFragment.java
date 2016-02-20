@@ -196,9 +196,9 @@ public class FavoritesListFragment extends BaseFragment {
 
         getActivity().setTitle(Html.fromHtml("<b>" + mCity + "</b> " + mCountry + " (" + count + ")"));
 
-        ArrayList<String> hotels = LikedHotels.loadHotels(mCity, mCountry, getActivity());
+        ArrayList<String> records = LikedHotels.loadHotels(mCity, mCountry, getActivity());
 
-        mHotelsRequest.setType(new ListType(hotels));
+        mHotelsRequest.setType(new ListType(records));
         mHotelsRequest.setSort(null);
 
         mLayoutManager = new LinearLayoutManager(getActivity());

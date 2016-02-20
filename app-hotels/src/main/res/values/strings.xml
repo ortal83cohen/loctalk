@@ -113,7 +113,6 @@
     <string name="check_out">Check-out</string>
     <string name="booking_number">Booking number</string>
     <string name="manage_your_reservation">Manage your reservation</string>
-    <string name="hotels_and_rooms"><![CDATA[Hotels & room(s)]]></string>
     <string name="booking_important_information">Important Information</string>
     <string name="contact_us">Contact us</string>
     <string name="done">Done</string>
@@ -157,7 +156,7 @@
     <string name="booking_or_password_not_match">Booking number not found or the password not match</string>
 
     <string name="you_logged_out">You logged out</string>
-    <string name="no_hotels_in_this_area">No hotels in this area</string>
+    <!--<string name="no_hotels_in_this_area">No hotels in this area</string>-->
     <string name="cannot_confirm_token">Cannot confirm token</string>
     <string name="no_dates_selected">No Dates selected</string>
     <string name="select_dates">Select Dates</string>
@@ -173,10 +172,10 @@
     <string name="note_guest_per_room">"Selected %1$d rooms with %2$d guest each"</string>
     <string name="bad_internet_connection">• Bad Internet connection</string>
     <string name="filters_not_match">• Your filters have no match</string>
-    <string name="no_availability">• There is no availability for the hotels in the selected dates</string>
-    <string name="no_hotels_in_area">• There are no hotels in our inventory for the selected area</string>
+    <!--<string name="no_availability">• There is no availability for the hotels in the selected dates</string>-->
+    <!--<string name="no_hotels_in_area">• There are no hotels in our inventory for the selected area</string>-->
     <string name="several_reasons">This could have happened for several reasons.</string>
-    <string name="currently_no_hotels_available">There are currently no hotels available for your chosen preferences</string>
+    <string name="currently_no_available">There are currently no records available for your chosen preferences</string>
     <string name="staying_at">Staying at %s</string>
     <string name="share_booking">share booking</string>
     <string name="add_to_calender">add to calender</string>
@@ -231,7 +230,6 @@
     <string name="must_be_valid_email_format">" must be valid email format"</string>
     <string name="select_dates_to_see_prices">Please select the dates to see the prices</string>
     <string name="rooms_not_available">There are currently no rooms available between %s</string>
-    <string name="find_available_hotels">Find available hotels</string>
     <string name="capacity_persons_max">" Person max"</string>
     <string name="qr_not_match_warning">You can only scan links from site www.travoca.com</string>
     <string name="pick_image_intent_text">Pick image</string>

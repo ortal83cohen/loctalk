@@ -119,14 +119,7 @@
                     "endOffset": 109
                 },
                 "from": {
-                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\values-v19\\dimens.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 111,
-                        "endColumn": 58,
-                        "endOffset": 165
-                    }
+                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\values-v19\\dimens.xml"
                 }
             },
             {
@@ -139,15 +132,7 @@
                     "endOffset": 461
                 },
                 "from": {
-                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\values-v19\\theme.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 59,
-                        "endLine": 8,
-                        "endColumn": 12,
-                        "endOffset": 411
-                    }
+                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\values-v19\\theme.xml"
                 }
             },
             {
@@ -155,61 +140,45 @@
                     "startLine": 9,
                     "startColumn": 4,
                     "startOffset": 466,
-                    "endLine": 20,
+                    "endLine": 15,
                     "endColumn": 12,
-                    "endOffset": 1062
+                    "endOffset": 872
                 },
                 "from": {
-                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\values-v19\\theme.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 419,
-                        "endLine": 21,
-                        "endColumn": 12,
-                        "endOffset": 1026
-                    }
+                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\values-v19\\theme.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1067,
-                    "endLine": 28,
+                    "startOffset": 877,
+                    "endLine": 22,
                     "endColumn": 12,
-                    "endOffset": 1588
+                    "endOffset": 1301
                 },
                 "from": {
-                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\values-v19\\theme.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 1034,
-                        "endLine": 30,
-                        "endColumn": 12,
-                        "endOffset": 1562
-                    }
+                    "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\values-v19\\theme.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1593,
-                    "endLine": 48,
+                    "startOffset": 1306,
+                    "endLine": 31,
                     "endColumn": 12,
-                    "endOffset": 2872
+                    "endOffset": 1907
                 },
                 "from": {
                     "file": "C:\\Users\\ortal\\Documents\\travoca\\app-hotels\\src\\main\\res\\values-v19\\theme.xml",
                     "position": {
-                        "startLine": 32,
+                        "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 1570,
-                        "endLine": 51,
+                        "startOffset": 1277,
+                        "endLine": 34,
                         "endColumn": 12,
-                        "endOffset": 2868
+                        "endOffset": 1886
                     }
                 }
             }

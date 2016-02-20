@@ -33,7 +33,7 @@
                         android:id="@+id/pager"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/hotel_summary_image_size"
-                        android:background="@color/libhotels_theme_accent">
+                        android:background="@color/theme_accent">
 
                         <Button
                             android:id="@+id/click_pager"

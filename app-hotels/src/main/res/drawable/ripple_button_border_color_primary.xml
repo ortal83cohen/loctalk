@@ -14,7 +14,7 @@
         <shape android:shape="rectangle">
             <corners android:radius="4dp" />
             <stroke android:width="4px" android:color="#FFFFFF" />
-            <solid android:color="@color/libhotels_theme_primary" />
+            <solid android:color="@color/theme_primary" />
         </shape>
 
     </item>

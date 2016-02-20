@@ -191,7 +191,7 @@ public class ResultsMap {
 
             }
         });
-        mHotelsCollection = mMarkerManager.newCollection("hotels");
+        mHotelsCollection = mMarkerManager.newCollection("records");
         mPoiCollection = mMarkerManager.newCollection("pois");
 
         toggleHotels();
@@ -243,7 +243,7 @@ public class ResultsMap {
                 }
             });
         } else {
-            Toast.makeText(mActivity, R.string.no_hotels_in_this_area, Toast.LENGTH_LONG).show();
+            Toast.makeText(mActivity, R.string.currently_no_available, Toast.LENGTH_LONG).show();
         }
     }
 

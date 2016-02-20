@@ -40,15 +40,15 @@ public class LikedHotels {
     public static ArrayList<String> loadHotels(String city, String country, Context context) {
         Cursor cursor = context.getContentResolver().query(DbContract.LikedHotels.CONTENT_URI.buildUpon().
                 appendQueryParameter("where", DbContract.LikedHotelsColumns.CITY + "='" + city + "' AND " + DbContract.LikedHotelsColumns.COUNTRY + "='" + country + "'").build(), null, null, null, null);
-        ArrayList<String> hotels = new ArrayList<>();
+        ArrayList<String> records = new ArrayList<>();
         if (cursor != null && cursor.getCount() != 0) {
             cursor.moveToFirst();
             do {
-                hotels.add(cursor.getString(cursor.getColumnIndex(DbContract.LikedHotelsColumns.KEY_ID)));
+                records.add(cursor.getString(cursor.getColumnIndex(DbContract.LikedHotelsColumns.KEY_ID)));
             } while (cursor.moveToNext());
             cursor.close();
         }
 
-        return hotels;
+        return records;
     }
 }
