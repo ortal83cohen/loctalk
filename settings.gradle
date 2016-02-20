@@ -1,1 +1,1 @@
-include ':app-hotels', ':libraries:etbapi'
+include ':app-travoca', ':libraries:travocaapi'
