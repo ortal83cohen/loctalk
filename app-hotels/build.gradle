@@ -47,17 +47,17 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file("C:\\Users\\user\\Documents\\loctalk\\debug.stg.jks")
+            storeFile file("C:\\Users\\ortal\\Documents\\travoca\\debug.stg.jks")
             storePassword "1q1q1q"
             keyAlias "stg"
             keyPassword "1q1q1q"
         }
 
         release {
-            storeFile file(HOTELS_KEYSTORE_FILE)
-            storePassword HOTELS_KEYSTORE_PASSWORD
-            keyAlias HOTELS_KEY_ALIAS
-            keyPassword HOTELS_KEY_PASSWORD
+            storeFile file("C:\\Users\\ortal\\Documents\\travoca\\debug.stg.jks")
+            storePassword "1q1q1q"
+            keyAlias "stg"
+            keyPassword "1q1q1q"
         }
     }
 
@@ -74,7 +74,6 @@ android {
             versionNameSuffix "-" + buildTime() + "-" + gitSha()
             proguardFile 'proguard-rules.pro'
             proguardFile getDefaultProguardFile('proguard-android.txt')
-            buildConfigField "String", "CORE_INTERFACE_ENDPOINT", HOTELS_CORE_INTERFACE_ENDPOINT
             buildConfigField "String", "VERSION_NAME_PREFIX", "\"" + versionNamePrefix + "\""
         }
         release {

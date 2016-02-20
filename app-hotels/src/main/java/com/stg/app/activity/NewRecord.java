@@ -166,7 +166,7 @@ public class NewRecord extends Activity {
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
 
-            Toast.makeText(getApplicationContext(), "failure"+response.toString(), Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "failure", Toast.LENGTH_LONG).show();
         }
 
         @Override
