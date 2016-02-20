@@ -1,4 +1,4 @@
-package com.stg.app.utils;
+package com.travoca.app.utils;
 
 import android.content.Context;
 

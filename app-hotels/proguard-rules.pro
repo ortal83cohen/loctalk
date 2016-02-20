@@ -170,10 +170,10 @@
 -keep class com.google.gson.stream.** { *; }
 
 # ETBAPI
--keep class com.socialtravelguide.api.** { *; }
+-keep class com.travoca.api.** { *; }
 
 # CORE INTERFACE
--keep class com.stg.app.core.model.** { *; }
+-keep class com.travoca.app.core.model.** { *; }
 
 
 # If your application, applet, servlet, library, etc., contains enumeration
@@ -254,8 +254,8 @@
 -keep class android.support.design.** { *; }
 -keep interface android.support.design.** { *; }
 -keep public class android.support.design.R$* { *; }
--keep class com.stg.app.widget.ScrollAwareFABBehavior { *; }
--keep class com.stg.app.widget.ScrollAwareViewBehavior { *; }
+-keep class com.travoca.app.widget.ScrollAwareFABBehavior { *; }
+-keep class com.travoca.app.widget.ScrollAwareViewBehavior { *; }
 
 # Otto
 -keepattributes *Annotation*

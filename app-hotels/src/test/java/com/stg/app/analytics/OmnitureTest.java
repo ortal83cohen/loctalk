@@ -1,7 +1,7 @@
-package com.stg.app.analytics;
+package com.travoca.app.analytics;
 
-import com.socialtravelguide.api.model.SearchRequest;
-import com.stg.app.model.Location;
+import com.travoca.api.model.SearchRequest;
+import com.travoca.app.model.Location;
 
 import org.junit.Test;
 

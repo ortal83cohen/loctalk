@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">Social Travel Guide</string>
+    <string name="app_name">Travoca</string>
     <string name="location_chooser_text">Current Location</string>
     <string name="settings">Settings</string>
     <string name="search">Search</string>
@@ -19,7 +19,7 @@
     <string name="special_free_cancellation">Free Cancellation</string>
     <string name="special_breakfast_included">Breakfast Included</string>
     <string name="special_discount">Special Discount</string>
-    <string name="terms_and_condition">I agree to the stg <a href="http://www.socialtravelguide.com/en/disclaimer/?amu=280825437">Terms &amp; Conditions</a> and <a href="http://www.socialtravelguide.com/en/privacy/?amu=280825437">Privacy &amp; Cookies</a> by making the reservation</string>
+    <string name="terms_and_condition">I agree to the travoca <a href="http://www.travoca.com/en/disclaimer/?amu=280825437">Terms &amp; Conditions</a> and <a href="http://www.travoca.com/en/privacy/?amu=280825437">Privacy &amp; Cookies</a> by making the reservation</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
     <string name="rating_location">Location</string>
@@ -127,7 +127,7 @@
     <string name="open_with">Open page with</string>
     <string name="login_with_google">Login with Google</string>
 
-    <string name="sign_up_terms_and_condition">By clicking Sign Up, you are agree with our <a href="http://www.socialtravelguide.com/en/disclaimer/?amu=280825437">Terms &amp; Conditions</a> and <a href="http://www.socialtravelguide.com/en/privacy/?amu=280825437">Privacy Policy</a></string>
+    <string name="sign_up_terms_and_condition">By clicking Sign Up, you are agree with our <a href="http://www.travoca.com/en/disclaimer/?amu=280825437">Terms &amp; Conditions</a> and <a href="http://www.travoca.com/en/privacy/?amu=280825437">Privacy Policy</a></string>
     <string name="receive_deals_emails">I\'d like to receive exclusive deals and personalized recommendations via email</string>
     <string name="tab_title_login">LOGIN</string>
     <string name="tab_title_sign_up">SIGN UP</string>
@@ -240,10 +240,10 @@
     <string name="staying_at">Staying at %s</string>
     <string name="share_booking">share booking</string>
     <string name="add_to_calender">add to calender</string>
-    <string name="share_text">Hi, I just booked a place to stay in %1$s, %2$s from %3$s to %4$s via http://www.socialtravelguide.com
-        \n\nReview and manage the booking: https://secure.socialtravelguide.com/mybooking/index.php?br=%5$s&amp;pc=%6$s
-        \n\nCheck out our Android and Iphone apps here: http://www.socialtravelguide.com/mobile/download.php</string>
-    <string name="add_to_calender_note_text"> "Manage the booking https://secure.socialtravelguide.com/mybooking/index.php?br=%1$s&amp;pc=%2$s</string>
+    <string name="share_text">Hi, I just booked a place to stay in %1$s, %2$s from %3$s to %4$s via http://www.travoca.com
+        \n\nReview and manage the booking: https://secure.travoca.com/mybooking/index.php?br=%5$s&amp;pc=%6$s
+        \n\nCheck out our Android and Iphone apps here: http://www.travoca.com/mobile/download.php</string>
+    <string name="add_to_calender_note_text"> "Manage the booking https://secure.travoca.com/mybooking/index.php?br=%1$s&amp;pc=%2$s</string>
     <string name="note">Note</string>
     <string name="sensitive_information">The person you are sharing with will be able to alter your booking</string>
     <string name="change_your_dates">Change your dates</string>
@@ -302,7 +302,7 @@
     <string name="find_available_hotels">Find available hotels</string>
     <string name="booking_address">%1$s, %2$s, %3$s, %4$s</string>
     <string name="capacity_persons_max">" Person max"</string>
-    <string name="qr_not_match_warning">You can only scan links from site www.socialtravelguide.com</string>
+    <string name="qr_not_match_warning">You can only scan links from site www.travoca.com</string>
     <string name="pick_image_intent_text">Pick image</string>
     <plurals name="room_price">
         <item quantity="one">Room Price</item>

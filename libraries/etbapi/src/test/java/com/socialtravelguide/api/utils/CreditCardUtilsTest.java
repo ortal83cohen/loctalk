@@ -1,6 +1,6 @@
-package com.socialtravelguide.api.utils;
+package com.travoca.api.utils;
 
-import com.socialtravelguide.api.contract.CreditCard;
+import com.travoca.api.contract.CreditCard;
 
 import org.junit.Test;
 

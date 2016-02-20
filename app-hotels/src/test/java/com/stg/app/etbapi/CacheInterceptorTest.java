@@ -1,9 +1,9 @@
-package com.stg.app.etbapi;
+package com.travoca.app.etbapi;
 
 import android.support.annotation.NonNull;
 
-import com.socialtravelguide.api.StgApi;
-import com.stg.app.utils.NetworkUtilities;
+import com.travoca.api.StgApi;
+import com.travoca.app.utils.NetworkUtilities;
 import com.squareup.okhttp.Cache;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;

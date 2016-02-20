@@ -35,7 +35,7 @@ android {
     buildToolsVersion '23.0.2'
 
     defaultConfig {
-        applicationId "com.socialtravelguide.app"
+        applicationId "com.travoca.app"
         minSdkVersion 17
         targetSdkVersion 23
         versionCode versionCodeValue
@@ -47,14 +47,14 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file("C:\\Users\\ortal\\Documents\\travoca\\debug.stg.jks")
+            storeFile file("C:\\Users\\ortal\\Documents\\travoca\\debug.travoca.jks")
             storePassword "1q1q1q"
             keyAlias "stg"
             keyPassword "1q1q1q"
         }
 
         release {
-            storeFile file("C:\\Users\\ortal\\Documents\\travoca\\debug.stg.jks")
+            storeFile file("C:\\Users\\ortal\\Documents\\travoca\\debug.travoca.jks")
             storePassword "1q1q1q"
             keyAlias "stg"
             keyPassword "1q1q1q"
