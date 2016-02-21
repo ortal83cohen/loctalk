@@ -147,12 +147,12 @@ public class TravocaApi {
         return service.retrieve( query);
     }
 
-    public Call<ResultsResponse> saveRecordDetails(String image, String title, String description, String locationName , String lat, String lon , String type) {
+    public Call<ResultsResponse> saveRecordDetails(String image,String record, String title, String description, String locationName , String lat, String lon , String type) {
 
         Service service = create();
 
 
-        return service.saveRecordDetails(new ImageRequest(image,title, description, locationName , lat, lon , type));
+        return service.saveRecordDetails(new ImageRequest(image,record,title, description, locationName , lat, lon , type));
     }
 
 

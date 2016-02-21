@@ -23,19 +23,21 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.TravocaApi;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.search.Type;
-import com.travoca.app.TravocaApplication;
 import com.travoca.app.R;
+import com.travoca.app.TravocaApplication;
 import com.travoca.app.activity.NewRecordActivity;
 import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.widget.ImagePicker;
 
+import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import butterknife.Bind;
@@ -48,11 +50,6 @@ import retrofit.Response;
  */
 public class NewRecordFragment extends BaseFragment {
 
-    private static final String TEMP_IMAGE_NAME = "tempImage";
-    private static final LatLngBounds BOUNDS_MAP = new LatLngBounds.Builder()
-            .include(new LatLng(85, -180)) // top left corner of map
-            .include(new LatLng(-85, 180))  // bottom right corner
-            .build();
     private static final int REQUEST_PERMISSION_LOCATION = 2;
     @Bind(R.id.button3)
     Button playButton;
@@ -85,22 +82,23 @@ public class NewRecordFragment extends BaseFragment {
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
-            if(getActivity()!=null){
-            Toast.makeText(getActivity(), "failure", Toast.LENGTH_LONG).show();
-        }}
+            if (getActivity() != null) {
+                Toast.makeText(getActivity(), "failure", Toast.LENGTH_LONG).show();
+            }
+        }
 
         @Override
         protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
-            if(getActivity()!=null){
-            Toast.makeText(getActivity(), "success", Toast.LENGTH_LONG).show();
-        }}
+            if (getActivity() != null) {
+                Toast.makeText(getActivity(), "success", Toast.LENGTH_LONG).show();
+            }
+        }
 
     };
 
     public static NewRecordFragment newInstance() {
         NewRecordFragment fragment = new NewRecordFragment();
         Bundle args = new Bundle();
-//        args.putParcelable(ARG_REQUEST, request);
         fragment.setArguments(args);
         return fragment;
     }
@@ -188,11 +186,30 @@ public class NewRecordFragment extends BaseFragment {
         sendButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
+
+                String encodedFile = "";
+                File file = new File(outputFile);
+
+                int size = (int) file.length();
+                byte[] bytes = new byte[size];
+                try {
+                    BufferedInputStream buf = new BufferedInputStream(new FileInputStream(file));
+                    buf.read(bytes, 0, bytes.length);
+                    buf.close();
+                    encodedFile = Base64.encodeToString(bytes, Base64.DEFAULT);
+                } catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
                 ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                 TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
                 ((NewRecordActivity) getActivity()).getSelectedBitmap().compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
                 String encodedImage = Base64.encodeToString(byteArrayOutputStream.toByteArray(), Base64.DEFAULT);
-                travocaApi.saveRecordDetails(encodedImage, mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString()
+                travocaApi.saveRecordDetails(encodedImage, encodedFile, mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString()
                         , mLat.getText().toString(), mLon.getText().toString(), mType.getText().toString()).enqueue(mResultsCallback);
             }
         });
@@ -205,7 +222,7 @@ public class NewRecordFragment extends BaseFragment {
             // Request missing location permission.
             requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_PERMISSION_LOCATION);
         } else {
-            LocationServices.FusedLocationApi.requestLocationUpdates(   mListener.getGoogleApiClient(),
+            LocationServices.FusedLocationApi.requestLocationUpdates(mListener.getGoogleApiClient(),
                     mLocationRequest, new LocationListener() {
                         @Override
                         public void onLocationChanged(android.location.Location location) {

@@ -6,8 +6,15 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.BitmapFactory;
+import android.media.MediaPlayer;
+import android.media.MediaRecorder;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
+import android.util.Base64;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -22,6 +29,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Transformation;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -43,6 +51,21 @@ import com.travoca.app.events.Events;
 import com.travoca.app.hoteldetails.RecordViewHolder;
 import com.travoca.app.model.RecordListRequest;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.net.URLConnection;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -53,12 +76,15 @@ import static com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 public class RecordDetailsFragment extends BaseFragment implements View.OnClickListener, OnMapReadyCallback, OnMapClickListener, OnMarkerClickListener {
     private static final int IMAGE_STATE_EXPANDED = 1;
     private static final int IMAGE_STATE_NORMAL = 2;
-
+    private MediaRecorder audioRecorder;
+    private String outputFile = null;
     private static final String SNIPPET_DETAILS = "snippet_details";
     private static final String IMAGE_FLAG = "image_flag";
     private static final String BUTTON_FLAG = "button_flag";
     @Bind(R.id.see_all_record)
     Button mMoreRecordsButton;
+    @Bind(R.id.play)
+    Button mPlay;
     @Bind(R.id.record_card)
     FrameLayout mRecordCard;
     @Bind(R.id.pager)
@@ -141,12 +167,61 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
             }
         });
 
+        mPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                try {
+                    String urlStr = mRecord.recordUrl;
+                    new DownloadFileFromURL().execute(urlStr);
+//                    URL url = new URL(urlStr);
+//                    URI uri = new URI(url.getProtocol(), url.getUserInfo(), url.getHost(), url.getPort(), url.getPath(), url.getQuery(), url.getRef());
+//                    File file = new File(uri);
+//                    if ( file.exists() ) {
+//                        FileInputStream fis = null;
+//                        try {
+//                            fis = new FileInputStream(file);
+//                            byte[] b = new byte[(int)file.length()];
+//                            char current;
+//                            int i=0;
+//                            while (fis.available() > 0) {
+//                                current = (char) fis.read();
+//                                b[i++]=Byte.parseByte(String.valueOf(current));
+//                            }
+//                            byte[] data1 = Base64.decode(b, Base64.DEFAULT);
+//                        } catch (Exception e) {
+//                            Log.d("TourGuide", e.toString());
+//                        } finally {
+//                            if (fis != null)
+//                                try {
+//                                    fis.close();
+//                                } catch (IOException ignored) {
+//                                }
+//                        }
+//                    }
+//
+//                } catch (URISyntaxException e) {
+//                    e.printStackTrace();
+//                } catch (MalformedURLException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+        }});
+
         mMoreRecordsButton.setOnClickListener(this);
         if (mIsImageExpended) {
             expand(mImagePager);
         } else {
             mMoreRecordsButton.setVisibility(mMoreRoomsButtonVisible ? View.VISIBLE : View.GONE);
         }
+
+
+        outputFile = Environment.getExternalStorageDirectory().getAbsolutePath() + "/recording.3gp";
+
+        audioRecorder = new MediaRecorder();
+        audioRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+        audioRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+        audioRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
+        audioRecorder.setOutputFile(outputFile);
         return view;
     }
 
@@ -156,6 +231,95 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         setHasOptionsMenu(true);
         setupMap();
         fillRecordCard();
+    }
+    class DownloadFileFromURL extends AsyncTask<String, String, String> {
+
+        /**
+         * Before starting background thread Show Progress Bar Dialog
+         * */
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        /**
+         * Downloading file in background thread
+         * */
+        @Override
+        protected String doInBackground(String... f_url) {
+            int count;
+            try {
+                URL url = new URL(f_url[0]);
+                URLConnection conection = url.openConnection();
+                conection.connect();
+
+                // this will be useful so that you can show a tipical 0-100%
+                // progress bar
+                int lenghtOfFile = conection.getContentLength();
+
+                // download the file
+                InputStream input = new BufferedInputStream(url.openStream(),
+                        lenghtOfFile);
+
+                byte[] bytes = new byte[lenghtOfFile];
+                byte[] decodedFile = new byte[lenghtOfFile];
+                try {
+                    BufferedInputStream buf = new BufferedInputStream(input);
+                    buf.read(bytes, 0, bytes.length);
+                    buf.close();
+                    decodedFile = Base64.decode(bytes, Base64.DEFAULT);
+
+                    BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(outputFile));
+                    bos.write(decodedFile);
+                    bos.flush();
+                    bos.close();
+                } catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+            } catch (Exception e) {
+                Log.e("Error: ", e.getMessage());
+            }
+
+            return null;
+        }
+
+        /**
+         * Updating progress bar
+         * */
+        protected void onProgressUpdate(String... progress) {
+            // setting progress percentage
+//            pDialog.setProgress(Integer.parseInt(progress[0]));
+        }
+
+        /**
+         * After completing background task Dismiss the progress dialog
+         * **/
+        @Override
+        protected void onPostExecute(String file_url) {
+
+            MediaPlayer m = new MediaPlayer();
+
+            try {
+                m.setDataSource(outputFile);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            try {
+                m.prepare();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            m.start();
+            Toast.makeText(getActivity(), "Playing audio", Toast.LENGTH_LONG).show();
+
+        }
     }
 
 
