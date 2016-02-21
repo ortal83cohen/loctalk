@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="google_api_key">AIzaSyCeuXL4_hbcendBejeHRalHXIzbhO2t7RU</string>
+    <string name="google_api_key">AIzaSyAgYFcrV7nIw4iWGDAcETKvK4xKt2hf_2g</string>
     <string name="facebook_app_id">844757068941384</string>
     <bool name="is_mixpanel_debug">false</bool>
     <string name="branch_key_live">key_live_oliHoVDMnS068dt4bVdUVjcaExkzzJRQ</string>

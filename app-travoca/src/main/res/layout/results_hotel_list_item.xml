@@ -61,12 +61,12 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/stg_thumbs_down" />
+                        android:src="@drawable/travoca_thumbs_down" />
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/stg_thumbs_up" />
+                        android:src="@drawable/travoca_thumbs_up" />
 
                     <TextView
                         android:id="@+id/likes"

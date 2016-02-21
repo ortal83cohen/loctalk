@@ -12,7 +12,7 @@
         android:id="@+id/profile_image"
         android:layout_width="wrap_content"
         android:layout_height="72dp"
-        android:src="@drawable/stg_actionbar_logo" />
+        android:src="@drawable/travoca_actionbar_logo" />
 
     <TextView
         android:id="@+id/profile_name"
