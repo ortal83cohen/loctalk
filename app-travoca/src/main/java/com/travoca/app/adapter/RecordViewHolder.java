@@ -32,7 +32,7 @@ public class RecordViewHolder extends RecyclerView.ViewHolder {
     public TextView mTitleView;
     @Bind(R.id.likes)
     public TextView mLikes;
-    @Bind(R.id.dis_likes)
+    @Bind(R.id.unlikes)
     public TextView mDisLikes;
     @Bind(R.id.background)
     public FrameLayout mBackground;

@@ -2,25 +2,24 @@ package com.travoca.api;
 
 import android.support.v4.util.ArrayMap;
 
+import com.squareup.okhttp.HttpUrl;
+import com.squareup.okhttp.Interceptor;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.Response;
 import com.travoca.api.mock.ResultsMockClient;
 import com.travoca.api.model.OrderRequest;
 import com.travoca.api.model.OrderResponse;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.ImageRequest;
+import com.travoca.api.model.search.LikeRequest;
 import com.travoca.api.model.search.ListType;
 import com.travoca.api.model.search.Type;
-import com.squareup.okhttp.HttpUrl;
-import com.squareup.okhttp.Interceptor;
-import com.squareup.okhttp.OkHttpClient;
-import com.squareup.okhttp.Request;
-import com.squareup.okhttp.Response;
 
 import java.io.IOException;
 import java.security.InvalidParameterException;
-import java.text.SimpleDateFormat;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
 import retrofit.Call;
@@ -29,6 +28,7 @@ import retrofit.Retrofit;
 import retrofit.http.Body;
 import retrofit.http.GET;
 import retrofit.http.POST;
+import retrofit.http.PUT;
 import retrofit.http.QueryMap;
 
 /**
@@ -37,8 +37,10 @@ import retrofit.http.QueryMap;
  */
 public class TravocaApi {
 
-    public static final String PATH_RECORDS = "/records" ;
-    public static final String PATH_IMAGE = "/image" ;
+    public static final String PATH_RECORDS = "/records";
+    public static final String PATH_LIKE = "/like";
+    public static final String PATH_UNLIKE = "/unlike";
+    public static final String PATH_IMAGE = "/image";
     public static final String PATH_ORDERS = "/etbstatic/placeAnOrder.json";
     public static final int LIMIT = 15;
     private OkHttpClient mHttpClient;
@@ -83,7 +85,7 @@ public class TravocaApi {
         Retrofit.Builder builder = new Retrofit.Builder()
                 .client(mHttpClient)
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl( mConfig.getEndpoint());
+                .baseUrl(mConfig.getEndpoint());
 
         Retrofit restAdapter = builder.build();
 
@@ -131,6 +133,20 @@ public class TravocaApi {
         return service.records(query);
     }
 
+    public Call<ResultsResponse> like(int id) throws InvalidParameterException {
+
+        Service service = create();
+
+        return service.like(new LikeRequest(String.valueOf(id), "like"));
+    }
+
+    public Call<ResultsResponse> unlike(int id) throws InvalidParameterException {
+
+        Service service = create();
+
+        return service.like(new LikeRequest(String.valueOf(id), "unlike"));
+    }
+
 
     public Call<OrderResponse> order(OrderRequest request) {
         Service service = create();
@@ -144,15 +160,15 @@ public class TravocaApi {
             query.put("password", password);
         }
 
-        return service.retrieve( query);
+        return service.retrieve(query);
     }
 
-    public Call<ResultsResponse> saveRecordDetails(String image,String record, String title, String description, String locationName , String lat, String lon , String type) {
+    public Call<ResultsResponse> saveRecordDetails(String image, String record, String title, String description, String locationName, String lat, String lon, String type) {
 
         Service service = create();
 
 
-        return service.saveRecordDetails(new ImageRequest(image,record,title, description, locationName , lat, lon , type));
+        return service.saveRecordDetails(new ImageRequest(image, record, title, description, locationName, lat, lon, type));
     }
 
 
@@ -161,15 +177,18 @@ public class TravocaApi {
         @GET(PATH_RECORDS)
         Call<ResultsResponse> records(@QueryMap Map<String, String> query);
 
+        @PUT(PATH_LIKE)
+        Call<ResultsResponse> like(@Body LikeRequest request);
+
         @POST(PATH_RECORDS)
         Call<ResultsResponse> saveRecordDetails(@Body ImageRequest request);
 
 
-        @POST(PATH_ORDERS )
+        @POST(PATH_ORDERS)
         Call<OrderResponse> order(@Body OrderRequest request);
 
-        @GET(PATH_ORDERS )
-        Call<OrderResponse> retrieve( @QueryMap Map<String, String> query);
+        @GET(PATH_ORDERS)
+        Call<OrderResponse> retrieve(@QueryMap Map<String, String> query);
     }
 
 }

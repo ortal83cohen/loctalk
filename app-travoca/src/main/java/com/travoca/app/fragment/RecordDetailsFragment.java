@@ -1,18 +1,19 @@
 package com.travoca.app.fragment;
 
 import android.Manifest;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.BitmapFactory;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.media.MediaRecorder;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
-import android.util.Base64;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
@@ -28,7 +29,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Transformation;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -40,9 +41,12 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.travoca.api.TravocaApi;
 import com.travoca.api.model.Record;
+import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.utils.RequestUtils;
 import com.travoca.app.R;
+import com.travoca.app.TravocaApplication;
 import com.travoca.app.activity.HotelDetailsActivity;
 import com.travoca.app.activity.RecordDetailsActivity;
 import com.travoca.app.adapter.RecordCardViewHolder;
@@ -51,16 +55,18 @@ import com.travoca.app.hoteldetails.RecordViewHolder;
 import com.travoca.app.model.RecordListRequest;
 
 import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import retrofit.Callback;
+import retrofit.Response;
+import retrofit.Retrofit;
 
 import static com.google.android.gms.maps.GoogleMap.MAP_TYPE_NORMAL;
 import static com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
@@ -69,19 +75,9 @@ import static com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 public class RecordDetailsFragment extends BaseFragment implements View.OnClickListener, OnMapReadyCallback, OnMapClickListener, OnMarkerClickListener {
     private static final int IMAGE_STATE_EXPANDED = 1;
     private static final int IMAGE_STATE_NORMAL = 2;
-    private MediaRecorder audioRecorder;
-    private String outputFile = null;
     private static final String SNIPPET_DETAILS = "snippet_details";
     private static final String IMAGE_FLAG = "image_flag";
     private static final String BUTTON_FLAG = "button_flag";
-    @Bind(R.id.see_all_record)
-    Button mMoreRecordsButton;
-    @Bind(R.id.play)
-    Button mPlay;
-    @Bind(R.id.record_card)
-    FrameLayout mRecordCard;
-    @Bind(R.id.pager)
-    android.support.v4.view.ViewPager mImagePager;
     boolean mIsImageExpended = false;
     private int mImageState = IMAGE_STATE_NORMAL;
     private Record mRecord;
@@ -89,6 +85,27 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     private int mImageMinimumHeight;
     private boolean mMoreRoomsButtonVisible = true;
     private RecordListRequest mRequest;
+    private MediaPlayer mediaPlayer;
+    RecordCardViewHolder recordCardViewHolder;
+    @Bind(R.id.see_all_record)
+    Button mMoreRecordsButton;
+    @Bind(R.id.play)
+    Button mPlayButton;
+    @Bind(R.id.record_card)
+    FrameLayout mRecordCard;
+    @Bind(R.id.pager)
+    android.support.v4.view.ViewPager mImagePager;
+    private Callback<ResultsResponse> mLikeResultsCallback = new Callback<ResultsResponse>() {
+        @Override
+        public void onResponse(Response<ResultsResponse> response, Retrofit retrofit) {
+
+        }
+
+        @Override
+        public void onFailure(Throwable t) {
+
+        }
+    };
 
 
     public static RecordDetailsFragment newInstance(RecordListRequest request, Record record) {
@@ -160,10 +177,44 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
             }
         });
 
-        mPlay.setOnClickListener(new View.OnClickListener() {
+        mPlayButton.setEnabled(false);
+        new DownloadAndPlay().execute(mRecord.recordUrl);
+        mediaPlayer = new MediaPlayer();
+        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                final TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
+
+                new AlertDialog.Builder(getActivity())
+                        .setTitle("Rate")
+                        .setMessage("did you liked this record?")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                travocaApi.like(mRecord.id).enqueue(mLikeResultsCallback);
+                                recordCardViewHolder.addLike();
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                travocaApi.unlike(mRecord.id).enqueue(mLikeResultsCallback);
+                                recordCardViewHolder.addDislike();
+                            }
+                        })
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .show();
+            }
+        });
+        mPlayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new DownloadAndPlay().execute(mRecord.recordUrl);
+
+                try {
+                    mediaPlayer.start();
+                } catch (Exception e) {
+                    // TODO: handle exception
+                }
             }
         });
 
@@ -174,14 +225,6 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
             mMoreRecordsButton.setVisibility(mMoreRoomsButtonVisible ? View.VISIBLE : View.GONE);
         }
 
-
-        outputFile = Environment.getExternalStorageDirectory().getAbsolutePath() + "/recording.3gp";
-
-        audioRecorder = new MediaRecorder();
-        audioRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-        audioRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-        audioRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
-        audioRecorder.setOutputFile(outputFile);
         return view;
     }
 
@@ -220,27 +263,33 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
                 // download the file
                 InputStream input = new BufferedInputStream(url.openStream(),
-                        lenghtOfFile);
+                        8192);
 
-                byte[] bytes = new byte[lenghtOfFile];
-                byte[] decodedFile = new byte[lenghtOfFile];
-                try {
-                    BufferedInputStream buf = new BufferedInputStream(input);
-                    buf.read(bytes, 0, bytes.length);
-                    buf.close();
-                    decodedFile = Base64.decode(bytes, Base64.DEFAULT);
+                // Output stream
+                OutputStream output = new FileOutputStream(Environment
+                        .getExternalStorageDirectory().toString()
+                        + "/data/downloadedfile.3gp");
 
-                    BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(outputFile));
-                    bos.write(decodedFile);
-                    bos.flush();
-                    bos.close();
-                } catch (FileNotFoundException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                byte data[] = new byte[1024];
+
+                long total = 0;
+
+                while ((count = input.read(data)) != -1) {
+                    total += count;
+                    // publishing the progress....
+                    // After this onProgressUpdate will be called
+                    publishProgress("" + (int) ((total * 100) / lenghtOfFile));
+
+                    // writing data to file
+                    output.write(data, 0, count);
                 }
+
+                // flushing output
+                output.flush();
+
+                // closing streams
+                output.close();
+                input.close();
 
             } catch (Exception e) {
                 Log.e("Error: ", e.getMessage());
@@ -249,12 +298,13 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
             return null;
         }
 
+
         /**
          * Updating progress bar
          */
         protected void onProgressUpdate(String... progress) {
             // setting progress percentage
-//            pDialog.setProgress(Integer.parseInt(progress[0]));
+            mPlayButton.setText("play " + Integer.parseInt(progress[0]));
         }
 
         /**
@@ -262,24 +312,15 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
          **/
         @Override
         protected void onPostExecute(String file_url) {
-
-            MediaPlayer m = new MediaPlayer();
-
             try {
-                m.setDataSource(outputFile);
+                mediaPlayer.setDataSource(Environment
+                        .getExternalStorageDirectory().toString()
+                        + "/data/downloadedfile.3gp");
+                mediaPlayer.prepare();
             } catch (IOException e) {
-                e.printStackTrace();
+
             }
-
-            try {
-                m.prepare();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            m.start();
-            Toast.makeText(getActivity(), "Playing audio", Toast.LENGTH_LONG).show();
-
+            mPlayButton.setEnabled(true);
         }
     }
 
@@ -322,8 +363,8 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
             final LayoutInflater inflater = LayoutInflater.from(getActivity());
             View view = inflater.inflate(R.layout.fragment_record_card, mRecordCard, false);
 
-            RecordCardViewHolder vh = new RecordCardViewHolder(view, getActivity());
-            vh.assignItem(mRecord);
+            recordCardViewHolder = new RecordCardViewHolder(view, getActivity());
+            recordCardViewHolder.assignItem(mRecord);
 
             mRecordCard.addView(view);
         }

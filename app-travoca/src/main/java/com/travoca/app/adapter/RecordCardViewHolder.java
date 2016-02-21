@@ -17,8 +17,8 @@ public class RecordCardViewHolder extends RecyclerView.ViewHolder {
 
     @Bind(R.id.likes)
     public TextView mLikes;
-    @Bind(R.id.dis_likes)
-    public TextView mDisLikes;
+    @Bind(R.id.unlikes)
+    public TextView mUnLikes;
     @Bind(android.R.id.title)
     TextView mTitle;
     @Bind(R.id.description)
@@ -46,10 +46,17 @@ public class RecordCardViewHolder extends RecyclerView.ViewHolder {
         mLocationName.setText("Location: " + item.locationName);
         mType.setText("Type: " + item.type);
         mLikes.setText(String.valueOf(item.likes));
-        mDisLikes.setText(String.valueOf(item.unLikes));
+        mUnLikes.setText(String.valueOf(item.unLikes));
 
 
     }
 
 
+    public void addLike() {
+        mLikes.setText(String.valueOf(Integer.valueOf(mLikes.getText().toString()) + 1));
+    }
+
+    public void addDislike() {
+        mUnLikes.setText(String.valueOf(Integer.valueOf(mUnLikes.getText().toString()) + 1));
+    }
 }

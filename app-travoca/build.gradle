@@ -47,7 +47,7 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file("C:\\Users\\user\\Documents\\travoca_android\\debug.travoca.jks")
+            storeFile file("C:\\Users\\ortal\\Documents\\travoca_android\\debug.travoca.jks")
             storePassword "1q1q1q"
             keyAlias "travoca"
             keyPassword "1q1q1q"
