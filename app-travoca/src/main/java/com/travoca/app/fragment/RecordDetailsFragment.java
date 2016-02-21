@@ -8,7 +8,6 @@ import android.content.pm.PackageManager;
 import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
@@ -53,16 +52,10 @@ import com.travoca.app.model.RecordListRequest;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
 
@@ -170,42 +163,9 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         mPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                try {
-                    String urlStr = mRecord.recordUrl;
-                    new DownloadFileFromURL().execute(urlStr);
-//                    URL url = new URL(urlStr);
-//                    URI uri = new URI(url.getProtocol(), url.getUserInfo(), url.getHost(), url.getPort(), url.getPath(), url.getQuery(), url.getRef());
-//                    File file = new File(uri);
-//                    if ( file.exists() ) {
-//                        FileInputStream fis = null;
-//                        try {
-//                            fis = new FileInputStream(file);
-//                            byte[] b = new byte[(int)file.length()];
-//                            char current;
-//                            int i=0;
-//                            while (fis.available() > 0) {
-//                                current = (char) fis.read();
-//                                b[i++]=Byte.parseByte(String.valueOf(current));
-//                            }
-//                            byte[] data1 = Base64.decode(b, Base64.DEFAULT);
-//                        } catch (Exception e) {
-//                            Log.d("TourGuide", e.toString());
-//                        } finally {
-//                            if (fis != null)
-//                                try {
-//                                    fis.close();
-//                                } catch (IOException ignored) {
-//                                }
-//                        }
-//                    }
-//
-//                } catch (URISyntaxException e) {
-//                    e.printStackTrace();
-//                } catch (MalformedURLException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-        }});
+                new DownloadAndPlay().execute(mRecord.recordUrl);
+            }
+        });
 
         mMoreRecordsButton.setOnClickListener(this);
         if (mIsImageExpended) {
@@ -232,11 +192,12 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         setupMap();
         fillRecordCard();
     }
-    class DownloadFileFromURL extends AsyncTask<String, String, String> {
+
+    class DownloadAndPlay extends AsyncTask<String, String, String> {
 
         /**
          * Before starting background thread Show Progress Bar Dialog
-         * */
+         */
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -244,7 +205,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
         /**
          * Downloading file in background thread
-         * */
+         */
         @Override
         protected String doInBackground(String... f_url) {
             int count;
@@ -290,7 +251,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
         /**
          * Updating progress bar
-         * */
+         */
         protected void onProgressUpdate(String... progress) {
             // setting progress percentage
 //            pDialog.setProgress(Integer.parseInt(progress[0]));
@@ -298,7 +259,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
         /**
          * After completing background task Dismiss the progress dialog
-         * **/
+         **/
         @Override
         protected void onPostExecute(String file_url) {
 
@@ -357,15 +318,15 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
 
     public void fillRecordCard() {
+        if (getActivity() != null) {
+            final LayoutInflater inflater = LayoutInflater.from(getActivity());
+            View view = inflater.inflate(R.layout.fragment_record_card, mRecordCard, false);
 
-        final LayoutInflater inflater = LayoutInflater.from(getActivity());
-        View view = inflater.inflate(R.layout.fragment_record_card, mRecordCard, false);
+            RecordCardViewHolder vh = new RecordCardViewHolder(view, getActivity());
+            vh.assignItem(mRecord);
 
-        RecordCardViewHolder vh = new RecordCardViewHolder(view, getActivity());
-        vh.assignItem(mRecord);
-
-        mRecordCard.addView(view);
-
+            mRecordCard.addView(view);
+        }
     }
 
     private void setMoreRoomsButtonVisibility(boolean visible) {
