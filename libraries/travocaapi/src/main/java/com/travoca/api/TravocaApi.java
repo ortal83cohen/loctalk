@@ -38,8 +38,6 @@ import retrofit.http.QueryMap;
 public class TravocaApi {
 
     public static final String PATH_RECORDS = "/records";
-    public static final String PATH_LIKE = "/like";
-    public static final String PATH_UNLIKE = "/unlike";
     public static final String PATH_IMAGE = "/image";
     public static final String PATH_ORDERS = "/etbstatic/placeAnOrder.json";
     public static final int LIMIT = 15;
@@ -177,7 +175,7 @@ public class TravocaApi {
         @GET(PATH_RECORDS)
         Call<ResultsResponse> records(@QueryMap Map<String, String> query);
 
-        @PUT(PATH_LIKE)
+        @PUT(PATH_RECORDS)
         Call<ResultsResponse> like(@Body LikeRequest request);
 
         @POST(PATH_RECORDS)

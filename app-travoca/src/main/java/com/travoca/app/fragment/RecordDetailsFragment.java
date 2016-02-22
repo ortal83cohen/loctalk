@@ -192,7 +192,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
                         .setMessage("did you liked this record?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
-                                travocaApi.like(mRecord.id).enqueue(mLikeResultsCallback);
+                                    travocaApi.like(mRecord.id).enqueue(mLikeResultsCallback);
                                 recordCardViewHolder.addLike();
                             }
                         })

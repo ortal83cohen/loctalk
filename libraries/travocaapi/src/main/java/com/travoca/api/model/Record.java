@@ -32,6 +32,7 @@ public class Record implements Parcelable {
     public String type;
 
     protected Record(Parcel in) {
+        id =in.readInt();
         lang = in.readString();
         title = in.readString();
         description = in.readString();
@@ -67,6 +68,7 @@ public class Record implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id);
         dest.writeString(lang);
         dest.writeString(title);
         dest.writeString(description);
