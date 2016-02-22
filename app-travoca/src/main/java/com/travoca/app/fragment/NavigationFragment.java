@@ -91,6 +91,7 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
 //        setupItem(R.id.nav_profile, NavigationDrawer.NAV_PROFILE, loggedIn);
         setupItem(R.id.nav_contribute, NavigationDrawer.NAV_NEW_RECORD, true);
         setupItem(R.id.nav_settings, NavigationDrawer.NAV_SETTING, true);
+        setupItem(R.id.login, NavigationDrawer.NAV_LOGIN, true);
         FrameLayout headerView = (FrameLayout) mView.findViewById(R.id.nav_header_view);
         headerView.removeAllViews();
         View header = inflater.inflate(R.layout.nav_header, headerView, false);

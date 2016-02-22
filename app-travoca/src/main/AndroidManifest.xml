@@ -92,6 +92,10 @@
             android:name=".activity.RecordDetailsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/HotelsAppTheme.TransparentToolbar" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HotelsAppTheme.TransparentToolbar" />
 
         <provider
             android:name=".provider.DbProvider"

@@ -50,6 +50,11 @@
         style="@style/HotelsAppTheme.Widget.NavDrawer.Item"
         android:drawableLeft="@drawable/mainnav_my_settings"
         android:text="@string/mainnav_settings" />
+    <TextView
+        android:id="@+id/login"
+        style="@style/HotelsAppTheme.Widget.NavDrawer.Item"
+        android:drawableLeft="@drawable/mainnav_my_profile"
+        android:text="@string/mainnav_login" />
 
 
 </LinearLayout>

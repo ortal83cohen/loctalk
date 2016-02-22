@@ -161,6 +161,9 @@ public abstract class BaseActivity extends AppCompatActivity {
             case NavigationDrawer.NAV_NEW_RECORD:
                 startActivity(NewRecordActivity.createIntent(this));
                 break;
+            case NavigationDrawer.NAV_LOGIN:
+                startActivity(LoginActivity.createIntent(this));
+                break;
             default:
         }
     }

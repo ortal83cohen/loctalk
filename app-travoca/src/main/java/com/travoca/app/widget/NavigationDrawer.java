@@ -16,6 +16,7 @@ public class NavigationDrawer {
     public static final int NAV_RECENT_SEARCH = 0;
     public static final int NAV_FAVORITES = 1;
     public static final int NAV_NEW_RECORD = 2;
+    public static final int NAV_LOGIN = 3;
     public static final int NAV_SCANNER = 8;
     public static final int NAV_SETTING = 5;
 
