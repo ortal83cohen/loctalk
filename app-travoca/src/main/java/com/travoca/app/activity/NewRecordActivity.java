@@ -1,35 +1,23 @@
 package com.travoca.app.activity;
 
-import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentSender;
-import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.ActivityRecognition;
-import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.LocationSettingsRequest;
-import com.google.android.gms.location.LocationSettingsResult;
-import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.location.places.Places;
 import com.travoca.app.R;
 import com.travoca.app.fragment.NewRecordFragment;
-import com.travoca.app.model.CurrentLocation;
 import com.travoca.app.widget.ImagePicker;
 
 import java.io.File;
@@ -103,7 +91,7 @@ public class NewRecordActivity extends BaseActivity implements NewRecordFragment
         super.onActivityResult(requestCode, resultCode, imageReturnedIntent);
         switch (requestCode) {
             case PICK_IMAGE_ID:
-                if(resultCode!=0) {
+                if (resultCode != 0) {
                     NewRecordFragment fragment = (NewRecordFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_NEW_RECORD);
                     selectedBitmap = ImagePicker.getImageFromResult(this, resultCode, imageReturnedIntent);
                     if (selectedBitmap.getWidth() < selectedBitmap.getHeight()) {

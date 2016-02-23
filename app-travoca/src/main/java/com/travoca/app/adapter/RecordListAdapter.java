@@ -94,7 +94,7 @@ public class RecordListAdapter extends ArrayAdapter<Record, RecyclerView.ViewHol
         notifyDataSetChanged();
     }
 
-    public void addHotels(List<Record> records) {
+    public void addRecords(List<Record> records) {
         int objectsCount = getItemCount();
         int accommodationsCount = records == null ? 0 : records.size();
         if (records != null) {

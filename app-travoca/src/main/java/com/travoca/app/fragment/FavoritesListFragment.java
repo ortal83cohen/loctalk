@@ -102,7 +102,7 @@ public class FavoritesListFragment extends BaseFragment {
 //            if (mAdapter == null) {
 //                return;
 //            }
-//            mAdapter.addHotels(apiResponse.recordses, false);
+//            mAdapter.addRecords(apiResponse.recordses, false);
 //            Events.post(new SearchResultsEvent(apiResponse.meta.totalNr));
         }
 

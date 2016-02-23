@@ -95,7 +95,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
             }
 
             mNumberRetries = 0;
-            mAdapter.addHotels(apiResponse.records);
+            mAdapter.addRecords(apiResponse.records);
         }
 
         @Override
@@ -176,7 +176,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_hotel_list, container, false);
+        return inflater.inflate(R.layout.fragment_record_list, container, false);
     }
 
     @Override
