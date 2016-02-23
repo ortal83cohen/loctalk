@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
+import com.facebook.appevents.AppEventsLogger;
 import com.google.android.gms.analytics.Tracker;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -132,6 +133,8 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
     @Override
     protected void onResume() {
         super.onResume();
+        // Logs 'install' and 'app activate' App Events.
+        AppEventsLogger.activateApp(this);
         updateSearchBox();
     }
 
@@ -241,7 +244,13 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
     public void onConnectionSuspended(int i) {
 
     }
+    @Override
+    protected void onPause() {
+        super.onPause();
 
+        // Logs 'app deactivate' App Event.
+        AppEventsLogger.deactivateApp(this);
+    }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
