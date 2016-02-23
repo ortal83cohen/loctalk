@@ -15,4 +15,8 @@ public class AccessToken {
     public String tokenType;
     @SerializedName("scope")
     public String scope;
+
+    public AccessToken(com.facebook.AccessToken accessToken) {
+        token = accessToken.getToken();
+    }
 }

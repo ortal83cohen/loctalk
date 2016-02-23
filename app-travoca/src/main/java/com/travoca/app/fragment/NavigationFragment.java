@@ -2,6 +2,7 @@ package com.travoca.app.fragment;
 
 
 import android.app.Activity;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
@@ -9,13 +10,17 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.squareup.otto.Subscribe;
+import com.squareup.picasso.Picasso;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.activity.BaseActivity;
@@ -96,38 +101,34 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
         headerView.removeAllViews();
         View header = inflater.inflate(R.layout.nav_header, headerView, false);
 
-//        if (user == null) {
-//            header = inflater.inflate(R.layout.nav_header_logout, headerView, false);
-//            mView.findViewById(R.id.nav_divider).setVisibility(View.GONE);
-//            Button loginButton = (Button) header.findViewById(R.id.nav_login_button);
-//            Button signUpButton = (Button) header.findViewById(R.id.nav_sign_up_button);
-//            signUpButton.setOnClickListener(this);
-//            loginButton.setOnClickListener(this);
-//        } else {
-//            header = inflater.inflate(R.layout.nav_header_login, headerView, false);
-//            TextView nameFirst = (TextView) header.findViewById(R.id.profile_name);
-//            TextView nameLast = (TextView) header.findViewById(R.id.profile_surname);
-//
-//            if(true){//if (TextUtils.isEmpty(user.profile.firstName) && TextUtils.isEmpty(user.profile.lastName)) {
-//                nameFirst.setText("Hello,");
-//                nameLast.setText("Traveller");
-//            } else {
-//                nameFirst.setText(user.profile.firstName);
-//                nameLast.setText(user.profile.lastName);
-//            }
-//
-////            if (!TextUtils.isEmpty(user.profile.imageUrl)) {
-//            if(false){
-//                ImageView image = (ImageView) header.findViewById(R.id.profile_image);
-//                Uri uri = Uri.parse(user.profile.imageUrl);
-//
-//                Picasso.with(getActivity()).load(uri)
+        if (user == null) {
+            header = inflater.inflate(R.layout.nav_header_logout, headerView, false);
+            mView.findViewById(R.id.nav_divider).setVisibility(View.GONE);
+
+        } else {
+            header = inflater.inflate(R.layout.nav_header_login, headerView, false);
+            TextView nameFirst = (TextView) header.findViewById(R.id.profile_name);
+            TextView nameLast = (TextView) header.findViewById(R.id.profile_surname);
+
+           if (TextUtils.isEmpty(user.profile.firstName) && TextUtils.isEmpty(user.profile.lastName)) {
+                nameFirst.setText("Hello,");
+                nameLast.setText("Traveller");
+            } else {
+                nameFirst.setText(user.profile.firstName);
+                nameLast.setText(user.profile.lastName);
+            }
+
+            if (!TextUtils.isEmpty(user.profile.imageUrl)) {
+                ImageView image = (ImageView) header.findViewById(R.id.profile_image);
+                Uri uri = Uri.parse(user.profile.imageUrl);
+
+                Picasso.with(getActivity()).load(uri)
 //                        .resize(image.getMeasuredWidth(), image.getMeasuredHeight())
 //                        .centerCrop()
-//                        .into(image);
-//            }
+                        .into(image);
+            }
         mView.findViewById(R.id.nav_divider).setVisibility(View.VISIBLE);
-//        }
+        }
         headerView.addView(header);
     }
 

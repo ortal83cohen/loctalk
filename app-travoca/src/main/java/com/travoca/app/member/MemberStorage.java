@@ -27,7 +27,7 @@ public class MemberStorage {
 
         User user = new User();
         user.email = email;
-        user.id = mPrefs.getInt("id", 0);
+        user.id = mPrefs.getString("id", null);
         user.profile = new Profile();
         user.profile.firstName = mPrefs.getString("first_name", null);
         user.profile.lastName = mPrefs.getString("last_name", null);
@@ -45,7 +45,7 @@ public class MemberStorage {
         SharedPreferences.Editor edit = mPrefs.edit();
 
         edit.putString("email", user.email);
-        edit.putInt("id", user.id);
+        edit.putString("id", user.id);
         edit.putString("first_name", user.profile.firstName);
         edit.putString("last_name", user.profile.lastName);
         edit.putString("birth_date", user.profile.birthDate);

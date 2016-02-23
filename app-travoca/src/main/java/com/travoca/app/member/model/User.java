@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName;
  */
 public class User {
 
-    public int id;
+    public String id;
 
     public String email;
 
@@ -20,4 +20,13 @@ public class User {
     public int providerId;
 
 
+    public User(String email, String name, String id) {
+        this.id = id;
+        this.email = email;
+        this.profile = new Profile(name,id);
+    }
+
+    public User() {
+
+    }
 }
