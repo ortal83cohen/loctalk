@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
@@ -18,6 +19,7 @@ import com.facebook.login.widget.LoginButton;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.events.Events;
+import com.travoca.app.events.UserLogOutEvent;
 import com.travoca.app.events.UserLoginEvent;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.AccessToken;
@@ -35,7 +37,7 @@ import butterknife.ButterKnife;
  */
 public class LoginFragment extends BaseFragment {
 
-
+    AccessTokenTracker accessTokenTracker;
     @Bind(R.id.login_button)
     LoginButton loginButton;
 
@@ -68,29 +70,39 @@ public class LoginFragment extends BaseFragment {
         // If using in a fragment
         loginButton.setFragment(this);
         // Other app specific specialization
-
+         accessTokenTracker = new AccessTokenTracker() {
+            @Override
+            protected void onCurrentAccessTokenChanged(com.facebook.AccessToken accessToken, com.facebook.AccessToken accessToken1) {
+                if (accessToken1 == null) {
+                    Events.post(new UserLogOutEvent());
+                }
+            }
+        };
         // Callback registration
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
                 final MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
-               memberStorage.saveAccessToken(   new AccessToken(  loginResult.getAccessToken()));
+                memberStorage.saveAccessToken(new AccessToken(loginResult.getAccessToken()));
                 GraphRequest request = GraphRequest.newMeRequest(
                         loginResult.getAccessToken(),
                         new GraphRequest.GraphJSONObjectCallback() {
                             @Override
                             public void onCompleted(JSONObject object, GraphResponse response) {
-                                      // Application code
+                                // Application code
                                 try {
                                     String email = object.getString("email");
                                     String name = object.getString("name");
                                     String id = object.getString("id");
-                                    Events.post(new UserLoginEvent( new User(email,name,id)));
+                                    User user = new User(email, name, id);
+                                    Events.post(new UserLoginEvent(user));
+                                    memberStorage.saveUser(user);
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
                             }
                         });
+
                 Bundle parameters = new Bundle();
                 parameters.putString("fields", "id,name,email,gender, birthday");
                 request.setParameters(parameters);
@@ -128,6 +140,19 @@ public class LoginFragment extends BaseFragment {
     public void onAttach(Context context) {
         super.onAttach(context);
 
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+       accessTokenTracker.isTracking();
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        accessTokenTracker.stopTracking();
     }
 
     @Override

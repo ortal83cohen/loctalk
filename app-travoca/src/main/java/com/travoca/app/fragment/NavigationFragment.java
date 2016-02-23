@@ -2,6 +2,7 @@ package com.travoca.app.fragment;
 
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -102,8 +103,8 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
         View header = inflater.inflate(R.layout.nav_header, headerView, false);
 
         if (user == null) {
-            header = inflater.inflate(R.layout.nav_header_logout, headerView, false);
-            mView.findViewById(R.id.nav_divider).setVisibility(View.GONE);
+//            header = inflater.inflate(R.layout.nav_header_logout, headerView, false);
+//            mView.findViewById(R.id.nav_divider).setVisibility(View.GONE);
 
         } else {
             header = inflater.inflate(R.layout.nav_header_login, headerView, false);
