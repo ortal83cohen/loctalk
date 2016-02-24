@@ -23,6 +23,7 @@ import com.travoca.api.contract.Sort;
 import com.travoca.api.model.ErrorResponse;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.SearchRequest;
+import com.travoca.app.App;
 import com.travoca.app.TravocaApplication;
 import com.travoca.app.R;
 import com.travoca.app.activity.BaseActivity;
@@ -30,6 +31,8 @@ import com.travoca.app.activity.RecordListActivity;
 import com.travoca.app.adapter.RecordListAdapter;
 import com.travoca.app.adapter.RecordViewHolder;
 import com.travoca.app.drawable.TriangleDrawable;
+import com.travoca.app.member.MemberStorage;
+import com.travoca.app.member.model.User;
 import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.travocaapi.RetrofitConverter;
 import com.travoca.app.events.Events;
@@ -211,10 +214,18 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     }
 
     private void loadSearchResults(int offset) {
-        SearchRequest hotelsRequest = getRequest();
-        Events.post(new SearchRequestEvent(hotelsRequest, offset));
+        SearchRequest searchRequest = getRequest();
+        Events.post(new SearchRequestEvent(searchRequest, offset));
+        MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
+        User user = memberStorage.loadUser();
+        String userId;
+        if(user==null){
+            userId="";
+        }else {
+            userId = user.id;
+        }
         try {
-            mTravocaApi.records(hotelsRequest, offset).enqueue(mResultsCallback);
+            mTravocaApi.records(searchRequest, offset,userId).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             getActivity().finish();
         }

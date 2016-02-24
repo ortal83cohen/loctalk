@@ -25,11 +25,14 @@ import com.travoca.api.TravocaApi;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.search.ListType;
 import com.travoca.api.utils.RequestUtils;
+import com.travoca.app.App;
 import com.travoca.app.TravocaApplication;
 import com.travoca.app.R;
 import com.travoca.app.activity.BaseActivity;
 import com.travoca.app.adapter.FavoritesRecordListAdapter;
 import com.travoca.app.adapter.RecordViewHolder;
+import com.travoca.app.member.MemberStorage;
+import com.travoca.app.member.model.User;
 import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.events.Events;
 import com.travoca.app.events.SearchResultsEvent;
@@ -73,7 +76,7 @@ public class FavoritesListFragment extends BaseFragment {
 
     private LinearLayoutManager mLayoutManager;
     private FavoritesRecordListAdapter mAdapter;
-    private RecordListRequest mHotelsRequest;
+    private RecordListRequest mSearchRequest;
     private String mCity;
     private String mCountry;
     private RecordViewHolder.Listener mListener;
@@ -192,14 +195,14 @@ public class FavoritesListFragment extends BaseFragment {
         mCity = bundle.getString(ARG_CITY);
         mCountry = bundle.getString(ARG_COUNTRY);
         String count = bundle.getString(ARG_COUNT);
-        mHotelsRequest = bundle.getParcelable(ARG_REQUEST);
+        mSearchRequest = bundle.getParcelable(ARG_REQUEST);
 
         getActivity().setTitle(Html.fromHtml("<b>" + mCity + "</b> " + mCountry + " (" + count + ")"));
 
         ArrayList<String> records = LikedHotels.loadHotels(mCity, mCountry, getActivity());
 
-        mHotelsRequest.setType(new ListType(records));
-        mHotelsRequest.setSort(null);
+        mSearchRequest.setType(new ListType(records));
+        mSearchRequest.setSort(null);
 
         mLayoutManager = new LinearLayoutManager(getActivity());
         mAdapter = new FavoritesRecordListAdapter((BaseActivity) getActivity(), mListener);
@@ -221,8 +224,16 @@ public class FavoritesListFragment extends BaseFragment {
     }
 
     private void loadSearchResults(int offset) {
+        MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
+        User user = memberStorage.loadUser();
+        String userId;
+        if(user==null){
+            userId="";
+        }else {
+            userId = user.id;
+        }
         try {
-            mTravocaApi.records(mHotelsRequest, offset).enqueue(mResultsCallback);
+            mTravocaApi.records(mSearchRequest, offset,userId).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             getActivity().finish();
         }
@@ -280,7 +291,7 @@ public class FavoritesListFragment extends BaseFragment {
     }
 
     public void refresh(RecordListRequest request) {
-        RequestUtils.apply(mHotelsRequest);
+        RequestUtils.apply(mSearchRequest);
         refresh();
     }
 

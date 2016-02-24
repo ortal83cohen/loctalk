@@ -134,8 +134,8 @@ public class RouteActivity extends Activity {
         RecordListRequest request = App.provide(this).createHotelsRequest();
         request.setType(new ListType(record));
 
-        TravocaApi travocaApi = TravocaApplication.provide(this).travocaApi();
-        travocaApi.records(request, 0).enqueue(mResultsCallback);
+//        TravocaApi travocaApi = TravocaApplication.provide(this).travocaApi();
+//        travocaApi.records(request, 0).enqueue(mResultsCallback);
     }
 
     private void startHotelSummaryActivity(Record acc) {

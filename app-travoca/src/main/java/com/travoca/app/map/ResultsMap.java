@@ -26,11 +26,14 @@ import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.Poi;
 import com.travoca.api.model.search.Type;
 import com.travoca.api.model.search.ViewPortType;
+import com.travoca.app.App;
 import com.travoca.app.TravocaApplication;
 import com.travoca.app.R;
 import com.travoca.app.activity.BaseActivity;
 import com.travoca.app.activity.RecordListActivity;
 import com.travoca.app.core.CoreInterface;
+import com.travoca.app.member.MemberStorage;
+import com.travoca.app.member.model.User;
 import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.events.Events;
 import com.travoca.app.events.SearchRequestEvent;
@@ -204,11 +207,19 @@ public class ResultsMap {
 
     public void refreshHotels() {
 
-        SearchRequest hotelsRequest = mActivity.getHotelsRequest();
-        TravocaApi etb = TravocaApplication.provide(mActivity).travocaApi();
-        Events.post(new SearchRequestEvent(hotelsRequest, 0));
+        SearchRequest searchRequest = mActivity.getHotelsRequest();
+        TravocaApi mTravocaApi = TravocaApplication.provide(mActivity).travocaApi();
+        Events.post(new SearchRequestEvent(searchRequest, 0));
+        MemberStorage memberStorage = App.provide(mActivity).memberStorage();
+        User user = memberStorage.loadUser();
+        String userId;
+        if(user==null){
+            userId="";
+        }else {
+            userId = user.id;
+        }
         try {
-            etb.records(hotelsRequest, 0).enqueue(mResultsCallback);
+            mTravocaApi.records(searchRequest, 0,userId).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             mActivity.finish();
         }

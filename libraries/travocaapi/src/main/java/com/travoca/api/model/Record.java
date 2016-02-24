@@ -31,6 +31,8 @@ public class Record implements Parcelable {
 
     public String type;
 
+    public String canVoat;
+
     protected Record(Parcel in) {
         id =in.readInt();
         lang = in.readString();
@@ -47,6 +49,7 @@ public class Record implements Parcelable {
         date = in.readString();
         recordUrl = in.readString();
         type = in.readString();
+        canVoat = in.readString();
     }
 
     public static final Creator<Record> CREATOR = new Creator<Record>() {
@@ -81,5 +84,6 @@ public class Record implements Parcelable {
         dest.writeString(date);
         dest.writeString(recordUrl);
         dest.writeString(type);
+        dest.writeString(canVoat);
     }
 }
