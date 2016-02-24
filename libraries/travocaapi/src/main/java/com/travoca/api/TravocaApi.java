@@ -8,18 +8,17 @@ import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 import com.travoca.api.mock.ResultsMockClient;
-import com.travoca.api.model.OrderRequest;
-import com.travoca.api.model.OrderResponse;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.ImageRequest;
 import com.travoca.api.model.search.LikeRequest;
 import com.travoca.api.model.search.ListType;
 import com.travoca.api.model.search.Type;
+import com.travoca.api.model.search.UserBaseRequest;
+import com.travoca.api.model.search.UserRequest;
 
 import java.io.IOException;
 import java.security.InvalidParameterException;
-import java.util.HashMap;
 import java.util.Map;
 
 import retrofit.Call;
@@ -38,6 +37,7 @@ import retrofit.http.QueryMap;
 public class TravocaApi {
 
     public static final String PATH_RECORDS = "/records";
+    public static final String PATH_USER = "/user";
     public static final String PATH_IMAGE = "/image";
     public static final String PATH_ORDERS = "/etbstatic/placeAnOrder.json";
     public static final int LIMIT = 15;
@@ -154,6 +154,13 @@ public class TravocaApi {
         return service.saveRecordDetails(new ImageRequest(image, record, title, description, locationName, lat, lon, type,userId));
     }
 
+    public Call<ResultsResponse> saveUser( String userId,String email, String imageUrl,String firstName,String lastName) {
+
+        Service service = create();
+
+        return service.saveUser(new UserRequest(userId, email, imageUrl, firstName, lastName));
+    }
+
 
     public interface Service {
 
@@ -165,6 +172,9 @@ public class TravocaApi {
 
         @POST(PATH_RECORDS)
         Call<ResultsResponse> saveRecordDetails(@Body ImageRequest request);
+
+        @POST(PATH_USER)
+        Call<ResultsResponse> saveUser(@Body UserRequest request);
 
     }
 

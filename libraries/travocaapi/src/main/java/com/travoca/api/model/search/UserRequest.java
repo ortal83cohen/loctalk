@@ -1,13 +1,19 @@
 package com.travoca.api.model.search;
 
 /**
- * @author user
- * @date 2016-02-24
+ * @author ortal
+ * @date 2015-04-19
  */
-public class UserRequest {
-    public String userId;
+public class UserRequest extends UserBaseRequest {
 
-    public UserRequest(String userId) {
-        this.userId = userId;
+
+    public String email,imageUrl, firstName, lastName;
+
+    public UserRequest( String userId,String email, String imageUrl,String firstName,String lastName) {
+        super(userId);
+        this.email = email;
+        this.imageUrl = imageUrl;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 }

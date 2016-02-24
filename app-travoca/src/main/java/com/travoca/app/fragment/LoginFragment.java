@@ -16,20 +16,27 @@ import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.squareup.okhttp.ResponseBody;
+import com.travoca.api.TravocaApi;
+import com.travoca.api.model.ResultsResponse;
 import com.travoca.app.App;
 import com.travoca.app.R;
+import com.travoca.app.TravocaApplication;
+import com.travoca.app.activity.RecordListActivity;
 import com.travoca.app.events.Events;
 import com.travoca.app.events.UserLogOutEvent;
 import com.travoca.app.events.UserLoginEvent;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.AccessToken;
 import com.travoca.app.member.model.User;
+import com.travoca.app.travocaapi.RetrofitCallback;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import retrofit.Response;
 
 /**
  * @author ortal
@@ -40,7 +47,17 @@ public class LoginFragment extends BaseFragment {
     AccessTokenTracker accessTokenTracker;
     @Bind(R.id.login_button)
     LoginButton loginButton;
+    private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
 
+        @Override
+        protected void failure(ResponseBody errorBody, boolean isOffline) {
+
+        }
+
+        @Override
+        public void success(ResultsResponse apiResponse, Response response) {
+
+        }};
     public static LoginFragment newInstance() {
         LoginFragment fragment = new LoginFragment();
         Bundle args = new Bundle();
@@ -92,9 +109,14 @@ public class LoginFragment extends BaseFragment {
                                 // Application code
                                 try {
                                     String email = object.getString("email");
-                                    String name = object.getString("name");
+                                    String[] splitName = object.getString("name").split(" ");
+                                    String firstName = splitName[0];
+                                    String lastName = splitName[1];
                                     String id = object.getString("id");
-                                    User user = new User(email, name, id);
+                                    String imageUrl = "https://graph.facebook.com/" + id + "/picture?type=large";
+                                    TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
+                                    travocaApi.saveUser(id,email,imageUrl,firstName,lastName).enqueue(mResultsCallback);
+                                    User user = new User(email, firstName,lastName, id,imageUrl);
                                     Events.post(new UserLoginEvent(user));
                                     memberStorage.saveUser(user);
                                 } catch (JSONException e) {

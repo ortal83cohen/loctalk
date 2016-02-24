@@ -34,11 +34,11 @@ public class Profile {
     public String phone;
 
 
-    public Profile(String name, String id) {
-        String[] splitName = name.split(" ");
-        firstName =splitName[0];
-        lastName = splitName[1];
-        imageUrl = "https://graph.facebook.com/" + id + "/picture?type=large";
+    public Profile(String firstName, String lastName, String id, String imageUrl) {
+
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.imageUrl = imageUrl;
     }
 
     public Profile() {
