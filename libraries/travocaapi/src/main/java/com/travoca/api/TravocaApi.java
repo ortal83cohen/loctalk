@@ -90,7 +90,7 @@ public class TravocaApi {
         return restAdapter.create(Service.class);
     }
 
-    public Call<ResultsResponse> records(SearchRequest searchRequest, int offset) throws InvalidParameterException {
+    public Call<ResultsResponse> records(SearchRequest searchRequest, int offset,String userId) throws InvalidParameterException {
 
         Service service = create();
 
@@ -101,6 +101,7 @@ public class TravocaApi {
         if (loc == null) {
             throw new InvalidParameterException();
         }
+        query.put("userId", userId);
         query.put("type", loc.getType());
         query.put("context", loc.getContext());
 
