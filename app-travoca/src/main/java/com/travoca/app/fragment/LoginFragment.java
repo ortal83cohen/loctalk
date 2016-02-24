@@ -64,7 +64,7 @@ public class LoginFragment extends BaseFragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         ButterKnife.bind(this, view);
-
+        final MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
         loginButton.setReadPermissions("public_profile");
         loginButton.setReadPermissions("email");
         // If using in a fragment
@@ -74,6 +74,7 @@ public class LoginFragment extends BaseFragment {
             @Override
             protected void onCurrentAccessTokenChanged(com.facebook.AccessToken accessToken, com.facebook.AccessToken accessToken1) {
                 if (accessToken1 == null) {
+                    memberStorage.clear();
                     Events.post(new UserLogOutEvent());
                 }
             }
@@ -82,7 +83,6 @@ public class LoginFragment extends BaseFragment {
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                final MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
                 memberStorage.saveAccessToken(new AccessToken(loginResult.getAccessToken()));
                 GraphRequest request = GraphRequest.newMeRequest(
                         loginResult.getAccessToken(),

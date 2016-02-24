@@ -45,6 +45,7 @@ import com.travoca.api.TravocaApi;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.utils.RequestUtils;
+import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
 import com.travoca.app.activity.HotelDetailsActivity;
@@ -52,6 +53,8 @@ import com.travoca.app.activity.RecordDetailsActivity;
 import com.travoca.app.adapter.RecordCardViewHolder;
 import com.travoca.app.events.Events;
 import com.travoca.app.hoteldetails.RecordViewHolder;
+import com.travoca.app.member.MemberStorage;
+import com.travoca.app.member.model.User;
 import com.travoca.app.model.RecordListRequest;
 
 import java.io.BufferedInputStream;
@@ -145,7 +148,8 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_record_details, container, false);
         ButterKnife.bind(this, view);
-
+        MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
+        final User user = memberStorage.loadUser();
         if (savedInstanceState != null) {
             mIsImageExpended = savedInstanceState.getBoolean(IMAGE_FLAG);
             mMoreRoomsButtonVisible = savedInstanceState.getBoolean(BUTTON_FLAG);
@@ -192,13 +196,13 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
                         .setMessage("did you liked this record?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
-                                    travocaApi.like(mRecord.id).enqueue(mLikeResultsCallback);
+                                    travocaApi.like(mRecord.id,user.id).enqueue(mLikeResultsCallback);
                                 recordCardViewHolder.addLike();
                             }
                         })
                         .setNegativeButton("No", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
-                                travocaApi.unlike(mRecord.id).enqueue(mLikeResultsCallback);
+                                travocaApi.unlike(mRecord.id,user.id).enqueue(mLikeResultsCallback);
                                 recordCardViewHolder.addDislike();
                             }
                         })
@@ -209,11 +213,22 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         mPlayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                try {
-                    mediaPlayer.start();
-                } catch (Exception e) {
-                    // TODO: handle exception
+                if (user != null) {
+                    try {
+                        mediaPlayer.start();
+                    } catch (Exception e) {
+                        // TODO: handle exception
+                    }
+                }else {
+                    new AlertDialog.Builder(getActivity())
+                            .setTitle("Alert")
+                            .setMessage("You must login to play a record")
+                            .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                }
+                            })
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .show();
                 }
             }
         });

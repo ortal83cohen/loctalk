@@ -1,7 +1,9 @@
 package com.travoca.app.fragment;
 
 import android.Manifest;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
@@ -27,9 +29,12 @@ import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.TravocaApi;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.search.Type;
+import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
 import com.travoca.app.activity.NewRecordActivity;
+import com.travoca.app.member.MemberStorage;
+import com.travoca.app.member.model.User;
 import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.widget.ImagePicker;
 
@@ -209,8 +214,23 @@ public class NewRecordFragment extends BaseFragment {
                 TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
                 ((NewRecordActivity) getActivity()).getSelectedBitmap().compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
                 String encodedImage = Base64.encodeToString(byteArrayOutputStream.toByteArray(), Base64.DEFAULT);
-                travocaApi.saveRecordDetails(encodedImage, encodedFile, mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString()
-                        , mLat.getText().toString(), mLon.getText().toString(), mType.getText().toString()).enqueue(mResultsCallback);
+                MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
+                User user = memberStorage.loadUser();
+                if(user != null) {
+                    travocaApi.saveRecordDetails(encodedImage, encodedFile, mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString()
+                            , mLat.getText().toString(), mLon.getText().toString(), mType.getText().toString(),user.id).enqueue(mResultsCallback);
+                }else {
+                    new AlertDialog.Builder(getActivity())
+                            .setTitle("Alert")
+                            .setMessage("You must login to upload record")
+                            .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                }
+                            })
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .show();
+
+                }
             }
         });
 
@@ -248,25 +268,7 @@ public class NewRecordFragment extends BaseFragment {
         mImageView.setImageDrawable(drawable);
     }
 
-    public boolean onBackPressed() {
-//        NavigationFragment navigationDrawer = (NavigationFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
-//        if (navigationDrawer != null && navigationDrawer.isVisible()) {
-//            navigationDrawer.closeDrawer();
-//            return true;
-//        }
-//        if (mSelectPanelView != null) {
-//            mSelectPanelView.getLocationOnScreen(mTouchLoc);
-//            mTouchLoc[0] = mTouchLoc[0] + mSelectPanelView.getWidth() / 2;
-//            highlightButton(0);
-//            animatePanelHide(mSelectPanelView);
-//            return true;
-//        }
-//        if (mInstructions.getVisibility() == View.GONE) {
-//            animateUnFocusAutocomplete();
-//            return true;
-//        }
-        return false;
-    }
+
 
     @Override
     public void onAttach(Context context) {
@@ -291,22 +293,13 @@ public class NewRecordFragment extends BaseFragment {
 
     }
 
-    private void checkPermissionAndstartSearchInCurrentLocation() {
-        if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // Request missing location permission.
-            requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_PERMISSION_LOCATION);
-        } else {
-            startSearchInCurrentLocation();
-        }
-    }
-
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         if (requestCode == REQUEST_PERMISSION_LOCATION) {
             if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                startSearchInCurrentLocation();
+                findCurrentLocation();
             }
         }
     }
@@ -319,44 +312,7 @@ public class NewRecordFragment extends BaseFragment {
     }
 
 
-    private void startSearchInCurrentLocation() {
-//        LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
-//                .addLocationRequest(mLocationRequest);
-//
-//        PendingResult<LocationSettingsResult> result = LocationServices.SettingsApi.checkLocationSettings(mGoogleApiClient, builder.build());
-//        result.setResultCallback(new ResultCallback<LocationSettingsResult>() {
-//            @Override
-//            public void onResult(LocationSettingsResult locationSettingsResult) {
-//                final Status status = locationSettingsResult.getStatus();
-//                switch (status.getStatusCode()) {
-//                    case LocationSettingsStatusCodes.SUCCESS:
-//                        onLocationAvailable();
-//                        break;
-//                    case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
-//                        try {
-//                            // Show the dialog by calling startResolutionForResult(),
-//                            // and check the result in onActivityResult().
-//                            status.startResolutionForResult(getActivity(), HomeActivity.REQUEST_CHECK_SETTINGS);
-//                        } catch (IntentSender.SendIntentException e) {
-//                            // Ignore the error.
-//                        }
-//                        break;
-//                    case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
-//                        // Location settings are not satisfied. However, we have no way to fix the
-//                        // settings so we won't show the dialog.
-//                        onLocationAvailable();
-//                        break;
-//                }
-//            }
-//        });
-    }
 
-    private void startSearch(Type locationType) {
-//        if (!mSearchButtonClicked) {
-//            mSearchButtonClicked = true;
-//            mListener.startSearch(locationType);
-//        }
-    }
 
 
     public interface Listener {

@@ -134,7 +134,7 @@ public class ResultsMap {
         mGoogleMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
             @Override
             public View getInfoWindow(Marker marker) {
-                View view = ((Activity) mActivity).getLayoutInflater().inflate(R.layout.poi_info_window, null, false);
+                View view = mActivity.getLayoutInflater().inflate(R.layout.poi_info_window, null, false);
                 TextView title = (TextView) view.findViewById(android.R.id.title);
                 TextView text1 = (TextView) view.findViewById(android.R.id.text1);
                 ImageView background = (ImageView) view.findViewById(R.id.background);

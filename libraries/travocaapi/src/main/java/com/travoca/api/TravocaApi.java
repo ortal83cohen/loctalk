@@ -131,42 +131,27 @@ public class TravocaApi {
         return service.records(query);
     }
 
-    public Call<ResultsResponse> like(int id) throws InvalidParameterException {
+    public Call<ResultsResponse> like(int id,String userId) throws InvalidParameterException {
 
         Service service = create();
 
-        return service.like(new LikeRequest(String.valueOf(id), "like"));
+        return service.like(new LikeRequest(String.valueOf(id), "like",userId));
     }
 
-    public Call<ResultsResponse> unlike(int id) throws InvalidParameterException {
+    public Call<ResultsResponse> unlike(int id,String userId) throws InvalidParameterException {
 
         Service service = create();
 
-        return service.like(new LikeRequest(String.valueOf(id), "unlike"));
+        return service.like(new LikeRequest(String.valueOf(id), "unlike",userId));
     }
 
 
-    public Call<OrderResponse> order(OrderRequest request) {
-        Service service = create();
-        return service.order(request);
-    }
-
-    public Call<OrderResponse> retrieve(String orderId, String password) {
-        Service service = create();
-        Map<String, String> query = new HashMap<>();
-        if (password != null) {
-            query.put("password", password);
-        }
-
-        return service.retrieve(query);
-    }
-
-    public Call<ResultsResponse> saveRecordDetails(String image, String record, String title, String description, String locationName, String lat, String lon, String type) {
+    public Call<ResultsResponse> saveRecordDetails(String image, String record, String title, String description, String locationName, String lat, String lon, String type,String userId) {
 
         Service service = create();
 
 
-        return service.saveRecordDetails(new ImageRequest(image, record, title, description, locationName, lat, lon, type));
+        return service.saveRecordDetails(new ImageRequest(image, record, title, description, locationName, lat, lon, type,userId));
     }
 
 
@@ -181,12 +166,6 @@ public class TravocaApi {
         @POST(PATH_RECORDS)
         Call<ResultsResponse> saveRecordDetails(@Body ImageRequest request);
 
-
-        @POST(PATH_ORDERS)
-        Call<OrderResponse> order(@Body OrderRequest request);
-
-        @GET(PATH_ORDERS)
-        Call<OrderResponse> retrieve(@QueryMap Map<String, String> query);
     }
 
 }
