@@ -234,6 +234,6 @@
     <string name="capacity_persons_max">" Person max"</string>
     <string name="qr_not_match_warning">You can only scan links from site www.travoca.com</string>
     <string name="pick_image_intent_text">Pick image</string>
-
-
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
 </resources>

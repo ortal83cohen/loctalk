@@ -190,7 +190,12 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
                 @Override
                 public void onCompletion(MediaPlayer mp) {
                     final TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
+                    final MediaPlayer.OnCompletionListener emptyListener = new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
 
+                        }
+                    };
                     new AlertDialog.Builder(getActivity())
                             .setTitle("Rate")
                             .setMessage("did you liked this record?")
@@ -198,24 +203,14 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
                                 public void onClick(DialogInterface dialog, int which) {
                                     travocaApi.like(mRecord.id, user.id).enqueue(mLikeResultsCallback);
                                     recordCardViewHolder.addLike();
-                                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp) {
-
-                                        }
-                                    });
+                                    mediaPlayer.setOnCompletionListener(emptyListener);
                                 }
                             })
                             .setNegativeButton("No", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     travocaApi.unlike(mRecord.id, user.id).enqueue(mLikeResultsCallback);
                                     recordCardViewHolder.addDislike();
-                                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp) {
-
-                                        }
-                                    });
+                                    mediaPlayer.setOnCompletionListener(emptyListener);
                                 }
                             })
                             .setIcon(android.R.drawable.ic_dialog_alert)

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="google_api_key">AIzaSyAgYFcrV7nIw4iWGDAcETKvK4xKt2hf_2g</string>
+    <string name="server_client_id">65693806264-v1s5p95sinodj3v3vcsgr4l4hpsjmdme.apps.googleusercontent.com</string>
     <string name="facebook_app_id">1716910088525870</string>
     <bool name="is_mixpanel_debug">false</bool>
     <string name="branch_key_live">key_live_oliHoVDMnS068dt4bVdUVjcaExkzzJRQ</string>

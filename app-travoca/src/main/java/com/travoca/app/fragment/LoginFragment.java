@@ -16,13 +16,13 @@ import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.google.android.gms.common.SignInButton;
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.TravocaApi;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
-import com.travoca.app.activity.RecordListActivity;
 import com.travoca.app.events.Events;
 import com.travoca.app.events.UserLogOutEvent;
 import com.travoca.app.events.UserLoginEvent;
@@ -46,7 +46,8 @@ public class LoginFragment extends BaseFragment {
 
     AccessTokenTracker accessTokenTracker;
     @Bind(R.id.login_button)
-    LoginButton loginButton;
+    LoginButton facebookButton;
+
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
 
         @Override
@@ -82,10 +83,10 @@ public class LoginFragment extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         ButterKnife.bind(this, view);
         final MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
-        loginButton.setReadPermissions("public_profile");
-        loginButton.setReadPermissions("email");
+        facebookButton.setReadPermissions("public_profile");
+        facebookButton.setReadPermissions("email");
         // If using in a fragment
-        loginButton.setFragment(this);
+        facebookButton.setFragment(this);
         // Other app specific specialization
          accessTokenTracker = new AccessTokenTracker() {
             @Override
@@ -97,7 +98,7 @@ public class LoginFragment extends BaseFragment {
             }
         };
         // Callback registration
-        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+        facebookButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
                 memberStorage.saveAccessToken(new AccessToken(loginResult.getAccessToken()));
@@ -133,12 +134,12 @@ public class LoginFragment extends BaseFragment {
 
             @Override
             public void onCancel() {
-                loginButton.setReadPermissions("email");
+                facebookButton.setReadPermissions("email");
             }
 
             @Override
             public void onError(FacebookException exception) {
-                loginButton.setReadPermissions("email");
+                facebookButton.setReadPermissions("email");
             }
         });
 
