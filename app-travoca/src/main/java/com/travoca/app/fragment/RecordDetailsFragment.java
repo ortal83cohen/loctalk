@@ -29,7 +29,6 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Transformation;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -185,31 +184,45 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         new DownloadAndPlay().execute(mRecord.recordUrl);
         mediaPlayer = new MediaPlayer();
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+        if (mRecord.canVote.equals("1")) {
+            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
 
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                final TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    final TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
 
-                new AlertDialog.Builder(getActivity())
-                        .setTitle("Rate")
-                        .setMessage("did you liked this record?")
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                    travocaApi.like(mRecord.id,user.id).enqueue(mLikeResultsCallback);
-                                recordCardViewHolder.addLike();
-                            }
-                        })
-                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                travocaApi.unlike(mRecord.id,user.id).enqueue(mLikeResultsCallback);
-                                recordCardViewHolder.addDislike();
-                            }
-                        })
-                        .setIcon(android.R.drawable.ic_dialog_alert)
-                        .show();
-            }
-        });
+                    new AlertDialog.Builder(getActivity())
+                            .setTitle("Rate")
+                            .setMessage("did you liked this record?")
+                            .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    travocaApi.like(mRecord.id, user.id).enqueue(mLikeResultsCallback);
+                                    recordCardViewHolder.addLike();
+                                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                        @Override
+                                        public void onCompletion(MediaPlayer mp) {
+
+                                        }
+                                    });
+                                }
+                            })
+                            .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    travocaApi.unlike(mRecord.id, user.id).enqueue(mLikeResultsCallback);
+                                    recordCardViewHolder.addDislike();
+                                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                        @Override
+                                        public void onCompletion(MediaPlayer mp) {
+
+                                        }
+                                    });
+                                }
+                            })
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .show();
+                }
+            });
+        }
         mPlayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -219,7 +232,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
                     } catch (Exception e) {
                         // TODO: handle exception
                     }
-                }else {
+                } else {
                     new AlertDialog.Builder(getActivity())
                             .setTitle("Alert")
                             .setMessage("You must login to play a record")
