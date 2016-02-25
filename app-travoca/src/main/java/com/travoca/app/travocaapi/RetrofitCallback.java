@@ -32,7 +32,7 @@ public abstract class RetrofitCallback<T> implements Callback<T> {
 
     protected abstract void failure(ResponseBody errorBody, boolean isOffline);
 
-    protected abstract void success(T body, Response<T> response);
+    protected abstract void success(T body, Response<T> response) ;
 
     protected void notifyFailure(Throwable exception) {
         AppLog.e(exception);

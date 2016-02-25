@@ -2,6 +2,7 @@ package com.travoca.app.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.text.Html;
@@ -74,31 +75,38 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
 
         @Override
-        public void success(ResultsResponse apiResponse, Response response) {
-            if (getActivity() != null) {
-                ((RecordListActivity) getActivity()).hideLoaderImage();
-            }
-            mLoaderText.setVisibility(View.GONE);
-            if (mRecyclerView == null || mAdapter == null) {
-                return;
-            }
+        public void success(final ResultsResponse apiResponse, Response response) {
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                public void run() {
+                    if (getActivity() != null) {
+                        ((RecordListActivity) getActivity()).hideLoaderImage();
+                    }
+                    mLoaderText.setVisibility(View.GONE);
+                    if (mRecyclerView == null || mAdapter == null) {
+                        return;
+                    }
 
-            if (apiResponse.records == null || apiResponse.records.isEmpty() || apiResponse.records.size() != TravocaApi.LIMIT) {
-                mRecyclerView.setHasMoreData(false);
-            }
+                    if (apiResponse.records == null || apiResponse.records.isEmpty() || apiResponse.records.size() != TravocaApi.LIMIT) {
+                        mRecyclerView.setHasMoreData(false);
+                    }
 
-            if (mAdapter.getItemCount() == 0) {
-                if (apiResponse.records == null || apiResponse.records.isEmpty()) {
-                    mNoResult.setVisibility(View.VISIBLE);
-                    mTopPanel.setVisibility(View.GONE);
-                } else {
-                    mAvailableCountText.setVisibility(View.VISIBLE);
-                    mButtonSort.setVisibility(View.VISIBLE);
+                    if (mAdapter.getItemCount() == 0) {
+                        if (apiResponse.records == null || apiResponse.records.isEmpty()) {
+                            mNoResult.setVisibility(View.VISIBLE);
+                            mTopPanel.setVisibility(View.GONE);
+                        } else {
+                            mAvailableCountText.setVisibility(View.VISIBLE);
+                            mButtonSort.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    mNumberRetries = 0;
+                    mAdapter.addRecords(apiResponse.records);
                 }
-            }
+            }, 6000);
 
-            mNumberRetries = 0;
-            mAdapter.addRecords(apiResponse.records);
+
         }
 
         @Override

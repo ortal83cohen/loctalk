@@ -127,6 +127,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                     public void onResult(Status status) {
                         memberStorage.clear();
                         Events.post(new UserLogOutEvent());
+                        updateUI(false);
                     }
                 });
     }
@@ -169,18 +170,18 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                     0).show();
             return;
         }
-
-        if (!mIntentInProgress) {
-            // Store the ConnectionResult for later usage
-            mConnectionResult = result;
-
-//            if (mSignInClicked) {
-//                // The user has already clicked 'sign-in' so we attempt to
-//                // resolve all
-//                // errors until the user is signed in, or they cancel.
-//                resolveSignInError();
-//            }
-        }
+//
+//        if (!mIntentInProgress) {
+//            // Store the ConnectionResult for later usage
+//            mConnectionResult = result;
+//
+////            if (mSignInClicked) {
+////                // The user has already clicked 'sign-in' so we attempt to
+////                // resolve all
+////                // errors until the user is signed in, or they cancel.
+////                resolveSignInError();
+////            }
+//        }
 
     }
 
