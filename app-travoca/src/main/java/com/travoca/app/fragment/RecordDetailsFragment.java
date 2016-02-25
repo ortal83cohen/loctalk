@@ -47,7 +47,7 @@ import com.travoca.api.utils.RequestUtils;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
-import com.travoca.app.activity.HotelDetailsActivity;
+import com.travoca.app.activity.RecordDetailsTabsActivity;
 import com.travoca.app.activity.RecordDetailsActivity;
 import com.travoca.app.adapter.RecordCardViewHolder;
 import com.travoca.app.events.Events;
@@ -527,7 +527,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     }
 
     public void showFullMap(Record record) {
-        Intent intent = HotelDetailsActivity.createIntent(record, getRequest(), HotelDetailsActivity.TAB_MAP, getActivity());
+        Intent intent = RecordDetailsTabsActivity.createIntent(record, getRequest(), RecordDetailsTabsActivity.TAB_MAP, getActivity());
         startActivity(intent);
     }
 

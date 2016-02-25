@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
+import android.location.Location;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Bundle;
@@ -28,7 +29,6 @@ import com.google.android.gms.location.LocationServices;
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.TravocaApi;
 import com.travoca.api.model.ResultsResponse;
-import com.travoca.api.model.search.Type;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
@@ -70,10 +70,6 @@ public class NewRecordFragment extends BaseFragment {
     TextView mDescription;
     @Bind(R.id.locationName)
     TextView mLocationName;
-    @Bind(R.id.lat)
-    TextView mLat;
-    @Bind(R.id.lon)
-    TextView mLon;
     @Bind(R.id.type)
     TextView mType;
     @Bind(R.id.image)
@@ -81,6 +77,7 @@ public class NewRecordFragment extends BaseFragment {
     private MediaRecorder audioRecorder;
     private String outputFile = null;
     private Listener mListener;
+    private Location mLocation;
     private LocationRequest mLocationRequest = new LocationRequest()
             .setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY) // (~100m "block" accuracy)
             .setNumUpdates(1);
@@ -216,10 +213,10 @@ public class NewRecordFragment extends BaseFragment {
                 String encodedImage = Base64.encodeToString(byteArrayOutputStream.toByteArray(), Base64.DEFAULT);
                 MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
                 User user = memberStorage.loadUser();
-                if(user != null) {
+                if (user != null) {
                     travocaApi.saveRecordDetails(encodedImage, encodedFile, mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString()
-                            , mLat.getText().toString(), mLon.getText().toString(), mType.getText().toString(),user.id).enqueue(mResultsCallback);
-                }else {
+                            , String.valueOf(mLocation.getLatitude()), String.valueOf(mLocation.getLongitude()), mType.getText().toString(), user.id).enqueue(mResultsCallback);
+                } else {
                     new AlertDialog.Builder(getActivity())
                             .setTitle("Alert")
                             .setMessage("You must login to upload record")
@@ -246,8 +243,7 @@ public class NewRecordFragment extends BaseFragment {
                     mLocationRequest, new LocationListener() {
                         @Override
                         public void onLocationChanged(android.location.Location location) {
-                            mLat.setText(String.valueOf(location.getLatitude()));
-                            mLon.setText(String.valueOf(location.getLongitude()));
+                            mLocation = location;
                         }
                     });
         }
@@ -267,7 +263,6 @@ public class NewRecordFragment extends BaseFragment {
     public void setImage(Drawable drawable) {
         mImageView.setImageDrawable(drawable);
     }
-
 
 
     @Override
@@ -310,9 +305,6 @@ public class NewRecordFragment extends BaseFragment {
 
         super.onSaveInstanceState(outState);
     }
-
-
-
 
 
     public interface Listener {

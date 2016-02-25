@@ -22,7 +22,7 @@
             android:src="@drawable/no_dates" />
 
         <TextView
-            style="@style/HotelsAppTheme.TextAppearance.HotelSummary.SelectDates"
+            style="@style/AppTheme.TextAppearance.HotelSummary.SelectDates"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/minimum_default_padding"

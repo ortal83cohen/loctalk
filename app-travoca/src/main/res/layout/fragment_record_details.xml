@@ -16,8 +16,7 @@
             android:layout_height="match_parent"
             android:overScrollMode="never">
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/gray_light"
@@ -50,7 +49,7 @@
 
                         <TextView
                             android:id="@+id/snippet_title"
-                            style="@style/HotelsAppTheme.TextAppearance.HotelSummary.HotelName"
+                            style="@style/AppTheme.TextAppearance.HotelSummary.HotelName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="4dp"
@@ -146,7 +145,7 @@
 
     <Button
         android:id="@+id/see_all_record"
-        style="@style/HotelsAppTheme.Widget.HotelSummary.AccentBottomButton"
+        style="@style/AppTheme.Widget.HotelSummary.AccentBottomButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|bottom"

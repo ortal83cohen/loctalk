@@ -55,7 +55,7 @@
 
                     <AutoCompleteTextView
                         android:id="@+id/autoCompleteTextView_location"
-                        style="@style/HotelsAppTheme.Widget.AutocompleteView"
+                        style="@style/AppTheme.Widget.AutocompleteView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawablePadding="@dimen/default_padding"
@@ -96,7 +96,7 @@
 
     <Button
         android:id="@+id/search"
-        style="@style/HotelsAppTheme.Widget.AccentBottomButton"
+        style="@style/AppTheme.Widget.HotelSummary.AccentBottomButton"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/bottom_button_height"
         android:layout_gravity="center_horizontal|bottom"

@@ -14,7 +14,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:text="@string/loading_results"
-        android:background="@color/gray_light"/>
+       android:textColor="@color/gray_light"/>
 
     <com.travoca.app.widget.recyclerview.EndlessRecyclerView
         android:id="@android:id/list"
@@ -27,7 +27,7 @@
         android:id="@+id/panel_top"
         android:layout_width="match_parent"
         android:layout_height="@dimen/results_panel_top_height"
-
+        android:background="@drawable/ripple_button_color_gray"
         android:paddingLeft="@dimen/default_padding"
         android:paddingRight="@dimen/default_padding">
 

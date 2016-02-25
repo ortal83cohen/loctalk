@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="theme_primary">#512DA8</color>
-    <color name="theme_primary_dark">#673AB7</color>
-    <color name="theme_primary_light">#D1C4E9</color>
+    <color name="theme_primary">#02737a</color>
+    <color name="theme_primary_dark">#02737a</color>
+    <color name="theme_primary_light">#02737a</color>
 
-    <color name="theme_accent">#03A9F4</color>
-    <color name="theme_accent_dark">#0381F4</color>
+    <color name="theme_accent">#fdc112</color>
+    <color name="theme_accent_dark">#fdc112</color>
 
-    <color name="theme_accent_2">#03A9F4</color>
-
-    <color name="theme_button">@color/theme_accent</color>
-    <color name="theme_button_selected">@color/theme_accent_dark</color>
-
-    <color name="theme_background_highlighted">#f4f4f4</color>
+    <color name="theme_background_highlighted">@color/gray_light</color>
     <color name="theme_background">@color/gray_light</color>
 
 
@@ -22,33 +17,19 @@
     <color name="theme_text_disabled">#cbcfd0</color>
     <color name="theme_text_light">@color/white</color>
 
-
-    <!--<color name="libhotels_theme_primary">#ff6959</color>-->
-    <!--<color name="libhotels_theme_primary_dark">#ff6959</color>-->
-
-    <!--<color name="libhotels_theme_accent">#555555</color>-->
-    <!--<color name="libhotels_theme_accent_light">#f4f4f4</color>-->
-
-    <!--<color name="libhotels_theme_background">@color/gray_light</color>-->
-
-    <!--<color name="libhotels_theme_text_primary">#212121</color>-->
-    <!--<color name="libhotels_theme_text_secondary">#727272</color>-->
-
     <color name="transparent_black">#A5000000</color>
     <color name="transparent_bright_black">#28000000</color>
     <color name="image_overlay_background">#28000000</color>
 
     <color name="image_placeholder">#d8d8d8</color>
 
-    <color name="accent">#03A9F4</color>
+
+    <color name="gray_dark">#555555</color>
+    <color name="text_gray">#acacac</color>
     <color name="gray">#cccccc</color>
     <color name="line_gray">#EDEEEE</color>
-    <color name="gray_dark">#555555</color>
     <color name="gray_light">#f4f4f4</color>
-    <color name="text_gray">#acacac</color>
-    <color name="disabled">#ffb4ac</color>
     <color name="white">@android:color/white</color>
-
 
     <color name="ripple_item_normal_state">#80666666</color>
 

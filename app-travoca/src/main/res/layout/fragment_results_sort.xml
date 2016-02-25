@@ -2,16 +2,16 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/filter_frame"
-    style="@style/HotelsAppTheme.Fragment.SemiTransparent.Container"
+    style="@style/AppTheme.Fragment.SemiTransparent.Container"
     android:background="@color/transparent_black">
 
 
     <LinearLayout
         android:id="@+id/sort_frame"
-        style="@style/HotelsAppTheme.Fragment.SemiTransparent.Content">
+        style="@style/AppTheme.Fragment.SemiTransparent.Content">
 
         <TextView
-            style="HotelsAppTheme.TextAppearance.Hotel.Title"
+            style="AppTheme.TextAppearance.Hotel.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

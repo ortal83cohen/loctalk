@@ -12,7 +12,7 @@
     card_view:cardElevation="0dp">
 
     <TextView
-        style="@style/HotelsAppTheme.TextAppearance.HotelList.SubHeader"
+        style="@style/AppTheme.TextAppearance.HotelList.SubHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ssssssssssssssssss" />

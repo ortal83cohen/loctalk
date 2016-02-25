@@ -16,43 +16,43 @@
 
     <TextView
         android:id="@+id/nav_recent_searches"
-        style="@style/HotelsAppTheme.Widget.NavDrawer.Item"
+        style="@style/AppTheme.Widget.NavDrawer.Item"
         android:drawableLeft="@drawable/mainnav_recent_search"
         android:lines="1"
         android:text="@string/mainnav_recent_search" />
 
     <TextView
         android:id="@+id/nav_favorites"
-        style="@style/HotelsAppTheme.Widget.NavDrawer.Item"
+        style="@style/AppTheme.Widget.NavDrawer.Item"
         android:drawableLeft="@drawable/mainnav_favourites"
         android:text="@string/mainnav_favorites" />
 
     <TextView
         android:id="@+id/nav_code_scanner"
-        style="@style/HotelsAppTheme.Widget.NavDrawer.Item"
+        style="@style/AppTheme.Widget.NavDrawer.Item"
         android:drawableLeft="@drawable/mainnav_scanner"
         android:text="@string/mainnav_code_scanner" />
 
     <TextView
         android:id="@+id/nav_contribute"
-        style="@style/HotelsAppTheme.Widget.NavDrawer.Item"
+        style="@style/AppTheme.Widget.NavDrawer.Item"
         android:drawableLeft="@drawable/mainnav_my_profile"
         android:text="@string/mainnav_contribute" />
 
 
     <View
         android:id="@+id/nav_divider"
-        style="@style/HotelsAppTheme.Widget.NavDrawer.Separator" />
+        style="@style/AppTheme.Widget.NavDrawer.Separator" />
 
 
     <TextView
         android:id="@+id/nav_settings"
-        style="@style/HotelsAppTheme.Widget.NavDrawer.Item"
+        style="@style/AppTheme.Widget.NavDrawer.Item"
         android:drawableLeft="@drawable/mainnav_my_settings"
         android:text="@string/mainnav_settings" />
     <TextView
         android:id="@+id/login"
-        style="@style/HotelsAppTheme.Widget.NavDrawer.Item"
+        style="@style/AppTheme.Widget.NavDrawer.Item"
         android:drawableLeft="@drawable/mainnav_my_profile"
         android:text="@string/mainnav_login" />
 
