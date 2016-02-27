@@ -233,7 +233,9 @@ public class FavoritesListFragment extends BaseFragment {
             userId = user.id;
         }
         try {
-            mTravocaApi.records(mSearchRequest, offset,userId).enqueue(mResultsCallback);
+            mSearchRequest.setUserId(userId);
+            mSearchRequest.setOffset(offset);
+            mTravocaApi.records(mSearchRequest).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             getActivity().finish();
         }

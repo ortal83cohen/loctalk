@@ -74,7 +74,7 @@ public class ObjectGraph {
 
     public TravocaApi travocaApi() {
         if (mTravocaApi == null) {
-            TravocaApiConfig cfg = new TravocaApiConfig(Config.TRAVOCA_API_KEY, Config.TRAVOCA_API_CAMPAIGN_ID);
+            TravocaApiConfig cfg = new TravocaApiConfig(Config.TRAVOCA_API_KEY);
             cfg.setDebug(BuildConfig.DEBUG);
             cfg.setLogger(new RetrofitLogger());
             mTravocaApi = new TravocaApi(cfg, apiHttpClient());

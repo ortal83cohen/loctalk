@@ -1,5 +1,6 @@
 package com.travoca.api;
 
+import android.location.Location;
 import android.support.v4.util.ArrayMap;
 
 import com.squareup.okhttp.HttpUrl;
@@ -52,7 +53,6 @@ public class TravocaApi {
 
             HttpUrl url = request.httpUrl().newBuilder()
                     .addQueryParameter("apiKey", mConfig.getApiKey())
-                    .addQueryParameter("campaignId", String.valueOf(mConfig.getCampaignId()))
                     .build();
 
 
@@ -60,8 +60,8 @@ public class TravocaApi {
         }
     };
 
-    public TravocaApi(String apiKey, int campaignId) {
-        this(new TravocaApiConfig(apiKey, campaignId), null);
+    public TravocaApi(String apiKey) {
+        this(new TravocaApiConfig(apiKey), null);
     }
 
     public TravocaApi(TravocaApiConfig config) {
@@ -90,7 +90,7 @@ public class TravocaApi {
         return restAdapter.create(Service.class);
     }
 
-    public Call<ResultsResponse> records(SearchRequest searchRequest, int offset,String userId) throws InvalidParameterException {
+    public Call<ResultsResponse> records(SearchRequest searchRequest) throws InvalidParameterException {
 
         Service service = create();
 
@@ -101,7 +101,7 @@ public class TravocaApi {
         if (loc == null) {
             throw new InvalidParameterException();
         }
-        query.put("userId", userId);
+        query.put("userId", searchRequest.getUserId());
         query.put("type", loc.getType());
         query.put("context", loc.getContext());
 
@@ -113,8 +113,8 @@ public class TravocaApi {
             query.put("limit", String.valueOf(999));
             query.put("offset", String.valueOf(0));
         } else {
-            query.put("limit", String.valueOf(LIMIT));
-            query.put("offset", String.valueOf(offset));
+            query.put("limit", String.valueOf(searchRequest.getLimit()));
+            query.put("offset", String.valueOf(searchRequest.getOffset()));
         }
 
         // Sort
@@ -143,7 +143,7 @@ public class TravocaApi {
 
         Service service = create();
 
-        return service.like(new LikeRequest(String.valueOf(id), "unlike",userId));
+        return service.like(new LikeRequest(String.valueOf(id), "unlike", userId));
     }
 
 
@@ -152,7 +152,7 @@ public class TravocaApi {
         Service service = create();
 
 
-        return service.saveRecordDetails(new ImageRequest(image, record, title, description, locationName, lat, lon, type,userId));
+        return service.saveRecordDetails(new ImageRequest(image, record, title, description, locationName, lat, lon, type, userId));
     }
 
     public Call<ResultsResponse> saveUser( String userId,String email, String imageUrl,String firstName,String lastName) {

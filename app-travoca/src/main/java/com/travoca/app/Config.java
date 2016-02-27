@@ -12,7 +12,7 @@ public class Config {
     public static final String POI_IMAGE_ENDPOINT = "http://d1pa4et5htdsls.cloudfront.net/images/";
 
     public static final String TRAVOCA_API_KEY = "Ec95jbYA1iuAt";
-    public static final int TRAVOCA_API_CAMPAIGN_ID = 280832094; //Sway Android
+
     private static String sCoreInterfaceEndpoint = CORE_INTERFACE_ENDPOINT;
     private static String sCoreInterfaceSecureEndpoint = CORE_INTERFACE_SECURE_ENDPOINT;
 

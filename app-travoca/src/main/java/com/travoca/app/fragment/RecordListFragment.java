@@ -233,7 +233,9 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
             userId = user.id;
         }
         try {
-            mTravocaApi.records(searchRequest, offset,userId).enqueue(mResultsCallback);
+            searchRequest.setUserId(userId);
+            searchRequest.setOffset(offset);
+            mTravocaApi.records(searchRequest).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             getActivity().finish();
         }

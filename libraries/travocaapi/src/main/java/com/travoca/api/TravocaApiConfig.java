@@ -12,17 +12,11 @@ public class TravocaApiConfig {
 
     private String mApiKey;
     private String mEndpoint = TRAVOCA_API_ENDPOINT_DEFAULT;
-
-
-
-
     private boolean mDebug;
-    private int mCampaignId;
     private HttpLoggingInterceptor.Logger logger;
 
-    public TravocaApiConfig(String apiKey, int campaignId) {
+    public TravocaApiConfig(String apiKey) {
         this.mApiKey = apiKey;
-        this.mCampaignId = campaignId;
     }
 
     public String getApiKey() {
@@ -43,10 +37,6 @@ public class TravocaApiConfig {
 
     public void setDebug(boolean debug) {
         mDebug = debug;
-    }
-
-    public int getCampaignId() {
-        return mCampaignId;
     }
 
     public HttpLoggingInterceptor.Logger getLogger() {

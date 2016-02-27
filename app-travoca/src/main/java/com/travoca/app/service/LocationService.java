@@ -13,15 +13,30 @@ import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.squareup.okhttp.ResponseBody;
+import com.travoca.api.TravocaApi;
+import com.travoca.api.model.Record;
+import com.travoca.api.model.ResultsResponse;
+import com.travoca.api.model.SearchRequest;
 import com.travoca.app.R;
+import com.travoca.app.TravocaApplication;
 import com.travoca.app.activity.HomeActivity;
+import com.travoca.app.activity.RecordDetailsActivity;
+import com.travoca.app.events.Events;
+import com.travoca.app.events.SearchResultsEvent;
+import com.travoca.app.model.RecordListRequest;
+import com.travoca.app.model.ViewPort;
+import com.travoca.app.travocaapi.RetrofitCallback;
+
+import retrofit.Response;
 
 public class LocationService extends Service {
     private static final String TAG = "BOOMBOOMTESTGPS";
     private static final int NOTIFICATION_ID = 1;
+    private static final double MINIMUM_DISTANCE = 0.05;
     private LocationManager mLocationManager = null;
-    private static final int LOCATION_INTERVAL = 1000;
-    private static final float LOCATION_DISTANCE = 10f;
+    private static final int LOCATION_INTERVAL = 10000;
+    private static final float LOCATION_DISTANCE = 1000f;
     private Context context;
 
     private class LocationListener implements android.location.LocationListener {
@@ -38,10 +53,40 @@ public class LocationService extends Service {
             mLastLocation = new Location(provider);
         }
 
+        private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
+            @Override
+            protected void failure(ResponseBody response, boolean isOffline) {
+                Events.post(new SearchResultsEvent(true, 0));
+                Log.e(TAG, "failure: ");
+            }
+
+            @Override
+            protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
+                if (apiResponse.records.size() == 1) {
+                    Record record = apiResponse.records.get(0);
+                    Intent intent = new Intent(context, RecordDetailsActivity.class);
+                    intent.putExtra(RecordDetailsActivity.EXTRA_DATA, record);
+                    intent.putExtra(RecordDetailsActivity.EXTRA_REQUEST, new RecordListRequest());
+                    PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+                    addNotification(context, "record name " + record.title, record.description + "/" +
+                            record.locationName,pendingIntent);
+                }
+                Log.e(TAG, "success: " + apiResponse.records.size());
+            }
+
+        };
+
         @Override
         public void onLocationChanged(Location location) {
             Log.e(TAG, "onLocationChanged: " + location);
-            addNotification(context, "onLocationChanged: ", location.toString());
+            final TravocaApi travocaApi = TravocaApplication.provide(context).travocaApi();
+            SearchRequest searchRequest = new SearchRequest();
+            searchRequest.setType(new ViewPort("service", location.getLatitude() + MINIMUM_DISTANCE,
+                    location.getLongitude() + MINIMUM_DISTANCE, location.getLatitude() - MINIMUM_DISTANCE,
+                    location.getLongitude() - MINIMUM_DISTANCE));
+            searchRequest.setLimit(1);
+            travocaApi.records(searchRequest).enqueue(mResultsCallback);
+
             mLastLocation.set(location);
         }
 
@@ -127,7 +172,7 @@ public class LocationService extends Service {
         }
     }
 
-    private void addNotification(Context context, String title, String body) {
+    private void addNotification(Context context, String title, String body, PendingIntent pendingIntent) {
         Toast.makeText(context, title, Toast.LENGTH_LONG);
 
         Notification.Builder notificationBuilder = new Notification.Builder(context)
@@ -136,8 +181,6 @@ public class LocationService extends Service {
                 .setSmallIcon(R.drawable.loadersmall01);
 
         // create the pending intent and add to the notification
-        Intent intent = new Intent(context, HomeActivity.class);
-        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
         notificationBuilder.setContentIntent(pendingIntent);
         Notification notification = notificationBuilder.build();
         notification.flags = Notification.DEFAULT_LIGHTS | Notification.FLAG_AUTO_CANCEL;

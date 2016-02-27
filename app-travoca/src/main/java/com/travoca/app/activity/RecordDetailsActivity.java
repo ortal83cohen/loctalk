@@ -30,7 +30,7 @@ import butterknife.ButterKnife;
 public class RecordDetailsActivity extends BaseActivity implements HomeFragment.Listener {
     public static final String FRAGMENT_HOTEL_DETAILS = "fragment_hotel_details";
     private static final String FRAGMENT_HOME = "fragment_datepicker";
-    private static final String EXTRA_DATA = "data";
+    public static final String EXTRA_DATA = "data";
     private Record mRecord;
     private StreetViewPanorama mStreetView;
     private android.app.Fragment mStreetViewFragment;

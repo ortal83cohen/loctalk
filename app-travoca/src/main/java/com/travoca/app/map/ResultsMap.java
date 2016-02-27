@@ -201,7 +201,9 @@ public class ResultsMap {
             userId = user.id;
         }
         try {
-            mTravocaApi.records(searchRequest, 0, userId).enqueue(mResultsCallback);
+            searchRequest.setUserId(userId);
+            searchRequest.setOffset(0);
+            mTravocaApi.records(searchRequest ).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             mActivity.finish();
         }
