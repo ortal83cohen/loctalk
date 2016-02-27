@@ -95,24 +95,8 @@
     <string name="language">Language</string>
     <string name="select_language">Select language</string>
     <string name="allow_notification">Allow notification</string>
-    <string name="total_price">Total Price</string>
     <string name="manage_confirmed_booking">View details</string>
     <string name="favorites">Favorites</string>
-    <string name="load_more_currencies">Load more currencies</string>
-    <string name="booking_summary_title">Booking details</string>
-    <plurals name="nights_caps">
-        <item quantity="one">NIGHT</item>
-        <item quantity="other">NIGHTS</item>
-    </plurals>
-    <string name="special_deal">Special deal %1$d%% Discount</string>
-    <plurals name="text_summary">
-        <item quantity="one">Price for one night</item>
-        <item quantity="other">Price for %d nights</item>
-    </plurals>
-    <string name="text_tax_summary">ex. extra tax of %1$s</string>
-    <string name="check_in">Check-in</string>
-    <string name="check_out">Check-out</string>
-    <string name="booking_number">Booking number</string>
     <string name="manage_your_reservation">Manage your reservation</string>
     <string name="booking_important_information">Important Information</string>
     <string name="contact_us">Contact us</string>
@@ -236,4 +220,5 @@
     <string name="pick_image_intent_text">Pick image</string>
     <string name="btn_logout_from_google">Logout from Google</string>
     <string name="btn_revoke_access">Revoke Access</string>
+    <string name="service_status_monitor">service</string>
 </resources>

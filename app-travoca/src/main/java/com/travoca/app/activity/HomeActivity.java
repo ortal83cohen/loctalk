@@ -1,15 +1,12 @@
 package com.travoca.app.activity;
 
 import android.animation.ValueAnimator;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.net.ParseException;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,7 +21,6 @@ import com.google.android.gms.location.ActivityRecognition;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.places.Places;
 import com.squareup.okhttp.ResponseBody;
-import com.squareup.otto.Subscribe;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.Type;
 import com.travoca.api.utils.RequestUtils;
@@ -33,12 +29,11 @@ import com.travoca.app.R;
 import com.travoca.app.analytics.AnalyticsCalls;
 import com.travoca.app.anim.BlurAnimation;
 import com.travoca.app.core.CoreInterface;
-import com.travoca.app.events.Events;
-import com.travoca.app.events.UserLoginEvent;
-import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.fragment.HomeFragment;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.preferences.UserPreferences;
+import com.travoca.app.service.LocationService;
+import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.utils.AppLog;
 import com.travoca.app.widget.IntentIntegrator;
 import com.travoca.app.widget.IntentResult;
@@ -52,6 +47,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
 
     public static final int REQUEST_CHECK_SETTINGS = 1;
     private static final String FRAGMENT_HOME = "loc_chooser";
+    private static final int NOTIFICATION_ID = 0;
     protected GoogleApiClient mGoogleApiClient;
     private Tracker mTracker;
     private CoreInterface.Service mCoreInterface;
@@ -96,13 +92,10 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Uri referrer = getReferrer();
-        if (referrer != null) {
-            AppLog.d(referrer.toString());
-//            Intent intent = new Intent(this, RouteActivity.class);
-//            intent.setData(referrer);
-//            startActivity(intent);
-        }
+
+//        Intent intentService = new Intent(this, LocationService.class);
+//        startService(intentService);
+
         ButterKnife.bind(this);
         AnalyticsCalls.get().register(getApplicationContext());
         App.provide(this).facebook().initialize();
@@ -230,9 +223,8 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
 
         request.setType(locationType);
         RequestUtils.apply(request);
-
-        Intent myIntent = RecordListActivity.createIntent(request, this);
-        startActivity(myIntent);
+        Intent intentActivity = RecordListActivity.createIntent(request, this);
+        startActivity(intentActivity);
     }
 
     @Override
@@ -250,6 +242,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
     public void onConnectionSuspended(int i) {
 
     }
+
     @Override
     protected void onPause() {
         super.onPause();
@@ -257,6 +250,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
         // Logs 'app deactivate' App Event.
         AppEventsLogger.deactivateApp(this);
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {

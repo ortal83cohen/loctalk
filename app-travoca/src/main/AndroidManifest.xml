@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <!-- Get available accounts: email autocomplete -->
     <!-- Google+ To retrieve the account name (email) as part of sign-in -->
@@ -132,8 +133,19 @@
             android:name="com.mixpanel.android.MPConfig.EnableDebugLogging"
             android:value="@bool/is_mixpanel_debug" />
         <!-- [END] Mixpanel Analytics //-->
-
-
+        <receiver
+            android:enabled="true"
+            android:name="com.travoca.app.service.BootUpReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".service.LocationService"
+            android:exported="true" android:enabled="true"
+            android:process=":my_service"
+            />
     </application>
 
 </manifest>

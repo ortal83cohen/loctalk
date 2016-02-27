@@ -27,7 +27,7 @@ public class UserPreferences {
         mLang = languageCode;
     }
 
-    public String getLang() {
+    public String getLanguage() {
         if (mLang == null) {
             mLang = Language.getDefault();
         }

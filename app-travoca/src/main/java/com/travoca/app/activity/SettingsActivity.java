@@ -18,6 +18,7 @@ import com.travoca.app.preferences.UserPreferencesStorage;
 import com.travoca.app.utils.AppLog;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import de.psdev.licensesdialog.LicensesDialog;
 
@@ -28,13 +29,11 @@ import de.psdev.licensesdialog.LicensesDialog;
 public class SettingsActivity extends SettingsActionBarActivity {
 
     private static final int ACTION_API_ENDPOINT = 1;
-    private static final int ACTION_CURRENCY = 2;
     private static final int ACTION_LANGUAGE = 3;
     private static final int ACTION_PRIVACY_POLICY = 4;
     private static final int ACTION_TOS = 5;
     private static final int ACTION_LICENSES = 6;
     private static final int ACTION_VERSION = 7;
-    private static final int ACTION_PRICE = 8;
     private static final int ACTION_NOTIFICATION = 8;
     private int mVersionPress = 0;
 
@@ -48,13 +47,10 @@ public class SettingsActivity extends SettingsActionBarActivity {
         ArrayList<Preference> preferences = new ArrayList<>();
 
         UserPreferences up = App.provide(this).getUserPrefs();
-        String currencyCode = up.getCurrencyCode();
-//        String languageCode = up.getLang();
+        String languageCode = up.getLanguage();
 
-        preferences.add(new Item(R.string.currency, currencyCode, ACTION_CURRENCY));
-//        preferences.add(new Item(R.string.language, languageCode, ACTION_LANGUAGE));
-        preferences.add(new Item(R.string.show_price, renderPriceType(up.getPriceShowType()), ACTION_PRICE));
-//        preferences.add(new SwitchItem(R.string.allow_notification, true, ACTION_NOTIFICATION));
+        preferences.add(new Item(R.string.language, languageCode, ACTION_LANGUAGE));
+        preferences.add(new SwitchItem(R.string.allow_notification, true, ACTION_NOTIFICATION));
 
         preferences.add(new Category(R.string.settings_about));
         preferences.add(new Item(R.string.terms_of_service, ACTION_TOS));
@@ -82,8 +78,6 @@ public class SettingsActivity extends SettingsActionBarActivity {
     protected void onPreferenceItemClick(int action, final Item pref) {
         if (action == ACTION_API_ENDPOINT) {
             showEndpointDialog(pref);
-        } else if (action == ACTION_PRICE) {
-            showPriceDialog(pref);
         } else if (action == ACTION_LANGUAGE) {
             showLanguageDialog(pref);
         } else if (action == ACTION_PRIVACY_POLICY) {
@@ -96,42 +90,6 @@ public class SettingsActivity extends SettingsActionBarActivity {
                     .build()
                     .show();
         }
-    }
-
-
-    private void showPriceDialog(final Item pref) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-
-        final CharSequence[] items = new CharSequence[]{
-                getString(R.string.price_per_stay), getString(R.string.price_per_night)
-        };
-
-        builder.setItems(items, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                UserPreferences userPrefs = App.provide(SettingsActivity.this).getUserPrefs();
-                if (which == 0) {
-                    userPrefs.setPriceShowType(UserPreferences.PRICE_SHOW_TYPE_STAY);
-                } else {
-                    userPrefs.setPriceShowType(UserPreferences.PRICE_SHOW_TYPE_NIGHT);
-                }
-                saveUserPrefs(userPrefs);
-                pref.summaryRes = 0;
-                pref.summary = (String) items[which];
-
-                notifyDataSetChanged();
-            }
-        });
-
-        builder.setTitle(R.string.show_price);
-        builder.create().show();
-    }
-
-    private int renderPriceType(int priceType) {
-        if (priceType == UserPreferences.PRICE_SHOW_TYPE_NIGHT) {
-            return R.string.price_per_night;
-        }
-        return R.string.price_per_stay;
     }
 
     private void saveUserPrefs(UserPreferences userPrefs) {

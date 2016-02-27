@@ -70,7 +70,7 @@ public class ObjectGraph {
     public RecordListRequest createHotelsRequest() {
         RecordListRequest request = new RecordListRequest();
         UserPreferences userPrefs = getUserPrefs();
-        request.setLanguage(userPrefs.getLang());
+        request.setLanguage(userPrefs.getLanguage());
         request.setCurrency(userPrefs.getCurrencyCode());
         request.setCustomerCountryCode(userPrefs.getCountryCode());
         return request;

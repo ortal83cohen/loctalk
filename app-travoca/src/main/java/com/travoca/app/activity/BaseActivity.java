@@ -183,7 +183,7 @@ public abstract class BaseActivity extends AppCompatActivity {
             if (mRequest != null) {
                 UserPreferences prefs = getUserPrefs();
                 mRequest.setCurrency(prefs.getCurrencyCode());
-                mRequest.setLanguage(Language.getSupported(prefs.getLang()));
+                mRequest.setLanguage(Language.getSupported(prefs.getLanguage()));
             }
         }
         return mRequest;
