@@ -83,7 +83,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
         if (referrer != null) {
             try {
                 return Uri.parse(referrer);
-            } catch (ParseException e) {
+            } catch (ParseException ignored) {
             }
         }
         return null;

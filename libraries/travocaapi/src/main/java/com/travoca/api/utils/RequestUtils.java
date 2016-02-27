@@ -4,7 +4,7 @@ import android.text.TextUtils;
 import android.util.SparseArray;
 import android.util.SparseBooleanArray;
 
-import com.travoca.api.model.HotelRequest;
+import com.travoca.api.model.SearchRequest;
 
 import java.util.ArrayList;
 
@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class RequestUtils {
 
-    public static void apply(HotelRequest request) {
+    public static void apply(SearchRequest request) {
 
     }
 

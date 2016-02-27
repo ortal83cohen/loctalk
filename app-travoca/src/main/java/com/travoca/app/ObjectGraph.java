@@ -63,16 +63,12 @@ public class ObjectGraph {
             mLastSearchRequest = new SearchRequest();
         }
         mLastSearchRequest.setType(request.getType());
-        mLastSearchRequest.setNumberOfPersons(request.getNumberOfPersons());
-        mLastSearchRequest.setNumbersOfRooms(request.getNumberOfRooms());
+
     }
 
     public RecordListRequest createHotelsRequest() {
         RecordListRequest request = new RecordListRequest();
         UserPreferences userPrefs = getUserPrefs();
-        request.setLanguage(userPrefs.getLanguage());
-        request.setCurrency(userPrefs.getCurrencyCode());
-        request.setCustomerCountryCode(userPrefs.getCountryCode());
         return request;
     }
 

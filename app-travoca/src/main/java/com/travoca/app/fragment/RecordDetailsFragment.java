@@ -340,7 +340,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
                         .getExternalStorageDirectory().toString()
                         + "/data/downloadedfile.3gp");
                 mediaPlayer.prepare();
-            } catch (IOException e) {
+            } catch (IOException ignored) {
 
             }
             mPlayButton.setEnabled(true);
@@ -355,7 +355,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.menu_hotel_summary, menu);
+        inflater.inflate(R.menu.menu_record_details, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
 

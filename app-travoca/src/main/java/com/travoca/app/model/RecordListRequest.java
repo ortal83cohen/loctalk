@@ -37,8 +37,6 @@ public class RecordListRequest extends SearchRequest implements Parcelable {
             setType((MapSelectedViewPort) in.readParcelable(MapSelectedViewPort.class.getClassLoader()));
         }
 
-        setNumberOfPersons(in.readInt());
-        setNumbersOfRooms(in.readInt());
         setCurrency(in.readString());
         setCustomerCountryCode(in.readString());
         setLanguage(in.readString());
@@ -50,8 +48,6 @@ public class RecordListRequest extends SearchRequest implements Parcelable {
         setLanguage(hotelsRequest.getLanguage());
         setCurrency(hotelsRequest.getCurrency());
         setCustomerCountryCode(hotelsRequest.getCustomerCountryCode());
-        setNumberOfPersons(hotelsRequest.getNumberOfPersons());
-        setNumbersOfRooms(hotelsRequest.getNumberOfRooms());
     }
 
     public Location getLocation() {
@@ -81,8 +77,6 @@ public class RecordListRequest extends SearchRequest implements Parcelable {
             dest.writeInt(0);
         }
 
-        dest.writeInt(getNumberOfPersons());
-        dest.writeInt(getNumberOfRooms());
         dest.writeString(getCurrency());
         dest.writeString(getCustomerCountryCode());
         dest.writeString(getLanguage());

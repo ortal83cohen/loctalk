@@ -25,7 +25,7 @@
 
     <style name="AppTheme.TextAppearance.Title" parent="TextAppearance.AppCompat.Large">
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">26dp</item>
+        <item name="android:textSize">26sp</item>
     </style>
 
     <style name="AppTheme.TextAppearance.Normal">
@@ -97,7 +97,7 @@
     </style>
 
     <style name="AppTheme.TextAppearance.Datepicker.Small.Arrow">
-        <item name="android:textSize">32dp</item>
+        <item name="android:textSize">32sp</item>
         <item name="android:typeface">monospace</item>
     </style>
 
@@ -156,7 +156,7 @@
 
     <style name="AppTheme.TextAppearance.Hotel.DiscountPercentage">
         <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">11dp</item>
+        <item name="android:textSize">11sp</item>
         <item name="fontPath">@string/font_bold</item>
     </style>
 
@@ -263,7 +263,7 @@
     </style>
 
     <style name="AppTheme.TextAppearance.AppBar.Subtitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
-        <item name="android:textSize">12dp</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="AppTheme.TextAppearance.Booking" />
@@ -286,7 +286,7 @@
         <item name="android:inputType">text</item>
         <item name="android:padding">24dp</item>
         <item name="android:gravity">start</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">20sp</item>
         <item name="fontPath">@string/font_medium</item>
     </style>
 
@@ -298,7 +298,7 @@
         <item name="android:inputType">text</item>
         <item name="android:padding">@dimen/default_padding</item>
         <item name="android:gravity">center</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">20sp</item>
         <item name="fontPath">@string/font_medium</item>
     </style>
 
@@ -355,7 +355,7 @@
         <item name="android:background">@drawable/ripple_button_theme_accent</item>
         <item name="android:gravity">center</item>
         <item name="android:textAppearance">@style/AppTheme.TextAppearance.Title</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="AppTheme.Widget.FilterPriceText">

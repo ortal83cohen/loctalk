@@ -1,7 +1,6 @@
 package com.travoca.app.map;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
 import android.view.View;
@@ -23,23 +22,21 @@ import com.travoca.api.TravocaApi;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.SearchRequest;
-import com.travoca.api.model.search.Poi;
 import com.travoca.api.model.search.Type;
 import com.travoca.api.model.search.ViewPortType;
 import com.travoca.app.App;
-import com.travoca.app.TravocaApplication;
 import com.travoca.app.R;
+import com.travoca.app.TravocaApplication;
 import com.travoca.app.activity.BaseActivity;
 import com.travoca.app.activity.RecordListActivity;
-import com.travoca.app.core.CoreInterface;
-import com.travoca.app.member.MemberStorage;
-import com.travoca.app.member.model.User;
-import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.events.Events;
 import com.travoca.app.events.SearchRequestEvent;
+import com.travoca.app.member.MemberStorage;
+import com.travoca.app.member.model.User;
 import com.travoca.app.model.Location;
 import com.travoca.app.model.LocationWithTitle;
 import com.travoca.app.model.MapSelectedViewPort;
+import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.utils.AppLog;
 
 import java.security.InvalidParameterException;
@@ -47,7 +44,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
-import retrofit.Call;
 import retrofit.Response;
 
 
@@ -65,19 +61,14 @@ public class ResultsMap {
     private final GoogleMap mGoogleMap;
     private final Listener mListener;
     private final HotelMarker mRecordMarker;
-    private final PoiMarker mPoiMarker;
     private final HashSet<Integer> selectedRecordsList = new HashSet<>();
-    private final HashSet<Integer> selectedPoiList = new HashSet<>();
     private MarkerManager mMarkerManager;
     private MarkerManager.Collection mHotelsCollection;
-    private MarkerManager.Collection mPoiCollection;
     private boolean mHotelsVisible;
     private double mLastLat = 0;
     private double mLastLong = 0;
     private double mLastZoom = 0;
     private Marker lastRecordMarkerClicked = null;
-    private Marker lastPoiMarkerClicked = null;
-    private boolean[] mPoisFilter = null;
     private double lastRadiusInKM;
 
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
@@ -88,14 +79,11 @@ public class ResultsMap {
 
         @Override
         protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
-//            AppLog.d("TravocaApi", "Response: " + apiResponse.meta);
             ((RecordListActivity) mActivity).hideLoaderImage();
             mHotelsCollection.clear();
-            mPoiCollection.clear();
             if (mHotelsVisible) {
                 addRecordsMarkers(apiResponse.records);
             }
-            addPois();
         }
 
     };
@@ -107,7 +95,6 @@ public class ResultsMap {
         mMarkerManager = new MarkerManager(googleMap);
         mResultsCallback.attach(mActivity);
         mRecordMarker = new HotelMarker(mActivity);
-        mPoiMarker = new PoiMarker(mActivity);
         init();
     }
 
@@ -195,15 +182,10 @@ public class ResultsMap {
             }
         });
         mHotelsCollection = mMarkerManager.newCollection("records");
-        mPoiCollection = mMarkerManager.newCollection("pois");
 
         toggleHotels();
     }
 
-    public void setPoiFilters(boolean[] filters) {
-
-        mPoisFilter = filters;
-    }
 
     public void refreshHotels() {
 
@@ -213,13 +195,13 @@ public class ResultsMap {
         MemberStorage memberStorage = App.provide(mActivity).memberStorage();
         User user = memberStorage.loadUser();
         String userId;
-        if(user==null){
-            userId="";
-        }else {
+        if (user == null) {
+            userId = "";
+        } else {
             userId = user.id;
         }
         try {
-            mTravocaApi.records(searchRequest, 0,userId).enqueue(mResultsCallback);
+            mTravocaApi.records(searchRequest, 0, userId).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             mActivity.finish();
         }
@@ -258,64 +240,6 @@ public class ResultsMap {
         }
     }
 
-    private void addPois() {
-
-        CoreInterface.Service coreInterface = CoreInterface.create(mActivity);
-        Type type = mActivity.getHotelsRequest().getType();
-        Call<List<Poi>> call = null;
-        if (type instanceof Location) {
-            call = coreInterface.poiList(String.valueOf(((Location) type).getLatLng().longitude), String.valueOf(((Location) type).getLatLng().latitude), String.valueOf(((int) (lastRadiusInKM * 1000))));
-        } else if (type instanceof ViewPortType) {
-            call = coreInterface.poiList(String.valueOf(((ViewPortType) type).getNortheastLon()), String.valueOf(((ViewPortType) type).getNortheastLat()),
-                    String.valueOf(((ViewPortType) type).getSouthwestLon()), String.valueOf(((ViewPortType) type).getSouthwestLat()));
-        }
-        if (call != null) {
-            call.enqueue(new RetrofitCallback<List<Poi>>() {
-                @Override
-                public void success(List<Poi> list, Response<List<Poi>> response) {
-                    mapAsync(list);
-                }
-
-                @Override
-                public void failure(ResponseBody error, boolean isOffline) {
-                    mapAsync(null);
-                }
-            });
-        }
-    }
-
-
-    private void mapAsync(final List<Poi> poiList) {
-        HashMap<Integer, Integer> types = new HashMap<>();
-        if (poiList != null) {
-            for (int i = 0; i < poiList.size(); i++) {
-                Poi poi = poiList.get(i);
-                if (poi.type_id == PoiMarker.TYPE_DISTRICT || poi.type_id == PoiMarker.TYPE_AREA) {
-                    break;
-                }
-                if (!types.containsKey(poi.getType_id())) {
-                    types.put(poi.getType_id(), 1);
-                } else {
-                    types.put(poi.getType_id(), types.get(poi.getType_id()) + 1);
-                }
-                if (mPoisFilter != null && mPoisFilter[poi.type_id]) {
-                    mPoiCollection.addMarker(mPoiMarker.create(i, poi, PoiMarker.STATUS_UNSEEN));
-                }
-            }
-
-
-            mPoiCollection.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
-                @Override
-                public boolean onMarkerClick(Marker marker) {
-                    marker.showInfoWindow();
-                    return true;
-                }
-            });
-        }
-
-        mListener.onLandmarksTypesChange(types);
-    }
-
     public void moveCamera(double lat, double lon) {
         mGoogleMap.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(lat, lon)));
     }
@@ -328,7 +252,6 @@ public class ResultsMap {
     public boolean toggleHotels() {
         if (mHotelsVisible) {
             mHotelsCollection.clear();
-            mPoiCollection.clear();
             mHotelsVisible = false;
         } else {
             refreshHotels();

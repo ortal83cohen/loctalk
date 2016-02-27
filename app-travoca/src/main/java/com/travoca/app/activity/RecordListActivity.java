@@ -38,7 +38,6 @@ import com.travoca.app.fragment.HotelMapSummaryFragment;
 import com.travoca.app.fragment.RecordListFragment;
 import com.travoca.app.fragment.RecordsMapFragment;
 import com.travoca.app.fragment.ResultsSortFragment;
-import com.travoca.app.map.PoiMarker;
 import com.travoca.app.map.ResultsMap;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.widget.AppBar;
@@ -71,7 +70,6 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
     private int mRateMinPrice = 10;
     private int mRateMaxPrice = 1250;
     private HashMap<Integer, Integer> mPoisTypes;
-    private boolean[] mPoisFilter;
 
     public static Intent createIntent(RecordListRequest request, Context context) {
         Intent intent = new Intent(context, RecordListActivity.class);
@@ -105,8 +103,6 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
         ButterKnife.bind(this);
 
         configLoaderImage();
-
-        mPoisFilter = createFilters(PoiMarker.TYPES);
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this, 0 /* clientId */, this)
@@ -270,15 +266,12 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == RESULT_OK) {
-            refreshResults(mPoisFilter);
-        }
+
         super.onActivityResult(requestCode, resultCode, data);
     }
 
     private void refreshResults(boolean[] result) {
         if (mMap != null) {
-            mMap.setPoiFilters(result);
             mMap.refreshHotels();
         }
         refreshList();
@@ -336,7 +329,6 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
         App.provide(this).updateLastSeatchRequest(getHotelsRequest());
         if (mMap != null) {
             mMap.refreshHotels();
-            mMap.setPoiFilters(mPoisFilter);
             if (locationType instanceof ViewPortType) {
                 mMap.moveCamera(((ViewPortType) locationType).getNortheastLat(), ((ViewPortType) locationType).getNortheastLon(), ((ViewPortType) locationType).getSouthwestLat(), ((ViewPortType) locationType).getSouthwestLon());
             } else if (locationType instanceof SprType) {

@@ -11,8 +11,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.StreetViewPanorama;
 import com.google.android.gms.maps.StreetViewPanoramaFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.travoca.api.model.HotelRequest;
 import com.travoca.api.model.Record;
+import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.Type;
 import com.travoca.api.utils.RequestUtils;
 import com.travoca.app.R;
@@ -153,7 +153,7 @@ public class RecordDetailsActivity extends BaseActivity implements HomeFragment.
         }
     }
 
-    public void showSearchResults(Location location, HotelRequest request) {
+    public void showSearchResults(Location location, SearchRequest request) {
         RecordListRequest searchRequest = getHotelsRequest();
         searchRequest.setType(location);
         RequestUtils.apply(searchRequest);

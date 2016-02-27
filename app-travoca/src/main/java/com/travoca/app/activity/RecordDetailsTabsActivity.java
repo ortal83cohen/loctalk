@@ -32,7 +32,6 @@ import com.travoca.api.model.search.Poi;
 import com.travoca.app.R;
 import com.travoca.app.adapter.ViewPagerAdapter;
 import com.travoca.app.fragment.RecordsMapFragment;
-import com.travoca.app.map.PoiMarker;
 import com.travoca.app.model.RecordListRequest;
 
 import java.util.List;
@@ -53,8 +52,6 @@ public class RecordDetailsTabsActivity extends TabActivity implements OnMapReady
     private Record mRecord;
     private SupportMapFragment mSupportMapFragment;
     private int mDrawLandmarksInMeters = 0;
-    private List<Poi> mPoiList = null;
-    private PoiMarker mPoiMarker;
     private boolean isFirstTime = true;
 
     public static Intent createIntent(Record record, RecordListRequest request, int tabId, Context context) {
@@ -86,7 +83,7 @@ public class RecordDetailsTabsActivity extends TabActivity implements OnMapReady
 //        if (mHotelSnippetDetails != null && !mHotelSnippetDetails.hasRates()) {
 //            mAllRoomsButton.setVisibility(View.GONE);
 //        }
-        mPoiMarker = new PoiMarker(this);
+
         adapter.addFragment(mSupportMapFragment, getString(R.string.cps_map), MAP);
     }
 
@@ -114,7 +111,7 @@ public class RecordDetailsTabsActivity extends TabActivity implements OnMapReady
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        if (mRecord.lat!= null) {
+        if (mRecord.lat != null) {
             googleMap.clear();
             BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.map_pin_selected));
             MarkerOptions options = new MarkerOptions()
@@ -179,15 +176,7 @@ public class RecordDetailsTabsActivity extends TabActivity implements OnMapReady
                         .strokeColor(Color.TRANSPARENT)
                         .strokeWidth(0);
                 googleMap.addCircle(circleOptions);
-                if (mPoiList == null) {
-                    Toast.makeText(getBaseContext(), R.string.nothing_to_show_in_this_area, Toast.LENGTH_LONG).show();
-                } else {
-                    Integer id = 0;
-                    for (Poi poi : mPoiList) {
-                        googleMap.addMarker(mPoiMarker.create(id, poi, PoiMarker.STATUS_UNSEEN));
-                        id++;
-                    }
-                }
+
                 googleMap.setOnMarkerClickListener(this);
             }
         }
@@ -195,15 +184,7 @@ public class RecordDetailsTabsActivity extends TabActivity implements OnMapReady
 
 
     private void mapAsync(List<Poi> poiList) {
-        mPoiList = poiList;
-        if (poiList != null) {
-            for (int i = 0; i < poiList.size(); i++) {
-                Poi poi = poiList.get(i);
-                if (poi.type_id == PoiMarker.TYPE_DISTRICT || poi.type_id == PoiMarker.TYPE_AREA) {
-                    poiList.remove(i);
-                }
-            }
-        }
+
         mSupportMapFragment.getMapAsync(this);
     }
 

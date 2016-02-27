@@ -3,7 +3,6 @@ package com.travoca.app.analytics;
 import android.app.Activity;
 import android.content.Context;
 
-import com.travoca.api.model.HotelRequest;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.SearchRequest;
 
@@ -59,7 +58,7 @@ public class AnalyticsCalls {
     }
 
 
-    public void trackHotelDetails(HotelRequest request, Record record, String currencyCode) {
+    public void trackHotelDetails(SearchRequest request, Record record, String currencyCode) {
 //        omniture.trackHotelDetails(request, hotelSnippet, rate, currencyCode);
 //        googleAnalyticsCalls.trackHotelDetails(request, hotelSnippet, rate, currencyCode);
     }

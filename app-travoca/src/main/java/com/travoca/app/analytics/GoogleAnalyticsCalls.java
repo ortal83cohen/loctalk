@@ -6,7 +6,6 @@ import android.content.Context;
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
-import com.travoca.api.model.HotelRequest;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.app.R;
@@ -100,14 +99,8 @@ public class GoogleAnalyticsCalls extends AnalyticsCalls {
         mTracker.send(new HitBuilders.ScreenViewBuilder().build());
     }
 
-    public void trackHotelRooms(HotelRequest hotelRequest) {
-        mTracker.setScreenName("Hotel Rooms");
 
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
-    }
-
-
-    public void trackHotelDetails(HotelRequest request, Record record, String currencyCode) {
+    public void trackHotelDetails(SearchRequest request, Record record, String currencyCode) {
         mTracker.setScreenName("Hotel Details");
 //        Product product = new Product()
 //                .setId(String.valueOf(hotelSnippet.getAccommodation().id))
