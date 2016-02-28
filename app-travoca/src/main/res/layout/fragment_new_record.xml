@@ -1,67 +1,139 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="?colorPrimary"
     tools:context=".activity.NewRecordActivity">
 
-    <ImageView
-        android:id="@+id/image"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="270dp"
-        android:src="@drawable/place_holder_img" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="title"
-        android:text="title" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="310dp">
 
-    <EditText
-        android:id="@+id/description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="description"
-        android:text="my home" />
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:src="@drawable/place_holder_img" />
 
-    <EditText
-        android:id="@+id/locationName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="locationName"
-        android:text="home" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/type"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="type"
-        android:text="privet" />
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:src="@android:drawable/ic_btn_speak_now"
+                    android:text="Record" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Record" />
+                <android.support.design.widget.FloatingActionButton
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stop" />
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:src="@android:drawable/ic_media_rew"
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="play"
+                    android:text="Stop"
+                    android:visibility="invisible" />
 
-        />
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+
+                    android:src="@android:drawable/ic_media_play"
+                    android:text="play" />
+
+
+                />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:text=""
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                android:textSize="24sp"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="20"
+                app:met_minCharacters="4"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/locationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location name"
+                android:text=""
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                android:textSize="14sp"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="20"
+                app:met_minCharacters="4"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:text=""
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                android:textSize="14sp"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="200"
+                app:met_minCharacters="4"
+                app:met_primaryColor="?colorAccent" />
+
+            <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+            <!--android:layout_width="match_parent" android:id="@+id/type"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Type"-->
+            <!--android:text="" android:textSize="14sp"-->
+            <!--android:textCursorDrawable="@drawable/text_cursor_cyan"-->
+            <!--app:met_baseColor="@android:color/white"-->
+            <!--app:met_floatingLabel="highlight"-->
+            <!--app:met_minCharacters="4"-->
+            <!--app:met_maxCharacters="20"-->
+            <!--app:met_primaryColor="?colorAccent" />-->
+
+
+        </LinearLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/AppTheme.Widget.HotelSummary.AccentBottomButton"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_gravity="center_horizontal|bottom"
         android:text="Send" />
-</LinearLayout>
+</FrameLayout>

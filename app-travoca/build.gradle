@@ -54,10 +54,10 @@ android {
         }
 
         release {
-            storeFile file("C:\\Users\\user\\Documents\\travoca_android\\debug.travoca.jks")
-            storePassword "1q1q1q"
+            storeFile file("C:\\travoca.jks")
+            storePassword "1q1q1q1q"
             keyAlias "travoca"
-            keyPassword "1q1q1q"
+            keyPassword "1q1q1q1q"
         }
     }
 
@@ -124,6 +124,7 @@ dependencies {
 
     // Design library
     compile 'com.android.support:design:23.1.1'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
     // App Compat
     compile 'com.android.support:recyclerview-v7:23.1.1'
     compile 'com.android.support:appcompat-v7:23.1.1'

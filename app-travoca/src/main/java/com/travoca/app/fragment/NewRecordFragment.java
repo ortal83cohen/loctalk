@@ -12,6 +12,7 @@ import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.util.Base64;
 import android.view.LayoutInflater;
@@ -19,13 +20,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
+import com.rengwuxian.materialedittext.MaterialEditText;
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.TravocaApi;
 import com.travoca.api.model.ResultsResponse;
@@ -57,29 +58,31 @@ public class NewRecordFragment extends BaseFragment {
 
     private static final int REQUEST_PERMISSION_LOCATION = 2;
     @Bind(R.id.button3)
-    Button playButton;
+    FloatingActionButton playButton;
     @Bind(R.id.button2)
-    Button stopButton;
+    FloatingActionButton stopButton;
     @Bind(R.id.button)
-    Button recordButton;
+    FloatingActionButton recordButton;
     @Bind(R.id.button4)
     Button sendButton;
     @Bind(R.id.title)
-    TextView mTitle;
+    MaterialEditText mTitle;
     @Bind(R.id.description)
-    TextView mDescription;
+    MaterialEditText mDescription;
     @Bind(R.id.locationName)
-    TextView mLocationName;
-    @Bind(R.id.type)
-    TextView mType;
+    MaterialEditText mLocationName;
+    //    @Bind(R.id.type)
+//    MaterialEditText mType;
     @Bind(R.id.image)
     ImageView mImageView;
     private MediaRecorder audioRecorder;
     private String outputFile = null;
     private Listener mListener;
     private Location mLocation;
+    private boolean mPlayButtonState = false;
+    private boolean mHasImage = false;
     private LocationRequest mLocationRequest = new LocationRequest()
-            .setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY) // (~100m "block" accuracy)
+            .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
             .setNumUpdates(1);
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
         @Override
@@ -106,20 +109,15 @@ public class NewRecordFragment extends BaseFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_new_record, container, false);
         ButterKnife.bind(this, view);
 
-        stopButton.setEnabled(false);
+//        stopButton.setEnabled(false);
         playButton.setEnabled(false);
         outputFile = Environment.getExternalStorageDirectory().getAbsolutePath() + "/recording.3gp";
 
-        audioRecorder = new MediaRecorder();
-        audioRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-        audioRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-        audioRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
-        audioRecorder.setOutputFile(outputFile);
 
         mImageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,33 +129,54 @@ public class NewRecordFragment extends BaseFragment {
         recordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    audioRecorder.prepare();
-                    audioRecorder.start();
-                } catch (IllegalStateException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                if (!mPlayButtonState) {
+                    playButton.setEnabled(false);
+                    mPlayButtonState = true;
+                    Toast.makeText(getActivity(), "Recording started", Toast.LENGTH_LONG).show();
+                    recordButton.setImageDrawable(getResources().getDrawable(android.R.drawable.ic_media_pause));
+                    try {
+                        new File(outputFile).delete();
+                        audioRecorder = new MediaRecorder();
+                        audioRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+                        audioRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+                        audioRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
+                        audioRecorder.setOutputFile(outputFile);
+                        audioRecorder.prepare();
+                        audioRecorder.start();
+                    } catch (IllegalStateException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+
+                } else {
+                    playButton.setEnabled(true);
+                    mPlayButtonState = false;
+                    Toast.makeText(getActivity(), "Recording stop", Toast.LENGTH_LONG).show();
+                    recordButton.setImageDrawable(getResources().getDrawable(android.R.drawable.ic_btn_speak_now));
+                    try {
+                        audioRecorder.stop();
+                        audioRecorder.release();
+                        audioRecorder = null;
+                    } catch (IllegalStateException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
                 }
-
-                recordButton.setEnabled(false);
-                stopButton.setEnabled(true);
-
-                Toast.makeText(getActivity(), "Recording started", Toast.LENGTH_LONG).show();
             }
         });
 
         stopButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                audioRecorder.stop();
-                audioRecorder.release();
-                audioRecorder = null;
+//                audioRecorder.stop();
+//                audioRecorder.release();
+//                audioRecorder = null;
 
-                stopButton.setEnabled(false);
-                playButton.setEnabled(true);
+//                stopButton.setEnabled(false);
+//                playButton.setEnabled(true);
 
                 Toast.makeText(getActivity(), "Audio recorded successfully", Toast.LENGTH_LONG).show();
             }
@@ -188,45 +207,48 @@ public class NewRecordFragment extends BaseFragment {
         sendButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
+                if (mTitle.length()>4 && mDescription.length()>4 && mLocationName.length()>4 && mHasImage) {
+                    String encodedFile = "";
+                    File file = new File(outputFile);
 
-                String encodedFile = "";
-                File file = new File(outputFile);
+                    int size = (int) file.length();
+                    byte[] bytes = new byte[size];
+                    try {
+                        BufferedInputStream buf = new BufferedInputStream(new FileInputStream(file));
+                        buf.read(bytes, 0, bytes.length);
+                        buf.close();
+                        encodedFile = Base64.encodeToString(bytes, Base64.DEFAULT);
+                    } catch (FileNotFoundException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
 
-                int size = (int) file.length();
-                byte[] bytes = new byte[size];
-                try {
-                    BufferedInputStream buf = new BufferedInputStream(new FileInputStream(file));
-                    buf.read(bytes, 0, bytes.length);
-                    buf.close();
-                    encodedFile = Base64.encodeToString(bytes, Base64.DEFAULT);
-                } catch (FileNotFoundException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
+                    ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                    TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
+                    ((NewRecordActivity) getActivity()).getSelectedBitmap().compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
+                    String encodedImage = Base64.encodeToString(byteArrayOutputStream.toByteArray(), Base64.DEFAULT);
+                    MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
+                    User user = memberStorage.loadUser();
+                    if (user != null) {
+                        travocaApi.saveRecordDetails(encodedImage, encodedFile, mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString()
+                                , String.valueOf(mLocation.getLatitude()), String.valueOf(mLocation.getLongitude()), "free", user.id).enqueue(mResultsCallback);
+                    } else {
+                        new AlertDialog.Builder(getActivity())
+                                .setTitle("Alert")
+                                .setMessage("You must login to upload record")
+                                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                    }
+                                })
+                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                .show();
 
-                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
-                ((NewRecordActivity) getActivity()).getSelectedBitmap().compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
-                String encodedImage = Base64.encodeToString(byteArrayOutputStream.toByteArray(), Base64.DEFAULT);
-                MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
-                User user = memberStorage.loadUser();
-                if (user != null) {
-                    travocaApi.saveRecordDetails(encodedImage, encodedFile, mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString()
-                            , String.valueOf(mLocation.getLatitude()), String.valueOf(mLocation.getLongitude()), mType.getText().toString(), user.id).enqueue(mResultsCallback);
+                    }
                 } else {
-                    new AlertDialog.Builder(getActivity())
-                            .setTitle("Alert")
-                            .setMessage("You must login to upload record")
-                            .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                }
-                            })
-                            .setIcon(android.R.drawable.ic_dialog_alert)
-                            .show();
-
+                    Toast.makeText(getActivity(), "Not valid", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -257,11 +279,12 @@ public class NewRecordFragment extends BaseFragment {
 
     public void setImage(Bitmap selectedBitmap) {
         mImageView.setImageBitmap(selectedBitmap);
-
+        mHasImage = true;
     }
 
     public void setImage(Drawable drawable) {
         mImageView.setImageDrawable(drawable);
+        mHasImage = false;
     }
 
 

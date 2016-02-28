@@ -38,8 +38,8 @@ public class LocationService extends Service {
     private static final int NOTIFICATION_ID = 1;
     private static final double MINIMUM_DISTANCE = 0.05;
     private LocationManager mLocationManager = null;
-    private static final int LOCATION_INTERVAL = 10000;
-    private static final float LOCATION_DISTANCE = 1000f;
+    private static final int LOCATION_INTERVAL = 3000000 ;
+    private static final float LOCATION_DISTANCE = 100000f;
     private Context context;
 
     private class LocationListener implements android.location.LocationListener {
@@ -150,15 +150,15 @@ public class LocationService extends Service {
         } catch (IllegalArgumentException ex) {
             Log.d(TAG, "network provider does not exist, " + ex.getMessage());
         }
-//        try {
-//            mLocationManager.requestLocationUpdates(
-//                    LocationManager.GPS_PROVIDER, LOCATION_INTERVAL, LOCATION_DISTANCE,
-//                    mLocationListeners[0]);
-//        } catch (java.lang.SecurityException ex) {
-//            Log.i(TAG, "fail to request location update, ignore", ex);
-//        } catch (IllegalArgumentException ex) {
-//            Log.d(TAG, "gps provider does not exist " + ex.getMessage());
-//        }
+        try {
+            mLocationManager.requestLocationUpdates(
+                    LocationManager.GPS_PROVIDER, LOCATION_INTERVAL, LOCATION_DISTANCE,
+                    mLocationListeners[0]);
+        } catch (java.lang.SecurityException ex) {
+            Log.i(TAG, "fail to request location update, ignore", ex);
+        } catch (IllegalArgumentException ex) {
+            Log.d(TAG, "gps provider does not exist " + ex.getMessage());
+        }
 
     }
 

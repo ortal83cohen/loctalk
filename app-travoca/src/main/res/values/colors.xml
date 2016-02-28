@@ -7,6 +7,7 @@
 
     <color name="theme_accent">#fdc112</color>
     <color name="theme_accent_dark">#fdc112</color>
+    <color name="cyan_500">#f34112</color>
 
     <color name="theme_background_highlighted">@color/gray_light</color>
     <color name="theme_background">@color/gray_light</color>
