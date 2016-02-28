@@ -18,13 +18,16 @@ import com.travoca.api.TravocaApi;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.SearchRequest;
+import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
-import com.travoca.app.activity.HomeActivity;
 import com.travoca.app.activity.RecordDetailsActivity;
 import com.travoca.app.events.Events;
 import com.travoca.app.events.SearchResultsEvent;
+import com.travoca.app.member.MemberStorage;
+import com.travoca.app.member.model.User;
 import com.travoca.app.model.RecordListRequest;
+import com.travoca.app.model.ServiceGPSViewPort;
 import com.travoca.app.model.ViewPort;
 import com.travoca.app.travocaapi.RetrofitCallback;
 
@@ -69,7 +72,7 @@ public class LocationService extends Service {
                     intent.putExtra(RecordDetailsActivity.EXTRA_REQUEST, new RecordListRequest());
                     PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
                     addNotification(context, "record name " + record.title, record.description + "/" +
-                            record.locationName,pendingIntent);
+                            record.locationName, pendingIntent);
                 }
                 Log.e(TAG, "success: " + apiResponse.records.size());
             }
@@ -81,10 +84,19 @@ public class LocationService extends Service {
             Log.e(TAG, "onLocationChanged: " + location);
             final TravocaApi travocaApi = TravocaApplication.provide(context).travocaApi();
             SearchRequest searchRequest = new SearchRequest();
-            searchRequest.setType(new ViewPort("service", location.getLatitude() + MINIMUM_DISTANCE,
+            searchRequest.setType(new ServiceGPSViewPort("gps", location.getLatitude() + MINIMUM_DISTANCE,
                     location.getLongitude() + MINIMUM_DISTANCE, location.getLatitude() - MINIMUM_DISTANCE,
                     location.getLongitude() - MINIMUM_DISTANCE));
             searchRequest.setLimit(1);
+            MemberStorage memberStorage = App.provide(context).memberStorage();
+            User user = memberStorage.loadUser();
+            String userId;
+            if (user == null) {
+                userId = "";
+            } else {
+                userId = user.id;
+            }
+            searchRequest.setUserId(userId);
             travocaApi.records(searchRequest).enqueue(mResultsCallback);
 
             mLastLocation.set(location);
@@ -138,15 +150,15 @@ public class LocationService extends Service {
         } catch (IllegalArgumentException ex) {
             Log.d(TAG, "network provider does not exist, " + ex.getMessage());
         }
-        try {
-            mLocationManager.requestLocationUpdates(
-                    LocationManager.GPS_PROVIDER, LOCATION_INTERVAL, LOCATION_DISTANCE,
-                    mLocationListeners[0]);
-        } catch (java.lang.SecurityException ex) {
-            Log.i(TAG, "fail to request location update, ignore", ex);
-        } catch (IllegalArgumentException ex) {
-            Log.d(TAG, "gps provider does not exist " + ex.getMessage());
-        }
+//        try {
+//            mLocationManager.requestLocationUpdates(
+//                    LocationManager.GPS_PROVIDER, LOCATION_INTERVAL, LOCATION_DISTANCE,
+//                    mLocationListeners[0]);
+//        } catch (java.lang.SecurityException ex) {
+//            Log.i(TAG, "fail to request location update, ignore", ex);
+//        } catch (IllegalArgumentException ex) {
+//            Log.d(TAG, "gps provider does not exist " + ex.getMessage());
+//        }
 
     }
 
