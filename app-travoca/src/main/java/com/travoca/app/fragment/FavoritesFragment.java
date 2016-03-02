@@ -10,8 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.travoca.app.R;
-import com.travoca.app.activity.FavoritesActivity;
-import com.travoca.app.adapter.FavoritesCitiesAdapter;
+import com.travoca.app.adapter.FavoritesAdapter;
 import com.travoca.app.provider.DbContract;
 
 import butterknife.Bind;
@@ -21,14 +20,14 @@ import butterknife.ButterKnife;
  * @author ortal
  * @date 2015-05-17
  */
-public class FavoritesCitiesFragment extends BaseFragment {
+public class FavoritesFragment extends BaseFragment {
     @Bind(android.R.id.list)
     ListView mRecyclerView;
     @Bind(R.id.hotel_list_no_result)
     LinearLayout mNoResult;
 
-    public static FavoritesCitiesFragment newInstance() {
-        return new FavoritesCitiesFragment();
+    public static FavoritesFragment newInstance() {
+        return new FavoritesFragment();
     }
 
 
@@ -51,12 +50,11 @@ public class FavoritesCitiesFragment extends BaseFragment {
             cursor.close();
         } else {
             mNoResult.setVisibility(View.GONE);
-            mRecyclerView.setAdapter(new FavoritesCitiesAdapter(getActivity(), cursor));
+            mRecyclerView.setAdapter(new FavoritesAdapter(getActivity(), cursor));
             mRecyclerView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     Cursor cursor = (Cursor) parent.getItemAtPosition(position);
-                    ((FavoritesActivity) getActivity()).showFavoritesList(cursor.getString(cursor.getColumnIndex(DbContract.FavoritesColumns.TITLE)), cursor.getString(cursor.getColumnIndex(DbContract.FavoritesColumns.TEXT)), cursor.getString(cursor.getColumnIndex("count")));
                 }
             });
             getActivity().setTitle(R.string.favorites);

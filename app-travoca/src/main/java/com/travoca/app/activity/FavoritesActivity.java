@@ -9,12 +9,10 @@ import android.view.MenuItem;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.search.Type;
-import com.travoca.api.utils.RequestUtils;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.adapter.RecordViewHolder;
-import com.travoca.app.fragment.FavoritesCitiesFragment;
-import com.travoca.app.fragment.FavoritesListFragment;
+import com.travoca.app.fragment.FavoritesFragment;
 import com.travoca.app.fragment.HomeFragment;
 import com.travoca.app.widget.AppBar;
 
@@ -47,7 +45,7 @@ public class FavoritesActivity extends BaseActivity implements RecordViewHolder.
 
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.fragment_container, FavoritesCitiesFragment.newInstance(),
+                .replace(R.id.fragment_container, FavoritesFragment.newInstance(),
                         FRAGMENT_FAVORITES_CITIES)
                 .commit();
 
@@ -56,28 +54,11 @@ public class FavoritesActivity extends BaseActivity implements RecordViewHolder.
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.delete_list:
-                FavoritesListFragment favoritesListFragment = (FavoritesListFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_FAVORITES_LIST);
-                if (favoritesListFragment != null) {
-                    favoritesListFragment.deleteList();
-                }
-                break;
+
         }
         return super.onOptionsItemSelected(item);
     }
 
-
-    public void showFavoritesList(String city, String country, String count) {
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.fragment_container, FavoritesListFragment.newInstance(city, country, count, getHotelsRequest()),
-                        FRAGMENT_FAVORITES_LIST)
-                .commit();
-
-        setSubtitle(getString(R.string.no_dates_selected));
-
-
-    }
 
     public void setSubtitle(String titleId) {
         mToolbar.setSubtitle(titleId);
@@ -90,7 +71,7 @@ public class FavoritesActivity extends BaseActivity implements RecordViewHolder.
         } else if (getSupportFragmentManager().findFragmentByTag(FRAGMENT_FAVORITES_LIST) != null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.fragment_container, FavoritesCitiesFragment.newInstance(),
+                    .replace(R.id.fragment_container, FavoritesFragment.newInstance(),
                             FRAGMENT_FAVORITES_CITIES)
                     .commit();
             setSubtitle("");
@@ -120,17 +101,6 @@ public class FavoritesActivity extends BaseActivity implements RecordViewHolder.
 
     @Override
     public void onRecordClick(Record acc, int position) {
-//        if (getRequest().isDatesRequest()) {
-//        Record firstRate = acc.getFirstRate();
-//        int rateId = firstRate == null ? 0 : firstRate.rateId;
-//        final HotelSnippet hotelSnippet = HotelSnippet.from(acc, rateId, position);
-//        showRecordDetails(hotelSnippet);
-//        } else {
-//            showHome();
-//        }
-    }
-
-    public void showHotelDetails(Record record) {
 
     }
 
@@ -141,15 +111,6 @@ public class FavoritesActivity extends BaseActivity implements RecordViewHolder.
 
     @Override
     public void startSearch(Type locationType) {
-        remove(getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME));
 
-        FavoritesListFragment favoritesListFragment = (FavoritesListFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_FAVORITES_LIST);
-        RequestUtils.apply(getHotelsRequest());
-        if (favoritesListFragment != null) {
-            favoritesListFragment.refresh(getHotelsRequest());
-            setSubtitle(
-                    "xxxxxxxxxxxxxxxxx"
-            );
-        }
     }
 }

@@ -11,9 +11,9 @@ import android.widget.TextView;
 
 import com.travoca.app.R;
 
-public class FavoritesCitiesAdapter extends CursorAdapter {
+public class FavoritesAdapter extends CursorAdapter {
 
-    public FavoritesCitiesAdapter(Context context, Cursor c) {
+    public FavoritesAdapter(Context context, Cursor c) {
         super(context, c, false);
     }
 
@@ -23,13 +23,13 @@ public class FavoritesCitiesAdapter extends CursorAdapter {
         // we need to tell the adapters, how each item will look
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
 
-        return inflater.inflate(R.layout.favorites_city_list_item, parent, false);
+        return inflater.inflate(R.layout.favorites_list_item, parent, false);
     }
 
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
         TextView textViewPersonName = (TextView) view.findViewById(android.R.id.title);
-        textViewPersonName.setText(new StringBuilder().append(cursor.getString(2)).append(", ").append(cursor.getString(3)).append(" (").append(cursor.getString(0)).append(")").toString());
+        textViewPersonName.setText(new StringBuilder().append(cursor.getString(3)).append(", ").append(cursor.getString(2)).toString());
 
     }
 }

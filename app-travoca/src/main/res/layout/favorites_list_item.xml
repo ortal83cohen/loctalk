@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/mainnav_favourites"
         android:drawablePadding="@dimen/default_padding"
-        android:drawableRight="@drawable/arrow_calendar_right"
         android:paddingBottom="@dimen/default_padding"
         android:paddingLeft="@dimen/minimum_default_padding"
         android:paddingRight="@dimen/minimum_default_padding"
