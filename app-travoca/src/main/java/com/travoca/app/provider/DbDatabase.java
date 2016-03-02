@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DbDatabase extends SQLiteOpenHelper {
 
     // Database Version
-    private static final int DATABASE_VERSION = 41;
+    private static final int DATABASE_VERSION = 44;
     // Database Name
     private static final String DATABASE_NAME = "TravocaDB";
 
@@ -28,11 +28,11 @@ public class DbDatabase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         // SQL statement to create Hotel table
-        String CREATE_HOTEL_TABLE = "CREATE TABLE IF NOT EXISTS " + DbContract.Tables.TABLE_LIKED_HOTELS + " ( " +
-                DbContract.LikedHotelsColumns.KEY_ID + " INTEGER ," +
-                DbContract.LikedHotelsColumns.CITY + " STRING , " +
-                DbContract.LikedHotelsColumns.COUNTRY + " STRING , " +
-                " PRIMARY KEY (" + DbContract.LikedHotelsColumns.KEY_ID + ") ) ";
+        String CREATE_HOTEL_TABLE = "CREATE TABLE IF NOT EXISTS " + DbContract.Tables.TABLE_FAVORITES + " ( " +
+                DbContract.FavoritesColumns.KEY_ID + " INTEGER ," +
+                DbContract.FavoritesColumns.TITLE + " STRING , " +
+                DbContract.FavoritesColumns.TEXT + " STRING , " +
+                " PRIMARY KEY (" + DbContract.FavoritesColumns.KEY_ID + ") ) ";
 
         String CREATE_SEARCH_HISTORY_TABLE = "CREATE TABLE IF NOT EXISTS " + DbContract.Tables.TABLE_SEARCH_HISTORY + " ( " +
                 DbContract.SearchHistoryColumns.LOCATION_NAME + " STRING ," +
@@ -43,14 +43,8 @@ public class DbDatabase extends SQLiteOpenHelper {
                 DbContract.SearchHistoryColumns.SOUTHWEST_LAT + " STRING," +
                 DbContract.SearchHistoryColumns.SOUTHWEST_LON + " STRING," +
                 DbContract.SearchHistoryColumns.TYPES + " STRING," +
-                DbContract.SearchHistoryColumns.NUMBER_GUESTS + " STRING ," +
-                DbContract.SearchHistoryColumns.NUMBER_ROOMS + " STRING ," +
-                DbContract.SearchHistoryColumns.FROM_DATE + " STRING ," +
-                DbContract.SearchHistoryColumns.TO_DATE + " STRING," +
                 DbContract.SearchHistoryColumns.CREATE_AT + " TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP," +
-                " PRIMARY KEY (" + DbContract.SearchHistoryColumns.LOCATION_NAME + "," + DbContract.SearchHistoryColumns.NUMBER_GUESTS + ","
-                + DbContract.SearchHistoryColumns.NUMBER_ROOMS + "," + DbContract.SearchHistoryColumns.FROM_DATE + "," +
-                DbContract.SearchHistoryColumns.TO_DATE + ")  )";
+                " PRIMARY KEY (" + DbContract.SearchHistoryColumns.LOCATION_NAME + ")  )";
 
         // create Hotels table
         db.execSQL(CREATE_HOTEL_TABLE);
@@ -62,16 +56,9 @@ public class DbDatabase extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         if (oldVersion != newVersion) {
 
-//            db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_LIKED_HOTELS);
-//            db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_SEARCH_HISTORY);
-//            db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_BOOKINGS);
-            if (oldVersion <= 37) {
-                db.execSQL("ALTER TABLE " + DbContract.Tables.TABLE_SEARCH_HISTORY + " ADD COLUMN " + DbContract.SearchHistoryColumns.NORTHEAST_LAT + " STRING");
-                db.execSQL("ALTER TABLE " + DbContract.Tables.TABLE_SEARCH_HISTORY + " ADD COLUMN " + DbContract.SearchHistoryColumns.NORTHEAST_LON + " STRING");
-                db.execSQL("ALTER TABLE " + DbContract.Tables.TABLE_SEARCH_HISTORY + " ADD COLUMN " + DbContract.SearchHistoryColumns.SOUTHWEST_LAT + " STRING");
-                db.execSQL("ALTER TABLE " + DbContract.Tables.TABLE_SEARCH_HISTORY + " ADD COLUMN " + DbContract.SearchHistoryColumns.SOUTHWEST_LON + " STRING");
-                db.execSQL("ALTER TABLE " + DbContract.Tables.TABLE_SEARCH_HISTORY + " ADD COLUMN " + DbContract.SearchHistoryColumns.TYPES + " STRING");
-            }
+            db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_FAVORITES);
+            db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_SEARCH_HISTORY);
+
         }
         this.onCreate(db);
     }

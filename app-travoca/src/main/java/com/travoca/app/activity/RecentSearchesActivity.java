@@ -27,7 +27,6 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class RecentSearchesActivity extends BaseActivity {
-    SimpleDateFormat input = new SimpleDateFormat("yyyy-MM-d k", Locale.US);
     @Bind(android.R.id.list)
     ListView mRecyclerView;
     @Bind(R.id.hotel_list_no_result)
@@ -60,17 +59,13 @@ public class RecentSearchesActivity extends BaseActivity {
             public void onItemClick(AdapterView parent, View v, int position, long id) {
                 Cursor cursor = (Cursor) parent.getItemAtPosition(position);
                 if (cursor != null) {
-                    try {
-                        Date fromDate = input.parse(cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.FROM_DATE)) + " 23");
-                        Date toDate = input.parse(cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.TO_DATE)) + " 23");
+
                         String northeastLat = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LAT));
                         String northeastLon = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LON));
                         String southwestLat = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LAT));
                         String southwestLon = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LON));
                         startSearch(new Location(cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LOCATION_NAME)), new LatLng(cursor.getDouble(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LAT)), cursor.getDouble(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LON)))));
-                    } catch (ParseException e) {
-                        AppLog.e(e);
-                    }
+
                 }
             }
         });

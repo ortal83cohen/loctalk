@@ -38,7 +38,7 @@ import com.travoca.app.events.Events;
 import com.travoca.app.events.SearchResultsEvent;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.provider.DbContract;
-import com.travoca.app.provider.LikedHotels;
+import com.travoca.app.provider.LikedRecords;
 import com.travoca.app.utils.AppLog;
 import com.travoca.app.widget.recyclerview.EndlessRecyclerView;
 
@@ -131,13 +131,13 @@ public class FavoritesListFragment extends BaseFragment {
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // continue with delete
-                        Cursor cursor = getActivity().getContentResolver().query(DbContract.LikedHotels.CONTENT_URI.buildUpon().
-                                appendQueryParameter("where", DbContract.LikedHotelsColumns.CITY + "='" + mCity + "' AND " + DbContract.LikedHotelsColumns.COUNTRY + "='" + mCountry + "'").build(), null, null, null, null);
+                        Cursor cursor = getActivity().getContentResolver().query(DbContract.Favorites.CONTENT_URI.buildUpon().
+                                appendQueryParameter("where", DbContract.FavoritesColumns.TITLE + "='" + mCity + "' AND " + DbContract.FavoritesColumns.TEXT + "='" + mCountry + "'").build(), null, null, null, null);
 
                         if (cursor != null && cursor.getCount() != 0) {
                             cursor.moveToFirst();
                             do {
-                                getActivity().getContentResolver().delete(DbContract.LikedHotels.CONTENT_URI.buildUpon().appendPath(cursor.getString(cursor.getColumnIndex("_id"))).build(), null, null);
+                                getActivity().getContentResolver().delete(DbContract.Favorites.CONTENT_URI.buildUpon().appendPath(cursor.getString(cursor.getColumnIndex("_id"))).build(), null, null);
                             } while (cursor.moveToNext());
                             cursor.close();
                         }
@@ -199,7 +199,7 @@ public class FavoritesListFragment extends BaseFragment {
 
         getActivity().setTitle(Html.fromHtml("<b>" + mCity + "</b> " + mCountry + " (" + count + ")"));
 
-        ArrayList<String> records = LikedHotels.loadHotels(mCity, mCountry, getActivity());
+        ArrayList<String> records = LikedRecords.loadHotels(mCity, mCountry, getActivity());
 
         mSearchRequest.setType(new ListType(records));
         mSearchRequest.setSort(null);

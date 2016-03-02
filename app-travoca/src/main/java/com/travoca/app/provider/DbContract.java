@@ -14,18 +14,18 @@ import java.util.List;
 public class DbContract {
     public static final String CONTENT_AUTHORITY = BuildConfig.APPLICATION_ID + ".provider";
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
-    private static final String PATH_LIKED_HOTELS = "favorites";
+    private static final String PATH_FAVORITES = "favorites";
     private static final String PATH_SEARCH_HISTORY = "search_history";
 
     interface Tables {
-        String TABLE_LIKED_HOTELS = "liked_hotels";
+        String TABLE_FAVORITES = "favorites";
         String TABLE_SEARCH_HISTORY = "search_history";
     }
 
-    public interface LikedHotelsColumns {
+    public interface FavoritesColumns {
         String KEY_ID = "_id";
-        String CITY = "city";
-        String COUNTRY = "country";
+        String TITLE = "title";
+        String TEXT = "text";
     }
 
 
@@ -38,16 +38,12 @@ public class DbContract {
         String SOUTHWEST_LAT = "southwest_lat";
         String SOUTHWEST_LON = "southwest_lon";
         String TYPES = "types";
-        String NUMBER_GUESTS = "number_guests";
-        String NUMBER_ROOMS = "number_rooms";
-        String FROM_DATE = "from_date";
-        String TO_DATE = "to_date";
         String CREATE_AT = "created_at";
     }
 
-    public static class LikedHotels implements LikedHotelsColumns, BaseColumns {
+    public static class Favorites implements FavoritesColumns, BaseColumns {
         public static final Uri CONTENT_URI =
-                BASE_CONTENT_URI.buildUpon().appendPath(PATH_LIKED_HOTELS).build();
+                BASE_CONTENT_URI.buildUpon().appendPath(PATH_FAVORITES).build();
         public static final String CONTENT_TYPE = "vnd.android.cursor.dir/int";
 
         public static Uri buildHotelUri(String hotelId, String city, String country) {
@@ -65,8 +61,8 @@ public class DbContract {
         public static final String CONTENT_TYPE = "vnd.android.cursor.dir/int";
 
         public static Uri buildSearchHistoryUri(String location, String lat, String lon, String northeastLat, String northeastLon, String southwestLat, String southwestLon,
-                                                String types, String numberGuests, String numberRooms, String fromDate, String toDate) {
-            return CONTENT_URI.buildUpon().appendPath(location).appendPath(lat).appendPath(lon).appendPath(northeastLat).appendPath(northeastLon).appendPath(southwestLat).appendPath(southwestLon).appendPath(types).appendPath(numberGuests).appendPath(numberRooms).appendPath(fromDate).appendPath(toDate).build();
+                                                String types) {
+            return CONTENT_URI.buildUpon().appendPath(location).appendPath(lat).appendPath(lon).appendPath(northeastLat).appendPath(northeastLon).appendPath(southwestLat).appendPath(southwestLon).appendPath(types).build();
         }
 
         public static List<String> getSearchHistory(Uri uri) {

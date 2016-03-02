@@ -2,6 +2,7 @@ package com.travoca.app.widget.recyclerview;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 public abstract class EndlessOnScrollListener extends RecyclerView.OnScrollListener {
     private final int mVisibleThreshold;
@@ -20,7 +21,6 @@ public abstract class EndlessOnScrollListener extends RecyclerView.OnScrollListe
 
         int totalItemCount = recyclerView.getAdapter().getItemCount();
         int firstVisibleItem = mLinearLayoutManager.findFirstVisibleItemPosition();
-
         if (lastCall != totalItemCount && firstVisibleItem + mVisibleThreshold > lastCall) {
             lastCall = totalItemCount;
             onLoadMore();

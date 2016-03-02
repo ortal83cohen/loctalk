@@ -47,6 +47,7 @@ import com.travoca.api.utils.RequestUtils;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
+import com.travoca.app.activity.LoginActivity;
 import com.travoca.app.activity.RecordDetailsTabsActivity;
 import com.travoca.app.activity.RecordDetailsActivity;
 import com.travoca.app.adapter.RecordCardViewHolder;
@@ -55,6 +56,7 @@ import com.travoca.app.hoteldetails.RecordViewHolder;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.User;
 import com.travoca.app.model.RecordListRequest;
+import com.travoca.app.provider.LikedRecords;
 
 import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
@@ -231,8 +233,13 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
                     new AlertDialog.Builder(getActivity())
                             .setTitle("Alert")
                             .setMessage("You must login to play a record")
-                            .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
+                                }
+                            })
+                            .setPositiveButton("Login", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    startActivity(LoginActivity.createIntent(getActivity()));
                                 }
                             })
                             .setIcon(android.R.drawable.ic_dialog_alert)
@@ -355,13 +362,28 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.clear();
+        boolean isLiked = LikedRecords.isLiked(mRecord.id, getActivity());
         inflater.inflate(R.menu.menu_record_details, menu);
+        if (isLiked) {
+            menu.findItem(R.id.menu_like).setIcon(R.drawable.btn_favorite_selected);
+        } else {
+            menu.findItem(R.id.menu_like).setIcon(R.drawable.btn_favorite);
+        }
         super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.menu_like:
+                boolean isLiked = LikedRecords.isLiked(mRecord.id, getActivity());
+                if (isLiked) {
+                    LikedRecords.delete(mRecord.id, getActivity());
+                } else {
+                    LikedRecords.insert(mRecord.id, mRecord.locationName, mRecord.title, getActivity());
+                }
+                break;
             case R.id.menu_streetview:
                 ((RecordDetailsActivity) getActivity()).showStreetView();
                 break;

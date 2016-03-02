@@ -55,9 +55,9 @@ public class DbProvider extends ContentProvider {
         final int match = sUriMatcher.match(uri);
         switch (match) {
             case FAVORITES_HOTELS:
-                return DbContract.LikedHotels.CONTENT_TYPE;
+                return DbContract.Favorites.CONTENT_TYPE;
             case FAVORITES_HOTEL_ID:
-                return DbContract.LikedHotels.CONTENT_TYPE;
+                return DbContract.Favorites.CONTENT_TYPE;
             case SEARCH_HISTORY:
                 return DbContract.SearchHistory.CONTENT_TYPE;
 
@@ -74,7 +74,7 @@ public class DbProvider extends ContentProvider {
         final DbSelectionBuilder builder = new DbSelectionBuilder();
         switch (match) {
             case FAVORITES_HOTELS:
-                builder.table(DbContract.Tables.TABLE_LIKED_HOTELS);
+                builder.table(DbContract.Tables.TABLE_FAVORITES);
                 if (uri.getQueryParameter("group by") != null) {
                     return builder.groupBy(uri.getQueryParameter("group by")).query(db, false, getFavoritesGroupByColumns(), "", "");
                 } else if (uri.getQueryParameter("where") != null) {
@@ -84,8 +84,8 @@ public class DbProvider extends ContentProvider {
                 }
 
             case FAVORITES_HOTEL_ID:
-                final String hotelId = DbContract.LikedHotels.getHotelId(uri);
-                builder.table(DbContract.Tables.TABLE_LIKED_HOTELS).where(DbContract.LikedHotelsColumns.KEY_ID + " = ?", hotelId);
+                final String hotelId = DbContract.Favorites.getHotelId(uri);
+                builder.table(DbContract.Tables.TABLE_FAVORITES).where(DbContract.FavoritesColumns.KEY_ID + " = ?", hotelId);
                 return builder.query(db, false, projection, "", "");
             case SEARCH_HISTORY:
                 builder.table(DbContract.Tables.TABLE_SEARCH_HISTORY);
@@ -123,10 +123,10 @@ public class DbProvider extends ContentProvider {
         final int match = sUriMatcher.match(uri);
         switch (match) {
             case FAVORITES_HOTELS:
-                db.insert(DbContract.Tables.TABLE_LIKED_HOTELS, null, values);
-                return DbContract.LikedHotels.buildHotelUri(values.getAsString(DbContract.LikedHotelsColumns.KEY_ID),
-                        values.getAsString(DbContract.LikedHotelsColumns.CITY),
-                        values.getAsString(DbContract.LikedHotelsColumns.COUNTRY));
+                db.insert(DbContract.Tables.TABLE_FAVORITES, null, values);
+                return DbContract.Favorites.buildHotelUri(values.getAsString(DbContract.FavoritesColumns.KEY_ID),
+                        values.getAsString(DbContract.FavoritesColumns.TITLE),
+                        values.getAsString(DbContract.FavoritesColumns.TEXT));
             case SEARCH_HISTORY:
                 db.insert(DbContract.Tables.TABLE_SEARCH_HISTORY, null, values);
                 return DbContract.SearchHistory.buildSearchHistoryUri(values.getAsString(DbContract.SearchHistoryColumns.LOCATION_NAME),
@@ -136,11 +136,7 @@ public class DbProvider extends ContentProvider {
                         values.getAsString(DbContract.SearchHistoryColumns.NORTHEAST_LON),
                         values.getAsString(DbContract.SearchHistoryColumns.SOUTHWEST_LAT),
                         values.getAsString(DbContract.SearchHistoryColumns.SOUTHWEST_LON),
-                        values.getAsString(DbContract.SearchHistoryColumns.TYPES),
-                        values.getAsString(DbContract.SearchHistoryColumns.NUMBER_GUESTS),
-                        values.getAsString(DbContract.SearchHistoryColumns.NUMBER_ROOMS),
-                        values.getAsString(DbContract.SearchHistoryColumns.FROM_DATE),
-                        values.getAsString(DbContract.SearchHistoryColumns.TO_DATE));
+                        values.getAsString(DbContract.SearchHistoryColumns.TYPES));
 
             default: {
                 throw new UnsupportedOperationException("Unknown insert uri: " + uri);
@@ -168,7 +164,7 @@ public class DbProvider extends ContentProvider {
         final DbSelectionBuilder builder = new DbSelectionBuilder();
         final int match = sUriMatcher.match(uri);
         if (match == FAVORITES_HOTEL_ID) {
-            builder.table(DbContract.Tables.TABLE_LIKED_HOTELS).where(DbContract.LikedHotelsColumns.KEY_ID + "=?", uri.getPathSegments().get(1));
+            builder.table(DbContract.Tables.TABLE_FAVORITES).where(DbContract.FavoritesColumns.KEY_ID + "=?", uri.getPathSegments().get(1));
         }
 
         return builder.where(selection, selectionArgs).delete(db);

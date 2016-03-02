@@ -42,13 +42,10 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.travoca.app.R;
 import com.travoca.app.provider.DbContract;
-import com.travoca.app.utils.AppLog;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
@@ -260,17 +257,13 @@ public class PlaceAutocompleteAdapter
                 }
                 resultList.add(new PlaceHistory(
                         cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LOCATION_NAME)),
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NUMBER_GUESTS)),
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NUMBER_ROOMS)),
                         cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LAT)),
                         cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LON)),
                         cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LAT)),
                         cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LON)),
                         cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LAT)),
                         cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LON)),
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.TYPES)),
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.FROM_DATE)),
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.TO_DATE))))
+                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.TYPES))))
                 ;
 
             } while (cursor.moveToNext());
@@ -323,8 +316,6 @@ public class PlaceAutocompleteAdapter
         SimpleDateFormat input = new SimpleDateFormat("yyyy-MM-d k", Locale.US);
         SimpleDateFormat output = new SimpleDateFormat("MMM d", Locale.getDefault());
         private CharSequence mHtmlText;
-        private String mNumberGuests;
-        private String mNumberRooms;
         private float mLat;
         private float mLng;
         private double mNortheastLat;
@@ -332,13 +323,11 @@ public class PlaceAutocompleteAdapter
         private double mSouthwestLat;
         private double mSouthwestLon;
         private String mGoogleTypes;
-        private Date mFromDate;
-        private Date mToDate;
 
-        PlaceHistory(String locationName, String numberGuests, String numberRooms, String lat, String lng, String northeastLat, String northeastLon, String southwestLat, String southwestLon, String googleTypes, String fromDate, String toDate) {
+
+        PlaceHistory(String locationName, String lat, String lng, String northeastLat, String northeastLon, String southwestLat, String southwestLon, String googleTypes) {
             super(locationName);
-            mNumberGuests = numberGuests;
-            mNumberRooms = numberRooms;
+
             mLat = Float.valueOf(lat);
             mLng = Float.valueOf(lng);
             mNortheastLat = northeastLat == null ? 0 : Double.valueOf(northeastLat);
@@ -346,17 +335,10 @@ public class PlaceAutocompleteAdapter
             mSouthwestLat = southwestLat == null ? 0 : Double.valueOf(southwestLat);
             mSouthwestLon = southwestLon == null ? 0 : Double.valueOf(southwestLon);
             mGoogleTypes = googleTypes;
-            try {
-                mFromDate = input.parse(fromDate + " 10");
-                mToDate = input.parse(toDate + " 10");
 
-                this.mHtmlText = "<font color=\"black\">" + locationName + " </font> <br>"
-                        + numberGuests + " guests, "
-                        + output.format(mFromDate) + " - "
-                        + output.format(mToDate);
-            } catch (ParseException e) {
-                AppLog.e(e);
-            }
+
+            this.mHtmlText = "<font color=\"black\">" + locationName + " </font> <br>";
+
         }
 
         public LatLng getLatLng() {
@@ -368,15 +350,6 @@ public class PlaceAutocompleteAdapter
                 return null;
             }
             return new LatLngBounds(new LatLng(mSouthwestLat, mSouthwestLon), new LatLng(mNortheastLat, mNortheastLon));
-        }
-
-
-        public int getNumberGuests() {
-            return Integer.valueOf(mNumberGuests);
-        }
-
-        public int getNumberRooms() {
-            return Integer.valueOf(mNumberRooms);
         }
 
         @Override

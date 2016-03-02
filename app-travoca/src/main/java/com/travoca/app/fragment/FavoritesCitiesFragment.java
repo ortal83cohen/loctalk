@@ -38,8 +38,8 @@ public class FavoritesCitiesFragment extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_favorites_cities, container, false);
 
         ButterKnife.bind(this, view);
-        Cursor cursor = getActivity().getContentResolver().query(DbContract.LikedHotels.CONTENT_URI.buildUpon().
-                appendQueryParameter("group by", DbContract.LikedHotelsColumns.CITY + "," + DbContract.LikedHotelsColumns.COUNTRY).build(), null, null, null, null);
+        Cursor cursor = getActivity().getContentResolver().query(DbContract.Favorites.CONTENT_URI.buildUpon().
+                appendQueryParameter("group by", DbContract.FavoritesColumns.TITLE + "," + DbContract.FavoritesColumns.TEXT).build(), null, null, null, null);
 
         if (cursor == null) {
             mNoResult.setVisibility(View.VISIBLE);
@@ -56,7 +56,7 @@ public class FavoritesCitiesFragment extends BaseFragment {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     Cursor cursor = (Cursor) parent.getItemAtPosition(position);
-                    ((FavoritesActivity) getActivity()).showFavoritesList(cursor.getString(cursor.getColumnIndex(DbContract.LikedHotelsColumns.CITY)), cursor.getString(cursor.getColumnIndex(DbContract.LikedHotelsColumns.COUNTRY)), cursor.getString(cursor.getColumnIndex("count")));
+                    ((FavoritesActivity) getActivity()).showFavoritesList(cursor.getString(cursor.getColumnIndex(DbContract.FavoritesColumns.TITLE)), cursor.getString(cursor.getColumnIndex(DbContract.FavoritesColumns.TEXT)), cursor.getString(cursor.getColumnIndex("count")));
                 }
             });
             getActivity().setTitle(R.string.favorites);

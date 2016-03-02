@@ -33,6 +33,7 @@ import com.travoca.api.model.ResultsResponse;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
+import com.travoca.app.activity.LoginActivity;
 import com.travoca.app.activity.NewRecordActivity;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.User;
@@ -239,8 +240,13 @@ public class NewRecordFragment extends BaseFragment {
                         new AlertDialog.Builder(getActivity())
                                 .setTitle("Alert")
                                 .setMessage("You must login to upload record")
+                                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                    }
+                                })
                                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
+                                        startActivity(LoginActivity.createIntent(getActivity()));
                                     }
                                 })
                                 .setIcon(android.R.drawable.ic_dialog_alert)

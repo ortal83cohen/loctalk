@@ -67,6 +67,7 @@ import com.travoca.app.model.LocationWithTitle;
 import com.travoca.app.model.MapSelectedViewPort;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.model.ViewPort;
+import com.travoca.app.provider.SearchHistory;
 import com.travoca.app.randerscript.BlurBuilder;
 import com.travoca.app.utils.AppLog;
 import com.travoca.app.utils.TextWatcherAdapter;
@@ -150,7 +151,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
                 return;
             }
             Place place = places.get(0);
-//            SearchHistory.insert(place, mSelectedRange, mPersonsButton.getValue(), mRoomsButton.getValue(), getActivity());
+            SearchHistory.insert(place, getActivity());
             Type lastLocation = updateLastLocation(place.getName().toString(), place.getLatLng(), place.getViewport());
             startSearch(lastLocation);
             places.release();
