@@ -31,7 +31,10 @@ public class AppBar extends Toolbar {
             setTitle(R.string.current_location);
         } else if (loc instanceof LocationWithTitle) {
             setTitle(((LocationWithTitle) loc).getTitle());
+        }else {
+            setTitle("My list");
         }
+
 
 //        String subtitle = "dddddd";
 //        setSubtitle(subtitle);

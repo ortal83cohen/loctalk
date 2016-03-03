@@ -37,7 +37,7 @@ public class RecordListAdapter extends ArrayAdapter<Record, RecyclerView.ViewHol
         mPictureWidth = r.getDimensionPixelSize(R.dimen.listview_image_width);
         mPictureHeight = r.getDimensionPixelSize(R.dimen.listview_image_height);
         AppLog.d("Image size [" + mPictureWidth + "," + mPictureHeight + "]");
-        mRequest = activity.getHotelsRequest();
+        mRequest = activity.getRecordsRequest();
         setHasStableIds(true);
     }
 

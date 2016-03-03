@@ -123,12 +123,12 @@ dependencies {
     compile 'com.google.android.gms:play-services-auth:8.3.0'
 
     // Design library
-    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:design:23.2.0'
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
     // App Compat
-    compile 'com.android.support:recyclerview-v7:23.1.1'
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:cardview-v7:23.2.0'
     // Inject views
     compile 'com.jakewharton:butterknife:7.0.1'
     // Custom fonts
@@ -155,7 +155,7 @@ dependencies {
     // Detect device year class
     compile 'com.facebook.device.yearclass:yearclass:1.0.1'
     // App dependencies
-    compile 'com.android.support:support-annotations:23.1.1'
+    compile 'com.android.support:support-annotations:23.2.0'
     // Testing
     androidTestCompile 'com.android.support.test:runner:0.4.1'
     // Set this dependency to use JUnit 4 rules
@@ -175,7 +175,7 @@ dependencies {
     // Set this dependency to build and run UI Automator tests
     androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.1'
     //
-    androidTestCompile 'com.android.support:support-annotations:23.1.1'
+    androidTestCompile 'com.android.support:support-annotations:23.2.0'
     // Unit tests
     // Unit testing dependencies
     testCompile 'junit:junit:4.12'

@@ -2,7 +2,6 @@ package com.travoca.app.fragment;
 
 
 import android.app.Activity;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -95,7 +94,7 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
         setupItem(R.id.nav_favorites, NavigationDrawer.NAV_FAVORITES, true);
         setupItem(R.id.nav_code_scanner, NavigationDrawer.NAV_SCANNER, true);
 //        setupItem(R.id.nav_profile, NavigationDrawer.NAV_PROFILE, loggedIn);
-        setupItem(R.id.nav_contribute, NavigationDrawer.NAV_NEW_RECORD, true);
+        setupItem(R.id.my_list, NavigationDrawer.MY_LIST, true);
         setupItem(R.id.nav_settings, NavigationDrawer.NAV_SETTING, true);
         setupItem(R.id.login, NavigationDrawer.NAV_LOGIN, true);
         FrameLayout headerView = (FrameLayout) mView.findViewById(R.id.nav_header_view);

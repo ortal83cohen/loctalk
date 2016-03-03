@@ -93,7 +93,7 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        setTitle(getHotelsRequest());
+        setTitle(getRecordsRequest());
     }
 
     @Override
@@ -136,12 +136,12 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
             fragmentMap.getMapAsync(this);
         }
         // For the initial search track here, all others will be tracked with SearchRequestEvent
-        AnalyticsCalls.get().trackSearchResults(getHotelsRequest());
+        AnalyticsCalls.get().trackSearchResults(getRecordsRequest());
     }
 
     @Override
     protected void onCreateContentView() {
-        setContentView(R.layout.activity_hotel_list);
+        setContentView(R.layout.activity_records_list);
     }
 
     public void setTitle(SearchRequest hotelsRequest) {
@@ -172,7 +172,7 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = new ResultsMap(googleMap, this, this);
-        setTitle(getHotelsRequest());
+        setTitle(getRecordsRequest());
     }
 
     @Override
@@ -199,7 +199,7 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
     @Override
     public void onRecordClick(Record record, int position) {
-        startActivity(RecordDetailsActivity.createIntent(record, getHotelsRequest(), this));
+        startActivity(RecordDetailsActivity.createIntent(record, getRecordsRequest(), this));
     }
 
     @Override
@@ -324,9 +324,9 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
     @Override
     public void startSearch(Type locationType) {
         remove(getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME));
-        getHotelsRequest().setType(locationType);
-        RequestUtils.apply(getHotelsRequest());
-        App.provide(this).updateLastSeatchRequest(getHotelsRequest());
+        getRecordsRequest().setType(locationType);
+        RequestUtils.apply(getRecordsRequest());
+        App.provide(this).updateLastSeatchRequest(getRecordsRequest());
         if (mMap != null) {
             mMap.refreshHotels();
             if (locationType instanceof ViewPortType) {
@@ -336,7 +336,7 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
             }
         }
         refreshList();
-        setTitle(getHotelsRequest());
+        setTitle(getRecordsRequest());
     }
 
     @Override
@@ -386,7 +386,7 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
     public void refreshMap() {
         mMap.refreshHotels();
-        setTitle(getHotelsRequest());
+        setTitle(getRecordsRequest());
     }
 
 

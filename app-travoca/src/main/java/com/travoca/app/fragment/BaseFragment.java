@@ -22,7 +22,7 @@ public abstract class BaseFragment extends Fragment {
     }
 
     public RecordListRequest getRequest() {
-        return ((BaseActivity) getActivity()).getHotelsRequest();
+        return ((BaseActivity) getActivity()).getRecordsRequest();
     }
 
     @Override

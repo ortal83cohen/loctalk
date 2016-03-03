@@ -64,7 +64,7 @@
     <string name="mainnav_profile">Profile</string>
     <string name="mainnav_code_scanner">QR Scan</string>
     <string name="mainnav_login">Login</string>
-    <string name="mainnav_contribute">Contribute to our community</string>
+    <string name="mainnav_contribute">Recorder mode</string>
     <string name="mainnav_settings">Settings</string>
     <string name="open_with">Open page with</string>
     <string name="login_with_google">Login with Google</string>

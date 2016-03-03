@@ -43,11 +43,11 @@ public class RecordListRequest extends SearchRequest implements Parcelable {
 
     }
 
-    public RecordListRequest(RecordListRequest hotelsRequest) {
-        setType(hotelsRequest.getType());
-        setLanguage(hotelsRequest.getLanguage());
-        setCurrency(hotelsRequest.getCurrency());
-        setCustomerCountryCode(hotelsRequest.getCustomerCountryCode());
+    public RecordListRequest(RecordListRequest recordsRequest) {
+        setType(recordsRequest.getType());
+        setLanguage(recordsRequest.getLanguage());
+        setCurrency(recordsRequest.getCurrency());
+        setCustomerCountryCode(recordsRequest.getCustomerCountryCode());
     }
 
     public Location getLocation() {

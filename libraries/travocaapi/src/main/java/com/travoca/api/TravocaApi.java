@@ -1,6 +1,5 @@
 package com.travoca.api;
 
-import android.location.Location;
 import android.support.v4.util.ArrayMap;
 
 import com.squareup.okhttp.HttpUrl;
@@ -15,7 +14,6 @@ import com.travoca.api.model.search.ImageRequest;
 import com.travoca.api.model.search.LikeRequest;
 import com.travoca.api.model.search.ListType;
 import com.travoca.api.model.search.Type;
-import com.travoca.api.model.search.UserBaseRequest;
 import com.travoca.api.model.search.UserRequest;
 
 import java.io.IOException;
@@ -38,6 +36,7 @@ import retrofit.http.QueryMap;
 public class TravocaApi {
 
     public static final String PATH_RECORDS = "/records";
+    public static final String PATH_USER_RECORDS = "/user/records";
     public static final String PATH_USER = "/user";
     public static final String PATH_IMAGE = "/image";
     public static final String PATH_ORDERS = "/etbstatic/placeAnOrder.json";
@@ -132,14 +131,37 @@ public class TravocaApi {
         return service.records(query);
     }
 
-    public Call<ResultsResponse> like(int id,String userId) throws InvalidParameterException {
+    public Call<ResultsResponse> userRecords(SearchRequest searchRequest) throws InvalidParameterException {
 
         Service service = create();
 
-        return service.like(new LikeRequest(String.valueOf(id), "like",userId));
+        ArrayMap<String, String> query = new ArrayMap<>();
+
+        // Location
+        Type loc = searchRequest.getType();
+        if (searchRequest.getUserId() == null || searchRequest.getUserId() == "") {
+            throw new InvalidParameterException();
+        }
+        query.put("userId", searchRequest.getUserId());
+        query.put("currency", searchRequest.getCurrency());
+        query.put("language", searchRequest.getLanguage());
+
+        query.put("limit", String.valueOf(searchRequest.getLimit()));
+        query.put("offset", String.valueOf(searchRequest.getOffset()));
+
+        query.put("customerCountryCode", searchRequest.getCustomerCountryCode());
+
+        return service.userRecords(query);
     }
 
-    public Call<ResultsResponse> unlike(int id,String userId) throws InvalidParameterException {
+    public Call<ResultsResponse> like(int id, String userId) throws InvalidParameterException {
+
+        Service service = create();
+
+        return service.like(new LikeRequest(String.valueOf(id), "like", userId));
+    }
+
+    public Call<ResultsResponse> unlike(int id, String userId) throws InvalidParameterException {
 
         Service service = create();
 
@@ -147,7 +169,7 @@ public class TravocaApi {
     }
 
 
-    public Call<ResultsResponse> saveRecordDetails(String image, String record, String title, String description, String locationName, String lat, String lon, String type,String userId) {
+    public Call<ResultsResponse> saveRecordDetails(String image, String record, String title, String description, String locationName, String lat, String lon, String type, String userId) {
 
         Service service = create();
 
@@ -155,7 +177,7 @@ public class TravocaApi {
         return service.saveRecordDetails(new ImageRequest(image, record, title, description, locationName, lat, lon, type, userId));
     }
 
-    public Call<ResultsResponse> saveUser( String userId,String email, String imageUrl,String firstName,String lastName) {
+    public Call<ResultsResponse> saveUser(String userId, String email, String imageUrl, String firstName, String lastName) {
 
         Service service = create();
 
@@ -167,6 +189,9 @@ public class TravocaApi {
 
         @GET(PATH_RECORDS)
         Call<ResultsResponse> records(@QueryMap Map<String, String> query);
+
+        @GET(PATH_USER_RECORDS)
+        Call<ResultsResponse> userRecords(@QueryMap Map<String, String> query);
 
         @PUT(PATH_RECORDS)
         Call<ResultsResponse> like(@Body LikeRequest request);

@@ -1,61 +1,68 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white"
-    android:choiceMode="singleChoice"
-    android:divider="@android:color/black"
-    android:dividerHeight="2dp"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <FrameLayout
-        android:id="@+id/nav_header_view"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:background="@color/theme_primary" />
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/black"
+        android:dividerHeight="2dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/nav_header_view"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/theme_primary" />
+
+
+        <TextView
+            android:id="@+id/nav_recent_searches"
+            style="@style/AppTheme.Widget.NavDrawer.Item"
+            android:drawableLeft="@drawable/mainnav_recent_search"
+            android:lines="1"
+            android:text="@string/mainnav_recent_search" />
+
+        <TextView
+            android:id="@+id/nav_favorites"
+            style="@style/AppTheme.Widget.NavDrawer.Item"
+            android:drawableLeft="@drawable/mainnav_favourites"
+            android:text="@string/mainnav_favorites" />
+
+        <TextView
+            android:id="@+id/nav_code_scanner"
+            style="@style/AppTheme.Widget.NavDrawer.Item"
+            android:drawableLeft="@drawable/mainnav_scanner"
+            android:text="@string/mainnav_code_scanner" />
+
+        <View
+            android:id="@+id/nav_divider"
+            style="@style/AppTheme.Widget.NavDrawer.Separator" />
+
+
+        <TextView
+            android:id="@+id/nav_settings"
+            style="@style/AppTheme.Widget.NavDrawer.Item"
+            android:drawableLeft="@drawable/mainnav_my_settings"
+            android:text="@string/mainnav_settings" />
+
+        <TextView
+            android:id="@+id/login"
+            style="@style/AppTheme.Widget.NavDrawer.Item"
+            android:drawableLeft="@drawable/mainnav_my_profile"
+            android:text="@string/mainnav_login" />
+
+
+    </LinearLayout>
 
 
     <TextView
-        android:id="@+id/nav_recent_searches"
+        android:id="@+id/my_list"
         style="@style/AppTheme.Widget.NavDrawer.Item"
-        android:drawableLeft="@drawable/mainnav_recent_search"
-        android:lines="1"
-        android:text="@string/mainnav_recent_search" />
-
-    <TextView
-        android:id="@+id/nav_favorites"
-        style="@style/AppTheme.Widget.NavDrawer.Item"
-        android:drawableLeft="@drawable/mainnav_favourites"
-        android:text="@string/mainnav_favorites" />
-
-    <TextView
-        android:id="@+id/nav_code_scanner"
-        style="@style/AppTheme.Widget.NavDrawer.Item"
-        android:drawableLeft="@drawable/mainnav_scanner"
-        android:text="@string/mainnav_code_scanner" />
-
-    <TextView
-        android:id="@+id/nav_contribute"
-        style="@style/AppTheme.Widget.NavDrawer.Item"
+        android:layout_gravity="bottom"
         android:drawableLeft="@drawable/mainnav_my_profile"
         android:text="@string/mainnav_contribute" />
 
-
-    <View
-        android:id="@+id/nav_divider"
-        style="@style/AppTheme.Widget.NavDrawer.Separator" />
-
-
-    <TextView
-        android:id="@+id/nav_settings"
-        style="@style/AppTheme.Widget.NavDrawer.Item"
-        android:drawableLeft="@drawable/mainnav_my_settings"
-        android:text="@string/mainnav_settings" />
-    <TextView
-        android:id="@+id/login"
-        style="@style/AppTheme.Widget.NavDrawer.Item"
-        android:drawableLeft="@drawable/mainnav_my_profile"
-        android:text="@string/mainnav_login" />
-
-
-</LinearLayout>
-
+</FrameLayout>

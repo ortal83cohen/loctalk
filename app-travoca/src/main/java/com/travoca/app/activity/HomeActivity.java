@@ -32,9 +32,7 @@ import com.travoca.app.core.CoreInterface;
 import com.travoca.app.fragment.HomeFragment;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.preferences.UserPreferences;
-import com.travoca.app.service.LocationService;
 import com.travoca.app.travocaapi.RetrofitCallback;
-import com.travoca.app.utils.AppLog;
 import com.travoca.app.widget.IntentIntegrator;
 import com.travoca.app.widget.IntentResult;
 
@@ -101,7 +99,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
         App.provide(this).facebook().initialize();
         mCoreInterface = CoreInterface.create(getApplicationContext());
 
-        if (getHotelsRequest() == null) {
+        if (getRecordsRequest() == null) {
             setHotelsRequest(App.provide(this).createHotelsRequest());
         }
 
@@ -117,7 +115,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
                 .build();
 
         if (savedInstanceState == null) {
-            RecordListRequest request = getHotelsRequest();
+            RecordListRequest request = getRecordsRequest();
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.fragment_container, HomeFragment.newInstance(request),
@@ -140,7 +138,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
     private void updateSearchBox() {
         SearchRequest lastSearchRequest = App.provide(this).getLastSearchRequest();
         if (lastSearchRequest != null) {
-            RecordListRequest request = getHotelsRequest();
+            RecordListRequest request = getRecordsRequest();
             RequestUtils.apply(request);
             request.setType(lastSearchRequest.getType());
             HomeFragment homeFragment = (HomeFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME);
@@ -219,12 +217,11 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
 
     @Override
     public void startSearch(Type locationType) {
-        RecordListRequest request = getHotelsRequest();
+        RecordListRequest request = getRecordsRequest();
 
         request.setType(locationType);
         RequestUtils.apply(request);
-        Intent intentActivity = RecordListActivity.createIntent(request, this);
-        startActivity(intentActivity);
+        startActivity(RecordListActivity.createIntent(request, this));//// TODO: 3/3/2016  move to base activity
     }
 
     @Override

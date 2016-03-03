@@ -35,6 +35,9 @@ import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
 import com.travoca.app.activity.LoginActivity;
 import com.travoca.app.activity.NewRecordActivity;
+import com.travoca.app.events.Events;
+import com.travoca.app.events.MassageEvent;
+import com.travoca.app.events.SearchRequestEvent;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.User;
 import com.travoca.app.travocaapi.RetrofitCallback;
@@ -90,13 +93,16 @@ public class NewRecordFragment extends BaseFragment {
         protected void failure(ResponseBody response, boolean isOffline) {
             if (getActivity() != null) {
                 Toast.makeText(getActivity(), "failure", Toast.LENGTH_LONG).show();
+                sendButton.setEnabled(true);
             }
         }
 
         @Override
         protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
             if (getActivity() != null) {
+                Events.post(new MassageEvent(MassageEvent.NEW_RECORD_SUCCESS));
                 Toast.makeText(getActivity(), "success", Toast.LENGTH_LONG).show();
+                getActivity().finish();
             }
         }
 
@@ -208,7 +214,15 @@ public class NewRecordFragment extends BaseFragment {
         sendButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                if (mTitle.length()>4 && mDescription.length()>4 && mLocationName.length()>4 && mHasImage) {
+                if (mTitle.length() < 4) {
+                    Toast.makeText(getActivity(), "Title Not valid", Toast.LENGTH_LONG).show();
+                } else if (mDescription.length() < 4) {
+                    Toast.makeText(getActivity(), "Description Not valid", Toast.LENGTH_LONG).show();
+                } else if (mLocationName.length() < 4) {
+                    Toast.makeText(getActivity(), "Location NameNot valid", Toast.LENGTH_LONG).show();
+                } else if (!mHasImage) {
+                    Toast.makeText(getActivity(), "Image Not valid", Toast.LENGTH_LONG).show();
+                } else {
                     String encodedFile = "";
                     File file = new File(outputFile);
 
@@ -234,6 +248,7 @@ public class NewRecordFragment extends BaseFragment {
                     MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
                     User user = memberStorage.loadUser();
                     if (user != null) {
+                        sendButton.setEnabled(false);
                         travocaApi.saveRecordDetails(encodedImage, encodedFile, mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString()
                                 , String.valueOf(mLocation.getLatitude()), String.valueOf(mLocation.getLongitude()), "free", user.id).enqueue(mResultsCallback);
                     } else {
@@ -253,8 +268,6 @@ public class NewRecordFragment extends BaseFragment {
                                 .show();
 
                     }
-                } else {
-                    Toast.makeText(getActivity(), "Not valid", Toast.LENGTH_LONG).show();
                 }
             }
         });

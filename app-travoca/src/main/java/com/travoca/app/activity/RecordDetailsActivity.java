@@ -64,7 +64,7 @@ public class RecordDetailsActivity extends BaseActivity implements HomeFragment.
         FragmentManager fm = getSupportFragmentManager();
         RecordDetailsFragment recordDetailsFragment = (RecordDetailsFragment) fm.findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
         if (recordDetailsFragment == null) {
-            recordDetailsFragment = RecordDetailsFragment.newInstance(getHotelsRequest(), mRecord);
+            recordDetailsFragment = RecordDetailsFragment.newInstance(getRecordsRequest(), mRecord);
             fm.beginTransaction()
                     .setCustomAnimations(R.anim.raise, R.anim.shrink)
                     .replace(R.id.fragment_container,
@@ -146,15 +146,15 @@ public class RecordDetailsActivity extends BaseActivity implements HomeFragment.
     public void startSearch(Type locationType) {
         remove(getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME));
 
-        RequestUtils.apply(getHotelsRequest());
+        RequestUtils.apply(getRecordsRequest());
         RecordDetailsFragment recordDetailsFragment = (RecordDetailsFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
         if (recordDetailsFragment != null) {
-            recordDetailsFragment.checkAvailability(getHotelsRequest());
+            recordDetailsFragment.checkAvailability(getRecordsRequest());
         }
     }
 
     public void showSearchResults(Location location, SearchRequest request) {
-        RecordListRequest searchRequest = getHotelsRequest();
+        RecordListRequest searchRequest = getRecordsRequest();
         searchRequest.setType(location);
         RequestUtils.apply(searchRequest);
 

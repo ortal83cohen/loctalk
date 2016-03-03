@@ -143,7 +143,7 @@ public class ResultsMap {
                 return null;
             }
         });
-        final Type type = mActivity.getHotelsRequest().getType();
+        final Type type = mActivity.getRecordsRequest().getType();
 
         if (type instanceof Location) {
             mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(((Location) type).getLatLng(), 12), 300, null);
@@ -189,7 +189,7 @@ public class ResultsMap {
 
     public void refreshHotels() {
 
-        SearchRequest searchRequest = mActivity.getHotelsRequest();
+        SearchRequest searchRequest = mActivity.getRecordsRequest();
         TravocaApi mTravocaApi = TravocaApplication.provide(mActivity).travocaApi();
         Events.post(new SearchRequestEvent(searchRequest, 0));
         MemberStorage memberStorage = App.provide(mActivity).memberStorage();
@@ -264,12 +264,12 @@ public class ResultsMap {
 
     public void updateRequest() {
 
-        Type type = mActivity.getHotelsRequest().getType();
+        Type type = mActivity.getRecordsRequest().getType();
         if (type instanceof MapSelectedViewPort) {
             ((MapSelectedViewPort) type).setLatLngBounds(mGoogleMap.getProjection().getVisibleRegion().latLngBounds);
         } else {
             String title = type instanceof LocationWithTitle ? ((LocationWithTitle) type).getTitle() : null;
-            mActivity.getHotelsRequest().setType(new MapSelectedViewPort(title, mGoogleMap.getProjection().getVisibleRegion().latLngBounds));
+            mActivity.getRecordsRequest().setType(new MapSelectedViewPort(title, mGoogleMap.getProjection().getVisibleRegion().latLngBounds));
         }
     }
 

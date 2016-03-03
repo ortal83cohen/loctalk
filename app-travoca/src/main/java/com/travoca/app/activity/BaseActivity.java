@@ -158,7 +158,10 @@ public abstract class BaseActivity extends AppCompatActivity {
                 //start scanning
                 scanIntegrator.initiateScan();
                 break;
-            case NavigationDrawer.NAV_NEW_RECORD:
+            case NavigationDrawer.MY_LIST:
+                startActivity(MyListActivity.createIntent(this));
+                break;
+            case NavigationDrawer.ADD_NEW_RECORD:
                 startActivity(NewRecordActivity.createIntent(this));
                 break;
             case NavigationDrawer.NAV_LOGIN:
@@ -172,7 +175,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         return App.provide(this).getUserPrefs();
     }
 
-    public RecordListRequest getHotelsRequest() {
+    public RecordListRequest getRecordsRequest() {
         if (mRequest == null) {
             if (getIntent().hasExtra(EXTRA_REQUEST)) {
                 mRequest = getIntent().getParcelableExtra(EXTRA_REQUEST);
