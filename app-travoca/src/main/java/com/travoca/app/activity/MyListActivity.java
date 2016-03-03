@@ -69,9 +69,9 @@ public class MyListActivity extends BaseActivity implements RecordViewHolder.Lis
     }
 
     @Override
-    protected void onPause() {
+    protected void onDestroy() {
         Events.unregister(this);
-        super.onPause();
+        super.onDestroy();
     }
 
     @Override

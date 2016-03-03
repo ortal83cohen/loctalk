@@ -17,7 +17,9 @@ public class Events {
 
     public static void register(Object object) {
         AppLog.v("Registering: " + object);
-        sBus.register(object);
+        try {
+            sBus.register(object);
+        }catch (IllegalArgumentException ignored){}
     }
 
     public static void unregister(Object object) {
