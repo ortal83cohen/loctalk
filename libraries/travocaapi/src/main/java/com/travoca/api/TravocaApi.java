@@ -16,6 +16,7 @@ import com.travoca.api.model.search.ListType;
 import com.travoca.api.model.search.Type;
 import com.travoca.api.model.search.UserRequest;
 
+import java.io.File;
 import java.io.IOException;
 import java.security.InvalidParameterException;
 import java.util.Map;
@@ -25,8 +26,10 @@ import retrofit.GsonConverterFactory;
 import retrofit.Retrofit;
 import retrofit.http.Body;
 import retrofit.http.GET;
+import retrofit.http.Multipart;
 import retrofit.http.POST;
 import retrofit.http.PUT;
+import retrofit.http.Part;
 import retrofit.http.QueryMap;
 
 /**
@@ -169,10 +172,10 @@ public class TravocaApi {
     }
 
 
-    public Call<ResultsResponse> saveRecordDetails(String image, String record, String title, String description, String locationName, String lat, String lon, String type, String userId) {
+    public Call<ResultsResponse> saveRecordDetails(String image,File file, String record, String title, String description, String locationName, String lat, String lon, String type, String userId) {
 
         Service service = create();
-
+//        TypedFile typedFile = new TypedFile("multipart/form-data", file);
 
         return service.saveRecordDetails(new ImageRequest(image, record, title, description, locationName, lat, lon, type, userId));
     }

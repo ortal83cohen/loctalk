@@ -2,14 +2,11 @@ package com.travoca.app.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentSender;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -21,8 +18,6 @@ import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
-import com.google.android.gms.plus.Plus;
-import com.google.android.gms.plus.model.people.Person;
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.TravocaApi;
 import com.travoca.api.model.ResultsResponse;
@@ -34,7 +29,6 @@ import com.travoca.app.events.UserLogOutEvent;
 import com.travoca.app.events.UserLoginEvent;
 import com.travoca.app.fragment.LoginFragment;
 import com.travoca.app.member.MemberStorage;
-import com.travoca.app.member.model.AccessToken;
 import com.travoca.app.member.model.User;
 import com.travoca.app.travocaapi.RetrofitCallback;
 
@@ -46,7 +40,7 @@ import retrofit.Response;
  * @author user
  * @date 2016-02-17
  */
-public class LoginActivity extends BaseActivity implements View.OnClickListener,GoogleApiClient.OnConnectionFailedListener {
+public class LoginActivity extends BaseActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
     @Bind(R.id.sign_in_button)
     SignInButton btnSignIn;
     @Bind(R.id.button_sign_out)
@@ -73,11 +67,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                 .build();
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .enableAutoManage(this /* FragmentActivity */,  this /* OnConnectionFailedListener */)
+                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
 
-         memberStorage = App.provide(this).memberStorage();
+        memberStorage = App.provide(this).memberStorage();
         btnSignOut.setOnClickListener(this);
         btnSignIn.setOnClickListener(this);
         btnSignIn.setSize(SignInButton.SIZE_STANDARD);
@@ -120,6 +114,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
         startActivityForResult(signInIntent, RC_SIGN_IN);
     }
+
     private void signOut() {
         Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
                 new ResultCallback<Status>() {
@@ -142,7 +137,9 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         @Override
         public void success(ResultsResponse apiResponse, Response response) {
 
-        }};
+        }
+    };
+
     protected void onStop() {
         super.onStop();
         if (mGoogleApiClient.isConnected()) {
@@ -206,11 +203,14 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
             String[] splitName = acct.getDisplayName().split(" ");
             String firstName = splitName[0];
             String lastName = splitName[1];
-            String id =  acct.getId();
-            String imageUrl = acct.getPhotoUrl().toString();
+            String id = acct.getId();
+            String imageUrl = "";
+            try {
+                imageUrl = acct.getPhotoUrl().toString();
+            } catch (NullPointerException ignored) {}
             TravocaApi travocaApi = TravocaApplication.provide(this).travocaApi();
-            travocaApi.saveUser(id,email,imageUrl,firstName,lastName).enqueue(mResultsCallback);
-            User user = new User(email, firstName,lastName, id,imageUrl);
+            travocaApi.saveUser(id, email, imageUrl, firstName, lastName).enqueue(mResultsCallback);
+            User user = new User(email, firstName, lastName, id, imageUrl);
             Events.post(new UserLoginEvent(user));
             memberStorage.saveUser(user);
             updateUI(true);

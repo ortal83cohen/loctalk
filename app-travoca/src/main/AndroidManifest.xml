@@ -133,7 +133,7 @@
             android:value="@string/google_api_key" />
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="e09ac78e072247318bfc6e475f42518292025604" />
+            android:value="e5533e45838006515670b28d6ca70ce22dec50e8" />
 
         <activity
             android:name=".activity.SettingsActivity"

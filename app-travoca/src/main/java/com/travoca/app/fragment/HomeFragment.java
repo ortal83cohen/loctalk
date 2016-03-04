@@ -35,6 +35,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.CustomEvent;
 import com.facebook.device.yearclass.YearClass;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -553,10 +555,9 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
 
     @OnClick(R.id.search)
     public void onSearchHotelsClick(View button) {
-        onSearchHotelsWithLocation();
-    }
 
-    private void onSearchHotelsWithLocation() {
+
+
         try {
             Calendar yesterday = Calendar.getInstance(Locale.getDefault());
             yesterday.add(Calendar.DAY_OF_MONTH, -1);
@@ -639,6 +640,10 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
 
     private void startSearch(Type locationType) {
         if (!mSearchButtonClicked) {
+            Answers.getInstance().logCustom(new CustomEvent("SearchHotelsClick")
+                    .putCustomAttribute("Type", locationType.getType().toString())
+                    .putCustomAttribute("Context", locationType.getContext()));
+
             mSearchButtonClicked = true;
             mListener.startSearch(locationType);
         }

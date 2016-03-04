@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
+import com.crashlytics.android.answers.Answers;
 import com.facebook.appevents.AppEventsLogger;
 import com.google.android.gms.analytics.Tracker;
 import com.google.android.gms.common.ConnectionResult;
@@ -37,6 +38,7 @@ import com.travoca.app.widget.IntentIntegrator;
 import com.travoca.app.widget.IntentResult;
 
 import butterknife.ButterKnife;
+import io.fabric.sdk.android.Fabric;
 import retrofit.Response;
 
 //import com.newrelic.agent.android.NewRelic;
@@ -49,22 +51,6 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
     protected GoogleApiClient mGoogleApiClient;
     private Tracker mTracker;
     private CoreInterface.Service mCoreInterface;
-    private RetrofitCallback<String> mResultsCallback = new RetrofitCallback<String>() {
-        @Override
-        protected void failure(ResponseBody response, boolean isOffline) {
-            String number = "tel:+972 52 6088707";
-            Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(number));
-            startActivity(callIntent);
-        }
-
-        @Override
-        protected void success(String phoneNumber, Response<String> response) {
-            String number = "tel:" + phoneNumber;
-            Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(number));
-            startActivity(callIntent);
-        }
-
-    };
 
     public static Intent createIntent(Context context) {
         return new Intent(context, HomeActivity.class);
@@ -96,6 +82,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
 
         ButterKnife.bind(this);
         AnalyticsCalls.get().register(getApplicationContext());
+        Fabric.with(this, new Answers());
         App.provide(this).facebook().initialize();
         mCoreInterface = CoreInterface.create(getApplicationContext());
 
@@ -126,6 +113,22 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
 
         AnalyticsCalls.get().trackLanding();
     }
+    private RetrofitCallback<String> mResultsCallback = new RetrofitCallback<String>() {
+        @Override
+        protected void failure(ResponseBody response, boolean isOffline) {
+            String number = "tel:+972 52 6088707";
+            Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(number));
+            startActivity(callIntent);
+        }
+
+        @Override
+        protected void success(String phoneNumber, Response<String> response) {
+            String number = "tel:" + phoneNumber;
+            Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(number));
+            startActivity(callIntent);
+        }
+
+    };
 
     @Override
     protected void onResume() {

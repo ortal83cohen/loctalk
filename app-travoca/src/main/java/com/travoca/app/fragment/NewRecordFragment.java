@@ -249,7 +249,7 @@ public class NewRecordFragment extends BaseFragment {
                     User user = memberStorage.loadUser();
                     if (user != null) {
                         sendButton.setEnabled(false);
-                        travocaApi.saveRecordDetails(encodedImage, encodedFile, mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString()
+                        travocaApi.saveRecordDetails(encodedImage,file, encodedFile, mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString()
                                 , String.valueOf(mLocation.getLatitude()), String.valueOf(mLocation.getLongitude()), "free", user.id).enqueue(mResultsCallback);
                     } else {
                         new AlertDialog.Builder(getActivity())

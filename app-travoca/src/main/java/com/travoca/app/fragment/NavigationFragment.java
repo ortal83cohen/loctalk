@@ -92,9 +92,8 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
 
         setupItem(R.id.nav_recent_searches, NavigationDrawer.NAV_RECENT_SEARCH, true);
         setupItem(R.id.nav_favorites, NavigationDrawer.NAV_FAVORITES, true);
-        setupItem(R.id.nav_code_scanner, NavigationDrawer.NAV_SCANNER, true);
-//        setupItem(R.id.nav_profile, NavigationDrawer.NAV_PROFILE, loggedIn);
-        setupItem(R.id.my_list, NavigationDrawer.MY_LIST, true);
+        setupItem(R.id.nav_code_scanner, NavigationDrawer.NAV_SCANNER, false);
+
         setupItem(R.id.nav_settings, NavigationDrawer.NAV_SETTING, true);
         setupItem(R.id.login, NavigationDrawer.NAV_LOGIN, true);
         FrameLayout headerView = (FrameLayout) mView.findViewById(R.id.nav_header_view);
@@ -102,10 +101,9 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
         View header = inflater.inflate(R.layout.nav_header, headerView, false);
 
         if (user == null) {
-//            header = inflater.inflate(R.layout.nav_header_logout, headerView, false);
-//            mView.findViewById(R.id.nav_divider).setVisibility(View.GONE);
-
+            setupItem(R.id.my_list, NavigationDrawer.MY_LIST, false);
         } else {
+            setupItem(R.id.my_list, NavigationDrawer.MY_LIST, true);
             header = inflater.inflate(R.layout.nav_header_login, headerView, false);
             TextView nameFirst = (TextView) header.findViewById(R.id.profile_name);
             TextView nameLast = (TextView) header.findViewById(R.id.profile_surname);

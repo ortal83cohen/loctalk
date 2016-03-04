@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
 import com.squareup.picasso.Picasso;
 import com.travoca.app.events.EventProducers;
 import com.travoca.app.events.Events;

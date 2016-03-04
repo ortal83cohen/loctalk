@@ -63,8 +63,8 @@ public class MyListActivity extends BaseActivity implements RecordViewHolder.Lis
 
 
     @Override
-    protected void onResume() {
-        super.onResume();
+    protected void onStart() {
+        super.onStart();
         Events.register(this);
     }
 
