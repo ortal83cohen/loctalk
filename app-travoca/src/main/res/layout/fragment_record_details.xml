@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/gray_light"
                 android:orientation="vertical"
-                tools:context=".HotelDetailsActivity">
+                tools:context=".RecordDetailsActivity">
 
                 <FrameLayout
                     android:id="@+id/image_frame"
@@ -31,7 +31,7 @@
                     <android.support.v4.view.ViewPager
                         android:id="@+id/pager"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/hotel_summary_image_size"
+                        android:layout_height="@dimen/record_summary_image_size"
                         android:background="@color/theme_accent">
 
                         <Button
@@ -49,12 +49,12 @@
 
                         <TextView
                             android:id="@+id/snippet_title"
-                            style="@style/AppTheme.TextAppearance.HotelSummary.HotelName"
+                            style="@style/AppTheme.TextAppearance.RecordSummary.RecordName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="4dp"
                             android:textStyle="bold"
-                            tools:text="Hotel Name" />
+                            tools:text="Record Name" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -123,7 +123,7 @@
                         <FrameLayout
                             android:id="@+id/record_card"
                             android:layout_width="match_parent"
-                            android:layout_height="@dimen/hoteldetails_room_height"
+                            android:layout_height="@dimen/recorddetails_room_height"
                             android:layout_marginBottom="@dimen/minimum_default_padding"
                             android:layout_marginLeft="@dimen/default_padding"
                             android:layout_marginRight="@dimen/default_padding"
@@ -145,7 +145,7 @@
 
     <Button
         android:id="@+id/see_all_record"
-        style="@style/AppTheme.Widget.HotelSummary.AccentBottomButton"
+        style="@style/AppTheme.Widget.RecordSummary.AccentBottomButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|bottom"

@@ -16,12 +16,6 @@ import com.travoca.app.adapter.RecentSearchesAdapter;
 import com.travoca.app.model.Location;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.provider.DbContract;
-import com.travoca.app.utils.AppLog;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -29,7 +23,7 @@ import butterknife.ButterKnife;
 public class RecentSearchesActivity extends BaseActivity {
     @Bind(android.R.id.list)
     ListView mRecyclerView;
-    @Bind(R.id.hotel_list_no_result)
+    @Bind(R.id.record_list_no_result)
     LinearLayout mNoResult;
 
     public static Intent createIntent(Context context) {
@@ -73,7 +67,7 @@ public class RecentSearchesActivity extends BaseActivity {
     }
 
     public void startSearch(Location location) {
-        RecordListRequest request = App.provide(this).createHotelsRequest();
+        RecordListRequest request = App.provide(this).createRequest();
 
         startActivity(RecordListActivity.createIntent(request, this));
     }

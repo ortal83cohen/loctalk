@@ -60,7 +60,7 @@ public class ImagesPagerAdapter extends PagerAdapter {
                 Picasso.with(mContext)
                         .load(mResources.get(position))
                         .placeholder(R.drawable.progress_animation)
-                        .resize(container.getMeasuredWidth(), (int) mContext.getResources().getDimension(R.dimen.hotel_summary_image_size))
+                        .resize(container.getMeasuredWidth(), (int) mContext.getResources().getDimension(R.dimen.record_summary_image_size))
                         .into(itemView);
             } else {
                 Picasso.with(mContext)

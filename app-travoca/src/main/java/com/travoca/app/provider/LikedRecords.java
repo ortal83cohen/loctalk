@@ -11,9 +11,9 @@ import java.util.ArrayList;
  * @date 2015-12-02
  */
 public class LikedRecords {
-    public static boolean isLiked(int hotelId, Context context) {
+    public static boolean isLiked(int recordId, Context context) {
         Cursor c = context.getContentResolver().query(DbContract.Favorites.CONTENT_URI.buildUpon().appendPath(
-                String.valueOf(hotelId)).build(), null, null, null, null);
+                String.valueOf(recordId)).build(), null, null, null, null);
         boolean liked = false;
         if (c != null) {
             if (c.moveToFirst()) {
@@ -24,20 +24,20 @@ public class LikedRecords {
         return liked;
     }
 
-    public static void delete(int hotelId, Context context) {
-        context.getContentResolver().delete(DbContract.Favorites.CONTENT_URI.buildUpon().appendPath(String.valueOf(hotelId)).build(), null, null);
+    public static void delete(int recordId, Context context) {
+        context.getContentResolver().delete(DbContract.Favorites.CONTENT_URI.buildUpon().appendPath(String.valueOf(recordId)).build(), null, null);
     }
 
-    public static void insert(int hotelId, String title, String text, Context context) {
+    public static void insert(int recordId, String title, String text, Context context) {
         ContentValues values = new ContentValues();
-        values.put(DbContract.FavoritesColumns.KEY_ID, hotelId);
+        values.put(DbContract.FavoritesColumns.KEY_ID, recordId);
         values.put(DbContract.FavoritesColumns.TITLE, title);
         values.put(DbContract.FavoritesColumns.TEXT, text);
         context.getContentResolver().insert(DbContract.Favorites.CONTENT_URI, values);
 
     }
 
-    public static ArrayList<String> loadHotels(String city, String country, Context context) {
+    public static ArrayList<String> loadRecords(String city, String country, Context context) {
         Cursor cursor = context.getContentResolver().query(DbContract.Favorites.CONTENT_URI.buildUpon().
                 appendQueryParameter("where", DbContract.FavoritesColumns.TITLE + "='" + city + "' AND " + DbContract.FavoritesColumns.TEXT + "='" + country + "'").build(), null, null, null, null);
         ArrayList<String> records = new ArrayList<>();

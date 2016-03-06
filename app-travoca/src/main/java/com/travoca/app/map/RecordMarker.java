@@ -23,7 +23,7 @@ import com.travoca.app.preferences.UserPreferences;
  * @author ortal
  * @date 2015-04-20
  */
-public class HotelMarker {
+public class RecordMarker {
     public final static int STATUS_UNSEEN = 1;
     public final static int STATUS_SEEN = 2;
     public final static int STATUS_SELECTED = 3;
@@ -33,7 +33,7 @@ public class HotelMarker {
     private final int mTextSize;
     private final int mStrokeSize;
 
-    public HotelMarker(BaseActivity activity) {
+    public RecordMarker(BaseActivity activity) {
         mContext = activity;
         mUserPrefs = App.provide(mContext).getUserPrefs();
         mTextSize = mContext.getResources().getDimensionPixelSize(R.dimen.size_text_secondary);

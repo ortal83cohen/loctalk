@@ -8,15 +8,15 @@ import com.travoca.api.model.SearchRequest;
  */
 public class SearchRequestEvent {
     private final int mOffset;
-    private SearchRequest mHotelListRequest;
+    private SearchRequest mRecordListRequest;
 
-    public SearchRequestEvent(SearchRequest hotelsRequest, int offset) {
-        mHotelListRequest = hotelsRequest;
+    public SearchRequestEvent(SearchRequest recordsRequest, int offset) {
+        mRecordListRequest = recordsRequest;
         mOffset = offset;
     }
 
     public SearchRequest getSearchRequest() {
-        return mHotelListRequest;
+        return mRecordListRequest;
     }
 
     public int getOffset() {

@@ -38,10 +38,9 @@ public class ObjectGraph {
 
 
     private static final long DISK_CACHE_SIZE = 5000000; // 5mbX
-    private static final long CONNECT_TIMEOUT_MILLIS = 30000;
-    private static final long READ_TIMEOUT_MILLIS = 40000;
+    private static final long CONNECT_TIMEOUT_MILLIS = 20000;
+    private static final long READ_TIMEOUT_MILLIS = 30000;
     protected final Context app;
-    private RecordListRequest mHotelsRequest;
     private Facebook mFacebook;
     private UserPreferences mUserPrefs;
     private TravocaApi mTravocaApi;
@@ -66,7 +65,7 @@ public class ObjectGraph {
 
     }
 
-    public RecordListRequest createHotelsRequest() {
+    public RecordListRequest createRequest() {
         RecordListRequest request = new RecordListRequest();
         UserPreferences userPrefs = getUserPrefs();
         return request;

@@ -1,4 +1,4 @@
-package com.travoca.app.hoteldetails;
+package com.travoca.app.recorddetails;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;

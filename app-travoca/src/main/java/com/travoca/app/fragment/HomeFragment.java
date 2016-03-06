@@ -115,7 +115,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
     @Bind(R.id.group_buttons_holder)
     LinearLayout mGroupButtonsHolder;
     @Bind(R.id.search)
-    Button mSearchHotelsButton;
+    Button mSearchRecordsButton;
     private PlaceAutocompleteAdapter mAdapter;
     private int mSelectedPosition = POSITION_UNTOUCHED;
     private GoogleApiClient mGoogleApiClient;
@@ -554,7 +554,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
     }
 
     @OnClick(R.id.search)
-    public void onSearchHotelsClick(View button) {
+    public void onSearchRecordsClick(View button) {
 
 
 
@@ -640,7 +640,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
 
     private void startSearch(Type locationType) {
         if (!mSearchButtonClicked) {
-            Answers.getInstance().logCustom(new CustomEvent("SearchHotelsClick")
+            Answers.getInstance().logCustom(new CustomEvent("SearchRecordsClick")
                     .putCustomAttribute("Type", locationType.getType().toString())
                     .putCustomAttribute("Context", locationType.getContext()));
 

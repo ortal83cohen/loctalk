@@ -34,7 +34,7 @@ import com.travoca.app.events.Events;
 import com.travoca.app.events.SearchRequestEvent;
 import com.travoca.app.events.SearchResultsEvent;
 import com.travoca.app.fragment.HomeFragment;
-import com.travoca.app.fragment.HotelMapSummaryFragment;
+import com.travoca.app.fragment.RecordMapSummaryFragment;
 import com.travoca.app.fragment.RecordListFragment;
 import com.travoca.app.fragment.RecordsMapFragment;
 import com.travoca.app.fragment.ResultsSortFragment;
@@ -57,12 +57,12 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
     private static final String FRAGMENT_RESULTSLIST = "fragment_listview";
     private static final String FRAGMENT_MAP = "menu_map";
     private static final String FRAGMENT_SORT = "fragment_sort";
-    private static final String FRAGMENT_HOTEL_SUMMARY = "fragment_hotel_summary";
+    private static final String FRAGMENT_HOTEL_SUMMARY = "fragment_record_summary";
     protected GoogleApiClient mGoogleApiClient;
     @Bind(R.id.app_bar)
     AppBar mToolbar;
-    @Bind(R.id.refresh_hotels)
-    Button mRefreshHotels;
+    @Bind(R.id.refresh_records)
+    Button mRefreshRecords;
     @Bind(R.id.loader_image)
     ImageView mLoaderImage;
     private ResultsMap mMap;
@@ -113,13 +113,13 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
                 .addOnConnectionFailedListener(this)
                 .build();
 
-        mRefreshHotels.setOnClickListener(new View.OnClickListener() {
+        mRefreshRecords.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (mMap != null) {
                     mMap.updateRequest();
                 }
-                hideRefreshHotelsButton();
+                hideRefreshRecordsButton();
                 showLoaderImage();
                 refreshMap();
             }
@@ -144,8 +144,8 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
         setContentView(R.layout.activity_records_list);
     }
 
-    public void setTitle(SearchRequest hotelsRequest) {
-        mToolbar.setLocation(hotelsRequest);
+    public void setTitle(SearchRequest recordsRequest) {
+        mToolbar.setLocation(recordsRequest);
     }
 
     @Override
@@ -185,13 +185,13 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
         Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_overlay_container);
 
-        if (fragment != null && fragment instanceof HotelMapSummaryFragment && fragment.isVisible()) {
+        if (fragment != null && fragment instanceof RecordMapSummaryFragment && fragment.isVisible()) {
             getSupportFragmentManager().popBackStack();
         }
 
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.fragment_overlay_container, HotelMapSummaryFragment.newInstance(acc),
+                .replace(R.id.fragment_overlay_container, RecordMapSummaryFragment.newInstance(acc),
                         FRAGMENT_HOTEL_SUMMARY)
                 .addToBackStack(null)
                 .commit();
@@ -210,20 +210,20 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
             startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(startMain);
         }
-        HotelMapSummaryFragment hotelMapSummaryFragment = (HotelMapSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_SUMMARY);
-        if (hotelMapSummaryFragment == null) {
-            hideRefreshHotelsButton();
+        RecordMapSummaryFragment recordMapSummaryFragment = (RecordMapSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_SUMMARY);
+        if (recordMapSummaryFragment == null) {
+            hideRefreshRecordsButton();
         }
         super.onBackPressed();
     }
 
     @Override
-    public void removeHotelSummaryFragment() {
-        HotelMapSummaryFragment hotelMapSummaryFragment = (HotelMapSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_SUMMARY);
-        if (hotelMapSummaryFragment != null) {
+    public void removeRecordSummaryFragment() {
+        RecordMapSummaryFragment recordMapSummaryFragment = (RecordMapSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_SUMMARY);
+        if (recordMapSummaryFragment != null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .remove(hotelMapSummaryFragment)
+                    .remove(recordMapSummaryFragment)
                     .commit();
         }
     }
@@ -272,7 +272,7 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
     private void refreshResults(boolean[] result) {
         if (mMap != null) {
-            mMap.refreshHotels();
+            mMap.refreshRecords();
         }
         refreshList();
     }
@@ -299,8 +299,8 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
     }
 
     public void showList() {
-        removeHotelSummaryFragment();
-        hideRefreshHotelsButton();
+        removeRecordSummaryFragment();
+        hideRefreshRecordsButton();
 
         if (getSupportFragmentManager().findFragmentByTag(FRAGMENT_RESULTSLIST) != null) {
             // Got to initial state of the stack and resume list from stack instead of adding a new one
@@ -328,7 +328,7 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
         RequestUtils.apply(getRecordsRequest());
         App.provide(this).updateLastSeatchRequest(getRecordsRequest());
         if (mMap != null) {
-            mMap.refreshHotels();
+            mMap.refreshRecords();
             if (locationType instanceof ViewPortType) {
                 mMap.moveCamera(((ViewPortType) locationType).getNortheastLat(), ((ViewPortType) locationType).getNortheastLon(), ((ViewPortType) locationType).getSouthwestLat(), ((ViewPortType) locationType).getSouthwestLon());
             } else if (locationType instanceof SprType) {
@@ -361,12 +361,12 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
     }
 
-    public void hideRefreshHotelsButton() {
-        mRefreshHotels.setVisibility(View.GONE);
+    public void hideRefreshRecordsButton() {
+        mRefreshRecords.setVisibility(View.GONE);
     }
 
-    public void showRefreshHotelsButton() {
-        mRefreshHotels.setVisibility(View.VISIBLE);
+    public void showRefreshRecordsButton() {
+        mRefreshRecords.setVisibility(View.VISIBLE);
     }
 
     private void configLoaderImage() {
@@ -385,7 +385,7 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
     }
 
     public void refreshMap() {
-        mMap.refreshHotels();
+        mMap.refreshRecords();
         setTitle(getRecordsRequest());
     }
 

@@ -15,7 +15,6 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -71,7 +70,7 @@ public class RecordDetailsTabsActivity extends TabActivity implements OnMapReady
             mRecord = getIntent().getParcelableExtra(EXTRA_DATA);
         }
 
-//        setTitle(mHotelSnippet.getName());
+//        setTitle(mRecordSnippet.getName());
         ButterKnife.bind(this);
 
         mSupportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentByTag("menu_map");
@@ -80,7 +79,7 @@ public class RecordDetailsTabsActivity extends TabActivity implements OnMapReady
         }
         mSupportMapFragment.getMapAsync(this);
 
-//        if (mHotelSnippetDetails != null && !mHotelSnippetDetails.hasRates()) {
+//        if (mRecordSnippetDetails != null && !mRecordSnippetDetails.hasRates()) {
 //            mAllRoomsButton.setVisibility(View.GONE);
 //        }
 
@@ -105,7 +104,7 @@ public class RecordDetailsTabsActivity extends TabActivity implements OnMapReady
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_hotel_details, menu);
+        getMenuInflater().inflate(R.menu.menu_record_details, menu);
         return super.onCreateOptionsMenu(menu);
     }
 

@@ -15,22 +15,22 @@
 
     <style name="AppTheme.TransparentToolbar" parent="AppThemeBase.TransparentToolbar" />
 
-    <style name="AppThemeBase" parent="LibHotelsTheme">
+    <style name="AppThemeBase" parent="LibRecordsTheme">
         <item name="colorPrimary">@color/theme_primary</item>
         <item name="colorPrimaryDark">@color/theme_primary_dark</item>
         <item name="colorAccent">@color/theme_accent</item>
         <item name="android:windowBackground">@color/theme_background</item>
     </style>
 
-    <style name="AppThemeBase.TransparentToolbar" parent="LibHotelsTheme">
+    <style name="AppThemeBase.TransparentToolbar" parent="LibRecordsTheme">
         <item name="colorPrimary">@color/theme_primary</item>
         <item name="colorPrimaryDark">@color/theme_primary_dark</item>
         <item name="colorAccent">@color/theme_accent</item>
         <item name="android:windowBackground">@color/theme_background</item>
     </style>
 
-    <style name="LibHotelsTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">?attr/libHotelsBackground</item>
+    <style name="LibRecordsTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">?attr/libRecordsBackground</item>
         <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
         <item name="android:windowSoftInputMode">stateHidden</item>
         <item name="titleTextAppearance">@style/AppTheme.TextAppearance.AppBar.Title</item>
@@ -38,5 +38,5 @@
         </item>
     </style>
 
-    <style name="LibHotelsTheme" parent="LibHotelsTheme.Base" />
+    <style name="LibRecordsTheme" parent="LibRecordsTheme.Base" />
 </resources>

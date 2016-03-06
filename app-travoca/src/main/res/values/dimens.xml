@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="maps_snippet_hotel_height">152dp</dimen>
+    <dimen name="maps_snippet_record_height">152dp</dimen>
     <dimen name="maps_marker_padding">16dp</dimen>
     <dimen name="minimum_default_padding">8dp</dimen>
     <dimen name="default_padding">16dp</dimen>
@@ -33,18 +33,18 @@
     <dimen name="size_half_byte">4dp</dimen>
     <dimen name="size_byte">8dp</dimen>
 
-    <dimen name="hotel_summary_image_size">240dp</dimen>
+    <dimen name="record_summary_image_size">240dp</dimen>
     <dimen name="booking_summary_image_height">100dp</dimen>
 
     <dimen name="list_button_drawable_stroke">1dp</dimen>
     <dimen name="list_button_drawable_icon_size">32dp</dimen>
     <dimen name="list_button_drawable_icon_padding">24dp</dimen>
 
-    <dimen name="hotels_booking_pager_tab_radius">16dp</dimen>
-    <dimen name="hotels_booking_pager_tab_height">48dp</dimen>
-    <dimen name="hotels_booking_pager_tab_spacing">64dp</dimen>
-    <dimen name="hotels_booking_pager_tab_width">48dp</dimen>
-    <dimen name="hotels_booking_pager_label_size">16dp</dimen>
+    <dimen name="records_booking_pager_tab_radius">16dp</dimen>
+    <dimen name="records_booking_pager_tab_height">48dp</dimen>
+    <dimen name="records_booking_pager_tab_spacing">64dp</dimen>
+    <dimen name="records_booking_pager_tab_width">48dp</dimen>
+    <dimen name="records_booking_pager_label_size">16dp</dimen>
 
     <dimen name="special_discount_text_size">24dp</dimen>
     <dimen name="special_discount_text_padding">4dp</dimen>
@@ -53,7 +53,7 @@
     <dimen name="bottom_button_height">56dp</dimen>
 
     <dimen name="minimum_default_elevation">4dp</dimen>
-    <dimen name="hoteldetails_room_height">232dp</dimen>
+    <dimen name="recorddetails_room_height">232dp</dimen>
     <dimen name="top_margin_home_fragment">120dp</dimen>
     <dimen name="results_panel_top_height">40dp</dimen>
     <dimen name="home_instructions_margin">80dp</dimen>

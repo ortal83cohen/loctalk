@@ -41,7 +41,7 @@ public class FavoritesActivity extends BaseActivity implements RecordViewHolder.
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
 
-        setHotelsRequest(App.provide(this).createHotelsRequest());
+        setRecordsRequest(App.provide(this).createRequest());
 
         getSupportFragmentManager()
                 .beginTransaction()
@@ -88,7 +88,7 @@ public class FavoritesActivity extends BaseActivity implements RecordViewHolder.
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_hotel_details, menu);
+        getMenuInflater().inflate(R.menu.menu_record_details, menu);
         return super.onCreateOptionsMenu(menu);
     }
 

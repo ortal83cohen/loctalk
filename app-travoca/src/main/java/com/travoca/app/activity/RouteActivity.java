@@ -7,12 +7,10 @@ import android.support.v4.util.ArrayMap;
 
 import com.google.android.gms.maps.model.LatLng;
 import com.squareup.okhttp.ResponseBody;
-import com.travoca.api.TravocaApi;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.search.ListType;
 import com.travoca.app.App;
-import com.travoca.app.TravocaApplication;
 import com.travoca.app.core.CoreInterface;
 import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.model.Location;
@@ -48,7 +46,7 @@ public class RouteActivity extends Activity {
 //                AppLog.e("RouteActivity - recordses == null");
 //                startActivity(HomeActivity.createIntent(RouteActivity.this));
 //            } else {
-//                startHotelSummaryActivity(apiResponse.recordses.get(0));
+//                startRecordSummaryActivity(apiResponse.recordses.get(0));
 //            }
         }
 
@@ -101,12 +99,12 @@ public class RouteActivity extends Activity {
                             switch (params.get("target")) {
                                 case "/search/result.php":
                                 case "/index_landing.php":
-                                    final RecordListRequest recordListRequest = App.provide(RouteActivity.this).createHotelsRequest();
+                                    final RecordListRequest recordListRequest = App.provide(RouteActivity.this).createRequest();
                                     recordListRequest.setType(new Location(params.get("name"), new LatLng(Double.valueOf(params.get("lat")), Double.valueOf(params.get("lon")))));
                                     startActivity(RecordListActivity.createIntent(recordListRequest, RouteActivity.this));
                                     break;
-                                case "/hoteldetails.php":
-                                    loadAccommodationDetails(params.get("group_hotel_id"));
+                                case "/recorddetails.php":
+                                    loadAccommodationDetails(params.get("group_record_id"));
                                     break;
                                 case "index_home.php":
                                     startActivity(new Intent(getBaseContext(), MainActivity.class));
@@ -128,17 +126,17 @@ public class RouteActivity extends Activity {
         finish();
     }
 
-    private void loadAccommodationDetails(String hotelId) {
+    private void loadAccommodationDetails(String recordId) {
         ArrayList<String> record = new ArrayList<>();
-        record.add(hotelId);
-        RecordListRequest request = App.provide(this).createHotelsRequest();
+        record.add(recordId);
+        RecordListRequest request = App.provide(this).createRequest();
         request.setType(new ListType(record));
 
 //        TravocaApi travocaApi = TravocaApplication.provide(this).travocaApi();
 //        travocaApi.records(request, 0).enqueue(mResultsCallback);
     }
 
-    private void startHotelSummaryActivity(Record acc) {
+    private void startRecordSummaryActivity(Record acc) {
 
     }
 

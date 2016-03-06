@@ -192,7 +192,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         return mRequest;
     }
 
-    public void setHotelsRequest(RecordListRequest request) {
+    public void setRecordsRequest(RecordListRequest request) {
         mRequest = request;
     }
 

@@ -58,9 +58,9 @@ public class AnalyticsCalls {
     }
 
 
-    public void trackHotelDetails(SearchRequest request, Record record, String currencyCode) {
-//        omniture.trackHotelDetails(request, hotelSnippet, rate, currencyCode);
-//        googleAnalyticsCalls.trackHotelDetails(request, hotelSnippet, rate, currencyCode);
+    public void trackRecordDetails(SearchRequest request, Record record, String currencyCode) {
+//        omniture.trackRecordDetails(request, recordSnippet, rate, currencyCode);
+//        googleAnalyticsCalls.trackRecordDetails(request, recordSnippet, rate, currencyCode);
     }
 
 

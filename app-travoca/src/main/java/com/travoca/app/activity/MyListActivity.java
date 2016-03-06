@@ -25,7 +25,7 @@ import com.travoca.app.events.Events;
 import com.travoca.app.events.MassageEvent;
 import com.travoca.app.events.SearchRequestEvent;
 import com.travoca.app.fragment.HomeFragment;
-import com.travoca.app.fragment.HotelMapSummaryFragment;
+import com.travoca.app.fragment.RecordMapSummaryFragment;
 import com.travoca.app.fragment.MyListFragment;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.widget.AppBar;
@@ -42,12 +42,12 @@ public class MyListActivity extends BaseActivity implements RecordViewHolder.Lis
 
     private static final String FRAGMENT_HOME = "fragment_datepicker";
     private static final String FRAGMENT_RESULTSLIST = "fragment_listview";
-    private static final String FRAGMENT_HOTEL_SUMMARY = "fragment_hotel_summary";
+    private static final String FRAGMENT_RECORD_SUMMARY = "fragment_record_summary";
 
     @Bind(R.id.app_bar)
     AppBar mToolbar;
-    @Bind(R.id.refresh_hotels)
-    Button mRefreshHotels;
+    @Bind(R.id.refresh_records)
+    Button mRefreshRecords;
     @Bind(R.id.loader_image)
     ImageView mLoaderImage;
     @Bind(R.id.action_button)
@@ -110,8 +110,8 @@ public class MyListActivity extends BaseActivity implements RecordViewHolder.Lis
         setContentView(R.layout.activity_my_list);
     }
 
-    public void setTitle(SearchRequest hotelsRequest) {
-        mToolbar.setLocation(hotelsRequest);
+    public void setTitle(SearchRequest recordsRequest) {
+        mToolbar.setLocation(recordsRequest);
     }
 
     @Override
@@ -133,9 +133,9 @@ public class MyListActivity extends BaseActivity implements RecordViewHolder.Lis
             startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(startMain);
         }
-        HotelMapSummaryFragment hotelMapSummaryFragment = (HotelMapSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_SUMMARY);
-        if (hotelMapSummaryFragment == null) {
-            hideRefreshHotelsButton();
+        RecordMapSummaryFragment recordMapSummaryFragment = (RecordMapSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_RECORD_SUMMARY);
+        if (recordMapSummaryFragment == null) {
+            hideRefreshRecordsButton();
         }
         super.onBackPressed();
     }
@@ -170,7 +170,7 @@ public class MyListActivity extends BaseActivity implements RecordViewHolder.Lis
 
     public void showList() {
 
-        hideRefreshHotelsButton();
+        hideRefreshRecordsButton();
 
         mAddFab.setVisibility(View.VISIBLE);
 
@@ -219,8 +219,8 @@ public class MyListActivity extends BaseActivity implements RecordViewHolder.Lis
         }
     }
 
-    public void hideRefreshHotelsButton() {
-        mRefreshHotels.setVisibility(View.GONE);
+    public void hideRefreshRecordsButton() {
+        mRefreshRecords.setVisibility(View.GONE);
     }
 
 

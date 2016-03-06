@@ -19,14 +19,14 @@ import butterknife.ButterKnife;
  * @author ortal
  * @date 2015-05-25
  */
-public class HotelMapSummaryFragment extends BaseFragment {
+public class RecordMapSummaryFragment extends BaseFragment {
 
     private static final String EXTRA_DATA = "snippet";
     private Record mRecord;
     private RecordViewHolder.Listener mListener;
 
-    public static HotelMapSummaryFragment newInstance(Record record) {
-        HotelMapSummaryFragment fragment = new HotelMapSummaryFragment();
+    public static RecordMapSummaryFragment newInstance(Record record) {
+        RecordMapSummaryFragment fragment = new RecordMapSummaryFragment();
         Bundle args = new Bundle();
         args.putParcelable(EXTRA_DATA, record);
         fragment.setArguments(args);
@@ -35,7 +35,7 @@ public class HotelMapSummaryFragment extends BaseFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_map_hotel_summary, container, false);
+        View view = inflater.inflate(R.layout.fragment_map_record_summary, container, false);
         ButterKnife.bind(this, view);
 
         mRecord = getArguments().getParcelable(EXTRA_DATA);
@@ -58,7 +58,7 @@ public class HotelMapSummaryFragment extends BaseFragment {
             mListener = (RecordViewHolder.Listener) context;
         } catch (ClassCastException e) {
             throw new ClassCastException(context.toString()
-                    + " must implement HotelMapSummaryFragment.Listener");
+                    + " must implement RecordMapSummaryFragment.Listener");
         }
     }
 

@@ -28,7 +28,7 @@ import butterknife.ButterKnife;
  * @date 2015-04-19
  */
 public class RecordDetailsActivity extends BaseActivity implements HomeFragment.Listener {
-    public static final String FRAGMENT_HOTEL_DETAILS = "fragment_hotel_details";
+    public static final String FRAGMENT_HOTEL_DETAILS = "fragment_record_details";
     private static final String FRAGMENT_HOME = "fragment_datepicker";
     public static final String EXTRA_DATA = "data";
     private Record mRecord;
@@ -79,7 +79,7 @@ public class RecordDetailsActivity extends BaseActivity implements HomeFragment.
 
     @Override
     protected void onCreateContentView() {
-        setContentView(R.layout.activity_hotelsummary);
+        setContentView(R.layout.activity_record_summary);
     }
 
     @Override

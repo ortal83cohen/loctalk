@@ -23,7 +23,7 @@ import butterknife.ButterKnife;
 public class FavoritesFragment extends BaseFragment {
     @Bind(android.R.id.list)
     ListView mRecyclerView;
-    @Bind(R.id.hotel_list_no_result)
+    @Bind(R.id.record_list_no_result)
     LinearLayout mNoResult;
 
     public static FavoritesFragment newInstance() {

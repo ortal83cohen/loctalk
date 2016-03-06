@@ -11,7 +11,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -57,7 +56,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     EndlessRecyclerView mRecyclerView;
     @Bind(R.id.button_sort)
     TextView mButtonSort;
-    @Bind(R.id.hotel_list_no_result)
+    @Bind(R.id.record_list_no_result)
     LinearLayout mNoResult;
     @Bind(R.id.panel_top)
     FrameLayout mTopPanel;
@@ -65,8 +64,6 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     TextView mAvailableCountText;
     @Bind(R.id.loader_text)
     TextView mLoaderText;
-    @Bind(R.id.modify_preferences)
-    Button mModifyPreferences;
     TravocaApi mTravocaApi;
     private LinearLayoutManager mLayoutManager;
     private RecordListAdapter mAdapter;
@@ -211,13 +208,6 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
         mButtonSort.setCompoundDrawables(null, null, new TriangleDrawable(getActivity(), R.color.theme_primary), null);
         mButtonSort.setVisibility(View.GONE);
 
-        mModifyPreferences.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mListener.onEditLocationClick();
-            }
-        });
-
         refresh();
     }
 
@@ -271,13 +261,13 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.clear();
-        inflater.inflate(R.menu.menu_hotel_list, menu);
+        inflater.inflate(R.menu.menu_record_list, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
 
     public void refresh() {
         ((RecordListActivity) getActivity()).showLoaderImage();
-        SearchRequest hotelsRequest = getRequest();
+        SearchRequest recordsRequest = getRequest();
 
         mLoaderText.setVisibility(View.VISIBLE);
         mNoResult.setVisibility(View.GONE);
@@ -288,7 +278,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
             mRecyclerView.setHasMoreData(true);
             loadSearchResults(0);
         }
-        SearchRequest.Sort sort = hotelsRequest.getSort();
+        SearchRequest.Sort sort = recordsRequest.getSort();
         if (sort != null) {
             mButtonSort.setText(ResultsSortFragment.typeToText(sort.type).toString());
         } else {
@@ -307,7 +297,7 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     public void onSearchResults(SearchResultsEvent event) {
         mRecyclerView.setVisibility(View.VISIBLE);
 //        if (!event.hasError()) {
-        mAvailableCountText.setText(Html.fromHtml(getResources().getQuantityString(R.plurals.hotels_count_available, event.getCount(), event.getCount())));
+        mAvailableCountText.setText(Html.fromHtml(getResources().getQuantityString(R.plurals.records_count_available, event.getCount(), event.getCount())));
 //        }
     }
 

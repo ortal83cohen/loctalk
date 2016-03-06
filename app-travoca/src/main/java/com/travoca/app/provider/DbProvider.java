@@ -84,8 +84,8 @@ public class DbProvider extends ContentProvider {
                 }
 
             case FAVORITES_HOTEL_ID:
-                final String hotelId = DbContract.Favorites.getHotelId(uri);
-                builder.table(DbContract.Tables.TABLE_FAVORITES).where(DbContract.FavoritesColumns.KEY_ID + " = ?", hotelId);
+                final String recordId = DbContract.Favorites.getRecordId(uri);
+                builder.table(DbContract.Tables.TABLE_FAVORITES).where(DbContract.FavoritesColumns.KEY_ID + " = ?", recordId);
                 return builder.query(db, false, projection, "", "");
             case SEARCH_HISTORY:
                 builder.table(DbContract.Tables.TABLE_SEARCH_HISTORY);
@@ -124,7 +124,7 @@ public class DbProvider extends ContentProvider {
         switch (match) {
             case FAVORITES_HOTELS:
                 db.insert(DbContract.Tables.TABLE_FAVORITES, null, values);
-                return DbContract.Favorites.buildHotelUri(values.getAsString(DbContract.FavoritesColumns.KEY_ID),
+                return DbContract.Favorites.buildRecordUri(values.getAsString(DbContract.FavoritesColumns.KEY_ID),
                         values.getAsString(DbContract.FavoritesColumns.TITLE),
                         values.getAsString(DbContract.FavoritesColumns.TEXT));
             case SEARCH_HISTORY:

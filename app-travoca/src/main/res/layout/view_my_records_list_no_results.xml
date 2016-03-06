@@ -40,13 +40,6 @@
         android:text="@string/several_reasons"
         android:textSize="12sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/default_padding"
-        android:layout_marginRight="@dimen/default_padding"
-        android:text="@string/currently_no_available"
-        android:textSize="12sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,6 +48,16 @@
         android:layout_marginLeft="@dimen/default_padding"
         android:layout_marginRight="@dimen/default_padding"
         android:text="@string/bad_internet_connection"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_padding"
+        android:layout_marginLeft="@dimen/default_padding"
+        android:layout_marginRight="@dimen/default_padding"
+        android:text="@string/not_published_yet"
         android:textSize="12sp" />
 
     <Button

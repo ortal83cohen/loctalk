@@ -45,7 +45,7 @@ public abstract class AvailabilityDetailsCallback extends RetrofitCallback<Detai
 
     protected void onNoAvailability(DetailsResponse detailsResponse) {
         if (mWeakContext != null && mWeakContext.get() != null) {
-            Toast.makeText(mWeakContext.get(), R.string.hotel_not_available, Toast.LENGTH_SHORT).show();
+            Toast.makeText(mWeakContext.get(), R.string.record_not_available, Toast.LENGTH_SHORT).show();
         }
     }
 }

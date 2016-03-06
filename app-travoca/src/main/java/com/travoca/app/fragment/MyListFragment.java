@@ -4,14 +4,11 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,7 +16,6 @@ import android.widget.Toast;
 import com.squareup.okhttp.ResponseBody;
 import com.squareup.otto.Subscribe;
 import com.travoca.api.TravocaApi;
-import com.travoca.api.contract.Sort;
 import com.travoca.api.model.ErrorResponse;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.SearchRequest;
@@ -30,7 +26,6 @@ import com.travoca.app.activity.BaseActivity;
 import com.travoca.app.activity.MyListActivity;
 import com.travoca.app.adapter.RecordListAdapter;
 import com.travoca.app.adapter.RecordViewHolder;
-import com.travoca.app.drawable.TriangleDrawable;
 import com.travoca.app.events.Events;
 import com.travoca.app.events.SearchRequestEvent;
 import com.travoca.app.events.SearchResultsEvent;
@@ -54,12 +49,10 @@ public class MyListFragment extends BaseFragment implements View.OnClickListener
     private static final int NUMBER_OF_RETRIES = 1;
     @Bind(android.R.id.list)
     EndlessRecyclerView mRecyclerView;
-    @Bind(R.id.hotel_list_no_result)
+    @Bind(R.id.record_list_no_result)
     LinearLayout mNoResult;
     @Bind(R.id.loader_text)
     TextView mLoaderText;
-    @Bind(R.id.modify_preferences)
-    Button mModifyPreferences;
     TravocaApi mTravocaApi;
     private LinearLayoutManager mLayoutManager;
     private RecordListAdapter mAdapter;
@@ -117,16 +110,6 @@ public class MyListFragment extends BaseFragment implements View.OnClickListener
                 loadSearchResults(mAdapter.getItemCount());
             }
         });
-
-
-
-        mModifyPreferences.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mListener.onEditLocationClick();
-            }
-        });
-
 
         refresh();
     }

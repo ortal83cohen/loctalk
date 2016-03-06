@@ -52,7 +52,7 @@ import com.travoca.app.activity.RecordDetailsTabsActivity;
 import com.travoca.app.activity.RecordDetailsActivity;
 import com.travoca.app.adapter.RecordCardViewHolder;
 import com.travoca.app.events.Events;
-import com.travoca.app.hoteldetails.RecordViewHolder;
+import com.travoca.app.recorddetails.RecordViewHolder;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.User;
 import com.travoca.app.model.RecordListRequest;
@@ -156,7 +156,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
             mMoreRoomsButtonVisible = savedInstanceState.getBoolean(BUTTON_FLAG);
         }
 
-        mImageMinimumHeight = (int) getResources().getDimension(R.dimen.hotel_summary_image_size);
+        mImageMinimumHeight = (int) getResources().getDimension(R.dimen.record_summary_image_size);
         RecordViewHolder headerRender = new RecordViewHolder(view, getActivity());
 
         mRecord = getArguments().getParcelable("record");
@@ -426,15 +426,15 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         if (mRecord != null) {
             int viewId = v.getId();
 //            if (viewId == R.id.book_button) {
-//                if (mHotelSnippetDetails.hasRates()) {
+//                if (mRecordSnippetDetails.hasRates()) {
 //
 //                }
 //            } else if (viewId == R.id.facilities_box) {
-//                showFacilities(mHotelSnippetDetails);
+//                showFacilities(mRecordSnippetDetails);
 //            } else if (viewId == R.id.reviews_box) {
-//                showReviews(mHotelSnippetDetails);
+//                showReviews(mRecordSnippetDetails);
 //            } else if (viewId == R.id.available_rooms_button) {
-//                if (mHotelSnippetDetails.hasRates()) {
+//                if (mRecordSnippetDetails.hasRates()) {
 //
 //                }
 //            }
@@ -564,7 +564,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     public void checkAvailability(RecordListRequest request) {
         RequestUtils.apply(mRequest);
         mRecordCard.removeAllViews();
-//        loadHotel();
+//        loadRecord();
     }
 
 

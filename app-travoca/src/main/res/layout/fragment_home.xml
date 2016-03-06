@@ -96,7 +96,7 @@
 
     <Button
         android:id="@+id/search"
-        style="@style/AppTheme.Widget.HotelSummary.AccentBottomButton"
+        style="@style/AppTheme.Widget.RecordSummary.AccentBottomButton"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/bottom_button_height"
         android:layout_gravity="center_horizontal|bottom"

@@ -51,9 +51,9 @@ public class ResultsSortFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_results_sort, container, false);
         ButterKnife.bind(this, view);
-        SearchRequest hotelsRequest = getRequest();
-        if (hotelsRequest.getSort() != null) {
-            mRadioGroup.check(typeToId(hotelsRequest.getSort().type));
+        SearchRequest recordsRequest = getRequest();
+        if (recordsRequest.getSort() != null) {
+            mRadioGroup.check(typeToId(recordsRequest.getSort().type));
         }
         addListenerOnButton();
         for (View v : mRadioGroup.getTouchables()) {
@@ -115,9 +115,9 @@ public class ResultsSortFragment extends BaseFragment {
 
     private void selectSort(RadioButton radiuselected) {
         if (radiuselected != null) {
-            SearchRequest hotelsRequest = getRequest();
+            SearchRequest recordsRequest = getRequest();
 
-            hotelsRequest.setSort(radiuselected.getTag().toString());
+            recordsRequest.setSort(radiuselected.getTag().toString());
             ((RecordListActivity) getActivity()).refreshList();
             ((RecordListActivity) getActivity()).remove(this);
         }

@@ -46,11 +46,11 @@ public class DbContract {
                 BASE_CONTENT_URI.buildUpon().appendPath(PATH_FAVORITES).build();
         public static final String CONTENT_TYPE = "vnd.android.cursor.dir/int";
 
-        public static Uri buildHotelUri(String hotelId, String city, String country) {
-            return CONTENT_URI.buildUpon().appendPath(hotelId).appendPath(city).appendPath(country).build();
+        public static Uri buildRecordUri(String recordId, String city, String country) {
+            return CONTENT_URI.buildUpon().appendPath(recordId).appendPath(city).appendPath(country).build();
         }
 
-        public static String getHotelId(Uri uri) {
+        public static String getRecordId(Uri uri) {
             return uri.getPathSegments().get(1);
         }
     }

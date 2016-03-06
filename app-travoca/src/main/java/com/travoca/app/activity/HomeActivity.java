@@ -87,7 +87,7 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
         mCoreInterface = CoreInterface.create(getApplicationContext());
 
         if (getRecordsRequest() == null) {
-            setHotelsRequest(App.provide(this).createHotelsRequest());
+            setRecordsRequest(App.provide(this).createRequest());
         }
 
         mToolbar.showLogo();

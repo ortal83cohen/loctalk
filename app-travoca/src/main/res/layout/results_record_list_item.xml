@@ -2,7 +2,7 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/hotel_item"
+    android:id="@+id/record_item"
     android:layout_width="match_parent"
     android:layout_height="@dimen/listview_row_height"
     android:layout_marginLeft="@dimen/default_padding"
@@ -39,7 +39,7 @@
 
                 <TextView
                     android:id="@android:id/title"
-                    style="@style/AppTheme.TextAppearance.Hotel.Title"
+                    style="@style/AppTheme.TextAppearance.Record.Title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"

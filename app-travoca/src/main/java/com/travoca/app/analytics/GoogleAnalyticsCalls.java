@@ -67,7 +67,7 @@ public class GoogleAnalyticsCalls extends AnalyticsCalls {
             location = request.getType().toString();
         }
 
-        mTracker.setScreenName("Hotel List");
+        mTracker.setScreenName("Record List");
 //        mTracker.send(new HitBuilders.ScreenViewBuilder().setCustomDimension(KEY_CURRENCY, request.getCurrency()).
 //                setCustomDimension(KEY_COUNTRY_CODE, request.getCustomerCountryCode()).setCustomDimension(KEY_LOCATION, location).
 //                setCustomDimension(KEY_FROM, mDayFormatter.format(request.getDateRange().from.getTime())).setCustomDimension(KEY_TO, mDayFormatter.format(request.getDateRange().to.getTime())).build());
@@ -88,7 +88,7 @@ public class GoogleAnalyticsCalls extends AnalyticsCalls {
     }
 
     public void trackFilterPage() {
-        mTracker.setScreenName("Hotel List Filters");
+        mTracker.setScreenName("Record List Filters");
 
         mTracker.send(new HitBuilders.ScreenViewBuilder().build());
     }
@@ -100,13 +100,13 @@ public class GoogleAnalyticsCalls extends AnalyticsCalls {
     }
 
 
-    public void trackHotelDetails(SearchRequest request, Record record, String currencyCode) {
-        mTracker.setScreenName("Hotel Details");
+    public void trackRecordDetails(SearchRequest request, Record record, String currencyCode) {
+        mTracker.setScreenName("Record Details");
 //        Product product = new Product()
-//                .setId(String.valueOf(hotelSnippet.getAccommodation().id))
-//                .setName(hotelSnippet.getAccommodation().name)
-//                .setCategory(hotelSnippet.getAccommodation().summary.country)
-//                .setBrand(hotelSnippet.getAccommodation().summary.city)
+//                .setId(String.valueOf(recordSnippet.getAccommodation().id))
+//                .setName(recordSnippet.getAccommodation().name)
+//                .setCategory(recordSnippet.getAccommodation().summary.country)
+//                .setBrand(recordSnippet.getAccommodation().summary.city)
 //                .setVariant(rate.name)
 ////                .setPosition(1)
 //                ;
@@ -115,8 +115,8 @@ public class GoogleAnalyticsCalls extends AnalyticsCalls {
 //            price = rate.displayPrice.get(currencyCode);
 //        }
 //
-//        mTracker.send(new HitBuilders.ScreenViewBuilder().setCustomDimension(KEY_HOTEL_NAME, hotelSnippet.getName()).
-//                setCustomDimension(KEY_HOTEL_INDEX, String.valueOf(hotelSnippet.getPosition())).setCustomDimension(KEY_MIN_RATE_PRICE, String.format("%.1f", price)).
+//        mTracker.send(new HitBuilders.ScreenViewBuilder().setCustomDimension(KEY_HOTEL_NAME, recordSnippet.getName()).
+//                setCustomDimension(KEY_HOTEL_INDEX, String.valueOf(recordSnippet.getPosition())).setCustomDimension(KEY_MIN_RATE_PRICE, String.format("%.1f", price)).
 //                setCustomDimension(KEY_CURRENCY, currencyCode).addImpression(product, "impression").build());
     }
 

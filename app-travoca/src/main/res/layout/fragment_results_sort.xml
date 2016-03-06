@@ -11,7 +11,7 @@
         style="@style/AppTheme.Fragment.SemiTransparent.Content">
 
         <TextView
-            style="AppTheme.TextAppearance.Hotel.Title"
+            style="AppTheme.TextAppearance.Record.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

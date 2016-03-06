@@ -60,11 +60,11 @@ public class ResultsMap {
     // GoogleMap class
     private final GoogleMap mGoogleMap;
     private final Listener mListener;
-    private final HotelMarker mRecordMarker;
+    private final RecordMarker mRecordMarker;
     private final HashSet<Integer> selectedRecordsList = new HashSet<>();
     private MarkerManager mMarkerManager;
-    private MarkerManager.Collection mHotelsCollection;
-    private boolean mHotelsVisible;
+    private MarkerManager.Collection mRecordsCollection;
+    private boolean mRecordsVisible;
     private double mLastLat = 0;
     private double mLastLong = 0;
     private double mLastZoom = 0;
@@ -80,8 +80,8 @@ public class ResultsMap {
         @Override
         protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
             ((RecordListActivity) mActivity).hideLoaderImage();
-            mHotelsCollection.clear();
-            if (mHotelsVisible) {
+            mRecordsCollection.clear();
+            if (mRecordsVisible) {
                 addRecordsMarkers(apiResponse.records);
             }
         }
@@ -94,7 +94,7 @@ public class ResultsMap {
         mListener = listener;
         mMarkerManager = new MarkerManager(googleMap);
         mResultsCallback.attach(mActivity);
-        mRecordMarker = new HotelMarker(mActivity);
+        mRecordMarker = new RecordMarker(mActivity);
         init();
     }
 
@@ -176,18 +176,18 @@ public class ResultsMap {
                     mLastLat = cameraPosition.target.latitude;
                     mLastLong = cameraPosition.target.longitude;
                     mLastZoom = cameraPosition.zoom;
-                    ((RecordListActivity) mActivity).showRefreshHotelsButton();
+                    ((RecordListActivity) mActivity).showRefreshRecordsButton();
                 }
 
             }
         });
-        mHotelsCollection = mMarkerManager.newCollection("records");
+        mRecordsCollection = mMarkerManager.newCollection("records");
 
-        toggleHotels();
+        toggleRecords();
     }
 
 
-    public void refreshHotels() {
+    public void refreshRecords() {
 
         SearchRequest searchRequest = mActivity.getRecordsRequest();
         TravocaApi mTravocaApi = TravocaApplication.provide(mActivity).travocaApi();
@@ -214,9 +214,9 @@ public class ResultsMap {
             for (int i = 0; i < records.size(); i++) {
                 Record acc = records.get(i);
 
-                mHotelsCollection.addMarker(mRecordMarker.create(i, acc, selectedRecordsList.contains(acc.id) ? HotelMarker.STATUS_SEEN : HotelMarker.STATUS_UNSEEN));
+                mRecordsCollection.addMarker(mRecordMarker.create(i, acc, selectedRecordsList.contains(acc.id) ? RecordMarker.STATUS_SEEN : RecordMarker.STATUS_UNSEEN));
             }
-            mHotelsCollection.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            mRecordsCollection.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                 @Override
                 public boolean onMarkerClick(Marker marker) {
                     Record recordMarker = records.get(Integer.valueOf(marker.getTitle()));
@@ -227,12 +227,12 @@ public class ResultsMap {
                         // In case we have an item with same position, recreate marker
                         if (lastMarkerPos < records.size()) {
                             Record recordLastMarker = records.get(lastMarkerPos);
-                            mHotelsCollection.remove(lastRecordMarkerClicked);
-                            mHotelsCollection.addMarker(mRecordMarker.create(lastMarkerPos, recordLastMarker, selectedRecordsList.contains(recordLastMarker.id) ? HotelMarker.STATUS_SEEN : HotelMarker.STATUS_UNSEEN));
+                            mRecordsCollection.remove(lastRecordMarkerClicked);
+                            mRecordsCollection.addMarker(mRecordMarker.create(lastMarkerPos, recordLastMarker, selectedRecordsList.contains(recordLastMarker.id) ? RecordMarker.STATUS_SEEN : RecordMarker.STATUS_UNSEEN));
                         }
                     }
-                    mHotelsCollection.remove(marker);
-                    lastRecordMarkerClicked = mHotelsCollection.addMarker(mRecordMarker.create(Integer.valueOf(marker.getTitle()), recordMarker, HotelMarker.STATUS_SELECTED));
+                    mRecordsCollection.remove(marker);
+                    lastRecordMarkerClicked = mRecordsCollection.addMarker(mRecordMarker.create(Integer.valueOf(marker.getTitle()), recordMarker, RecordMarker.STATUS_SELECTED));
                     selectedRecordsList.add(recordMarker.id);
                     return true;
                 }
@@ -251,15 +251,15 @@ public class ResultsMap {
         mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 0));
     }
 
-    public boolean toggleHotels() {
-        if (mHotelsVisible) {
-            mHotelsCollection.clear();
-            mHotelsVisible = false;
+    public boolean toggleRecords() {
+        if (mRecordsVisible) {
+            mRecordsCollection.clear();
+            mRecordsVisible = false;
         } else {
-            refreshHotels();
-            mHotelsVisible = true;
+            refreshRecords();
+            mRecordsVisible = true;
         }
-        return mHotelsVisible;
+        return mRecordsVisible;
     }
 
     public void updateRequest() {
@@ -279,6 +279,6 @@ public class ResultsMap {
 
         void onRecordMarkerClick(Record acc);
 
-        void removeHotelSummaryFragment();
+        void removeRecordSummaryFragment();
     }
 }

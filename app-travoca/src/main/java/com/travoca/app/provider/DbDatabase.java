@@ -27,7 +27,7 @@ public class DbDatabase extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // SQL statement to create Hotel table
+        // SQL statement to create Record table
         String CREATE_HOTEL_TABLE = "CREATE TABLE IF NOT EXISTS " + DbContract.Tables.TABLE_FAVORITES + " ( " +
                 DbContract.FavoritesColumns.KEY_ID + " INTEGER ," +
                 DbContract.FavoritesColumns.TITLE + " STRING , " +
@@ -46,7 +46,7 @@ public class DbDatabase extends SQLiteOpenHelper {
                 DbContract.SearchHistoryColumns.CREATE_AT + " TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP," +
                 " PRIMARY KEY (" + DbContract.SearchHistoryColumns.LOCATION_NAME + ")  )";
 
-        // create Hotels table
+        // create Records table
         db.execSQL(CREATE_HOTEL_TABLE);
         db.execSQL(CREATE_SEARCH_HISTORY_TABLE);
 

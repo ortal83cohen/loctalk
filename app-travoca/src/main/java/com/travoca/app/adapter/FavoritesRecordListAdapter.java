@@ -30,11 +30,11 @@ public class FavoritesRecordListAdapter extends RecordListAdapter {
         final LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         if (viewType == HEADER) {
             return new ViewHolder(
-                    inflater.inflate(R.layout.results_hotel_list_header, parent, false)
+                    inflater.inflate(R.layout.results_record_list_header, parent, false)
             );
         }
 
-        View view = inflater.inflate(R.layout.results_hotel_list_item, parent, false);
+        View view = inflater.inflate(R.layout.results_record_list_item, parent, false);
         return new RecordViewHolder(view, mContext, mPictureWidth, mPictureHeight, mListener);
 
     }
@@ -94,7 +94,7 @@ public class FavoritesRecordListAdapter extends RecordListAdapter {
         return items;
     }
 
-    public void addHotels(List<Record> recordses, boolean withoutDates) {
+    public void addRecords(List<Record> recordses, boolean withoutDates) {
         int objectsCount = getItemCount();
         int accommodationsCount = recordses == null ? 0 : recordses.size();
         if (recordses != null) {

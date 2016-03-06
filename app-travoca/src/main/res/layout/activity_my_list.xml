@@ -25,7 +25,7 @@
                 app:layout_behavior="com.travoca.app.widget.ScrollAwareViewBehavior" />
 
             <Button
-                android:id="@+id/refresh_hotels"
+                android:id="@+id/refresh_records"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|left"

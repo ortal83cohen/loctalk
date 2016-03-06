@@ -59,7 +59,7 @@ public class RecordListAdapter extends ArrayAdapter<Record, RecyclerView.ViewHol
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         final LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.results_hotel_list_item, parent, false);
+        View view = inflater.inflate(R.layout.results_record_list_item, parent, false);
         return new RecordViewHolder(view, mContext, mPictureWidth, mPictureHeight, mListener);
     }
 

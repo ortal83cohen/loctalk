@@ -10,12 +10,12 @@
         <attr name="android:text" />
     </declare-styleable>
 
-    <declare-styleable name="LibHotelsTheme">
-        <attr name="libHotelsBackground" format="color" />
-        <attr name="libHotelsColorTextPrimary" format="color" />
-        <attr name="libHotelsColorTextSecondary" format="color" />
-        <attr name="libHotelsColorHighlight" format="color" />
-        <attr name="libHotelsDatePickerViewStyle" format="reference" />
+    <declare-styleable name="LibRecordsTheme">
+        <attr name="libRecordsBackground" format="color" />
+        <attr name="libRecordsColorTextPrimary" format="color" />
+        <attr name="libRecordsColorTextSecondary" format="color" />
+        <attr name="libRecordsColorHighlight" format="color" />
+        <attr name="libRecordsDatePickerViewStyle" format="reference" />
     </declare-styleable>
 
 
