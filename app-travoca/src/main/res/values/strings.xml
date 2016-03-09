@@ -222,4 +222,7 @@
     <string name="btn_logout_from_google">Logout from Google</string>
     <string name="btn_revoke_access">Revoke Access</string>
     <string name="service_status_monitor">service</string>
+    <string name="s3_access_key">AKIAIQX44CBZ5MPV3JLA</string>
+    <string name="s3_secret">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</string>
+    <string name="s3_bucket">travoca</string>
 </resources>

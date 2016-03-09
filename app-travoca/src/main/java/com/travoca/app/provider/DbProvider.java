@@ -103,7 +103,7 @@ public class DbProvider extends ContentProvider {
 
     private String[] getSearchHistoryColumns() {
         String[] columns = new String[2];
-        columns[0] = "rowid _id";
+        columns[0] = "rowId _id";
         columns[1] = "*";
 
         return columns;

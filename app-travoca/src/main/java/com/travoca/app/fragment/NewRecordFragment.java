@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
@@ -14,7 +15,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
-import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,25 +29,22 @@ import com.google.android.gms.location.LocationServices;
 import com.rengwuxian.materialedittext.MaterialEditText;
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.TravocaApi;
-import com.travoca.api.model.ResultsResponse;
+import com.travoca.api.model.SaveRecordResponse;
+import com.travoca.api.model.search.ImageRequest;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
 import com.travoca.app.activity.LoginActivity;
 import com.travoca.app.activity.NewRecordActivity;
-import com.travoca.app.events.Events;
-import com.travoca.app.events.MassageEvent;
-import com.travoca.app.events.SearchRequestEvent;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.User;
 import com.travoca.app.travocaapi.RetrofitCallback;
+import com.travoca.app.utils.amazon.UploadService;
 import com.travoca.app.widget.ImagePicker;
 
-import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 import butterknife.Bind;
@@ -61,6 +58,9 @@ import retrofit.Response;
 public class NewRecordFragment extends BaseFragment {
 
     private static final int REQUEST_PERMISSION_LOCATION = 2;
+    private static final int NUMBER_OF_RETRIES = 4;
+
+
     @Bind(R.id.button3)
     FloatingActionButton playButton;
     @Bind(R.id.button2)
@@ -79,34 +79,54 @@ public class NewRecordFragment extends BaseFragment {
 //    MaterialEditText mType;
     @Bind(R.id.image)
     ImageView mImageView;
+
+    private int mNumberRetries = 0;
     private MediaRecorder audioRecorder;
-    private String outputFile = null;
+    private String RecordFilePath = null;
     private Listener mListener;
     private Location mLocation;
     private boolean mPlayButtonState = false;
     private boolean mHasImage = false;
+    public TravocaApi mTravocaApi;
     private LocationRequest mLocationRequest = new LocationRequest()
             .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
             .setNumUpdates(1);
-    private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
+    private RetrofitCallback<SaveRecordResponse> mResultsCallback = new RetrofitCallback<SaveRecordResponse>() {
+
+
         @Override
-        protected void failure(ResponseBody response, boolean isOffline) {
-            if (getActivity() != null) {
-                Toast.makeText(getActivity(), "failure", Toast.LENGTH_LONG).show();
-                sendButton.setEnabled(true);
-            }
+        public void success(final SaveRecordResponse apiResponse, Response response) {
+
+            Intent intent = new Intent(getActivity(), UploadService.class);
+            intent.putExtra(UploadService.ARG_FILE_PATH, RecordFilePath);
+            intent.putExtra(UploadService.ARG_FILE_NAME, apiResponse.rowId + ".3gp");
+            getActivity().startService(intent);
+
+            intent = new Intent(getActivity(), UploadService.class);
+            intent.putExtra(UploadService.ARG_FILE_PATH, mImageFile.getPath());
+            intent.putExtra(UploadService.ARG_FILE_NAME,  apiResponse.rowId + ".jpg");
+            getActivity().startService(intent);
+
+            getActivity().finish();
+
         }
 
         @Override
-        protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
-            if (getActivity() != null) {
-                Events.post(new MassageEvent(MassageEvent.NEW_RECORD_SUCCESS));
-                Toast.makeText(getActivity(), "success", Toast.LENGTH_LONG).show();
-                getActivity().finish();
+        public void failure(ResponseBody response, boolean isOffline) {
+            if (response != null) {
+            } else {
+                retry();
             }
         }
 
+        private void retry() {
+            if (mNumberRetries++ < NUMBER_OF_RETRIES) {
+                mTravocaApi.saveRecordDetails(imageRequest).enqueue(mResultsCallback);
+            }
+        }
     };
+    private ImageRequest imageRequest;
+    private File mImageFile;
 
     public static NewRecordFragment newInstance() {
         NewRecordFragment fragment = new NewRecordFragment();
@@ -123,8 +143,8 @@ public class NewRecordFragment extends BaseFragment {
 
 //        stopButton.setEnabled(false);
         playButton.setEnabled(false);
-        outputFile = Environment.getExternalStorageDirectory().getAbsolutePath() + "/recording.3gp";
-
+        RecordFilePath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/recording.3gp";
+        mTravocaApi = TravocaApplication.provide(getActivity()).travocaApi();
 
         mImageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,12 +162,12 @@ public class NewRecordFragment extends BaseFragment {
                     Toast.makeText(getActivity(), "Recording started", Toast.LENGTH_LONG).show();
                     recordButton.setImageDrawable(getResources().getDrawable(android.R.drawable.ic_media_pause));
                     try {
-                        new File(outputFile).delete();
+                        new File(RecordFilePath).delete();
                         audioRecorder = new MediaRecorder();
                         audioRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
                         audioRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
                         audioRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
-                        audioRecorder.setOutputFile(outputFile);
+                        audioRecorder.setOutputFile(RecordFilePath);
                         audioRecorder.prepare();
                         audioRecorder.start();
                     } catch (IllegalStateException e) {
@@ -195,7 +215,7 @@ public class NewRecordFragment extends BaseFragment {
                 MediaPlayer m = new MediaPlayer();
 
                 try {
-                    m.setDataSource(outputFile);
+                    m.setDataSource(RecordFilePath);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -223,34 +243,32 @@ public class NewRecordFragment extends BaseFragment {
                 } else if (!mHasImage) {
                     Toast.makeText(getActivity(), "Image Not valid", Toast.LENGTH_LONG).show();
                 } else {
-                    String encodedFile = "";
-                    File file = new File(outputFile);
-
-                    int size = (int) file.length();
-                    byte[] bytes = new byte[size];
-                    try {
-                        BufferedInputStream buf = new BufferedInputStream(new FileInputStream(file));
-                        buf.read(bytes, 0, bytes.length);
-                        buf.close();
-                        encodedFile = Base64.encodeToString(bytes, Base64.DEFAULT);
-                    } catch (FileNotFoundException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
-                    } catch (IOException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
-                    }
 
                     ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                    TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
-                    ((NewRecordActivity) getActivity()).getSelectedBitmap().compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
-                    String encodedImage = Base64.encodeToString(byteArrayOutputStream.toByteArray(), Base64.DEFAULT);
+
+                    ((NewRecordActivity) getActivity()).getSelectedBitmap().compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+
                     MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
                     User user = memberStorage.loadUser();
                     if (user != null) {
                         sendButton.setEnabled(false);
-                        travocaApi.saveRecordDetails(encodedImage,file, encodedFile, mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString()
-                                , String.valueOf(mLocation.getLatitude()), String.valueOf(mLocation.getLongitude()), "free", user.id).enqueue(mResultsCallback);
+                        byte[] bitmapdata = byteArrayOutputStream.toByteArray();
+                        mImageFile = new File(getActivity().getCacheDir(), "image.png");
+                        try {
+                            mImageFile.createNewFile();
+                            FileOutputStream fos = new FileOutputStream(mImageFile);
+                            fos.write(bitmapdata);
+                            fos.flush();
+                            fos.close();
+
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+
+                        imageRequest = new ImageRequest(mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString(), String.valueOf(mLocation.getLatitude()), String.valueOf(mLocation.getLongitude()), "free", user.id);
+
+                        mTravocaApi.saveRecordDetails(imageRequest).enqueue(mResultsCallback);
+
                     } else {
                         new AlertDialog.Builder(getActivity())
                                 .setTitle("Alert")

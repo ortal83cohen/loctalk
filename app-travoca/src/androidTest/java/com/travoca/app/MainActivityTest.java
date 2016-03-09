@@ -71,75 +71,11 @@ public class MainActivityTest {
         // Type text and then press the button.
         autocomplete("Amsterdam", "Amsterdam, Netherlands");
 
-        selectDates();
-
-        selectPersons("4");
-
-        selectRooms("3");
-
-        selectRooms("1");
-
-        selectPersons("2");
 
         onView(withId(R.id.search)).perform(click());
 
     }
 
-    private void selectRooms(String rooms) {
-        onView(withId(R.id.rooms_button))
-                .perform(click());
-
-        onView(withId(R.id.number_rooms_selector))
-                .check(matches(isDisplayed()));
-
-        onView(allOf(
-                withText(rooms),
-                withParent(withId(R.id.number_rooms_selector))
-        )).perform(click());
-
-        onView(withId(R.id.number_rooms_selector))
-                .check(matches(not(isDisplayed())));
-
-        onView(allOf(
-                withId(R.id.number),
-                withParent(withId(R.id.rooms_button))
-        )).check(matches(withText(rooms)));
-
-    }
-
-    private void selectPersons(String persons) {
-        onView(withId(R.id.persons_button))
-                .perform(click());
-
-        onView(withId(R.id.number_persons_selector))
-                .check(matches(isDisplayed()));
-
-        onView(allOf(
-                withText(persons),
-                withParent(withId(R.id.number_persons_selector))
-        )).perform(click());
-
-        onView(withId(R.id.number_persons_selector))
-                .check(matches(not(isDisplayed())));
-
-        onView(allOf(
-                withId(R.id.number),
-                withParent(withId(R.id.persons_button))
-        )).check(matches(withText(persons)));
-
-    }
-
-    private void selectDates() {
-        onView(withId(R.id.check_in_button))
-                .perform(click());
-
-        onView(withId(R.id.datepicker_arrow_right))
-                .perform(click());
-
-        onView(withId(R.id.datepicker_day))
-                .perform(new GeneralClickAction(Tap.SINGLE, GeneralLocation.VISIBLE_CENTER, Press.FINGER));
-
-    }
 
     private void autocomplete(String stringToBeTyped, String textToSelect) {
         onView(withId(R.id.autoCompleteTextView_location))

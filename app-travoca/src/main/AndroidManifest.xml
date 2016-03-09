@@ -156,7 +156,12 @@
             android:name=".service.LocationService"
             android:enabled="true"
             android:exported="true"
-            android:process=":my_service" />
+            android:process=":LocationService" />
+        <service
+            android:name=".utils.amazon.UploadService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":UploadService" />
     </application>
 
 </manifest>

@@ -557,7 +557,6 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
     public void onSearchRecordsClick(View button) {
 
 
-
         try {
             Calendar yesterday = Calendar.getInstance(Locale.getDefault());
             yesterday.add(Calendar.DAY_OF_MONTH, -1);

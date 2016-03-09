@@ -9,6 +9,7 @@ import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 import com.travoca.api.mock.ResultsMockClient;
 import com.travoca.api.model.ResultsResponse;
+import com.travoca.api.model.SaveRecordResponse;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.ImageRequest;
 import com.travoca.api.model.search.LikeRequest;
@@ -172,12 +173,10 @@ public class TravocaApi {
     }
 
 
-    public Call<ResultsResponse> saveRecordDetails(String image,File file, String record, String title, String description, String locationName, String lat, String lon, String type, String userId) {
+    public Call<SaveRecordResponse> saveRecordDetails(ImageRequest imageRequest) {
 
         Service service = create();
-//        TypedFile typedFile = new TypedFile("multipart/form-data", file);
-
-        return service.saveRecordDetails(new ImageRequest(image, record, title, description, locationName, lat, lon, type, userId));
+        return service.saveRecordDetails(imageRequest);
     }
 
     public Call<ResultsResponse> saveUser(String userId, String email, String imageUrl, String firstName, String lastName) {
@@ -200,7 +199,7 @@ public class TravocaApi {
         Call<ResultsResponse> like(@Body LikeRequest request);
 
         @POST(PATH_RECORDS)
-        Call<ResultsResponse> saveRecordDetails(@Body ImageRequest request);
+        Call<SaveRecordResponse> saveRecordDetails(@Body ImageRequest request);
 
         @POST(PATH_USER)
         Call<ResultsResponse> saveUser(@Body UserRequest request);
