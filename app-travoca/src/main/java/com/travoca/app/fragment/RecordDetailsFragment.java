@@ -48,15 +48,15 @@ import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
 import com.travoca.app.activity.LoginActivity;
-import com.travoca.app.activity.RecordDetailsTabsActivity;
 import com.travoca.app.activity.RecordDetailsActivity;
+import com.travoca.app.activity.RecordDetailsTabsActivity;
 import com.travoca.app.adapter.RecordCardViewHolder;
 import com.travoca.app.events.Events;
-import com.travoca.app.recorddetails.RecordViewHolder;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.User;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.provider.LikedRecords;
+import com.travoca.app.recorddetails.RecordViewHolder;
 
 import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
@@ -83,13 +83,6 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     private static final String IMAGE_FLAG = "image_flag";
     private static final String BUTTON_FLAG = "button_flag";
     boolean mIsImageExpended = false;
-    private int mImageState = IMAGE_STATE_NORMAL;
-    private Record mRecord;
-    private int mDisplayHeight = 0;
-    private int mImageMinimumHeight;
-    private boolean mMoreRoomsButtonVisible = true;
-    private RecordListRequest mRequest;
-    private MediaPlayer mediaPlayer;
     RecordCardViewHolder recordCardViewHolder;
     @Bind(R.id.see_all_record)
     Button mMoreRecordsButton;
@@ -99,6 +92,13 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     FrameLayout mRecordCard;
     @Bind(R.id.pager)
     android.support.v4.view.ViewPager mImagePager;
+    private int mImageState = IMAGE_STATE_NORMAL;
+    private Record mRecord;
+    private int mDisplayHeight = 0;
+    private int mImageMinimumHeight;
+    private boolean mMoreRoomsButtonVisible = true;
+    private RecordListRequest mRequest;
+    private MediaPlayer mediaPlayer;
     private Callback<ResultsResponse> mLikeResultsCallback = new Callback<ResultsResponse>() {
         @Override
         public void onResponse(Response<ResultsResponse> response, Retrofit retrofit) {
@@ -266,95 +266,6 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         fillRecordCard();
     }
 
-    class DownloadAndPlay extends AsyncTask<String, String, String> {
-
-        /**
-         * Before starting background thread Show Progress Bar Dialog
-         */
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-
-        /**
-         * Downloading file in background thread
-         */
-        @Override
-        protected String doInBackground(String... f_url) {
-            int count;
-            try {
-                URL url = new URL(f_url[0]);
-                URLConnection conection = url.openConnection();
-                conection.connect();
-
-                // this will be useful so that you can show a tipical 0-100%
-                // progress bar
-                int lenghtOfFile = conection.getContentLength();
-
-                // download the file
-                InputStream input = new BufferedInputStream(url.openStream(),
-                        8192);
-
-                // Output stream
-                OutputStream output = new FileOutputStream(Environment
-                        .getExternalStorageDirectory().toString()
-                        + "/data/downloadedfile.3gp");
-
-                byte data[] = new byte[1024];
-
-                long total = 0;
-
-                while ((count = input.read(data)) != -1) {
-                    total += count;
-                    // publishing the progress....
-                    // After this onProgressUpdate will be called
-                    publishProgress("" + (int) ((total * 100) / lenghtOfFile));
-
-                    // writing data to file
-                    output.write(data, 0, count);
-                }
-
-                // flushing output
-                output.flush();
-
-                // closing streams
-                output.close();
-                input.close();
-
-            } catch (Exception e) {
-                Log.e("Error: ", e.getMessage());
-            }
-
-            return null;
-        }
-
-
-        /**
-         * Updating progress bar
-         */
-        protected void onProgressUpdate(String... progress) {
-            // setting progress percentage
-            mPlayButton.setText("play " + Integer.parseInt(progress[0]));
-        }
-
-        /**
-         * After completing background task Dismiss the progress dialog
-         **/
-        @Override
-        protected void onPostExecute(String file_url) {
-            try {
-                mediaPlayer.setDataSource(Environment
-                        .getExternalStorageDirectory().toString()
-                        + "/data/downloadedfile.3gp");
-                mediaPlayer.prepare();
-            } catch (IOException ignored) {
-
-            }
-            mPlayButton.setEnabled(true);
-        }
-    }
-
-
     private void setupMap() {
         SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map_container);
         mapFragment.getMapAsync(this);
@@ -402,7 +313,6 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         super.onSaveInstanceState(outState);
     }
 
-
     public void fillRecordCard() {
         if (getActivity() != null) {
             final LayoutInflater inflater = LayoutInflater.from(getActivity());
@@ -419,7 +329,6 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         mMoreRoomsButtonVisible = visible;
         mMoreRecordsButton.setVisibility(visible ? View.VISIBLE : View.GONE);
     }
-
 
     @Override
     public void onClick(View v) {
@@ -440,7 +349,6 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 //            }
         }
     }
-
 
     private void expand(final View v) {
         final int mStartHeight = v.getHeight();
@@ -567,6 +475,93 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 //        loadRecord();
     }
 
+    class DownloadAndPlay extends AsyncTask<String, String, String> {
+
+        /**
+         * Before starting background thread Show Progress Bar Dialog
+         */
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        /**
+         * Downloading file in background thread
+         */
+        @Override
+        protected String doInBackground(String... f_url) {
+            int count;
+            try {
+                URL url = new URL(f_url[0]);
+                URLConnection conection = url.openConnection();
+                conection.connect();
+
+                // this will be useful so that you can show a tipical 0-100%
+                // progress bar
+                int lenghtOfFile = conection.getContentLength();
+
+                // download the file
+                InputStream input = new BufferedInputStream(url.openStream(),
+                        8192);
+
+                // Output stream
+                OutputStream output = new FileOutputStream(Environment
+                        .getExternalStorageDirectory().toString()
+                        + "/data/downloadedfile.3gp");
+
+                byte data[] = new byte[1024];
+
+                long total = 0;
+
+                while ((count = input.read(data)) != -1) {
+                    total += count;
+                    // publishing the progress....
+                    // After this onProgressUpdate will be called
+                    publishProgress("" + (int) ((total * 100) / lenghtOfFile));
+
+                    // writing data to file
+                    output.write(data, 0, count);
+                }
+
+                // flushing output
+                output.flush();
+
+                // closing streams
+                output.close();
+                input.close();
+
+            } catch (Exception e) {
+                Log.e("Error: ", e.getMessage());
+            }
+
+            return null;
+        }
+
+
+        /**
+         * Updating progress bar
+         */
+        protected void onProgressUpdate(String... progress) {
+            // setting progress percentage
+            mPlayButton.setText("play " + Integer.parseInt(progress[0]));
+        }
+
+        /**
+         * After completing background task Dismiss the progress dialog
+         **/
+        @Override
+        protected void onPostExecute(String file_url) {
+            try {
+                mediaPlayer.setDataSource(Environment
+                        .getExternalStorageDirectory().toString()
+                        + "/data/downloadedfile.3gp");
+                mediaPlayer.prepare();
+            } catch (IOException ignored) {
+
+            }
+            mPlayButton.setEnabled(true);
+        }
+    }
 
     class TapGestureListener extends GestureDetector.SimpleOnGestureListener {
         @Override

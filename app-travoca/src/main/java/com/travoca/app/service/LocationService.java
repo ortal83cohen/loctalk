@@ -31,7 +31,6 @@ import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.User;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.model.ServiceGPSViewPort;
-import com.travoca.app.model.ViewPort;
 import com.travoca.app.travocaapi.RetrofitCallback;
 
 import retrofit.Response;
@@ -40,91 +39,14 @@ public class LocationService extends Service {
     private static final String TAG = "BOOMBOOMTESTGPS";
     private static final int NOTIFICATION_ID = 1;
     private static final double MINIMUM_DISTANCE = 0.05;
-    private LocationManager mLocationManager = null;
     private static final int LOCATION_INTERVAL = 3000000;
     private static final float LOCATION_DISTANCE = 100000f;
-    private Context context;
-
-    private class LocationListener implements android.location.LocationListener {
-        private Location mLastLocation;
-        Context context;
-
-        public Location getLastLocation() {
-            return mLastLocation;
-        }
-
-        public LocationListener(String provider, Context context) {
-            this.context = context;
-            Log.e(TAG, "LocationListener " + provider);
-            mLastLocation = new Location(provider);
-        }
-
-        private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
-            @Override
-            protected void failure(ResponseBody response, boolean isOffline) {
-                Events.post(new SearchResultsEvent(true, 0));
-                Log.e(TAG, "failure: ");
-            }
-
-            @Override
-            protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
-                if (apiResponse.records.size() == 1) {
-                    Record record = apiResponse.records.get(0);
-                    Intent intent = new Intent(context, RecordDetailsActivity.class);
-                    intent.putExtra(RecordDetailsActivity.EXTRA_DATA, record);
-                    intent.putExtra(RecordDetailsActivity.EXTRA_REQUEST, new RecordListRequest());
-                    PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
-                    addNotification(context, "record name " + record.title, record.description + "/" +
-                            record.locationName, pendingIntent);
-                }
-                Log.e(TAG, "success: " + apiResponse.records.size());
-            }
-
-        };
-
-        @Override
-        public void onLocationChanged(Location location) {
-            Log.e(TAG, "onLocationChanged: " + location);
-            final TravocaApi travocaApi = TravocaApplication.provide(context).travocaApi();
-            SearchRequest searchRequest = new SearchRequest();
-            searchRequest.setType(new ServiceGPSViewPort("gps", location.getLatitude() + MINIMUM_DISTANCE,
-                    location.getLongitude() + MINIMUM_DISTANCE, location.getLatitude() - MINIMUM_DISTANCE,
-                    location.getLongitude() - MINIMUM_DISTANCE));
-            searchRequest.setLimit(1);
-            MemberStorage memberStorage = App.provide(context).memberStorage();
-            User user = memberStorage.loadUser();
-            String userId;
-            if (user == null) {
-                userId = "";
-            } else {
-                userId = user.id;
-            }
-            searchRequest.setUserId(userId);
-            travocaApi.records(searchRequest).enqueue(mResultsCallback);
-
-            mLastLocation.set(location);
-        }
-
-        @Override
-        public void onProviderDisabled(String provider) {
-            Log.e(TAG, "onProviderDisabled: " + provider);
-        }
-
-        @Override
-        public void onProviderEnabled(String provider) {
-            Log.e(TAG, "onProviderEnabled: " + provider);
-        }
-
-        @Override
-        public void onStatusChanged(String provider, int status, Bundle extras) {
-            Log.e(TAG, "onStatusChanged: " + provider);
-        }
-    }
-
     LocationListener[] mLocationListeners = new LocationListener[]{
             new LocationListener(LocationManager.GPS_PROVIDER, this),
             new LocationListener(LocationManager.NETWORK_PROVIDER, this)
     };
+    private LocationManager mLocationManager = null;
+    private Context context;
 
     @Override
     public IBinder onBind(Intent arg0) {
@@ -213,5 +135,80 @@ public class LocationService extends Service {
                 getSystemService(NOTIFICATION_SERVICE);
         // send the notification
         notificationManager.notify(NOTIFICATION_ID, notification);
+    }
+
+    private class LocationListener implements android.location.LocationListener {
+        Context context;
+        private Location mLastLocation;
+        private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
+            @Override
+            protected void failure(ResponseBody response, boolean isOffline) {
+                Events.post(new SearchResultsEvent(true, 0));
+                Log.e(TAG, "failure: ");
+            }
+
+            @Override
+            protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
+                if (apiResponse.records.size() == 1) {
+                    Record record = apiResponse.records.get(0);
+                    Intent intent = new Intent(context, RecordDetailsActivity.class);
+                    intent.putExtra(RecordDetailsActivity.EXTRA_DATA, record);
+                    intent.putExtra(RecordDetailsActivity.EXTRA_REQUEST, new RecordListRequest());
+                    PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+                    addNotification(context, "record name " + record.title, record.description + "/" +
+                            record.locationName, pendingIntent);
+                }
+                Log.e(TAG, "success: " + apiResponse.records.size());
+            }
+
+        };
+
+        public LocationListener(String provider, Context context) {
+            this.context = context;
+            Log.e(TAG, "LocationListener " + provider);
+            mLastLocation = new Location(provider);
+        }
+
+        public Location getLastLocation() {
+            return mLastLocation;
+        }
+
+        @Override
+        public void onLocationChanged(Location location) {
+            Log.e(TAG, "onLocationChanged: " + location);
+            final TravocaApi travocaApi = TravocaApplication.provide(context).travocaApi();
+            SearchRequest searchRequest = new SearchRequest();
+            searchRequest.setType(new ServiceGPSViewPort("gps", location.getLatitude() + MINIMUM_DISTANCE,
+                    location.getLongitude() + MINIMUM_DISTANCE, location.getLatitude() - MINIMUM_DISTANCE,
+                    location.getLongitude() - MINIMUM_DISTANCE));
+            searchRequest.setLimit(1);
+            MemberStorage memberStorage = App.provide(context).memberStorage();
+            User user = memberStorage.loadUser();
+            String userId;
+            if (user == null) {
+                userId = "";
+            } else {
+                userId = user.id;
+            }
+            searchRequest.setUserId(userId);
+            travocaApi.records(searchRequest).enqueue(mResultsCallback);
+
+            mLastLocation.set(location);
+        }
+
+        @Override
+        public void onProviderDisabled(String provider) {
+            Log.e(TAG, "onProviderDisabled: " + provider);
+        }
+
+        @Override
+        public void onProviderEnabled(String provider) {
+            Log.e(TAG, "onProviderEnabled: " + provider);
+        }
+
+        @Override
+        public void onStatusChanged(String provider, int status, Bundle extras) {
+            Log.e(TAG, "onStatusChanged: " + provider);
+        }
     }
 }

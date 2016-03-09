@@ -5,7 +5,7 @@
 
     <item
         android:drawable="@drawable/loadersmall01"
-        android:duration="60"  />
+        android:duration="60" />
     <item
         android:drawable="@drawable/loadersmall02"
         android:duration="60" />
@@ -49,34 +49,34 @@
         android:drawable="@drawable/loadersmall15"
         android:duration="60" />
     <!--<item-->
-        <!--android:drawable="@drawable/loadersmall16"-->
-        <!--android:duration="60" />-->
+    <!--android:drawable="@drawable/loadersmall16"-->
+    <!--android:duration="60" />-->
     <!--<item-->
-        <!--android:drawable="@drawable/loadersmall17"-->
-        <!--android:duration="60" />-->
+    <!--android:drawable="@drawable/loadersmall17"-->
+    <!--android:duration="60" />-->
     <!--<item-->
-        <!--android:drawable="@drawable/loadersmall18"-->
-        <!--android:duration="60" />-->
+    <!--android:drawable="@drawable/loadersmall18"-->
+    <!--android:duration="60" />-->
     <!--<item-->
-        <!--android:drawable="@drawable/loadersmall19"-->
-        <!--android:duration="60" />-->
+    <!--android:drawable="@drawable/loadersmall19"-->
+    <!--android:duration="60" />-->
     <!--<item-->
-        <!--android:drawable="@drawable/loadersmall020"-->
-        <!--android:duration="60" />-->
+    <!--android:drawable="@drawable/loadersmall020"-->
+    <!--android:duration="60" />-->
     <!--<item-->
-        <!--android:drawable="@drawable/loadersmall021"-->
-        <!--android:duration="60" />-->
+    <!--android:drawable="@drawable/loadersmall021"-->
+    <!--android:duration="60" />-->
     <!--<item-->
-        <!--android:drawable="@drawable/loadersmall022"-->
-        <!--android:duration="60" />-->
+    <!--android:drawable="@drawable/loadersmall022"-->
+    <!--android:duration="60" />-->
     <!--<item-->
-        <!--android:drawable="@drawable/loadersmall022"-->
-        <!--android:duration="60" />-->
+    <!--android:drawable="@drawable/loadersmall022"-->
+    <!--android:duration="60" />-->
     <!--<item-->
-        <!--android:drawable="@drawable/loadersmall023"-->
-        <!--android:duration="60" />-->
+    <!--android:drawable="@drawable/loadersmall023"-->
+    <!--android:duration="60" />-->
     <!--<item-->
-        <!--android:drawable="@drawable/loadersmall024"-->
-        <!--android:duration="60" />-->
+    <!--android:drawable="@drawable/loadersmall024"-->
+    <!--android:duration="60" />-->
 
 </animation-list>

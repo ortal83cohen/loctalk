@@ -54,11 +54,11 @@ public class RecentSearchesActivity extends BaseActivity {
                 Cursor cursor = (Cursor) parent.getItemAtPosition(position);
                 if (cursor != null) {
 
-                        String northeastLat = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LAT));
-                        String northeastLon = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LON));
-                        String southwestLat = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LAT));
-                        String southwestLon = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LON));
-                        startSearch(new Location(cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LOCATION_NAME)), new LatLng(cursor.getDouble(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LAT)), cursor.getDouble(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LON)))));
+                    String northeastLat = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LAT));
+                    String northeastLon = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LON));
+                    String southwestLat = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LAT));
+                    String southwestLon = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LON));
+                    startSearch(new Location(cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LOCATION_NAME)), new LatLng(cursor.getDouble(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LAT)), cursor.getDouble(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LON)))));
 
                 }
             }

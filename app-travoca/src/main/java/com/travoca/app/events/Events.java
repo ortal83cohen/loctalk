@@ -1,5 +1,8 @@
 package com.travoca.app.events;
 
+import android.os.Handler;
+import android.os.Looper;
+
 import com.squareup.otto.Bus;
 import com.travoca.app.utils.AppLog;
 
@@ -9,8 +12,19 @@ import com.travoca.app.utils.AppLog;
  */
 public class Events {
     private static final Bus sBus = new Bus();
+    private static final Handler mHandler = new Handler(Looper.getMainLooper());
 
     public static void post(Object event) {
+        if (Looper.myLooper() == Looper.getMainLooper()) {
+            sBus.post(event);
+        } else {
+            mHandler.post(new Runnable() {
+                @Override
+                public void run() {
+                    android.os.Debug.waitForDebugger();
+                }
+            });
+        }
         AppLog.v("Posting event: " + event);
         sBus.post(event);
     }
@@ -19,7 +33,8 @@ public class Events {
         AppLog.v("Registering: " + object);
         try {
             sBus.register(object);
-        }catch (IllegalArgumentException ignored){}
+        } catch (IllegalArgumentException ignored) {
+        }
     }
 
     public static void unregister(Object object) {

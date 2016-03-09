@@ -16,7 +16,6 @@ import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
-import com.google.android.gms.common.SignInButton;
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.TravocaApi;
 import com.travoca.api.model.ResultsResponse;
@@ -47,7 +46,7 @@ public class LoginFragment extends BaseFragment {
     AccessTokenTracker accessTokenTracker;
     @Bind(R.id.login_button)
     LoginButton facebookButton;
-
+    CallbackManager callbackManager;
     private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
 
         @Override
@@ -58,15 +57,15 @@ public class LoginFragment extends BaseFragment {
         @Override
         public void success(ResultsResponse apiResponse, Response response) {
 
-        }};
+        }
+    };
+
     public static LoginFragment newInstance() {
         LoginFragment fragment = new LoginFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
     }
-
-    CallbackManager callbackManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -88,7 +87,7 @@ public class LoginFragment extends BaseFragment {
         // If using in a fragment
         facebookButton.setFragment(this);
         // Other app specific specialization
-         accessTokenTracker = new AccessTokenTracker() {
+        accessTokenTracker = new AccessTokenTracker() {
             @Override
             protected void onCurrentAccessTokenChanged(com.facebook.AccessToken accessToken, com.facebook.AccessToken accessToken1) {
                 if (accessToken1 == null) {
@@ -116,8 +115,8 @@ public class LoginFragment extends BaseFragment {
                                     String id = object.getString("id");
                                     String imageUrl = "https://graph.facebook.com/" + id + "/picture?type=large";
                                     TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
-                                    travocaApi.saveUser(id,email,imageUrl,firstName,lastName).enqueue(mResultsCallback);
-                                    User user = new User(email, firstName,lastName, id,imageUrl);
+                                    travocaApi.saveUser(id, email, imageUrl, firstName, lastName).enqueue(mResultsCallback);
+                                    User user = new User(email, firstName, lastName, id, imageUrl);
                                     Events.post(new UserLoginEvent(user));
                                     memberStorage.saveUser(user);
                                 } catch (JSONException e) {
@@ -168,7 +167,7 @@ public class LoginFragment extends BaseFragment {
     @Override
     public void onResume() {
         super.onResume();
-       accessTokenTracker.isTracking();
+        accessTokenTracker.isTracking();
 
     }
 

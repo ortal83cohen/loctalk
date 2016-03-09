@@ -16,10 +16,10 @@
 
 package com.travoca.app.utils.amazon.utils;
 
+import android.content.SharedPreferences;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-
-import android.content.SharedPreferences;
 
 /**
  * Reflection utils to call SharedPreferences$Editor.apply when possible,
@@ -28,8 +28,8 @@ import android.content.SharedPreferences;
 public class SharedPreferencesCompat {
     private static final Method sApplyMethod = findApplyMethod();
 
-    @SuppressWarnings({ "unchecked", "rawtypes" })
-	private static Method findApplyMethod() {
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    private static Method findApplyMethod() {
         try {
             Class cls = SharedPreferences.Editor.class;
             return cls.getMethod("apply");
@@ -52,5 +52,5 @@ public class SharedPreferencesCompat {
         }
         editor.commit();
     }
-    
+
 }

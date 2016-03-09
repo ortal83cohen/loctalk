@@ -41,21 +41,31 @@ import retrofit.Response;
  * @date 2016-02-17
  */
 public class LoginActivity extends BaseActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
+    private static final int RC_SIGN_IN = 0;
+    private static final String FRAGMENT_LOGIN = "login";
+    protected GoogleApiClient mGoogleApiClient;
     @Bind(R.id.sign_in_button)
     SignInButton btnSignIn;
     @Bind(R.id.button_sign_out)
     Button btnSignOut;
     private MemberStorage memberStorage;
-    private static final int RC_SIGN_IN = 0;
     private ConnectionResult mConnectionResult;
-    protected GoogleApiClient mGoogleApiClient;
-    private static final String FRAGMENT_LOGIN = "login";
+    private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
 
+        @Override
+        protected void failure(ResponseBody errorBody, boolean isOffline) {
+
+        }
+
+        @Override
+        public void success(ResultsResponse apiResponse, Response response) {
+
+        }
+    };
 
     public static Intent createIntent(Context context) {
         return new Intent(context, LoginActivity.class);
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,19 +137,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                 });
     }
 
-    private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
-
-        @Override
-        protected void failure(ResponseBody errorBody, boolean isOffline) {
-
-        }
-
-        @Override
-        public void success(ResultsResponse apiResponse, Response response) {
-
-        }
-    };
-
     protected void onStop() {
         super.onStop();
         if (mGoogleApiClient.isConnected()) {
@@ -207,7 +204,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
             String imageUrl = "";
             try {
                 imageUrl = acct.getPhotoUrl().toString();
-            } catch (NullPointerException ignored) {}
+            } catch (NullPointerException ignored) {
+            }
             TravocaApi travocaApi = TravocaApplication.provide(this).travocaApi();
             travocaApi.saveUser(id, email, imageUrl, firstName, lastName).enqueue(mResultsCallback);
             User user = new User(email, firstName, lastName, id, imageUrl);

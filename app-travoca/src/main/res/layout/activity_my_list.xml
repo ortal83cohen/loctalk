@@ -6,51 +6,48 @@
     android:background="@color/theme_primary">
 
 
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/actionbar_status_bar_height">
 
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
 
-        <android.support.design.widget.CoordinatorLayout
+        <FrameLayout
+            android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/actionbar_status_bar_height">
+            android:layout_marginTop="?attr/actionBarSize"
+            app:layout_behavior="com.travoca.app.widget.ScrollAwareViewBehavior" />
 
-            <include
-                android:id="@+id/app_bar"
-                layout="@layout/app_bar" />
+        <Button
+            android:id="@+id/refresh_records"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="@dimen/default_padding"
+            android:layout_marginLeft="@dimen/default_padding"
+            android:background="@drawable/rounded_ripple_button_theme_primary"
+            android:elevation="12sp"
+            android:paddingLeft="@dimen/minimum_default_padding"
+            android:paddingRight="@dimen/minimum_default_padding"
+            android:text="@string/refresh"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
 
-            <FrameLayout
-                android:id="@+id/fragment_container"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="?attr/actionBarSize"
-                app:layout_behavior="com.travoca.app.widget.ScrollAwareViewBehavior" />
-
-            <Button
-                android:id="@+id/refresh_records"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|left"
-                android:layout_marginBottom="@dimen/default_padding"
-                android:layout_marginLeft="@dimen/default_padding"
-                android:background="@drawable/rounded_ripple_button_theme_primary"
-                android:elevation="12sp"
-                android:paddingLeft="@dimen/minimum_default_padding"
-                android:paddingRight="@dimen/minimum_default_padding"
-                android:text="@string/refresh"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                android:visibility="gone" />
-
-            <ImageButton
-                android:id="@+id/loader_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/loader_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
 
 
-
-            <android.support.design.widget.FloatingActionButton
+        <android.support.design.widget.FloatingActionButton
             android:id="@+id/action_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +62,7 @@
             app:layout_behavior="com.travoca.app.widget.ScrollAwareFABBehavior" />
 
 
-        </android.support.design.widget.CoordinatorLayout>
+    </android.support.design.widget.CoordinatorLayout>
 
 
     <FrameLayout

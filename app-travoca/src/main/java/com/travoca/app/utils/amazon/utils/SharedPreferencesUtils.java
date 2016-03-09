@@ -1,6 +1,6 @@
 /***
  * Copyright (c) 2012 readyState Software Ltd
- * 
+ * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
  * a copy of the License at
@@ -10,21 +10,20 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
  */
 
 package com.travoca.app.utils.amazon.utils;
 
-import java.util.ArrayList;
+import android.content.SharedPreferences;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import android.content.SharedPreferences;
+import java.util.ArrayList;
 
 public class SharedPreferencesUtils {
 
-	public static void setStringArrayPref(SharedPreferences prefs, String key, ArrayList<String> values) {
+    public static void setStringArrayPref(SharedPreferences prefs, String key, ArrayList<String> values) {
         SharedPreferences.Editor editor = prefs.edit();
         JSONArray a = new JSONArray();
         for (int i = 0; i < values.size(); i++) {
@@ -54,5 +53,5 @@ public class SharedPreferencesUtils {
         }
         return values;
     }
-    
+
 }

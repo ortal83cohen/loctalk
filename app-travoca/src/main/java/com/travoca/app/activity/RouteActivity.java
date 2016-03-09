@@ -12,9 +12,9 @@ import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.search.ListType;
 import com.travoca.app.App;
 import com.travoca.app.core.CoreInterface;
-import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.model.Location;
 import com.travoca.app.model.RecordListRequest;
+import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.utils.AppLog;
 import com.travoca.app.utils.BrowserUtils;
 

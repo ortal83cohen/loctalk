@@ -5,7 +5,6 @@ import android.os.Parcelable;
 
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.travoca.api.model.search.ServiceGpsViewPortType;
-import com.travoca.api.model.search.ViewPortType;
 
 /**
  * @author ortal

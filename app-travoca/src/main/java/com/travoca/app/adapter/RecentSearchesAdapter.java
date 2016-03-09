@@ -13,9 +13,6 @@ import android.widget.TextView;
 
 import com.travoca.app.R;
 
-import java.text.SimpleDateFormat;
-import java.util.Locale;
-
 public class RecentSearchesAdapter extends CursorAdapter {
 
     public RecentSearchesAdapter(Context context, Cursor c) {

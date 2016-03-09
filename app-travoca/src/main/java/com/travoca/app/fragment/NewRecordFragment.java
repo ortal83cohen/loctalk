@@ -59,8 +59,7 @@ public class NewRecordFragment extends BaseFragment {
 
     private static final int REQUEST_PERMISSION_LOCATION = 2;
     private static final int NUMBER_OF_RETRIES = 4;
-
-
+    public TravocaApi mTravocaApi;
     @Bind(R.id.button3)
     FloatingActionButton playButton;
     @Bind(R.id.button2)
@@ -79,7 +78,6 @@ public class NewRecordFragment extends BaseFragment {
 //    MaterialEditText mType;
     @Bind(R.id.image)
     ImageView mImageView;
-
     private int mNumberRetries = 0;
     private MediaRecorder audioRecorder;
     private String RecordFilePath = null;
@@ -87,10 +85,11 @@ public class NewRecordFragment extends BaseFragment {
     private Location mLocation;
     private boolean mPlayButtonState = false;
     private boolean mHasImage = false;
-    public TravocaApi mTravocaApi;
     private LocationRequest mLocationRequest = new LocationRequest()
             .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
             .setNumUpdates(1);
+    private ImageRequest imageRequest;
+    private File mImageFile;
     private RetrofitCallback<SaveRecordResponse> mResultsCallback = new RetrofitCallback<SaveRecordResponse>() {
 
 
@@ -104,7 +103,7 @@ public class NewRecordFragment extends BaseFragment {
 
             intent = new Intent(getActivity(), UploadService.class);
             intent.putExtra(UploadService.ARG_FILE_PATH, mImageFile.getPath());
-            intent.putExtra(UploadService.ARG_FILE_NAME,  apiResponse.rowId + ".jpg");
+            intent.putExtra(UploadService.ARG_FILE_NAME, apiResponse.rowId + ".jpg");
             getActivity().startService(intent);
 
             getActivity().finish();
@@ -125,8 +124,6 @@ public class NewRecordFragment extends BaseFragment {
             }
         }
     };
-    private ImageRequest imageRequest;
-    private File mImageFile;
 
     public static NewRecordFragment newInstance() {
         NewRecordFragment fragment = new NewRecordFragment();

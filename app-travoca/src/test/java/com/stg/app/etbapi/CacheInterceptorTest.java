@@ -156,7 +156,7 @@ public class CacheInterceptorTest {
 
     }
 
-    private OkHttpClient createHttpClient(CacheResponseInterceptor responseInterceptor,  cvCacheRequestInterceptor requestInterceptor, Cache cache) {
+    private OkHttpClient createHttpClient(CacheResponseInterceptor responseInterceptor, cvCacheRequestInterceptor requestInterceptor, Cache cache) {
         OkHttpClient client = new OkHttpClient();
         client.networkInterceptors().add(responseInterceptor);
         client.interceptors().add(requestInterceptor);

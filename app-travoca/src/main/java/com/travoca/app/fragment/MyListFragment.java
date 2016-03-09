@@ -58,6 +58,80 @@ public class MyListFragment extends BaseFragment implements View.OnClickListener
     private RecordListAdapter mAdapter;
     private Listener mListener;
     private int mNumberRetries = 0;
+    private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
+
+        @Override
+        public void success(final ResultsResponse apiResponse, Response response) {
+
+            if (getActivity() != null) {
+                ((MyListActivity) getActivity()).hideLoaderImage();
+            }
+            mLoaderText.setVisibility(View.GONE);
+            if (mRecyclerView == null || mAdapter == null) {
+                return;
+            }
+
+            if (apiResponse.records == null || apiResponse.records.isEmpty() || apiResponse.records.size() != TravocaApi.LIMIT) {
+                mRecyclerView.setHasMoreData(false);
+            }
+
+            if (mAdapter.getItemCount() == 0) {
+                if (apiResponse.records == null || apiResponse.records.isEmpty()) {
+                    mNoResult.setVisibility(View.VISIBLE);
+                }
+            }
+
+            mNumberRetries = 0;
+            mAdapter.addRecords(apiResponse.records);
+
+        }
+
+
+        @Override
+        public void failure(ResponseBody response, boolean isOffline) {
+            if (getActivity() != null) {
+                ((MyListActivity) getActivity()).hideLoaderImage();
+                if (getActivity() == null) {
+                    return;
+                }
+
+                if (response != null) {
+                    try {
+                        ErrorResponse body = (ErrorResponse) RetrofitConverter.getBodyAs(response, ErrorResponse.class);
+                        if (body != null && body.meta != null) {
+                            fail(body.meta.errorMessage, mAdapter.getItemCount() == 0);
+                        } else {
+                            retry();
+                        }
+                    } catch (IOException e) {
+                        AppLog.e(e);
+                        retry();
+                    }
+                } else {
+                    retry();
+                }
+                Events.post(new SearchResultsEvent(true, mAdapter.getItemCount()));
+            }
+        }
+
+        private void retry() {
+            if (mAdapter != null) {
+                if (mNumberRetries++ < NUMBER_OF_RETRIES) {
+                    Toast.makeText(getActivity(), R.string.retry_connecting_server, Toast.LENGTH_SHORT).show();
+                    loadSearchResults(mAdapter.getItemCount());
+                } else {
+                    fail(getActivity().getString(R.string.unable_connect_server), mAdapter.getItemCount() == 0);
+                }
+            }
+        }
+
+        private void fail(String message, boolean isFinish) {
+            Toast.makeText(getActivity(), message, Toast.LENGTH_LONG).show();
+            if (isFinish) {
+                getActivity().finish();
+            }
+        }
+    };
 
     public static MyListFragment newInstance() {
         return new MyListFragment();
@@ -196,79 +270,5 @@ public class MyListFragment extends BaseFragment implements View.OnClickListener
     public interface Listener {
         void onEditLocationClick();
     }
-    private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
-
-        @Override
-        public void success(final ResultsResponse apiResponse, Response response) {
-
-            if (getActivity() != null) {
-                ((MyListActivity) getActivity()).hideLoaderImage();
-            }
-            mLoaderText.setVisibility(View.GONE);
-            if (mRecyclerView == null || mAdapter == null) {
-                return;
-            }
-
-            if (apiResponse.records == null || apiResponse.records.isEmpty() || apiResponse.records.size() != TravocaApi.LIMIT) {
-                mRecyclerView.setHasMoreData(false);
-            }
-
-            if (mAdapter.getItemCount() == 0) {
-                if (apiResponse.records == null || apiResponse.records.isEmpty()) {
-                    mNoResult.setVisibility(View.VISIBLE);
-                }
-            }
-
-            mNumberRetries = 0;
-            mAdapter.addRecords(apiResponse.records);
-
-        }
-
-
-        @Override
-        public void failure(ResponseBody response, boolean isOffline) {
-            if (getActivity() != null) {
-                ((MyListActivity) getActivity()).hideLoaderImage();
-                if (getActivity() == null) {
-                    return;
-                }
-
-                if (response != null) {
-                    try {
-                        ErrorResponse body = (ErrorResponse) RetrofitConverter.getBodyAs(response, ErrorResponse.class);
-                        if (body != null && body.meta != null) {
-                            fail(body.meta.errorMessage, mAdapter.getItemCount() == 0);
-                        } else {
-                            retry();
-                        }
-                    } catch (IOException e) {
-                        AppLog.e(e);
-                        retry();
-                    }
-                } else {
-                    retry();
-                }
-                Events.post(new SearchResultsEvent(true, mAdapter.getItemCount()));
-            }
-        }
-
-        private void retry() {
-            if (mAdapter != null) {
-                if (mNumberRetries++ < NUMBER_OF_RETRIES) {
-                    Toast.makeText(getActivity(), R.string.retry_connecting_server, Toast.LENGTH_SHORT).show();
-                    loadSearchResults(mAdapter.getItemCount());
-                } else {
-                    fail(getActivity().getString(R.string.unable_connect_server), mAdapter.getItemCount() == 0);
-                }
-            }
-        }
-
-        private void fail(String message, boolean isFinish) {
-            Toast.makeText(getActivity(), message, Toast.LENGTH_LONG).show();
-            if (isFinish) {
-                getActivity().finish();
-            }
-        }
-    };
 
 }

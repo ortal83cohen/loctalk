@@ -108,7 +108,7 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
             TextView nameFirst = (TextView) header.findViewById(R.id.profile_name);
             TextView nameLast = (TextView) header.findViewById(R.id.profile_surname);
 
-           if (TextUtils.isEmpty(user.profile.firstName) && TextUtils.isEmpty(user.profile.lastName)) {
+            if (TextUtils.isEmpty(user.profile.firstName) && TextUtils.isEmpty(user.profile.lastName)) {
                 nameFirst.setText("Hello,");
                 nameLast.setText("Traveller");
             } else {
@@ -125,7 +125,7 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
 //                        .centerCrop()
                         .into(image);
             }
-        mView.findViewById(R.id.nav_divider).setVisibility(View.VISIBLE);
+            mView.findViewById(R.id.nav_divider).setVisibility(View.VISIBLE);
         }
         headerView.addView(header);
     }

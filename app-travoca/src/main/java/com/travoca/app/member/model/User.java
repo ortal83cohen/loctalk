@@ -20,10 +20,10 @@ public class User {
     public int providerId;
 
 
-    public User(String email, String firstName,String lastName, String id,String imageUrl) {
+    public User(String email, String firstName, String lastName, String id, String imageUrl) {
         this.id = id;
         this.email = email;
-        this.profile = new Profile(firstName,lastName,id,imageUrl);
+        this.profile = new Profile(firstName, lastName, id, imageUrl);
     }
 
     public User() {

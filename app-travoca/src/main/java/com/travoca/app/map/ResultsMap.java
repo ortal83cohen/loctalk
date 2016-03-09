@@ -203,7 +203,7 @@ public class ResultsMap {
         try {
             searchRequest.setUserId(userId);
             searchRequest.setOffset(0);
-            mTravocaApi.records(searchRequest ).enqueue(mResultsCallback);
+            mTravocaApi.records(searchRequest).enqueue(mResultsCallback);
         } catch (InvalidParameterException e) {
             mActivity.finish();
         }

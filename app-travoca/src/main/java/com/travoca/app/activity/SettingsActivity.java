@@ -18,7 +18,6 @@ import com.travoca.app.preferences.UserPreferencesStorage;
 import com.travoca.app.utils.AppLog;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
 import de.psdev.licensesdialog.LicensesDialog;
 

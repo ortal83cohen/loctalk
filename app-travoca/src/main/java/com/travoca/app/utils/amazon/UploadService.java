@@ -1,6 +1,6 @@
 /***
  * Copyright (c) 2012 readyState Software Ltd
- *
+ * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
  * a copy of the License at
@@ -10,33 +10,27 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *
  */
 
 package com.travoca.app.utils.amazon;
 
-import java.io.File;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
-import com.amazonaws.auth.BasicAWSCredentials;
-import com.amazonaws.services.s3.AmazonS3Client;
-import com.amazonaws.services.s3.model.ProgressEvent;
-import com.travoca.app.R;
-import com.travoca.app.activity.MainActivity;
-import com.travoca.app.events.Events;
-import com.travoca.app.events.MassageEvent;
-
 import android.app.IntentService;
 import android.app.Notification;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
+
+import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.model.ProgressEvent;
+import com.travoca.app.R;
+import com.travoca.app.activity.MainActivity;
+
+import java.io.File;
 
 public class UploadService extends IntentService {
 
@@ -54,6 +48,14 @@ public class UploadService extends IntentService {
     private Uploader uploader;
 
     private NotificationManager nm;
+    private BroadcastReceiver uploadCancelReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (uploader != null) {
+                uploader.interrupt();
+            }
+        }
+    };
 
     public UploadService() {
         super("upload");
@@ -118,7 +120,6 @@ public class UploadService extends IntentService {
     public void onDestroy() {
         nm.cancel(NOTIFY_ID_UPLOAD);
         unregisterReceiver(uploadCancelReceiver);
-        Events.post(new MassageEvent(MassageEvent.NEW_RECORD_SUCCESS));
         super.onDestroy();
     }
 
@@ -144,19 +145,10 @@ public class UploadService extends IntentService {
 
         Intent notificationIntent = new Intent(this, MainActivity.class);
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
-        builder.setContentIntent(contentIntent);
+//        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
+//        builder.setContentIntent(contentIntent);
 
         return builder.build();
     }
-
-    private BroadcastReceiver uploadCancelReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (uploader != null) {
-                uploader.interrupt();
-            }
-        }
-    };
 
 }

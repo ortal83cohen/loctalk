@@ -6,9 +6,6 @@ import android.text.TextUtils;
 
 import com.google.android.gms.location.places.Place;
 
-import java.text.SimpleDateFormat;
-import java.util.Locale;
-
 /**
  * @author ortal
  * @date 2015-12-01

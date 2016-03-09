@@ -30,9 +30,9 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  * @date 2015-04-28
  */
 public abstract class BaseActivity extends AppCompatActivity {
+    public static final String EXTRA_REQUEST = "request";
     protected static final String EXTRA_SNIPPET = "snippet";
     protected static final String EXTRA_ORDER_ITEM = "order_item";
-    public static final String EXTRA_REQUEST = "request";
     protected AppBar mToolbar;
     private Menu mMenu;
     private NavigationDrawer mNavigationDrawer;

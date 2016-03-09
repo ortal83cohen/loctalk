@@ -51,6 +51,22 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
     protected GoogleApiClient mGoogleApiClient;
     private Tracker mTracker;
     private CoreInterface.Service mCoreInterface;
+    private RetrofitCallback<String> mResultsCallback = new RetrofitCallback<String>() {
+        @Override
+        protected void failure(ResponseBody response, boolean isOffline) {
+            String number = "tel:+972 52 6088707";
+            Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(number));
+            startActivity(callIntent);
+        }
+
+        @Override
+        protected void success(String phoneNumber, Response<String> response) {
+            String number = "tel:" + phoneNumber;
+            Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(number));
+            startActivity(callIntent);
+        }
+
+    };
 
     public static Intent createIntent(Context context) {
         return new Intent(context, HomeActivity.class);
@@ -113,22 +129,6 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
 
         AnalyticsCalls.get().trackLanding();
     }
-    private RetrofitCallback<String> mResultsCallback = new RetrofitCallback<String>() {
-        @Override
-        protected void failure(ResponseBody response, boolean isOffline) {
-            String number = "tel:+972 52 6088707";
-            Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(number));
-            startActivity(callIntent);
-        }
-
-        @Override
-        protected void success(String phoneNumber, Response<String> response) {
-            String number = "tel:" + phoneNumber;
-            Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(number));
-            startActivity(callIntent);
-        }
-
-    };
 
     @Override
     protected void onResume() {

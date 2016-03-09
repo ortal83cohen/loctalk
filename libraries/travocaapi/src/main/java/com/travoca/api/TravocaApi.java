@@ -17,7 +17,6 @@ import com.travoca.api.model.search.ListType;
 import com.travoca.api.model.search.Type;
 import com.travoca.api.model.search.UserRequest;
 
-import java.io.File;
 import java.io.IOException;
 import java.security.InvalidParameterException;
 import java.util.Map;
@@ -27,10 +26,8 @@ import retrofit.GsonConverterFactory;
 import retrofit.Retrofit;
 import retrofit.http.Body;
 import retrofit.http.GET;
-import retrofit.http.Multipart;
 import retrofit.http.POST;
 import retrofit.http.PUT;
-import retrofit.http.Part;
 import retrofit.http.QueryMap;
 
 /**
