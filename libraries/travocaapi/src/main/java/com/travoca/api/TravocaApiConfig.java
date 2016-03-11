@@ -8,7 +8,7 @@ import com.travoca.api.utils.HttpLoggingInterceptor;
  */
 public class TravocaApiConfig {
 
-    public static final String TRAVOCA_API_ENDPOINT_DEFAULT = "http://ortal83cohen.com/";
+    public static final String TRAVOCA_API_ENDPOINT_DEFAULT = "http://ec2-52-49-195-51.eu-west-1.compute.amazonaws.com/";
 
     private String mApiKey;
     private String mEndpoint = TRAVOCA_API_ENDPOINT_DEFAULT;

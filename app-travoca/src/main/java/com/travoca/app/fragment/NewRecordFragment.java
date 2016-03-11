@@ -85,6 +85,7 @@ public class NewRecordFragment extends BaseFragment {
     private Location mLocation;
     private boolean mPlayButtonState = false;
     private boolean mHasImage = false;
+    private boolean mHasRecord = false;
     private LocationRequest mLocationRequest = new LocationRequest()
             .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
             .setNumUpdates(1);
@@ -176,6 +177,7 @@ public class NewRecordFragment extends BaseFragment {
                     }
 
                 } else {
+                    mHasRecord=true;
                     playButton.setEnabled(true);
                     mPlayButtonState = false;
                     Toast.makeText(getActivity(), "Recording stop", Toast.LENGTH_LONG).show();
@@ -239,6 +241,8 @@ public class NewRecordFragment extends BaseFragment {
                     Toast.makeText(getActivity(), "Location NameNot valid", Toast.LENGTH_LONG).show();
                 } else if (!mHasImage) {
                     Toast.makeText(getActivity(), "Image Not valid", Toast.LENGTH_LONG).show();
+                } else if (!mHasRecord) {
+                    Toast.makeText(getActivity(), "Record Not valid", Toast.LENGTH_LONG).show();
                 } else {
 
                     ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
