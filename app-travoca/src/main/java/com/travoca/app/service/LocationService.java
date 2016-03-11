@@ -30,7 +30,7 @@ import com.travoca.app.events.SearchResultsEvent;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.User;
 import com.travoca.app.model.RecordListRequest;
-import com.travoca.app.model.ServiceGPSViewPort;
+import com.travoca.app.model.ServiceGpsLocation;
 import com.travoca.app.travocaapi.RetrofitCallback;
 
 import retrofit.Response;
@@ -47,6 +47,7 @@ public class LocationService extends Service {
     };
     private LocationManager mLocationManager = null;
     private Context context;
+    private MemberStorage mMemberStorage;
 
     @Override
     public IBinder onBind(Intent arg0) {
@@ -84,7 +85,7 @@ public class LocationService extends Service {
         } catch (IllegalArgumentException ex) {
             Log.d(TAG, "gps provider does not exist " + ex.getMessage());
         }
-
+        mMemberStorage = App.provide(context).memberStorage();
     }
 
     @Override
@@ -149,8 +150,11 @@ public class LocationService extends Service {
 
             @Override
             protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
-                if (apiResponse.records.size() == 1) {
-                    Record record = apiResponse.records.get(0);
+                String lastUpdate = "";
+                for (Record record : apiResponse.records) {
+                    if ( lastUpdate.compareTo(record.date) < 0) {
+                        lastUpdate = record.date;
+                    }
                     Intent intent = new Intent(context, RecordDetailsActivity.class);
                     intent.putExtra(RecordDetailsActivity.EXTRA_DATA, record);
                     intent.putExtra(RecordDetailsActivity.EXTRA_REQUEST, new RecordListRequest());
@@ -158,6 +162,7 @@ public class LocationService extends Service {
                     addNotification(context, "record name " + record.title, record.description + "/" +
                             record.locationName, pendingIntent);
                 }
+                mMemberStorage.saveLastServiceUpdate(lastUpdate);
                 Log.e(TAG, "success: " + apiResponse.records.size());
             }
 
@@ -175,15 +180,16 @@ public class LocationService extends Service {
 
         @Override
         public void onLocationChanged(Location location) {
+
             Log.e(TAG, "onLocationChanged: " + location);
             final TravocaApi travocaApi = TravocaApplication.provide(context).travocaApi();
             SearchRequest searchRequest = new SearchRequest();
-            searchRequest.setType(new ServiceGPSViewPort("gps", location.getLatitude() + MINIMUM_DISTANCE,
-                    location.getLongitude() + MINIMUM_DISTANCE, location.getLatitude() - MINIMUM_DISTANCE,
-                    location.getLongitude() - MINIMUM_DISTANCE));
+
+
+            searchRequest.setType(new ServiceGpsLocation("gps", location.getLatitude(), location.getLongitude(), mMemberStorage.loadLastServiceUpdate()));
             searchRequest.setLimit(1);
-            MemberStorage memberStorage = App.provide(context).memberStorage();
-            User user = memberStorage.loadUser();
+
+            User user = mMemberStorage.loadUser();
             String userId;
             if (user == null) {
                 userId = "";
@@ -191,6 +197,7 @@ public class LocationService extends Service {
                 userId = user.id;
             }
             searchRequest.setUserId(userId);
+            android.os.Debug.waitForDebugger();
             travocaApi.records(searchRequest).enqueue(mResultsCallback);
 
             mLastLocation.set(location);

@@ -39,6 +39,16 @@ public class MemberStorage {
         user.profile.phone = mPrefs.getString("phone", null);
 
         return user;
+
+
+    }  public String loadLastServiceUpdate() {
+        return  mPrefs.getString("last_service_update", null);
+    }
+
+    public void saveLastServiceUpdate(String timeStemp) {
+        SharedPreferences.Editor edit = mPrefs.edit();
+        edit.putString("last_service_update",timeStemp);
+        edit.apply();
     }
 
     public void saveUser(User user) {

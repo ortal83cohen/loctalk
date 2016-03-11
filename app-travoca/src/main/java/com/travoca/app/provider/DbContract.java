@@ -18,6 +18,7 @@ public class DbContract {
     private static final String PATH_SEARCH_HISTORY = "search_history";
 
     interface Tables {
+        String TABLE_SERVICE_GPS = "service_gps";
         String TABLE_FAVORITES = "favorites";
         String TABLE_SEARCH_HISTORY = "search_history";
     }

@@ -46,6 +46,12 @@ public class DbDatabase extends SQLiteOpenHelper {
                 DbContract.SearchHistoryColumns.CREATE_AT + " TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP," +
                 " PRIMARY KEY (" + DbContract.SearchHistoryColumns.LOCATION_NAME + ")  )";
 
+
+        String CREATE_SERVICE_GPS_TABLE = "CREATE TABLE IF NOT EXISTS " + DbContract.Tables.TABLE_SERVICE_GPS + " ( " +
+                DbContract.FavoritesColumns.KEY_ID + " INTEGER ," + //todo
+                DbContract.FavoritesColumns.TITLE + " STRING , " +
+                DbContract.FavoritesColumns.TEXT + " STRING , " +
+                " PRIMARY KEY (" + DbContract.FavoritesColumns.KEY_ID + ") ) ";
         // create Records table
         db.execSQL(CREATE_HOTEL_TABLE);
         db.execSQL(CREATE_SEARCH_HISTORY_TABLE);

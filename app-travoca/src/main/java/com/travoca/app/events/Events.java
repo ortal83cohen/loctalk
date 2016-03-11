@@ -21,7 +21,7 @@ public class Events {
             mHandler.post(new Runnable() {
                 @Override
                 public void run() {
-                    android.os.Debug.waitForDebugger();
+                   // android.os.Debug.waitForDebugger();
                 }
             });
         }

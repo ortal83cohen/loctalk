@@ -55,7 +55,7 @@ android {
         }
 
         release {
-            storeFile file("C:\\travoca.jks")
+            storeFile file("C:\\debug.travoca.jks")
             storePassword "1q1q1q"
             keyAlias "travoca"
             keyPassword "1q1q1q"
