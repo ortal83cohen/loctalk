@@ -23,6 +23,7 @@ public class DbProvider extends ContentProvider {
     private static final int FAVORITES_HOTELS = 100;
     private static final int FAVORITES_HOTEL_ID = 101;
     private static final int SEARCH_HISTORY = 200;
+    private static final int SERVICE_GPS = 300;
 
     private static final UriMatcher sUriMatcher = buildUriMatcher();
     private DbDatabase mOpenHelper;
@@ -33,6 +34,7 @@ public class DbProvider extends ContentProvider {
         matcher.addURI(authority, "favorites", FAVORITES_HOTELS);
         matcher.addURI(authority, "favorites/*", FAVORITES_HOTEL_ID);
         matcher.addURI(authority, "search_history", SEARCH_HISTORY);
+        matcher.addURI(authority, "service_gps", SERVICE_GPS);
 
         return matcher;
     }
@@ -60,6 +62,8 @@ public class DbProvider extends ContentProvider {
                 return DbContract.Favorites.CONTENT_TYPE;
             case SEARCH_HISTORY:
                 return DbContract.SearchHistory.CONTENT_TYPE;
+            case SERVICE_GPS:
+                return DbContract.ServiceGps.CONTENT_TYPE;
 
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
@@ -90,9 +94,10 @@ public class DbProvider extends ContentProvider {
             case SEARCH_HISTORY:
                 builder.table(DbContract.Tables.TABLE_SEARCH_HISTORY);
                 return builder.query(db, false, getSearchHistoryColumns(), DbContract.SearchHistoryColumns.CREATE_AT + " DESC", uri.getQueryParameter("limit"));
-//            case BOOKINGS:
-//                builder.table(DbContract.Tables.TABLE_BOOKINGS);
-//                return builder.query(db, false, projection, "", "");
+            case SERVICE_GPS:
+                builder.table(DbContract.Tables.TABLE_SERVICE_GPS);
+                return builder.query(db, false, projection, "","");
+
             default: {
                 throw new UnsupportedOperationException("Unknown insert uri: " + uri);
             }
@@ -127,6 +132,13 @@ public class DbProvider extends ContentProvider {
                 return DbContract.Favorites.buildRecordUri(values.getAsString(DbContract.FavoritesColumns.KEY_ID),
                         values.getAsString(DbContract.FavoritesColumns.TITLE),
                         values.getAsString(DbContract.FavoritesColumns.TEXT));
+            case SERVICE_GPS:
+                db.insert(DbContract.Tables.TABLE_SERVICE_GPS, null, values);
+                return DbContract.ServiceGps.buildRecordUri(values.getAsString(DbContract.ServiceGpsColumns.KEY_ID),
+                        values.getAsString(DbContract.ServiceGpsColumns.LOCATION_NAME),
+                        values.getAsString(DbContract.ServiceGpsColumns.LAT),
+                        values.getAsString(DbContract.ServiceGpsColumns.LON),
+                        values.getAsString(DbContract.ServiceGpsColumns.CREATE_AT));
             case SEARCH_HISTORY:
                 db.insert(DbContract.Tables.TABLE_SEARCH_HISTORY, null, values);
                 return DbContract.SearchHistory.buildSearchHistoryUri(values.getAsString(DbContract.SearchHistoryColumns.LOCATION_NAME),

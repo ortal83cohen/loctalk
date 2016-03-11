@@ -15,12 +15,21 @@ public class DbContract {
     public static final String CONTENT_AUTHORITY = BuildConfig.APPLICATION_ID + ".provider";
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
     private static final String PATH_FAVORITES = "favorites";
+    private static final String PATH_SERVICE_GPS = "service_gps";
     private static final String PATH_SEARCH_HISTORY = "search_history";
 
     interface Tables {
         String TABLE_SERVICE_GPS = "service_gps";
         String TABLE_FAVORITES = "favorites";
         String TABLE_SEARCH_HISTORY = "search_history";
+    }
+
+    public interface ServiceGpsColumns {
+        String KEY_ID = "_id";
+        String LOCATION_NAME = "location_name";
+        String LAT = "lat";
+        String LON = "lon";
+        String CREATE_AT = "created_at";
     }
 
     public interface FavoritesColumns {
@@ -53,6 +62,20 @@ public class DbContract {
 
         public static String getRecordId(Uri uri) {
             return uri.getPathSegments().get(1);
+        }
+    }
+
+    public static class ServiceGps implements ServiceGpsColumns, BaseColumns {
+        public static final Uri CONTENT_URI =
+                BASE_CONTENT_URI.buildUpon().appendPath(PATH_SERVICE_GPS).build();
+        public static final String CONTENT_TYPE = "vnd.android.cursor.dir/int";
+
+        public static Uri buildRecordUri(String id, String name, String lat,String lon,String created) {
+            return CONTENT_URI.buildUpon().appendPath(id).appendPath(name).appendPath(lat).appendPath(lon).appendPath(created).build();
+        }
+
+        public static List<String> getList(Uri uri) {
+            return uri.getPathSegments();
         }
     }
 

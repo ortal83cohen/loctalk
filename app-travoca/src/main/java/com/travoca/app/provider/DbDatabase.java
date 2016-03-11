@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DbDatabase extends SQLiteOpenHelper {
 
     // Database Version
-    private static final int DATABASE_VERSION = 44;
+    private static final int DATABASE_VERSION = 46;
     // Database Name
     private static final String DATABASE_NAME = "TravocaDB";
 
@@ -48,12 +48,16 @@ public class DbDatabase extends SQLiteOpenHelper {
 
 
         String CREATE_SERVICE_GPS_TABLE = "CREATE TABLE IF NOT EXISTS " + DbContract.Tables.TABLE_SERVICE_GPS + " ( " +
-                DbContract.FavoritesColumns.KEY_ID + " INTEGER ," + //todo
-                DbContract.FavoritesColumns.TITLE + " STRING , " +
-                DbContract.FavoritesColumns.TEXT + " STRING , " +
-                " PRIMARY KEY (" + DbContract.FavoritesColumns.KEY_ID + ") ) ";
+                DbContract.ServiceGpsColumns.KEY_ID + " INTEGER ," +
+                DbContract.ServiceGpsColumns.LOCATION_NAME + " STRING ," +
+                DbContract.ServiceGpsColumns.LAT + " STRING ," +
+                DbContract.ServiceGpsColumns.LON + " STRING ," +
+                DbContract.ServiceGpsColumns.CREATE_AT + " TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP," +
+                " PRIMARY KEY (" + DbContract.ServiceGpsColumns.LAT + "," + DbContract.ServiceGpsColumns.LON +
+                ") ) ";
         // create Records table
         db.execSQL(CREATE_HOTEL_TABLE);
+        db.execSQL(CREATE_SERVICE_GPS_TABLE);
         db.execSQL(CREATE_SEARCH_HISTORY_TABLE);
 
     }
@@ -63,6 +67,7 @@ public class DbDatabase extends SQLiteOpenHelper {
         if (oldVersion != newVersion) {
 
             db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_FAVORITES);
+            db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_SERVICE_GPS);
             db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_SEARCH_HISTORY);
 
         }

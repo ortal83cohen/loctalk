@@ -5,6 +5,7 @@ import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -24,13 +25,12 @@ import com.travoca.api.model.SearchRequest;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
-import com.travoca.app.activity.RecordDetailsActivity;
 import com.travoca.app.events.Events;
 import com.travoca.app.events.SearchResultsEvent;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.User;
-import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.model.ServiceGpsLocation;
+import com.travoca.app.provider.DbContract;
 import com.travoca.app.travocaapi.RetrofitCallback;
 
 import retrofit.Response;
@@ -56,7 +56,6 @@ public class LocationService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.e(TAG, "onStartCommand");
         super.onStartCommand(intent, flags, startId);
         return START_STICKY;
     }
@@ -64,8 +63,6 @@ public class LocationService extends Service {
     @Override
     public void onCreate() {
         context = this;
-//        Toast.makeText(this, "Service was Created", Toast.LENGTH_LONG).show();
-        Log.e(TAG, "onCreate");
         initializeLocationManager();
         try {
             mLocationManager.requestLocationUpdates(
@@ -90,7 +87,6 @@ public class LocationService extends Service {
 
     @Override
     public void onDestroy() {
-        Log.e(TAG, "onDestroy");
         super.onDestroy();
         if (mLocationManager != null) {
             for (int i = 0; i < mLocationListeners.length; i++) {
@@ -114,7 +110,6 @@ public class LocationService extends Service {
     }
 
     private void initializeLocationManager() {
-        Log.e(TAG, "initializeLocationManager");
         if (mLocationManager == null) {
             mLocationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
         }
@@ -155,14 +150,22 @@ public class LocationService extends Service {
                     if ( lastUpdate.compareTo(record.date) < 0) {
                         lastUpdate = record.date;
                     }
-                    Intent intent = new Intent(context, RecordDetailsActivity.class);
-                    intent.putExtra(RecordDetailsActivity.EXTRA_DATA, record);
-                    intent.putExtra(RecordDetailsActivity.EXTRA_REQUEST, new RecordListRequest());
-                    PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
-                    addNotification(context, "record name " + record.title, record.description + "/" +
-                            record.locationName, pendingIntent);
+                    ContentValues values = new ContentValues();
+                    values.put(DbContract.ServiceGpsColumns.LOCATION_NAME, record.locationName);
+                    values.put(DbContract.ServiceGpsColumns.LON, record.lon);
+                    values.put(DbContract.ServiceGpsColumns.LAT, record.lat);
+                    values.put(DbContract.ServiceGpsColumns.CREATE_AT, record.date);
+                    context.getContentResolver().insert(DbContract.ServiceGps.CONTENT_URI, values);
+//                    Intent intent = new Intent(context, RecordDetailsActivity.class);
+//                    intent.putExtra(RecordDetailsActivity.EXTRA_DATA, record);
+//                    intent.putExtra(RecordDetailsActivity.EXTRA_REQUEST, new RecordListRequest());
+//                    PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+//                    addNotification(context, "record name " + record.title, record.description + "/" +
+//                            record.locationName, pendingIntent);
                 }
-                mMemberStorage.saveLastServiceUpdate(lastUpdate);
+                if(!lastUpdate.equals("")) {
+                    mMemberStorage.saveLastServiceUpdate(lastUpdate);
+                }
                 Log.e(TAG, "success: " + apiResponse.records.size());
             }
 
@@ -170,7 +173,6 @@ public class LocationService extends Service {
 
         public LocationListener(String provider, Context context) {
             this.context = context;
-            Log.e(TAG, "LocationListener " + provider);
             mLastLocation = new Location(provider);
         }
 
@@ -185,9 +187,9 @@ public class LocationService extends Service {
             final TravocaApi travocaApi = TravocaApplication.provide(context).travocaApi();
             SearchRequest searchRequest = new SearchRequest();
 
-
+            android.os.Debug.waitForDebugger();
             searchRequest.setType(new ServiceGpsLocation("gps", location.getLatitude(), location.getLongitude(), mMemberStorage.loadLastServiceUpdate()));
-            searchRequest.setLimit(1);
+            searchRequest.setLimit(50);
 
             User user = mMemberStorage.loadUser();
             String userId;
@@ -197,7 +199,7 @@ public class LocationService extends Service {
                 userId = user.id;
             }
             searchRequest.setUserId(userId);
-            android.os.Debug.waitForDebugger();
+
             travocaApi.records(searchRequest).enqueue(mResultsCallback);
 
             mLastLocation.set(location);
