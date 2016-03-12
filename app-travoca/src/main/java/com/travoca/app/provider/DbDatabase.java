@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DbDatabase extends SQLiteOpenHelper {
 
     // Database Version
-    private static final int DATABASE_VERSION = 47;
+    private static final int DATABASE_VERSION = 49;
     // Database Name
     private static final String DATABASE_NAME = "TravocaDB";
 
@@ -49,10 +49,11 @@ public class DbDatabase extends SQLiteOpenHelper {
 
         String CREATE_SERVICE_GPS_TABLE = "CREATE TABLE IF NOT EXISTS " + DbContract.Tables.TABLE_SERVICE_GPS + " ( " +
                 DbContract.ServiceGpsColumns.KEY_ID + " INTEGER ," +
+                DbContract.ServiceGpsColumns.USED + " INTEGER DEFAULT '0' ," +
                 DbContract.ServiceGpsColumns.LOCATION_NAME + " STRING ," +
                 DbContract.ServiceGpsColumns.LAT + " STRING ," +
                 DbContract.ServiceGpsColumns.LON + " STRING ," +
-                DbContract.ServiceGpsColumns.CREATE_AT + " TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP," +
+                DbContract.ServiceGpsColumns.CREATE_AT + " TIMESTAMP ," +
                 " PRIMARY KEY (" + DbContract.ServiceGpsColumns.LAT + "," + DbContract.ServiceGpsColumns.LON +
                 ") ) ";
         // create Records table

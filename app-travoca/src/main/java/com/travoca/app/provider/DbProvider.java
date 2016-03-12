@@ -96,8 +96,11 @@ public class DbProvider extends ContentProvider {
                 return builder.query(db, false, getSearchHistoryColumns(), DbContract.SearchHistoryColumns.CREATE_AT + " DESC", uri.getQueryParameter("limit"));
             case SERVICE_GPS:
                 builder.table(DbContract.Tables.TABLE_SERVICE_GPS);
-                return builder.query(db, false, projection, "","");
-
+                if(uri.getQueryParameter("limit")!=null && !uri.getQueryParameter("limit").isEmpty()) {
+                    return builder.query(db, false, projection,  DbContract.ServiceGpsColumns.CREATE_AT + " DESC", uri.getQueryParameter("limit"));
+                }else {
+                    return builder.query(db, false, projection, "", "");
+                }
             default: {
                 throw new UnsupportedOperationException("Unknown insert uri: " + uri);
             }
@@ -135,6 +138,7 @@ public class DbProvider extends ContentProvider {
             case SERVICE_GPS:
                 db.insert(DbContract.Tables.TABLE_SERVICE_GPS, null, values);
                 return DbContract.ServiceGps.buildRecordUri(values.getAsString(DbContract.ServiceGpsColumns.KEY_ID),
+                        values.getAsString(DbContract.ServiceGpsColumns.USED),
                         values.getAsString(DbContract.ServiceGpsColumns.LOCATION_NAME),
                         values.getAsString(DbContract.ServiceGpsColumns.LAT),
                         values.getAsString(DbContract.ServiceGpsColumns.LON),
@@ -161,7 +165,15 @@ public class DbProvider extends ContentProvider {
         final SQLiteDatabase db = mOpenHelper.getWritableDatabase();
         final DbSelectionBuilder builder = new DbSelectionBuilder();
         final int match = sUriMatcher.match(uri);
+        switch (match) {
+            case SERVICE_GPS:
+                builder.table(DbContract.Tables.TABLE_SERVICE_GPS);
+                break;
+            default: {
+                throw new UnsupportedOperationException("Unknown insert uri: " + uri);
+            }
 
+        }
         return builder.where(selection, selectionArgs).update(db, values);
     }
 

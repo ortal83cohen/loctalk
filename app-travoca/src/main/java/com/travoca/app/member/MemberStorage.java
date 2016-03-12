@@ -41,14 +41,6 @@ public class MemberStorage {
         return user;
 
 
-    }  public String loadLastServiceUpdate() {
-        return  mPrefs.getString("last_service_update", "0");
-    }
-
-    public void saveLastServiceUpdate(String timeStamp) {
-        SharedPreferences.Editor edit = mPrefs.edit();
-        edit.putString("last_service_update",timeStamp);
-        edit.apply();
     }
 
     public void saveUser(User user) {

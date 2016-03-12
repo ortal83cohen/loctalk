@@ -16,6 +16,7 @@ public class DbContract {
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
     private static final String PATH_FAVORITES = "favorites";
     private static final String PATH_SERVICE_GPS = "service_gps";
+    private static final String PATH_SERVICE_GPS_LAST_DATE = "service_gps/last_date";
     private static final String PATH_SEARCH_HISTORY = "search_history";
 
     interface Tables {
@@ -26,6 +27,7 @@ public class DbContract {
 
     public interface ServiceGpsColumns {
         String KEY_ID = "_id";
+        String USED = "used";
         String LOCATION_NAME = "location_name";
         String LAT = "lat";
         String LON = "lon";
@@ -70,8 +72,8 @@ public class DbContract {
                 BASE_CONTENT_URI.buildUpon().appendPath(PATH_SERVICE_GPS).build();
         public static final String CONTENT_TYPE = "vnd.android.cursor.dir/int";
 
-        public static Uri buildRecordUri(String id, String name, String lat,String lon,String created) {
-            return CONTENT_URI.buildUpon().appendPath(id).appendPath(name).appendPath(lat).appendPath(lon).appendPath(created).build();
+        public static Uri buildRecordUri(String id,String used, String name, String lat,String lon,String created) {
+            return CONTENT_URI.buildUpon().appendPath(id).appendPath(used).appendPath(name).appendPath(lat).appendPath(lon).appendPath(created).build();
         }
 
         public static List<String> getList(Uri uri) {

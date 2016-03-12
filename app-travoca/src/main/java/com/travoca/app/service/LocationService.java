@@ -1,21 +1,18 @@
 package com.travoca.app.service;
 
 import android.Manifest;
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.app.Service;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.TravocaApi;
@@ -23,7 +20,6 @@ import com.travoca.api.model.Record;
 import com.travoca.api.model.ResultsResponse;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.app.App;
-import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
 import com.travoca.app.events.Events;
 import com.travoca.app.events.SearchResultsEvent;
@@ -129,7 +125,7 @@ public class LocationService extends Service {
             protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
                 String lastUpdate = "";
                 for (Record record : apiResponse.records) {
-                    if ( lastUpdate.compareTo(record.date) < 0) {
+                    if (lastUpdate.compareTo(record.date) < 0) {
                         lastUpdate = record.date;
                     }
                     ContentValues values = new ContentValues();
@@ -141,9 +137,7 @@ public class LocationService extends Service {
                     context.getContentResolver().insert(DbContract.ServiceGps.CONTENT_URI, values);
 
                 }
-                if(!lastUpdate.equals("")) {
-                    mMemberStorage.saveLastServiceUpdate(lastUpdate);
-                }
+
                 Log.e(TAG, "success: " + apiResponse.records.size());
             }
 
@@ -166,7 +160,14 @@ public class LocationService extends Service {
             SearchRequest searchRequest = new SearchRequest();
 
 //            android.os.Debug.waitForDebugger();
-            searchRequest.setType(new ServiceGpsLocation("gps", location.getLatitude(), location.getLongitude(), mMemberStorage.loadLastServiceUpdate()));
+            Cursor cursor = getContentResolver().query(DbContract.ServiceGps.CONTENT_URI.buildUpon().appendQueryParameter("limit", "2").build(), null, null, null, null);
+            String lastUpdate = "";
+            if (cursor.getCount() != 0) { // // TODO: 3/12/2016 make sure it works
+                cursor.moveToFirst();
+                lastUpdate = cursor.getString(cursor.getColumnIndex(DbContract.ServiceGpsColumns.CREATE_AT));
+            }
+
+            searchRequest.setType(new ServiceGpsLocation("gps", location.getLatitude(), location.getLongitude(), lastUpdate));
             searchRequest.setLimit(50);
 
             User user = mMemberStorage.loadUser();
