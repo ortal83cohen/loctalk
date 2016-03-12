@@ -22,6 +22,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.database.Cursor;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.support.v4.app.NotificationCompat;
@@ -34,6 +35,7 @@ import com.google.android.gms.location.GeofenceStatusCodes;
 import com.google.android.gms.location.GeofencingEvent;
 import com.travoca.app.R;
 import com.travoca.app.activity.MainActivity;
+import com.travoca.app.provider.DbContract;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -114,11 +116,20 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
         // Get the Ids of each geofence that was triggered.
         ArrayList triggeringGeofencesIdsList = new ArrayList();
-        for (Geofence geofence : triggeringGeofences) {
-            triggeringGeofencesIdsList.add(geofence.getRequestId());
 
+        Geofence geofence = triggeringGeofences.get(0);
+//        android.os.Debug.waitForDebugger();
+        Cursor cursor = getContentResolver().query(DbContract.ServiceGps.CONTENT_URI.buildUpon().build(), null,DbContract.ServiceGpsColumns.KEY_ID +"="+geofence.getRequestId(), null, null);
+
+        if (cursor != null) {
+            while (cursor.moveToNext()) {
+                triggeringGeofencesIdsList.add(cursor.getString(cursor.getColumnIndex(DbContract.ServiceGpsColumns.LOCATION_NAME)));
+            }
+            cursor.close();
 
         }
+        //// TODO: 3/12/2016 make raw used
+
         String triggeringGeofencesIdsString = TextUtils.join(", ", triggeringGeofencesIdsList);
 
         return geofenceTransitionString + ": " + triggeringGeofencesIdsString;

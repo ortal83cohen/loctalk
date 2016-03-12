@@ -124,13 +124,14 @@ public class LocationService extends Service {
             @Override
             protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
                 String lastUpdate = "";
+//                android.os.Debug.waitForDebugger();
                 for (Record record : apiResponse.records) {
                     if (lastUpdate.compareTo(record.date) < 0) {
                         lastUpdate = record.date;
                     }
                     ContentValues values = new ContentValues();
                     values.put(DbContract.ServiceGpsColumns.KEY_ID, record.id);
-                    values.put(DbContract.ServiceGpsColumns.LOCATION_NAME, record.locationName);
+                    values.put(DbContract.ServiceGpsColumns.LOCATION_NAME, record.title);
                     values.put(DbContract.ServiceGpsColumns.LON, record.lon);
                     values.put(DbContract.ServiceGpsColumns.LAT, record.lat);
                     values.put(DbContract.ServiceGpsColumns.CREATE_AT, record.date);
@@ -160,9 +161,9 @@ public class LocationService extends Service {
             SearchRequest searchRequest = new SearchRequest();
 
 //            android.os.Debug.waitForDebugger();
-            Cursor cursor = getContentResolver().query(DbContract.ServiceGps.CONTENT_URI.buildUpon().appendQueryParameter("limit", "2").build(), null, null, null, null);
+            Cursor cursor = getContentResolver().query(DbContract.ServiceGps.CONTENT_URI.buildUpon().appendQueryParameter("limit", "1").build(), null, null, null, null);
             String lastUpdate = "";
-            if (cursor.getCount() != 0) { // // TODO: 3/12/2016 make sure it works
+            if (cursor.getCount() != 0) {
                 cursor.moveToFirst();
                 lastUpdate = cursor.getString(cursor.getColumnIndex(DbContract.ServiceGpsColumns.CREATE_AT));
             }

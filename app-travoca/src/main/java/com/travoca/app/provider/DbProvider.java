@@ -99,7 +99,7 @@ public class DbProvider extends ContentProvider {
                 if(uri.getQueryParameter("limit")!=null && !uri.getQueryParameter("limit").isEmpty()) {
                     return builder.query(db, false, projection,  DbContract.ServiceGpsColumns.CREATE_AT + " DESC", uri.getQueryParameter("limit"));
                 }else {
-                    return builder.query(db, false, projection, "", "");
+                    return builder.where(selection).query(db, false, projection, "", "");
                 }
             default: {
                 throw new UnsupportedOperationException("Unknown insert uri: " + uri);
