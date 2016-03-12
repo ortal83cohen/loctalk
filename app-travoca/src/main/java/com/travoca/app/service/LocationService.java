@@ -115,24 +115,6 @@ public class LocationService extends Service {
         }
     }
 
-    private void addNotification(Context context, String title, String body, PendingIntent pendingIntent) {
-        Toast.makeText(context, title, Toast.LENGTH_LONG);
-
-        Notification.Builder notificationBuilder = new Notification.Builder(context)
-                .setContentTitle(title)
-                .setContentText(body)
-                .setSmallIcon(R.drawable.loadersmall01);
-
-        // create the pending intent and add to the notification
-        notificationBuilder.setContentIntent(pendingIntent);
-        Notification notification = notificationBuilder.build();
-        notification.flags = Notification.DEFAULT_LIGHTS | Notification.FLAG_AUTO_CANCEL;
-        NotificationManager notificationManager = (NotificationManager)
-                getSystemService(NOTIFICATION_SERVICE);
-        // send the notification
-        notificationManager.notify(NOTIFICATION_ID, notification);
-    }
-
     private class LocationListener implements android.location.LocationListener {
         Context context;
         private Location mLastLocation;
@@ -151,17 +133,13 @@ public class LocationService extends Service {
                         lastUpdate = record.date;
                     }
                     ContentValues values = new ContentValues();
+                    values.put(DbContract.ServiceGpsColumns.KEY_ID, record.id);
                     values.put(DbContract.ServiceGpsColumns.LOCATION_NAME, record.locationName);
                     values.put(DbContract.ServiceGpsColumns.LON, record.lon);
                     values.put(DbContract.ServiceGpsColumns.LAT, record.lat);
                     values.put(DbContract.ServiceGpsColumns.CREATE_AT, record.date);
                     context.getContentResolver().insert(DbContract.ServiceGps.CONTENT_URI, values);
-//                    Intent intent = new Intent(context, RecordDetailsActivity.class);
-//                    intent.putExtra(RecordDetailsActivity.EXTRA_DATA, record);
-//                    intent.putExtra(RecordDetailsActivity.EXTRA_REQUEST, new RecordListRequest());
-//                    PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
-//                    addNotification(context, "record name " + record.title, record.description + "/" +
-//                            record.locationName, pendingIntent);
+
                 }
                 if(!lastUpdate.equals("")) {
                     mMemberStorage.saveLastServiceUpdate(lastUpdate);
@@ -187,7 +165,7 @@ public class LocationService extends Service {
             final TravocaApi travocaApi = TravocaApplication.provide(context).travocaApi();
             SearchRequest searchRequest = new SearchRequest();
 
-            android.os.Debug.waitForDebugger();
+//            android.os.Debug.waitForDebugger();
             searchRequest.setType(new ServiceGpsLocation("gps", location.getLatitude(), location.getLongitude(), mMemberStorage.loadLastServiceUpdate()));
             searchRequest.setLimit(50);
 

@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DbDatabase extends SQLiteOpenHelper {
 
     // Database Version
-    private static final int DATABASE_VERSION = 46;
+    private static final int DATABASE_VERSION = 47;
     // Database Name
     private static final String DATABASE_NAME = "TravocaDB";
 

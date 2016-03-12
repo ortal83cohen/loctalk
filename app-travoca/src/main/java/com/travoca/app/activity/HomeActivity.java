@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import com.crashlytics.android.answers.Answers;
 import com.facebook.appevents.AppEventsLogger;
-import com.google.android.gms.analytics.Tracker;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.ActivityRecognition;
@@ -50,7 +49,6 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
     private static final String FRAGMENT_HOME = "loc_chooser";
     private static final int NOTIFICATION_ID = 0;
     protected GoogleApiClient mGoogleApiClient;
-    private Tracker mTracker;
     private CoreInterface.Service mCoreInterface;
     private RetrofitCallback<String> mResultsCallback = new RetrofitCallback<String>() {
         @Override
@@ -127,7 +125,8 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
                     .commit();
         }
         animateBackground();
-
+        final Intent intent = new Intent("travoca.up");
+        sendBroadcast(intent);
         AnalyticsCalls.get().trackLanding();
     }
 

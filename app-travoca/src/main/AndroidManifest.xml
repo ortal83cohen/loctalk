@@ -151,6 +151,10 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="travoca.up" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </receiver>
 
         <service
@@ -158,6 +162,11 @@
             android:enabled="true"
             android:exported="true"
             android:process=":LocationService" />
+        <service
+            android:name=".service.GeofenceTransitionsIntentService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":GeofenceTransitionsIntentService" />
         <service
             android:name=".utils.amazon.UploadService"
             android:enabled="true"
