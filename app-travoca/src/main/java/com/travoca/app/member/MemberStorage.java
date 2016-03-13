@@ -1,6 +1,8 @@
 package com.travoca.app.member;
 
 import com.travoca.app.member.model.AccessToken;
+import com.travoca.app.member.model.FacebookUser;
+import com.travoca.app.member.model.GoogleUser;
 import com.travoca.app.member.model.Profile;
 import com.travoca.app.member.model.User;
 
@@ -15,6 +17,12 @@ public class MemberStorage {
 
     private static final String FILE_NAME = "member";
 
+    private static final String METHOD_FACEBOOK = "method_facebook";
+
+    private static final String METHOD_GOOGLE = "method_google";
+
+    private static final String METHOD_ELSE = "method_else";
+
     private final SharedPreferences mPrefs;
 
     public MemberStorage(Context context) {
@@ -26,8 +34,17 @@ public class MemberStorage {
         if (email == null) {
             return null;
         }
-
-        User user = new User();
+        User user ;
+        switch (mPrefs.getString("method", null)){
+            case METHOD_FACEBOOK:
+                user = new FacebookUser();
+                break;
+            case METHOD_GOOGLE:
+                user = new GoogleUser();
+                break;
+            default:
+                user  = new User();
+        }
         user.email = email;
         user.id = mPrefs.getString("id", null);
         user.profile = new Profile();
@@ -58,7 +75,13 @@ public class MemberStorage {
         edit.putInt("gender", user.profile.gender);
         edit.putString("image_url", user.profile.imageUrl);
         edit.putString("phone", user.profile.phone);
-
+        if (user instanceof FacebookUser) {
+            edit.putString("method", METHOD_FACEBOOK);
+        } else if (user instanceof GoogleUser) {
+            edit.putString("method", METHOD_GOOGLE);
+        } else {
+            edit.putString("method", METHOD_ELSE);
+        }
         edit.apply();
     }
 

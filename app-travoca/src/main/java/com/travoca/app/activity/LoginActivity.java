@@ -22,6 +22,8 @@ import com.travoca.app.events.UserLogOutEvent;
 import com.travoca.app.events.UserLoginEvent;
 import com.travoca.app.fragment.LoginFragment;
 import com.travoca.app.member.MemberStorage;
+import com.travoca.app.member.model.FacebookUser;
+import com.travoca.app.member.model.GoogleUser;
 import com.travoca.app.member.model.User;
 import com.travoca.app.travocaapi.RetrofitCallback;
 
@@ -51,10 +53,10 @@ public class LoginActivity extends BaseActivity
     protected GoogleApiClient mGoogleApiClient;
 
     @Bind(R.id.sign_in_button)
-    SignInButton btnSignIn;
+    SignInButton mSignInButton;
 
     @Bind(R.id.button_sign_out)
-    Button btnSignOut;
+    Button mSignOutButton;
 
     private MemberStorage memberStorage;
 
@@ -95,11 +97,21 @@ public class LoginActivity extends BaseActivity
                 .build();
 
         memberStorage = App.provide(this).memberStorage();
-        btnSignOut.setOnClickListener(this);
-        btnSignIn.setOnClickListener(this);
-        btnSignIn.setSize(SignInButton.SIZE_STANDARD);
-        btnSignIn.setScopes(gso.getScopeArray());
-
+        mSignOutButton.setOnClickListener(this);
+        mSignInButton.setOnClickListener(this);
+        mSignInButton.setSize(SignInButton.SIZE_WIDE);
+        mSignInButton.setScopes(gso.getScopeArray());
+        User user = memberStorage.loadUser();
+        if(user == null){
+            mSignOutButton.setVisibility(View.GONE);
+            mSignInButton.setVisibility(View.VISIBLE);
+        }else if(user instanceof  GoogleUser){
+            mSignOutButton.setVisibility(View.VISIBLE);
+            mSignInButton.setVisibility(View.GONE);
+        }else if (user instanceof FacebookUser){
+            mSignOutButton.setVisibility(View.GONE);
+            mSignInButton.setVisibility(View.GONE);
+        }
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
@@ -220,7 +232,7 @@ public class LoginActivity extends BaseActivity
             }
             TravocaApi travocaApi = TravocaApplication.provide(this).travocaApi();
             travocaApi.saveUser(id, email, imageUrl, firstName, lastName).enqueue(mResultsCallback);
-            User user = new User(email, firstName, lastName, id, imageUrl);
+            User user = new GoogleUser(email, firstName, lastName, id, imageUrl);
             Events.post(new UserLoginEvent(user));
             memberStorage.saveUser(user);
             updateUI(true);
@@ -234,12 +246,12 @@ public class LoginActivity extends BaseActivity
      */
     private void updateUI(boolean isSignedIn) {
         if (isSignedIn) {
-            btnSignIn.setVisibility(View.GONE);
-            btnSignOut.setVisibility(View.VISIBLE);
+            mSignInButton.setVisibility(View.GONE);
+            mSignOutButton.setVisibility(View.VISIBLE);
 //            llProfileLayout.setVisibility(View.VISIBLE);
         } else {
-            btnSignIn.setVisibility(View.VISIBLE);
-            btnSignOut.setVisibility(View.GONE);
+            mSignInButton.setVisibility(View.VISIBLE);
+            mSignOutButton.setVisibility(View.GONE);
 //            llProfileLayout.setVisibility(View.GONE);
         }
     }

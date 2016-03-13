@@ -20,6 +20,7 @@ import com.travoca.app.events.UserLogOutEvent;
 import com.travoca.app.events.UserLoginEvent;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.AccessToken;
+import com.travoca.app.member.model.FacebookUser;
 import com.travoca.app.member.model.User;
 import com.travoca.app.travocaapi.RetrofitCallback;
 
@@ -126,7 +127,7 @@ public class LoginFragment extends BaseFragment {
                                             .provide(getActivity()).travocaApi();
                                     travocaApi.saveUser(id, email, imageUrl, firstName, lastName)
                                             .enqueue(mResultsCallback);
-                                    User user = new User(email, firstName, lastName, id, imageUrl);
+                                    User user = new FacebookUser(email, firstName, lastName, id, imageUrl);
                                     Events.post(new UserLoginEvent(user));
                                     memberStorage.saveUser(user);
                                 } catch (JSONException e) {
