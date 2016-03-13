@@ -45,6 +45,8 @@ public class LoginFragment extends BaseFragment {
 
     AccessTokenTracker accessTokenTracker;
 
+    private MemberStorage memberStorage;
+
     @Bind(R.id.login_button)
     LoginButton facebookButton;
 
@@ -85,7 +87,7 @@ public class LoginFragment extends BaseFragment {
             Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         ButterKnife.bind(this, view);
-        final MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
+         memberStorage = App.provide(getActivity()).memberStorage();
         facebookButton.setReadPermissions("public_profile");
         facebookButton.setReadPermissions("email");
         // If using in a fragment
