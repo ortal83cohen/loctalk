@@ -1,80 +1,38 @@
 package com.travoca.app.activity;
 
 import com.google.android.gms.auth.api.Auth;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
-import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.common.api.Status;
 
-import com.squareup.okhttp.ResponseBody;
-import com.travoca.api.TravocaApi;
-import com.travoca.api.model.ResultsResponse;
-import com.travoca.app.App;
 import com.travoca.app.R;
-import com.travoca.app.TravocaApplication;
-import com.travoca.app.events.Events;
-import com.travoca.app.events.UserLogOutEvent;
-import com.travoca.app.events.UserLoginEvent;
 import com.travoca.app.fragment.LoginFragment;
-import com.travoca.app.member.MemberStorage;
-import com.travoca.app.member.model.FacebookUser;
-import com.travoca.app.member.model.GoogleUser;
-import com.travoca.app.member.model.User;
-import com.travoca.app.travocaapi.RetrofitCallback;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-import butterknife.Bind;
 import butterknife.ButterKnife;
-import retrofit.Response;
 
 /**
  * @author user
  * @date 2016-02-17
  */
 public class LoginActivity extends BaseActivity
-        implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
-
-    private static final int RC_SIGN_IN = 0;
+        implements GoogleApiClient.OnConnectionFailedListener {
 
     private static final String FRAGMENT_LOGIN = "login";
 
+    public static final int RC_SIGN_IN = 230;
+
     protected GoogleApiClient mGoogleApiClient;
 
-    @Bind(R.id.sign_in_button)
-    SignInButton mSignInButton;
+    private GoogleSignInOptions gso;
 
-    @Bind(R.id.button_sign_out)
-    Button mSignOutButton;
-
-    private MemberStorage memberStorage;
-
-    private ConnectionResult mConnectionResult;
-
-    private RetrofitCallback<ResultsResponse> mResultsCallback
-            = new RetrofitCallback<ResultsResponse>() {
-
-        @Override
-        protected void failure(ResponseBody errorBody, boolean isOffline) {
-
-        }
-
-        @Override
-        public void success(ResultsResponse apiResponse, Response response) {
-
-        }
-    };
 
     public static Intent createIntent(Context context) {
         return new Intent(context, LoginActivity.class);
@@ -85,7 +43,7 @@ public class LoginActivity extends BaseActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(
+        gso = new GoogleSignInOptions.Builder(
                 GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
@@ -96,22 +54,6 @@ public class LoginActivity extends BaseActivity
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
 
-        memberStorage = App.provide(this).memberStorage();
-        mSignOutButton.setOnClickListener(this);
-        mSignInButton.setOnClickListener(this);
-        mSignInButton.setSize(SignInButton.SIZE_WIDE);
-        mSignInButton.setScopes(gso.getScopeArray());
-        User user = memberStorage.loadUser();
-        if(user == null){
-            mSignOutButton.setVisibility(View.GONE);
-            mSignInButton.setVisibility(View.VISIBLE);
-        }else if(user instanceof  GoogleUser){
-            mSignOutButton.setVisibility(View.VISIBLE);
-            mSignInButton.setVisibility(View.GONE);
-        }else if (user instanceof FacebookUser){
-            mSignOutButton.setVisibility(View.GONE);
-            mSignInButton.setVisibility(View.GONE);
-        }
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
@@ -122,21 +64,28 @@ public class LoginActivity extends BaseActivity
 
     }
 
+    public GoogleApiClient getGoogleApiClient() {
+        return mGoogleApiClient;
+    }
+
+    public GoogleSignInOptions getGso() {
+        return gso;
+    }
+
     @Override
     protected void onCreateContentView() {
 
     }
 
+
     @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.sign_in_button:
-                signIn();
-                break;
-            case R.id.button_sign_out:
-                signOut();
-                break;
+    public void onConnectionFailed(ConnectionResult result) {
+        if (!result.hasResolution()) {
+            GooglePlayServicesUtil.getErrorDialog(result.getErrorCode(), this,
+                    0).show();
+            return;
         }
+
     }
 
     protected void onStart() {
@@ -144,22 +93,6 @@ public class LoginActivity extends BaseActivity
         mGoogleApiClient.connect();
     }
 
-    private void signIn() {
-        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-        startActivityForResult(signInIntent, RC_SIGN_IN);
-    }
-
-    private void signOut() {
-        Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
-                new ResultCallback<Status>() {
-                    @Override
-                    public void onResult(Status status) {
-                        memberStorage.clear();
-                        Events.post(new UserLogOutEvent());
-                        updateUI(false);
-                    }
-                });
-    }
 
     protected void onStop() {
         super.onStop();
@@ -181,27 +114,6 @@ public class LoginActivity extends BaseActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onConnectionFailed(ConnectionResult result) {
-        if (!result.hasResolution()) {
-            GooglePlayServicesUtil.getErrorDialog(result.getErrorCode(), this,
-                    0).show();
-            return;
-        }
-//
-//        if (!mIntentInProgress) {
-//            // Store the ConnectionResult for later usage
-//            mConnectionResult = result;
-//
-////            if (mSignInClicked) {
-////                // The user has already clicked 'sign-in' so we attempt to
-////                // resolve all
-////                // errors until the user is signed in, or they cancel.
-////                resolveSignInError();
-////            }
-//        }
-
-    }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -210,50 +122,17 @@ public class LoginActivity extends BaseActivity
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
-            handleSignInResult(result);
+            LoginFragment fragment = (LoginFragment) getSupportFragmentManager()
+                    .findFragmentByTag(FRAGMENT_LOGIN);
+            fragment.handleSignInResult(result);
+        }
+        else if(resultCode == -1){
+            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+            LoginFragment fragment = (LoginFragment) getSupportFragmentManager()
+                    .findFragmentByTag(FRAGMENT_LOGIN);
+            fragment.handleSignInResult(result);
         }
     }
 
-    private void handleSignInResult(GoogleSignInResult result) {
-//        Log.d(TAG, "handleSignInResult:" + result.isSuccess());
-        if (result.getStatus().isSuccess()) {
-            GoogleSignInAccount acct = result.getSignInAccount();
-
-//            memberStorage.saveAccessToken(new AccessToken(loginResult.getAccessToken()));
-            String email = acct.getEmail();
-            String[] splitName = acct.getDisplayName().split(" ");
-            String firstName = splitName[0];
-            String lastName = splitName[1];
-            String id = acct.getId();
-            String imageUrl = "";
-            try {
-                imageUrl = acct.getPhotoUrl().toString();
-            } catch (NullPointerException ignored) {
-            }
-            TravocaApi travocaApi = TravocaApplication.provide(this).travocaApi();
-            travocaApi.saveUser(id, email, imageUrl, firstName, lastName).enqueue(mResultsCallback);
-            User user = new GoogleUser(email, firstName, lastName, id, imageUrl);
-            Events.post(new UserLoginEvent(user));
-            memberStorage.saveUser(user);
-            updateUI(true);
-        } else {
-            updateUI(false);
-        }
-    }
-
-    /**
-     * Updating the UI, showing/hiding buttons and profile layout
-     */
-    private void updateUI(boolean isSignedIn) {
-        if (isSignedIn) {
-            mSignInButton.setVisibility(View.GONE);
-            mSignOutButton.setVisibility(View.VISIBLE);
-//            llProfileLayout.setVisibility(View.VISIBLE);
-        } else {
-            mSignInButton.setVisibility(View.VISIBLE);
-            mSignOutButton.setVisibility(View.GONE);
-//            llProfileLayout.setVisibility(View.GONE);
-        }
-    }
 
 }

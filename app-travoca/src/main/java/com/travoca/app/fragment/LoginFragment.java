@@ -1,5 +1,13 @@
 package com.travoca.app.fragment;
 
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInResult;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.SignInButton;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
+
 import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -15,12 +23,14 @@ import com.travoca.api.model.ResultsResponse;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.TravocaApplication;
+import com.travoca.app.activity.LoginActivity;
 import com.travoca.app.events.Events;
 import com.travoca.app.events.UserLogOutEvent;
 import com.travoca.app.events.UserLoginEvent;
 import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.AccessToken;
 import com.travoca.app.member.model.FacebookUser;
+import com.travoca.app.member.model.GoogleUser;
 import com.travoca.app.member.model.User;
 import com.travoca.app.travocaapi.RetrofitCallback;
 
@@ -33,6 +43,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -42,14 +53,20 @@ import retrofit.Response;
  * @author ortal
  * @date 2015-05-17
  */
-public class LoginFragment extends BaseFragment {
+public class LoginFragment extends BaseFragment
+        implements View.OnClickListener {
 
     AccessTokenTracker accessTokenTracker;
 
-    private MemberStorage memberStorage;
 
     @Bind(R.id.login_button)
-    LoginButton facebookButton;
+    LoginButton mFacebookButton;
+
+    @Bind(R.id.sign_in_button)
+    SignInButton mSignInButton;
+
+    @Bind(R.id.button_sign_out)
+    Button mSignOutButton;
 
     CallbackManager callbackManager;
 
@@ -66,6 +83,8 @@ public class LoginFragment extends BaseFragment {
 
         }
     };
+
+    private TravocaApi mTravocaApi;
 
     public static LoginFragment newInstance() {
         LoginFragment fragment = new LoginFragment();
@@ -88,27 +107,29 @@ public class LoginFragment extends BaseFragment {
             Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         ButterKnife.bind(this, view);
-         memberStorage = App.provide(getActivity()).memberStorage();
-        facebookButton.setReadPermissions("public_profile");
-        facebookButton.setReadPermissions("email");
+        mTravocaApi = TravocaApplication.provide(getActivity()).travocaApi();
+        mMemberStorage = App.provide(getActivity()).memberStorage();
+        mFacebookButton.setReadPermissions("public_profile");
+        mFacebookButton.setReadPermissions("email");
         // If using in a fragment
-        facebookButton.setFragment(this);
+        mFacebookButton.setFragment(this);
         // Other app specific specialization
         accessTokenTracker = new AccessTokenTracker() {
             @Override
             protected void onCurrentAccessTokenChanged(com.facebook.AccessToken accessToken,
                     com.facebook.AccessToken accessToken1) {
                 if (accessToken1 == null) {
-                    memberStorage.clear();
+                    mMemberStorage.clear();
                     Events.post(new UserLogOutEvent());
+                    updateUI(null);
                 }
             }
         };
         // Callback registration
-        facebookButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+        mFacebookButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                memberStorage.saveAccessToken(new AccessToken(loginResult.getAccessToken()));
+                mMemberStorage.saveAccessToken(new AccessToken(loginResult.getAccessToken()));
                 GraphRequest request = GraphRequest.newMeRequest(
                         loginResult.getAccessToken(),
                         new GraphRequest.GraphJSONObjectCallback() {
@@ -123,13 +144,14 @@ public class LoginFragment extends BaseFragment {
                                     String id = object.getString("id");
                                     String imageUrl = "https://graph.facebook.com/" + id
                                             + "/picture?type=large";
-                                    TravocaApi travocaApi = TravocaApplication
-                                            .provide(getActivity()).travocaApi();
-                                    travocaApi.saveUser(id, email, imageUrl, firstName, lastName)
+
+                                    mTravocaApi.saveUser(id, email, imageUrl, firstName, lastName)
                                             .enqueue(mResultsCallback);
-                                    User user = new FacebookUser(email, firstName, lastName, id, imageUrl);
+                                    User user = new FacebookUser(email, firstName, lastName, id,
+                                            imageUrl);
                                     Events.post(new UserLoginEvent(user));
-                                    memberStorage.saveUser(user);
+                                    mMemberStorage.saveUser(user);
+                                    updateUI(user);
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
@@ -144,16 +166,106 @@ public class LoginFragment extends BaseFragment {
 
             @Override
             public void onCancel() {
-                facebookButton.setReadPermissions("email");
+                mFacebookButton.setReadPermissions("email");
             }
 
             @Override
             public void onError(FacebookException exception) {
-                facebookButton.setReadPermissions("email");
+                mFacebookButton.setReadPermissions("email");
             }
         });
 
+        mSignOutButton.setOnClickListener(this);
+        mSignInButton.setOnClickListener(this);
+        mSignInButton.setSize(SignInButton.SIZE_WIDE);
+        mSignInButton.setScopes(((LoginActivity) getActivity()).getGso().getScopeArray());
+        User user = mMemberStorage.loadUser();
+        updateUI(user);
         return view;
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.sign_in_button:
+                signIn();
+                break;
+            case R.id.button_sign_out:
+                signOut();
+                break;
+        }
+    }
+
+
+    private void updateUI(User user) {
+        if (user == null) {
+            mFacebookButton.setVisibility(View.VISIBLE);
+            mSignOutButton.setVisibility(View.GONE);
+            mSignInButton.setVisibility(View.VISIBLE);
+        } else if (user instanceof GoogleUser) {
+            mFacebookButton.setVisibility(View.GONE);
+            mSignOutButton.setVisibility(View.VISIBLE);
+            mSignInButton.setVisibility(View.GONE);
+        } else if (user instanceof FacebookUser) {
+            mFacebookButton.setVisibility(View.VISIBLE);
+            mSignOutButton.setVisibility(View.GONE);
+            mSignInButton.setVisibility(View.GONE);
+        }
+
+    }
+
+
+    private void signIn() {
+        Intent signInIntent = Auth.GoogleSignInApi
+                .getSignInIntent(((LoginActivity) getActivity()).getGoogleApiClient());
+        startActivityForResult(signInIntent, LoginActivity.RC_SIGN_IN);
+    }
+
+    private void signOut() {
+        Auth.GoogleSignInApi.signOut(((LoginActivity) getActivity()).getGoogleApiClient())
+                .setResultCallback(
+                        new ResultCallback<Status>() {
+                            @Override
+                            public void onResult(Status status) {
+                                mMemberStorage.clear();
+                                Events.post(new UserLogOutEvent());
+                                updateUI(null);
+                            }
+                        });
+    }
+
+    private MemberStorage mMemberStorage;
+
+    private ConnectionResult mConnectionResult;
+
+    public void handleSignInResult(GoogleSignInResult result) {
+        if(result!=null) {
+//        Log.d(TAG, "handleSignInResult:" + result.isSuccess());
+            if (result.getStatus().isSuccess()) {
+                GoogleSignInAccount acct = result.getSignInAccount();
+
+//            mMemberStorage.saveAccessToken(new AccessToken(loginResult.getAccessToken()));
+                String email = acct.getEmail();
+                String[] splitName = acct.getDisplayName().split(" ");
+                String firstName = splitName[0];
+                String lastName = splitName[1];
+                String id = acct.getId();
+                String imageUrl = "";
+                try {
+                    imageUrl = acct.getPhotoUrl().toString();
+                } catch (NullPointerException ignored) {
+                }
+
+                mTravocaApi.saveUser(id, email, imageUrl, firstName, lastName)
+                        .enqueue(mResultsCallback);
+                User user = new GoogleUser(email, firstName, lastName, id, imageUrl);
+                Events.post(new UserLoginEvent(user));
+                mMemberStorage.saveUser(user);
+                updateUI(user);
+            } else {
+                updateUI(mMemberStorage.loadUser());
+            }
+        }
     }
 
     @Override
