@@ -14,6 +14,12 @@
 
 package com.travoca.app.utils.amazon;
 
+import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.model.ProgressEvent;
+import com.travoca.app.R;
+import com.travoca.app.activity.MainActivity;
+
 import android.app.IntentService;
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -24,30 +30,32 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 
-import com.amazonaws.auth.BasicAWSCredentials;
-import com.amazonaws.services.s3.AmazonS3Client;
-import com.amazonaws.services.s3.model.ProgressEvent;
-import com.travoca.app.R;
-import com.travoca.app.activity.MainActivity;
-
 import java.io.File;
 
 public class UploadService extends IntentService {
 
     public static final String ARG_FILE_PATH = "file_path";
+
     public static final String ARG_FILE_NAME = "file_name";
+
     public static final String UPLOAD_STATE_CHANGED_ACTION = "UPLOAD_STATE_CHANGED_ACTION";
+
     public static final String UPLOAD_CANCELLED_ACTION = "UPLOAD_CANCELLED_ACTION";
+
     public static final String S3KEY_EXTRA = "s3key";
+
     public static final String PERCENT_EXTRA = "percent";
+
     public static final String MSG_EXTRA = "msg";
 
     private static final int NOTIFY_ID_UPLOAD = 1337;
 
     private AmazonS3Client s3Client;
+
     private Uploader uploader;
 
     private NotificationManager nm;
+
     private BroadcastReceiver uploadCancelReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -66,7 +74,8 @@ public class UploadService extends IntentService {
         super.onCreate();
 //		android.os.Debug.waitForDebugger();
         s3Client = new AmazonS3Client(
-                new BasicAWSCredentials(getString(R.string.s3_access_key), getString(R.string.s3_secret)));
+                new BasicAWSCredentials(getString(R.string.s3_access_key),
+                        getString(R.string.s3_secret)));
         nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
         IntentFilter f = new IntentFilter();
@@ -92,7 +101,7 @@ public class UploadService extends IntentService {
         uploader.setProgressListener(new Uploader.UploadProgressListener() {
             @Override
             public void progressChanged(ProgressEvent progressEvent,
-                                        long bytesUploaded, int percentUploaded) {
+                    long bytesUploaded, int percentUploaded) {
 
                 Notification notification = buildNotification(msg, percentUploaded);
                 nm.notify(NOTIFY_ID_UPLOAD, notification);

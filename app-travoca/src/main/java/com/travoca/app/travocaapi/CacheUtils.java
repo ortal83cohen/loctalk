@@ -18,7 +18,8 @@ public class CacheUtils {
 
     public static boolean isRetrieveOrderRequest(Request request) throws IOException {
         // retrieve order request
-        return "GET".equals(request.method()) && request.uri().getPath().startsWith(TravocaApi.PATH_ORDERS);
+        return "GET".equals(request.method()) && request.uri().getPath()
+                .startsWith(TravocaApi.PATH_ORDERS);
     }
 
     public static boolean isCachableRequest(Request request) throws IOException {

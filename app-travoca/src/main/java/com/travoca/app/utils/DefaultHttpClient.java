@@ -1,8 +1,8 @@
 package com.travoca.app.utils;
 
-import android.content.Context;
-
 import com.squareup.okhttp.OkHttpClient;
+
+import android.content.Context;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,7 +11,9 @@ import java.util.concurrent.TimeUnit;
  * @date 2015-07-01
  */
 public class DefaultHttpClient extends OkHttpClient {
+
     static final int CONNECT_TIMEOUT_MILLIS = 15 * 1000; // 15s
+
     static final int READ_TIMEOUT_MILLIS = 20 * 1000; // 20s
 
     public DefaultHttpClient(Context context) {

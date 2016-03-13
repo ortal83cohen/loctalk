@@ -1,9 +1,9 @@
 package com.travoca.app.events;
 
-import android.content.Context;
-
 import com.squareup.otto.Produce;
 import com.travoca.app.App;
+
+import android.content.Context;
 
 /**
  * @author ortal

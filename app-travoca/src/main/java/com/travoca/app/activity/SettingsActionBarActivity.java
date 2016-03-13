@@ -1,5 +1,7 @@
 package com.travoca.app.activity;
 
+import com.travoca.app.R;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
@@ -15,12 +17,12 @@ import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import com.travoca.app.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
-abstract public class SettingsActionBarActivity extends BaseActivity implements AdapterView.OnItemClickListener {
+abstract public class SettingsActionBarActivity extends BaseActivity
+        implements AdapterView.OnItemClickListener {
+
     protected ListView mListView;
 
     private PreferenceAdapter mPreferenceAdapter;
@@ -64,8 +66,11 @@ abstract public class SettingsActionBarActivity extends BaseActivity implements 
     }
 
     public static class Preference {
+
         final String title;
+
         final int titleRes;
+
         final int layout;
 
         public Preference(@StringRes int titleRes, @LayoutRes int layout) {
@@ -82,6 +87,7 @@ abstract public class SettingsActionBarActivity extends BaseActivity implements 
     }
 
     public static class Category extends Preference {
+
         public Category(int title) {
             super(title, R.layout.preference_category);
         }
@@ -92,10 +98,15 @@ abstract public class SettingsActionBarActivity extends BaseActivity implements 
     }
 
     public static class Item extends Preference {
+
         final int action;
+
         public int summaryRes;
+
         public String summary;
+
         public int widget;
+
         public boolean enabled = true;
 
         public Item(@StringRes int titleRes, @StringRes int summaryRes, int action) {
@@ -130,6 +141,7 @@ abstract public class SettingsActionBarActivity extends BaseActivity implements 
     }
 
     public static class CheckboxItem extends Item {
+
         public boolean checked = false;
 
         public CheckboxItem(int title, int summaryRes, int action) {
@@ -139,6 +151,7 @@ abstract public class SettingsActionBarActivity extends BaseActivity implements 
     }
 
     public static class SwitchItem extends Item {
+
         public boolean checked;
 
         public SwitchItem(int title, boolean checked, int action) {
@@ -151,12 +164,14 @@ abstract public class SettingsActionBarActivity extends BaseActivity implements 
     static class PreferenceAdapter extends ArrayAdapter<Preference> {
 
         private final SettingsActionBarActivity mActivity;
+
         private final LayoutInflater mInflater;
 
         public PreferenceAdapter(SettingsActionBarActivity activity, List<Preference> objects) {
             super(activity, 0, objects);
             mActivity = activity;
-            mInflater = (LayoutInflater) mActivity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            mInflater = (LayoutInflater) mActivity
+                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
 
         @Override
@@ -207,13 +222,15 @@ abstract public class SettingsActionBarActivity extends BaseActivity implements 
                     summary.setVisibility(View.GONE);
                 }
 
-                final ViewGroup widgetFrame = (ViewGroup) view.findViewById(android.R.id.widget_frame);
+                final ViewGroup widgetFrame = (ViewGroup) view
+                        .findViewById(android.R.id.widget_frame);
                 final View iconFrame = view.findViewById(R.id.icon_frame);
                 iconFrame.setVisibility(View.GONE);
                 if (item.widget > 0) {
 
                     if (item instanceof CheckboxItem) {
-                        CheckBox checkBox = (CheckBox) widgetFrame.findViewById(android.R.id.checkbox);
+                        CheckBox checkBox = (CheckBox) widgetFrame
+                                .findViewById(android.R.id.checkbox);
                         if (checkBox == null) {
                             mInflater.inflate(item.widget, widgetFrame);
                             checkBox = (CheckBox) widgetFrame.findViewById(android.R.id.checkbox);
@@ -240,7 +257,8 @@ abstract public class SettingsActionBarActivity extends BaseActivity implements 
         @Override
         public boolean isEnabled(int position) {
             final Preference pref = getItem(position);
-            return !(pref instanceof Category) && (!(pref instanceof Item) || ((Item) pref).enabled);
+            return !(pref instanceof Category) && (!(pref instanceof Item)
+                    || ((Item) pref).enabled);
         }
     }
 

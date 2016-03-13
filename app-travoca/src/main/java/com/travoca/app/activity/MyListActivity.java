@@ -1,17 +1,7 @@
 package com.travoca.app.activity;
 
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.drawable.AnimationDrawable;
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.FragmentManager;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-
 import com.google.android.gms.common.api.GoogleApiClient;
+
 import com.squareup.otto.Subscribe;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.SearchRequest;
@@ -31,6 +21,17 @@ import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.widget.AppBar;
 import com.travoca.app.widget.NavigationDrawer;
 
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.FragmentManager;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -38,18 +39,25 @@ import butterknife.ButterKnife;
  * @author ortal
  * @date 2015-04-19
  */
-public class MyListActivity extends BaseActivity implements RecordViewHolder.Listener, MyListFragment.Listener, FragmentManager.OnBackStackChangedListener, HomeFragment.Listener {
+public class MyListActivity extends BaseActivity
+        implements RecordViewHolder.Listener, MyListFragment.Listener,
+        FragmentManager.OnBackStackChangedListener, HomeFragment.Listener {
 
     private static final String FRAGMENT_HOME = "fragment_datepicker";
+
     private static final String FRAGMENT_RESULTSLIST = "fragment_listview";
+
     private static final String FRAGMENT_RECORD_SUMMARY = "fragment_record_summary";
 
     @Bind(R.id.app_bar)
     AppBar mToolbar;
+
     @Bind(R.id.refresh_records)
     Button mRefreshRecords;
+
     @Bind(R.id.loader_image)
     ImageView mLoaderImage;
+
     @Bind(R.id.action_button)
     FloatingActionButton mAddFab;
 
@@ -133,7 +141,9 @@ public class MyListActivity extends BaseActivity implements RecordViewHolder.Lis
             startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(startMain);
         }
-        RecordMapSummaryFragment recordMapSummaryFragment = (RecordMapSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_RECORD_SUMMARY);
+        RecordMapSummaryFragment recordMapSummaryFragment
+                = (RecordMapSummaryFragment) getSupportFragmentManager()
+                .findFragmentByTag(FRAGMENT_RECORD_SUMMARY);
         if (recordMapSummaryFragment == null) {
             hideRefreshRecordsButton();
         }
@@ -141,7 +151,8 @@ public class MyListActivity extends BaseActivity implements RecordViewHolder.Lis
     }
 
     public void refreshList() {
-        MyListFragment listFragment = (MyListFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_RESULTSLIST);
+        MyListFragment listFragment = (MyListFragment) getSupportFragmentManager()
+                .findFragmentByTag(FRAGMENT_RESULTSLIST);
         if (listFragment != null) {
             listFragment.refresh();
         }
@@ -176,10 +187,12 @@ public class MyListActivity extends BaseActivity implements RecordViewHolder.Lis
 
         if (getSupportFragmentManager().findFragmentByTag(FRAGMENT_RESULTSLIST) != null) {
             // Got to initial state of the stack and resume list from stack instead of adding a new one
-            getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            getSupportFragmentManager()
+                    .popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         } else {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, MyListFragment.newInstance(), FRAGMENT_RESULTSLIST)
+                    .replace(R.id.fragment_container, MyListFragment.newInstance(),
+                            FRAGMENT_RESULTSLIST)
                     .commit();
         }
     }

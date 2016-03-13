@@ -1,9 +1,9 @@
 package com.travoca.app.utils;
 
-import android.util.Log;
-
 import com.crashlytics.android.Crashlytics;
 import com.travoca.app.BuildConfig;
+
+import android.util.Log;
 
 import java.util.IllegalFormatException;
 import java.util.Locale;
@@ -15,6 +15,7 @@ import java.util.Locale;
 public class AppLog {
 
     public static final boolean DEBUG;
+
     private final static String TAG = "TravocaApp";
 
     static {
@@ -22,12 +23,16 @@ public class AppLog {
     }
 
     public static void d(String msg) {
-        if (DEBUG) Log.d(TAG, format(msg));
+        if (DEBUG) {
+            Log.d(TAG, format(msg));
+        }
         Crashlytics.log(Log.DEBUG, TAG, msg);
     }
 
     public static void d(final String msg, final Object... params) {
-        if (DEBUG) Log.d(TAG, format(msg, params));
+        if (DEBUG) {
+            Log.d(TAG, format(msg, params));
+        }
         Crashlytics.log(Log.DEBUG, TAG, format(msg, params));
     }
 
@@ -81,11 +86,13 @@ public class AppLog {
             final String className = stackTrace[i].getClassName();
             if (!className.equals(AppLog.class.getName())) {
                 final String substring = className.substring(1 + className.lastIndexOf(46));
-                string = substring.substring(1 + substring.lastIndexOf(36)) + "." + stackTrace[i].getMethodName();
+                string = substring.substring(1 + substring.lastIndexOf(36)) + "." + stackTrace[i]
+                        .getMethodName();
                 break;
             }
         }
-        return String.format(Locale.US, "[%d] %s: %s", Thread.currentThread().getId(), string, formatted);
+        return String.format(Locale.US, "[%d] %s: %s", Thread.currentThread().getId(), string,
+                formatted);
     }
 
 

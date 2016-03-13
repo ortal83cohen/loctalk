@@ -24,9 +24,13 @@ package com.travoca.app.widget;
 public final class IntentResult {
 
     private final String contents;
+
     private final String formatName;
+
     private final byte[] rawBytes;
+
     private final Integer orientation;
+
     private final String errorCorrectionLevel;
 
     IntentResult() {
@@ -34,10 +38,10 @@ public final class IntentResult {
     }
 
     IntentResult(String contents,
-                 String formatName,
-                 byte[] rawBytes,
-                 Integer orientation,
-                 String errorCorrectionLevel) {
+            String formatName,
+            byte[] rawBytes,
+            Integer orientation,
+            String errorCorrectionLevel) {
         this.contents = contents;
         this.formatName = formatName;
         this.rawBytes = rawBytes;
@@ -53,7 +57,8 @@ public final class IntentResult {
     }
 
     /**
-     * @return name of format, like "QR_CODE", "UPC_A". See {@code BarcodeFormat} for more format names.
+     * @return name of format, like "QR_CODE", "UPC_A". See {@code BarcodeFormat} for more format
+     * names.
      */
     public String getFormatName() {
         return formatName;

@@ -1,17 +1,18 @@
 package com.travoca.app.analytics;
 
-import android.app.Activity;
-import android.content.Context;
-
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
+
 import com.travoca.api.model.Record;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.app.R;
 import com.travoca.app.model.CurrentLocation;
 import com.travoca.app.model.Location;
 import com.travoca.app.model.LocationWithTitle;
+
+import android.app.Activity;
+import android.content.Context;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
@@ -22,26 +23,42 @@ import java.util.Locale;
  * @date 2016-01-04
  */
 public class GoogleAnalyticsCalls extends AnalyticsCalls {
+
     private static final int KEY_LOCATION = 1;
+
     private static final int KEY_CURRENCY = 2;
+
     private static final int KEY_COUNTRY_CODE = 3;
+
     private static final int KEY_FROM = 4;
+
     private static final int KEY_TO = 5;
+
     private static final int KEY_HOTEL_NAME = 6;
+
     private static final int KEY_HOTEL_INDEX = 7;
+
     private static final int KEY_MIN_RATE_PRICE = 8;
+
     private static final int KEY_RATE_NAME = 9;
+
     private static final int KEY_URL = 10;
+
     private static final int KEY_RESPONSE = 11;
+
     private static final int KEY_BODY = 12;
+
     private Tracker mTracker;
-    private SimpleDateFormat mDayFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
+
+    private SimpleDateFormat mDayFormatter = new SimpleDateFormat("dd-MM-yyyy",
+            Locale.getDefault());
 
     synchronized public void register(Context applicationContext) {
         if (mTracker == null) {
             GoogleAnalytics analytics = GoogleAnalytics.getInstance(applicationContext);
             // To enable debug logging use: adb shell setprop log.tag.GAv4 DEBUG
-            mTracker = analytics.newTracker(applicationContext.getString(R.string.google_analytics_id));
+            mTracker = analytics
+                    .newTracker(applicationContext.getString(R.string.google_analytics_id));
 
         }
     }
@@ -49,7 +66,8 @@ public class GoogleAnalyticsCalls extends AnalyticsCalls {
     public void trackRetrofitFailure(String url, String response, String body) {
         body = body.equals("") ? "none" : body;
         mTracker.setScreenName("Retrofit Failure");
-        mTracker.send(new HitBuilders.ScreenViewBuilder().setCustomDimension(KEY_RESPONSE, response).setCustomDimension(KEY_URL, url).setCustomDimension(KEY_BODY, body).build());
+        mTracker.send(new HitBuilders.ScreenViewBuilder().setCustomDimension(KEY_RESPONSE, response)
+                .setCustomDimension(KEY_URL, url).setCustomDimension(KEY_BODY, body).build());
     }
 
     public void trackSearchResults(SearchRequest request) {

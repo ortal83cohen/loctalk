@@ -1,5 +1,10 @@
 package com.travoca.app.fragment;
 
+import com.travoca.api.model.Record;
+import com.travoca.app.R;
+import com.travoca.app.adapter.RecordViewHolder;
+import com.travoca.app.model.RecordListRequest;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -7,11 +12,6 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.travoca.api.model.Record;
-import com.travoca.app.R;
-import com.travoca.app.adapter.RecordViewHolder;
-import com.travoca.app.model.RecordListRequest;
 
 import butterknife.ButterKnife;
 
@@ -22,7 +22,9 @@ import butterknife.ButterKnife;
 public class RecordMapSummaryFragment extends BaseFragment {
 
     private static final String EXTRA_DATA = "snippet";
+
     private Record mRecord;
+
     private RecordViewHolder.Listener mListener;
 
     public static RecordMapSummaryFragment newInstance(Record record) {
@@ -34,7 +36,8 @@ public class RecordMapSummaryFragment extends BaseFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+            @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_map_record_summary, container, false);
         ButterKnife.bind(this, view);
 
@@ -44,7 +47,8 @@ public class RecordMapSummaryFragment extends BaseFragment {
         int pictureWidth = r.getDimensionPixelSize(R.dimen.listview_image_width);
         int pictureHeight = r.getDimensionPixelSize(R.dimen.listview_image_height);
 
-        RecordViewHolder recordViewHolder = new RecordViewHolder(view, getActivity(), pictureWidth, pictureHeight, mListener);
+        RecordViewHolder recordViewHolder = new RecordViewHolder(view, getActivity(), pictureWidth,
+                pictureHeight, mListener);
         RecordListRequest request = getRequest();
         recordViewHolder.assignItem(mRecord, 0);
         return view;

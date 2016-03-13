@@ -21,7 +21,9 @@ import android.text.TextWatcher;
 import android.view.View;
 
 public class AutoAdvanceTextWatcher implements TextWatcher {
+
     private View mView;
+
     private int mMaxLength;
 
     public AutoAdvanceTextWatcher(View view, int maxLength) {

@@ -1,15 +1,5 @@
 package com.travoca.app.map;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
-import android.support.v4.app.ActivityCompat;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.Projection;
@@ -17,6 +7,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
+
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.TravocaApi;
 import com.travoca.api.model.Record;
@@ -39,6 +30,16 @@ import com.travoca.app.model.MapSelectedViewPort;
 import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.utils.AppLog;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.support.v4.app.ActivityCompat;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import java.security.InvalidParameterException;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -54,24 +55,38 @@ import retrofit.Response;
 public class ResultsMap {
 
     private static final double CHANGES_IN_MAP_ZOOM_SENSITIVITY = 0.5;
+
     private static final double CHANGES_IN_MAP_DISTANCE_SENSITIVITY = 0.006;
+
     private final BaseActivity mActivity;
 
     // GoogleMap class
     private final GoogleMap mGoogleMap;
+
     private final Listener mListener;
+
     private final RecordMarker mRecordMarker;
+
     private final HashSet<Integer> selectedRecordsList = new HashSet<>();
+
     private MarkerManager mMarkerManager;
+
     private MarkerManager.Collection mRecordsCollection;
+
     private boolean mRecordsVisible;
+
     private double mLastLat = 0;
+
     private double mLastLong = 0;
+
     private double mLastZoom = 0;
+
     private Marker lastRecordMarkerClicked = null;
+
     private double lastRadiusInKM;
 
-    private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
+    private RetrofitCallback<ResultsResponse> mResultsCallback
+            = new RetrofitCallback<ResultsResponse>() {
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
             ((RecordListActivity) mActivity).hideLoaderImage();
@@ -100,12 +115,12 @@ public class ResultsMap {
 
     public void init() {
 
-
         mGoogleMap.setOnMarkerClickListener(mMarkerManager);
 
         mGoogleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
-        if (ActivityCompat.checkSelfPermission(mActivity, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(mActivity, Manifest.permission.ACCESS_FINE_LOCATION)
+                == PackageManager.PERMISSION_GRANTED) {
             // Place dot on current location
             mGoogleMap.setMyLocationEnabled(true);
         }
@@ -124,7 +139,8 @@ public class ResultsMap {
         mGoogleMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
             @Override
             public View getInfoWindow(Marker marker) {
-                View view = mActivity.getLayoutInflater().inflate(R.layout.poi_info_window, null, false);
+                View view = mActivity.getLayoutInflater()
+                        .inflate(R.layout.poi_info_window, null, false);
                 TextView title = (TextView) view.findViewById(android.R.id.title);
                 TextView text1 = (TextView) view.findViewById(android.R.id.text1);
                 ImageView background = (ImageView) view.findViewById(R.id.background);
@@ -132,7 +148,9 @@ public class ResultsMap {
                 title.setText(marker.getTitle());
                 text1.setText(marker.getSnippet());
                 ViewGroup.LayoutParams params = background.getLayoutParams();
-                params.width = Math.max(marker.getSnippet().length(), marker.getTitle().length()) * 30 + 36;
+                params.width =
+                        Math.max(marker.getSnippet().length(), marker.getTitle().length()) * 30
+                                + 36;
                 background.setLayoutParams(params);
                 frame.setLayoutParams(params);
                 return view;
@@ -146,18 +164,25 @@ public class ResultsMap {
         final Type type = mActivity.getRecordsRequest().getType();
 
         if (type instanceof Location) {
-            mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(((Location) type).getLatLng(), 12), 300, null);
+            mGoogleMap.animateCamera(
+                    CameraUpdateFactory.newLatLngZoom(((Location) type).getLatLng(), 12), 300,
+                    null);
         } else if (type instanceof ViewPortType) {
             try {
                 mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngBounds(new LatLngBounds(
-                        new LatLng(((ViewPortType) type).getSouthwestLat(), ((ViewPortType) type).getSouthwestLon()),
-                        new LatLng(((ViewPortType) type).getNortheastLat(), ((ViewPortType) type).getNortheastLon())), 0), 300, null);
+                        new LatLng(((ViewPortType) type).getSouthwestLat(),
+                                ((ViewPortType) type).getSouthwestLon()),
+                        new LatLng(((ViewPortType) type).getNortheastLat(),
+                                ((ViewPortType) type).getNortheastLon())), 0), 300, null);
             } catch (IllegalStateException e) {
-                AppLog.e(e.getMessage() + "-" + ((ViewPortType) type).getSouthwestLat() + "-" + ((ViewPortType) type).getSouthwestLon() + "-" + ((ViewPortType) type).getNortheastLat() + "-" + ((ViewPortType) type).getNortheastLon());
-                mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(((ViewPortType) type).getSouthwestLat(), ((ViewPortType) type).getSouthwestLon()), 12), 300, null);
+                AppLog.e(e.getMessage() + "-" + ((ViewPortType) type).getSouthwestLat() + "-"
+                        + ((ViewPortType) type).getSouthwestLon() + "-" + ((ViewPortType) type)
+                        .getNortheastLat() + "-" + ((ViewPortType) type).getNortheastLon());
+                mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(
+                        new LatLng(((ViewPortType) type).getSouthwestLat(),
+                                ((ViewPortType) type).getSouthwestLon()), 12), 300, null);
             }
         }
-
 
         mGoogleMap.setOnCameraChangeListener(new GoogleMap.OnCameraChangeListener() {
             @Override
@@ -168,11 +193,16 @@ public class ResultsMap {
                     mLastZoom = cameraPosition.zoom;
                 }
                 Projection projection = mGoogleMap.getProjection();
-                lastRadiusInKM = (projection.getVisibleRegion().latLngBounds.northeast.latitude - projection.getVisibleRegion().latLngBounds.southwest.latitude) * 111 / 2;
+                lastRadiusInKM =
+                        (projection.getVisibleRegion().latLngBounds.northeast.latitude - projection
+                                .getVisibleRegion().latLngBounds.southwest.latitude) * 111 / 2;
 
-                if (Math.abs(cameraPosition.target.latitude - mLastLat) / lastRadiusInKM > CHANGES_IN_MAP_DISTANCE_SENSITIVITY ||
-                        Math.abs(cameraPosition.target.longitude - mLastLong) / lastRadiusInKM > CHANGES_IN_MAP_DISTANCE_SENSITIVITY ||
-                        Math.abs(cameraPosition.zoom - mLastZoom) > CHANGES_IN_MAP_ZOOM_SENSITIVITY) {
+                if (Math.abs(cameraPosition.target.latitude - mLastLat) / lastRadiusInKM
+                        > CHANGES_IN_MAP_DISTANCE_SENSITIVITY ||
+                        Math.abs(cameraPosition.target.longitude - mLastLong) / lastRadiusInKM
+                                > CHANGES_IN_MAP_DISTANCE_SENSITIVITY ||
+                        Math.abs(cameraPosition.zoom - mLastZoom)
+                                > CHANGES_IN_MAP_ZOOM_SENSITIVITY) {
                     mLastLat = cameraPosition.target.latitude;
                     mLastLong = cameraPosition.target.longitude;
                     mLastZoom = cameraPosition.zoom;
@@ -214,25 +244,34 @@ public class ResultsMap {
             for (int i = 0; i < records.size(); i++) {
                 Record acc = records.get(i);
 
-                mRecordsCollection.addMarker(mRecordMarker.create(i, acc, selectedRecordsList.contains(acc.id) ? RecordMarker.STATUS_SEEN : RecordMarker.STATUS_UNSEEN));
+                mRecordsCollection.addMarker(mRecordMarker.create(i, acc,
+                        selectedRecordsList.contains(acc.id) ? RecordMarker.STATUS_SEEN
+                                : RecordMarker.STATUS_UNSEEN));
             }
             mRecordsCollection.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                 @Override
                 public boolean onMarkerClick(Marker marker) {
                     Record recordMarker = records.get(Integer.valueOf(marker.getTitle()));
                     mListener.onRecordMarkerClick(recordMarker);
-                    if (lastRecordMarkerClicked != null && !(lastRecordMarkerClicked.getTitle().equals(marker.getTitle()))) {
+                    if (lastRecordMarkerClicked != null && !(lastRecordMarkerClicked.getTitle()
+                            .equals(marker.getTitle()))) {
                         Integer lastMarkerPos = Integer.valueOf(lastRecordMarkerClicked.getTitle());
 
                         // In case we have an item with same position, recreate marker
                         if (lastMarkerPos < records.size()) {
                             Record recordLastMarker = records.get(lastMarkerPos);
                             mRecordsCollection.remove(lastRecordMarkerClicked);
-                            mRecordsCollection.addMarker(mRecordMarker.create(lastMarkerPos, recordLastMarker, selectedRecordsList.contains(recordLastMarker.id) ? RecordMarker.STATUS_SEEN : RecordMarker.STATUS_UNSEEN));
+                            mRecordsCollection.addMarker(mRecordMarker
+                                    .create(lastMarkerPos, recordLastMarker,
+                                            selectedRecordsList.contains(recordLastMarker.id)
+                                                    ? RecordMarker.STATUS_SEEN
+                                                    : RecordMarker.STATUS_UNSEEN));
                         }
                     }
                     mRecordsCollection.remove(marker);
-                    lastRecordMarkerClicked = mRecordsCollection.addMarker(mRecordMarker.create(Integer.valueOf(marker.getTitle()), recordMarker, RecordMarker.STATUS_SELECTED));
+                    lastRecordMarkerClicked = mRecordsCollection.addMarker(mRecordMarker
+                            .create(Integer.valueOf(marker.getTitle()), recordMarker,
+                                    RecordMarker.STATUS_SELECTED));
                     selectedRecordsList.add(recordMarker.id);
                     return true;
                 }
@@ -246,8 +285,10 @@ public class ResultsMap {
         mGoogleMap.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(lat, lon)));
     }
 
-    public void moveCamera(double northeastLat, double northeastLon, double southwestLat, double southwestLon) {
-        LatLngBounds bounds = new LatLngBounds(new LatLng(southwestLat, southwestLon), new LatLng(northeastLat, northeastLon));
+    public void moveCamera(double northeastLat, double northeastLon, double southwestLat,
+            double southwestLon) {
+        LatLngBounds bounds = new LatLngBounds(new LatLng(southwestLat, southwestLon),
+                new LatLng(northeastLat, northeastLon));
         mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 0));
     }
 
@@ -266,10 +307,13 @@ public class ResultsMap {
 
         Type type = mActivity.getRecordsRequest().getType();
         if (type instanceof MapSelectedViewPort) {
-            ((MapSelectedViewPort) type).setLatLngBounds(mGoogleMap.getProjection().getVisibleRegion().latLngBounds);
+            ((MapSelectedViewPort) type)
+                    .setLatLngBounds(mGoogleMap.getProjection().getVisibleRegion().latLngBounds);
         } else {
-            String title = type instanceof LocationWithTitle ? ((LocationWithTitle) type).getTitle() : null;
-            mActivity.getRecordsRequest().setType(new MapSelectedViewPort(title, mGoogleMap.getProjection().getVisibleRegion().latLngBounds));
+            String title = type instanceof LocationWithTitle ? ((LocationWithTitle) type).getTitle()
+                    : null;
+            mActivity.getRecordsRequest().setType(new MapSelectedViewPort(title,
+                    mGoogleMap.getProjection().getVisibleRegion().latLngBounds));
         }
     }
 

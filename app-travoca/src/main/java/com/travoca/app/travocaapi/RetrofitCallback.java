@@ -1,13 +1,13 @@
 package com.travoca.app.travocaapi;
 
-import android.content.Context;
-import android.widget.Toast;
-
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.analytics.AnalyticsCalls;
 import com.travoca.app.utils.AppLog;
+
+import android.content.Context;
+import android.widget.Toast;
 
 import java.lang.ref.WeakReference;
 
@@ -20,6 +20,7 @@ import retrofit.Retrofit;
  * @date 2015-07-12
  */
 public abstract class RetrofitCallback<T> implements Callback<T> {
+
     protected WeakReference<Context> mWeakContext;
 
     public void attach(Context context) {
@@ -46,7 +47,10 @@ public abstract class RetrofitCallback<T> implements Callback<T> {
         } else {
             notifyFailure(new RetrofitError(response));
             failure(response.errorBody(), false);
-            AnalyticsCalls.get().trackRetrofitFailure(response.raw().request().url().toString(), response.message(), response.raw().request().body() != null ? response.raw().request().body().toString() : "");
+            AnalyticsCalls.get().trackRetrofitFailure(response.raw().request().url().toString(),
+                    response.message(),
+                    response.raw().request().body() != null ? response.raw().request().body()
+                            .toString() : "");
         }
     }
 

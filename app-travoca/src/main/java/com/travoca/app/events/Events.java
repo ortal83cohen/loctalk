@@ -1,17 +1,19 @@
 package com.travoca.app.events;
 
-import android.os.Handler;
-import android.os.Looper;
-
 import com.squareup.otto.Bus;
 import com.travoca.app.utils.AppLog;
+
+import android.os.Handler;
+import android.os.Looper;
 
 /**
  * @author ortal
  * @date 2015-07-06
  */
 public class Events {
+
     private static final Bus sBus = new Bus();
+
     private static final Handler mHandler = new Handler(Looper.getMainLooper());
 
     public static void post(Object event) {
@@ -21,7 +23,7 @@ public class Events {
             mHandler.post(new Runnable() {
                 @Override
                 public void run() {
-                   // android.os.Debug.waitForDebugger();
+                    // android.os.Debug.waitForDebugger();
                 }
             });
         }

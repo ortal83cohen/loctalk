@@ -1,16 +1,18 @@
 package com.travoca.app.model;
 
+import com.google.android.gms.maps.model.LatLngBounds;
+
+import com.travoca.api.model.search.ViewPortType;
+
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import com.google.android.gms.maps.model.LatLngBounds;
-import com.travoca.api.model.search.ViewPortType;
 
 /**
  * @author ortal
  * @date 2015-10-08
  */
 public class ViewPort extends ViewPortType implements Parcelable, LocationWithTitle {
+
     public static final Creator<ViewPort> CREATOR = new Creator<ViewPort>() {
         @Override
         public ViewPort createFromParcel(Parcel in) {
@@ -22,6 +24,7 @@ public class ViewPort extends ViewPortType implements Parcelable, LocationWithTi
             return new ViewPort[size];
         }
     };
+
     private String mTitle;
 
     protected ViewPort(Parcel in) {
@@ -36,13 +39,15 @@ public class ViewPort extends ViewPortType implements Parcelable, LocationWithTi
     public ViewPort() {
     }
 
-    public ViewPort(String title, double northeastLat, double northeastLon, double southwestLat, double southwestLon) {
+    public ViewPort(String title, double northeastLat, double northeastLon, double southwestLat,
+            double southwestLon) {
         super(northeastLat, northeastLon, southwestLat, southwestLon);
         mTitle = title;
     }
 
     public ViewPort(String title, LatLngBounds latLngBounds) {
-        super(latLngBounds.northeast.latitude, latLngBounds.northeast.longitude, latLngBounds.southwest.latitude, latLngBounds.southwest.longitude);
+        super(latLngBounds.northeast.latitude, latLngBounds.northeast.longitude,
+                latLngBounds.southwest.latitude, latLngBounds.southwest.longitude);
         mTitle = title;
     }
 

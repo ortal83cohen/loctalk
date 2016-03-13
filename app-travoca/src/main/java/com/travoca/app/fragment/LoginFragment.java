@@ -1,12 +1,5 @@
 package com.travoca.app.fragment;
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -33,6 +26,13 @@ import com.travoca.app.travocaapi.RetrofitCallback;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import retrofit.Response;
@@ -44,10 +44,14 @@ import retrofit.Response;
 public class LoginFragment extends BaseFragment {
 
     AccessTokenTracker accessTokenTracker;
+
     @Bind(R.id.login_button)
     LoginButton facebookButton;
+
     CallbackManager callbackManager;
-    private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
+
+    private RetrofitCallback<ResultsResponse> mResultsCallback
+            = new RetrofitCallback<ResultsResponse>() {
 
         @Override
         protected void failure(ResponseBody errorBody, boolean isOffline) {
@@ -78,7 +82,7 @@ public class LoginFragment extends BaseFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+            Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         ButterKnife.bind(this, view);
         final MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
@@ -89,7 +93,8 @@ public class LoginFragment extends BaseFragment {
         // Other app specific specialization
         accessTokenTracker = new AccessTokenTracker() {
             @Override
-            protected void onCurrentAccessTokenChanged(com.facebook.AccessToken accessToken, com.facebook.AccessToken accessToken1) {
+            protected void onCurrentAccessTokenChanged(com.facebook.AccessToken accessToken,
+                    com.facebook.AccessToken accessToken1) {
                 if (accessToken1 == null) {
                     memberStorage.clear();
                     Events.post(new UserLogOutEvent());
@@ -113,9 +118,12 @@ public class LoginFragment extends BaseFragment {
                                     String firstName = splitName[0];
                                     String lastName = splitName[1];
                                     String id = object.getString("id");
-                                    String imageUrl = "https://graph.facebook.com/" + id + "/picture?type=large";
-                                    TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
-                                    travocaApi.saveUser(id, email, imageUrl, firstName, lastName).enqueue(mResultsCallback);
+                                    String imageUrl = "https://graph.facebook.com/" + id
+                                            + "/picture?type=large";
+                                    TravocaApi travocaApi = TravocaApplication
+                                            .provide(getActivity()).travocaApi();
+                                    travocaApi.saveUser(id, email, imageUrl, firstName, lastName)
+                                            .enqueue(mResultsCallback);
                                     User user = new User(email, firstName, lastName, id, imageUrl);
                                     Events.post(new UserLoginEvent(user));
                                     memberStorage.saveUser(user);
@@ -141,7 +149,6 @@ public class LoginFragment extends BaseFragment {
                 facebookButton.setReadPermissions("email");
             }
         });
-
 
         return view;
     }

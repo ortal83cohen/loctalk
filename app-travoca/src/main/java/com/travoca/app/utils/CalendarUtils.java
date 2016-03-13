@@ -14,7 +14,9 @@ import java.util.Date;
 public class CalendarUtils {
 
     public static final int YEAR_INDEX = 2;
+
     private static final int MONTH_INDEX = 0;
+
     private static final int DAY_INDEX = 1;
 
     public static void copyTime(Calendar dest, Calendar src) {
@@ -81,7 +83,8 @@ public class CalendarUtils {
         return result;
     }
 
-    public static void addToCalender(Context context, Date arrivalDate, Date departureDate, String title, String description, String location, String email, String phone) {
+    public static void addToCalender(Context context, Date arrivalDate, Date departureDate,
+            String title, String description, String location, String email, String phone) {
         Intent intent = new Intent(Intent.ACTION_INSERT)
                 .setData(CalendarContract.Events.CONTENT_URI)
                 .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, arrivalDate.getTime())
@@ -90,7 +93,8 @@ public class CalendarUtils {
                 .putExtra(CalendarContract.Events.TITLE, title)
                 .putExtra(CalendarContract.Events.DESCRIPTION, description)
                 .putExtra(CalendarContract.Events.EVENT_LOCATION, location)
-                .putExtra(CalendarContract.Events.AVAILABILITY, CalendarContract.Events.AVAILABILITY_BUSY)
+                .putExtra(CalendarContract.Events.AVAILABILITY,
+                        CalendarContract.Events.AVAILABILITY_BUSY)
 //                        .putExtra(CalendarContract.Events.EVENT_TIMEZONE, "India")
                 .putExtra(Intent.EXTRA_EMAIL, email)
                 .putExtra(Intent.EXTRA_PHONE_NUMBER, phone);

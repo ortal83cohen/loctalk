@@ -1,13 +1,13 @@
 package com.travoca.app.utils;
 
+import com.travoca.app.R;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Parcelable;
-
-import com.travoca.app.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,8 +34,10 @@ public class BrowserUtils {
             }
         }
         if (targetIntents.size() > 0) {
-            Intent chooserIntent = Intent.createChooser(targetIntents.remove(0), context.getString(R.string.open_with));
-            chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, targetIntents.toArray(new Parcelable[]{}));
+            Intent chooserIntent = Intent
+                    .createChooser(targetIntents.remove(0), context.getString(R.string.open_with));
+            chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS,
+                    targetIntents.toArray(new Parcelable[]{}));
             context.startActivity(chooserIntent);
         }
     }

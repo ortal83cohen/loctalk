@@ -1,21 +1,5 @@
 package com.travoca.app.fragment;
 
-import android.content.Context;
-import android.os.Bundle;
-import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.text.Html;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import com.squareup.okhttp.ResponseBody;
 import com.squareup.otto.Subscribe;
 import com.travoca.api.TravocaApi;
@@ -42,6 +26,22 @@ import com.travoca.app.utils.AppLog;
 import com.travoca.app.widget.recyclerview.EndlessRecyclerView;
 import com.travoca.app.widget.recyclerview.TopOffsetItemDecorator;
 
+import android.content.Context;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.annotation.Nullable;
+import android.support.v7.widget.LinearLayoutManager;
+import android.text.Html;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import java.io.IOException;
 import java.security.InvalidParameterException;
 
@@ -52,24 +52,37 @@ import retrofit.Response;
 public class RecordListFragment extends BaseFragment implements View.OnClickListener {
 
     private static final int NUMBER_OF_RETRIES = 1;
+
     @Bind(android.R.id.list)
     EndlessRecyclerView mRecyclerView;
+
     @Bind(R.id.button_sort)
     TextView mButtonSort;
+
     @Bind(R.id.record_list_no_result)
     LinearLayout mNoResult;
+
     @Bind(R.id.panel_top)
     FrameLayout mTopPanel;
+
     @Bind(R.id.available_count)
     TextView mAvailableCountText;
+
     @Bind(R.id.loader_text)
     TextView mLoaderText;
+
     TravocaApi mTravocaApi;
+
     private LinearLayoutManager mLayoutManager;
+
     private RecordListAdapter mAdapter;
+
     private Listener mListener;
+
     private int mNumberRetries = 0;
-    private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
+
+    private RetrofitCallback<ResultsResponse> mResultsCallback
+            = new RetrofitCallback<ResultsResponse>() {
 
         @Override
         public void success(final ResultsResponse apiResponse, Response response) {
@@ -84,7 +97,8 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
                         return;
                     }
 
-                    if (apiResponse.records == null || apiResponse.records.isEmpty() || apiResponse.records.size() != TravocaApi.LIMIT) {
+                    if (apiResponse.records == null || apiResponse.records.isEmpty()
+                            || apiResponse.records.size() != TravocaApi.LIMIT) {
                         mRecyclerView.setHasMoreData(false);
                     }
 
@@ -116,7 +130,8 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
 
                 if (response != null) {
                     try {
-                        ErrorResponse body = (ErrorResponse) RetrofitConverter.getBodyAs(response, ErrorResponse.class);
+                        ErrorResponse body = (ErrorResponse) RetrofitConverter
+                                .getBodyAs(response, ErrorResponse.class);
                         if (body != null && body.meta != null) {
                             fail(body.meta.errorMessage, mAdapter.getItemCount() == 0);
                         } else {
@@ -136,10 +151,12 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
         private void retry() {
             if (mAdapter != null) {
                 if (mNumberRetries++ < NUMBER_OF_RETRIES) {
-                    Toast.makeText(getActivity(), R.string.retry_connecting_server, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), R.string.retry_connecting_server,
+                            Toast.LENGTH_SHORT).show();
                     loadSearchResults(mAdapter.getItemCount());
                 } else {
-                    fail(getActivity().getString(R.string.unable_connect_server), mAdapter.getItemCount() == 0);
+                    fail(getActivity().getString(R.string.unable_connect_server),
+                            mAdapter.getItemCount() == 0);
                 }
             }
         }
@@ -183,7 +200,8 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+            @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_record_list, container, false);
     }
 
@@ -192,11 +210,13 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
         mLayoutManager = new LinearLayoutManager(getActivity());
-        mAdapter = new RecordListAdapter((BaseActivity) getActivity(), (RecordViewHolder.Listener) getActivity());
+        mAdapter = new RecordListAdapter((BaseActivity) getActivity(),
+                (RecordViewHolder.Listener) getActivity());
 
         mTravocaApi = TravocaApplication.provide(getActivity()).travocaApi();
         mRecyclerView.init(mLayoutManager, mAdapter, TravocaApi.LIMIT);
-        mRecyclerView.addItemDecoration(new TopOffsetItemDecorator(getActivity().getResources().getDimensionPixelOffset(R.dimen.results_panel_top_height)));
+        mRecyclerView.addItemDecoration(new TopOffsetItemDecorator(getActivity().getResources()
+                .getDimensionPixelOffset(R.dimen.results_panel_top_height)));
         mRecyclerView.setOnLoadMoreListener(new EndlessRecyclerView.OnLoadMoreListener() {
             @Override
             public void onLoadMore() {
@@ -205,7 +225,8 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
         });
 
         mButtonSort.setOnClickListener(this);
-        mButtonSort.setCompoundDrawables(null, null, new TriangleDrawable(getActivity(), R.color.theme_primary), null);
+        mButtonSort.setCompoundDrawables(null, null,
+                new TriangleDrawable(getActivity(), R.color.theme_primary), null);
         mButtonSort.setVisibility(View.GONE);
 
         refresh();
@@ -297,11 +318,14 @@ public class RecordListFragment extends BaseFragment implements View.OnClickList
     public void onSearchResults(SearchResultsEvent event) {
         mRecyclerView.setVisibility(View.VISIBLE);
 //        if (!event.hasError()) {
-        mAvailableCountText.setText(Html.fromHtml(getResources().getQuantityString(R.plurals.records_count_available, event.getCount(), event.getCount())));
+        mAvailableCountText.setText(Html.fromHtml(getResources()
+                .getQuantityString(R.plurals.records_count_available, event.getCount(),
+                        event.getCount())));
 //        }
     }
 
     public interface Listener {
+
         void onEditLocationClick();
     }
 

@@ -1,14 +1,15 @@
 package com.travoca.app.fragment;
 
+import com.google.android.gms.maps.SupportMapFragment;
+
+import com.travoca.app.R;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-
-import com.google.android.gms.maps.SupportMapFragment;
-import com.travoca.app.R;
 
 /**
  * @author ortal

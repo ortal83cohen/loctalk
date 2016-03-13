@@ -1,13 +1,13 @@
 package com.travoca.app.adapter;
 
+import com.travoca.api.model.Record;
+import com.travoca.app.R;
+import com.travoca.app.activity.BaseActivity;
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.travoca.api.model.Record;
-import com.travoca.app.R;
-import com.travoca.app.activity.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,8 +17,11 @@ import java.util.List;
  * @date 2015-10-26
  */
 public class FavoritesRecordListAdapter extends RecordListAdapter {
+
     private static final int HEADER = 0;
+
     private static final int OTHER = 1;
+
     List<Record> mAccommodationsWithoutDates = new ArrayList<>();
 
     public FavoritesRecordListAdapter(BaseActivity context, RecordViewHolder.Listener listener) {
@@ -41,10 +44,11 @@ public class FavoritesRecordListAdapter extends RecordListAdapter {
 
     @Override
     public int getItemViewType(int position) {
-        if (position == mRecords.size())
+        if (position == mRecords.size()) {
             return HEADER;
-        else
+        } else {
             return OTHER;
+        }
     }
 
     @Override

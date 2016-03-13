@@ -5,7 +5,9 @@ package com.travoca.app.events;
  * @date 2015-07-06
  */
 public class SearchResultsEvent {
+
     private int mCount;
+
     private boolean mError;
 
     public SearchResultsEvent(int totalNr) {

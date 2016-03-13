@@ -1,5 +1,14 @@
 package com.travoca.app.activity;
 
+import com.google.android.gms.maps.model.LatLng;
+
+import com.travoca.app.App;
+import com.travoca.app.R;
+import com.travoca.app.adapter.RecentSearchesAdapter;
+import com.travoca.app.model.Location;
+import com.travoca.app.model.RecordListRequest;
+import com.travoca.app.provider.DbContract;
+
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -9,20 +18,14 @@ import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
-import com.google.android.gms.maps.model.LatLng;
-import com.travoca.app.App;
-import com.travoca.app.R;
-import com.travoca.app.adapter.RecentSearchesAdapter;
-import com.travoca.app.model.Location;
-import com.travoca.app.model.RecordListRequest;
-import com.travoca.app.provider.DbContract;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class RecentSearchesActivity extends BaseActivity {
+
     @Bind(android.R.id.list)
     ListView mRecyclerView;
+
     @Bind(R.id.record_list_no_result)
     LinearLayout mNoResult;
 
@@ -39,7 +42,9 @@ public class RecentSearchesActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
-        Cursor cursor = getContentResolver().query(DbContract.SearchHistory.CONTENT_URI.buildUpon().build(), null, null, null, null);
+        Cursor cursor = getContentResolver()
+                .query(DbContract.SearchHistory.CONTENT_URI.buildUpon().build(), null, null, null,
+                        null);
         if (cursor != null) {
             if (cursor.getCount() == 0) {
                 mNoResult.setVisibility(View.VISIBLE);
@@ -54,11 +59,20 @@ public class RecentSearchesActivity extends BaseActivity {
                 Cursor cursor = (Cursor) parent.getItemAtPosition(position);
                 if (cursor != null) {
 
-                    String northeastLat = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LAT));
-                    String northeastLon = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LON));
-                    String southwestLat = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LAT));
-                    String southwestLon = cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LON));
-                    startSearch(new Location(cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LOCATION_NAME)), new LatLng(cursor.getDouble(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LAT)), cursor.getDouble(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LON)))));
+                    String northeastLat = cursor.getString(
+                            cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LAT));
+                    String northeastLon = cursor.getString(
+                            cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LON));
+                    String southwestLat = cursor.getString(
+                            cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LAT));
+                    String southwestLon = cursor.getString(
+                            cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LON));
+                    startSearch(new Location(cursor.getString(
+                            cursor.getColumnIndex(DbContract.SearchHistoryColumns.LOCATION_NAME)),
+                            new LatLng(cursor.getDouble(
+                                    cursor.getColumnIndex(DbContract.SearchHistoryColumns.LAT)),
+                                    cursor.getDouble(cursor.getColumnIndex(
+                                            DbContract.SearchHistoryColumns.LON)))));
 
                 }
             }

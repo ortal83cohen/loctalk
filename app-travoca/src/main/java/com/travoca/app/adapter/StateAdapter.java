@@ -1,9 +1,9 @@
 package com.travoca.app.adapter;
 
+import com.travoca.app.R;
+
 import android.content.Context;
 import android.widget.ArrayAdapter;
-
-import com.travoca.app.R;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -13,9 +13,13 @@ import java.util.LinkedHashMap;
  * @date 2015-05-04
  */
 public class StateAdapter extends ArrayAdapter<String> {
+
     final static public String US = "US";
+
     final static public String CA = "CA";
+
     final static public String AU = "AU";
+
     /// Use LinkedHashMap to preserve keys order
     final static public HashMap<String, String> mUsMap = new LinkedHashMap<String, String>() {{
         put("Alaska", "AK");
@@ -70,6 +74,7 @@ public class StateAdapter extends ArrayAdapter<String> {
         put("West Virginia", "WV");
         put("Wyoming", "WY");
     }};
+
     final static public HashMap<String, String> mCaMap = new LinkedHashMap<String, String>() {{
         put("Alberta", "AB");
         put("British Columbia", "BC");
@@ -86,6 +91,7 @@ public class StateAdapter extends ArrayAdapter<String> {
         put("Saskatchewen", "SK");
         put("Yukon", "YU");
     }};
+
     final static public HashMap<String, String> mAuMap = new LinkedHashMap<String, String>() {{
         put("Australian Capital Territory", "AC");
         put("New South Wales", "NS");
@@ -96,6 +102,7 @@ public class StateAdapter extends ArrayAdapter<String> {
         put("Victoria", "VI");
         put("Western Australia", "WA");
     }};
+
     private HashMap<String, String> mCodesMap;
 
 

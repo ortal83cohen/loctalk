@@ -1,13 +1,13 @@
 package com.travoca.app.adapter;
 
 
+import com.travoca.api.model.Record;
+import com.travoca.app.R;
+
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
-
-import com.travoca.api.model.Record;
-import com.travoca.app.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -17,18 +17,25 @@ public class RecordCardViewHolder extends RecyclerView.ViewHolder {
 
     @Bind(R.id.likes)
     public TextView mLikes;
+
     @Bind(R.id.unlikes)
     public TextView mUnLikes;
+
     @Bind(android.R.id.title)
     TextView mTitle;
+
     @Bind(R.id.description)
     TextView mDescription;
+
     @Bind(R.id.language)
     TextView mLanguage;
+
     @Bind(R.id.locationName)
     TextView mLocationName;
+
     @Bind(R.id.type)
     TextView mType;
+
     private Context mContext;
 
 

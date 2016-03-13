@@ -13,10 +13,15 @@ import android.view.View;
 import android.view.animation.Interpolator;
 
 public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
+
     private static final Interpolator INTERPOLATOR = new FastOutSlowInInterpolator();
+
     private boolean mIsAnimating = false;
+
     private Handler mDelayedHandler;
+
     private FloatingActionButton mView;
+
     private Runnable mDelayedShowRunnable = new Runnable() {
         @Override
         public void run() {
@@ -30,21 +35,25 @@ public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
     }
 
     @Override
-    public boolean onStartNestedScroll(final CoordinatorLayout coordinatorLayout, final FloatingActionButton child,
-                                       final View directTargetChild, final View target, final int nestedScrollAxes) {
+    public boolean onStartNestedScroll(final CoordinatorLayout coordinatorLayout,
+            final FloatingActionButton child,
+            final View directTargetChild, final View target, final int nestedScrollAxes) {
         if (mView == null) {
             mView = child;
         }
         // Ensure we react to vertical scrolling
         return nestedScrollAxes == ViewCompat.SCROLL_AXIS_VERTICAL
-                || super.onStartNestedScroll(coordinatorLayout, child, directTargetChild, target, nestedScrollAxes);
+                || super.onStartNestedScroll(coordinatorLayout, child, directTargetChild, target,
+                nestedScrollAxes);
     }
 
     @Override
-    public void onNestedScroll(final CoordinatorLayout coordinatorLayout, final FloatingActionButton child,
-                               final View target, final int dxConsumed, final int dyConsumed,
-                               final int dxUnconsumed, final int dyUnconsumed) {
-        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
+    public void onNestedScroll(final CoordinatorLayout coordinatorLayout,
+            final FloatingActionButton child,
+            final View target, final int dxConsumed, final int dyConsumed,
+            final int dxUnconsumed, final int dyUnconsumed) {
+        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed,
+                dyUnconsumed);
         if (mIsAnimating) {
             return;
         }

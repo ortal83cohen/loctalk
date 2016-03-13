@@ -1,6 +1,13 @@
 package com.travoca.app.adapter;
 
 
+import com.travoca.api.model.Record;
+import com.travoca.app.R;
+import com.travoca.app.activity.BaseActivity;
+import com.travoca.app.model.RecordListRequest;
+import com.travoca.app.utils.AppLog;
+import com.travoca.app.widget.recyclerview.ArrayAdapter;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.support.v7.widget.RecyclerView;
@@ -10,23 +17,22 @@ import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
 
-import com.travoca.api.model.Record;
-import com.travoca.app.R;
-import com.travoca.app.activity.BaseActivity;
-import com.travoca.app.model.RecordListRequest;
-import com.travoca.app.utils.AppLog;
-import com.travoca.app.widget.recyclerview.ArrayAdapter;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecordListAdapter extends ArrayAdapter<Record, RecyclerView.ViewHolder> implements Filterable {
+public class RecordListAdapter extends ArrayAdapter<Record, RecyclerView.ViewHolder>
+        implements Filterable {
+
     protected final RecordViewHolder.Listener mListener;
+
     protected final int mPictureWidth;
+
     protected final int mPictureHeight;
 
     private final RecordListRequest mRequest;
+
     protected Context mContext;
+
     protected List<Record> mRecords = new ArrayList<>();
 
     public RecordListAdapter(BaseActivity activity, RecordViewHolder.Listener listener) {

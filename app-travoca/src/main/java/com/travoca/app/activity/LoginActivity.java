@@ -1,13 +1,5 @@
 package com.travoca.app.activity;
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -18,6 +10,7 @@ import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
+
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.TravocaApi;
 import com.travoca.api.model.ResultsResponse;
@@ -32,6 +25,14 @@ import com.travoca.app.member.MemberStorage;
 import com.travoca.app.member.model.User;
 import com.travoca.app.travocaapi.RetrofitCallback;
 
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import retrofit.Response;
@@ -40,17 +41,27 @@ import retrofit.Response;
  * @author user
  * @date 2016-02-17
  */
-public class LoginActivity extends BaseActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
+public class LoginActivity extends BaseActivity
+        implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
+
     private static final int RC_SIGN_IN = 0;
+
     private static final String FRAGMENT_LOGIN = "login";
+
     protected GoogleApiClient mGoogleApiClient;
+
     @Bind(R.id.sign_in_button)
     SignInButton btnSignIn;
+
     @Bind(R.id.button_sign_out)
     Button btnSignOut;
+
     private MemberStorage memberStorage;
+
     private ConnectionResult mConnectionResult;
-    private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
+
+    private RetrofitCallback<ResultsResponse> mResultsCallback
+            = new RetrofitCallback<ResultsResponse>() {
 
         @Override
         protected void failure(ResponseBody errorBody, boolean isOffline) {
@@ -72,12 +83,14 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(
+                GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
+                .enableAutoManage(this /* FragmentActivity */,
+                        this /* OnConnectionFailedListener */)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
 
@@ -86,7 +99,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         btnSignIn.setOnClickListener(this);
         btnSignIn.setSize(SignInButton.SIZE_STANDARD);
         btnSignIn.setScopes(gso.getScopeArray());
-
 
         if (savedInstanceState == null) {
             getSupportFragmentManager()

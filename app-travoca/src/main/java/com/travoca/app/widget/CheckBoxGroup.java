@@ -1,5 +1,7 @@
 package com.travoca.app.widget;
 
+import com.travoca.app.R;
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
@@ -10,8 +12,6 @@ import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.TableRow;
 
-import com.travoca.app.R;
-
 /**
  * @author ortal
  * @date 2015-06-18
@@ -19,9 +19,13 @@ import com.travoca.app.R;
 public class CheckBoxGroup extends LinearLayout implements CompoundButton.OnCheckedChangeListener {
 
     public static final int CHECKBOX_COUNT = 5;
+
     int mPadding;
+
     private OnCheckedChangeListener mListener;
+
     private int mMinCheckedIdx = -1;
+
     private int mMaxCheckedIdx = -1;
 
     public CheckBoxGroup(Context context) {
@@ -142,6 +146,7 @@ public class CheckBoxGroup extends LinearLayout implements CompoundButton.OnChec
     }
 
     public interface OnCheckedChangeListener {
+
         void onCheckedChanged(CheckBoxGroup group, SparseBooleanArray checked);
     }
 }

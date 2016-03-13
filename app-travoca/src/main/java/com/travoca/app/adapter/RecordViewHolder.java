@@ -1,6 +1,11 @@
 package com.travoca.app.adapter;
 
 
+import com.squareup.picasso.Picasso;
+import com.travoca.api.model.Record;
+import com.travoca.api.utils.ImageUtils;
+import com.travoca.app.R;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.ColorMatrix;
@@ -11,35 +16,40 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
-import com.travoca.api.model.Record;
-import com.travoca.api.utils.ImageUtils;
-import com.travoca.app.R;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class RecordViewHolder extends RecyclerView.ViewHolder {
 
     private final int mPictureWidth;
+
     private final int mPictureHeight;
 
     private final Context mContext;
+
     private final RecordViewHolder.Listener mListener;
+
     @Bind(R.id.image)
     public ImageView mImageView;
+
     @Bind(android.R.id.title)
     public TextView mTitleView;
+
     @Bind(R.id.likes)
     public TextView mLikes;
+
     @Bind(R.id.unlikes)
     public TextView mDisLikes;
+
     @Bind(R.id.background)
     public FrameLayout mBackground;
+
     private Record mItem;
+
     private int mPosition;
 
-    public RecordViewHolder(View v, Context context, int pictureWidth, int pictureHeight, RecordViewHolder.Listener listener) {
+    public RecordViewHolder(View v, Context context, int pictureWidth, int pictureHeight,
+            RecordViewHolder.Listener listener) {
         super(v);
         mListener = listener;
         ButterKnife.bind(this, v);
@@ -54,7 +64,8 @@ public class RecordViewHolder extends RecyclerView.ViewHolder {
         final Resources r = mContext.getResources();
         if (mItem.imageUrl != null) {
             if (mPictureWidth > 0 && mPictureHeight > 0) {
-                String imageUrl = ImageUtils.resizeUrl(mItem.imageUrl, mPictureWidth, mPictureHeight);
+                String imageUrl = ImageUtils
+                        .resizeUrl(mItem.imageUrl, mPictureWidth, mPictureHeight);
                 Picasso.with(mContext)
                         .load(imageUrl)
                         .resize(mPictureWidth, mPictureHeight)
@@ -106,6 +117,7 @@ public class RecordViewHolder extends RecyclerView.ViewHolder {
     }
 
     public interface Listener {
+
         void onRecordClick(Record acc, int position);
     }
 

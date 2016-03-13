@@ -14,11 +14,6 @@
 
 package com.travoca.app.utils.amazon;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
-import android.util.Log;
-
 import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.model.AbortMultipartUploadRequest;
 import com.amazonaws.services.s3.model.CannedAccessControlList;
@@ -34,6 +29,11 @@ import com.amazonaws.services.s3.model.UploadPartResult;
 import com.travoca.app.utils.amazon.utils.SharedPreferencesCompat;
 import com.travoca.app.utils.amazon.utils.SharedPreferencesUtils;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.util.Log;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -44,24 +44,37 @@ public class Uploader {
     private static final long MIN_DEFAULT_PART_SIZE = 5 * 1024 * 1024;
 
     private static final String TAG = "Simpl3r";
+
     private static final String PREFS_NAME = "preferences_simpl3r";
+
     private static final String PREFS_UPLOAD_ID = "_uploadId";
+
     private static final String PREFS_ETAGS = "_etags";
+
     private static final String PREFS_ETAG_SEP = "~~";
 
     private AmazonS3Client s3Client;
+
     private String s3bucketName;
+
     private String s3key;
+
     private File file;
 
     private SharedPreferences prefs;
+
     private long partSize = MIN_DEFAULT_PART_SIZE;
+
     private UploadProgressListener progressListener;
+
     private long bytesUploaded = 0;
+
     private boolean userInterrupted = false;
+
     private boolean userAborted = false;
 
-    public Uploader(Context context, AmazonS3Client s3Client, String s3bucketName, String s3key, File file) {
+    public Uploader(Context context, AmazonS3Client s3Client, String s3bucketName, String s3key,
+            File file) {
         this.s3Client = s3Client;
         this.s3key = s3key;
         this.s3bucketName = s3bucketName;
@@ -108,17 +121,17 @@ public class Uploader {
             // initiate a new multi part upload
             Log.i(TAG, "initiating new upload");
 
-            InitiateMultipartUploadRequest initRequest = new InitiateMultipartUploadRequest(s3bucketName, s3key);
-            Log.i(TAG, "1 " + s3key);
+            InitiateMultipartUploadRequest initRequest = new InitiateMultipartUploadRequest(
+                    s3bucketName, s3key);
             configureInitiateRequest(initRequest);
-            Log.i(TAG, "2 " + s3bucketName);
-            InitiateMultipartUploadResult initResponse = s3Client.initiateMultipartUpload(initRequest);
-            Log.i(TAG, "3 new upload");
+            InitiateMultipartUploadResult initResponse = s3Client
+                    .initiateMultipartUpload(initRequest);
             uploadId = initResponse.getUploadId();
-            Log.i(TAG, "4 new upload");
+            Log.i(TAG, "upload to " + s3bucketName + "/" + s3key + " id=" + uploadId);
         }
 
-        final AbortMultipartUploadRequest abortRequest = new AbortMultipartUploadRequest(s3bucketName, s3key, uploadId);
+        final AbortMultipartUploadRequest abortRequest = new AbortMultipartUploadRequest(
+                s3bucketName, s3key, uploadId);
 
         for (int k = startPartNumber; filePosition < contentLength; k++) {
 
@@ -198,10 +211,12 @@ public class Uploader {
     private List<PartETag> getCachedPartEtags() {
         List<PartETag> result = new ArrayList<PartETag>();
         // get the cached etags
-        ArrayList<String> etags = SharedPreferencesUtils.getStringArrayPref(prefs, s3key + PREFS_ETAGS);
+        ArrayList<String> etags = SharedPreferencesUtils
+                .getStringArrayPref(prefs, s3key + PREFS_ETAGS);
         for (String etagString : etags) {
             String partNum = etagString.substring(0, etagString.indexOf(PREFS_ETAG_SEP));
-            String partTag = etagString.substring(etagString.indexOf(PREFS_ETAG_SEP) + 2, etagString.length());
+            String partTag = etagString
+                    .substring(etagString.indexOf(PREFS_ETAG_SEP) + 2, etagString.length());
 
             PartETag etag = new PartETag(Integer.parseInt(partNum), partTag);
             result.add(etag);
@@ -210,8 +225,10 @@ public class Uploader {
     }
 
     private void cachePartEtag(UploadPartResult result) {
-        String serialEtag = result.getPartETag().getPartNumber() + PREFS_ETAG_SEP + result.getPartETag().getETag();
-        ArrayList<String> etags = SharedPreferencesUtils.getStringArrayPref(prefs, s3key + PREFS_ETAGS);
+        String serialEtag = result.getPartETag().getPartNumber() + PREFS_ETAG_SEP + result
+                .getPartETag().getETag();
+        ArrayList<String> etags = SharedPreferencesUtils
+                .getStringArrayPref(prefs, s3key + PREFS_ETAGS);
         etags.add(serialEtag);
         SharedPreferencesUtils.setStringArrayPref(prefs, s3key + PREFS_ETAGS, etags);
     }
@@ -262,7 +279,8 @@ public class Uploader {
 
     public void setPartSize(long partSize) {
         if (partSize < MIN_DEFAULT_PART_SIZE) {
-            throw new IllegalStateException("Part size is less than S3 minimum of " + MIN_DEFAULT_PART_SIZE);
+            throw new IllegalStateException(
+                    "Part size is less than S3 minimum of " + MIN_DEFAULT_PART_SIZE);
         } else {
             this.partSize = partSize;
         }
@@ -273,7 +291,9 @@ public class Uploader {
     }
 
     public interface UploadProgressListener {
-        public void progressChanged(ProgressEvent progressEvent, long bytesUploaded, int percentUploaded);
+
+        public void progressChanged(ProgressEvent progressEvent, long bytesUploaded,
+                int percentUploaded);
     }
 
 }

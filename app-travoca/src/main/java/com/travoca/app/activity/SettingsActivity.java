@@ -1,12 +1,5 @@
 package com.travoca.app.activity;
 
-import android.content.DialogInterface;
-import android.content.pm.PackageManager;
-import android.support.v7.app.AlertDialog;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-
 import com.travoca.api.TravocaApiConfig;
 import com.travoca.api.contract.Language;
 import com.travoca.app.App;
@@ -16,6 +9,13 @@ import com.travoca.app.R;
 import com.travoca.app.preferences.UserPreferences;
 import com.travoca.app.preferences.UserPreferencesStorage;
 import com.travoca.app.utils.AppLog;
+
+import android.content.DialogInterface;
+import android.content.pm.PackageManager;
+import android.support.v7.app.AlertDialog;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import java.util.ArrayList;
 
@@ -28,12 +28,19 @@ import de.psdev.licensesdialog.LicensesDialog;
 public class SettingsActivity extends SettingsActionBarActivity {
 
     private static final int ACTION_API_ENDPOINT = 1;
+
     private static final int ACTION_LANGUAGE = 3;
+
     private static final int ACTION_PRIVACY_POLICY = 4;
+
     private static final int ACTION_TOS = 5;
+
     private static final int ACTION_LICENSES = 6;
+
     private static final int ACTION_VERSION = 7;
+
     private static final int ACTION_NOTIFICATION = 8;
+
     private int mVersionPress = 0;
 
     @Override
@@ -56,7 +63,6 @@ public class SettingsActivity extends SettingsActionBarActivity {
         preferences.add(new Item(R.string.privacy_policy, ACTION_PRIVACY_POLICY));
         preferences.add(new Item(R.string.version, renderVersion(), ACTION_VERSION));
         preferences.add(new Item(R.string.open_source_licenses, ACTION_LICENSES));
-
 
         if (BuildConfig.DEBUG) {
             preferences.addAll(createDevelopmentPreferences());

@@ -7,12 +7,17 @@ import com.travoca.api.contract.Language;
  * @date 2015-06-14
  */
 public class UserPreferences {
+
     public static final int PRICE_SHOW_TYPE_NIGHT = 0;
+
     public static final int PRICE_SHOW_TYPE_STAY = 1;
 
     private String mCurrencyCode;
+
     private String mLang = null;
+
     private int mPriceShowType;
+
     private String mCountryCode;
 
     public String getCurrencyCode() {

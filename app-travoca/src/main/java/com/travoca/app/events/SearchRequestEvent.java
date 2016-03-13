@@ -7,7 +7,9 @@ import com.travoca.api.model.SearchRequest;
  * @date 2015-07-06
  */
 public class SearchRequestEvent {
+
     private final int mOffset;
+
     private SearchRequest mRecordListRequest;
 
     public SearchRequestEvent(SearchRequest recordsRequest, int offset) {

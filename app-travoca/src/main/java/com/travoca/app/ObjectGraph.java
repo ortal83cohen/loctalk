@@ -1,9 +1,5 @@
 package com.travoca.app;
 
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.telephony.TelephonyManager;
-
 import com.facebook.CallbackManager;
 import com.facebook.device.yearclass.YearClass;
 import com.squareup.okhttp.Cache;
@@ -24,6 +20,10 @@ import com.travoca.app.travocaapi.UserAgentInterceptor;
 import com.travoca.app.utils.DefaultHttpClient;
 import com.travoca.app.utils.NetworkUtilities;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.telephony.TelephonyManager;
+
 import java.io.File;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -38,14 +38,23 @@ public class ObjectGraph {
 
 
     private static final long DISK_CACHE_SIZE = 5000000; // 5mbX
+
     private static final long CONNECT_TIMEOUT_MILLIS = 20000;
+
     private static final long READ_TIMEOUT_MILLIS = 30000;
+
     protected final Context app;
+
     private Facebook mFacebook;
+
     private UserPreferences mUserPrefs;
+
     private TravocaApi mTravocaApi;
+
     private OkHttpClient mHttpClient;
+
     private MemberStorage mMemberStorage;
+
     private SearchRequest mLastSearchRequest;
 
 
@@ -92,7 +101,8 @@ public class ObjectGraph {
 
             mHttpClient.networkInterceptors().add(new CacheResponseInterceptor());
             mHttpClient.networkInterceptors().add(new UserAgentInterceptor(this.app));
-            mHttpClient.interceptors().add(new CacheRequestInterceptor(new NetworkUtilities(connectivityManager())));
+            mHttpClient.interceptors()
+                    .add(new CacheRequestInterceptor(new NetworkUtilities(connectivityManager())));
             mHttpClient.interceptors().add(RetrofitLogger.create());
             mHttpClient.interceptors().add(new ResultsMockClient());
         }

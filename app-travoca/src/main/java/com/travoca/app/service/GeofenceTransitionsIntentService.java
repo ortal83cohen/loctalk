@@ -1,24 +1,17 @@
-/**
- * Copyright 2014 Google Inc. All Rights Reserved.
- * <p>
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * <p>
- * http://www.apache.org/licenses/LICENSE-2.0
- * <p>
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.travoca.app.service;
+
+import com.google.android.gms.location.Geofence;
+import com.google.android.gms.location.GeofenceStatusCodes;
+import com.google.android.gms.location.GeofencingEvent;
+
+import com.travoca.app.R;
+import com.travoca.app.activity.MainActivity;
+import com.travoca.app.provider.DbContract;
 
 import android.app.IntentService;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -30,23 +23,9 @@ import android.support.v4.app.TaskStackBuilder;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.google.android.gms.location.Geofence;
-import com.google.android.gms.location.GeofenceStatusCodes;
-import com.google.android.gms.location.GeofencingEvent;
-import com.travoca.app.R;
-import com.travoca.app.activity.MainActivity;
-import com.travoca.app.provider.DbContract;
-
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Listener for geofence transition changes.
- * <p>
- * Receives geofence transition events from Location Services in the form of an Intent containing
- * the transition type and geofence id(s) that triggered the transition. Creates a notification
- * as the output.
- */
 public class GeofenceTransitionsIntentService extends IntentService {
 
     protected static final String TAG = "GeofenceTransitionsIS";
@@ -119,16 +98,23 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
         Geofence geofence = triggeringGeofences.get(0);
 //        android.os.Debug.waitForDebugger();
-        Cursor cursor = getContentResolver().query(DbContract.ServiceGps.CONTENT_URI.buildUpon().build(), null,DbContract.ServiceGpsColumns.KEY_ID +"="+geofence.getRequestId(), null, null);
+        Cursor cursor = getContentResolver()
+                .query(DbContract.ServiceGps.CONTENT_URI.buildUpon().build(), null,
+                        DbContract.ServiceGpsColumns.KEY_ID + "=" + geofence.getRequestId(), null,
+                        null);
 
         if (cursor != null) {
             while (cursor.moveToNext()) {
-                triggeringGeofencesIdsList.add(cursor.getString(cursor.getColumnIndex(DbContract.ServiceGpsColumns.LOCATION_NAME)));
+                triggeringGeofencesIdsList.add(cursor.getString(
+                        cursor.getColumnIndex(DbContract.ServiceGpsColumns.LOCATION_NAME)));
             }
             cursor.close();
 
         }
-        //// TODO: 3/12/2016 make raw used
+        ContentValues values = new ContentValues();
+        values.put(DbContract.ServiceGpsColumns.USED, "1");
+        getContentResolver().update(DbContract.ServiceGps.CONTENT_URI.buildUpon().build(), values,
+                DbContract.ServiceGpsColumns.KEY_ID + "=" + geofence.getRequestId(), null);
 
         String triggeringGeofencesIdsString = TextUtils.join(", ", triggeringGeofencesIdsList);
 
@@ -159,7 +145,6 @@ public class GeofenceTransitionsIntentService extends IntentService {
                 .setContentText("you have record in your current location")
                 .setContentIntent(notificationPendingIntent);
 
-
         //                    Intent intent = new Intent(context, RecordDetailsActivity.class);
 //                    intent.putExtra(RecordDetailsActivity.EXTRA_DATA, record);
 //                    intent.putExtra(RecordDetailsActivity.EXTRA_REQUEST, new RecordListRequest());
@@ -184,7 +169,6 @@ public class GeofenceTransitionsIntentService extends IntentService {
 //        notificationManager.notify(NOTIFICATION_ID, notification);
 //    }
 
-
         // Dismiss notification once the user touches it.
         builder.setAutoCancel(true);
 
@@ -199,7 +183,8 @@ public class GeofenceTransitionsIntentService extends IntentService {
     /**
      * Maps geofence transition types to their human-readable equivalents.
      *
-     * @param transitionType A transition type constant defined in return                  A String indicating the type of transition
+     * @param transitionType A transition type constant defined in return                  A String
+     *                       indicating the type of transition
      */
     private String getTransitionString(int transitionType) {
         switch (transitionType) {

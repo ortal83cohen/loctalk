@@ -1,5 +1,16 @@
 package com.travoca.app.map;
 
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+import com.travoca.api.model.Record;
+import com.travoca.app.App;
+import com.travoca.app.R;
+import com.travoca.app.activity.BaseActivity;
+import com.travoca.app.preferences.UserPreferences;
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -9,28 +20,26 @@ import android.graphics.Rect;
 import android.support.annotation.DrawableRes;
 import android.support.v4.util.LruCache;
 
-import com.google.android.gms.maps.model.BitmapDescriptor;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.travoca.api.model.Record;
-import com.travoca.app.App;
-import com.travoca.app.R;
-import com.travoca.app.activity.BaseActivity;
-import com.travoca.app.preferences.UserPreferences;
-
 /**
  * @author ortal
  * @date 2015-04-20
  */
 public class RecordMarker {
+
     public final static int STATUS_UNSEEN = 1;
+
     public final static int STATUS_SEEN = 2;
+
     public final static int STATUS_SELECTED = 3;
+
     private final LruCache<String, Bitmap> mMemoryCache;
+
     private final BaseActivity mContext;
+
     private final UserPreferences mUserPrefs;
+
     private final int mTextSize;
+
     private final int mStrokeSize;
 
     public RecordMarker(BaseActivity activity) {
@@ -61,9 +70,7 @@ public class RecordMarker {
 
         String currencyCode = mUserPrefs.getCurrencyCode();
 
-
         Bitmap bitmap = drawTextToBitmap("22222", status);
-
 
         BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap(bitmap);
 
@@ -113,12 +120,14 @@ public class RecordMarker {
         float textWidth = textPaint.measureText(text, 0, text.length());
 
         bitmap = bitmap.copy(bitmapConfig, true);
-        bitmap = Bitmap.createScaledBitmap(bitmap, (int) (textWidth + mStrokeSize), bitmap.getHeight(), false);
+        bitmap = Bitmap
+                .createScaledBitmap(bitmap, (int) (textWidth + mStrokeSize), bitmap.getHeight(),
+                        false);
         Canvas canvas = new Canvas(bitmap);
 
-
         int xPos = (canvas.getWidth() / 2);
-        int yPos = (int) (((canvas.getHeight() - canvas.getHeight() * 0.2) / 2) - ((textPaint.descent() + textPaint.ascent()) / 2));
+        int yPos = (int) (((canvas.getHeight() - canvas.getHeight() * 0.2) / 2) - (
+                (textPaint.descent() + textPaint.ascent()) / 2));
 
         canvas.drawText(text, xPos, yPos, textPaint);
 

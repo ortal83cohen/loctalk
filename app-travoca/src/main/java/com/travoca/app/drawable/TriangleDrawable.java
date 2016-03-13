@@ -14,9 +14,13 @@ import android.support.annotation.ColorRes;
  * @date 2015-06-21
  */
 public class TriangleDrawable extends Drawable {
+
     private final int mColor;
+
     private final Path mPath;
+
     private Paint mPaint;
+
     private float mFromDegrees = 0;
 
     public TriangleDrawable(Context context, @ColorRes int colorRes) {

@@ -1,5 +1,7 @@
 package com.travoca.app.widget;
 
+import com.travoca.app.R;
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -8,15 +10,16 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.CheckBox;
 
-import com.travoca.app.R;
-
 /**
  * @author ortal
  * @date 2015-11-01
  */
 public class TileCheckBox extends CheckBox {
+
     private final Rect mTempRect = new Rect();
+
     private Drawable mDrawable;
+
     private int mTileCount = 5;
 
     public TileCheckBox(Context context) {
@@ -66,7 +69,6 @@ public class TileCheckBox extends CheckBox {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
 
         canvas.save();
 

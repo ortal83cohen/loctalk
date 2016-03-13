@@ -1,5 +1,46 @@
 package com.travoca.app.fragment;
 
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.PendingResult;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.LocationSettingsRequest;
+import com.google.android.gms.location.LocationSettingsResult;
+import com.google.android.gms.location.LocationSettingsStatusCodes;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.PlaceBuffer;
+import com.google.android.gms.location.places.Places;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.CustomEvent;
+import com.facebook.device.yearclass.YearClass;
+import com.travoca.api.model.SearchRequest;
+import com.travoca.api.model.search.Type;
+import com.travoca.app.App;
+import com.travoca.app.R;
+import com.travoca.app.activity.BaseActivity;
+import com.travoca.app.activity.HomeActivity;
+import com.travoca.app.adapter.PlaceAutocompleteAdapter;
+import com.travoca.app.anim.AnimatorCollection;
+import com.travoca.app.anim.ResizeAnimator;
+import com.travoca.app.anim.RevealAnimatorCompat;
+import com.travoca.app.model.CurrentLocation;
+import com.travoca.app.model.Location;
+import com.travoca.app.model.LocationWithTitle;
+import com.travoca.app.model.MapSelectedViewPort;
+import com.travoca.app.model.RecordListRequest;
+import com.travoca.app.model.ViewPort;
+import com.travoca.app.provider.SearchHistory;
+import com.travoca.app.randerscript.BlurBuilder;
+import com.travoca.app.utils.AppLog;
+import com.travoca.app.utils.TextWatcherAdapter;
+
 import android.Manifest;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -34,46 +75,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.crashlytics.android.Crashlytics;
-import com.crashlytics.android.answers.Answers;
-import com.crashlytics.android.answers.CustomEvent;
-import com.facebook.device.yearclass.YearClass;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.location.LocationListener;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.LocationSettingsRequest;
-import com.google.android.gms.location.LocationSettingsResult;
-import com.google.android.gms.location.LocationSettingsStatusCodes;
-import com.google.android.gms.location.places.Place;
-import com.google.android.gms.location.places.PlaceBuffer;
-import com.google.android.gms.location.places.Places;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
-import com.travoca.api.model.SearchRequest;
-import com.travoca.api.model.search.Type;
-import com.travoca.app.App;
-import com.travoca.app.R;
-import com.travoca.app.activity.BaseActivity;
-import com.travoca.app.activity.HomeActivity;
-import com.travoca.app.adapter.PlaceAutocompleteAdapter;
-import com.travoca.app.anim.AnimatorCollection;
-import com.travoca.app.anim.ResizeAnimator;
-import com.travoca.app.anim.RevealAnimatorCompat;
-import com.travoca.app.model.CurrentLocation;
-import com.travoca.app.model.Location;
-import com.travoca.app.model.LocationWithTitle;
-import com.travoca.app.model.MapSelectedViewPort;
-import com.travoca.app.model.RecordListRequest;
-import com.travoca.app.model.ViewPort;
-import com.travoca.app.provider.SearchHistory;
-import com.travoca.app.randerscript.BlurBuilder;
-import com.travoca.app.utils.AppLog;
-import com.travoca.app.utils.TextWatcherAdapter;
-
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -85,7 +86,9 @@ import butterknife.OnClick;
  * @author ortal
  * @date 2015-05-17
  */
-public class HomeFragment extends BaseFragment implements View.OnTouchListener, View.OnClickListener {
+public class HomeFragment extends BaseFragment
+        implements View.OnTouchListener, View.OnClickListener {
+
     private static final LatLngBounds BOUNDS_MAP = new LatLngBounds.Builder()
             .include(new LatLng(85, -180)) // top left corner of map
             .include(new LatLng(-85, 180))  // bottom right corner
@@ -93,48 +96,75 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
 
 
     private static final int REQUEST_PERMISSION_LOCATION = 2;
+
     private static final String LAST_LOCATION = "last_location";
+
     private static final String LAST_VIEW_PORT = "last_view_port";
 
     private static final String ARG_REQUEST = "request";
 
     private static final int POSITION_UNTOUCHED = -1;
+
     private static final int POSITION_UNSELECTED = -2;
+
     private final int[] mTouchLoc = new int[2];
+
     private final int[] mViewLoc = new int[2];
+
     @Bind(R.id.autoCompleteTextView_location)
     AutoCompleteTextView mAutocompleteView;
+
     @Bind(R.id.autoCompleteTextView_clear)
     ImageButton mAutocompleteViewClear;
+
     @Bind(R.id.instructions)
     TextView mInstructions;
+
     @Bind(R.id.top_box)
     LinearLayout mTopBox;
+
     @Bind(R.id.background)
     View mBackground;
+
     @Bind(R.id.group_buttons_holder)
     LinearLayout mGroupButtonsHolder;
+
     @Bind(R.id.search)
     Button mSearchRecordsButton;
+
     private PlaceAutocompleteAdapter mAdapter;
+
     private int mSelectedPosition = POSITION_UNTOUCHED;
+
     private GoogleApiClient mGoogleApiClient;
+
     private Listener mListener;
 
     private Type mLastLocation;
 
     private LocationRequest mLocationRequest = new LocationRequest()
-            .setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY) // (~100m "block" accuracy)
+            .setPriority(
+                    LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY) // (~100m "block" accuracy)
             .setNumUpdates(1);
+
     private boolean mShowLocation = true;
+
     private boolean mIsLightBox = false;
+
     private int mTopBoxHeight = -1;
+
     private int mInstructionsHeight = -1;
+
     private View mSelectPanelView;
+
     private View mBlurContentView;
+
     private BlurBuilder mBlurBuilder;
+
     private boolean mAutocompleteOnFocus = false;
+
     private boolean mSearchButtonClicked = false;
+
     private ResultCallback<PlaceBuffer> mUpdatePlaceDetailsCallback
             = new ResultCallback<PlaceBuffer>() {
         @Override
@@ -148,21 +178,26 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
             }
             // Get the Place object from the buffer.
             if (places.getCount() == 0) {
-                Toast.makeText(getActivity(), "No result for " + mAutocompleteView.getText(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "No result for " + mAutocompleteView.getText(),
+                        Toast.LENGTH_SHORT).show();
                 AppLog.e("Google Autocomplete Api error for: " + mAutocompleteView.getText());
                 return;
             }
             Place place = places.get(0);
             SearchHistory.insert(place, getActivity());
-            Type lastLocation = updateLastLocation(place.getName().toString(), place.getLatLng(), place.getViewport());
+            Type lastLocation = updateLastLocation(place.getName().toString(), place.getLatLng(),
+                    place.getViewport());
             startSearch(lastLocation);
             places.release();
         }
     };
+
     private TextWatcher mAutocompleteTextWatcher = new TextWatcherAdapter() {
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
-            mAutocompleteView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.destination_active, 0, R.color.white, 0);
+            mAutocompleteView
+                    .setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.destination_active,
+                            0, R.color.white, 0);
             mSelectedPosition = POSITION_UNSELECTED;
         }
     };
@@ -187,13 +222,14 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+            Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         final Activity activity = getActivity();
         ButterKnife.bind(this, view);
         setupAutocomplete();
         if (savedInstanceState == null) {
-            mGroupButtonsHolder.setAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in));
+            mGroupButtonsHolder
+                    .setAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in));
             mGroupButtonsHolder.animate();
         }
 
@@ -204,12 +240,10 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
         }
         mBackground.setOnTouchListener(this);
 
-
         Resources r = getResources();
 
         ViewCompat.setElevation(mAutocompleteView, r.getDimension(R.dimen.home_view_elevation));
         ViewCompat.setElevation(mAutocompleteViewClear, 50);
-
 
         SearchRequest request = getArguments().getParcelable(ARG_REQUEST);
         init(request);
@@ -269,10 +303,13 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
                     mAutocompleteView.setText("");
                 } else if (item instanceof PlaceAutocompleteAdapter.PlaceAutocomplete) {
                 } else if (item instanceof PlaceAutocompleteAdapter.PlaceHistory) {
-                    PlaceAutocompleteAdapter.PlaceHistory historyItem = (PlaceAutocompleteAdapter.PlaceHistory) item;
+                    PlaceAutocompleteAdapter.PlaceHistory historyItem
+                            = (PlaceAutocompleteAdapter.PlaceHistory) item;
 //                    updateViews(mSelectedRange, historyItem.getNumberGuests(), historyItem.getNumberRooms());
                 }
-                mAutocompleteView.setCompoundDrawablesRelativeWithIntrinsicBounds(item.getDrawable(), 0, R.color.white, 0);
+                mAutocompleteView
+                        .setCompoundDrawablesRelativeWithIntrinsicBounds(item.getDrawable(), 0,
+                                R.color.white, 0);
                 hideKeyboard();
             }
         });
@@ -288,8 +325,11 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
         }
 
         Resources r = getResources();
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        lp.setMargins((int) r.getDimension(R.dimen.default_padding), (int) r.getDimension(R.dimen.top_margin_home_fragment), (int) r.getDimension(R.dimen.default_padding), 0);
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        lp.setMargins((int) r.getDimension(R.dimen.default_padding),
+                (int) r.getDimension(R.dimen.top_margin_home_fragment),
+                (int) r.getDimension(R.dimen.default_padding), 0);
         mGroupButtonsHolder.setLayoutParams(lp);
         mInstructions.setVisibility(View.GONE);
         redrawBlurBackground();
@@ -330,7 +370,8 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
 
 
     public boolean onBackPressed() {
-        NavigationFragment navigationDrawer = (NavigationFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
+        NavigationFragment navigationDrawer = (NavigationFragment) getActivity()
+                .getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
         if (navigationDrawer != null && navigationDrawer.isVisible()) {
             navigationDrawer.closeDrawer();
             return true;
@@ -393,7 +434,8 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
             // Set up the adapter that will retrieve suggestions from the Places Geo Data API that cover
             // the entire world.
 
-            mAdapter = new PlaceAutocompleteAdapter(getActivity(), R.layout.autocomplite_list_item, mGoogleApiClient, BOUNDS_MAP);
+            mAdapter = new PlaceAutocompleteAdapter(getActivity(), R.layout.autocomplite_list_item,
+                    mGoogleApiClient, BOUNDS_MAP);
             mAutocompleteView.setAdapter(mAdapter);
 
             if (mLastLocation != null) {
@@ -424,9 +466,12 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
     }
 
     private void checkPermissionAndstartSearchInCurrentLocation() {
-        if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat
+                .checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
             // Request missing location permission.
-            requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_PERMISSION_LOCATION);
+            requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                    REQUEST_PERMISSION_LOCATION);
         } else {
             startSearchInCurrentLocation();
         }
@@ -446,7 +491,8 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         if (requestCode == REQUEST_PERMISSION_LOCATION) {
@@ -493,7 +539,9 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
         set.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
-                mTopBox.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+                mTopBox.setLayoutParams(
+                        new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                                LinearLayout.LayoutParams.WRAP_CONTENT));
             }
         });
         set.start();
@@ -505,7 +553,9 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
         mInstructions.setVisibility(View.VISIBLE);
         AnimatorCollection collection = new AnimatorCollection();
         collection.add(ResizeAnimator.height(0, mInstructionsHeight, mInstructions, 100));
-        collection.add(ResizeAnimator.margin(0, getResources().getDimensionPixelSize(R.dimen.home_instructions_margin), mInstructions, 100));
+        collection.add(ResizeAnimator
+                .margin(0, getResources().getDimensionPixelSize(R.dimen.home_instructions_margin),
+                        mInstructions, 100));
         AnimatorSet set = collection.sequential();
         set.start();
     }
@@ -518,7 +568,9 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
         }
         AnimatorCollection collection = new AnimatorCollection();
         collection.add(ResizeAnimator.height(mInstructionsHeight, 0, mInstructions, 100));
-        collection.add(ResizeAnimator.margin(getResources().getDimensionPixelSize(R.dimen.home_instructions_margin), 0, mInstructions, 100));
+        collection.add(ResizeAnimator
+                .margin(getResources().getDimensionPixelSize(R.dimen.home_instructions_margin), 0,
+                        mInstructions, 100));
         AnimatorSet set = collection.sequential();
         set.addListener(new AnimatorListenerAdapter() {
             @Override
@@ -556,7 +608,6 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
     @OnClick(R.id.search)
     public void onSearchRecordsClick(View button) {
 
-
         try {
             Calendar yesterday = Calendar.getInstance(Locale.getDefault());
             yesterday.add(Calendar.DAY_OF_MONTH, -1);
@@ -573,11 +624,14 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
                 checkPermissionAndstartSearchInCurrentLocation();
             } else if (item instanceof PlaceAutocompleteAdapter.PlaceAutocomplete) {
                 PendingResult<PlaceBuffer> placeResult = Places.GeoDataApi
-                        .getPlaceById(mGoogleApiClient, ((PlaceAutocompleteAdapter.PlaceAutocomplete) item).getPlaceId());
+                        .getPlaceById(mGoogleApiClient,
+                                ((PlaceAutocompleteAdapter.PlaceAutocomplete) item).getPlaceId());
                 placeResult.setResultCallback(mUpdatePlaceDetailsCallback);
             } else if (item instanceof PlaceAutocompleteAdapter.PlaceHistory) {
-                PlaceAutocompleteAdapter.PlaceHistory historyItem = (PlaceAutocompleteAdapter.PlaceHistory) item;
-                Type locationType = updateLastLocation(item.toString(), historyItem.getLatLng(), historyItem.getLatLngBounds());
+                PlaceAutocompleteAdapter.PlaceHistory historyItem
+                        = (PlaceAutocompleteAdapter.PlaceHistory) item;
+                Type locationType = updateLastLocation(item.toString(), historyItem.getLatLng(),
+                        historyItem.getLatLngBounds());
                 startSearch(locationType);
             }
         } catch (Exception e) {
@@ -597,7 +651,8 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
         LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
                 .addLocationRequest(mLocationRequest);
 
-        PendingResult<LocationSettingsResult> result = LocationServices.SettingsApi.checkLocationSettings(mGoogleApiClient, builder.build());
+        PendingResult<LocationSettingsResult> result = LocationServices.SettingsApi
+                .checkLocationSettings(mGoogleApiClient, builder.build());
         result.setResultCallback(new ResultCallback<LocationSettingsResult>() {
             @Override
             public void onResult(LocationSettingsResult locationSettingsResult) {
@@ -610,7 +665,8 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
                         try {
                             // Show the dialog by calling startResolutionForResult(),
                             // and check the result in onActivityResult().
-                            status.startResolutionForResult(getActivity(), HomeActivity.REQUEST_CHECK_SETTINGS);
+                            status.startResolutionForResult(getActivity(),
+                                    HomeActivity.REQUEST_CHECK_SETTINGS);
                         } catch (IntentSender.SendIntentException e) {
                             // Ignore the error.
                         }
@@ -632,8 +688,10 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
         // Check if no view has focus:
         View view = getActivity().getCurrentFocus();
         if (view != null) {
-            InputMethodManager inputManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-            inputManager.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+            InputMethodManager inputManager = (InputMethodManager) getActivity()
+                    .getSystemService(Context.INPUT_METHOD_SERVICE);
+            inputManager.hideSoftInputFromWindow(view.getWindowToken(),
+                    InputMethodManager.HIDE_NOT_ALWAYS);
         }
     }
 
@@ -650,6 +708,7 @@ public class HomeFragment extends BaseFragment implements View.OnTouchListener, 
 
 
     public interface Listener {
+
         GoogleApiClient getGoogleApiClient();
 
         void startSearch(Type locationType);

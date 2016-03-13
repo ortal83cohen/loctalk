@@ -4,7 +4,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class CurrentLocation extends Location {
-    public static final Parcelable.Creator<CurrentLocation> CREATOR = new Parcelable.Creator<CurrentLocation>() {
+
+    public static final Parcelable.Creator<CurrentLocation> CREATOR
+            = new Parcelable.Creator<CurrentLocation>() {
         public CurrentLocation createFromParcel(Parcel in) {
             return new CurrentLocation(in);
         }

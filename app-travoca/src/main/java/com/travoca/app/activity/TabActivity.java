@@ -1,12 +1,12 @@
 package com.travoca.app.activity;
 
+import com.travoca.app.R;
+import com.travoca.app.adapter.ViewPagerAdapter;
+
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.view.View;
-
-import com.travoca.app.R;
-import com.travoca.app.adapter.ViewPagerAdapter;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -16,12 +16,14 @@ import butterknife.ButterKnife;
  * @date 2015-08-11
  */
 public abstract class TabActivity extends BaseActivity implements TabLayout.OnTabSelectedListener {
+
     public static final String EXTRA_TABID = "tabid";
 
     protected int mTabId;
 
     @Bind(R.id.viewpager)
     ViewPager mViewPager;
+
     @Bind(R.id.tablayout)
     TabLayout mTabLayout;
 
@@ -49,7 +51,8 @@ public abstract class TabActivity extends BaseActivity implements TabLayout.OnTa
 
     }
 
-    protected abstract void onCreateTabFragments(ViewPagerAdapter adapter, Bundle savedInstanceState);
+    protected abstract void onCreateTabFragments(ViewPagerAdapter adapter,
+            Bundle savedInstanceState);
 
     public void setTabId(int tabId) {
         mTabId = tabId;

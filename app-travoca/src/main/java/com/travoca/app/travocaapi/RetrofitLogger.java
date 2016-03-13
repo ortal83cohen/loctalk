@@ -11,7 +11,8 @@ import com.travoca.app.utils.AppLog;
 public class RetrofitLogger implements HttpLoggingInterceptor.Logger {
 
     public static HttpLoggingInterceptor create() {
-        HttpLoggingInterceptor.Level level = BuildConfig.DEBUG ? HttpLoggingInterceptor.Level.BODY : HttpLoggingInterceptor.Level.BASIC;
+        HttpLoggingInterceptor.Level level = BuildConfig.DEBUG ? HttpLoggingInterceptor.Level.BODY
+                : HttpLoggingInterceptor.Level.BASIC;
         return new HttpLoggingInterceptor(new RetrofitLogger(), level);
     }
 

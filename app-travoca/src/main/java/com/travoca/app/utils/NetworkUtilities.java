@@ -8,6 +8,7 @@ import android.net.NetworkInfo;
  * @date 2015-07-08
  */
 public class NetworkUtilities {
+
     private ConnectivityManager mConnectivityManager;
 
     public NetworkUtilities(ConnectivityManager connectivityManager) {

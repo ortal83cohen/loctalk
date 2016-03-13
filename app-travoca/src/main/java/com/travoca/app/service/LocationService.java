@@ -1,19 +1,5 @@
 package com.travoca.app.service;
 
-import android.Manifest;
-import android.app.Service;
-import android.content.ContentValues;
-import android.content.Context;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.location.Location;
-import android.location.LocationManager;
-import android.os.Bundle;
-import android.os.IBinder;
-import android.support.v4.app.ActivityCompat;
-import android.util.Log;
-
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.TravocaApi;
 import com.travoca.api.model.Record;
@@ -29,20 +15,43 @@ import com.travoca.app.model.ServiceGpsLocation;
 import com.travoca.app.provider.DbContract;
 import com.travoca.app.travocaapi.RetrofitCallback;
 
+import android.Manifest;
+import android.app.Service;
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.database.Cursor;
+import android.location.Location;
+import android.location.LocationManager;
+import android.os.Bundle;
+import android.os.IBinder;
+import android.support.v4.app.ActivityCompat;
+import android.util.Log;
+
 import retrofit.Response;
 
 public class LocationService extends Service {
+
     private static final String TAG = "BOOMBOOMTESTGPS";
+
     private static final int NOTIFICATION_ID = 1;
+
     private static final double MINIMUM_DISTANCE = 0.05;
+
     private static final int LOCATION_INTERVAL = 3000000;
+
     private static final float LOCATION_DISTANCE = 100000f;
+
     LocationListener[] mLocationListeners = new LocationListener[]{
             new LocationListener(LocationManager.GPS_PROVIDER, this),
             new LocationListener(LocationManager.NETWORK_PROVIDER, this)
     };
+
     private LocationManager mLocationManager = null;
+
     private Context context;
+
     private MemberStorage mMemberStorage;
 
     @Override
@@ -87,7 +96,11 @@ public class LocationService extends Service {
         if (mLocationManager != null) {
             for (int i = 0; i < mLocationListeners.length; i++) {
                 try {
-                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    if (ActivityCompat
+                            .checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                            != PackageManager.PERMISSION_GRANTED && ActivityCompat
+                            .checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                            != PackageManager.PERMISSION_GRANTED) {
                         // TODO: Consider calling
                         //    ActivityCompat#requestPermissions
                         // here to request the missing permissions, and then overriding
@@ -107,14 +120,19 @@ public class LocationService extends Service {
 
     private void initializeLocationManager() {
         if (mLocationManager == null) {
-            mLocationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
+            mLocationManager = (LocationManager) getApplicationContext()
+                    .getSystemService(Context.LOCATION_SERVICE);
         }
     }
 
     private class LocationListener implements android.location.LocationListener {
+
         Context context;
+
         private Location mLastLocation;
-        private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
+
+        private RetrofitCallback<ResultsResponse> mResultsCallback
+                = new RetrofitCallback<ResultsResponse>() {
             @Override
             protected void failure(ResponseBody response, boolean isOffline) {
                 Events.post(new SearchResultsEvent(true, 0));
@@ -122,7 +140,8 @@ public class LocationService extends Service {
             }
 
             @Override
-            protected void success(ResultsResponse apiResponse, Response<ResultsResponse> response) {
+            protected void success(ResultsResponse apiResponse,
+                    Response<ResultsResponse> response) {
                 String lastUpdate = "";
 //                android.os.Debug.waitForDebugger();
                 for (Record record : apiResponse.records) {
@@ -161,14 +180,18 @@ public class LocationService extends Service {
             SearchRequest searchRequest = new SearchRequest();
 
 //            android.os.Debug.waitForDebugger();
-            Cursor cursor = getContentResolver().query(DbContract.ServiceGps.CONTENT_URI.buildUpon().appendQueryParameter("limit", "1").build(), null, null, null, null);
+            Cursor cursor = getContentResolver().query(DbContract.ServiceGps.CONTENT_URI.buildUpon()
+                    .appendQueryParameter("limit", "1").build(), null, null, null, null);
             String lastUpdate = "";
             if (cursor.getCount() != 0) {
                 cursor.moveToFirst();
-                lastUpdate = cursor.getString(cursor.getColumnIndex(DbContract.ServiceGpsColumns.CREATE_AT));
+                lastUpdate = cursor
+                        .getString(cursor.getColumnIndex(DbContract.ServiceGpsColumns.CREATE_AT));
             }
 
-            searchRequest.setType(new ServiceGpsLocation("gps", location.getLatitude(), location.getLongitude(), lastUpdate));
+            searchRequest.setType(
+                    new ServiceGpsLocation("gps", location.getLatitude(), location.getLongitude(),
+                            lastUpdate));
             searchRequest.setLimit(50);
 
             User user = mMemberStorage.loadUser();

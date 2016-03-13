@@ -1,13 +1,13 @@
 package com.travoca.app.fragment;
 
+import com.tech.freak.wizardpager.model.Page;
+import com.tech.freak.wizardpager.ui.PageFragmentCallbacks;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.tech.freak.wizardpager.model.Page;
-import com.tech.freak.wizardpager.ui.PageFragmentCallbacks;
 
 import java.security.InvalidParameterException;
 
@@ -18,6 +18,7 @@ import java.security.InvalidParameterException;
 public abstract class PageFragment extends BaseFragment implements PageFragmentInterface.FormData {
 
     protected Page mPage;
+
     protected PageFragmentInterface mCallbacks;
 
     @Override
@@ -53,7 +54,8 @@ public abstract class PageFragment extends BaseFragment implements PageFragmentI
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
         mCallbacks.addPageFormInterface(this);
         return null;
     }

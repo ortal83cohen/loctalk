@@ -1,5 +1,34 @@
 package com.travoca.app.fragment;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+import com.travoca.api.TravocaApi;
+import com.travoca.api.model.Record;
+import com.travoca.api.model.ResultsResponse;
+import com.travoca.api.utils.RequestUtils;
+import com.travoca.app.App;
+import com.travoca.app.R;
+import com.travoca.app.TravocaApplication;
+import com.travoca.app.activity.LoginActivity;
+import com.travoca.app.activity.RecordDetailsActivity;
+import com.travoca.app.activity.RecordDetailsTabsActivity;
+import com.travoca.app.adapter.RecordCardViewHolder;
+import com.travoca.app.events.Events;
+import com.travoca.app.member.MemberStorage;
+import com.travoca.app.member.model.User;
+import com.travoca.app.model.RecordListRequest;
+import com.travoca.app.provider.LikedRecords;
+import com.travoca.app.recorddetails.RecordViewHolder;
+
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -30,34 +59,6 @@ import android.view.animation.Transformation;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptor;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.travoca.api.TravocaApi;
-import com.travoca.api.model.Record;
-import com.travoca.api.model.ResultsResponse;
-import com.travoca.api.utils.RequestUtils;
-import com.travoca.app.App;
-import com.travoca.app.R;
-import com.travoca.app.TravocaApplication;
-import com.travoca.app.activity.LoginActivity;
-import com.travoca.app.activity.RecordDetailsActivity;
-import com.travoca.app.activity.RecordDetailsTabsActivity;
-import com.travoca.app.adapter.RecordCardViewHolder;
-import com.travoca.app.events.Events;
-import com.travoca.app.member.MemberStorage;
-import com.travoca.app.member.model.User;
-import com.travoca.app.model.RecordListRequest;
-import com.travoca.app.provider.LikedRecords;
-import com.travoca.app.recorddetails.RecordViewHolder;
-
 import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -76,29 +77,50 @@ import static com.google.android.gms.maps.GoogleMap.MAP_TYPE_NORMAL;
 import static com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 
 
-public class RecordDetailsFragment extends BaseFragment implements View.OnClickListener, OnMapReadyCallback, OnMapClickListener, OnMarkerClickListener {
+public class RecordDetailsFragment extends BaseFragment
+        implements View.OnClickListener, OnMapReadyCallback, OnMapClickListener,
+        OnMarkerClickListener {
+
     private static final int IMAGE_STATE_EXPANDED = 1;
+
     private static final int IMAGE_STATE_NORMAL = 2;
+
     private static final String SNIPPET_DETAILS = "snippet_details";
+
     private static final String IMAGE_FLAG = "image_flag";
+
     private static final String BUTTON_FLAG = "button_flag";
+
     boolean mIsImageExpended = false;
+
     RecordCardViewHolder recordCardViewHolder;
+
     @Bind(R.id.see_all_record)
     Button mMoreRecordsButton;
+
     @Bind(R.id.play)
     Button mPlayButton;
+
     @Bind(R.id.record_card)
     FrameLayout mRecordCard;
+
     @Bind(R.id.pager)
     android.support.v4.view.ViewPager mImagePager;
+
     private int mImageState = IMAGE_STATE_NORMAL;
+
     private Record mRecord;
+
     private int mDisplayHeight = 0;
+
     private int mImageMinimumHeight;
+
     private boolean mMoreRoomsButtonVisible = true;
+
     private RecordListRequest mRequest;
+
     private MediaPlayer mediaPlayer;
+
     private Callback<ResultsResponse> mLikeResultsCallback = new Callback<ResultsResponse>() {
         @Override
         public void onResponse(Response<ResultsResponse> response, Retrofit retrofit) {
@@ -146,7 +168,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+            Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_record_details, container, false);
         ButterKnife.bind(this, view);
         MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
@@ -163,7 +185,8 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         mRequest = getArguments().getParcelable("request");
         headerRender.render(mRecord);
 
-        final GestureDetector tapGestureDetector = new GestureDetector(getActivity(), new TapGestureListener());
+        final GestureDetector tapGestureDetector = new GestureDetector(getActivity(),
+                new TapGestureListener());
 
         mImagePager.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View v, MotionEvent event) {
@@ -191,8 +214,10 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
                 @Override
                 public void onCompletion(MediaPlayer mp) {
-                    final TravocaApi travocaApi = TravocaApplication.provide(getActivity()).travocaApi();
-                    final MediaPlayer.OnCompletionListener emptyListener = new MediaPlayer.OnCompletionListener() {
+                    final TravocaApi travocaApi = TravocaApplication.provide(getActivity())
+                            .travocaApi();
+                    final MediaPlayer.OnCompletionListener emptyListener
+                            = new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
 
@@ -203,14 +228,16 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
                             .setMessage("did you liked this record?")
                             .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
-                                    travocaApi.like(mRecord.id, user.id).enqueue(mLikeResultsCallback);
+                                    travocaApi.like(mRecord.id, user.id)
+                                            .enqueue(mLikeResultsCallback);
                                     recordCardViewHolder.addLike();
                                     mediaPlayer.setOnCompletionListener(emptyListener);
                                 }
                             })
                             .setNegativeButton("No", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
-                                    travocaApi.unlike(mRecord.id, user.id).enqueue(mLikeResultsCallback);
+                                    travocaApi.unlike(mRecord.id, user.id)
+                                            .enqueue(mLikeResultsCallback);
                                     recordCardViewHolder.addDislike();
                                     mediaPlayer.setOnCompletionListener(emptyListener);
                                 }
@@ -267,7 +294,8 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     }
 
     private void setupMap() {
-        SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map_container);
+        SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager()
+                .findFragmentById(R.id.map_container);
         mapFragment.getMapAsync(this);
     }
 
@@ -292,7 +320,8 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
                 if (isLiked) {
                     LikedRecords.delete(mRecord.id, getActivity());
                 } else {
-                    LikedRecords.insert(mRecord.id, mRecord.locationName, mRecord.title, getActivity());
+                    LikedRecords
+                            .insert(mRecord.id, mRecord.locationName, mRecord.title, getActivity());
                 }
                 break;
             case R.id.menu_streetview:
@@ -355,7 +384,9 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         Animation a = new Animation() {
             @Override
             protected void applyTransformation(float interpolatedTime, Transformation t) {
-                v.getLayoutParams().height = (int) ((getDisplayHeight() - mStartHeight) * interpolatedTime) + mStartHeight;
+                v.getLayoutParams().height =
+                        (int) ((getDisplayHeight() - mStartHeight) * interpolatedTime)
+                                + mStartHeight;
                 v.requestLayout();
             }
 
@@ -375,7 +406,8 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
     public int getDisplayHeight() {
         if (mDisplayHeight == 0) {
-            mDisplayHeight = getActivity().getWindow().findViewById(Window.ID_ANDROID_CONTENT).getHeight();
+            mDisplayHeight = getActivity().getWindow().findViewById(Window.ID_ANDROID_CONTENT)
+                    .getHeight();
         }
         return mDisplayHeight;
     }
@@ -385,7 +417,9 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         Animation a = new Animation() {
             @Override
             protected void applyTransformation(float interpolatedTime, Transformation t) {
-                v.getLayoutParams().height = (int) ((mStartHeight - mImageMinimumHeight) * (1 - interpolatedTime)) + mImageMinimumHeight;
+                v.getLayoutParams().height =
+                        (int) ((mStartHeight - mImageMinimumHeight) * (1 - interpolatedTime))
+                                + mImageMinimumHeight;
                 v.requestLayout();
             }
 
@@ -405,14 +439,16 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.map_pin_selected));
+        BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap(
+                BitmapFactory.decodeResource(getResources(), R.drawable.map_pin_selected));
         MarkerOptions options = new MarkerOptions()
                 .position(new LatLng(mRecord.lat, mRecord.lon))
                 .icon(icon);
 
         googleMap.addMarker(options);
 
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(mRecord.lat + 0.005, mRecord.lon), 12));
+        googleMap.moveCamera(CameraUpdateFactory
+                .newLatLngZoom(new LatLng(mRecord.lat + 0.005, mRecord.lon), 12));
 
         googleMap.setMapType(MAP_TYPE_NORMAL);
 
@@ -421,7 +457,9 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
         googleMap.getUiSettings().setMyLocationButtonEnabled(false);
 
         // Place dot on current location
-        if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat
+                .checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION)
+                == PackageManager.PERMISSION_GRANTED) {
             googleMap.setMyLocationEnabled(true);
         }
 
@@ -457,7 +495,9 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     }
 
     public void showFullMap(Record record) {
-        Intent intent = RecordDetailsTabsActivity.createIntent(record, getRequest(), RecordDetailsTabsActivity.TAB_MAP, getActivity());
+        Intent intent = RecordDetailsTabsActivity
+                .createIntent(record, getRequest(), RecordDetailsTabsActivity.TAB_MAP,
+                        getActivity());
         startActivity(intent);
     }
 
@@ -564,6 +604,7 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
     }
 
     class TapGestureListener extends GestureDetector.SimpleOnGestureListener {
+
         @Override
         public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
             if (Math.abs(velocityY) > Math.abs(velocityX)) {
@@ -586,7 +627,9 @@ public class RecordDetailsFragment extends BaseFragment implements View.OnClickL
             if (Math.abs(distanceY) > Math.abs(distanceX)) {
                 int height = mImagePager.getHeight();
                 int width = mImagePager.getWidth();
-                if (height - distanceY >= mImageMinimumHeight && height - distanceY <= getDisplayHeight() - mMoreRecordsButton.getMeasuredHeight()) {
+                if (height - distanceY >= mImageMinimumHeight
+                        && height - distanceY <= getDisplayHeight() - mMoreRecordsButton
+                        .getMeasuredHeight()) {
                     height -= (int) distanceY;
                 }
                 mImagePager.setLayoutParams(new FrameLayout.LayoutParams(width, height));

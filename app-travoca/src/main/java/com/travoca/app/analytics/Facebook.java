@@ -1,9 +1,9 @@
 package com.travoca.app.analytics;
 
-import android.content.Context;
-
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
+
+import android.content.Context;
 
 /**
  * @author ortal

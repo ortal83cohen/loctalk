@@ -13,6 +13,7 @@ public interface PageFragmentInterface extends PageFragmentCallbacks {
     void removePageFormInterface(FormData form);
 
     interface FormData {
+
         String getPageKey();
 
         void savePageData();

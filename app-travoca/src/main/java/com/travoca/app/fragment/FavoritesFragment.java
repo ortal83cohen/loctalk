@@ -1,5 +1,9 @@
 package com.travoca.app.fragment;
 
+import com.travoca.app.R;
+import com.travoca.app.adapter.FavoritesAdapter;
+import com.travoca.app.provider.DbContract;
+
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,10 +13,6 @@ import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
-import com.travoca.app.R;
-import com.travoca.app.adapter.FavoritesAdapter;
-import com.travoca.app.provider.DbContract;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -21,8 +21,10 @@ import butterknife.ButterKnife;
  * @date 2015-05-17
  */
 public class FavoritesFragment extends BaseFragment {
+
     @Bind(android.R.id.list)
     ListView mRecyclerView;
+
     @Bind(R.id.record_list_no_result)
     LinearLayout mNoResult;
 
@@ -33,12 +35,15 @@ public class FavoritesFragment extends BaseFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+            Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_favorites_cities, container, false);
 
         ButterKnife.bind(this, view);
-        Cursor cursor = getActivity().getContentResolver().query(DbContract.Favorites.CONTENT_URI.buildUpon().
-                appendQueryParameter("group by", DbContract.FavoritesColumns.TITLE + "," + DbContract.FavoritesColumns.TEXT).build(), null, null, null, null);
+        Cursor cursor = getActivity().getContentResolver()
+                .query(DbContract.Favorites.CONTENT_URI.buildUpon().
+                        appendQueryParameter("group by", DbContract.FavoritesColumns.TITLE + ","
+                                + DbContract.FavoritesColumns.TEXT).build(), null, null, null,
+                        null);
 
         if (cursor == null) {
             mNoResult.setVisibility(View.VISIBLE);
@@ -59,7 +64,6 @@ public class FavoritesFragment extends BaseFragment {
             });
             getActivity().setTitle(R.string.favorites);
         }
-
 
         return view;
     }

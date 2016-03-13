@@ -12,6 +12,7 @@ import android.view.ViewAnimationUtils;
  * @date 2015-05-25
  */
 public class RevealAnimatorCompat {
+
     private static final int ANIM_DURATION = 300;
 
     public static Animator show(final View viewRoot, int x, int y, int delay) {

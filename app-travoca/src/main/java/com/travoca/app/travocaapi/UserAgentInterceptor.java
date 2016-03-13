@@ -1,11 +1,11 @@
 package com.travoca.app.travocaapi;
 
-import android.content.Context;
-import android.content.pm.PackageManager;
-
 import com.squareup.okhttp.Interceptor;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
+
+import android.content.Context;
+import android.content.pm.PackageManager;
 
 import java.io.IOException;
 
@@ -35,7 +35,8 @@ public class UserAgentInterceptor implements Interceptor {
         Request originalRequest = chain.request();
         Request requestWithUserAgent = originalRequest.newBuilder()
                 .removeHeader("User-Agent")
-                .addHeader("User-Agent", "TRAVOCA-Android/" + versionName + agent.substring(agent.indexOf("(")))
+                .addHeader("User-Agent",
+                        "TRAVOCA-Android/" + versionName + agent.substring(agent.indexOf("(")))
                 .build();
         return chain.proceed(requestWithUserAgent);
     }

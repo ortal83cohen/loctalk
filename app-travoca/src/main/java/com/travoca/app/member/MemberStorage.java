@@ -1,18 +1,20 @@
 package com.travoca.app.member;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-
 import com.travoca.app.member.model.AccessToken;
 import com.travoca.app.member.model.Profile;
 import com.travoca.app.member.model.User;
+
+import android.content.Context;
+import android.content.SharedPreferences;
 
 /**
  * @author ortal
  * @date 2015-08-06
  */
 public class MemberStorage {
+
     private static final String FILE_NAME = "member";
+
     private final SharedPreferences mPrefs;
 
     public MemberStorage(Context context) {

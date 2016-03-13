@@ -1,6 +1,19 @@
 package com.travoca.app.fragment;
 
 
+import com.squareup.otto.Subscribe;
+import com.squareup.picasso.Picasso;
+import com.travoca.app.App;
+import com.travoca.app.R;
+import com.travoca.app.activity.BaseActivity;
+import com.travoca.app.events.Events;
+import com.travoca.app.events.UserLogOutEvent;
+import com.travoca.app.events.UserLoginEvent;
+import com.travoca.app.events.UserProfileUpdateEvent;
+import com.travoca.app.member.MemberStorage;
+import com.travoca.app.member.model.User;
+import com.travoca.app.widget.NavigationDrawer;
+
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,24 +32,13 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.otto.Subscribe;
-import com.squareup.picasso.Picasso;
-import com.travoca.app.App;
-import com.travoca.app.R;
-import com.travoca.app.activity.BaseActivity;
-import com.travoca.app.events.Events;
-import com.travoca.app.events.UserLogOutEvent;
-import com.travoca.app.events.UserLoginEvent;
-import com.travoca.app.events.UserProfileUpdateEvent;
-import com.travoca.app.member.MemberStorage;
-import com.travoca.app.member.model.User;
-import com.travoca.app.widget.NavigationDrawer;
-
 
 public class NavigationFragment extends Fragment implements View.OnClickListener {
 
     private ActionBarDrawerToggle mDrawerToggle;
+
     private DrawerLayout mDrawerLayout;
+
     private View mView;
 
     @Override
@@ -53,7 +55,7 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+            Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fragment_navigation_drawer, container, false);
 
@@ -108,7 +110,8 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
             TextView nameFirst = (TextView) header.findViewById(R.id.profile_name);
             TextView nameLast = (TextView) header.findViewById(R.id.profile_surname);
 
-            if (TextUtils.isEmpty(user.profile.firstName) && TextUtils.isEmpty(user.profile.lastName)) {
+            if (TextUtils.isEmpty(user.profile.firstName) && TextUtils
+                    .isEmpty(user.profile.lastName)) {
                 nameFirst.setText("Hello,");
                 nameLast.setText("Traveller");
             } else {

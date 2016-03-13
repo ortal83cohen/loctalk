@@ -12,7 +12,9 @@ import java.util.List;
  * @date 2015-05-25
  */
 public class AnimatorCollection {
+
     private List<Animator> mAnimators;
+
     private AnimatorSet mSet;
 
     public AnimatorCollection() {

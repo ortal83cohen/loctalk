@@ -32,7 +32,8 @@ public class ResizeAnimator {
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
                 int val = (Integer) valueAnimator.getAnimatedValue();
-                LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) view.getLayoutParams();
+                LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) view
+                        .getLayoutParams();
                 layoutParams.topMargin = val;
                 view.setLayoutParams(layoutParams);
             }

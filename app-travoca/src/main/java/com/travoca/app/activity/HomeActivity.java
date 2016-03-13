@@ -1,25 +1,13 @@
 package com.travoca.app.activity;
 
-import android.animation.ValueAnimator;
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.net.ParseException;
-import android.net.Uri;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewTreeObserver;
-import android.widget.Toast;
-
-import com.crashlytics.android.answers.Answers;
-import com.facebook.appevents.AppEventsLogger;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.ActivityRecognition;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.places.Places;
+
+import com.crashlytics.android.answers.Answers;
+import com.facebook.appevents.AppEventsLogger;
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.Type;
@@ -37,19 +25,39 @@ import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.widget.IntentIntegrator;
 import com.travoca.app.widget.IntentResult;
 
+import android.animation.ValueAnimator;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.net.ParseException;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewTreeObserver;
+import android.widget.Toast;
+
 import butterknife.ButterKnife;
 import io.fabric.sdk.android.Fabric;
 import retrofit.Response;
 
 //import com.newrelic.agent.android.NewRelic;
 
-public class HomeActivity extends BaseActivity implements HomeFragment.Listener, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
+public class HomeActivity extends BaseActivity
+        implements HomeFragment.Listener, GoogleApiClient.OnConnectionFailedListener,
+        GoogleApiClient.ConnectionCallbacks {
 
     public static final int REQUEST_CHECK_SETTINGS = 1;
+
     private static final String FRAGMENT_HOME = "loc_chooser";
+
     private static final int NOTIFICATION_ID = 0;
+
     protected GoogleApiClient mGoogleApiClient;
+
     private CoreInterface.Service mCoreInterface;
+
     private RetrofitCallback<String> mResultsCallback = new RetrofitCallback<String>() {
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
@@ -144,7 +152,8 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
             RecordListRequest request = getRecordsRequest();
             RequestUtils.apply(request);
             request.setType(lastSearchRequest.getType());
-            HomeFragment homeFragment = (HomeFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME);
+            HomeFragment homeFragment = (HomeFragment) getSupportFragmentManager()
+                    .findFragmentByTag(FRAGMENT_HOME);
             if (homeFragment != null) {
                 homeFragment.init(request);
             }
@@ -164,7 +173,8 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
                 return true;
             case R.id.menu_customer:
                 UserPreferences userPrefs = getUserPrefs();
-                mCoreInterface.customerServicePhone(userPrefs.getCountryCode().toLowerCase()).enqueue(mResultsCallback);
+                mCoreInterface.customerServicePhone(userPrefs.getCountryCode().toLowerCase())
+                        .enqueue(mResultsCallback);
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -172,16 +182,19 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
 
     private void animateBackground() {
         final View content = getWindow().getDecorView();
-        content.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override
-            public void onGlobalLayout() {
-                final Drawable background = getResources().getDrawable(R.drawable.img_background);
-                ValueAnimator blurAnimation = new BlurAnimation().blur(content, background, 4f);
-                blurAnimation.setStartDelay(100);
-                blurAnimation.start();
-                content.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-            }
-        });
+        content.getViewTreeObserver()
+                .addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+                    @Override
+                    public void onGlobalLayout() {
+                        final Drawable background = getResources()
+                                .getDrawable(R.drawable.img_background);
+                        ValueAnimator blurAnimation = new BlurAnimation()
+                                .blur(content, background, 4f);
+                        blurAnimation.setStartDelay(100);
+                        blurAnimation.start();
+                        content.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                    }
+                });
     }
 
     @Override
@@ -197,7 +210,8 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
 
     @Override
     public void onBackPressed() {
-        HomeFragment homeFragment = (HomeFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME);
+        HomeFragment homeFragment = (HomeFragment) getSupportFragmentManager()
+                .findFragmentByTag(FRAGMENT_HOME);
         if (homeFragment.onBackPressed()) {
             return;
         }
@@ -224,7 +238,8 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
 
         request.setType(locationType);
         RequestUtils.apply(request);
-        startActivity(RecordListActivity.createIntent(request, this));//// TODO: 3/3/2016  move to base activity
+        startActivity(RecordListActivity
+                .createIntent(request, this));//// TODO: 3/3/2016  move to base activity
     }
 
     @Override
@@ -256,14 +271,16 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
         switch (requestCode) {
             case REQUEST_CHECK_SETTINGS:
                 if (resultCode == RESULT_OK) {
-                    HomeFragment fragment = (HomeFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME);
+                    HomeFragment fragment = (HomeFragment) getSupportFragmentManager()
+                            .findFragmentByTag(FRAGMENT_HOME);
                     if (fragment != null) {
                         fragment.onLocationAvailable();
                     }
                 }
                 break;
             case IntentIntegrator.REQUEST_CODE:
-                IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+                IntentResult scanningResult = IntentIntegrator
+                        .parseActivityResult(requestCode, resultCode, data);
                 //check we have a valid result
                 if (scanningResult != null) {
                     //get content from Intent Result
@@ -277,7 +294,8 @@ public class HomeActivity extends BaseActivity implements HomeFragment.Listener,
                             intent.setData(Uri.parse(scanContent));
                             startActivity(intent);
                         } else {
-                            Toast.makeText(this, R.string.qr_not_match_warning, Toast.LENGTH_LONG).show();
+                            Toast.makeText(this, R.string.qr_not_match_warning, Toast.LENGTH_LONG)
+                                    .show();
                         }
                     }
                 }

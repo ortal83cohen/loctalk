@@ -1,16 +1,10 @@
 package com.travoca.app.activity;
 
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.Color;
-import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.view.MenuItem;
-
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.StreetViewPanorama;
 import com.google.android.gms.maps.StreetViewPanoramaFragment;
 import com.google.android.gms.maps.model.LatLng;
+
 import com.travoca.api.model.Record;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.Type;
@@ -21,6 +15,13 @@ import com.travoca.app.fragment.RecordDetailsFragment;
 import com.travoca.app.model.Location;
 import com.travoca.app.model.RecordListRequest;
 
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.view.MenuItem;
+
 import butterknife.ButterKnife;
 
 /**
@@ -28,11 +29,17 @@ import butterknife.ButterKnife;
  * @date 2015-04-19
  */
 public class RecordDetailsActivity extends BaseActivity implements HomeFragment.Listener {
+
     public static final String FRAGMENT_HOTEL_DETAILS = "fragment_record_details";
+
     public static final String EXTRA_DATA = "data";
+
     private static final String FRAGMENT_HOME = "fragment_datepicker";
+
     private Record mRecord;
+
     private StreetViewPanorama mStreetView;
+
     private android.app.Fragment mStreetViewFragment;
 
 
@@ -62,7 +69,8 @@ public class RecordDetailsActivity extends BaseActivity implements HomeFragment.
         createStreetView();
 
         FragmentManager fm = getSupportFragmentManager();
-        RecordDetailsFragment recordDetailsFragment = (RecordDetailsFragment) fm.findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
+        RecordDetailsFragment recordDetailsFragment = (RecordDetailsFragment) fm
+                .findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
         if (recordDetailsFragment == null) {
             recordDetailsFragment = RecordDetailsFragment.newInstance(getRecordsRequest(), mRecord);
             fm.beginTransaction()
@@ -108,7 +116,8 @@ public class RecordDetailsActivity extends BaseActivity implements HomeFragment.
             getFragmentManager().beginTransaction().hide(mStreetViewFragment).commit();
         } else {
             FragmentManager fm = getSupportFragmentManager();
-            RecordDetailsFragment fragmentDetails = (RecordDetailsFragment) fm.findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
+            RecordDetailsFragment fragmentDetails = (RecordDetailsFragment) fm
+                    .findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
             if (fragmentDetails != null) {
                 if (fragmentDetails.isImageExpanded()) {
                     fragmentDetails.collapseImage();
@@ -147,7 +156,9 @@ public class RecordDetailsActivity extends BaseActivity implements HomeFragment.
         remove(getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOME));
 
         RequestUtils.apply(getRecordsRequest());
-        RecordDetailsFragment recordDetailsFragment = (RecordDetailsFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
+        RecordDetailsFragment recordDetailsFragment
+                = (RecordDetailsFragment) getSupportFragmentManager()
+                .findFragmentByTag(FRAGMENT_HOTEL_DETAILS);
         if (recordDetailsFragment != null) {
             recordDetailsFragment.checkAvailability(getRecordsRequest());
         }

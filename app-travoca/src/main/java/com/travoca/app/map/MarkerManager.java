@@ -1,10 +1,10 @@
 package com.travoca.app.map;
 
-import android.view.View;
-
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import android.view.View;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -19,10 +19,14 @@ import java.util.Set;
  * All marker operations (adds and removes) should occur via its collection class. That is, don't
  * add a marker via a collection, then remove it via Marker.remove()
  */
-public class MarkerManager implements GoogleMap.OnInfoWindowClickListener, GoogleMap.OnMarkerClickListener, GoogleMap.OnMarkerDragListener, GoogleMap.InfoWindowAdapter {
+public class MarkerManager
+        implements GoogleMap.OnInfoWindowClickListener, GoogleMap.OnMarkerClickListener,
+        GoogleMap.OnMarkerDragListener, GoogleMap.InfoWindowAdapter {
+
     private final GoogleMap mMap;
 
     private final Map<String, Collection> mNamedCollections = new HashMap<>();
+
     private final Map<Marker, Collection> mAllMarkers = new HashMap<>();
 
     public MarkerManager(GoogleMap map) {
@@ -34,7 +38,8 @@ public class MarkerManager implements GoogleMap.OnInfoWindowClickListener, Googl
     }
 
     /**
-     * Create a new named collection, which can later be looked up by {@link #getCollection(String)}
+     * Create a new named collection, which can later be looked up by {@link
+     * #getCollection(String)}
      *
      * @param id a unique id for this collection.
      */
@@ -85,7 +90,8 @@ public class MarkerManager implements GoogleMap.OnInfoWindowClickListener, Googl
     @Override
     public boolean onMarkerClick(Marker marker) {
         Collection collection = mAllMarkers.get(marker);
-        return collection != null && collection.mMarkerClickListener != null && collection.mMarkerClickListener.onMarkerClick(marker);
+        return collection != null && collection.mMarkerClickListener != null
+                && collection.mMarkerClickListener.onMarkerClick(marker);
     }
 
     @Override
@@ -124,10 +130,15 @@ public class MarkerManager implements GoogleMap.OnInfoWindowClickListener, Googl
     }
 
     public class Collection {
+
         private final Set<Marker> mMarkers = new HashSet<>();
+
         private GoogleMap.OnInfoWindowClickListener mInfoWindowClickListener;
+
         private GoogleMap.OnMarkerClickListener mMarkerClickListener;
+
         private GoogleMap.OnMarkerDragListener mMarkerDragListener;
+
         private GoogleMap.InfoWindowAdapter mInfoWindowAdapter;
 
         public Collection() {
@@ -161,7 +172,8 @@ public class MarkerManager implements GoogleMap.OnInfoWindowClickListener, Googl
             return Collections.unmodifiableCollection(mMarkers);
         }
 
-        public void setOnInfoWindowClickListener(GoogleMap.OnInfoWindowClickListener infoWindowClickListener) {
+        public void setOnInfoWindowClickListener(
+                GoogleMap.OnInfoWindowClickListener infoWindowClickListener) {
             mInfoWindowClickListener = infoWindowClickListener;
         }
 

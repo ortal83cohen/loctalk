@@ -1,5 +1,8 @@
 package com.travoca.app.widget;
 
+import com.travoca.app.R;
+import com.travoca.app.anim.ResizeAnimator;
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
@@ -12,15 +15,18 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.Interpolator;
 
-import com.travoca.app.R;
-import com.travoca.app.anim.ResizeAnimator;
-
 public class ScrollAwareViewBehavior extends CoordinatorLayout.Behavior<View> {
+
     private static final Interpolator INTERPOLATOR = new FastOutSlowInInterpolator();
+
     private boolean mIsAnimating = false;
+
     private int mViewHeight = -1;
+
     private View mView;
+
     private Handler mDelayedHandler;
+
     private Runnable mDelayedShowRunnable = new Runnable() {
         @Override
         public void run() {
@@ -34,7 +40,7 @@ public class ScrollAwareViewBehavior extends CoordinatorLayout.Behavior<View> {
 
     @Override
     public boolean onStartNestedScroll(final CoordinatorLayout coordinatorLayout, final View child,
-                                       final View directTargetChild, final View target, final int nestedScrollAxes) {
+            final View directTargetChild, final View target, final int nestedScrollAxes) {
         if (mView == null) {
             mView = child.findViewById(R.id.panel_top); // TODO: extract to attribute
         }
@@ -43,14 +49,16 @@ public class ScrollAwareViewBehavior extends CoordinatorLayout.Behavior<View> {
         }
         // Ensure we react to vertical scrolling
         return nestedScrollAxes == ViewCompat.SCROLL_AXIS_VERTICAL
-                || super.onStartNestedScroll(coordinatorLayout, child, directTargetChild, target, nestedScrollAxes);
+                || super.onStartNestedScroll(coordinatorLayout, child, directTargetChild, target,
+                nestedScrollAxes);
     }
 
     @Override
     public void onNestedScroll(final CoordinatorLayout coordinatorLayout, final View child,
-                               final View target, final int dxConsumed, final int dyConsumed,
-                               final int dxUnconsumed, final int dyUnconsumed) {
-        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
+            final View target, final int dxConsumed, final int dyConsumed,
+            final int dxUnconsumed, final int dyUnconsumed) {
+        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed,
+                dyUnconsumed);
         if (mIsAnimating) {
             return;
         }

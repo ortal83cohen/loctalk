@@ -10,12 +10,17 @@ import android.view.ViewGroup;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class EndlessAdapter extends AdapterWrapper {
+
     public static final int VIEW_TYPE_LOAD_MORE = -1;
+
     private AtomicBoolean keepOnAppending = new AtomicBoolean(false);
+
     private int mLoadMoreViewId;
+
     private Context mContext;
 
-    public EndlessAdapter(RecyclerView.Adapter adapter, Context context, @LayoutRes int loadMoreViewId) {
+    public EndlessAdapter(RecyclerView.Adapter adapter, Context context,
+            @LayoutRes int loadMoreViewId) {
         super(adapter);
         mLoadMoreViewId = loadMoreViewId;
         mContext = context;
@@ -94,6 +99,7 @@ public class EndlessAdapter extends AdapterWrapper {
     }
 
     public static class FooterViewHolder extends RecyclerView.ViewHolder {
+
         public FooterViewHolder(View loadMoreView) {
             super(loadMoreView);
         }

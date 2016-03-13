@@ -12,6 +12,7 @@ import retrofit.GsonConverterFactory;
  * @date 2015-11-03
  */
 public class RetrofitConverter {
+
     public static Object getBodyAs(ResponseBody body, Type type) throws IOException {
 
         return GsonConverterFactory.create().fromResponseBody(type, null).convert(body);

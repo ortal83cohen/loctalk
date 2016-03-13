@@ -14,16 +14,17 @@
 
 package com.travoca.app.utils.amazon.utils;
 
-import android.content.SharedPreferences;
-
 import org.json.JSONArray;
 import org.json.JSONException;
+
+import android.content.SharedPreferences;
 
 import java.util.ArrayList;
 
 public class SharedPreferencesUtils {
 
-    public static void setStringArrayPref(SharedPreferences prefs, String key, ArrayList<String> values) {
+    public static void setStringArrayPref(SharedPreferences prefs, String key,
+            ArrayList<String> values) {
         SharedPreferences.Editor editor = prefs.edit();
         JSONArray a = new JSONArray();
         for (int i = 0; i < values.size(); i++) {

@@ -1,5 +1,15 @@
 package com.travoca.app.activity;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.ActivityRecognition;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.places.Places;
+
+import com.travoca.app.R;
+import com.travoca.app.fragment.NewRecordFragment;
+import com.travoca.app.widget.ImagePicker;
+
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -11,15 +21,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.ActivityRecognition;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.places.Places;
-import com.travoca.app.R;
-import com.travoca.app.fragment.NewRecordFragment;
-import com.travoca.app.widget.ImagePicker;
-
 import java.io.File;
 import java.util.List;
 
@@ -27,13 +28,20 @@ import java.util.List;
  * @author user
  * @date 2016-02-17
  */
-public class NewRecordActivity extends BaseActivity implements NewRecordFragment.Listener, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
+public class NewRecordActivity extends BaseActivity
+        implements NewRecordFragment.Listener, GoogleApiClient.OnConnectionFailedListener,
+        GoogleApiClient.ConnectionCallbacks {
 
     public static final int PICK_IMAGE_ID = 10;
+
     private static final int REQUEST_PERMISSION_LOCATION = 1;
+
     private static final String FRAGMENT_NEW_RECORD = "fragment new record";
+
     private static final String TEMP_IMAGE_NAME = "image";
+
     protected GoogleApiClient mGoogleApiClient;
+
     private Bitmap selectedBitmap;
 
     public static Intent createIntent(Context context) {
@@ -46,7 +54,8 @@ public class NewRecordActivity extends BaseActivity implements NewRecordFragment
         return imageFile;
     }
 
-    private static List<Intent> addIntentsToList(Context context, List<Intent> list, Intent intent) {
+    private static List<Intent> addIntentsToList(Context context, List<Intent> list,
+            Intent intent) {
         List<ResolveInfo> resInfo = context.getPackageManager().queryIntentActivities(intent, 0);
         for (ResolveInfo resolveInfo : resInfo) {
             String packageName = resolveInfo.activityInfo.packageName;
@@ -92,19 +101,22 @@ public class NewRecordActivity extends BaseActivity implements NewRecordFragment
         switch (requestCode) {
             case PICK_IMAGE_ID:
                 if (resultCode != 0) {
-                    NewRecordFragment fragment = (NewRecordFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_NEW_RECORD);
-                    selectedBitmap = ImagePicker.getImageFromResult(this, resultCode, imageReturnedIntent);
+                    NewRecordFragment fragment = (NewRecordFragment) getSupportFragmentManager()
+                            .findFragmentByTag(FRAGMENT_NEW_RECORD);
+                    selectedBitmap = ImagePicker
+                            .getImageFromResult(this, resultCode, imageReturnedIntent);
                     if (selectedBitmap.getWidth() < selectedBitmap.getHeight()) {
                         selectedBitmap = null;
                         fragment.setImage(getResources().getDrawable(R.drawable.place_holder_img));
                         new AlertDialog.Builder(this)
                                 .setTitle("Image Alert")
                                 .setMessage("You should take image only in landscape mode")
-                                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        // continue with delete
-                                    }
-                                })
+                                .setPositiveButton(android.R.string.ok,
+                                        new DialogInterface.OnClickListener() {
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                // continue with delete
+                                            }
+                                        })
                                 .setIcon(android.R.drawable.ic_dialog_alert)
                                 .show();
                     } else {

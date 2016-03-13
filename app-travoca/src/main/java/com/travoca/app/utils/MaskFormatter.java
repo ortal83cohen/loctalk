@@ -3,23 +3,35 @@ package com.travoca.app.utils;
 import java.util.ArrayList;
 
 public class MaskFormatter {
+
     private static final char DIGIT_KEY = '#';
+
     private static final char LITERAL_KEY = '\'';
+
     private static final char UPPERCASE_KEY = 'U';
+
     private static final char LOWERCASE_KEY = 'L';
+
     private static final char ALPHA_NUMERIC_KEY = 'A';
+
     private static final char CHARACTER_KEY = '?';
+
     private static final char ANYTHING_KEY = '*';
+
     private static final char HEX_KEY = 'H';
 
     private static final MaskCharacter[] EMPTY_MASK_CHARS = new MaskCharacter[0];
 
     private String mMask;
+
     private transient MaskCharacter[] mMaskChars;
 
     private String mValidCharacters;
+
     private String mInvalidCharacters;
+
     private String mPlaceholderString;
+
     private char mPlaceholder;
 
     public MaskFormatter() {
@@ -142,7 +154,8 @@ public class MaskFormatter {
         }
     }
 
-    private void append(StringBuffer result, String value, int[] index, String placeholder, MaskCharacter[] mask) {
+    private void append(StringBuffer result, String value, int[] index, String placeholder,
+            MaskCharacter[] mask) {
         for (MaskCharacter aMask : mask) {
             if (!aMask.append(result, value, index, placeholder)) {
                 return;
@@ -151,6 +164,7 @@ public class MaskFormatter {
     }
 
     private class MaskCharacter {
+
         public boolean isLiteral() {
             return false;
         }
@@ -176,7 +190,8 @@ public class MaskFormatter {
             return character;
         }
 
-        public boolean append(StringBuffer buffer, String formatting, int[] index, String placeholder) {
+        public boolean append(StringBuffer buffer, String formatting, int[] index,
+                String placeholder) {
             boolean inString = index[0] < formatting.length();
             char character = inString ? formatting.charAt(index[0]) : 0;
 
@@ -210,6 +225,7 @@ public class MaskFormatter {
     }
 
     private class LiteralCharacter extends MaskCharacter {
+
         private char mLiteralCharacter;
 
         public LiteralCharacter(char character) {
@@ -226,12 +242,14 @@ public class MaskFormatter {
     }
 
     private class DigitMaskCharacter extends MaskCharacter {
+
         public boolean isValidCharacter(char character) {
             return Character.isDigit(character) && super.isValidCharacter(character);
         }
     }
 
     private class UpperCaseCharacter extends MaskCharacter {
+
         public boolean isValidCharacter(char character) {
             return Character.isLetter(character) && super.isValidCharacter(character);
         }
@@ -242,6 +260,7 @@ public class MaskFormatter {
     }
 
     private class LowerCaseCharacter extends MaskCharacter {
+
         public boolean isValidCharacter(char character) {
             return Character.isLetter(character) && super.isValidCharacter(character);
         }
@@ -252,18 +271,21 @@ public class MaskFormatter {
     }
 
     private class AlphaNumericCharacter extends MaskCharacter {
+
         public boolean isValidCharacter(char character) {
             return Character.isLetterOrDigit(character) && super.isValidCharacter(character);
         }
     }
 
     private class CharCharacter extends MaskCharacter {
+
         public boolean isValidCharacter(char character) {
             return Character.isLetter(character) && super.isValidCharacter(character);
         }
     }
 
     private class HexCharacter extends MaskCharacter {
+
         private static final String HEX_CHARS = "0123456789abcedfABCDEF";
 
         public boolean isValidCharacter(char character) {

@@ -62,11 +62,15 @@ import android.view.ViewGroup;
  * complete}
  */
 public abstract class FragmentPagerAdapter extends PagerAdapter {
+
     private static final String TAG = "FragmentPagerAdapter";
+
     private static final boolean DEBUG = false;
 
     private final FragmentManager mFragmentManager;
+
     private FragmentTransaction mCurTransaction = null;
+
     private Fragment mCurrentPrimaryItem = null;
 
     public FragmentPagerAdapter(FragmentManager fm) {
@@ -94,11 +98,15 @@ public abstract class FragmentPagerAdapter extends PagerAdapter {
         String name = getTag(position);
         Fragment fragment = mFragmentManager.findFragmentByTag(name);
         if (fragment != null) {
-            if (DEBUG) AppLog.v(TAG, "Attaching item #" + itemId + ": f=" + fragment);
+            if (DEBUG) {
+                AppLog.v(TAG, "Attaching item #" + itemId + ": f=" + fragment);
+            }
             mCurTransaction.attach(fragment);
         } else {
             fragment = getItem(position);
-            if (DEBUG) AppLog.v(TAG, "Adding item #" + itemId + ": f=" + fragment);
+            if (DEBUG) {
+                AppLog.v(TAG, "Adding item #" + itemId + ": f=" + fragment);
+            }
             mCurTransaction.add(container.getId(), fragment,
                     getTag(position));
         }
@@ -117,8 +125,10 @@ public abstract class FragmentPagerAdapter extends PagerAdapter {
         if (mCurTransaction == null) {
             mCurTransaction = mFragmentManager.beginTransaction();
         }
-        if (DEBUG) AppLog.v(TAG, "Detaching item #" + getItemId(position) + ": f=" + object
-                + " v=" + ((Fragment) object).getView());
+        if (DEBUG) {
+            AppLog.v(TAG, "Detaching item #" + getItemId(position) + ": f=" + object
+                    + " v=" + ((Fragment) object).getView());
+        }
         mCurTransaction.detach((Fragment) object);
     }
 

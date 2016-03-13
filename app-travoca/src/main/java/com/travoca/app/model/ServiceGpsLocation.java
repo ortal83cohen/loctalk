@@ -1,11 +1,11 @@
 package com.travoca.app.model;
 
+import com.google.android.gms.maps.model.LatLng;
+
+import com.travoca.api.model.search.ServiceGpsSprType;
+
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import com.google.android.gms.maps.model.LatLng;
-import com.travoca.api.model.search.ServiceGpsSprType;
-import com.travoca.api.model.search.SprType;
 
 /**
  * @author ortal
@@ -22,7 +22,8 @@ public class ServiceGpsLocation extends ServiceGpsSprType implements Parcelable 
             return new ServiceGpsLocation[size];
         }
     };
-    private  String mLastUpdate;
+
+    private String mLastUpdate;
 
     private String mTitle;
 
@@ -31,7 +32,7 @@ public class ServiceGpsLocation extends ServiceGpsSprType implements Parcelable 
 
     }
 
-    public ServiceGpsLocation(String title, double latitude, double longitude,String lastUpdate) {
+    public ServiceGpsLocation(String title, double latitude, double longitude, String lastUpdate) {
         super(latitude, longitude);
         mTitle = title;
         mLastUpdate = lastUpdate;
@@ -73,6 +74,7 @@ public class ServiceGpsLocation extends ServiceGpsSprType implements Parcelable 
         dest.writeDouble(getLatitude());
         dest.writeDouble(getLongitude());
     }
+
     @Override
     public String getContext() {
         return getLatitude() + "," + getLongitude() + ";" + mLastUpdate;

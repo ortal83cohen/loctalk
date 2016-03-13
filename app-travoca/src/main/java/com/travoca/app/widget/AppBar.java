@@ -1,14 +1,14 @@
 package com.travoca.app.widget;
 
-import android.content.Context;
-import android.support.v7.widget.Toolbar;
-import android.util.AttributeSet;
-
 import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.Type;
 import com.travoca.app.R;
 import com.travoca.app.model.CurrentLocation;
 import com.travoca.app.model.LocationWithTitle;
+
+import android.content.Context;
+import android.support.v7.widget.Toolbar;
+import android.util.AttributeSet;
 
 
 public class AppBar extends Toolbar {
@@ -34,7 +34,6 @@ public class AppBar extends Toolbar {
         } else {
             setTitle("My list");
         }
-
 
 //        String subtitle = "dddddd";
 //        setSubtitle(subtitle);

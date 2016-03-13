@@ -1,10 +1,11 @@
 package com.travoca.app.model;
 
+import com.google.android.gms.maps.model.LatLng;
+
+import com.travoca.api.model.search.SprType;
+
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import com.google.android.gms.maps.model.LatLng;
-import com.travoca.api.model.search.SprType;
 
 /**
  * @author ortal

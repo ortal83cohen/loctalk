@@ -7,6 +7,7 @@ package com.travoca.app;
 public class Config {
 
     public static final String CORE_INTERFACE_ENDPOINT = "http://www.travoca.com";
+
     public static final String CORE_INTERFACE_SECURE_ENDPOINT = "https://secure.travoca.com";
 
     public static final String POI_IMAGE_ENDPOINT = "http://d1pa4et5htdsls.cloudfront.net/images/";
@@ -14,6 +15,7 @@ public class Config {
     public static final String TRAVOCA_API_KEY = "Ec95jbYA1iuAt";
 
     private static String sCoreInterfaceEndpoint = CORE_INTERFACE_ENDPOINT;
+
     private static String sCoreInterfaceSecureEndpoint = CORE_INTERFACE_SECURE_ENDPOINT;
 
     private static boolean sIsProduction;

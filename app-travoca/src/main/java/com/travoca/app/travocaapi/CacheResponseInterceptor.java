@@ -11,7 +11,9 @@ import java.io.IOException;
  * @date 2015-07-08
  */
 public class CacheResponseInterceptor implements Interceptor {
+
     public static final int CACHE_AGE_DEFAULT = 600;
+
     public static final int CACHE_AGE_MAX = 365 * 24 * 60 * 60; // 365 days
 
     private int cacheAge = CACHE_AGE_DEFAULT;

@@ -1,5 +1,10 @@
 package com.travoca.app.fragment;
 
+import com.travoca.api.contract.Sort;
+import com.travoca.api.model.SearchRequest;
+import com.travoca.app.R;
+import com.travoca.app.activity.RecordListActivity;
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.text.Html;
@@ -11,11 +16,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-
-import com.travoca.api.contract.Sort;
-import com.travoca.api.model.SearchRequest;
-import com.travoca.app.R;
-import com.travoca.app.activity.RecordListActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -48,7 +48,8 @@ public class ResultsSortFragment extends BaseFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+            @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_results_sort, container, false);
         ButterKnife.bind(this, view);
         SearchRequest recordsRequest = getRequest();

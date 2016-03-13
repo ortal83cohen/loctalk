@@ -1,5 +1,26 @@
 package com.travoca.app.fragment;
 
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
+
+import com.rengwuxian.materialedittext.MaterialEditText;
+import com.squareup.okhttp.ResponseBody;
+import com.travoca.api.TravocaApi;
+import com.travoca.api.model.SaveRecordResponse;
+import com.travoca.api.model.search.ImageRequest;
+import com.travoca.app.App;
+import com.travoca.app.R;
+import com.travoca.app.TravocaApplication;
+import com.travoca.app.activity.LoginActivity;
+import com.travoca.app.activity.NewRecordActivity;
+import com.travoca.app.member.MemberStorage;
+import com.travoca.app.member.model.User;
+import com.travoca.app.travocaapi.RetrofitCallback;
+import com.travoca.app.utils.amazon.UploadService;
+import com.travoca.app.widget.ImagePicker;
+
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -22,26 +43,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationListener;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
-import com.rengwuxian.materialedittext.MaterialEditText;
-import com.squareup.okhttp.ResponseBody;
-import com.travoca.api.TravocaApi;
-import com.travoca.api.model.SaveRecordResponse;
-import com.travoca.api.model.search.ImageRequest;
-import com.travoca.app.App;
-import com.travoca.app.R;
-import com.travoca.app.TravocaApplication;
-import com.travoca.app.activity.LoginActivity;
-import com.travoca.app.activity.NewRecordActivity;
-import com.travoca.app.member.MemberStorage;
-import com.travoca.app.member.model.User;
-import com.travoca.app.travocaapi.RetrofitCallback;
-import com.travoca.app.utils.amazon.UploadService;
-import com.travoca.app.widget.ImagePicker;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -58,40 +59,63 @@ import retrofit.Response;
 public class NewRecordFragment extends BaseFragment {
 
     private static final int REQUEST_PERMISSION_LOCATION = 2;
+
     private static final int NUMBER_OF_RETRIES = 4;
+
     public TravocaApi mTravocaApi;
+
     @Bind(R.id.button3)
     FloatingActionButton playButton;
+
     @Bind(R.id.button2)
     FloatingActionButton stopButton;
+
     @Bind(R.id.button)
     FloatingActionButton recordButton;
+
     @Bind(R.id.button4)
     Button sendButton;
+
     @Bind(R.id.title)
     MaterialEditText mTitle;
+
     @Bind(R.id.description)
     MaterialEditText mDescription;
+
     @Bind(R.id.locationName)
     MaterialEditText mLocationName;
+
     //    @Bind(R.id.type)
 //    MaterialEditText mType;
     @Bind(R.id.image)
     ImageView mImageView;
+
     private int mNumberRetries = 0;
+
     private MediaRecorder audioRecorder;
+
     private String RecordFilePath = null;
+
     private Listener mListener;
+
     private Location mLocation;
+
     private boolean mPlayButtonState = false;
+
     private boolean mHasImage = false;
+
     private boolean mHasRecord = false;
+
     private LocationRequest mLocationRequest = new LocationRequest()
             .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
             .setNumUpdates(1);
+
     private ImageRequest imageRequest;
+
     private File mImageFile;
-    private RetrofitCallback<SaveRecordResponse> mResultsCallback = new RetrofitCallback<SaveRecordResponse>() {
+
+    private RetrofitCallback<SaveRecordResponse> mResultsCallback
+            = new RetrofitCallback<SaveRecordResponse>() {
 
 
         @Override
@@ -135,20 +159,22 @@ public class NewRecordFragment extends BaseFragment {
 
     @Override
     public View onCreateView(final LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+            Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_new_record, container, false);
         ButterKnife.bind(this, view);
 
 //        stopButton.setEnabled(false);
         playButton.setEnabled(false);
-        RecordFilePath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/recording.3gp";
+        RecordFilePath = Environment.getExternalStorageDirectory().getAbsolutePath()
+                + "/recording.3gp";
         mTravocaApi = TravocaApplication.provide(getActivity()).travocaApi();
 
         mImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 findCurrentLocation();
-                getActivity().startActivityForResult(ImagePicker.getPickImageIntent(getActivity()), NewRecordActivity.PICK_IMAGE_ID);
+                getActivity().startActivityForResult(ImagePicker.getPickImageIntent(getActivity()),
+                        NewRecordActivity.PICK_IMAGE_ID);
             }
         });
         recordButton.setOnClickListener(new View.OnClickListener() {
@@ -158,7 +184,8 @@ public class NewRecordFragment extends BaseFragment {
                     playButton.setEnabled(false);
                     mPlayButtonState = true;
                     Toast.makeText(getActivity(), "Recording started", Toast.LENGTH_LONG).show();
-                    recordButton.setImageDrawable(getResources().getDrawable(android.R.drawable.ic_media_pause));
+                    recordButton.setImageDrawable(
+                            getResources().getDrawable(android.R.drawable.ic_media_pause));
                     try {
                         new File(RecordFilePath).delete();
                         audioRecorder = new MediaRecorder();
@@ -177,11 +204,12 @@ public class NewRecordFragment extends BaseFragment {
                     }
 
                 } else {
-                    mHasRecord=true;
+                    mHasRecord = true;
                     playButton.setEnabled(true);
                     mPlayButtonState = false;
                     Toast.makeText(getActivity(), "Recording stop", Toast.LENGTH_LONG).show();
-                    recordButton.setImageDrawable(getResources().getDrawable(android.R.drawable.ic_btn_speak_now));
+                    recordButton.setImageDrawable(
+                            getResources().getDrawable(android.R.drawable.ic_btn_speak_now));
                     try {
                         audioRecorder.stop();
                         audioRecorder.release();
@@ -204,13 +232,15 @@ public class NewRecordFragment extends BaseFragment {
 //                stopButton.setEnabled(false);
 //                playButton.setEnabled(true);
 
-                Toast.makeText(getActivity(), "Audio recorded successfully", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Audio recorded successfully", Toast.LENGTH_LONG)
+                        .show();
             }
         });
 
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) throws IllegalArgumentException, SecurityException, IllegalStateException {
+            public void onClick(View v)
+                    throws IllegalArgumentException, SecurityException, IllegalStateException {
                 MediaPlayer m = new MediaPlayer();
 
                 try {
@@ -236,9 +266,11 @@ public class NewRecordFragment extends BaseFragment {
                 if (mTitle.length() < 4) {
                     Toast.makeText(getActivity(), "Title Not valid", Toast.LENGTH_LONG).show();
                 } else if (mDescription.length() < 4) {
-                    Toast.makeText(getActivity(), "Description Not valid", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), "Description Not valid", Toast.LENGTH_LONG)
+                            .show();
                 } else if (mLocationName.length() < 4) {
-                    Toast.makeText(getActivity(), "Location NameNot valid", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), "Location NameNot valid", Toast.LENGTH_LONG)
+                            .show();
                 } else if (!mHasImage) {
                     Toast.makeText(getActivity(), "Image Not valid", Toast.LENGTH_LONG).show();
                 } else if (!mHasRecord) {
@@ -247,7 +279,8 @@ public class NewRecordFragment extends BaseFragment {
 
                     ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
-                    ((NewRecordActivity) getActivity()).getSelectedBitmap().compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+                    ((NewRecordActivity) getActivity()).getSelectedBitmap()
+                            .compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
 
                     MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
                     User user = memberStorage.loadUser();
@@ -266,7 +299,11 @@ public class NewRecordFragment extends BaseFragment {
                             e.printStackTrace();
                         }
 
-                        imageRequest = new ImageRequest(mTitle.getText().toString(), mDescription.getText().toString(), mLocationName.getText().toString(), String.valueOf(mLocation.getLatitude()), String.valueOf(mLocation.getLongitude()), "free", user.id);
+                        imageRequest = new ImageRequest(mTitle.getText().toString(),
+                                mDescription.getText().toString(),
+                                mLocationName.getText().toString(),
+                                String.valueOf(mLocation.getLatitude()),
+                                String.valueOf(mLocation.getLongitude()), "free", user.id);
 
                         mTravocaApi.saveRecordDetails(imageRequest).enqueue(mResultsCallback);
 
@@ -295,9 +332,12 @@ public class NewRecordFragment extends BaseFragment {
     }
 
     private void findCurrentLocation() {
-        if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat
+                .checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
             // Request missing location permission.
-            requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_PERMISSION_LOCATION);
+            requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                    REQUEST_PERMISSION_LOCATION);
         } else {
             LocationServices.FusedLocationApi.requestLocationUpdates(mListener.getGoogleApiClient(),
                     mLocationRequest, new LocationListener() {
@@ -350,7 +390,8 @@ public class NewRecordFragment extends BaseFragment {
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         if (requestCode == REQUEST_PERMISSION_LOCATION) {
@@ -369,6 +410,7 @@ public class NewRecordFragment extends BaseFragment {
 
 
     public interface Listener {
+
         GoogleApiClient getGoogleApiClient();
 
     }

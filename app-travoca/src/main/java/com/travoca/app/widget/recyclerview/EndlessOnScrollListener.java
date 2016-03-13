@@ -4,9 +4,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 public abstract class EndlessOnScrollListener extends RecyclerView.OnScrollListener {
+
     private final int mVisibleThreshold;
 
     private LinearLayoutManager mLinearLayoutManager;
+
     private int lastCall;
 
     public EndlessOnScrollListener(RecyclerView.LayoutManager linearLayoutManager, int threshold) {

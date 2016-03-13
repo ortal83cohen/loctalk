@@ -20,7 +20,9 @@ import android.view.View;
  * @date 2015-06-30
  */
 public class BlurBuilder {
+
     private float BLUR_RADIUS;
+
     private Context mContext;
 
     public BlurBuilder(Context context) {
@@ -55,7 +57,8 @@ public class BlurBuilder {
 
         if (color != 0) {
             Paint paint = new Paint();
-            ColorFilter filter = new PorterDuffColorFilter(mContext.getResources().getColor(color), PorterDuff.Mode.SRC_IN);
+            ColorFilter filter = new PorterDuffColorFilter(mContext.getResources().getColor(color),
+                    PorterDuff.Mode.SRC_IN);
             paint.setColorFilter(filter);
             Canvas canvas = new Canvas(bitmap);
             canvas.drawBitmap(bitmap, 0, 0, paint);

@@ -26,6 +26,7 @@ import java.lang.reflect.Method;
  * falling back to commit when apply isn't available.
  */
 public class SharedPreferencesCompat {
+
     private static final Method sApplyMethod = findApplyMethod();
 
     @SuppressWarnings({"unchecked", "rawtypes"})

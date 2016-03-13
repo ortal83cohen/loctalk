@@ -1,6 +1,8 @@
 package com.travoca.app.adapter;
 
 
+import com.travoca.app.R;
+
 import android.content.Context;
 import android.database.Cursor;
 import android.view.LayoutInflater;
@@ -8,8 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
-
-import com.travoca.app.R;
 
 public class FavoritesAdapter extends CursorAdapter {
 
@@ -29,7 +29,8 @@ public class FavoritesAdapter extends CursorAdapter {
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
         TextView textViewPersonName = (TextView) view.findViewById(android.R.id.title);
-        textViewPersonName.setText(new StringBuilder().append(cursor.getString(3)).append(", ").append(cursor.getString(2)).toString());
+        textViewPersonName.setText(new StringBuilder().append(cursor.getString(3)).append(", ")
+                .append(cursor.getString(2)).toString());
 
     }
 }

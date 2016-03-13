@@ -1,13 +1,13 @@
 package com.travoca.app;
 
-import android.app.Application;
-import android.content.Context;
-
 import com.crashlytics.android.Crashlytics;
 import com.squareup.picasso.Picasso;
 import com.travoca.app.events.EventProducers;
 import com.travoca.app.events.Events;
 import com.travoca.app.utils.AppLog;
+
+import android.app.Application;
+import android.content.Context;
 
 import io.fabric.sdk.android.Fabric;
 import io.fabric.sdk.android.SilentLogger;
@@ -30,7 +30,8 @@ public class TravocaApplication extends Application implements App.Provider {
     public void onCreate() {
         super.onCreate();
 //        mRefWatcher = LeakCanary.install(this);
-        Fabric.with((new Fabric.Builder(this)).kits(new Crashlytics()).logger(new SilentLogger()).build());
+        Fabric.with((new Fabric.Builder(this)).kits(new Crashlytics()).logger(new SilentLogger())
+                .build());
         mObjectGraph = new ObjectGraph(this);
 
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()

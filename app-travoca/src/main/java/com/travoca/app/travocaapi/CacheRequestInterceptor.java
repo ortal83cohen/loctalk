@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2015-07-08
  */
 public class CacheRequestInterceptor implements Interceptor {
+
     private final static int SEARCH_CACHE_MAX_AGE = 300;
 
     private NetworkUtilities mNetworkUtilities;
@@ -62,12 +63,12 @@ public class CacheRequestInterceptor implements Interceptor {
 
         CacheControl cacheControl;
         if (uri.getPath().equals(TravocaApi.PATH_RECORDS)) {
-            cacheControl = new CacheControl.Builder().maxAge(mSearchMaxAge, TimeUnit.SECONDS).build();
+            cacheControl = new CacheControl.Builder().maxAge(mSearchMaxAge, TimeUnit.SECONDS)
+                    .build();
             return request.newBuilder().cacheControl(cacheControl).build();
         } else if (CacheUtils.isRetrieveOrderRequest(request)) {
             return request.newBuilder().cacheControl(CacheControl.FORCE_NETWORK).build();
         }
-
 
         return request;
     }

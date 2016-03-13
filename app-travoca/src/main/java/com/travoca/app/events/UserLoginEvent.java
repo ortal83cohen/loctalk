@@ -7,6 +7,7 @@ import com.travoca.app.member.model.User;
  * @date 2015-08-11
  */
 public class UserLoginEvent {
+
     private final User mUser;
 
     public UserLoginEvent(User user) {

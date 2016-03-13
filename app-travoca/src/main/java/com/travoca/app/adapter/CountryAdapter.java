@@ -1,9 +1,9 @@
 package com.travoca.app.adapter;
 
+import com.travoca.app.R;
+
 import android.content.Context;
 import android.widget.ArrayAdapter;
-
-import com.travoca.app.R;
 
 import java.util.Locale;
 import java.util.TreeMap;
@@ -13,6 +13,7 @@ import java.util.TreeMap;
  * @date 2015-05-04
  */
 public class CountryAdapter extends ArrayAdapter<String> {
+
     private TreeMap<String, String> mCodesMap;
 
     public CountryAdapter(Context context) {
@@ -27,7 +28,6 @@ public class CountryAdapter extends ArrayAdapter<String> {
             Locale locale = new Locale("", code);
             mCodesMap.put(locale.getDisplayCountry(), code);
         }
-
 
         addAll(mCodesMap.keySet());
 

@@ -15,10 +15,15 @@ public class DbSelectionBuilder {
 
 
     private String mTable = null;
+
     private Map<String, String> mProjectionMap = new HashMap<>();
+
     private StringBuilder mSelection = new StringBuilder();
+
     private ArrayList<String> mSelectionArgs = new ArrayList<>();
+
     private String mGroupBy = null;
+
     private String mHaving = null;
 
     public DbSelectionBuilder reset() {
@@ -129,9 +134,11 @@ public class DbSelectionBuilder {
 
 
     public Cursor query(SQLiteDatabase db, boolean distinct, String[] columns, String orderBy,
-                        String limit) {
+            String limit) {
         assertTable();
-        if (columns != null) mapColumns(columns);
+        if (columns != null) {
+            mapColumns(columns);
+        }
         return db.query(distinct, mTable, columns, getSelection(), getSelectionArgs(), mGroupBy,
                 mHaving, orderBy, limit);
     }

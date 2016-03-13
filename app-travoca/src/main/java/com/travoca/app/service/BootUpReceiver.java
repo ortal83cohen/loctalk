@@ -1,14 +1,5 @@
 package com.travoca.app.service;
 
-import android.app.PendingIntent;
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.database.Cursor;
-import android.os.Bundle;
-import android.util.Log;
-import android.widget.Toast;
-
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
@@ -18,18 +9,35 @@ import com.google.android.gms.location.Geofence;
 import com.google.android.gms.location.GeofencingRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.places.Places;
+
 import com.travoca.app.R;
 import com.travoca.app.provider.DbContract;
+
+import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.database.Cursor;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class BootUpReceiver extends BroadcastReceiver implements GoogleApiClient.ConnectionCallbacks, ResultCallback<Status>, GoogleApiClient.OnConnectionFailedListener {
+public class BootUpReceiver extends BroadcastReceiver
+        implements GoogleApiClient.ConnectionCallbacks, ResultCallback<Status>,
+        GoogleApiClient.OnConnectionFailedListener {
+
     private static final float GEOFENCE_RADIUS_IN_METERS = 50;
+
     private static final String TAG = "BootUpReceiver";
+
     protected GoogleApiClient mGoogleApiClient;
+
     Context mContext;
+
     private GeofencingRequest.Builder builder;
 
     @Override
@@ -61,15 +69,17 @@ public class BootUpReceiver extends BroadcastReceiver implements GoogleApiClient
 
     void initGeofenceIntent() {
         Intent geofenceIntent = new Intent(mContext, GeofenceTransitionsIntentService.class);
-        PendingIntent pendingIntent = PendingIntent.getService(mContext, 0, geofenceIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent
+                .getService(mContext, 0, geofenceIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         if (!mGoogleApiClient.isConnected()) {
-            Toast.makeText(mContext, mContext.getString(R.string.not_connected), Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, mContext.getString(R.string.not_connected), Toast.LENGTH_SHORT)
+                    .show();
             return;
         }
 
         try {
             initGeofencingRequest();
-            if(builder!=null) {
+            if (builder != null) {
                 LocationServices.GeofencingApi.addGeofences(
                         mGoogleApiClient,
                         builder.build(),
@@ -83,9 +93,11 @@ public class BootUpReceiver extends BroadcastReceiver implements GoogleApiClient
 
     private void initGeofencingRequest() {
         if (builder == null) {
-            Cursor cursor = mContext.getContentResolver().query(DbContract.ServiceGps.CONTENT_URI.buildUpon().
-                    build(), null, null, null, null);
-            if(cursor.getCount()==0){
+            Cursor cursor = mContext.getContentResolver()
+                    .query(DbContract.ServiceGps.CONTENT_URI.buildUpon().
+                            build(), null, DbContract.ServiceGpsColumns.USED + " = '0'", null,
+                            null);
+            if (cursor.getCount() == 0) {
                 return;
             }
             builder = new GeofencingRequest.Builder();
@@ -94,10 +106,13 @@ public class BootUpReceiver extends BroadcastReceiver implements GoogleApiClient
             if (cursor != null) {
                 while (cursor.moveToNext()) {
                     geofenceList.add(new Geofence.Builder()
-                            .setRequestId(cursor.getString(cursor.getColumnIndex(DbContract.ServiceGpsColumns.KEY_ID)))
+                            .setRequestId(cursor.getString(
+                                    cursor.getColumnIndex(DbContract.ServiceGpsColumns.KEY_ID)))
                             .setCircularRegion(
-                                    Double.valueOf(cursor.getString(cursor.getColumnIndex(DbContract.ServiceGpsColumns.LAT))),
-                                    Double.valueOf(cursor.getString(cursor.getColumnIndex(DbContract.ServiceGpsColumns.LON))),
+                                    Double.valueOf(cursor.getString(cursor.getColumnIndex(
+                                            DbContract.ServiceGpsColumns.LAT))),
+                                    Double.valueOf(cursor.getString(cursor.getColumnIndex(
+                                            DbContract.ServiceGpsColumns.LON))),
                                     GEOFENCE_RADIUS_IN_METERS
                             )
                             .setExpirationDuration(24 * 60 * 60 * 100) //24 hours

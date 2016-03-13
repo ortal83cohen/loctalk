@@ -1,10 +1,10 @@
 package com.travoca.app.widget.recyclerview;
 
+import com.travoca.app.R;
+
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
-
-import com.travoca.app.R;
 
 /**
  * @author ortal
@@ -13,7 +13,9 @@ import com.travoca.app.R;
 public class EndlessRecyclerView extends RecyclerView {
 
     private EndlessOnScrollListener mScrollListener;
+
     private boolean mHasMoreData;
+
     private OnLoadMoreListener mListener;
 
     public EndlessRecyclerView(Context context) {
@@ -32,7 +34,8 @@ public class EndlessRecyclerView extends RecyclerView {
     public void init(LayoutManager layout, Adapter adapter, int scrollLimit) {
         super.setLayoutManager(layout);
 
-        EndlessAdapter endlessAdapter = new EndlessAdapter(adapter, getContext(), R.layout.list_item_loadmore);
+        EndlessAdapter endlessAdapter = new EndlessAdapter(adapter, getContext(),
+                R.layout.list_item_loadmore);
         super.setAdapter(endlessAdapter);
 
         mScrollListener = new EndlessOnScrollListener(layout, scrollLimit) {
@@ -66,6 +69,7 @@ public class EndlessRecyclerView extends RecyclerView {
     }
 
     public interface OnLoadMoreListener {
+
         void onLoadMore();
     }
 

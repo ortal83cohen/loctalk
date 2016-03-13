@@ -20,12 +20,17 @@ import java.util.ArrayList;
  * @date 2015-07-13
  */
 public class DbProvider extends ContentProvider {
+
     private static final int FAVORITES_HOTELS = 100;
+
     private static final int FAVORITES_HOTEL_ID = 101;
+
     private static final int SEARCH_HISTORY = 200;
+
     private static final int SERVICE_GPS = 300;
 
     private static final UriMatcher sUriMatcher = buildUriMatcher();
+
     private DbDatabase mOpenHelper;
 
     private static UriMatcher buildUriMatcher() {
@@ -72,7 +77,7 @@ public class DbProvider extends ContentProvider {
 
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs,
-                        String sortOrder) {
+            String sortOrder) {
         final SQLiteDatabase db = mOpenHelper.getReadableDatabase();
         final int match = sUriMatcher.match(uri);
         final DbSelectionBuilder builder = new DbSelectionBuilder();
@@ -80,25 +85,33 @@ public class DbProvider extends ContentProvider {
             case FAVORITES_HOTELS:
                 builder.table(DbContract.Tables.TABLE_FAVORITES);
                 if (uri.getQueryParameter("group by") != null) {
-                    return builder.groupBy(uri.getQueryParameter("group by")).query(db, false, getFavoritesGroupByColumns(), "", "");
+                    return builder.groupBy(uri.getQueryParameter("group by"))
+                            .query(db, false, getFavoritesGroupByColumns(), "", "");
                 } else if (uri.getQueryParameter("where") != null) {
-                    return builder.where(uri.getQueryParameter("where")).query(db, false, projection, "", "");
+                    return builder.where(uri.getQueryParameter("where"))
+                            .query(db, false, projection, "", "");
                 } else {
                     return builder.query(db, false, projection, "", "");
                 }
 
             case FAVORITES_HOTEL_ID:
                 final String recordId = DbContract.Favorites.getRecordId(uri);
-                builder.table(DbContract.Tables.TABLE_FAVORITES).where(DbContract.FavoritesColumns.KEY_ID + " = ?", recordId);
+                builder.table(DbContract.Tables.TABLE_FAVORITES)
+                        .where(DbContract.FavoritesColumns.KEY_ID + " = ?", recordId);
                 return builder.query(db, false, projection, "", "");
             case SEARCH_HISTORY:
                 builder.table(DbContract.Tables.TABLE_SEARCH_HISTORY);
-                return builder.query(db, false, getSearchHistoryColumns(), DbContract.SearchHistoryColumns.CREATE_AT + " DESC", uri.getQueryParameter("limit"));
+                return builder.query(db, false, getSearchHistoryColumns(),
+                        DbContract.SearchHistoryColumns.CREATE_AT + " DESC",
+                        uri.getQueryParameter("limit"));
             case SERVICE_GPS:
                 builder.table(DbContract.Tables.TABLE_SERVICE_GPS);
-                if(uri.getQueryParameter("limit")!=null && !uri.getQueryParameter("limit").isEmpty()) {
-                    return builder.query(db, false, projection,  DbContract.ServiceGpsColumns.CREATE_AT + " DESC", uri.getQueryParameter("limit"));
-                }else {
+                if (uri.getQueryParameter("limit") != null && !uri.getQueryParameter("limit")
+                        .isEmpty()) {
+                    return builder.query(db, false, projection,
+                            DbContract.ServiceGpsColumns.CREATE_AT + " DESC",
+                            uri.getQueryParameter("limit"));
+                } else {
                     return builder.where(selection).query(db, false, projection, "", "");
                 }
             default: {
@@ -132,20 +145,23 @@ public class DbProvider extends ContentProvider {
         switch (match) {
             case FAVORITES_HOTELS:
                 db.insert(DbContract.Tables.TABLE_FAVORITES, null, values);
-                return DbContract.Favorites.buildRecordUri(values.getAsString(DbContract.FavoritesColumns.KEY_ID),
-                        values.getAsString(DbContract.FavoritesColumns.TITLE),
-                        values.getAsString(DbContract.FavoritesColumns.TEXT));
+                return DbContract.Favorites
+                        .buildRecordUri(values.getAsString(DbContract.FavoritesColumns.KEY_ID),
+                                values.getAsString(DbContract.FavoritesColumns.TITLE),
+                                values.getAsString(DbContract.FavoritesColumns.TEXT));
             case SERVICE_GPS:
                 db.insert(DbContract.Tables.TABLE_SERVICE_GPS, null, values);
-                return DbContract.ServiceGps.buildRecordUri(values.getAsString(DbContract.ServiceGpsColumns.KEY_ID),
-                        values.getAsString(DbContract.ServiceGpsColumns.USED),
-                        values.getAsString(DbContract.ServiceGpsColumns.LOCATION_NAME),
-                        values.getAsString(DbContract.ServiceGpsColumns.LAT),
-                        values.getAsString(DbContract.ServiceGpsColumns.LON),
-                        values.getAsString(DbContract.ServiceGpsColumns.CREATE_AT));
+                return DbContract.ServiceGps
+                        .buildRecordUri(values.getAsString(DbContract.ServiceGpsColumns.KEY_ID),
+                                values.getAsString(DbContract.ServiceGpsColumns.USED),
+                                values.getAsString(DbContract.ServiceGpsColumns.LOCATION_NAME),
+                                values.getAsString(DbContract.ServiceGpsColumns.LAT),
+                                values.getAsString(DbContract.ServiceGpsColumns.LON),
+                                values.getAsString(DbContract.ServiceGpsColumns.CREATE_AT));
             case SEARCH_HISTORY:
                 db.insert(DbContract.Tables.TABLE_SEARCH_HISTORY, null, values);
-                return DbContract.SearchHistory.buildSearchHistoryUri(values.getAsString(DbContract.SearchHistoryColumns.LOCATION_NAME),
+                return DbContract.SearchHistory.buildSearchHistoryUri(
+                        values.getAsString(DbContract.SearchHistoryColumns.LOCATION_NAME),
                         values.getAsString(DbContract.SearchHistoryColumns.LAT),
                         values.getAsString(DbContract.SearchHistoryColumns.LON),
                         values.getAsString(DbContract.SearchHistoryColumns.NORTHEAST_LAT),
@@ -188,7 +204,8 @@ public class DbProvider extends ContentProvider {
         final DbSelectionBuilder builder = new DbSelectionBuilder();
         final int match = sUriMatcher.match(uri);
         if (match == FAVORITES_HOTEL_ID) {
-            builder.table(DbContract.Tables.TABLE_FAVORITES).where(DbContract.FavoritesColumns.KEY_ID + "=?", uri.getPathSegments().get(1));
+            builder.table(DbContract.Tables.TABLE_FAVORITES)
+                    .where(DbContract.FavoritesColumns.KEY_ID + "=?", uri.getPathSegments().get(1));
         }
 
         return builder.where(selection, selectionArgs).delete(db);

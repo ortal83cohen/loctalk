@@ -11,9 +11,11 @@ import java.util.ArrayList;
  * @date 2015-12-02
  */
 public class LikedRecords {
+
     public static boolean isLiked(int recordId, Context context) {
-        Cursor c = context.getContentResolver().query(DbContract.Favorites.CONTENT_URI.buildUpon().appendPath(
-                String.valueOf(recordId)).build(), null, null, null, null);
+        Cursor c = context.getContentResolver()
+                .query(DbContract.Favorites.CONTENT_URI.buildUpon().appendPath(
+                        String.valueOf(recordId)).build(), null, null, null, null);
         boolean liked = false;
         if (c != null) {
             if (c.moveToFirst()) {
@@ -25,7 +27,8 @@ public class LikedRecords {
     }
 
     public static void delete(int recordId, Context context) {
-        context.getContentResolver().delete(DbContract.Favorites.CONTENT_URI.buildUpon().appendPath(String.valueOf(recordId)).build(), null, null);
+        context.getContentResolver().delete(DbContract.Favorites.CONTENT_URI.buildUpon()
+                .appendPath(String.valueOf(recordId)).build(), null, null);
     }
 
     public static void insert(int recordId, String title, String text, Context context) {
@@ -38,13 +41,18 @@ public class LikedRecords {
     }
 
     public static ArrayList<String> loadRecords(String city, String country, Context context) {
-        Cursor cursor = context.getContentResolver().query(DbContract.Favorites.CONTENT_URI.buildUpon().
-                appendQueryParameter("where", DbContract.FavoritesColumns.TITLE + "='" + city + "' AND " + DbContract.FavoritesColumns.TEXT + "='" + country + "'").build(), null, null, null, null);
+        Cursor cursor = context.getContentResolver()
+                .query(DbContract.Favorites.CONTENT_URI.buildUpon().
+                        appendQueryParameter("where",
+                                DbContract.FavoritesColumns.TITLE + "='" + city + "' AND "
+                                        + DbContract.FavoritesColumns.TEXT + "='" + country + "'")
+                        .build(), null, null, null, null);
         ArrayList<String> records = new ArrayList<>();
         if (cursor != null && cursor.getCount() != 0) {
             cursor.moveToFirst();
             do {
-                records.add(cursor.getString(cursor.getColumnIndex(DbContract.FavoritesColumns.KEY_ID)));
+                records.add(cursor.getString(
+                        cursor.getColumnIndex(DbContract.FavoritesColumns.KEY_ID)));
             } while (cursor.moveToNext());
             cursor.close();
         }

@@ -1,11 +1,7 @@
 package com.travoca.app.activity;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
-import android.support.v4.util.ArrayMap;
-
 import com.google.android.gms.maps.model.LatLng;
+
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.ResultsResponse;
@@ -17,6 +13,11 @@ import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.utils.AppLog;
 import com.travoca.app.utils.BrowserUtils;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
+import android.support.v4.util.ArrayMap;
 
 import java.net.URLDecoder;
 import java.util.ArrayList;
@@ -33,7 +34,9 @@ import retrofit.Response;
 public class RouteActivity extends Activity {
 
     private Uri mUriData;
-    private RetrofitCallback<ResultsResponse> mResultsCallback = new RetrofitCallback<ResultsResponse>() {
+
+    private RetrofitCallback<ResultsResponse> mResultsCallback
+            = new RetrofitCallback<ResultsResponse>() {
         @Override
         protected void failure(ResponseBody response, boolean isOffline) {
             AppLog.e("RouteActivity - recordButton failure");
@@ -87,37 +90,46 @@ public class RouteActivity extends Activity {
                 String uri = mUriData.toString();
                 uri = uri.replace("m.travoca.com", "www.travoca.com");
 
-                CoreInterface.create(getApplicationContext()).uriParse(uri).enqueue(new RetrofitCallback<ArrayMap<String, String>>() {
-                    @Override
-                    protected void failure(ResponseBody response, boolean isOffline) {
-                        sendToWebBrowser(mUriData);
-                    }
-
-                    @Override
-                    protected void success(ArrayMap<String, String> params, Response<ArrayMap<String, String>> response) {
-                        try {
-                            switch (params.get("target")) {
-                                case "/search/result.php":
-                                case "/index_landing.php":
-                                    final RecordListRequest recordListRequest = App.provide(RouteActivity.this).createRequest();
-                                    recordListRequest.setType(new Location(params.get("name"), new LatLng(Double.valueOf(params.get("lat")), Double.valueOf(params.get("lon")))));
-                                    startActivity(RecordListActivity.createIntent(recordListRequest, RouteActivity.this));
-                                    break;
-                                case "/recorddetails.php":
-                                    loadAccommodationDetails(params.get("group_record_id"));
-                                    break;
-                                case "index_home.php":
-                                    startActivity(new Intent(getBaseContext(), MainActivity.class));
-                                    break;
-                                default:
-                                    sendToWebBrowser(mUriData);
+                CoreInterface.create(getApplicationContext()).uriParse(uri)
+                        .enqueue(new RetrofitCallback<ArrayMap<String, String>>() {
+                            @Override
+                            protected void failure(ResponseBody response, boolean isOffline) {
+                                sendToWebBrowser(mUriData);
                             }
-                        } catch (Exception e) {
-                            AppLog.e(e);
-                            sendToWebBrowser(getIntent().getData());
-                        }
-                    }
-                });
+
+                            @Override
+                            protected void success(ArrayMap<String, String> params,
+                                    Response<ArrayMap<String, String>> response) {
+                                try {
+                                    switch (params.get("target")) {
+                                        case "/search/result.php":
+                                        case "/index_landing.php":
+                                            final RecordListRequest recordListRequest = App
+                                                    .provide(RouteActivity.this).createRequest();
+                                            recordListRequest.setType(
+                                                    new Location(params.get("name"), new LatLng(
+                                                            Double.valueOf(params.get("lat")),
+                                                            Double.valueOf(params.get("lon")))));
+                                            startActivity(RecordListActivity
+                                                    .createIntent(recordListRequest,
+                                                            RouteActivity.this));
+                                            break;
+                                        case "/recorddetails.php":
+                                            loadAccommodationDetails(params.get("group_record_id"));
+                                            break;
+                                        case "index_home.php":
+                                            startActivity(new Intent(getBaseContext(),
+                                                    MainActivity.class));
+                                            break;
+                                        default:
+                                            sendToWebBrowser(mUriData);
+                                    }
+                                } catch (Exception e) {
+                                    AppLog.e(e);
+                                    sendToWebBrowser(getIntent().getData());
+                                }
+                            }
+                        });
             }
         } catch (Exception e) {
             AppLog.e(e);

@@ -25,7 +25,7 @@ public class BitmapUtils {
      * @param text         the text that should be that width
      */
     public static void setTextSizeForWidth(Paint paint, float desiredWidth,
-                                           String text) {
+            String text) {
 
         // Pick a reasonably large value for the test. Larger values produce
         // more accurate results, but may cause problems with hardware
@@ -46,7 +46,6 @@ public class BitmapUtils {
             paint.getTextBounds(text, 0, text.length(), bounds);
         }
 
-
         // Calculate the desired size as a proportion of our testTextSize.
         float desiredTextSize = testTextSize * desiredWidth / bounds.width();
 
@@ -58,7 +57,7 @@ public class BitmapUtils {
      * setTint ported from v21 for older version
      */
     public static PorterDuffColorFilter createTintFilter(BitmapDrawable drawable,
-                                                         ColorStateList tint) {
+            ColorStateList tint) {
         if (tint == null) {
             return null;
         }

@@ -5,4 +5,5 @@ package com.travoca.app.events;
  * @date 2015-08-11
  */
 public class UserLogOutEvent {
+
 }

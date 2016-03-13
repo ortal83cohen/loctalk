@@ -14,6 +14,7 @@ public class DbDatabase extends SQLiteOpenHelper {
 
     // Database Version
     private static final int DATABASE_VERSION = 50;
+
     // Database Name
     private static final String DATABASE_NAME = "TravocaDB";
 
@@ -28,13 +29,15 @@ public class DbDatabase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         // SQL statement to create Record table
-        String CREATE_HOTEL_TABLE = "CREATE TABLE IF NOT EXISTS " + DbContract.Tables.TABLE_FAVORITES + " ( " +
+        String CREATE_HOTEL_TABLE = "CREATE TABLE IF NOT EXISTS "
+                + DbContract.Tables.TABLE_FAVORITES + " ( " +
                 DbContract.FavoritesColumns.KEY_ID + " INTEGER ," +
                 DbContract.FavoritesColumns.TITLE + " STRING , " +
                 DbContract.FavoritesColumns.TEXT + " STRING , " +
                 " PRIMARY KEY (" + DbContract.FavoritesColumns.KEY_ID + ") ) ";
 
-        String CREATE_SEARCH_HISTORY_TABLE = "CREATE TABLE IF NOT EXISTS " + DbContract.Tables.TABLE_SEARCH_HISTORY + " ( " +
+        String CREATE_SEARCH_HISTORY_TABLE = "CREATE TABLE IF NOT EXISTS "
+                + DbContract.Tables.TABLE_SEARCH_HISTORY + " ( " +
                 DbContract.SearchHistoryColumns.LOCATION_NAME + " STRING ," +
                 DbContract.SearchHistoryColumns.LAT + " STRING ," +
                 DbContract.SearchHistoryColumns.LON + " STRING ," +
@@ -43,18 +46,20 @@ public class DbDatabase extends SQLiteOpenHelper {
                 DbContract.SearchHistoryColumns.SOUTHWEST_LAT + " STRING," +
                 DbContract.SearchHistoryColumns.SOUTHWEST_LON + " STRING," +
                 DbContract.SearchHistoryColumns.TYPES + " STRING," +
-                DbContract.SearchHistoryColumns.CREATE_AT + " TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP," +
+                DbContract.SearchHistoryColumns.CREATE_AT
+                + " TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP," +
                 " PRIMARY KEY (" + DbContract.SearchHistoryColumns.LOCATION_NAME + ")  )";
 
-
-        String CREATE_SERVICE_GPS_TABLE = "CREATE TABLE IF NOT EXISTS " + DbContract.Tables.TABLE_SERVICE_GPS + " ( " +
+        String CREATE_SERVICE_GPS_TABLE = "CREATE TABLE IF NOT EXISTS "
+                + DbContract.Tables.TABLE_SERVICE_GPS + " ( " +
                 DbContract.ServiceGpsColumns.KEY_ID + " INTEGER ," +
                 DbContract.ServiceGpsColumns.USED + " INTEGER DEFAULT '0' ," +
                 DbContract.ServiceGpsColumns.LOCATION_NAME + " STRING ," +
                 DbContract.ServiceGpsColumns.LAT + " STRING ," +
                 DbContract.ServiceGpsColumns.LON + " STRING ," +
                 DbContract.ServiceGpsColumns.CREATE_AT + " TIMESTAMP ," +
-                " PRIMARY KEY (" + DbContract.ServiceGpsColumns.LAT + "," + DbContract.ServiceGpsColumns.LON +
+                " PRIMARY KEY (" + DbContract.ServiceGpsColumns.LAT + ","
+                + DbContract.ServiceGpsColumns.LON +
                 ") ) ";
         // create Records table
         db.execSQL(CREATE_HOTEL_TABLE);

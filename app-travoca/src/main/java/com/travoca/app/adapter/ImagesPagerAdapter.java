@@ -1,5 +1,8 @@
 package com.travoca.app.adapter;
 
+import com.squareup.picasso.Picasso;
+import com.travoca.app.R;
+
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.support.v4.view.PagerAdapter;
@@ -7,9 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
-import com.squareup.picasso.Picasso;
-import com.travoca.app.R;
 
 import java.util.ArrayList;
 
@@ -20,12 +20,15 @@ import java.util.ArrayList;
 public class ImagesPagerAdapter extends PagerAdapter {
 
     Context mContext;
+
     LayoutInflater mLayoutInflater;
+
     private ArrayList<String> mResources = new ArrayList<>();
 
     public ImagesPagerAdapter(Context context) {
         mContext = context;
-        mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        mLayoutInflater = (LayoutInflater) mContext
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     public void addItem(String url) {
@@ -52,15 +55,18 @@ public class ImagesPagerAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        ImageView itemView = (ImageView) mLayoutInflater.inflate(R.layout.view_image, container, false);
+        ImageView itemView = (ImageView) mLayoutInflater
+                .inflate(R.layout.view_image, container, false);
 
         if (mResources.get(position) != null) {
 
-            if (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT == mContext.getResources().getConfiguration().orientation) {
+            if (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT == mContext.getResources()
+                    .getConfiguration().orientation) {
                 Picasso.with(mContext)
                         .load(mResources.get(position))
                         .placeholder(R.drawable.progress_animation)
-                        .resize(container.getMeasuredWidth(), (int) mContext.getResources().getDimension(R.dimen.record_summary_image_size))
+                        .resize(container.getMeasuredWidth(), (int) mContext.getResources()
+                                .getDimension(R.dimen.record_summary_image_size))
                         .into(itemView);
             } else {
                 Picasso.with(mContext)

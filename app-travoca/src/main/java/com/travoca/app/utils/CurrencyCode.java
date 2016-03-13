@@ -1,8 +1,8 @@
 package com.travoca.app.utils;
 
-import android.text.TextUtils;
-
 import com.crashlytics.android.Crashlytics;
+
+import android.text.TextUtils;
 
 import java.util.Currency;
 import java.util.Locale;
@@ -29,8 +29,10 @@ public class CurrencyCode {
             // Fallback
             currencyCode = "EUR";
         }
-        Crashlytics.log("Detected countryCode: '" + countryCode + "', Detected currencyCode: '" + currencyCode + "', locale: '" + locale.toString() + "'");
-        AppLog.d("Detected countryCode: '" + countryCode + "', currencyCode: '" + currencyCode + "'");
+        Crashlytics.log("Detected countryCode: '" + countryCode + "', Detected currencyCode: '"
+                + currencyCode + "', locale: '" + locale.toString() + "'");
+        AppLog.d("Detected countryCode: '" + countryCode + "', currencyCode: '" + currencyCode
+                + "'");
         return currencyCode;
     }
 }

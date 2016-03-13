@@ -1,16 +1,5 @@
 package com.travoca.app.activity;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-
 import com.travoca.api.contract.Language;
 import com.travoca.app.App;
 import com.travoca.app.R;
@@ -23,6 +12,17 @@ import com.travoca.app.widget.AppBar;
 import com.travoca.app.widget.IntentIntegrator;
 import com.travoca.app.widget.NavigationDrawer;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
@@ -30,13 +30,21 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  * @date 2015-04-28
  */
 public abstract class BaseActivity extends AppCompatActivity {
+
     public static final String EXTRA_REQUEST = "request";
+
     protected static final String EXTRA_SNIPPET = "snippet";
+
     protected static final String EXTRA_ORDER_ITEM = "order_item";
+
     protected AppBar mToolbar;
+
     private Menu mMenu;
+
     private NavigationDrawer mNavigationDrawer;
+
     private boolean mWasOffline;
+
     private RecordListRequest mRequest;
 
     private BroadcastReceiver mNetworkChangeBroadcastReceiver = new BroadcastReceiver() {
@@ -111,7 +119,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         AnalyticsCalls.get().collectLifecycleData(this);
         App.provide(this).facebook().resume(this);
         mWasOffline = !isOnline();
-        registerReceiver(mNetworkChangeBroadcastReceiver, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
+        registerReceiver(mNetworkChangeBroadcastReceiver,
+                new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
     }
 
     // Custom fonts support: @see https://github.com/chrisjenx/Calligraphy
@@ -181,7 +190,8 @@ public abstract class BaseActivity extends AppCompatActivity {
                 mRequest = getIntent().getParcelableExtra(EXTRA_REQUEST);
             }
             if (requiresRequest() && mRequest == null) {
-                throw new IllegalStateException("Request is not available, override requiresRequest to disable the check");
+                throw new IllegalStateException(
+                        "Request is not available, override requiresRequest to disable the check");
             }
             if (mRequest != null) {
                 UserPreferences prefs = getUserPrefs();

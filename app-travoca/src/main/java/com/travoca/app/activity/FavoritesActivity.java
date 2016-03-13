@@ -1,12 +1,7 @@
 package com.travoca.app.activity;
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-
 import com.google.android.gms.common.api.GoogleApiClient;
+
 import com.travoca.api.model.Record;
 import com.travoca.api.model.search.Type;
 import com.travoca.app.App;
@@ -16,6 +11,12 @@ import com.travoca.app.fragment.FavoritesFragment;
 import com.travoca.app.fragment.HomeFragment;
 import com.travoca.app.widget.AppBar;
 
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -23,11 +24,15 @@ import butterknife.ButterKnife;
  * @author ortal
  * @date 2015-06-14
  */
-public class FavoritesActivity extends BaseActivity implements RecordViewHolder.Listener, HomeFragment.Listener {
+public class FavoritesActivity extends BaseActivity
+        implements RecordViewHolder.Listener, HomeFragment.Listener {
 
     private static final String FRAGMENT_FAVORITES_CITIES = "favorites_cities";
+
     private static final String FRAGMENT_FAVORITES_LIST = "favorites_list";
+
     private static final String FRAGMENT_HOME = "home";
+
     @Bind(R.id.app_bar)
     AppBar mToolbar;
 

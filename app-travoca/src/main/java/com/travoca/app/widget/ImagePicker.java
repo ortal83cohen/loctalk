@@ -1,5 +1,7 @@
 package com.travoca.app.widget;
 
+import com.travoca.app.R;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -15,8 +17,6 @@ import android.os.Parcelable;
 import android.provider.MediaStore;
 import android.util.Log;
 
-import com.travoca.app.R;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -30,7 +30,9 @@ import java.util.List;
 public class ImagePicker {
 
     private static final int DEFAULT_MIN_WIDTH_QUALITY = 400;        // min pixels
+
     private static final String TAG = "ImagePicker";
+
     private static final String TEMP_IMAGE_NAME = "tempImage";
 
     public static int minWidthQuality = DEFAULT_MIN_WIDTH_QUALITY;
@@ -52,13 +54,15 @@ public class ImagePicker {
         if (intentList.size() > 0) {
             chooserIntent = Intent.createChooser(intentList.remove(intentList.size() - 1),
                     context.getString(R.string.pick_image_intent_text));
-            chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, intentList.toArray(new Parcelable[]{}));
+            chooserIntent
+                    .putExtra(Intent.EXTRA_INITIAL_INTENTS, intentList.toArray(new Parcelable[]{}));
         }
 
         return chooserIntent;
     }
 
-    private static List<Intent> addIntentsToList(Context context, List<Intent> list, Intent intent) {
+    private static List<Intent> addIntentsToList(Context context, List<Intent> list,
+            Intent intent) {
         List<ResolveInfo> resInfo = context.getPackageManager().queryIntentActivities(intent, 0);
         for (ResolveInfo resolveInfo : resInfo) {
             String packageName = resolveInfo.activityInfo.packageName;
@@ -72,7 +76,7 @@ public class ImagePicker {
 
 
     public static Bitmap getImageFromResult(Context context, int resultCode,
-                                            Intent imageReturnedIntent) {
+            Intent imageReturnedIntent) {
         Log.d(TAG, "getImageFromResult, resultCode: " + resultCode);
         Bitmap bm = null;
         File imageFile = getTempFile(context);
@@ -179,7 +183,9 @@ public class ImagePicker {
     public static int getRotationFromGallery(Context context, Uri imageUri) {
         String[] columns = {MediaStore.Images.Media.ORIENTATION};
         Cursor cursor = context.getContentResolver().query(imageUri, columns, null, null, null);
-        if (cursor == null) return 0;
+        if (cursor == null) {
+            return 0;
+        }
 
         cursor.moveToFirst();
 
@@ -192,7 +198,8 @@ public class ImagePicker {
         if (rotation != 0) {
             Matrix matrix = new Matrix();
             matrix.postRotate(rotation);
-            Bitmap bmOut = Bitmap.createBitmap(bm, 0, 0, bm.getWidth(), bm.getHeight(), matrix, true);
+            Bitmap bmOut = Bitmap
+                    .createBitmap(bm, 0, 0, bm.getWidth(), bm.getHeight(), matrix, true);
             return bmOut;
         }
         return bm;

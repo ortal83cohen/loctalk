@@ -1,10 +1,10 @@
 package com.travoca.app.utils;
 
+import com.travoca.app.App;
+
 import android.content.Context;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-
-import com.travoca.app.App;
 
 import java.util.Locale;
 
@@ -19,7 +19,8 @@ public class CountryCode {
         String countryCode = getNetworkCountry(context);
 
         if (TextUtils.isEmpty(countryCode)) {
-            return context.getResources().getConfiguration().locale.getCountry().toUpperCase(Locale.US);
+            return context.getResources().getConfiguration().locale.getCountry()
+                    .toUpperCase(Locale.US);
         }
 
         return countryCode;
@@ -37,9 +38,11 @@ public class CountryCode {
             final String simCountry = tm.getSimCountryIso();
             if (simCountry != null && simCountry.length() == 2) { // SIM country code is available
                 return simCountry.toUpperCase(Locale.US);
-            } else if (tm.getPhoneType() != TelephonyManager.PHONE_TYPE_CDMA) { // device is not 3G (would be unreliable)
+            } else if (tm.getPhoneType()
+                    != TelephonyManager.PHONE_TYPE_CDMA) { // device is not 3G (would be unreliable)
                 String networkCountry = tm.getNetworkCountryIso();
-                if (networkCountry != null && networkCountry.length() == 2) { // network country code is available
+                if (networkCountry != null
+                        && networkCountry.length() == 2) { // network country code is available
                     return networkCountry.toUpperCase(Locale.US);
                 }
             }

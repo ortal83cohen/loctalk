@@ -1,6 +1,8 @@
 package com.travoca.app.adapter;
 
 
+import com.travoca.app.R;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.database.Cursor;
@@ -10,8 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
-
-import com.travoca.app.R;
 
 public class RecentSearchesAdapter extends CursorAdapter {
 
@@ -43,7 +43,9 @@ public class RecentSearchesAdapter extends CursorAdapter {
         textViewPersonName.setText(
                 Html.fromHtml(title + "</font>" + subTitle));
 
-        textViewPersonName.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.mainnav_recent_search, 0, 0, 0);
+        textViewPersonName
+                .setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.mainnav_recent_search,
+                        0, 0, 0);
         int padding = (int) r.getDimension(R.dimen.minimum_default_padding);
         textViewPersonName.setPadding(0, padding, padding, padding);
 

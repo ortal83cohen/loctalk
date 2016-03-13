@@ -1,11 +1,11 @@
 package com.travoca.app.travocaapi;
 
-import android.widget.Toast;
-
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.model.DetailsResponse;
 import com.travoca.app.R;
 import com.travoca.app.utils.AppLog;
+
+import android.widget.Toast;
 
 import retrofit.Response;
 
@@ -14,6 +14,7 @@ import retrofit.Response;
  * @date 2015-11-03
  */
 public abstract class AvailabilityDetailsCallback extends RetrofitCallback<DetailsResponse> {
+
     protected boolean isDatesRequest = true;
 
     public void setIsDatesRequest(boolean isDatesRequest) {
@@ -45,7 +46,8 @@ public abstract class AvailabilityDetailsCallback extends RetrofitCallback<Detai
 
     protected void onNoAvailability(DetailsResponse detailsResponse) {
         if (mWeakContext != null && mWeakContext.get() != null) {
-            Toast.makeText(mWeakContext.get(), R.string.record_not_available, Toast.LENGTH_SHORT).show();
+            Toast.makeText(mWeakContext.get(), R.string.record_not_available, Toast.LENGTH_SHORT)
+                    .show();
         }
     }
 }

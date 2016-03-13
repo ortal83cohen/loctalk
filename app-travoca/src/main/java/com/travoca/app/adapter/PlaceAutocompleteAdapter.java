@@ -16,6 +16,20 @@
 
 package com.travoca.app.adapter;
 
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.PendingResult;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.location.places.AutocompleteFilter;
+import com.google.android.gms.location.places.AutocompletePrediction;
+import com.google.android.gms.location.places.AutocompletePredictionBuffer;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.Places;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+
+import com.travoca.app.R;
+import com.travoca.app.provider.DbContract;
+
 import android.content.Context;
 import android.database.Cursor;
 import android.graphics.Color;
@@ -30,19 +44,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.location.places.AutocompleteFilter;
-import com.google.android.gms.location.places.AutocompletePrediction;
-import com.google.android.gms.location.places.AutocompletePredictionBuffer;
-import com.google.android.gms.location.places.Place;
-import com.google.android.gms.location.places.Places;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
-import com.travoca.app.R;
-import com.travoca.app.provider.DbContract;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -54,11 +55,14 @@ public class PlaceAutocompleteAdapter
         extends ArrayAdapter<PlaceAutocompleteAdapter.PlaceItem> implements Filterable {
 
     private LayoutInflater mInflater;
+
     private int mDropDownResource;
+
     /**
      * Current record returned by this adapter.
      */
     private ArrayList<PlaceItem> mResultList;
+
     private ArrayList<PlaceItem> mHistoryList;
 
     /**
@@ -75,6 +79,7 @@ public class PlaceAutocompleteAdapter
      * The autocomplete filter used to restrict queries to a specific set of place types.
      */
     private AutocompleteFilter mPlaceFilter;
+
     private CharSequence mConstraint;
 
     /**
@@ -83,12 +88,13 @@ public class PlaceAutocompleteAdapter
      * @see ArrayAdapter#ArrayAdapter(Context, int)
      */
     public PlaceAutocompleteAdapter(Context context, int resource, GoogleApiClient googleApiClient,
-                                    LatLngBounds bounds) {
+            LatLngBounds bounds) {
         super(context, resource);
         mDropDownResource = resource;
         mGoogleApiClient = googleApiClient;
         mBounds = bounds;
-        mPlaceFilter = AutocompleteFilter.create(Arrays.asList(Place.TYPE_GEOCODE, Place.TYPE_ESTABLISHMENT));
+        mPlaceFilter = AutocompleteFilter
+                .create(Arrays.asList(Place.TYPE_GEOCODE, Place.TYPE_ESTABLISHMENT));
         mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -114,7 +120,7 @@ public class PlaceAutocompleteAdapter
     }
 
     private View createViewFromResource(int position, View convertView, ViewGroup parent,
-                                        int resource) {
+            int resource) {
         LinearLayout Layout;
         TextView text;
         Layout = (LinearLayout) mInflater.inflate(resource, parent, false);
@@ -158,7 +164,8 @@ public class PlaceAutocompleteAdapter
         if (mConstraint == null || mConstraint.toString().equals("")) {
             return mHistoryList.get(position);
         }
-        return (mResultList == null || position >= mResultList.size()) ? new PlaceCurrentLocation() : mResultList.get(position);
+        return (mResultList == null || position >= mResultList.size()) ? new PlaceCurrentLocation()
+                : mResultList.get(position);
     }
 
     /**
@@ -208,7 +215,9 @@ public class PlaceAutocompleteAdapter
         if (constraint != null && !constraint.equals("")) {
             mConstraint = constraint;
             PendingResult<AutocompletePredictionBuffer> results =
-                    Places.GeoDataApi.getAutocompletePredictions(mGoogleApiClient, constraint.toString(), mBounds, mPlaceFilter);
+                    Places.GeoDataApi
+                            .getAutocompletePredictions(mGoogleApiClient, constraint.toString(),
+                                    mBounds, mPlaceFilter);
 
             // This method should have been called off the main UI thread. Block and wait for at most 60s
             // for a result from the API.
@@ -217,7 +226,8 @@ public class PlaceAutocompleteAdapter
             // Confirm that the query completed successfully, otherwise return null
             final Status status = autocompletePredictions.getStatus();
             if (!status.isSuccess()) {
-                Toast.makeText(getContext(), R.string.could_not_connect_to_google + status.toString(),
+                Toast.makeText(getContext(),
+                        R.string.could_not_connect_to_google + status.toString(),
                         Toast.LENGTH_SHORT).show();
 
                 autocompletePredictions.release();
@@ -231,10 +241,14 @@ public class PlaceAutocompleteAdapter
                     continue;
                 }
                 String htmlText = prediction.getDescription();
-                if (mConstraint != null && htmlText.toUpperCase().startsWith(mConstraint.toString().toUpperCase())) {
-                    htmlText = "<font color=\"black\">" + htmlText.substring(0, mConstraint.length()) + "</font>" + htmlText.substring(mConstraint.length());
+                if (mConstraint != null && htmlText.toUpperCase()
+                        .startsWith(mConstraint.toString().toUpperCase())) {
+                    htmlText = "<font color=\"black\">" + htmlText
+                            .substring(0, mConstraint.length()) + "</font>" + htmlText
+                            .substring(mConstraint.length());
                 }
-                resultList.add(new PlaceAutocomplete(prediction.getPlaceId(), prediction.getDescription(), htmlText));
+                resultList.add(new PlaceAutocomplete(prediction.getPlaceId(),
+                        prediction.getDescription(), htmlText));
             }
 
             // Release the buffer now that all data has been copied.
@@ -248,22 +262,34 @@ public class PlaceAutocompleteAdapter
         ArrayList<PlaceItem> resultList = new ArrayList<>();
         resultList.add(new PlaceCurrentLocation());
 
-        Cursor cursor = getContext().getContentResolver().query(DbContract.SearchHistory.CONTENT_URI.buildUpon().appendQueryParameter("limit", "5").build(), null, null, null, null);
+        Cursor cursor = getContext().getContentResolver()
+                .query(DbContract.SearchHistory.CONTENT_URI.buildUpon()
+                        .appendQueryParameter("limit", "5").build(), null, null, null, null);
         if (cursor != null && cursor.getCount() != 0) {
             cursor.moveToFirst();
             do {
-                if (cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LOCATION_NAME)) == null) {
+                if (cursor.getString(
+                        cursor.getColumnIndex(DbContract.SearchHistoryColumns.LOCATION_NAME))
+                        == null) {
                     continue;
                 }
                 resultList.add(new PlaceHistory(
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LOCATION_NAME)),
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LAT)),
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.LON)),
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LAT)),
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.NORTHEAST_LON)),
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LAT)),
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.SOUTHWEST_LON)),
-                        cursor.getString(cursor.getColumnIndex(DbContract.SearchHistoryColumns.TYPES))))
+                        cursor.getString(cursor.getColumnIndex(
+                                DbContract.SearchHistoryColumns.LOCATION_NAME)),
+                        cursor.getString(
+                                cursor.getColumnIndex(DbContract.SearchHistoryColumns.LAT)),
+                        cursor.getString(
+                                cursor.getColumnIndex(DbContract.SearchHistoryColumns.LON)),
+                        cursor.getString(cursor.getColumnIndex(
+                                DbContract.SearchHistoryColumns.NORTHEAST_LAT)),
+                        cursor.getString(cursor.getColumnIndex(
+                                DbContract.SearchHistoryColumns.NORTHEAST_LON)),
+                        cursor.getString(cursor.getColumnIndex(
+                                DbContract.SearchHistoryColumns.SOUTHWEST_LAT)),
+                        cursor.getString(cursor.getColumnIndex(
+                                DbContract.SearchHistoryColumns.SOUTHWEST_LON)),
+                        cursor.getString(
+                                cursor.getColumnIndex(DbContract.SearchHistoryColumns.TYPES))))
                 ;
 
             } while (cursor.moveToNext());
@@ -283,7 +309,9 @@ public class PlaceAutocompleteAdapter
      * Holder for Places Geo Data Autocomplete API record.
      */
     public class PlaceAutocomplete extends PlaceItem {
+
         private CharSequence placeId;
+
         private CharSequence htmlText;
 
         PlaceAutocomplete(CharSequence placeId, CharSequence description, CharSequence htmlText) {
@@ -313,19 +341,30 @@ public class PlaceAutocompleteAdapter
     }
 
     public class PlaceHistory extends PlaceItem {
+
         SimpleDateFormat input = new SimpleDateFormat("yyyy-MM-d k", Locale.US);
+
         SimpleDateFormat output = new SimpleDateFormat("MMM d", Locale.getDefault());
+
         private CharSequence mHtmlText;
+
         private float mLat;
+
         private float mLng;
+
         private double mNortheastLat;
+
         private double mNortheastLon;
+
         private double mSouthwestLat;
+
         private double mSouthwestLon;
+
         private String mGoogleTypes;
 
 
-        PlaceHistory(String locationName, String lat, String lng, String northeastLat, String northeastLon, String southwestLat, String southwestLon, String googleTypes) {
+        PlaceHistory(String locationName, String lat, String lng, String northeastLat,
+                String northeastLon, String southwestLat, String southwestLon, String googleTypes) {
             super(locationName);
 
             mLat = Float.valueOf(lat);
@@ -336,7 +375,6 @@ public class PlaceAutocompleteAdapter
             mSouthwestLon = southwestLon == null ? 0 : Double.valueOf(southwestLon);
             mGoogleTypes = googleTypes;
 
-
             this.mHtmlText = "<font color=\"black\">" + locationName + " </font> <br>";
 
         }
@@ -346,10 +384,12 @@ public class PlaceAutocompleteAdapter
         }
 
         public LatLngBounds getLatLngBounds() {
-            if (mSouthwestLat == 0 || mSouthwestLon == 0 || mNortheastLat == 0 || mNortheastLon == 0) {
+            if (mSouthwestLat == 0 || mSouthwestLon == 0 || mNortheastLat == 0
+                    || mNortheastLon == 0) {
                 return null;
             }
-            return new LatLngBounds(new LatLng(mSouthwestLat, mSouthwestLon), new LatLng(mNortheastLat, mNortheastLon));
+            return new LatLngBounds(new LatLng(mSouthwestLat, mSouthwestLon),
+                    new LatLng(mNortheastLat, mNortheastLon));
         }
 
         @Override
@@ -370,6 +410,7 @@ public class PlaceAutocompleteAdapter
     }
 
     public class PlaceCurrentLocation extends PlaceItem {
+
         PlaceCurrentLocation() {
             super("Current Location");
         }
@@ -392,6 +433,7 @@ public class PlaceAutocompleteAdapter
 
 
     public abstract class PlaceItem {
+
         protected CharSequence mDescription;
 
         public PlaceItem(CharSequence description) {

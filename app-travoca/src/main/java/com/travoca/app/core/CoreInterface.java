@@ -1,14 +1,14 @@
 package com.travoca.app.core;
 
-import android.content.Context;
-import android.support.v4.util.ArrayMap;
-
 import com.squareup.okhttp.OkHttpClient;
 import com.travoca.api.mock.ResultsMockClient;
 import com.travoca.api.model.search.Poi;
 import com.travoca.app.Config;
 import com.travoca.app.travocaapi.RetrofitLogger;
 import com.travoca.app.travocaapi.UserAgentInterceptor;
+
+import android.content.Context;
+import android.support.v4.util.ArrayMap;
 
 import java.util.List;
 
@@ -57,11 +57,15 @@ public class CoreInterface {
 
         @Headers("Accept: application/json")
         @GET("/core_interface/sway.php/poi/list")
-        Call<List<Poi>> poiList(@Query("lon") String lon, @Query("lat") String lat, @Query("radius") String radiusInMeters);
+        Call<List<Poi>> poiList(@Query("lon") String lon, @Query("lat") String lat,
+                @Query("radius") String radiusInMeters);
 
         @Headers("Accept: application/json")
         @GET("/core_interface/sway.php/poi/list")
-        Call<List<Poi>> poiList(@Query("northeastlon") String northeastlon, @Query("northeastlat") String northeastlat, @Query("southwestlon") String southwestlon, @Query("southwestlat") String southwestlat);
+        Call<List<Poi>> poiList(@Query("northeastlon") String northeastlon,
+                @Query("northeastlat") String northeastlat,
+                @Query("southwestlon") String southwestlon,
+                @Query("southwestlat") String southwestlat);
     }
 
 

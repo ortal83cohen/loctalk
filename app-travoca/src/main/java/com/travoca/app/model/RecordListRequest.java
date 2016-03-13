@@ -1,9 +1,9 @@
 package com.travoca.app.model;
 
+import com.travoca.api.model.SearchRequest;
+
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import com.travoca.api.model.SearchRequest;
 
 /**
  * @author ortal
@@ -11,7 +11,8 @@ import com.travoca.api.model.SearchRequest;
  */
 public class RecordListRequest extends SearchRequest implements Parcelable {
 
-    public static final Parcelable.Creator<RecordListRequest> CREATOR = new Parcelable.Creator<RecordListRequest>() {
+    public static final Parcelable.Creator<RecordListRequest> CREATOR
+            = new Parcelable.Creator<RecordListRequest>() {
         public RecordListRequest createFromParcel(Parcel in) {
             return new RecordListRequest(in);
         }
@@ -34,7 +35,8 @@ public class RecordListRequest extends SearchRequest implements Parcelable {
         } else if (readType == 3) {
             setType((ViewPort) in.readParcelable(ViewPort.class.getClassLoader()));
         } else if (readType == 4) {
-            setType((MapSelectedViewPort) in.readParcelable(MapSelectedViewPort.class.getClassLoader()));
+            setType((MapSelectedViewPort) in
+                    .readParcelable(MapSelectedViewPort.class.getClassLoader()));
         }
 
         setCurrency(in.readString());

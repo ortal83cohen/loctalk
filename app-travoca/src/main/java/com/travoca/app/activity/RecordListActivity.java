@@ -1,17 +1,5 @@
 package com.travoca.app.activity;
 
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.drawable.AnimationDrawable;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
-
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.ActivityRecognition;
@@ -19,6 +7,7 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.places.Places;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
+
 import com.squareup.otto.Subscribe;
 import com.travoca.api.model.Record;
 import com.travoca.api.model.SearchRequest;
@@ -42,6 +31,18 @@ import com.travoca.app.map.ResultsMap;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.widget.AppBar;
 
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
+
 import java.util.HashMap;
 
 import butterknife.Bind;
@@ -51,24 +52,39 @@ import butterknife.ButterKnife;
  * @author ortal
  * @date 2015-04-19
  */
-public class RecordListActivity extends BaseActivity implements OnMapReadyCallback, ResultsMap.Listener, RecordViewHolder.Listener, RecordListFragment.Listener, FragmentManager.OnBackStackChangedListener, HomeFragment.Listener, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
+public class RecordListActivity extends BaseActivity
+        implements OnMapReadyCallback, ResultsMap.Listener, RecordViewHolder.Listener,
+        RecordListFragment.Listener, FragmentManager.OnBackStackChangedListener,
+        HomeFragment.Listener, GoogleApiClient.OnConnectionFailedListener,
+        GoogleApiClient.ConnectionCallbacks {
 
     private static final String FRAGMENT_HOME = "fragment_datepicker";
+
     private static final String FRAGMENT_RESULTSLIST = "fragment_listview";
+
     private static final String FRAGMENT_MAP = "menu_map";
+
     private static final String FRAGMENT_SORT = "fragment_sort";
+
     private static final String FRAGMENT_HOTEL_SUMMARY = "fragment_record_summary";
+
     protected GoogleApiClient mGoogleApiClient;
+
     @Bind(R.id.app_bar)
     AppBar mToolbar;
+
     @Bind(R.id.refresh_records)
     Button mRefreshRecords;
+
     @Bind(R.id.loader_image)
     ImageView mLoaderImage;
+
     private ResultsMap mMap;
 
     private int mRateMinPrice = 10;
+
     private int mRateMaxPrice = 1250;
+
     private HashMap<Integer, Integer> mPoisTypes;
 
     public static Intent createIntent(RecordListRequest request, Context context) {
@@ -131,7 +147,8 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
         getSupportFragmentManager().addOnBackStackChangedListener(this);
 
-        RecordsMapFragment fragmentMap = (RecordsMapFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_MAP);
+        RecordsMapFragment fragmentMap = (RecordsMapFragment) getSupportFragmentManager()
+                .findFragmentByTag(FRAGMENT_MAP);
         if (fragmentMap != null) {
             fragmentMap.getMapAsync(this);
         }
@@ -183,9 +200,11 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
     @Override
     public void onRecordMarkerClick(Record acc) {
 
-        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_overlay_container);
+        Fragment fragment = getSupportFragmentManager()
+                .findFragmentById(R.id.fragment_overlay_container);
 
-        if (fragment != null && fragment instanceof RecordMapSummaryFragment && fragment.isVisible()) {
+        if (fragment != null && fragment instanceof RecordMapSummaryFragment && fragment
+                .isVisible()) {
             getSupportFragmentManager().popBackStack();
         }
 
@@ -210,7 +229,9 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
             startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(startMain);
         }
-        RecordMapSummaryFragment recordMapSummaryFragment = (RecordMapSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_SUMMARY);
+        RecordMapSummaryFragment recordMapSummaryFragment
+                = (RecordMapSummaryFragment) getSupportFragmentManager()
+                .findFragmentByTag(FRAGMENT_HOTEL_SUMMARY);
         if (recordMapSummaryFragment == null) {
             hideRefreshRecordsButton();
         }
@@ -219,7 +240,9 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
     @Override
     public void removeRecordSummaryFragment() {
-        RecordMapSummaryFragment recordMapSummaryFragment = (RecordMapSummaryFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_HOTEL_SUMMARY);
+        RecordMapSummaryFragment recordMapSummaryFragment
+                = (RecordMapSummaryFragment) getSupportFragmentManager()
+                .findFragmentByTag(FRAGMENT_HOTEL_SUMMARY);
         if (recordMapSummaryFragment != null) {
             getSupportFragmentManager()
                     .beginTransaction()
@@ -230,7 +253,8 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
 
     public void refreshList() {
-        RecordListFragment listFragment = (RecordListFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_RESULTSLIST);
+        RecordListFragment listFragment = (RecordListFragment) getSupportFragmentManager()
+                .findFragmentByTag(FRAGMENT_RESULTSLIST);
         if (listFragment != null) {
             listFragment.refresh();
         }
@@ -287,7 +311,8 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
     }
 
     private void showMap() {
-        RecordsMapFragment mapFragment = (RecordsMapFragment) getSupportFragmentManager().findFragmentByTag(FRAGMENT_MAP);
+        RecordsMapFragment mapFragment = (RecordsMapFragment) getSupportFragmentManager()
+                .findFragmentByTag(FRAGMENT_MAP);
         if (mapFragment == null) {
             mapFragment = new RecordsMapFragment();
             mapFragment.getMapAsync(this);
@@ -304,10 +329,12 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
 
         if (getSupportFragmentManager().findFragmentByTag(FRAGMENT_RESULTSLIST) != null) {
             // Got to initial state of the stack and resume list from stack instead of adding a new one
-            getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            getSupportFragmentManager()
+                    .popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         } else {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, RecordListFragment.newInstance(), FRAGMENT_RESULTSLIST)
+                    .replace(R.id.fragment_container, RecordListFragment.newInstance(),
+                            FRAGMENT_RESULTSLIST)
                     .commit();
         }
     }
@@ -330,9 +357,13 @@ public class RecordListActivity extends BaseActivity implements OnMapReadyCallba
         if (mMap != null) {
             mMap.refreshRecords();
             if (locationType instanceof ViewPortType) {
-                mMap.moveCamera(((ViewPortType) locationType).getNortheastLat(), ((ViewPortType) locationType).getNortheastLon(), ((ViewPortType) locationType).getSouthwestLat(), ((ViewPortType) locationType).getSouthwestLon());
+                mMap.moveCamera(((ViewPortType) locationType).getNortheastLat(),
+                        ((ViewPortType) locationType).getNortheastLon(),
+                        ((ViewPortType) locationType).getSouthwestLat(),
+                        ((ViewPortType) locationType).getSouthwestLon());
             } else if (locationType instanceof SprType) {
-                mMap.moveCamera(((SprType) locationType).getLatitude(), ((SprType) locationType).getLongitude());
+                mMap.moveCamera(((SprType) locationType).getLatitude(),
+                        ((SprType) locationType).getLongitude());
             }
         }
         refreshList();

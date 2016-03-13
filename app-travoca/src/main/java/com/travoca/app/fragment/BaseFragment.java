@@ -1,11 +1,11 @@
 package com.travoca.app.fragment;
 
-import android.support.v4.app.Fragment;
-
 import com.travoca.app.App;
 import com.travoca.app.activity.BaseActivity;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.preferences.UserPreferences;
+
+import android.support.v4.app.Fragment;
 
 /**
  * @author ortal
