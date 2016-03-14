@@ -1,177 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.travoca.app">
+          package="com.travoca.app">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
     <!-- Get available accounts: email autocomplete -->
     <!-- Google+ To retrieve the account name (email) as part of sign-in -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <!--
     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user.
     This disconnect option is required to comply with the Google+ Sign-In developer policies
     -->
-    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
 
     <permission
-        android:name="${applicationId}.permission.MAPS_RECEIVE"
-        android:protectionLevel="signature" />
+            android:name="${applicationId}.permission.MAPS_RECEIVE"
+            android:protectionLevel="signature"/>
 
     <uses-feature
-        android:glEsVersion="0x00020000"
-        android:required="true" />
+            android:glEsVersion="0x00020000"
+            android:required="true"/>
 
     <application
-        android:name=".TravocaApplication"
-        android:allowBackup="true"
-        android:fullBackupContent="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".activity.MainActivity"
+            android:name=".TravocaApplication"
+            android:allowBackup="true"
+            android:fullBackupContent="true"
+            android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.Startup">
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".activity.MainActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.Startup">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.RouteActivity"
-            android:label="@string/app_name"
-            android:launchMode="singleTask"
-            android:noHistory="true"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoDisplay">
+                android:name=".activity.RouteActivity"
+                android:label="@string/app_name"
+                android:launchMode="singleTask"
+                android:noHistory="true"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoDisplay">
 
         </activity>
 
         <activity
-            android:name=".activity.HomeActivity"
-            android:label="@string/app_name"
-            android:largeHeap="true"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.Startup">
+                android:name=".activity.HomeActivity"
+                android:label="@string/app_name"
+                android:largeHeap="true"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.Startup">
 
         </activity>
         <activity
-            android:name=".activity.RecordListActivity"
-            android:largeHeap="true"
-            android:parentActivityName=".activity.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.TransparentToolbar">
+                android:name=".activity.RecordListActivity"
+                android:largeHeap="true"
+                android:parentActivityName=".activity.MainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.TransparentToolbar">
             <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity" />
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".activity.MainActivity"/>
         </activity>
         <activity
-            android:name=".activity.MyListActivity"
-            android:largeHeap="true"
-            android:parentActivityName=".activity.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.TransparentToolbar">
+                android:name=".activity.MyListActivity"
+                android:largeHeap="true"
+                android:parentActivityName=".activity.MainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.TransparentToolbar">
             <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity" />
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".activity.MainActivity"/>
         </activity>
 
         <activity
-            android:name=".activity.NewRecordActivity"
-            android:label="@string/title_activity_new_record"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.TransparentToolbar" />
+                android:name=".activity.NewRecordActivity"
+                android:label="@string/title_activity_new_record"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.TransparentToolbar"/>
         <activity
-            android:name=".activity.RecordDetailsTabsActivity"
-            android:screenOrientation="portrait" />
+                android:name=".activity.RecordDetailsTabsActivity"
+                android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".activity.RecentSearchesActivity"
-            android:label="@string/recent_searched"
-            android:screenOrientation="portrait" />
+                android:name=".activity.RecentSearchesActivity"
+                android:label="@string/recent_searched"
+                android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.FavoritesActivity"
-            android:label="@string/favorites"
-            android:screenOrientation="portrait" />
+                android:name=".activity.FavoritesActivity"
+                android:label="@string/favorites"
+                android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.RecordDetailsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.TransparentToolbar" />
+                android:name=".activity.RecordDetailsActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.TransparentToolbar"/>
         <activity
-            android:name=".activity.LoginActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.TransparentToolbar" />
+                android:name=".activity.LoginActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.TransparentToolbar"/>
 
         <provider
-            android:name=".provider.DbProvider"
-            android:authorities="${applicationId}.provider"
-            android:exported="false" />
+                android:name=".provider.DbProvider"
+                android:authorities="${applicationId}.provider"
+                android:exported="false"/>
 
         <activity
-            android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+                android:name="com.facebook.FacebookActivity"
+                android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
 
         <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/facebook_app_id"/>
         <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version"/>
         <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_api_key" />
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/google_api_key"/>
         <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="e5533e45838006515670b28d6ca70ce22dec50e8" />
+                android:name="io.fabric.ApiKey"
+                android:value="e5533e45838006515670b28d6ca70ce22dec50e8"/>
 
         <activity
-            android:name=".activity.SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:screenOrientation="portrait" />
+                android:name=".activity.SettingsActivity"
+                android:label="@string/title_activity_settings"
+                android:screenOrientation="portrait"/>
 
         <meta-data
-            android:name="com.mixpanel.android.MPConfig.EnableDebugLogging"
-            android:value="@bool/is_mixpanel_debug" />
+                android:name="com.mixpanel.android.MPConfig.EnableDebugLogging"
+                android:value="@bool/is_mixpanel_debug"/>
         <!-- [END] Mixpanel Analytics //-->
         <receiver
-            android:name="com.travoca.app.service.BootUpReceiver"
-            android:enabled="true">
+                android:name="com.travoca.app.service.BootUpReceiver"
+                android:enabled="true">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="travoca.up" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="travoca.up"/>
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </receiver>
 
         <service
-            android:name=".service.LocationService"
-            android:enabled="true"
-            android:exported="true"
-            android:process=":LocationService" />
+                android:name=".service.LocationService"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":LocationService"/>
         <service
-            android:name=".service.GeofenceTransitionsIntentService"
-            android:enabled="true"
-            android:exported="true"
-            android:process=":GeofenceTransitionsIntentService" />
+                android:name=".service.GeofenceTransitionsIntentService"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":GeofenceTransitionsIntentService"/>
         <service
-            android:name=".utils.amazon.UploadService"
-            android:enabled="true"
-            android:exported="true"
-            android:process=":UploadService" />
+                android:name=".utils.amazon.UploadService"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":UploadService"/>
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
 package com.travoca.app.fragment;
 
 
+import com.facebook.login.widget.LoginButton;
 import com.squareup.otto.Subscribe;
 import com.squareup.picasso.Picasso;
 import com.travoca.app.App;
@@ -32,6 +33,9 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
 
 public class NavigationFragment extends Fragment implements View.OnClickListener {
 
@@ -40,6 +44,14 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
     private DrawerLayout mDrawerLayout;
 
     private View mView;
+
+
+    @Bind(R.id.login)
+    TextView mLogin;
+    @Bind(R.id.profile_name)
+    TextView mFirstName;
+    @Bind(R.id.profile_surname)
+    TextView mLstName;
 
     @Override
     public void onAttach(Activity activity) {
@@ -66,6 +78,7 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
             }
         });
 
+        ButterKnife.bind(this, mView);
         MemberStorage memberStorage = App.provide(getActivity()).memberStorage();
         User user = memberStorage.loadUser();
 
@@ -103,20 +116,20 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
         View header = inflater.inflate(R.layout.nav_header, headerView, false);
 
         if (user == null) {
+            mLogin.setText("Login");
             setupItem(R.id.my_list, NavigationDrawer.MY_LIST, false);
         } else {
+            mLogin.setText("Logout");
             setupItem(R.id.my_list, NavigationDrawer.MY_LIST, true);
             header = inflater.inflate(R.layout.nav_header_login, headerView, false);
-            TextView nameFirst = (TextView) header.findViewById(R.id.profile_name);
-            TextView nameLast = (TextView) header.findViewById(R.id.profile_surname);
 
             if (TextUtils.isEmpty(user.profile.firstName) && TextUtils
                     .isEmpty(user.profile.lastName)) {
-                nameFirst.setText("Hello,");
-                nameLast.setText("Traveller");
+                mFirstName.setText("Hello,");
+                mLstName.setText("Traveller");
             } else {
-                nameFirst.setText(user.profile.firstName);
-                nameLast.setText(user.profile.lastName);
+                mFirstName.setText(user.profile.firstName);
+                mLstName.setText(user.profile.lastName);
             }
 
             if (!TextUtils.isEmpty(user.profile.imageUrl)) {

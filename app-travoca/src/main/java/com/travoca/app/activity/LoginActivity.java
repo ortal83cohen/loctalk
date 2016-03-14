@@ -9,6 +9,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 import com.travoca.app.R;
 import com.travoca.app.fragment.LoginFragment;
+import com.travoca.app.widget.AppBar;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,6 +17,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
@@ -41,8 +43,7 @@ public class LoginActivity extends BaseActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        ButterKnife.bind(this);
+
         gso = new GoogleSignInOptions.Builder(
                 GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -53,6 +54,8 @@ public class LoginActivity extends BaseActivity
                         this /* OnConnectionFailedListener */)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
+
+        setTitle("Login");
 
         if (savedInstanceState == null) {
             getSupportFragmentManager()
@@ -74,7 +77,7 @@ public class LoginActivity extends BaseActivity
 
     @Override
     protected void onCreateContentView() {
-
+        setContentView(R.layout.activity_login);
     }
 
 

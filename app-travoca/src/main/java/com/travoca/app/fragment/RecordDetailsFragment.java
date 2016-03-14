@@ -209,7 +209,7 @@ public class RecordDetailsFragment extends BaseFragment
         new DownloadAndPlay().execute(mRecord.recordUrl);
         mediaPlayer = new MediaPlayer();
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-        if (mRecord.canVote.equals("1")) {
+        if (mRecord.canVote != null && mRecord.canVote.equals("1")) {
             mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
 
                 @Override

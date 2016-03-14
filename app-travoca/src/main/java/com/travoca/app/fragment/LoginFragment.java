@@ -41,6 +41,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -57,7 +59,6 @@ public class LoginFragment extends BaseFragment
         implements View.OnClickListener {
 
     AccessTokenTracker accessTokenTracker;
-
 
     @Bind(R.id.login_button)
     LoginButton mFacebookButton;
@@ -294,6 +295,12 @@ public class LoginFragment extends BaseFragment
     }
 
     @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+
+    @Override
     public void onDestroy() {
         super.onDestroy();
         accessTokenTracker.stopTracking();
@@ -307,8 +314,7 @@ public class LoginFragment extends BaseFragment
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        setHasOptionsMenu(false);
-
+        setHasOptionsMenu(true);
     }
 
     @Override

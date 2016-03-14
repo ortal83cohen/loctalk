@@ -34,6 +34,8 @@ public class BootUpReceiver extends BroadcastReceiver
 
     private static final String TAG = "BootUpReceiver";
 
+    public static final String EXIT_REQUEST_AREA = "exit_request_area";
+
     protected GoogleApiClient mGoogleApiClient;
 
     Context mContext;
@@ -95,7 +97,8 @@ public class BootUpReceiver extends BroadcastReceiver
         if (builder == null) {
             Cursor cursor = mContext.getContentResolver()
                     .query(DbContract.ServiceGps.CONTENT_URI.buildUpon().
-                            build(), null, DbContract.ServiceGpsColumns.USED + " = '0'", null,
+                                    build(), null, DbContract.ServiceGpsColumns.USED + " = '0'",
+                            null,
                             null);
             if (cursor.getCount() == 0) {
                 return;
@@ -104,6 +107,14 @@ public class BootUpReceiver extends BroadcastReceiver
             builder.setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER);
             List<Geofence> geofenceList = new ArrayList<>();
             if (cursor != null) {
+                geofenceList.add(new Geofence.Builder()
+                        .setRequestId(EXIT_REQUEST_AREA)
+                        .setCircularRegion(
+                                1, 1,//// TODO: 3/14/2016 get current location
+                                10000)
+                        .setExpirationDuration(100 * 60 * 60 * 100) //100 hours
+                        .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_EXIT)
+                        .build());
                 while (cursor.moveToNext()) {
                     geofenceList.add(new Geofence.Builder()
                             .setRequestId(cursor.getString(
