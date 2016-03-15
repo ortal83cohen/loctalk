@@ -48,10 +48,6 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
 
     @Bind(R.id.login)
     TextView mLogin;
-    @Bind(R.id.profile_name)
-    TextView mFirstName;
-    @Bind(R.id.profile_surname)
-    TextView mLstName;
 
     @Override
     public void onAttach(Activity activity) {
@@ -122,14 +118,16 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
             mLogin.setText("Logout");
             setupItem(R.id.my_list, NavigationDrawer.MY_LIST, true);
             header = inflater.inflate(R.layout.nav_header_login, headerView, false);
+            TextView nameFirst = (TextView) header.findViewById(R.id.profile_name);
+            TextView nameLast = (TextView) header.findViewById(R.id.profile_surname);
 
             if (TextUtils.isEmpty(user.profile.firstName) && TextUtils
                     .isEmpty(user.profile.lastName)) {
-                mFirstName.setText("Hello,");
-                mLstName.setText("Traveller");
+                nameFirst.setText("Hello,");
+                nameLast.setText("Traveller");
             } else {
-                mFirstName.setText(user.profile.firstName);
-                mLstName.setText(user.profile.lastName);
+                nameFirst.setText(user.profile.firstName);
+                nameLast.setText(user.profile.lastName);
             }
 
             if (!TextUtils.isEmpty(user.profile.imageUrl)) {
