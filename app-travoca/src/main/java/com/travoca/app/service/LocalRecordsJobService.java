@@ -12,6 +12,7 @@ import com.travoca.app.utils.Notification;
 import android.location.Location;
 import android.os.Bundle;
 import android.text.format.Time;
+import android.util.Log;
 
 import me.tatarka.support.job.JobParameters;
 import me.tatarka.support.job.JobService;
@@ -21,13 +22,15 @@ public class LocalRecordsJobService extends JobService
         GoogleApiClient.OnConnectionFailedListener {
 
 
+    private static final String TAG = "LocalRecordsJobService";
+
     private GoogleApiClient mGoogleApiClient;
 
     @Override
     public boolean onStartJob(JobParameters jobParameters) {
         Time time = new Time();   time.setToNow();
         new Notification(this).sendNotification(
-               "job Service"+time.hour);
+               "job Service "+time.hour);
         mGoogleApiClient = new GoogleApiClient.Builder(this, this, this)
                 .addApi(Places.GEO_DATA_API)
                 .addApi(LocationServices.API)
@@ -44,21 +47,22 @@ public class LocalRecordsJobService extends JobService
         Location lastLocation = LocationServices.FusedLocationApi
                 .getLastLocation(mGoogleApiClient);
 
+        Log.i(TAG, "onConnected");
         new LocalRecordsRequest(this).makeRequests(lastLocation);
     }
 
     @Override
     public void onConnectionSuspended(int i) {
-
+        Log.e(TAG, "onConnectionSuspended");
     }
 
     @Override
     public boolean onStopJob(JobParameters jobParameters) {
-        return false;
+        Log.e(TAG, "onStopJob"); return false;
     }
 
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
-
+        Log.e(TAG, "onConnectionFailed");
     }
 }

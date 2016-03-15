@@ -68,7 +68,7 @@ public class BootUpReceiver extends BroadcastReceiver
     @Override
     public void onConnected(Bundle bundle) {
         mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-
+//        new LocalRecordsRequest(mContext).makeRequests(mLastLocation);
         JobScheduler jobScheduler = JobScheduler.getInstance(mContext);
 
         JobInfo.Builder builder = new JobInfo.Builder(JOB_ID,

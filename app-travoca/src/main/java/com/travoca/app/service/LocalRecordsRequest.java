@@ -45,12 +45,7 @@ public class LocalRecordsRequest {
         @Override
         protected void success(ResultsResponse apiResponse,
                 Response<ResultsResponse> response) {
-            String lastUpdate = "";
-//                android.os.Debug.waitForDebugger();
             for (Record record : apiResponse.records) {
-                if (lastUpdate.compareTo(record.date) < 0) {
-                    lastUpdate = record.date;
-                }
                 ContentValues values = new ContentValues();
                 values.put(DbContract.ServiceGpsResultsColumns.KEY_ID, record.id);
                 values.put(DbContract.ServiceGpsResultsColumns.LOCATION_NAME, record.title);
@@ -59,7 +54,6 @@ public class LocalRecordsRequest {
                 values.put(DbContract.ServiceGpsResultsColumns.CREATE_AT, record.date);
                 mContext.getContentResolver()
                         .insert(DbContract.ServiceGpsResults.CONTENT_URI, values);
-
             }
 
             Log.e(TAG, "success: " + apiResponse.records.size());
@@ -71,7 +65,7 @@ public class LocalRecordsRequest {
         mContext = context;
     }
 
-    void makeRequests(Location lastLocation) {
+    public void makeRequests(Location lastLocation) {
 
         Log.e(TAG, "onLocationChanged: " + lastLocation.getLongitude() + "," + lastLocation
                 .getLatitude());
@@ -112,8 +106,7 @@ public class LocalRecordsRequest {
         values.put(DbContract.ServiceGpsRequestsColumns.RADIUS, REQUEST_RADIUS);
         values.put(DbContract.ServiceGpsRequestsColumns.LAT, lastLocation.getLatitude());
         values.put(DbContract.ServiceGpsRequestsColumns.LON, lastLocation.getLongitude());
-        mContext.getContentResolver().insert(DbContract.ServiceGpsRequests.CONTENT_URI,
-                values);
+        mContext.getContentResolver().insert(DbContract.ServiceGpsRequests.CONTENT_URI, values);
 
     }
 

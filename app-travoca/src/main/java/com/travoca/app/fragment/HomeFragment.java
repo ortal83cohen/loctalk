@@ -38,6 +38,7 @@ import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.model.ViewPort;
 import com.travoca.app.provider.SearchHistory;
 import com.travoca.app.randerscript.BlurBuilder;
+import com.travoca.app.service.LocalRecordsRequest;
 import com.travoca.app.utils.AppLog;
 import com.travoca.app.utils.TextWatcherAdapter;
 
@@ -428,6 +429,7 @@ public class HomeFragment extends BaseFragment
             if (savedInstanceState != null) {
                 mLastLocation = savedInstanceState.getParcelable(LAST_LOCATION);
             }
+
 
             mGoogleApiClient = mListener.getGoogleApiClient();
 

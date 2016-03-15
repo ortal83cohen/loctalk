@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DbDatabase extends SQLiteOpenHelper {
 
     // Database Version
-    private static final int DATABASE_VERSION = 55;
+    private static final int DATABASE_VERSION = 61;
 
     // Database Name
     private static final String DATABASE_NAME = "TravocaDB";
@@ -86,6 +86,7 @@ public class DbDatabase extends SQLiteOpenHelper {
 
             db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_FAVORITES);
             db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_SERVICE_GPS_RESULTS);
+            db.execSQL("DROP TABLE IF EXISTS service_gps" );
             db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_SERVICE_GPS_REQUESTS);
             db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_SEARCH_HISTORY);
 
