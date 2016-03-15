@@ -195,5 +195,6 @@ dependencies {
     compile 'com.amazonaws:aws-android-sdk-core:2.+'
     compile 'com.amazonaws:aws-android-sdk-s3:2.+'
     compile 'com.amazonaws:aws-android-sdk-ec2:2.+'
+    compile 'me.tatarka.support:jobscheduler:0.1.1'
 
 }

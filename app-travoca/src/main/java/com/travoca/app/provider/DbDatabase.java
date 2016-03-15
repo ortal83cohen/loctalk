@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DbDatabase extends SQLiteOpenHelper {
 
     // Database Version
-    private static final int DATABASE_VERSION = 50;
+    private static final int DATABASE_VERSION = 55;
 
     // Database Name
     private static final String DATABASE_NAME = "TravocaDB";
@@ -50,20 +50,32 @@ public class DbDatabase extends SQLiteOpenHelper {
                 + " TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP," +
                 " PRIMARY KEY (" + DbContract.SearchHistoryColumns.LOCATION_NAME + ")  )";
 
-        String CREATE_SERVICE_GPS_TABLE = "CREATE TABLE IF NOT EXISTS "
-                + DbContract.Tables.TABLE_SERVICE_GPS + " ( " +
-                DbContract.ServiceGpsColumns.KEY_ID + " INTEGER ," +
-                DbContract.ServiceGpsColumns.USED + " INTEGER DEFAULT '0' ," +
-                DbContract.ServiceGpsColumns.LOCATION_NAME + " STRING ," +
-                DbContract.ServiceGpsColumns.LAT + " STRING ," +
-                DbContract.ServiceGpsColumns.LON + " STRING ," +
-                DbContract.ServiceGpsColumns.CREATE_AT + " TIMESTAMP ," +
-                " PRIMARY KEY (" + DbContract.ServiceGpsColumns.LAT + ","
-                + DbContract.ServiceGpsColumns.LON +
+        String CREATE_SERVICE_GPS_RESULTS_TABLE = "CREATE TABLE IF NOT EXISTS "
+                + DbContract.Tables.TABLE_SERVICE_GPS_RESULTS + " ( " +
+                DbContract.ServiceGpsResultsColumns.KEY_ID + " INTEGER ," +
+                DbContract.ServiceGpsResultsColumns.USED + " INTEGER DEFAULT '0' ," +
+                DbContract.ServiceGpsResultsColumns.LOCATION_NAME + " STRING ," +
+                DbContract.ServiceGpsResultsColumns.LAT + " STRING ," +
+                DbContract.ServiceGpsResultsColumns.LON + " STRING ," +
+                DbContract.ServiceGpsResultsColumns.CREATE_AT + " TIMESTAMP ," +
+                " PRIMARY KEY (" + DbContract.ServiceGpsResultsColumns.LAT + ","
+                + DbContract.ServiceGpsResultsColumns.LON +
+                ") ) ";
+
+        String CREATE_SERVICE_GPS_REQUEST_TABLE = "CREATE TABLE IF NOT EXISTS "
+                + DbContract.Tables.TABLE_SERVICE_GPS_REQUESTS + " ( " +
+                DbContract.ServiceGpsRequestsColumns.KEY_ID + " INTEGER ," +
+                DbContract.ServiceGpsRequestsColumns.RADIUS + " INTEGER ," +
+                DbContract.ServiceGpsRequestsColumns.LAT + " STRING ," +
+                DbContract.ServiceGpsRequestsColumns.LON + " STRING ," +
+                DbContract.ServiceGpsRequestsColumns.CREATE_AT + " TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ," +
+                " PRIMARY KEY (" + DbContract.ServiceGpsRequestsColumns.LAT + ","
+                + DbContract.ServiceGpsRequestsColumns.LON +
                 ") ) ";
         // create Records table
         db.execSQL(CREATE_HOTEL_TABLE);
-        db.execSQL(CREATE_SERVICE_GPS_TABLE);
+        db.execSQL(CREATE_SERVICE_GPS_RESULTS_TABLE);
+        db.execSQL(CREATE_SERVICE_GPS_REQUEST_TABLE);
         db.execSQL(CREATE_SEARCH_HISTORY_TABLE);
 
     }
@@ -73,7 +85,8 @@ public class DbDatabase extends SQLiteOpenHelper {
         if (oldVersion != newVersion) {
 
             db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_FAVORITES);
-            db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_SERVICE_GPS);
+            db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_SERVICE_GPS_RESULTS);
+            db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_SERVICE_GPS_REQUESTS);
             db.execSQL("DROP TABLE IF EXISTS " + DbContract.Tables.TABLE_SEARCH_HISTORY);
 
         }

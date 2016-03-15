@@ -19,26 +19,36 @@ public class DbContract {
 
     private static final String PATH_FAVORITES = "favorites";
 
-    private static final String PATH_SERVICE_GPS = "service_gps";
+    private static final String PATH_SERVICE_GPS_REQUESTS = "service_gps_requests";
 
-    private static final String PATH_SERVICE_GPS_LAST_DATE = "service_gps/last_date";
+    private static final String PATH_SERVICE_GPS_RESULTS = "service_gps_results";
 
     private static final String PATH_SEARCH_HISTORY = "search_history";
 
     interface Tables {
 
-        String TABLE_SERVICE_GPS = "service_gps";
+        String TABLE_SERVICE_GPS_RESULTS = "service_gps_results";
+        String TABLE_SERVICE_GPS_REQUESTS = "service_gps_requests";
         String TABLE_FAVORITES = "favorites";
         String TABLE_SEARCH_HISTORY = "search_history";
     }
 
-    public interface ServiceGpsColumns {
+    public interface ServiceGpsResultsColumns {
 
         String KEY_ID = "_id";
         String USED = "used";
         String LOCATION_NAME = "location_name";
         String LAT = "lat";
         String LON = "lon";
+        String CREATE_AT = "created_at";
+    }
+
+public interface ServiceGpsRequestsColumns {
+
+        String KEY_ID = "_id";
+        String LAT = "lat";
+        String LON = "lon";
+        String RADIUS = "radius";
         String CREATE_AT = "created_at";
     }
 
@@ -80,16 +90,34 @@ public class DbContract {
         }
     }
 
-    public static class ServiceGps implements ServiceGpsColumns, BaseColumns {
+    public static class ServiceGpsResults implements ServiceGpsResultsColumns, BaseColumns {
 
         public static final Uri CONTENT_URI =
-                BASE_CONTENT_URI.buildUpon().appendPath(PATH_SERVICE_GPS).build();
+                BASE_CONTENT_URI.buildUpon().appendPath(PATH_SERVICE_GPS_RESULTS).build();
 
         public static final String CONTENT_TYPE = "vnd.android.cursor.dir/int";
 
         public static Uri buildRecordUri(String id, String used, String name, String lat,
                 String lon, String created) {
             return CONTENT_URI.buildUpon().appendPath(id).appendPath(used).appendPath(name)
+                    .appendPath(lat).appendPath(lon).appendPath(created).build();
+        }
+
+        public static List<String> getList(Uri uri) {
+            return uri.getPathSegments();
+        }
+    }
+
+    public static class ServiceGpsRequests implements ServiceGpsResultsColumns, BaseColumns {
+
+        public static final Uri CONTENT_URI =
+                BASE_CONTENT_URI.buildUpon().appendPath(PATH_SERVICE_GPS_REQUESTS).build();
+
+        public static final String CONTENT_TYPE = "vnd.android.cursor.dir/int";
+
+        public static Uri buildRecordUri(String id, String radius, String lat,
+                String lon, String created) {
+            return CONTENT_URI.buildUpon().appendPath(id).appendPath(radius)
                     .appendPath(lat).appendPath(lon).appendPath(created).build();
         }
 

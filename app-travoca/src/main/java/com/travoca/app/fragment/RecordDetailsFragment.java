@@ -251,11 +251,7 @@ public class RecordDetailsFragment extends BaseFragment
             @Override
             public void onClick(View v) {
                 if (user != null) {
-                    try {
-                        mediaPlayer.start();
-                    } catch (Exception e) {
-                        // TODO: handle exception
-                    }
+                    mediaPlayer.start();
                 } else {
                     new AlertDialog.Builder(getActivity())
                             .setTitle("Alert")

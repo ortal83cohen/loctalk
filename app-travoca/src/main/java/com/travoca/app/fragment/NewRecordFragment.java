@@ -185,7 +185,7 @@ public class NewRecordFragment extends BaseFragment {
                     mPlayButtonState = true;
                     Toast.makeText(getActivity(), "Recording started", Toast.LENGTH_LONG).show();
                     recordButton.setImageDrawable(
-                            getResources().getDrawable(android.R.drawable.ic_media_pause));
+                            getActivity().getDrawable(android.R.drawable.ic_media_pause));
                     try {
                         new File(RecordFilePath).delete();
                         audioRecorder = new MediaRecorder();
@@ -196,10 +196,8 @@ public class NewRecordFragment extends BaseFragment {
                         audioRecorder.prepare();
                         audioRecorder.start();
                     } catch (IllegalStateException e) {
-                        // TODO Auto-generated catch block
                         e.printStackTrace();
                     } catch (IOException e) {
-                        // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
 

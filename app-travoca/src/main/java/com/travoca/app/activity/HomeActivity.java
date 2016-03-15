@@ -20,7 +20,6 @@ import com.travoca.app.core.CoreInterface;
 import com.travoca.app.fragment.HomeFragment;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.preferences.UserPreferences;
-import com.travoca.app.service.LocationService;
 import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.widget.IntentIntegrator;
 import com.travoca.app.widget.IntentResult;
@@ -99,9 +98,6 @@ public class HomeActivity extends BaseActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Intent intentService = new Intent(this, LocationService.class);
-        startService(intentService);
 
         ButterKnife.bind(this);
         AnalyticsCalls.get().register(getApplicationContext());

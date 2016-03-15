@@ -39,7 +39,6 @@ public class UserPreferencesStorage {
         }
         up.setCurrencyCode(currencyCode);
 
-        // TODO: Set according to device/user location?
         up.setPriceShowType(
                 mPrefs.getInt(KEY_PRICE_SHOW_TYPE, UserPreferences.PRICE_SHOW_TYPE_STAY));
         return up;

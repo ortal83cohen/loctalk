@@ -21,13 +21,15 @@ import java.util.ArrayList;
  */
 public class DbProvider extends ContentProvider {
 
-    private static final int FAVORITES_HOTELS = 100;
+    private static final int FAVORITES = 100;
 
-    private static final int FAVORITES_HOTEL_ID = 101;
+    private static final int FAVORITES_ID = 101;
 
     private static final int SEARCH_HISTORY = 200;
 
-    private static final int SERVICE_GPS = 300;
+    private static final int SERVICE_GPS_REQUESTS = 300;
+
+    private static final int SERVICE_GPS_RESULTS = 400;
 
     private static final UriMatcher sUriMatcher = buildUriMatcher();
 
@@ -36,10 +38,11 @@ public class DbProvider extends ContentProvider {
     private static UriMatcher buildUriMatcher() {
         final UriMatcher matcher = new UriMatcher(UriMatcher.NO_MATCH);
         final String authority = DbContract.CONTENT_AUTHORITY;
-        matcher.addURI(authority, "favorites", FAVORITES_HOTELS);
-        matcher.addURI(authority, "favorites/*", FAVORITES_HOTEL_ID);
+        matcher.addURI(authority, "favorites", FAVORITES);
+        matcher.addURI(authority, "favorites/*", FAVORITES_ID);
         matcher.addURI(authority, "search_history", SEARCH_HISTORY);
-        matcher.addURI(authority, "service_gps", SERVICE_GPS);
+        matcher.addURI(authority, "service_gps_requests", SERVICE_GPS_REQUESTS);
+        matcher.addURI(authority, "service_gps_results", SERVICE_GPS_RESULTS);
 
         return matcher;
     }
@@ -61,14 +64,16 @@ public class DbProvider extends ContentProvider {
     public String getType(Uri uri) {
         final int match = sUriMatcher.match(uri);
         switch (match) {
-            case FAVORITES_HOTELS:
+            case FAVORITES:
                 return DbContract.Favorites.CONTENT_TYPE;
-            case FAVORITES_HOTEL_ID:
+            case FAVORITES_ID:
                 return DbContract.Favorites.CONTENT_TYPE;
             case SEARCH_HISTORY:
                 return DbContract.SearchHistory.CONTENT_TYPE;
-            case SERVICE_GPS:
-                return DbContract.ServiceGps.CONTENT_TYPE;
+            case SERVICE_GPS_REQUESTS:
+                return DbContract.ServiceGpsRequests.CONTENT_TYPE;
+            case SERVICE_GPS_RESULTS:
+                return DbContract.ServiceGpsResults.CONTENT_TYPE;
 
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
@@ -82,7 +87,7 @@ public class DbProvider extends ContentProvider {
         final int match = sUriMatcher.match(uri);
         final DbSelectionBuilder builder = new DbSelectionBuilder();
         switch (match) {
-            case FAVORITES_HOTELS:
+            case FAVORITES:
                 builder.table(DbContract.Tables.TABLE_FAVORITES);
                 if (uri.getQueryParameter("group by") != null) {
                     return builder.groupBy(uri.getQueryParameter("group by"))
@@ -94,7 +99,7 @@ public class DbProvider extends ContentProvider {
                     return builder.query(db, false, projection, "", "");
                 }
 
-            case FAVORITES_HOTEL_ID:
+            case FAVORITES_ID:
                 final String recordId = DbContract.Favorites.getRecordId(uri);
                 builder.table(DbContract.Tables.TABLE_FAVORITES)
                         .where(DbContract.FavoritesColumns.KEY_ID + " = ?", recordId);
@@ -104,16 +109,19 @@ public class DbProvider extends ContentProvider {
                 return builder.query(db, false, getSearchHistoryColumns(),
                         DbContract.SearchHistoryColumns.CREATE_AT + " DESC",
                         uri.getQueryParameter("limit"));
-            case SERVICE_GPS:
-                builder.table(DbContract.Tables.TABLE_SERVICE_GPS);
+            case SERVICE_GPS_REQUESTS:
+                builder.table(DbContract.Tables.TABLE_SERVICE_GPS_REQUESTS);
                 if (uri.getQueryParameter("limit") != null && !uri.getQueryParameter("limit")
                         .isEmpty()) {
                     return builder.query(db, false, projection,
-                            DbContract.ServiceGpsColumns.CREATE_AT + " DESC",
+                            DbContract.ServiceGpsResultsColumns.CREATE_AT + " DESC",
                             uri.getQueryParameter("limit"));
                 } else {
                     return builder.where(selection).query(db, false, projection, "", "");
                 }
+            case SERVICE_GPS_RESULTS:
+                builder.table(DbContract.Tables.TABLE_SERVICE_GPS_RESULTS);
+                return builder.where(selection).query(db, false, projection, "", "");
             default: {
                 throw new UnsupportedOperationException("Unknown insert uri: " + uri);
             }
@@ -143,21 +151,33 @@ public class DbProvider extends ContentProvider {
         final SQLiteDatabase db = mOpenHelper.getWritableDatabase();
         final int match = sUriMatcher.match(uri);
         switch (match) {
-            case FAVORITES_HOTELS:
+            case FAVORITES:
                 db.insert(DbContract.Tables.TABLE_FAVORITES, null, values);
                 return DbContract.Favorites
                         .buildRecordUri(values.getAsString(DbContract.FavoritesColumns.KEY_ID),
                                 values.getAsString(DbContract.FavoritesColumns.TITLE),
                                 values.getAsString(DbContract.FavoritesColumns.TEXT));
-            case SERVICE_GPS:
-                db.insert(DbContract.Tables.TABLE_SERVICE_GPS, null, values);
-                return DbContract.ServiceGps
-                        .buildRecordUri(values.getAsString(DbContract.ServiceGpsColumns.KEY_ID),
-                                values.getAsString(DbContract.ServiceGpsColumns.USED),
-                                values.getAsString(DbContract.ServiceGpsColumns.LOCATION_NAME),
-                                values.getAsString(DbContract.ServiceGpsColumns.LAT),
-                                values.getAsString(DbContract.ServiceGpsColumns.LON),
-                                values.getAsString(DbContract.ServiceGpsColumns.CREATE_AT));
+            case SERVICE_GPS_REQUESTS:
+                db.insert(DbContract.Tables.TABLE_SERVICE_GPS_REQUESTS, null, values);
+                return DbContract.ServiceGpsRequests
+                        .buildRecordUri(
+                                values.getAsString(DbContract.ServiceGpsRequestsColumns.KEY_ID),
+                                values.getAsString(
+                                        DbContract.ServiceGpsRequestsColumns.RADIUS),
+                                values.getAsString(DbContract.ServiceGpsRequestsColumns.LAT),
+                                values.getAsString(DbContract.ServiceGpsRequestsColumns.LON),
+                                values.getAsString(DbContract.ServiceGpsRequestsColumns.CREATE_AT));
+            case SERVICE_GPS_RESULTS:
+                db.insert(DbContract.Tables.TABLE_SERVICE_GPS_RESULTS, null, values);
+                return DbContract.ServiceGpsResults
+                        .buildRecordUri(
+                                values.getAsString(DbContract.ServiceGpsResultsColumns.KEY_ID),
+                                values.getAsString(DbContract.ServiceGpsResultsColumns.USED),
+                                values.getAsString(
+                                        DbContract.ServiceGpsResultsColumns.LOCATION_NAME),
+                                values.getAsString(DbContract.ServiceGpsResultsColumns.LAT),
+                                values.getAsString(DbContract.ServiceGpsResultsColumns.LON),
+                                values.getAsString(DbContract.ServiceGpsResultsColumns.CREATE_AT));
             case SEARCH_HISTORY:
                 db.insert(DbContract.Tables.TABLE_SEARCH_HISTORY, null, values);
                 return DbContract.SearchHistory.buildSearchHistoryUri(
@@ -182,8 +202,11 @@ public class DbProvider extends ContentProvider {
         final DbSelectionBuilder builder = new DbSelectionBuilder();
         final int match = sUriMatcher.match(uri);
         switch (match) {
-            case SERVICE_GPS:
-                builder.table(DbContract.Tables.TABLE_SERVICE_GPS);
+            case SERVICE_GPS_REQUESTS:
+                builder.table(DbContract.Tables.TABLE_SERVICE_GPS_REQUESTS);
+                break;
+            case SERVICE_GPS_RESULTS:
+                builder.table(DbContract.Tables.TABLE_SERVICE_GPS_RESULTS);
                 break;
             default: {
                 throw new UnsupportedOperationException("Unknown insert uri: " + uri);
@@ -203,7 +226,7 @@ public class DbProvider extends ContentProvider {
         final SQLiteDatabase db = mOpenHelper.getWritableDatabase();
         final DbSelectionBuilder builder = new DbSelectionBuilder();
         final int match = sUriMatcher.match(uri);
-        if (match == FAVORITES_HOTEL_ID) {
+        if (match == FAVORITES_ID) {
             builder.table(DbContract.Tables.TABLE_FAVORITES)
                     .where(DbContract.FavoritesColumns.KEY_ID + "=?", uri.getPathSegments().get(1));
         }
