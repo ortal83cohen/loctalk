@@ -20,7 +20,7 @@ repositories {
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
 }
 
-def versionNamePrefix = "1.1.3"
+def versionNamePrefix = "1.1.4"
 def versionCodeValue = buildVersionCode()
 def projectBuildDir = project.buildDir
 
