@@ -52,9 +52,15 @@ public class GeofenceTransitionsIntentService extends IntentService {
             // Get the geofences that were triggered. A single event can trigger multiple geofences.
             List<Geofence> triggeringGeofences = geofencingEvent.getTriggeringGeofences();
             // Get the transition details as a String.
-            Geofence geofence = triggeringGeofences.get(0);
-//        android.os.Debug.waitForDebugger();
-            if (geofence.getRequestId() == GeofenceReceiver.EXIT_REQUEST_AREA) {
+            boolean exitFlag = false;
+
+            for (Geofence triggeringGeofence : triggeringGeofences) {
+                if (triggeringGeofence.getRequestId().equals(GeofenceReceiver.EXIT_REQUEST_AREA)) {
+                    exitFlag = true;
+                }
+            }
+
+            if (exitFlag) {
                 new LocalRecordsRequest(this).makeRequests(geofencingEvent.getTriggeringLocation());
                 new Notification(this).sendNotification(
                         "EXIT !!!!!!!" + geofencingEvent.getTriggeringLocation());

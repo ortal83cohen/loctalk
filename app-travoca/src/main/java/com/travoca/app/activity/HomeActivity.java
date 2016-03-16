@@ -255,7 +255,7 @@ public class HomeActivity extends BaseActivity
         builder
                 .setOverrideDeadline(3600000 * 24)// max in hours
                 .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
-//                .setPeriodic(5000)
+//                .setPeriodic(10000)
                 .setPersisted(true);
 
         jobScheduler.schedule(builder.build());

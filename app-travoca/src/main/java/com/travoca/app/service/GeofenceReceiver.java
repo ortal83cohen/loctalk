@@ -37,8 +37,6 @@ public class GeofenceReceiver extends BroadcastReceiver
 
     private static final String TAG = "GeofenceReceiver";
 
-    private static final int JOB_ID = 1;
-
     protected GoogleApiClient mGoogleApiClient;
 
     Context mContext;
@@ -115,8 +113,8 @@ public class GeofenceReceiver extends BroadcastReceiver
                         .setRequestId(EXIT_REQUEST_AREA)
                         .setCircularRegion(
                                 mLastLocation.getLatitude(), mLastLocation.getLongitude(),
-                                100)
-                        .setExpirationDuration(100 * 60 * 60 * 100) //100 hours
+                                1000)
+                        .setExpirationDuration(100 * 60 * 60 * 24) //24 hours
                         .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_EXIT)
                         .build());
                 while (cursor.moveToNext()) {

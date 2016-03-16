@@ -1,9 +1,5 @@
 package com.travoca.app;
 
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
-import android.test.suitebuilder.annotation.LargeTest;
-
 import com.travoca.app.activity.MainActivity;
 
 import org.junit.After;
@@ -11,6 +7,10 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import android.support.test.rule.ActivityTestRule;
+import android.support.test.runner.AndroidJUnit4;
+import android.test.suitebuilder.annotation.LargeTest;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.clearText;
@@ -36,6 +36,7 @@ public class MainActivityTest {
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(
             MainActivity.class);
+
     private MainActivity mActivity;
 
     @Before
@@ -64,7 +65,6 @@ public class MainActivityTest {
     private void bookingFlowTest() {
         // Type text and then press the button.
         autocomplete("Amsterdam", "Amsterdam, Netherlands");
-
 
         onView(withId(R.id.search)).perform(click());
 
