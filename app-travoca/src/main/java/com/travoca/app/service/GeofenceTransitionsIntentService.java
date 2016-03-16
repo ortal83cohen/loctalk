@@ -54,7 +54,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
             // Get the transition details as a String.
             Geofence geofence = triggeringGeofences.get(0);
 //        android.os.Debug.waitForDebugger();
-            if (geofence.getRequestId() == BootUpReceiver.EXIT_REQUEST_AREA) {
+            if (geofence.getRequestId() == GeofenceReceiver.EXIT_REQUEST_AREA) {
                 new LocalRecordsRequest(this).makeRequests(geofencingEvent.getTriggeringLocation());
                 new Notification(this).sendNotification(
                         "EXIT !!!!!!!" + geofencingEvent.getTriggeringLocation());

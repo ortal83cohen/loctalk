@@ -38,6 +38,7 @@ import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.model.ViewPort;
 import com.travoca.app.provider.SearchHistory;
 import com.travoca.app.randerscript.BlurBuilder;
+import com.travoca.app.service.LocalRecordsJobService;
 import com.travoca.app.service.LocalRecordsRequest;
 import com.travoca.app.utils.AppLog;
 import com.travoca.app.utils.TextWatcherAdapter;
@@ -47,6 +48,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
@@ -82,6 +84,8 @@ import java.util.Locale;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import me.tatarka.support.job.JobInfo;
+import me.tatarka.support.job.JobScheduler;
 
 /**
  * @author ortal

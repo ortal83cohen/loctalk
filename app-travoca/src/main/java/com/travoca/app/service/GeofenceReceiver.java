@@ -15,7 +15,6 @@ import com.travoca.app.provider.DbContract;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -27,11 +26,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import me.tatarka.support.job.JobInfo;
-import me.tatarka.support.job.JobScheduler;
 
-
-public class BootUpReceiver extends BroadcastReceiver
+public class GeofenceReceiver extends BroadcastReceiver
         implements GoogleApiClient.ConnectionCallbacks, ResultCallback<Status>,
         GoogleApiClient.OnConnectionFailedListener {
 
@@ -39,7 +35,7 @@ public class BootUpReceiver extends BroadcastReceiver
 
     private static final float GEOFENCE_RADIUS_IN_METERS = 50;
 
-    private static final String TAG = "BootUpReceiver";
+    private static final String TAG = "GeofenceReceiver";
 
     private static final int JOB_ID = 1;
 
@@ -53,7 +49,7 @@ public class BootUpReceiver extends BroadcastReceiver
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.i(TAG, "BootUpReceiver start");
+        Log.i(TAG, "GeofenceReceiver start");
 
         mContext = context;
 
@@ -68,19 +64,6 @@ public class BootUpReceiver extends BroadcastReceiver
     @Override
     public void onConnected(Bundle bundle) {
         mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-//        new LocalRecordsRequest(mContext).makeRequests(mLastLocation);
-        JobScheduler jobScheduler = JobScheduler.getInstance(mContext);
-
-        JobInfo.Builder builder = new JobInfo.Builder(JOB_ID,
-                new ComponentName(mContext, LocalRecordsJobService.class));
-        builder
-                .setOverrideDeadline(3600000 * 24)// max in hours
-                .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
-//                .setPeriodic(100)
-                .setPersisted(true);
-
-        jobScheduler.schedule(builder.build());
-
         initGeofenceIntent();
     }
 
@@ -132,7 +115,7 @@ public class BootUpReceiver extends BroadcastReceiver
                         .setRequestId(EXIT_REQUEST_AREA)
                         .setCircularRegion(
                                 mLastLocation.getLatitude(), mLastLocation.getLongitude(),
-                                1000)
+                                100)
                         .setExpirationDuration(100 * 60 * 60 * 100) //100 hours
                         .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_EXIT)
                         .build());

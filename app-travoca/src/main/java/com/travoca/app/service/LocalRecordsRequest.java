@@ -17,6 +17,7 @@ import com.travoca.app.travocaapi.RetrofitCallback;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.location.Location;
 import android.util.Log;
@@ -56,6 +57,9 @@ public class LocalRecordsRequest {
                         .insert(DbContract.ServiceGpsResults.CONTENT_URI, values);
             }
 
+            final Intent intent = new Intent("travoca.geofence");
+            mContext.sendBroadcast(intent);
+
             Log.e(TAG, "success: " + apiResponse.records.size());
         }
 
@@ -66,14 +70,14 @@ public class LocalRecordsRequest {
     }
 
     public void makeRequests(Location lastLocation) {
-
+//        android.os.Debug.waitForDebugger();
         Log.e(TAG, "onLocationChanged: " + lastLocation.getLongitude() + "," + lastLocation
                 .getLatitude());
         final TravocaApi travocaApi = TravocaApplication.provide(mContext).travocaApi();
         MemberStorage memberStorage = App.provide(mContext).memberStorage();
         SearchRequest searchRequest = new SearchRequest();
 
-        android.os.Debug.waitForDebugger();
+//        android.os.Debug.waitForDebugger();
         Cursor cursor = mContext.getContentResolver()
                 .query(DbContract.ServiceGpsRequests.CONTENT_URI.buildUpon()
                         .appendQueryParameter("limit", "1").build(), null, null, null, null);

@@ -20,11 +20,13 @@ import com.travoca.app.core.CoreInterface;
 import com.travoca.app.fragment.HomeFragment;
 import com.travoca.app.model.RecordListRequest;
 import com.travoca.app.preferences.UserPreferences;
+import com.travoca.app.service.LocalRecordsJobService;
 import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.widget.IntentIntegrator;
 import com.travoca.app.widget.IntentResult;
 
 import android.animation.ValueAnimator;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -39,6 +41,8 @@ import android.widget.Toast;
 
 import butterknife.ButterKnife;
 import io.fabric.sdk.android.Fabric;
+import me.tatarka.support.job.JobInfo;
+import me.tatarka.support.job.JobScheduler;
 import retrofit.Response;
 
 //import com.newrelic.agent.android.NewRelic;
@@ -52,6 +56,8 @@ public class HomeActivity extends BaseActivity
     private static final String FRAGMENT_HOME = "loc_chooser";
 
     private static final int NOTIFICATION_ID = 0;
+
+    private static final int JOB_ID = 1;
 
     protected GoogleApiClient mGoogleApiClient;
 
@@ -129,8 +135,7 @@ public class HomeActivity extends BaseActivity
                     .commit();
         }
         animateBackground();
-        final Intent intent = new Intent("travoca.up");
-        sendBroadcast(intent);
+        initGob();
         AnalyticsCalls.get().trackLanding();
     }
 
@@ -242,7 +247,19 @@ public class HomeActivity extends BaseActivity
     public void onConnected(Bundle bundle) {
 
     }
+    void initGob(){
+        JobScheduler jobScheduler = JobScheduler.getInstance(this);
 
+        JobInfo.Builder builder = new JobInfo.Builder(JOB_ID,
+                new ComponentName(this, LocalRecordsJobService.class));
+        builder
+                .setOverrideDeadline(3600000 * 24)// max in hours
+                .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
+//                .setPeriodic(5000)
+                .setPersisted(true);
+
+        jobScheduler.schedule(builder.build());
+    }
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);

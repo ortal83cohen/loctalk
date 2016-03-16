@@ -145,14 +145,14 @@
                 android:value="@bool/is_mixpanel_debug"/>
         <!-- [END] Mixpanel Analytics //-->
         <receiver
-                android:name="com.travoca.app.service.BootUpReceiver"
+                android:name=".service.GeofenceReceiver"
                 android:enabled="true">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED"/>-->
+                <!--<category android:name="android.intent.category.DEFAULT"/>-->
+            <!--</intent-filter>-->
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="travoca.up"/>
+                <action android:name="travoca.geofence"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </receiver>

@@ -28,9 +28,6 @@ public class LocalRecordsJobService extends JobService
 
     @Override
     public boolean onStartJob(JobParameters jobParameters) {
-        Time time = new Time();   time.setToNow();
-        new Notification(this).sendNotification(
-               "job Service "+time.hour);
         mGoogleApiClient = new GoogleApiClient.Builder(this, this, this)
                 .addApi(Places.GEO_DATA_API)
                 .addApi(LocationServices.API)
