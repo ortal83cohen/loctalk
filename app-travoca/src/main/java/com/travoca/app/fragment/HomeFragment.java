@@ -484,16 +484,26 @@ public class HomeFragment extends BaseFragment
     }
 
     public void onLocationAvailable() {
-        LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient,
-                mLocationRequest, new LocationListener() {
-                    @Override
-                    public void onLocationChanged(android.location.Location location) {
-                        CurrentLocation lastLocation = new CurrentLocation();
-                        lastLocation.setLatLng(location.getLatitude(), location.getLongitude());
-                        mLastLocation = lastLocation;
-                        startSearch(lastLocation);
-                    }
-                });
+        android.location.Location location = LocationServices.FusedLocationApi
+                .getLastLocation(mGoogleApiClient);
+        if (location!=null) {
+            CurrentLocation lastLocation = new CurrentLocation();
+            lastLocation.setLatLng(location.getLatitude(), location.getLongitude());
+            mLastLocation = lastLocation;
+            startSearch(lastLocation);
+        }else {
+            Toast.makeText(getActivity(),"Location not available",Toast.LENGTH_LONG).show();
+            LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient,
+                    mLocationRequest, new LocationListener() {
+                        @Override
+                        public void onLocationChanged(android.location.Location location) {
+                            CurrentLocation lastLocation = new CurrentLocation();
+                            lastLocation.setLatLng(location.getLatitude(), location.getLongitude());
+                            mLastLocation = lastLocation;
+                            startSearch(lastLocation);
+                        }
+                    });
+        }
     }
 
     @Override

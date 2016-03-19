@@ -70,6 +70,9 @@ public class LocalRecordsRequest {
     }
 
     public void makeRequests(Location lastLocation) {
+        if(lastLocation==null){
+            return;
+        }
 //        android.os.Debug.waitForDebugger();
         Log.e(TAG, "onLocationChanged: " + lastLocation.getLongitude() + "," + lastLocation
                 .getLatitude());
@@ -88,7 +91,7 @@ public class LocalRecordsRequest {
                     .getString(
                             cursor.getColumnIndex(DbContract.ServiceGpsResultsColumns.CREATE_AT));
         }
-
+        cursor.close();
         searchRequest.setType(
                 new ServiceGpsLocation("gps", lastLocation.getLatitude(),
                         lastLocation.getLongitude(),
