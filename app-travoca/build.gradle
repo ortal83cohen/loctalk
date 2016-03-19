@@ -194,5 +194,8 @@ dependencies {
     compile 'com.amazonaws:aws-android-sdk-s3:2.+'
     compile 'com.amazonaws:aws-android-sdk-ec2:2.+'
     compile 'me.tatarka.support:jobscheduler:0.1.1'
+    compile('com.mopub.sdk.android:mopub:4.4.1@aar') {
+        transitive = true;
+    }
 
 }

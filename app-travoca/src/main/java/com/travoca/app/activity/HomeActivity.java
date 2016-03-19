@@ -8,6 +8,7 @@ import com.google.android.gms.location.places.Places;
 
 import com.crashlytics.android.answers.Answers;
 import com.facebook.appevents.AppEventsLogger;
+import com.mopub.mobileads.MoPubView;
 import com.squareup.okhttp.ResponseBody;
 import com.travoca.api.model.SearchRequest;
 import com.travoca.api.model.search.Type;
@@ -16,10 +17,8 @@ import com.travoca.app.App;
 import com.travoca.app.R;
 import com.travoca.app.analytics.AnalyticsCalls;
 import com.travoca.app.anim.BlurAnimation;
-import com.travoca.app.core.CoreInterface;
 import com.travoca.app.fragment.HomeFragment;
 import com.travoca.app.model.RecordListRequest;
-import com.travoca.app.preferences.UserPreferences;
 import com.travoca.app.service.LocalRecordsJobService;
 import com.travoca.app.travocaapi.RetrofitCallback;
 import com.travoca.app.widget.IntentIntegrator;
@@ -51,6 +50,8 @@ public class HomeActivity extends BaseActivity
         implements HomeFragment.Listener, GoogleApiClient.OnConnectionFailedListener,
         GoogleApiClient.ConnectionCallbacks {
 
+    private MoPubView moPubView;
+
     public static final int REQUEST_CHECK_SETTINGS = 1;
 
     private static final String FRAGMENT_HOME = "loc_chooser";
@@ -60,8 +61,6 @@ public class HomeActivity extends BaseActivity
     private static final int JOB_ID = 1;
 
     protected GoogleApiClient mGoogleApiClient;
-
-    private CoreInterface.Service mCoreInterface;
 
     private RetrofitCallback<String> mResultsCallback = new RetrofitCallback<String>() {
         @Override
@@ -109,11 +108,13 @@ public class HomeActivity extends BaseActivity
         AnalyticsCalls.get().register(getApplicationContext());
         Fabric.with(this, new Answers());
         App.provide(this).facebook().initialize();
-        mCoreInterface = CoreInterface.create(getApplicationContext());
 
         if (getRecordsRequest() == null) {
             setRecordsRequest(App.provide(this).createRequest());
         }
+        moPubView = (MoPubView) findViewById(R.id.mopub_ad);
+        moPubView.setAdUnitId("27b16ba4bb3f41e0a6be2e52df625c8c");
+        moPubView.loadAd();
 
         mToolbar.showLogo();
 
@@ -173,9 +174,9 @@ public class HomeActivity extends BaseActivity
                 Toast.makeText(this, R.string.not_implemented, Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.menu_customer:
-                UserPreferences userPrefs = getUserPrefs();
-                mCoreInterface.customerServicePhone(userPrefs.getCountryCode().toLowerCase())
-                        .enqueue(mResultsCallback);
+                String number = "tel:+972 52 6088707";
+                Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(number));
+                startActivity(callIntent);
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -207,6 +208,7 @@ public class HomeActivity extends BaseActivity
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        moPubView.destroy();
     }
 
     @Override
@@ -247,7 +249,8 @@ public class HomeActivity extends BaseActivity
     public void onConnected(Bundle bundle) {
 
     }
-    void initGob(){
+
+    void initGob() {
         JobScheduler jobScheduler = JobScheduler.getInstance(this);
 
         JobInfo.Builder builder = new JobInfo.Builder(JOB_ID,
@@ -260,6 +263,7 @@ public class HomeActivity extends BaseActivity
 
         jobScheduler.schedule(builder.build());
     }
+
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);

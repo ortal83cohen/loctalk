@@ -68,9 +68,7 @@ public class RecordMarker {
 
     public MarkerOptions create(int pos, Record record, int status) {
 
-        String currencyCode = mUserPrefs.getCurrencyCode();
-
-        Bitmap bitmap = drawTextToBitmap("22222", status);
+        Bitmap bitmap = drawTextToBitmap(record.title, status);
 
         BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap(bitmap);
 
